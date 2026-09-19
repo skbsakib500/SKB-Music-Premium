@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:z="http://schemas.android.com/apk/res-auto" xmlns:w="http://schemas.android.com/apk/res-auto" android:title="@string/pref_headset_bt">
+	<PreferenceCategory android:title="@string/pref_headset_connection">
+		<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:persistent="true" android:title="@string/pref_resume_on_headset" android:key="resume_on_headset" android:summary="@string/pref_summary_resume_on_headset" />
+		<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:persistent="true" android:title="@string/pref_resume_on_bt" android:key="resume_on_bt" android:summary="@string/pref_summary_resume_on_bt" />
+		<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:persistent="true" android:title="@string/pref_pause_on_headset" android:key="pause_on_headset" android:summary="@string/pref_summary_pause_on_headset" />
+		<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:title="@string/pause_on_usb_connection" android:key="pause_on_usb_connection" android:summary="@string/summary_pause_on_usb_connection" />
+		<com.maxmpz.audioplayer.preference.RedirectPreference android:title="@string/pref_audio_focus" android:summary="@string/pref_summary_audio_focus_from_headset" z:target="audio_focus" z:skipSearch="true" />
+	</PreferenceCategory>
+	<PreferenceCategory android:title="@string/pref_headset_buttons" android:key="headset_buttons">
+		<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:persistent="true" android:title="@string/pref_enable_headset_controls" android:key="enable_headset_controls" android:summary="@string/pref_summary_enable_headset_controls" />
+		<com.maxmpz.audioplayer.preference.TagListPreference android:title="@string/wired_headset" android:key="headset_controls" z:entries="@array/pref_headset_controls_entries" />
+		<com.maxmpz.audioplayer.preference.TagListPreference android:title="@string/bluetooth_headset" android:key="avrcp_controls" z:entries="@array/pref_headset_controls_entries" />
+		<com.maxmpz.audioplayer.preference.RedirectPreference android:key="long_volume_press" android:summary="@string/pref_headset_long_volume_press_hint" z:target="misc#long_volume_controls" z:skipSearch="true" />
+		<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:persistent="true" android:title="@string/follow_pl_exact" android:key="follow_pl_exact" android:summary="@string/summary_follow_pl_exact" android:dependency="enable_headset_controls" />
+		<com.maxmpz.audioplayer.preference.SeekbarPreference android:title="@string/ignore_bt_sec" android:key="ignore_bt_sec" android:summary="@string/summary_ignore_bt_sec" z:max="20" z:min="0" z:leftLabel="0" z:rightLabel="20" z:tickMark="@drawable/pref_seekbar_tickmark" z:summary2="@string/d_sec" />
+		<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:title="@string/ignore_repeat_shuffle" android:key="bt_ignore_repeat_shuffle" android:summary="@string/summary_ignore_repeat_shuffle" />
+		<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:persistent="true" android:title="@string/pref_headset_beep" android:key="headset_beep" android:dependency="enable_headset_controls" />
+		<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:persistent="true" android:title="@string/beep_more" android:key="beep_more" android:summary="@string/summary_beep_more" android:dependency="headset_beep" />
+		<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:persistent="true" android:title="@string/pref_headset_vibrate" android:key="headset_vibrate" android:dependency="enable_headset_controls" />
+		<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:persistent="true" android:title="@string/pref_no_android_long_press" android:key="no_android_long_press" android:summary="@string/pref_summary_no_android_long_press" />
+	</PreferenceCategory>
+	<com.maxmpz.audioplayer.preference.RedirectPreference android:title="@string/pref_last_processed_commands" android:key="commands_history" z:target="commands_history" />
+	<Preference android:title="@string/pref_restore_defaults" android:key="restore_defaults" android:singleLineTitle="false" />
+</PreferenceScreen>

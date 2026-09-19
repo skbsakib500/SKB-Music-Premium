@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:w="http://schemas.android.com/apk/res-auto">
+	<com.maxmpz.widget.base.RootSceneActivityBehavior />
+	<com.maxmpz.widget.base.DialogBehavior android:id="@id/behavior_dialog" />
+	<com.maxmpz.widget.base.Shim android:id="@id/dialog_shim" android:visibility="invisible" style="?DialogShim" />
+	<SceneParams android:visibility="visible" w:scene="@id/scene_dialog_in" w:scene_2="@id/scene_dialog_in_toast" w:scene_3="@id/scene_dialog_in_progress" />
+	<SceneParams android:visibility="invisible" w:scene="@id/scene_dialog_out_progress" w:scene_2="@id/scene_dialog_out_toast" w:scene_3="@id/scene_dialog_out_alt" />
+	<com.maxmpz.widget.base.DialogOuterFastLayout android:id="@id/dialog_outer_layout" style="?DialogOuterLayout">
+		<com.maxmpz.widget.base.AdjustToSoftKeyboardBehavior android:enabled="?dialogAdjustToSoftKeyboard" />
+		<com.maxmpz.widget.base.FastLayout android:id="@id/dialog_frame" android:focusable="false" android:clickable="true" style="?DialogFrame">
+			<com.maxmpz.widget.base.FastLayout android:id="@id/dialog_title_layout" style="?DialogTitleLayout">
+				<include android:layout="?dialogTitleExtraLayout" w:optional="true" />
+				<ProgressBar android:id="@id/dialog_progress" style="?DialogTitleProgress" />
+				<SceneParams w:scene="@id/_tag_scene_zero" w:applyScene="false" />
+				<SceneParams android:visibility="gone" w:scene="@id/scene_dialog_in" w:recalcChildren="on_start" />
+				<SceneParams android:visibility="visible" w:scene="@id/scene_dialog_in_loading" w:scene_2="@id/scene_dialog_in_progress" w:recalcChildren="on_start" />
+				<com.maxmpz.widget.base.FastButton android:id="@id/dialog_progress_button" style="?DialogProgressButton" />
+				<com.maxmpz.widget.base.FastTextView android:id="@id/title" style="?DialogTitle" />
+				<SceneParams w:scene="@id/scene_dialog_in_loading" w:scene_2="@id/scene_dialog_in" w:recalcChildren="on_start" />
+				<SceneParams w:scene="@id/scene_dialog_in_progress" w:recalcChildren="on_start" style="?DialogTitle_scene_dialog_in_progress" />
+			</com.maxmpz.widget.base.FastLayout>
+			<SceneParams w:scene="@id/scene_dialog_in" w:scene_2="@id/scene_dialog_in_loading" style="?DialogTitleLayout" />
+			<SceneParams w:scene="@id/scene_dialog_in_progress" w:scene_2="@id/scene_dialog_out_progress" style="?DialogTitleLayout_scene_progress" />
+			<SceneParams android:visibility="gone" w:scene="@id/scene_dialog_in_toast" w:scene_2="@id/scene_dialog_out_toast" />
+			<com.maxmpz.widget.base.FastLayout android:id="@id/dialog_toast_layout" style="?DialogToast">
+				<com.maxmpz.widget.base.FastTextView android:id="@id/dialog_toast_img" style="?DialogToastImg" />
+				<com.maxmpz.widget.base.FastButton android:id="@id/dialog_toast_button" style="?DialogToastButton" />
+				<com.maxmpz.widget.base.TextView android:id="@id/dialog_toast_line_only_1" style="?DialogToastLineOnly1" />
+				<com.maxmpz.widget.base.TextView android:id="@id/dialog_toast_line1" style="?DialogToastLine1" />
+				<com.maxmpz.widget.base.TextView android:id="@id/dialog_toast_line2" style="?DialogToastLine2" />
+			</com.maxmpz.widget.base.FastLayout>
+			<SceneParams android:visibility="visible" w:scene="@id/scene_dialog_in_toast" w:scene_2="@id/scene_dialog_out_toast" w:recalcChildren="4.999995%" />
+			<SceneParams android:visibility="gone" w:scene="@id/scene_dialog_in" w:scene_2="@id/scene_dialog_in_loading" w:scene_3="@id/scene_dialog_in_progress" w:scene_4="@id/scene_dialog_out_progress" w:recalcChildren="on_start" />
+			<include android:layout="?dialogContentLayout" />
+			<SceneParams android:visibility="visible" w:scene="@id/scene_dialog_in" w:scene_2="@id/scene_dialog_in_loading" w:recalcChildren="dynamic" />
+			<SceneParams android:visibility="gone" w:scene="@id/scene_dialog_in_progress" w:scene_2="@id/scene_dialog_in_toast" w:scene_3="@id/scene_dialog_out_progress" w:scene_4="@id/scene_dialog_out_toast" w:recalcChildren="on_start" />
+			<include android:layout="?dialogButtonsLayout" />
+			<SceneParams w:scene="@id/scene_dialog_in" w:scene_2="@id/scene_dialog_in_loading" style="?DialogButtonBar" />
+			<SceneParams android:visibility="gone" w:scene="@id/scene_dialog_in_progress" w:scene_2="@id/scene_dialog_in_toast" w:scene_3="@id/scene_dialog_out_progress" w:scene_4="@id/scene_dialog_out_toast" />
+		</com.maxmpz.widget.base.FastLayout>
+		<SceneParams w:scene="@id/scene_dialog_in" w:scene_2="@id/scene_dialog_in_progress" w:scene_3="@id/scene_dialog_in_toast" style="?DialogFrame_scene_dialog_in" />
+		<SceneParams w:scene="@id/scene_dialog_in_loading" style="?DialogFrame_scene_dialog_in" />
+		<SceneParams w:scene="@id/scene_dialog_out_toast" w:scene_2="@id/scene_dialog_out_progress" style="?DialogFrame" />
+		<SceneParams android:visibility="visible" w:scene="@id/scene_dialog_out_alt" w:layout_attachBottom="parent" style="?DialogFrame" />
+		<com.maxmpz.widget.base.MenuPlaceholderLayout android:id="@id/menu_placeholder" w:privateScene="true" style="?DialogMenuPlaceholderLayout" />
+		<include android:layout="@layout/merge_toast" />
+	</com.maxmpz.widget.base.DialogOuterFastLayout>
+	<SceneParams w:scene="@id/scene_dialog_in" w:scene_2="@id/scene_dialog_in_progress" w:scene_3="@id/scene_dialog_in_toast" />
+</merge>

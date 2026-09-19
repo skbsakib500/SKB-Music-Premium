@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:w="http://schemas.android.com/apk/res-auto" android:title="@string/shuffle_noun" w:searchBreadcrumb1="@string/pref_library">
+	<com.maxmpz.audioplayer.preference.SeekbarPreference android:title="@string/pref_shuffle_randomization" android:key="shuffle_random_factor" w:max="12" w:min="0" w:step="2" w:leftLabel="@string/less_random" w:rightLabel="@string/full_random" w:tickMark="@drawable/pref_seekbar_tickmark" w:floatScale="12.0" />
+	<com.maxmpz.audioplayer.preference.RawTextPreference android:background="@drawable/settings_quote_background" w:line1="@string/less_random_hint" w:line2="@string/full_random_hint" w:line3="@string/next_shuffle_session_hint" w:singleNewline="true" w:keepPaddings="true" />
+	<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:persistent="true" android:title="@string/pref_no_reshuffle" android:key="no_reshuffle" android:summary="@string/pref_summary_no_reshuffle" />
+	<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:persistent="true" android:title="@string/no_reshuffle_for_large_lists" android:key="no_reshuffle_for_large_lists" android:summary="@string/no_reshuffle_for_large_lists_msg" />
+	<com.maxmpz.audioplayer.preference.TagListPreference android:title="@string/pref_category_shuffle" android:key="category_shuffle" w:entries="@array/pref_category_shuffle_entries" w:values="@array/pref_category_shuffle_values" w:summaries="@array/pref_category_shuffle_summaries" w:summary2="@string/not_applied_in_folders_hier" />
+	<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:persistent="true" android:title="@string/pref_hier_flat_shf" android:key="hier_flat_shf" android:summary="@string/pref_summary_hier_flat_shf" android:defaultValue="true" />
+	<Preference android:title="@string/pref_restore_defaults" android:key="restore_defaults" />
+</PreferenceScreen>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<style name="VisPanelContainer"><item name="android:paddingTop">8.0dip</item><item name="android:paddingRight">8.0dip</item><item name="android:paddingBottom">8.0dip</item><item name="android:visibility">gone</item><item name="android:layout_width">0.0px</item><item name="android:forceHasOverlappingRendering">@bool/v28_forceHasOverlappingRendering</item><item name="layout_attachLeft">@id/aa_bounds</item><item name="layout_attachTop">@id/status_bar_bg</item><item name="layout_attachRight">inset</item><item name="layout_attachBottom">parent</item></style>
+</resources>

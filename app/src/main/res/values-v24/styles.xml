@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<style name="Base.TextAppearance.AppCompat.Widget.Button.Borderless.Colored" parent="@android:style/TextAppearance.Material.Widget.Button.Borderless.Colored" />
+<style name="Base.TextAppearance.AppCompat.Widget.Button.Colored" parent="@android:style/TextAppearance.Material.Widget.Button.Colored" />
+<style name="VisPanelContainer"><item name="android:padding">8.0dip</item><item name="android:visibility">gone</item><item name="android:layout_width">fill_parent</item><item name="android:forceHasOverlappingRendering">@bool/v28_forceHasOverlappingRendering</item><item name="layout_attachTop">inset</item><item name="layout_attachBottom">parent</item></style>
+<style name="TopEqLayoutBase"><item name="android:visibility">gone</item><item name="android:clipChildren">false</item><item name="android:layout_width">fill_parent</item><item name="android:layout_height">0.0px</item><item name="android:forceHasOverlappingRendering">@bool/v28_forceHasOverlappingRendering</item><item name="layout_attachTop">@id/status_bar_bg</item><item name="layout_attachBottom">inset</item><item name="layout_marginBottomRef">@id/navbar_bounds_2lines_size</item></style>
+<style name="TextAppearance.Compat.Notification.Info.Media" parent="@style/TextAppearance.Compat.Notification.Info" />
+<style name="TextAppearance.Compat.Notification.Media" parent="@style/TextAppearance.Compat.Notification" />
+<style name="TextAppearance.Compat.Notification.Time.Media" parent="@style/TextAppearance.Compat.Notification.Time" />
+<style name="TextAppearance.Compat.Notification.Title.Media" parent="@style/TextAppearance.Compat.Notification.Title" />
+<style name="Widget4x4DeckBg"><item name="android:clipToPadding">false</item><item name="android:layout_width">fill_parent</item><item name="android:layout_height">fill_parent</item><item name="android:scaleType">fitXY</item><item name="android:outlineProvider">background</item><item name="android:forceHasOverlappingRendering">false</item><item name="android:clipToOutline">true</item></style>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.maxmpz.widget.base.FastLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:w="http://schemas.android.com/apk/res-auto" android:scrollbars="vertical" style="?DialogContent">
+	<com.maxmpz.widget.base.FastLayout android:layout_width="fill_parent" android:layout_height="wrap_content" w:layout_unlimitedMeasure="true">
+		<TextView android:textAppearance="?LargerText" android:textSize="16.5sp" android:id="@id/big_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:lineSpacingMultiplier="1.25" />
+	</com.maxmpz.widget.base.FastLayout>
+	<com.maxmpz.widget.base.ScrollingBehavior w:disallowParentScroll="true" />
+</com.maxmpz.widget.base.FastLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.maxmpz.widget.base.FastLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:w="http://schemas.android.com/apk/res-auto" style="?ItemEmptyList">
+	<com.maxmpz.widget.player.ScanProgress android:tag="item_empty_list_with_progress_and_config" style="?ItemEmptyListScanProgress" />
+	<com.maxmpz.widget.base.FastTextView android:id="@id/item_empty_list_text" android:text="@string/no_content" style="?ItemEmptyListText" />
+	<com.maxmpz.widget.base.BusActionButton android:id="@id/button" android:contentDescription="@string/settings" w:busId="@id/list" w:msgId="@id/cmd_list_empty_dialog" style="?ItemEmptyListSettingsButton" />
+</com.maxmpz.widget.base.FastLayout>

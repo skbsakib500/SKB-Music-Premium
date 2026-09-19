@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+	<background>
+		<shape>
+			<solid android:color="@android:color/system_neutral1_800" />
+		</shape>
+	</background>
+	<foreground android:drawable="@drawable/app_icon_rounded_v" />
+	<monochrome android:drawable="@drawable/app_icon_rounded_v" />
+</adaptive-icon>

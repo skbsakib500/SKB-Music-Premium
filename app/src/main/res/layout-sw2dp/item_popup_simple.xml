@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.maxmpz.widget.player.list.TextItemView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:w="http://schemas.android.com/apk/res-auto" style="?ItemPopupList">
+	<com.maxmpz.widget.player.list.IconView android:id="@id/aa_image" style="?ItemPopupListImage" />
+	<com.maxmpz.widget.base.FastCheckBoxOnly android:id="@id/select_box" style="?ItemPopupListSelectBox" />
+	<com.maxmpz.widget.base.FastTextView android:id="@id/title" style="?ItemPopupListTitle" />
+</com.maxmpz.widget.player.list.TextItemView>

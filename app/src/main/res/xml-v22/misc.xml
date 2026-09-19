@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:z="http://schemas.android.com/apk/res-auto" xmlns:w="http://schemas.android.com/apk/res-auto" android:title="@string/pref_misc">
+	<PreferenceCategory android:title="@string/pref_scrobbling">
+		<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:persistent="true" android:title="@string/pref_scrobble_via_last_fm" android:key="scrobble_to_last_fm" android:summary="@string/pref_summary_scrobble_via_last_fm" android:defaultValue="false" />
+		<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:persistent="true" android:title="@string/pref_scrobble_via_simple_last_fm" android:key="scrobble_to_simple_last_fm" android:summary="@string/pref_summary_scrobble_via_simple_last_fm" android:defaultValue="false" />
+		<com.maxmpz.audioplayer.preference.RawTextPreference android:background="@drawable/settings_quote_background" z:line1="@string/pref_scrobble_hint" z:skipSearch="false" z:keepPaddings="true" />
+	</PreferenceCategory>
+	<PreferenceCategory android:title="@string/pref_android_auto" android:key="android_auto">
+		<com.maxmpz.audioplayer.preference.RedirectPreference android:title="@string/buttons" android:key="buttons" android:summary="@string/notify_action_buttons" z:target="ui_mediaactions" />
+		<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:title="@string/pref_mb_a_grid" android:key="mb_a_grid" android:summary="@string/pref_summary_mb_a_grid" />
+		<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:title="@string/pref_mb_a_aa_cats" android:key="mb_a_aa_cats" android:summary="@string/pref_summary_mb_a_aa_cats" android:defaultValue="true" />
+		<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:title="@string/pref_mb_a_aa_tracks" android:key="mb_a_aa_tracks" android:summary="@string/pref_summary_mb_a_aa_tracks" android:defaultValue="true" android:singleLineTitle="false" />
+		<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:title="@string/pref_send_mediasession_q" android:key="send_mediasession_q" android:summary="@string/pref_summary_send_mediasession_q" android:singleLineTitle="false" />
+	</PreferenceCategory>
+	<PreferenceCategory android:title="@string/pref_tweaks" android:key="tweaks">
+		<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:persistent="true" android:title="@string/pref_send_metachanged" android:key="send_metachanged" android:summary="@string/pref_summary_send_metachanged" android:defaultValue="true" />
+		<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:title="@string/pref_use_wakelocks" android:key="use_wakelock" android:summary="@string/pref_summary_use_wakelocks" />
+		<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:title="@string/pref_send_old_api_aa" android:key="send_old_api_aa" android:summary="@string/pref_summary_send_old_api_aa" android:defaultValue="false" />
+		<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:title="@string/pref_check_for_skin_reload" android:key="check_for_skin_reload" android:summary="@string/pref_summary_check_for_skin_reload" android:defaultValue="false" />
+		<com.maxmpz.audioplayer.preference.EditTextPreference android:title="@string/pref_shutdown_intent" android:key="shutdown_intent" android:summary="@string/pref_summary_shutdown_intent" android:defaultValue="" z:summary2="%s" />
+		<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:title="@string/pref_pause_on_screen_off" android:key="pause_on_screen_off" android:defaultValue="false" z:sup="@string/pref_experiment" z:supLink="alert?text=@string/pref_experimental_msg" />
+		<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:title="@string/pref_op_framerate" android:key="op_framerate" android:summary="@string/pref_summary_op_framerate" z:sup="@string/pref_experiment" z:supLink="alert?text=@string/pref_experimental_msg" />
+		<com.maxmpz.audioplayer.preference.RawTextPreference android:persistent="false" android:title="@string/pref_migrate_data_29" android:key="migrate_data_29" z:skipSearch="false" />
+		<com.maxmpz.audioplayer.preference.SeekbarPreference android:title="@string/pref_stream_timeout" android:key="stream_timeout_ms" android:summary="%s" android:defaultValue="30000" z:scale="1000.0" z:entries="@array/pref_stream_timeout_entries" z:values="@array/pref_stream_timeout_values" z:leftLabel="@string/pref_buffer_small" z:rightLabel="@string/never" />
+		<com.maxmpz.audioplayer.preference.SeekbarPreference android:title="@string/pref_stream_buffer" android:key="stream_buffer_bytes" android:summary="@string/f1_mb" android:defaultValue="1048576" z:scale="1048576.0" z:max="4194304" z:min="524288" z:step="10240" z:leftLabel="@string/pref_buffer_small" z:rightLabel="@string/pref_preload_more" />
+		<com.maxmpz.audioplayer.preference.RawTextPreference android:persistent="false" android:summary="@string/pref_summary_stream_buffer" />
+		<com.maxmpz.audioplayer.preference.EditTextPreference android:persistent="true" android:title="@string/pref_user_agent" android:key="user_agent" android:summary="@string/pref_summary_user_agent" z:summary2="%s" />
+		<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:persistent="false" android:title="@string/pref_load_user_so" android:key="load_user_so" android:summary="@string/pref_summary_load_user_so" android:defaultValue="false" z:sup="@string/pref_experiment" z:supLink="alert?text=@string/pref_experimental_msg" />
+		<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:title="@string/override_region" android:key="override_region" android:defaultValue="false" />
+	</PreferenceCategory>
+	<PreferenceCategory android:title="@string/pref_volume_keys_long_press" android:key="volume_keys_long_press_cat">
+		<com.maxmpz.audioplayer.preference.RawTextPreference android:persistent="false" android:background="@drawable/settings_quote_background" android:key="volume_keys_long_press_hint" z:keepPaddings="true" />
+		<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:title="@string/pref_long_volume_controls" android:key="long_volume_controls" android:defaultValue="false" />
+	</PreferenceCategory>
+	<Preference android:title="@string/pref_restore_defaults" android:key="restore_defaults" android:singleLineTitle="false" />
+</PreferenceScreen>

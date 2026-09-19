@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<dimen name="eq_frs_height">54.0dip</dimen>
+<dimen name="TopWaveseek_maxHeight">160.0dip</dimen>
+<dimen name="Alt_TopPlay_maxSize">74.0dip</dimen>
+<dimen name="Alt_TopPauseMoreButtons_maxSize_scene_playing">68.0dip</dimen>
+<dimen name="Alt_TopSmallButton_size">42.0dip</dimen>
+<dimen name="Alt_TopMediumButton_size">52.0dip</dimen>
+</resources>

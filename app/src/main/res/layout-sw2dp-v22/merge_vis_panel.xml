@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:w="http://schemas.android.com/apk/res-auto">
+	<com.maxmpz.widget.base.Shim android:id="@id/vis_panel_shim" style="?VisPanelShim" />
+	<com.maxmpz.widget.base.SceneFastLayout android:id="@id/vis_panel_container" w:enableStateAnim="true" w:privateScene="true" style="?VisPanelContainer">
+		<com.maxmpz.audioplayer.widget.VisPanelFrame android:id="@id/vis_panel_frame" style="?VisPanelFrame">
+			<com.maxmpz.widget.base.FastButton android:id="@id/close_button" android:contentDescription="@string/close" style="?VisCloseButton" />
+			<com.maxmpz.widget.base.BusActionButton android:id="@id/settings_button" android:contentDescription="@string/settings" w:busId="@id/bus_app_cmd" w:msgId="@id/cmd_app_open_settings" w:string="vis" style="?VisSettingsButton" />
+			<SceneParams android:visibility="visible" w:scene="@id/scene_vispanel_expanded" />
+			<com.maxmpz.widget.base.BusSelectablePopupButtonLayout android:id="@id/sort" android:contentDescription="@string/sort" w:stateId="@id/state_player_milk_sort" w:stateBusId="@id/bus_player" w:buttonsMsgId="@id/cmd_player_set_milk_sort" w:buttonsBusId="@id/bus_player_cmd" w:buttonsLabels="@array/milk_sort_modes" w:buttonsDrawables="@array/milk_sort_icons_24dp" style="?VisSortButtonLayout" />
+			<SceneParams w:scene="@id/scene_button_menu" style="?ItemPopupMenu_scene_item_menu" />
+			<SceneParams android:visibility="visible" w:scene="@id/scene_vispanel_expanded" />
+			<EditText android:id="@id/vis_panel_edittext" android:hint="@string/search" android:inputType="text" android:importantForAutofill="no" style="?VisFilterEditText" />
+			<SceneParams android:visibility="visible" w:scene="@id/scene_vispanel_expanded" />
+			<com.maxmpz.widget.list.PowerList android:id="@id/vis_panel_list" style="?VisPanelList" />
+			<SceneParams w:scene="@id/scene_vispanel_expanded" w:recalcChildren="on_end" />
+			<com.maxmpz.widget.base.BusSelectablePopupButtonLayout android:id="@id/state_player_milk_advance" w:toastOnPress="@string/long_press_for_more_options" w:msgId="@id/msg_player_milk_preset_changed" w:stateId="@id/state_player_milk_advance" w:stateBusId="@id/bus_player" w:buttonsMsgId="@id/cmd_player_set_milk_advance" w:buttonsBusId="@id/bus_player_cmd" w:buttonsArg1="?milk_advance_enum" w:buttonsLabels="?milk_advance_modes" w:buttonsDrawables="?milk_advance_icons" w:getStateOnMsg="true" style="?VisLockButtonLayout" />
+			<SceneParams w:scene="@id/scene_button_menu" style="?ItemPopupMenu_scene_item_menu" />
+			<SceneParams android:visibility="gone" w:scene="@id/scene_vispanel_expanded" />
+		</com.maxmpz.audioplayer.widget.VisPanelFrame>
+		<SceneParams w:scene="@id/scene_vispanel_expanded" w:recalcChildren="on_end" style="?VisPanelFrame_scene_vispanel_expanded" />
+	</com.maxmpz.widget.base.SceneFastLayout>
+	<SceneParams android:visibility="visible" android:alpha="1.0" w:scene="@id/scene_vis_temp_ui" />
+	<SceneParams android:visibility="visible" android:alpha="0.5" w:scene="@id/scene_vis_w_ui" />
+	<SceneParams android:visibility="invisible" w:scene="@id/scene_vis" />
+	<SceneParams android:visibility="gone" w:scene="@id/scene_lib" w:scene_2="@id/scene_lib" w:scene_3="@id/scene_search" w:scene_4="@id/scene_eq" w:scene_5="@id/scene_playing" />
+	<SceneParams android:visibility="gone" w:scene="@id/scene_lyrics" />
+	<StateAnimParams android:alpha="0.0" w:stateAnim="@id/popup_menu_item" />
+</merge>

@@ -11,6 +11,10 @@ class MusicService : MediaSessionService() {
         super.onCreate()
         val player = ExoPlayer.Builder(this).build()
         PlayerHolder.player = player
+        // সংযুক্ত ইকুয়ালাইজার
+        EqualizerManager.attach(player)
+        EqualizerManager.applyPreset("Flat")
+
         mediaSession = MediaSession.Builder(this, player).build()
     }
 
@@ -22,6 +26,7 @@ class MusicService : MediaSessionService() {
     }
 
     override fun onDestroy() {
+        EqualizerManager.release()
         mediaSession?.player?.release()
         mediaSession?.release()
         mediaSession = null

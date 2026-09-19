@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:w="http://schemas.android.com/apk/res-auto">
+	<com.maxmpz.widget.base.FastButton android:id="@id/menu" android:contentDescription="@string/menu" style="?ItemTrackMenu" />
+	<SceneParams w:scene="@id/scene_zoomed" w:scene_2="@id/scene_small" w:scene_3="@id/scene_grid_1_alt" w:scene_4="@id/scene_grid_1_alt_zoomed" w:scene_5="@id/scene_1_small" w:baseScene="defaultScene" />
+	<SceneParams w:scene="@id/scene_1" w:scene_2="@id/scene_1_zoomed" w:scene_3="@id/scene_grid" w:scene_4="@id/scene_grid_zoomed" w:scene_5="@id/scene_grid_1" w:scene_6="@id/scene_grid_1_zoomed" w:baseScene="defaultScene" />
+	<SceneParams w:scene="@id/scene_small_no_aa" w:scene_2="@id/scene_1_small_no_aa" w:baseScene="defaultScene" />
+	<SceneParams w:scene="@id/scene_item_menu" w:scene_2="@id/scene_item_menu_lu" style="?ItemTrackMenu_scene_menu" />
+	<SceneParams w:scene="@id/scene_header" w:scene_2="@id/scene_header_1" style="?ItemTrackMenu_scene_header" />
+	<SceneParams w:scene="@id/scene_bottom_toolbar" style="?ItemTrackMenu_scene_bottom_toolbar" />
+	<SceneParams w:scene="@id/scene_aa" style="?ItemTrackMenu_scene_aa" />
+	<SceneParams w:scene="@id/scene_aa_vis" style="?ItemTrackMenu_scene_aa_vis" />
+	<SceneParams w:scene="@id/scene_aa_playing" style="?ItemTrackMenu_scene_aa_playing" />
+	<SceneParams w:scene="@id/scene_lyrics" style="?ItemTrackMenu_scene_lyrics" />
+	<com.maxmpz.widget.player.list.LyricsButton android:id="@id/lyrics" android:contentDescription="@string/lyrics" style="?ItemTrackLyrics" />
+	<SceneParams android:visibility="invisible" w:scene="@id/scene_zoomed" w:scene_2="@id/scene_small" w:scene_3="@id/scene_grid_1_alt" w:scene_4="@id/scene_grid_1_alt_zoomed" w:scene_5="@id/scene_1_small" w:baseScene="defaultScene" />
+	<SceneParams android:visibility="invisible" w:scene="@id/scene_1" w:scene_2="@id/scene_1_zoomed" w:scene_3="@id/scene_grid" w:scene_4="@id/scene_grid_zoomed" w:scene_5="@id/scene_grid_1" w:scene_6="@id/scene_grid_1_zoomed" w:baseScene="defaultScene" />
+	<SceneParams android:visibility="invisible" w:scene="@id/scene_small_no_aa" w:scene_2="@id/scene_1_small_no_aa" w:baseScene="defaultScene" />
+	<SceneParams w:scene="@id/scene_item_menu" w:scene_2="@id/scene_item_menu_lu" style="?ItemTrackLyrics_scene_menu" />
+	<SceneParams android:visibility="invisible" w:scene="@id/scene_header" w:scene_2="@id/scene_header_1" w:baseScene="defaultScene" />
+	<SceneParams android:visibility="gone" w:scene="@id/scene_bottom_toolbar" w:baseScene="defaultScene" />
+	<SceneParams w:scene="@id/scene_aa" style="?ItemTrackLyrics_scene_aa" />
+	<SceneParams w:scene="@id/scene_aa_vis" style="?ItemTrackLyrics_scene_aa_vis" />
+	<SceneParams w:scene="@id/scene_aa_playing" style="?ItemTrackLyrics_scene_aa_playing" />
+	<SceneParams w:scene="@id/scene_lyrics" style="?ItemTrackLyrics_scene_lyrics" />
+	<com.maxmpz.widget.base.NonOverlappingView android:id="@id/aa_panel" style="?ItemTrackAAPanel" />
+	<SceneParams w:scene="@id/scene_aa" style="?ItemTrackAAPanel_scene_aa" />
+	<SceneParams w:scene="@id/scene_aa_vis" style="?ItemTrackAAPanel_scene_aa_vis" />
+	<SceneParams w:scene="@id/scene_aa_playing" style="?ItemTrackAAPanel_scene_aa_playing" />
+	<SceneParams w:scene="@id/scene_grid" w:scene_2="@id/scene_grid_zoomed" w:scene_3="@id/scene_zoomed" w:scene_4="@id/scene_small" w:scene_5="@id/scene_header" w:scene_6="@id/scene_1_small" style="?ItemTrackAAPanel_scenes_hidden" />
+	<SceneParams w:scene="@id/scene_item_menu" w:scene_2="@id/scene_item_menu_lu" w:scene_3="@id/scene_header" w:scene_4="@id/scene_header_1" w:scene_5="@id/scene_small_no_aa" w:scene_6="@id/scene_1_small_no_aa" style="?ItemTrackAAPanel_scenes_hidden" />
+	<SceneParams w:scene="@id/scene_bottom_toolbar" style="?ItemTrackAAPanel_scenes_hidden" />
+	<SceneParams w:scene="@id/scene_lyrics" style="?ItemTrackAAPanel_scene_lyrics" />
+	<include android:layout="?ItemLikeUnlikeLayout_layout" w:optional="true" />
+</merge>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:w="http://schemas.android.com/apk/res-auto" android:title="@string/queue" w:searchBreadcrumb1="@string/pref_library">
+	<com.maxmpz.audioplayer.preference.RawTextPreference android:background="@drawable/settings_quote_background" w:line1="@string/pref_queue_hint" w:keepPaddings="true" />
+	<com.maxmpz.audioplayer.preference.TagListPreference android:title="@string/pref_queue_start" android:key="queue_start" android:defaultValue="2" w:entries="@array/pref_queue_start_entries" w:values="@array/pref_queue_start_values" />
+	<com.maxmpz.audioplayer.preference.TagListPreference android:persistent="true" android:title="@string/pref_queue_end" android:key="queue_end" android:defaultValue="1" w:entries="@array/pref_queue_advance_entries" />
+	<com.maxmpz.audioplayer.preference.TagListPreference android:title="@string/pref_queue_insert_pos" android:key="queue_insert_pos" w:entries="@array/pref_queue_insert_pos_entries" w:values="@array/enqueue_modes_args1" />
+	<com.maxmpz.audioplayer.preference.TagListPreference android:title="@string/pref_play_next_insert_pos" android:key="play_next_insert_pos" w:entries="@array/pref_queue_insert_pos_entries" w:values="@array/enqueue_modes_args1" />
+	<com.maxmpz.audioplayer.preference.RawTextPreference android:background="@drawable/settings_quote_background" w:line1="@string/pref_insert_pos_hint" w:keepPaddings="true" />
+	<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:persistent="true" android:title="@string/pref_q_next_forces_after_song" android:key="q_next_forces_after_song" android:summary="@string/pref_summary_q_next_forces_after_song" android:defaultValue="true" />
+	<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:persistent="true" android:title="@string/pref_queue_clear_on_add" android:key="queue_clear_on_add" android:summary="@string/pref_summary_queue_clear_on_add" android:defaultValue="false" />
+	<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:persistent="true" android:title="@string/pref_queue_never_clear_on_add" android:key="queue_never_clear_on_add" android:summary="@string/pref_summary_queue_never_clear_on_add" android:defaultValue="false" />
+	<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:persistent="true" android:title="@string/pref_queue_no_shuffle" android:key="queue_no_shuffle" android:summary="@string/pref_summary_queue_no_shuffle" android:defaultValue="false" />
+	<Preference android:title="@string/pref_restore_defaults" android:key="restore_defaults" android:singleLineTitle="false" />
+</PreferenceScreen>

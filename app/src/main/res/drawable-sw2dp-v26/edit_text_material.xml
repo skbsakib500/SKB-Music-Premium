@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" android:paddingLeft="4.0dip" android:paddingTop="8.0dip" android:paddingRight="4.0dip" android:paddingBottom="5.0dip">
+	<item android:left="4.0dip" android:right="4.0dip">
+		<selector android:constantSize="true" android:enterFadeDuration="150" android:exitFadeDuration="350">
+			<item android:state_enabled="false">
+				<layer-list android:paddingBottom="0.0dip" android:height="1.0dip">
+					<item android:gravity="bottom" android:height="1.0dip">
+						<shape>
+							<solid android:color="?android:colorControlNormal" />
+						</shape>
+					</item>
+				</layer-list>
+			</item>
+			<item android:state_focused="false" android:state_pressed="false">
+				<layer-list android:paddingBottom="0.0dip" android:height="1.0dip">
+					<item android:gravity="bottom" android:height="1.0dip">
+						<shape>
+							<solid android:color="?android:colorControlNormal" />
+						</shape>
+					</item>
+				</layer-list>
+			</item>
+			<item>
+				<layer-list android:paddingBottom="0.0dip" android:height="2.0dip">
+					<item android:gravity="bottom" android:height="2.0dip">
+						<shape>
+							<solid android:color="?android:colorControlActivated" />
+						</shape>
+					</item>
+				</layer-list>
+			</item>
+		</selector>
+	</item>
+</layer-list>

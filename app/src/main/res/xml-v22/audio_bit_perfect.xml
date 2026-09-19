@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:w="http://schemas.android.com/apk/res-auto" android:title="@string/bit_perfect">
+	<com.maxmpz.audioplayer.preference.RawTextPreference android:background="@drawable/settings_quote_background" android:order="0" w:line1="@string/bit_perfect_hint1" w:line2="@string/bit_perfect_hint2" w:keepPaddings="true" />
+	<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:title="@string/pipeline64" android:key="global_pipeline64" android:summary="@string/summary_pipeline64" android:order="10" />
+	<com.maxmpz.audioplayer.preference.RawTextPreference android:key="pipeline64_opts" android:order="11" w:iconAlignedTop="true" w:iconAlignedHorCenter="true" w:summaryLineSpacing="10.0dip" w:reducedPad="true" />
+	<com.maxmpz.audioplayer.preference.RawTextPreference android:background="@drawable/settings_quote_background" android:order="20" w:line1="@string/pipeline64_hint1" w:line2="@string/pipeline64_hint2" w:keepPaddings="true" />
+	<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:title="@string/follow_track_sr" android:key="global_follow_sr" android:order="30" w:line1="@string/summary_follow_track_sr" />
+	<com.maxmpz.audioplayer.preference.RawTextPreference android:key="follow_sr_opts" android:order="31" w:iconAlignedHorCenter="true" w:summaryLineSpacing="10.0dip" w:reducedPad="true" />
+	<com.maxmpz.audioplayer.preference.RawTextPreference android:background="@drawable/settings_quote_background" android:order="50" w:line1="@string/pa_will_try_to_match_track_sr_or_upsample" w:keepPaddings="true" />
+	<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:title="@string/dsd_remaster" android:key="global_dsd_remaster" android:summary="@string/summary_dsd_remaster" android:order="60" />
+	<com.maxmpz.audioplayer.preference.RawTextPreference android:key="dsd_remaster_opts" android:order="61" w:iconAlignedTop="true" w:iconAlignedHorCenter="true" w:summaryLineSpacing="10.0dip" w:reducedPad="true" />
+	<com.maxmpz.audioplayer.preference.RawTextPreference android:background="@drawable/settings_quote_background" android:order="70" w:line1="@string/dsd_remaster_hint1" w:keepPaddings="true" />
+	<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:title="@string/perfect_bit_perfect" android:key="global_perfect_bit_perfect" android:summary="@string/summary_perfect_bit_perfect" android:order="80" />
+	<com.maxmpz.audioplayer.preference.RawTextPreference android:key="perfect_bit_perfect_opts" android:order="81" w:iconAlignedTop="true" w:iconAlignedHorCenter="true" w:summaryLineSpacing="10.0dip" w:reducedPad="true" />
+	<com.maxmpz.audioplayer.preference.RawTextPreference android:background="@drawable/settings_quote_background" android:order="90" w:line1="@string/perfect_bit_perfect_hint1" w:line2="@string/perfect_bit_perfect_hint2" w:line3="@string/perfect_bit_perfect_hint3" w:keepPaddings="true" />
+	<Preference android:title="@string/pref_restore_defaults" android:key="restore_defaults" android:order="100" android:singleLineTitle="false" />
+</PreferenceScreen>

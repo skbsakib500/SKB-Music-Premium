@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:w="http://schemas.android.com/apk/res-auto">
+	<com.maxmpz.widget.base.SceneFastLayout android:id="@id/selection_menu_container" style="?TopSelectionMenuContainer">
+		<com.maxmpz.widget.player.SelectionMenuLayout android:id="@id/selection_menu_subcontainer" style="?SelectionMenuSubcontainer">
+			<com.maxmpz.widget.base.LoadableBehavior android:id="@id/behavior_selection_menu" android:layout="@layout/merge_selection_menu_inner" w:loadForScene="@id/scene_selection_menu" w:insertAt="thisPosition" />
+		</com.maxmpz.widget.player.SelectionMenuLayout>
+	</com.maxmpz.widget.base.SceneFastLayout>
+</merge>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.maxmpz.widget.list.ItemSceneFastLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:w="http://schemas.android.com/apk/res-auto" style="?ItemEmptyList">
+	<com.maxmpz.widget.base.FastTextView android:id="@id/item_empty_list_text" style="?ItemLastLyricsItemText" />
+	<SceneParams w:scene="@id/scene_unsync" style="?ItemLastLyricsItemText_scene_unsync" />
+</com.maxmpz.widget.list.ItemSceneFastLayout>

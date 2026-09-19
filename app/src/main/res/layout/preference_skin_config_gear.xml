@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:w="http://schemas.android.com/apk/res-auto">
+	<View style="@style/SettingsDivider" />
+	<com.maxmpz.widget.base.FastButton android:gravity="center|left" android:id="@id/settings_button" android:background="?android:selectableItemBackground" android:padding="6.0dip" android:focusable="true" android:clickable="true" android:duplicateParentState="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-4.0dip" android:tint="?android:textColorPrimary" android:text="@string/pref_skin_settings" android:drawable="@drawable/settings_24dp" w:drawablePaddingStart="6.0dip" w:drawableTint="?android:textColorPrimary" w:animOnClick="true" />
+</merge>

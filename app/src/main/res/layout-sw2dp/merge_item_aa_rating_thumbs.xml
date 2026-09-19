@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:w="http://schemas.android.com/apk/res-auto">
+	<com.maxmpz.widget.player.list.LikeUnlikeLayout android:id="@id/rating" style="?ItemLikeUnlikeLayout">
+		<com.maxmpz.widget.base.FastCheckBox android:id="@id/like" android:contentDescription="@string/like" style="?ItemLike" />
+		<SceneParams w:scene="@id/scene_aa" w:scene_2="@id/scene_aa_vis" w:scene_3="@id/scene_aa_playing" w:scene_4="@id/scene_lyrics" style="?ItemLike_scene_aa" />
+		<SceneParams w:scene="@id/scene_item_menu" w:scene_2="@id/scene_item_menu_lu" style="?ItemLike_scene_item_menu" />
+		<com.maxmpz.widget.base.FastCheckBox android:id="@id/unlike" android:contentDescription="@string/unlike" style="?ItemUnlike" />
+		<SceneParams w:scene="@id/scene_aa" w:scene_2="@id/scene_aa_vis" w:scene_3="@id/scene_aa_playing" w:scene_4="@id/scene_lyrics" style="?ItemUnlike_scene_aa" />
+		<SceneParams w:scene="@id/scene_item_menu" w:scene_2="@id/scene_item_menu_lu" style="?ItemUnlike_scene_item_menu" />
+	</com.maxmpz.widget.player.list.LikeUnlikeLayout>
+	<SceneParams w:scene="@id/scene_aa" w:scene_2="@id/scene_aa_vis" w:scene_3="@id/scene_aa_playing" style="?ItemLikeUnlikeLayout_scene_aa" />
+	<SceneParams w:scene="@id/scene_grid" w:scene_2="@id/scene_grid_zoomed" w:scene_3="@id/scene_zoomed" w:scene_4="@id/scene_small" w:scene_5="@id/scene_1" w:scene_6="@id/scene_1_zoomed" style="?ItemLikeUnlikeLayout_scenes_invisible" />
+	<SceneParams w:scene="@id/scene_header" w:scene_2="@id/scene_header_1" w:scene_3="@id/scene_grid_1_alt_zoomed" w:scene_4="@id/scene_grid_1_zoomed" w:scene_5="@id/scene_grid_1" w:scene_6="@id/scene_grid_1_alt" style="?ItemLikeUnlikeLayout_scenes_invisible" />
+	<SceneParams w:scene="@id/scene_1_small" w:scene_2="@id/scene_1_small_no_aa" w:scene_3="@id/scene_small_no_aa" style="?ItemLikeUnlikeLayout_scenes_invisible" />
+	<SceneParams android:visibility="gone" w:scene="@id/scene_item_menu" style="?ItemLikeUnlikeLayout_scene_item_menu_lu" />
+	<SceneParams w:scene="@id/scene_item_menu_lu" style="?ItemLikeUnlikeLayout_scene_item_menu_lu" />
+	<SceneParams android:visibility="gone" w:scene="@id/scene_bottom_toolbar" />
+	<SceneParams w:scene="@id/scene_lyrics" style="?ItemLikeUnlikeLayout_scene_lyrics" />
+</merge>

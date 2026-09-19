@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:w="http://schemas.android.com/apk/res-auto" android:title="@string/settings" w:ignoreTitle="true">
+	<com.maxmpz.audioplayer.preference.ManageAppWarnPref android:key="manage_app_warn" w:skipSearch="true" />
+	<com.maxmpz.audioplayer.preference.RawTextPreference android:icon="@drawable/settings_excl_20dp_tinted" android:background="@drawable/settings_warn_background" android:key="perm_warn" w:skipSearch="true" w:iconAlignedTop="true" w:applyIconTint="false" w:iconAlignedHorCenter="true" />
+	<com.maxmpz.audioplayer.preference.LicenseStatusPref w:skipSearch="true" w:removeAsNeeded="true" />
+	<com.maxmpz.audioplayer.preference.BuyPlayFvPref android:background="@drawable/settings_feature_pak_background" android:key="buy_play_fv" w:skipSearch="true" w:removeAsNeeded="true" />
+	<com.maxmpz.audioplayer.preference.BuyRustoreFvPref android:background="@drawable/settings_feature_pak_background" android:key="buy_rustore_fv" w:skipSearch="true" w:removeAsNeeded="true" />
+	<com.maxmpz.audioplayer.preference.BuyHuaweiFvPref android:background="@drawable/settings_feature_pak_background" android:key="buy_huawei_fv" w:skipSearch="true" w:removeAsNeeded="true" />
+	<com.maxmpz.audioplayer.preference.FeaturePackPref android:background="@drawable/settings_feature_pak_background" android:key="fp1" w:skipSearch="true" w:removeAsNeeded="true" />
+	<com.maxmpz.audioplayer.preference.AlreadyPurchasedRedirectPref android:icon="@drawable/settings_restore_purchase_colored" android:title="@string/pref_already_purchased_q" android:key="already_purchased" android:summary="@string/pref_restore_purchase" w:target="already_purchased" w:skipSearch="true" w:applyIconTint="false" w:removeAsNeeded="true" />
+	<com.maxmpz.audioplayer.preference.FeaturePackRedirectPref android:icon="?settings_pak" android:title="@string/feature_packages" android:key="feature_packages" android:summary="@string/summary_feature_packages" w:target="feature_packages" w:applyIconTint="false" w:removeAsNeeded="true" />
+	<PreferenceCategory android:title="@string/settings">
+		<com.maxmpz.audioplayer.preference.RedirectPreference android:icon="?settings_look_feel" android:title="@string/pref_look_and_feel" android:key="ui" android:summary="@string/pref_summary_look_and_feel" w:target="ui" w:applyIconTint="false" />
+		<com.maxmpz.audioplayer.preference.RedirectPreference android:icon="?settings_audio" android:title="@string/pref_audio_engine" android:key="audio" android:summary="@string/pref_summary_pref_audio_engine" w:target="audio" w:applyIconTint="false" />
+		<com.maxmpz.audioplayer.preference.RedirectPreference android:icon="?settings_vis" android:title="@string/visualization" android:key="vis" android:summary="@string/pref_summary_visualization" w:target="vis" w:applyIconTint="false" />
+		<com.maxmpz.audioplayer.preference.RedirectPreference android:icon="?settings_aa_bg" android:title="@string/pref_aa_bg_options" android:key="aa_bg" android:summary="@string/pref_summary_aa_bg_options" w:target="aa_bg" w:applyIconTint="false" />
+		<com.maxmpz.audioplayer.preference.RedirectPreference android:icon="?settings_aa" android:title="@string/pref_album_art_options" android:key="aa" android:summary="@string/pref_summary_album_art_options" w:target="aa" w:applyIconTint="false" />
+		<com.maxmpz.audioplayer.preference.RedirectPreference android:icon="?settings_folders_library" android:title="@string/pref_library" android:key="folders_library" android:summary="@string/pref_summary_folders_library" w:target="library" w:applyIconTint="false" />
+		<com.maxmpz.audioplayer.preference.RedirectPreference android:icon="?settings_headset" android:title="@string/pref_headset_bt" android:key="headset" android:summary="@string/pref_summary_headset_bt" w:target="headset" w:applyIconTint="false" />
+		<com.maxmpz.audioplayer.preference.RedirectPreference android:icon="?settings_lockscreen" android:title="@string/pref_lock_screen" android:key="lockscreen" android:summary="@string/pref_summary_lock_screen" w:target="lockscreen" w:applyIconTint="false" />
+		<com.maxmpz.audioplayer.preference.RedirectPreference android:icon="?settings_misc" android:title="@string/pref_misc" android:key="misc" android:summary="@string/pref_summary_misc" w:target="misc" w:applyIconTint="false" />
+		<com.maxmpz.audioplayer.preference.RedirectPreference android:icon="?settings_general" android:title="@string/pref_about" android:key="general" android:summary="@string/pref_summary_about" w:target="general" w:applyIconTint="false" />
+	</PreferenceCategory>
+	<PreferenceCategory android:title="@string/pref_other" android:key="other">
+		<com.maxmpz.audioplayer.preference.RedirectPreference android:icon="@drawable/settings_peq_app_icon" android:title="@string/equalizer_for_spot_ytm_etc" android:key="equalizer_for_spot_ytm_etc" android:summary="@string/summary_equalizer_for_spot_ytm_etc" w:target="https://play.google.com/store/apps/details?id=com.maxmpz.equalizer&amp;referrer=utm_source%3Dapp%26utm_medium%3Dapp%26utm_campaign%3Dpa1" w:applyIconTint="false" />
+		<com.maxmpz.audioplayer.preference.RedirectPreference android:icon="?settings_support" android:title="@string/get_support" android:key="get_support" w:target="support" w:applyIconTint="false" />
+		<Preference android:icon="?settings_export" android:persistent="false" android:title="@string/pref_settings_export" android:key="settings_export" />
+		<Preference android:icon="?settings_import" android:persistent="false" android:title="@string/pref_settings_import" android:key="settings_import" />
+		<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:icon="?settings_send_errors" android:title="@string/pref_send_errors" android:key="send_errors" android:summary="@string/pref_summary_send_errors" android:defaultValue="true" w:searchSummary="" />
+	</PreferenceCategory>
+</PreferenceScreen>

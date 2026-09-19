@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.maxmpz.widget.player.list.TextItemView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:w="http://schemas.android.com/apk/res-auto" style="?ItemEqPreset">
+	<com.maxmpz.widget.player.FrequencyResponseScroller android:id="@id/frs" android:importantForAccessibility="no" style="?ItemPopupListFrs" />
+	<com.maxmpz.widget.base.BusActionButton android:id="@id/lock" style="?ItemEqPresetLock" />
+	<com.maxmpz.widget.base.FastCheckBoxOnly android:id="@id/select_box" style="?ItemEqPresetSelectBox" />
+	<com.maxmpz.audioplayer.widget.MarqueeFastTextView android:id="@id/title" style="?ItemEqPresetTitle_2line" />
+	<com.maxmpz.widget.base.FastTextView android:id="@id/line2" style="?ItemEqPresetLine2_3line" />
+	<com.maxmpz.widget.base.InvisibleView style="?ItemPopupListMicroIconSpace" />
+	<com.maxmpz.widget.base.FastTextView android:id="@id/speaker" android:drawable="?pre_speaker" style="?ItemPopupListMicroIcon" />
+	<com.maxmpz.widget.base.FastTextView android:id="@id/wired" android:drawable="?pre_wired" style="?ItemPopupListMicroIcon" />
+	<com.maxmpz.widget.base.FastTextView android:id="@id/bt" android:drawable="?pre_bt" style="?ItemPopupListMicroIcon" />
+	<com.maxmpz.widget.base.FastTextView android:id="@id/usb" android:drawable="?pre_usb" style="?ItemPopupListMicroIcon" />
+	<com.maxmpz.widget.base.FastTextView android:id="@id/chromecast" android:drawable="?pre_chromecast" style="?ItemPopupListMicroIcon" />
+	<com.maxmpz.widget.base.FastTextView android:id="@id/other" android:drawable="?pre_other" style="?ItemPopupListMicroIcon" />
+	<com.maxmpz.widget.base.FastTextView android:id="@id/song" android:drawable="?pre_song" style="?ItemPopupListMicroIcon" />
+</com.maxmpz.widget.player.list.TextItemView>

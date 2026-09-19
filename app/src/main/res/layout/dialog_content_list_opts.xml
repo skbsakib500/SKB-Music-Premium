@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:w="http://schemas.android.com/apk/res-auto">
+	<com.maxmpz.widget.base.BusActionButton android:id="@id/button" android:drawable="@drawable/settings_24dp" android:contentDescription="@string/settings" w:busId="@id/bus_app_cmd" w:msgId="@id/cmd_app_open_settings" w:string="library" style="?DialogSettingsGearIcon" />
+	<com.maxmpz.widget.base.FastLayout android:scrollbars="vertical" android:clipChildren="false" android:clipToPadding="false" style="?DialogContent">
+		<com.maxmpz.widget.base.FastLayout android:id="@id/group_layout" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" w:layout_unlimitedMeasure="true">
+			<com.maxmpz.widget.base.FastLayout android:id="@id/library_layout" android:visibility="gone" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" w:layout_consumeSpace="vertical">
+				<com.maxmpz.widget.player.HtmlTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" w:drawableTint="?colorIconPrimary" w:layout_consumeSpace="vertical" w:html="@string/list_opts_library_hint" style="?Hint" />
+			</com.maxmpz.widget.base.FastLayout>
+			<com.maxmpz.widget.base.FastLayout android:id="@id/search_layout" android:visibility="gone" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" w:layout_consumeSpace="vertical" />
+			<com.maxmpz.widget.base.FastLayout android:id="@id/list_memory_layout" android:visibility="gone" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" w:layout_consumeSpace="vertical">
+				<TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="@string/list_memory" w:layout_consumeSpace="vertical" style="?SubheadText" />
+				<com.maxmpz.widget.base.FastTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:drawable="?keep_list_pos_12dp" w:drawableOnly="true" w:drawableTint="?colorIconPrimary" w:layout_consumeSpace="horizontal" />
+				<CheckBox android:id="@id/list_pos" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/list_pos" w:layout_consumeSpace="vertical|reset_horizontal" />
+				<com.maxmpz.widget.base.FastTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:drawable="?keep_track_pos_12dp" w:drawableOnly="true" w:drawableTint="?colorIconPrimary" w:layout_consumeSpace="horizontal" />
+				<CheckBox android:id="@id/per_track_progress" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/per_track_progress" w:layout_consumeSpace="vertical|reset_horizontal" />
+				<com.maxmpz.widget.player.HtmlTextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" w:drawableTint="?colorIconPrimary" w:layout_consumeSpace="vertical" w:html="@string/list_opts_memory_hint" w:html_2="@string/per_track_progress_hint" style="?Hint" />
+			</com.maxmpz.widget.base.FastLayout>
+			<com.maxmpz.widget.base.FastLayout android:id="@id/duration_group" android:visibility="gone" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" w:layout_consumeSpace="vertical">
+				<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="@string/min_duration" style="?SubheadText" />
+				<TextView android:id="@id/time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" w:layout_attachRight="parent" w:layout_consumeSpace="vertical" style="?SubheadText" />
+				<SeekBar android:id="@id/seekbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" w:layout_consumeSpace="vertical" />
+			</com.maxmpz.widget.base.FastLayout>
+			<com.maxmpz.widget.base.FastLayout android:id="@id/limit_group" android:visibility="gone" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" w:layout_consumeSpace="vertical">
+				<TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="@string/max_items" w:layout_consumeSpace="vertical" style="?SubheadText" />
+				<RadioButton android:tag="200" android:layout_height="wrap_content" android:text="200" w:layout_widthPercent="50.0%" w:layout_consumeSpace="horizontal|reset_auto" style="@style/ListOptsRadioButton" />
+				<RadioButton android:tag="500" android:layout_height="wrap_content" android:text="500" w:layout_widthPercent="50.0%" w:layout_consumeSpace="horizontal|reset_auto" style="@style/ListOptsRadioButton" />
+				<RadioButton android:tag="1000" android:layout_height="wrap_content" android:text="1000" w:layout_widthPercent="50.0%" w:layout_consumeSpace="horizontal|reset_auto" style="@style/ListOptsRadioButton" />
+				<RadioButton android:tag="\ 2147483647" android:layout_height="wrap_content" android:text="@string/no_items_limit" w:layout_widthPercent="50.0%" w:layout_consumeSpace="horizontal|reset_auto" style="@style/ListOptsRadioButton" />
+			</com.maxmpz.widget.base.FastLayout>
+			<com.maxmpz.widget.base.FastLayout android:id="@id/sort_group" android:visibility="gone" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" w:layout_consumeSpace="vertical">
+				<TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="@string/sort" w:layout_consumeSpace="vertical" style="?SubheadText" />
+			</com.maxmpz.widget.base.FastLayout>
+			<com.maxmpz.widget.base.FastLayout android:id="@id/layout_group" android:visibility="gone" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" w:layout_consumeSpace="vertical">
+				<TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="@string/layout" w:layout_consumeSpace="vertical" style="?SubheadText" />
+				<CheckBox android:id="@id/compact_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/compact_header" w:layout_consumeSpace="vertical|reset_horizontal" />
+				<CheckBox android:id="@id/show_titles_only" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/show_titles_only" w:layout_consumeSpace="vertical|reset_horizontal" />
+			</com.maxmpz.widget.base.FastLayout>
+			<com.maxmpz.widget.base.FastLayout android:id="@id/zoom_group" android:visibility="gone" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" w:layout_consumeSpace="vertical">
+				<TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/view_as" w:layout_consumeSpace="vertical" style="?SubheadText" />
+				<com.maxmpz.widget.player.HtmlTextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:drawableLeft="@drawable/info_16dp" android:drawablePadding="4.0dip" w:drawableTint="?colorIconPrimary" w:layout_consumeSpace="vertical" w:html="@string/h_pinch_to_zoom" style="?Hint" />
+			</com.maxmpz.widget.base.FastLayout>
+		</com.maxmpz.widget.base.FastLayout>
+		<com.maxmpz.widget.base.ScrollingBehavior w:disallowParentScroll="true" />
+	</com.maxmpz.widget.base.FastLayout>
+</merge>

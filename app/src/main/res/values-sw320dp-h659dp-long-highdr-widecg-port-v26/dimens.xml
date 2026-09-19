@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<dimen name="PlainSeekbar_marginTop">0.0dip</dimen>
+<dimen name="TopPlay_maxSize">94.0dip</dimen>
+<dimen name="TopSmallButton_size">40.0dip</dimen>
+<dimen name="TopMediumButton_size">64.0dip</dimen>
+<dimen name="TopPlayPauseBehind_size">50.0dip</dimen>
+<dimen name="TopPauseMoreButtons_maxSize_scene_playing">72.0dip</dimen>
+<dimen name="CenterDialogFrame_maxHeight">630.0dip</dimen>
+<dimen name="Alt_TopPlay_maxSize">94.0dip</dimen>
+<dimen name="Alt_TopPauseMoreButtons_maxSize_scene_playing">72.0dip</dimen>
+<dimen name="Alt_TopSmallButton_size">40.0dip</dimen>
+<dimen name="Alt_TopMediumButton_size">64.0dip</dimen>
+</resources>

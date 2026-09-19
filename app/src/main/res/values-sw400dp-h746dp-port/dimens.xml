@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<dimen name="Alt2_TopAABounds_marginBottom">104.0sp</dimen>
+<dimen name="Alt_TopPlay_maxSize">92.0dip</dimen>
+<dimen name="Alt_TopPauseMoreButtons_maxSize_scene_playing">76.0dip</dimen>
+<dimen name="Alt_TopSmallButton_size">46.0dip</dimen>
+<dimen name="Alt_TopMediumButton_size">62.0dip</dimen>
+<dimen name="Alt_PlainSeekbar_buttons_offset">38.0dip</dimen>
+</resources>

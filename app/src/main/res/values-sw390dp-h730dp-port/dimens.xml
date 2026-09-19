@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<dimen name="TopPlay_maxSize">100.0dip</dimen>
+<dimen name="TopSmallButton_size">48.0dip</dimen>
+<dimen name="TopMediumButton_size">64.0dip</dimen>
+<dimen name="TopPlayPauseBehind_size">75.0dip</dimen>
+<dimen name="TopPauseMoreButtons_maxSize_scene_playing">88.0dip</dimen>
+</resources>

@@ -1,17 +1,146 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Amulet Premium Palette -->
-    <color name="amulet_bg">#FF0A0E1A</color>
-    <color name="amulet_surface">#FF121827</color>
-    <color name="amulet_surface_high">#FF1A2236</color>
-    <color name="amulet_primary">#FF10D9A0</color>
-    <color name="amulet_primary_dark">#FF0A9A72</color>
-    <color name="amulet_secondary">#FFF4C430</color>
-    <color name="amulet_tertiary">#FF9D4EDD</color>
-    <color name="amulet_text">#FFF0F4F8</color>
-    <color name="amulet_text_muted">#FF8892A6</color>
-    <color name="amulet_divider">#FF1F2A44</color>
-    <color name="amulet_error">#FFFF6B6B</color>
-
-    <color name="ic_launcher_background">#FF0A0E1A</color>
+<color name="abc_search_url_text_normal">#ff7fa87f</color>
+<color name="abc_search_url_text_pressed">@android:color/black</color>
+<color name="abc_search_url_text_selected">@android:color/black</color>
+<color name="accent_material_dark">@color/material_deep_teal_200</color>
+<color name="accent_material_light">@color/material_deep_teal_500</color>
+<color name="androidx_core_ripple_material_light">#1f000000</color>
+<color name="androidx_core_secondary_text_default_material_light">#8a000000</color>
+<color name="background_floating_material_dark">@color/material_grey_800</color>
+<color name="background_floating_material_light">@android:color/white</color>
+<color name="background_material_dark">@color/material_grey_850</color>
+<color name="background_material_light">@color/material_grey_50</color>
+<color name="bright_foreground_disabled_material_dark">#80ffffff</color>
+<color name="bright_foreground_disabled_material_light">#80000000</color>
+<color name="bright_foreground_material_dark">@android:color/white</color>
+<color name="bright_foreground_material_light">@android:color/black</color>
+<color name="button_material_dark">#ff5a595b</color>
+<color name="button_material_light">#ffd6d7d7</color>
+<color name="cast_expanded_controller_ad_break_marker_color">#fffec92f</color>
+<color name="cast_expanded_controller_ad_in_progress_text_color">#ffffffff</color>
+<color name="cast_expanded_controller_ad_label_background_color">#fffec92f</color>
+<color name="cast_expanded_controller_ad_label_text_color">#ffffffff</color>
+<color name="cast_expanded_controller_live_indicator_color">#ffd0021b</color>
+<color name="cast_expanded_controller_loading_indicator_color">#ffffffff</color>
+<color name="cast_intro_overlay_background_color">#cc000000</color>
+<color name="cast_intro_overlay_button_background_color">#bb33b5e5</color>
+<color name="cast_mini_controller_loading_indicator_color">#ff000000</color>
+<color name="cast_seekbar_progress_thumb_color">#ffd0021b</color>
+<color name="cast_seekbar_secondary_progress_color">#a6ffffff</color>
+<color name="cast_seekbar_tooltip_background_color">#e6616161</color>
+<color name="cast_seekbar_unseekable_progress_color">#4dffffff</color>
+<color name="color_widget_ripple">#ffaaaaaa</color>
+<color name="default_circle_indicator_fill_color">#ffffffff</color>
+<color name="default_circle_indicator_page_color">#ffaaaaaa</color>
+<color name="default_circle_indicator_stroke_color">#ffaaaaaa</color>
+<color name="error_color_material_dark">#ffff7043</color>
+<color name="error_color_material_light">#ffff5722</color>
+<color name="foreground_material_dark">@android:color/white</color>
+<color name="foreground_material_light">@android:color/black</color>
+<color name="highlighted_text_material_dark">#6680cbc4</color>
+<color name="highlighted_text_material_light">#66009688</color>
+<color name="material_deep_teal_200">#ff80cbc4</color>
+<color name="material_deep_teal_500">#ff008577</color>
+<color name="material_grey_100">#fff5f5f5</color>
+<color name="material_grey_50">#fffafafa</color>
+<color name="material_grey_600">#ff757575</color>
+<color name="material_grey_800">#ff424242</color>
+<color name="material_grey_850">#ff303030</color>
+<color name="material_grey_900">#ff212121</color>
+<color name="mr_cast_meta_default_text_color">#ffffffff</color>
+<color name="mr_cast_route_divider_dark">#803c4043</color>
+<color name="mr_cast_route_divider_light">#1425272b</color>
+<color name="mr_dynamic_dialog_header_text_color_dark">#ffbdc1c6</color>
+<color name="mr_dynamic_dialog_header_text_color_light">#ff80868b</color>
+<color name="mr_dynamic_dialog_route_text_color_dark">#ffffffff</color>
+<color name="mr_dynamic_dialog_route_text_color_light">#ff25272b</color>
+<color name="no_drawable0000">#00000000</color>
+<color name="notification_black_1">#ff000000</color>
+<color name="notification_black_2">#ff555555</color>
+<color name="notification_white_1">#ffffffff</color>
+<color name="notification_white_2">#ffaaaaaa</color>
+<color name="primary_dark_material_dark">@android:color/black</color>
+<color name="primary_dark_material_light">@color/material_grey_600</color>
+<color name="primary_material_dark">@color/material_grey_900</color>
+<color name="primary_material_light">@color/material_grey_100</color>
+<color name="primary_text_default_material_dark">#ffffffff</color>
+<color name="primary_text_default_material_light">#de000000</color>
+<color name="primary_text_disabled_material_dark">#4dffffff</color>
+<color name="primary_text_disabled_material_light">#39000000</color>
+<color name="ripple_material_dark">#33ffffff</color>
+<color name="ripple_material_light">#1f000000</color>
+<color name="secondary_text_default_material_dark">#b3ffffff</color>
+<color name="secondary_text_default_material_light">#8a000000</color>
+<color name="secondary_text_disabled_material_dark">#36ffffff</color>
+<color name="secondary_text_disabled_material_light">#24000000</color>
+<color name="switch_thumb_disabled_material_dark">#ff616161</color>
+<color name="switch_thumb_disabled_material_light">#ffbdbdbd</color>
+<color name="switch_thumb_normal_material_dark">#ffbdbdbd</color>
+<color name="switch_thumb_normal_material_light">#fff1f1f1</color>
+<color name="tooltip_background_dark">#e6616161</color>
+<color name="tooltip_background_light">#e6ffffff</color>
+<color name="vpi__background_holo_light">#fff3f3f3</color>
+<color name="vpi__bright_foreground_disabled_holo_dark">#ff4c4c4c</color>
+<color name="vpi__bright_foreground_holo_dark">@color/vpi__background_holo_light</color>
+<color name="widget_changed_dot_color">#ffffffff</color>
+<color name="widget_default_bg">#00000000</color>
+<color name="widget_default_icons_color">#ffffffff</color>
+<color name="widget_options_bg_color">#aa000000</color>
+<color name="widget_text_color_1">#ffe4f2ff</color>
+<item type="color" name="dummy_ae_5">false</item>
+<item type="color" name="dummy_ae_6">false</item>
+<item type="color" name="dummy_ae_1d">false</item>
+<item type="color" name="dummy_ae_24">false</item>
+<item type="color" name="dummy_ae_25">false</item>
+<item type="color" name="dummy_ae_2b">false</item>
+<item type="color" name="dummy_ae_2c">false</item>
+<item type="color" name="dummy_ae_2e">false</item>
+<item type="color" name="dummy_ae_32">false</item>
+<item type="color" name="dummy_ae_35">false</item>
+<item type="color" name="dummy_ae_36">false</item>
+<item type="color" name="dummy_ae_37">false</item>
+<item type="color" name="dummy_ae_3a">false</item>
+<item type="color" name="dummy_ae_3b">false</item>
+<item type="color" name="dummy_ae_3c">false</item>
+<item type="color" name="dummy_ae_43">false</item>
+<item type="color" name="dummy_ae_44">false</item>
+<item type="color" name="dummy_ae_45">false</item>
+<item type="color" name="dummy_ae_46">false</item>
+<item type="color" name="dummy_ae_47">false</item>
+<item type="color" name="dummy_ae_48">false</item>
+<item type="color" name="dummy_ae_49">false</item>
+<item type="color" name="dummy_ae_4a">false</item>
+<item type="color" name="dummy_ae_4b">false</item>
+<item type="color" name="dummy_ae_4c">false</item>
+<item type="color" name="dummy_ae_4d">false</item>
+<item type="color" name="dummy_ae_52">false</item>
+<item type="color" name="dummy_ae_53">false</item>
+<item type="color" name="dummy_ae_54">false</item>
+<item type="color" name="dummy_ae_55">false</item>
+<item type="color" name="dummy_ae_57">false</item>
+<item type="color" name="dummy_ae_65">false</item>
+<item type="color" name="dummy_ae_66">false</item>
+<item type="color" name="dummy_ae_67">false</item>
+<item type="color" name="dummy_ae_6b">false</item>
+<item type="color" name="dummy_ae_71">false</item>
+<item type="color" name="dummy_ae_72">false</item>
+<item type="color" name="dummy_ae_74">false</item>
+<item type="color" name="dummy_ae_75">false</item>
+<item type="color" name="dummy_ae_76">false</item>
+<item type="color" name="dummy_ae_77">false</item>
+<item type="color" name="dummy_ae_7a">false</item>
+<item type="color" name="dummy_ae_7b">false</item>
+<item type="color" name="dummy_ae_7e">false</item>
+<item type="color" name="dummy_ae_7f">false</item>
+<item type="color" name="dummy_ae_83">false</item>
+<item type="color" name="dummy_ae_86">false</item>
+<item type="color" name="dummy_ae_87">false</item>
+<item type="color" name="dummy_ae_a2">false</item>
+<item type="color" name="dummy_ae_a3">false</item>
+<item type="color" name="dummy_ae_a6">false</item>
+<item type="color" name="dummy_ae_a8">false</item>
+<item type="color" name="dummy_ae_a9">false</item>
+<item type="color" name="dummy_ae_aa">false</item>
+<item type="color" name="dummy_ae_ac">false</item>
 </resources>

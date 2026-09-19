@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.maxmpz.widget.base.SceneFastLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:w="http://schemas.android.com/apk/res-auto" android:id="@id/container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<LinearLayout android:gravity="left" android:layout_gravity="center" android:id="@id/initializing" android:background="@drawable/startup_panel_bg" android:padding="8.0dip" android:visibility="gone" android:layout_width="@dimen/init_panel_width" android:layout_height="wrap_content" android:layout_centerInParent="true" android:scaleX="0.75" android:scaleY="0.75">
+		<ProgressBar android:layout_gravity="center_vertical" android:id="@id/progress_bar" android:layout_width="42.0dip" android:layout_height="42.0dip" />
+		<com.maxmpz.widget.base.FastTextView android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="42.0dip" android:text="@string/initializing" />
+	</LinearLayout>
+	<com.maxmpz.widget.base.SceneParams android:visibility="visible" android:scaleX="1.0" android:scaleY="1.0" w:scene="@id/scene_startup_progress" />
+</com.maxmpz.widget.base.SceneFastLayout>

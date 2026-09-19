@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.maxmpz.widget.player.list.SeparatorItemView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:w="http://schemas.android.com/apk/res-auto" style="?SeparatorWithButton">
+	<com.maxmpz.widget.base.FastTextView android:id="@id/title" style="?SeparatorWithButtonTitle" />
+	<com.maxmpz.widget.base.FastButton android:id="@id/line2" style="?SeparatorWithButtonButton" />
+	<com.maxmpz.widget.base.NonOverlappingView style="?SeparatorLine" />
+</com.maxmpz.widget.player.list.SeparatorItemView>

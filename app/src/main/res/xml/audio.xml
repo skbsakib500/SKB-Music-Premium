@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:z="http://schemas.android.com/apk/res-auto" android:title="@string/pref_audio_engine">
+	<PreferenceScreen android:title="@string/audio_info" android:key="audio_info" android:summary="@string/pref_summary_audio_info">
+		<intent android:targetPackage="@string/edition_pak_name" android:targetClass="com.maxmpz.audioplayer.dialogs.AudioInfoActivity" />
+	</PreferenceScreen>
+	<com.maxmpz.audioplayer.preference.RedirectPreference android:title="@string/pref_fade_and_gapless" android:key="fade" android:summary="@string/pref_summary_fade_and_gapless" z:target="fade" />
+	<com.maxmpz.audioplayer.preference.RedirectPreference android:title="@string/pref_replay_gain" android:key="rg" android:summary="@string/pref_summary_replay_gain" z:target="rg" />
+	<com.maxmpz.audioplayer.preference.RedirectPreference android:title="@string/pref_audio_focus" android:key="audio_focus" android:summary="@string/pref_summary_audio_focus" z:target="audio_focus" />
+	<com.maxmpz.audioplayer.preference.RedirectPreference android:title="@string/equalizer" android:summary="@string/pref_summary_equalizer" z:target="audio_equ" />
+	<com.maxmpz.audioplayer.preference.RedirectPreference android:title="@string/pref_resampler" android:key="audio_resampler" android:summary="@string/pref_resampler_summary" z:target="audio_resampler" />
+	<com.maxmpz.audioplayer.preference.RedirectPreference android:title="@string/pref_direct_volume_control" android:key="audio_dvc" android:summary="@string/pref_summary_dvc" z:target="audio_dvc" />
+	<com.maxmpz.audioplayer.preference.RedirectPreference android:title="@string/audio_outputs" android:key="audio_outputs2" android:summary="@string/pref_summary_audio_output" z:target="audio_outputs2" />
+	<com.maxmpz.audioplayer.preference.RedirectPreference android:title="@string/bit_perfect" android:key="audio_bit_perfect" android:summary="@string/summary_bit_perfect" z:target="audio_bit_perfect" />
+	<com.maxmpz.audioplayer.preference.RedirectPreference android:title="@string/pref_advanced_tweaks" android:key="audio_tweaks" android:summary="@string/pref_summary_advanced_tweaks" z:target="audio_tweaks" />
+</PreferenceScreen>

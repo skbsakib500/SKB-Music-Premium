@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<dimen name="EqReverbPanel12_paddingLR">12.0dip</dimen>
+<dimen name="eq_frs_height">64.0dip</dimen>
+<dimen name="TopPlay_maxSize">100.0dip</dimen>
+<dimen name="TopSmallButton_size">48.0dip</dimen>
+<dimen name="TopMediumButton_size">64.0dip</dimen>
+<dimen name="TopPlayPauseBehind_size">75.0dip</dimen>
+<dimen name="TopWaveseek_maxHeight">184.0dip</dimen>
+<dimen name="TopPauseMoreButtons_maxSize_scene_playing">92.0dip</dimen>
+<dimen name="TopMetaInfoLayout_marginBottom">8.0dip</dimen>
+<dimen name="Alt_TopWaveseek_paddingTB">12.0dip</dimen>
+<dimen name="Alt_TopPlay_maxSize">100.0dip</dimen>
+<dimen name="Alt_TopPauseMoreButtons_maxSize_scene_playing">92.0dip</dimen>
+<dimen name="EqInfoBase_marginTB">8.0dip</dimen>
+<dimen name="eq_top_margin">8.0dip</dimen>
+</resources>

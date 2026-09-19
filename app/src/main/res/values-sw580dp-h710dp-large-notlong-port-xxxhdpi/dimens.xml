@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<dimen name="Alt2_TopAABounds_marginBottom">104.0sp</dimen>
+<dimen name="eq_frs_height">38.0dip</dimen>
+<dimen name="EqButton_height">30.0dip</dimen>
+<dimen name="TopPlay_maxSize">91.0dip</dimen>
+<dimen name="TopSmallButton_size">44.0dip</dimen>
+<dimen name="TopMediumButton_size">60.0dip</dimen>
+<dimen name="TopActionModeBar_marginTop">4.0dip</dimen>
+<dimen name="Alt_TopPlay_maxSize">91.0dip</dimen>
+<dimen name="Alt_TopPauseMoreButtons_maxSize_scene_playing">76.0dip</dimen>
+<dimen name="Alt_TopSmallButton_size">44.0dip</dimen>
+<dimen name="Alt_TopMediumButton_size">60.0dip</dimen>
+<dimen name="PlainSeekbar_buttons_offset">32.0dip</dimen>
+<dimen name="Alt_PlainSeekbar_buttons_offset">28.0dip</dimen>
+<dimen name="PlainSeekbar_marginBottom">0.0dip</dimen>
+<dimen name="Alt_PlainSeekbar_marginBottom">0.0dip</dimen>
+<dimen name="EqToneRoundKnobLayout_maxSize">100.0dip</dimen>
+<dimen name="Alt_TopListSubstyle_aaMarginBottom">248.0dip</dimen>
+<dimen name="ListSubstyleBase2_aaMarginBottom">248.0dip</dimen>
+</resources>

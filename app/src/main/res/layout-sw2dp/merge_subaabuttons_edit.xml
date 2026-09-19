@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:w="http://schemas.android.com/apk/res-auto">
+	<com.maxmpz.widget.base.Shim style="@style/SubAAButtonsEditShim" />
+	<com.maxmpz.widget.base.SceneFastLayout android:id="@id/sub_aa_buttons_edit_top_container" style="@style/SubAAButtonsEditTopContainer">
+		<com.maxmpz.widget.base.FastLayout android:id="@id/sub_aa_buttons_edit_panel" style="@style/SubAAButtonsEditPanel">
+			<com.maxmpz.widget.base.BusActionButton android:contentDescription="@string/settings" w:busId="@id/bus_app_cmd" w:msgId="@id/cmd_app_open_settings" w:string="ui_player#edit_player_screen_buttons" style="@style/SubAAButtonsSettingsButton" />
+			<SceneParams w:scene="@id/scene_visible" />
+			<com.maxmpz.widget.base.FastLayout android:id="@id/dialog_buttons" style="@style/SubAAButtonsEditDialogButtons">
+				<com.maxmpz.widget.base.BusCheckBox android:id="@id/centered" android:text="@string/centered" w:stateBusId="@id/sub_aa_buttons" w:booleanStateId="@id/state_centered" w:stateMsgId="@id/state_centered" w:checkCmdId="@id/cmd_set_centered" w:uncheckCmdId="@id/cmd_set_compact" style="@style/SubAAButtonsEditCenteredCheckBox" />
+				<SceneParams w:scene="@id/scene_visible" />
+				<com.maxmpz.widget.base.BusCheckBox android:id="@id/two_lines" android:text="@string/two_lines" w:stateBusId="@id/sub_aa_buttons" w:booleanStateId="@id/state_two_lines" w:stateMsgId="@id/state_two_lines" w:checkCmdId="@id/cmd_set_two_lines" w:uncheckCmdId="@id/cmd_set_two_lines" w:sendBooleanArg="checkedArg1" style="@style/SubAAButtonsEditTwoLinesCheckBox" />
+				<SceneParams w:scene="@id/scene_visible" />
+				<com.maxmpz.widget.base.BusCheckBox android:id="@id/small" android:text="@string/small_buttons_short" w:stateBusId="@id/sub_aa_buttons" w:booleanStateId="@id/state_small_buttons" w:stateMsgId="@id/state_small_buttons" w:checkCmdId="@id/cmd_set_small_buttons" w:uncheckCmdId="@id/cmd_set_small_buttons" w:sendBooleanArg="checkedArg1" style="@style/SubAAButtonsEditSmallCheckBox" />
+				<SceneParams w:scene="@id/scene_visible" />
+			</com.maxmpz.widget.base.FastLayout>
+			<SceneParams w:scene="@id/scene_visible" />
+			<com.maxmpz.widget.base.FastLayout style="@style/SubAAButtonsEditScrollableCont">
+				<com.maxmpz.widget.base.SceneFastLayout w:privateScene="true" style="@style/SubAAButtonsEditButtonsCont">
+					<com.maxmpz.widget.player.DraggableSourceBehavior w:draggableButtonContainerStyle="@style/EditableButtonContainer" w:draggableButtonLabelStyle="@style/EditableButtonLabel" w:draggableButtons="@array/sub_aa_buttons" w:draggingContainer="@id/top_container" w:draggingTarget="@id/sub_aa_buttons" />
+				</com.maxmpz.widget.base.SceneFastLayout>
+				<com.maxmpz.widget.base.ScrollingBehavior w:disallowParentScroll="true" w:noScrollbars="true" />
+			</com.maxmpz.widget.base.FastLayout>
+			<SceneParams w:scene="@id/scene_visible" />
+			<TextView android:id="@id/hint" android:text="@string/hold_and_drag_buttons" style="@style/SubAAButtonsEditHint" />
+			<SceneParams w:scene="@id/scene_visible" />
+		</com.maxmpz.widget.base.FastLayout>
+		<SceneParams w:scene="@id/scene_visible" style="@style/SubAAButtonsEditPanel_scene_visible" />
+		<SceneParams w:forId="parent" w:scene="defaultScene" w:scene_2="@id/scene_playing" w:scene_3="@id/scene_vis_temp_ui" w:scene_4="@id/scene_vis_w_ui" w:scene_5="@id/scene_vis" w:recalcChildren="dynamic" />
+	</com.maxmpz.widget.base.SceneFastLayout>
+</merge>

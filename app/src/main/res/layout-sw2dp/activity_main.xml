@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:w="http://schemas.android.com/apk/res-auto">
+	<com.maxmpz.audioplayer.widget.PlayerConnectionBehavior />
+	<com.maxmpz.audioplayer.widget.TopNavSceneFastLayout android:id="@id/top_container" style="?TopContainer">
+		<com.maxmpz.widget.player.MilkWidget android:id="@id/milk" style="?TopMilk" />
+		<com.maxmpz.audioplayer.list.ListWidget android:id="@id/list" style="?TopListWidget" />
+		<SceneParams android:visibility="visible" android:alpha="1.0" w:scene="@id/scene_lib" w:scene_2="@id/scene_search" w:scene_3="@id/scene_playing" w:scene_4="@id/scene_vis_temp_ui" />
+		<SceneParams android:visibility="visible" android:alpha="1.0" w:scene="@id/scene_lyrics" />
+		<SceneParams android:visibility="visible" android:alpha="0.25" w:scene="@id/scene_vis_w_ui" />
+		<SceneParams android:visibility="gone" w:scene="@id/scene_eq" w:scene_2="@id/scene_vis" />
+		<com.maxmpz.widget.player.AABounds android:id="@id/aa_bounds" style="?TopAABounds" />
+		<com.maxmpz.audioplayer.widget.MediaRouteButton android:id="@id/cc_button" style="?CcButton_MainUI" />
+		<SceneParams w:scene="@id/scene_playing" style="?CcButton_MainUI_scenes_playing" />
+		<SceneParams w:scene="@id/scene_vis_temp_ui" style="?CcButton_MainUI_scenes_vis_w_ui" />
+		<SceneParams android:alpha="0.25" w:scene="@id/scene_vis_w_ui" style="?CcButton_MainUI_scenes_vis_w_ui" />
+		<SceneParams w:scene="@id/scene_eq" w:scene_2="@id/scene_search" w:scene_3="@id/scene_lib" w:scene_4="@id/scene_lyrics" style="?CcButton_MainUI_scenes_invisible" />
+		<SceneParams w:scene="@id/scene_vis" style="?CcButton_MainUI_scene_vis" />
+		<StateAnimParams android:alpha="0.0" w:stateAnim="@id/popup_menu_item" />
+		<com.maxmpz.widget.base.FastLayout android:id="@id/waveseek_layout" style="?TopWaveseekLayout">
+			<com.maxmpz.widget.player.Waveseek android:id="@id/waveseek" android:contentDescription="@string/track_progress_scroller" style="?TopWaveseek">
+				<com.maxmpz.widget.base.NonOverlappingView android:id="@id/waveseek_cursor" style="?TopWaveseekCursor" />
+				<StateAnimParams w:stateAnim="@id/anim_waveseek_pressed" w:stateAnim_2="@id/anim_seeking" style="?TopWaveseekCursor_state_waveseek_pressed" />
+			</com.maxmpz.widget.player.Waveseek>
+			<com.maxmpz.widget.base.BusActionButton android:id="@id/play_pause_behind" android:importantForAccessibility="no" w:busId="@id/bus_player_cmd" w:msgId="@id/cmd_player_toggle_playing" w:longPressMsgId="@id/cmd_player_stop_playing" w:string="id/play_pause_behind" style="?TopPlayPauseBehind" />
+			<com.maxmpz.widget.base.BusActionButton android:id="@id/pause" android:contentDescription="@string/pause" w:busId="@id/bus_player_cmd" w:msgId="@id/cmd_player_toggle_playing" w:longPressMsgId="@id/cmd_player_stop_playing" w:string="id/pause" style="?TopPause" />
+			<SceneParams w:scene="@id/scene_playing" w:scene_2="@id/scene_vis_w_ui" w:scene_3="@id/scene_vis" w:scene_4="@id/scene_vis_temp_ui" style="?TopPause_scene_playing" />
+			<SceneParams w:scene="@id/scene_lyrics" w:baseScene="defaultScene" />
+			<StateAnimParams w:stateAnim="@id/anim_seeking" style="?TopPause_state_seeking" />
+			<com.maxmpz.widget.base.BusActionButton android:id="@id/play" android:contentDescription="@string/play" w:busId="@id/bus_player_cmd" w:msgId="@id/cmd_player_toggle_playing" w:longPressMsgId="@id/cmd_player_stop_playing" w:string="id/play" style="?TopPlay" />
+			<SceneParams w:scene="@id/scene_playing" w:scene_2="@id/scene_vis_w_ui" w:scene_3="@id/scene_vis" w:scene_4="@id/scene_vis_temp_ui" style="?TopPlay_scene_playing" />
+			<SceneParams w:scene="@id/scene_lyrics" w:baseScene="defaultScene" />
+			<StateAnimParams w:stateAnim="@id/anim_seeking" style="?TopPlay_state_seeking" />
+			<include android:layout="?TopWaveseekLayout_extraLayout" w:optional="true" />
+			<com.maxmpz.widget.player.Elapsed android:id="@id/track_elapsed" style="?TopTrackElapsed" />
+			<SceneParams w:scene="@id/scene_playing" w:scene_2="@id/scene_vis_temp_ui" w:scene_3="@id/scene_vis_w_ui" style="?TopTrackElapsed_scene_playing" />
+			<SceneParams w:scene="@id/scene_lyrics" w:baseScene="defaultScene" />
+			<SceneParams w:scene="@id/scene_eq" w:scene_2="@id/scene_search" w:scene_3="@id/scene_vis" w:scene_4="@id/scene_lib" />
+			<StateAnimParams w:stateAnim="@id/anim_seeking" style="?TopTrackElapsed_state_seeking" />
+			<com.maxmpz.widget.player.Duration android:id="@id/track_duration" android:importantForAccessibility="yes" style="?TopTrackDuration" />
+			<SceneParams w:scene="@id/scene_playing" w:scene_2="@id/scene_vis_temp_ui" w:scene_3="@id/scene_vis_w_ui" style="?TopTrackDuration_scene_playing" />
+			<SceneParams w:scene="@id/scene_lyrics" w:baseScene="defaultScene" />
+			<SceneParams w:scene="@id/scene_eq" w:scene_2="@id/scene_search" w:scene_3="@id/scene_vis" w:scene_4="@id/scene_lib" />
+			<StateAnimParams w:stateAnim="@id/anim_seeking" style="?TopTrackDuration_state_seeking" />
+		</com.maxmpz.widget.base.FastLayout>
+		<SceneParams w:scene="defaultScene" w:baseScene="defaultScene" w:recalcChildren="dynamic" />
+		<SceneParams w:scene="@id/scene_lyrics" w:baseScene="defaultScene" />
+		<SceneParams w:scene="@id/scene_lib" style="?TopWaveseekLayout_scene_lib" />
+		<SceneParams w:scene="@id/scene_playing" w:scene_2="@id/scene_vis_temp_ui" w:baseScene="defaultScene" w:recalcChildren="dynamic" style="?TopWaveseekLayout_scenes_playing" />
+		<SceneParams android:alpha="0.25" w:scene="@id/scene_vis_w_ui" w:baseScene="defaultScene" w:recalcChildren="dynamic" style="?TopWaveseekLayout_scenes_playing" />
+		<SceneParams w:scene="@id/scene_eq" w:scene_2="@id/scene_search" w:scene_3="@id/scene_vis" style="?TopWaveseekLayout_scenes_invisible" />
+		<include android:layout="?TopContainer_extraLayout" w:optional="true" />
+		<include android:layout="?TopContainer_metaLayout" w:optional="true" />
+		<com.maxmpz.widget.list.ListScrollerView android:id="@id/list_scroller" android:contentDescription="@string/pref_az_scroll" style="?TopListScrollerView" />
+		<SceneParams w:scene="@id/scene_lyrics" w:baseScene="defaultScene" w:recalcChildren="dynamic" />
+		<SceneParams android:visibility="visible" android:alpha="1.0" w:scene="@id/scene_lib" w:scene_2="@id/scene_search" w:scene_3="@id/scene_playing" w:scene_4="@id/scene_vis_temp_ui" />
+		<SceneParams android:visibility="visible" android:alpha="0.25" w:scene="@id/scene_vis_w_ui" />
+		<SceneParams android:visibility="gone" w:scene="@id/scene_eq" w:scene_2="@id/scene_vis" />
+		<StateAnimParams w:stateAnim="@id/anim_scrollbar_pressed" style="?TopListScrollerView_state_scrollbar_pressed" />
+		<com.maxmpz.widget.player.SubAAButtonsLayout android:id="@id/sub_aa_buttons" style="?TopSubAAButtons" />
+		<SceneParams w:scene="@id/scene_lyrics" w:baseScene="defaultScene" />
+		<SceneParams w:scene="@id/scene_playing" w:baseScene="defaultScene" w:recalcChildren="dynamic" style="?TopSubAAButtons_scenes_playing" />
+		<SceneParams w:scene="@id/scene_vis_temp_ui" w:baseScene="defaultScene" w:recalcChildren="dynamic" style="?TopSubAAButtons_scenes_playing" />
+		<SceneParams android:alpha="0.25" w:scene="@id/scene_vis_w_ui" w:baseScene="defaultScene" w:recalcChildren="dynamic" style="?TopSubAAButtons_scenes_playing" />
+		<SceneParams w:scene="@id/scene_lib" style="?TopSubAAButtons_scene_lib" />
+		<SceneParams w:scene="@id/scene_eq" w:scene_2="@id/scene_search" w:scene_3="@id/scene_vis" style="?TopSubAAButtons_scenes_hidden" />
+		<com.maxmpz.widget.player.LoadableDraggableButtonsBehavior android:id="@id/behavior_subaabuttons_edit" style="@style/behavior_subaabuttons_edit" />
+		<com.maxmpz.widget.base.LoadableBehavior style="@style/behavior_eq_layout" />
+		<com.maxmpz.widget.base.LoadableBehavior style="@style/behavior_search_layout" />
+		<com.maxmpz.widget.base.InvisibleView android:id="@id/navbar_bounds" style="?TopNavbarBounds" />
+		<include android:layout="@layout/merge_navbar" />
+		<com.maxmpz.widget.base.LoadableBehavior style="@style/vis_panel_loadable_beahvior" />
+		<com.maxmpz.widget.list.ListIndexerPopupView android:id="@id/list_indexer" style="?TopListIndexerPopupView" />
+		<StateAnimParams w:stateAnim="@id/anim_scrollbar_pressed" style="?TopListIndexerPopupView_state_scrollbar_pressed" />
+		<com.maxmpz.widget.base.MenuPlaceholderLayout android:id="@id/menu_placeholder" w:privateScene="true" style="?TopMenuPlaceholderLayout" />
+		<include android:layout="@layout/merge_selection_menu" />
+		<com.maxmpz.widget.base.MenuPlaceholderLayout android:id="@id/menu_placeholder2" w:privateScene="true" style="?TopMenuPlaceholderLayout" />
+		<include android:layout="@layout/merge_upper_toast" />
+		<SceneParams w:scene="@id/scene_vis_temp_ui" w:scene_2="@id/scene_vis" w:baseScene="defaultScene" />
+		<SceneParams w:scene="@id/scene_vis_w_ui" w:baseScene="defaultScene" />
+		<include android:layout="@layout/merge_toast" />
+		<SceneParams w:scene="@id/scene_playing" w:scene_2="@id/scene_vis_temp_ui" w:scene_3="@id/scene_vis" w:baseScene="defaultScene" />
+		<SceneParams w:scene="@id/scene_vis_w_ui" w:baseScene="defaultScene" />
+		<SceneParams w:scene="@id/scene_lib" w:scene_2="@id/scene_search" w:scene_3="@id/scene_eq" style="?TopToastContainer_scenes_non_main" />
+		<com.maxmpz.widget.base.FitsStatusBarView android:id="@id/status_bar_bg" style="?TopFitsStatusBarView" />
+		<SceneParams w:scene="@id/scene_playing" w:scene_2="@id/scene_vis_temp_ui" w:baseScene="defaultScene" />
+		<SceneParams w:scene="@id/scene_vis" w:baseScene="defaultScene" />
+		<SceneParams w:scene="@id/scene_vis_w_ui" w:baseScene="defaultScene" />
+		<SceneParams w:scene="@id/scene_lib" w:scene_2="@id/scene_search" w:scene_3="@id/scene_eq" style="?TopFitsStatusBarView_scenes_non_main" />
+		<com.maxmpz.widget.base.FitsNavigationBarView android:id="@id/navigation_bar_bg" style="?TopFitsNavigationBarView" />
+		<SceneParams w:scene="@id/scene_playing" w:scene_2="@id/scene_vis_temp_ui" w:baseScene="defaultScene" w:applyViewParams="true" />
+		<SceneParams w:scene="@id/scene_vis" w:baseScene="defaultScene" w:applyViewParams="true" />
+		<SceneParams w:scene="@id/scene_vis_w_ui" w:baseScene="defaultScene" />
+		<SceneParams w:scene="@id/scene_lib" w:scene_2="@id/scene_search" w:scene_3="@id/scene_eq" style="?TopFitsNavigationBarView_scenes_non_main" />
+	</com.maxmpz.audioplayer.widget.TopNavSceneFastLayout>
+</merge>

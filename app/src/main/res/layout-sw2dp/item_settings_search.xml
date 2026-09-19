@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.maxmpz.audioplayer.preference.SearchItemView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:w="http://schemas.android.com/apk/res-auto" style="@style/SettingsSearchItemView">
+	<com.maxmpz.widget.base.FastTextView android:id="@id/image" style="@style/SettingsSearchItemImage" />
+	<com.maxmpz.widget.base.FastLayout android:id="@id/texts" style="@style/SettingsSearchItemTexts">
+		<com.maxmpz.widget.base.FastTextView android:id="@id/title" style="@style/SettingsSearchItemTitle" />
+		<com.maxmpz.widget.base.FastTextView android:id="@id/line2" style="@style/SettingsSearchItemLine2" />
+		<com.maxmpz.widget.base.FastTextView android:id="@id/line3" style="@style/SettingsSearchItemLine3" />
+	</com.maxmpz.widget.base.FastLayout>
+</com.maxmpz.audioplayer.preference.SearchItemView>

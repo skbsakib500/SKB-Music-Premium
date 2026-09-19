@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<dimen name="EqMenu_size">32.0dip</dimen>
+<dimen name="EqButton_height">30.0dip</dimen>
+<dimen name="EqRoundKnobLabel_maxWidth">160.0dip</dimen>
+<dimen name="TopPlay_maxSize">76.0dip</dimen>
+<dimen name="TopSmallButton_size">40.0dip</dimen>
+<dimen name="TopMediumButton_size">50.0dip</dimen>
+<dimen name="TopPauseMoreButtons_maxSize_scene_playing">70.0dip</dimen>
+<dimen name="Alt_TopPlay_maxSize">74.0dip</dimen>
+<dimen name="Alt_TopPauseMoreButtons_maxSize_scene_playing">64.0dip</dimen>
+<dimen name="Alt_TopSmallButton_size">44.0dip</dimen>
+<dimen name="Alt_TopMediumButton_size">52.0dip</dimen>
+<dimen name="RoundKnob_arcWidth">4.0dip</dimen>
+<dimen name="RoundKnob_arcOffset">4.0dip</dimen>
+<dimen name="ItemPopupMenu_larger_scene_item_menu_width">340.0dip</dimen>
+<dimen name="ItemPopupMenu_scene_item_menu_width">320.0dip</dimen>
+<dimen name="ItemHeaderSelectButton_maxWidth">300.0dip</dimen>
+</resources>

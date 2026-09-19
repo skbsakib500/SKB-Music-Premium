@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.maxmpz.widget.player.list.TextItemView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:w="http://schemas.android.com/apk/res-auto" style="?ItemEqPreset">
+	<com.maxmpz.widget.player.FrequencyResponseScroller android:id="@id/frs" android:importantForAccessibility="no" style="?ItemPopupListFrs" />
+	<com.maxmpz.widget.base.BusActionButton android:id="@id/lock" style="?ItemEqPresetLock" />
+	<com.maxmpz.widget.base.FastCheckBoxOnly android:id="@id/select_box" style="?ItemEqPresetSelectBox" />
+	<com.maxmpz.audioplayer.widget.MarqueeFastTextView android:id="@id/title" style="?ItemEqPresetTitle" />
+</com.maxmpz.widget.player.list.TextItemView>

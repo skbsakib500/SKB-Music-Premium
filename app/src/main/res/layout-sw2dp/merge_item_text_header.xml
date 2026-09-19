@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:w="http://schemas.android.com/apk/res-auto">
+	<com.maxmpz.widget.base.AlphaDisabledView android:id="@id/buttons_bg" style="?ItemTextHeaderButtonsBg" />
+	<com.maxmpz.widget.base.SceneParams w:scene="@id/scene_zoomed" w:scene_2="@id/scene_grid" w:scene_3="@id/scene_grid_zoomed" w:scene_4="@id/scene_top_header" w:scene_5="@id/scene_small" w:scene_6="@id/scene_1_small" w:baseScene="defaultScene" />
+	<com.maxmpz.widget.base.SceneParams w:scene="@id/scene_1" w:scene_2="@id/scene_1_zoomed" w:scene_3="@id/scene_grid_1" w:scene_4="@id/scene_grid_1_zoomed" w:scene_5="@id/scene_1_small_no_aa" w:scene_6="@id/scene_small_no_aa" w:baseScene="defaultScene" />
+	<com.maxmpz.widget.base.SceneParams android:visibility="gone" w:scene="@id/scene_item_menu" w:scene_2="@id/scene_item_menu_lu" w:scene_3="@id/scene_subheader" />
+	<com.maxmpz.widget.base.SceneParams w:scene="@id/scene_header" w:scene_2="@id/scene_header_1" w:scene_3="@id/scene_search_header" style="?ItemTextHeaderButtonsBg_scene_header" />
+	<com.maxmpz.widget.base.SceneParams w:scene="@id/scene_bottom_toolbar" style="?ItemTextHeaderButtonsBg_scene_bottom_toolbar" />
+	<com.maxmpz.widget.player.ScanProgress android:visibility="invisible" style="?ItemTextHeaderScanProgress" />
+	<com.maxmpz.widget.base.SceneParams w:scene="@id/scene_item_menu" style="?ItemTextHeaderScanProgress_scene_item_menu" />
+	<com.maxmpz.widget.base.SceneParams w:scene="@id/scene_top_header" w:scene_2="@id/scene_search_header" style="?ItemTextHeaderScanProgress_scene_top_header" />
+	<com.maxmpz.widget.base.SceneParams w:scene="@id/scene_header" style="?ItemTextHeaderScanProgress_scene_header" />
+	<com.maxmpz.widget.base.SceneParams android:visibility="invisible" w:scene="@id/scene_grid" w:scene_2="@id/scene_subheader" w:baseScene="defaultScene" />
+	<com.maxmpz.widget.base.SceneParams android:visibility="gone" w:scene="@id/scene_bottom_toolbar" />
+	<com.maxmpz.widget.base.BusActionButton android:id="@id/shuffle_button" android:text="@string/shuffle" w:busId="@id/list" w:msgId="@id/cmd_list_shuffle" style="?ItemTextHeaderShuffleButton" />
+	<com.maxmpz.widget.base.SceneParams w:scene="@id/scene_header" style="?ItemTextHeaderShuffleButton_scene_header" />
+	<com.maxmpz.widget.base.SceneParams w:scene="@id/scene_search_header" style="?ItemTextHeaderShuffleButton_scene_search_header" />
+	<com.maxmpz.widget.base.SceneParams w:scene="@id/scene_item_menu" w:scene_2="@id/scene_top_header" style="?ItemTextHeaderShuffleButton_scene_menu" />
+	<com.maxmpz.widget.base.SceneParams android:visibility="invisible" w:scene="@id/scene_grid" w:scene_2="@id/scene_subheader" w:baseScene="defaultScene" />
+	<com.maxmpz.widget.base.SceneParams w:scene="@id/scene_bottom_toolbar" style="?ItemTextHeaderShuffleButton_scene_bottom_toolbar" />
+	<com.maxmpz.widget.base.BusActionButton android:id="@id/play_button" android:text="@string/play" w:busId="@id/list" w:msgId="@id/cmd_list_play" style="?ItemTextHeaderPlayButton" />
+	<com.maxmpz.widget.base.SceneParams w:scene="@id/scene_header" style="?ItemTextHeaderPlayButton_scene_header" />
+	<com.maxmpz.widget.base.SceneParams w:scene="@id/scene_search_header" style="?ItemTextHeaderPlayButton_scene_search_header" />
+	<com.maxmpz.widget.base.SceneParams w:scene="@id/scene_item_menu" w:scene_2="@id/scene_top_header" style="?ItemTextHeaderPlayButton_scene_menu" />
+	<com.maxmpz.widget.base.SceneParams android:visibility="invisible" w:scene="@id/scene_grid" w:scene_2="@id/scene_subheader" w:baseScene="defaultScene" />
+	<com.maxmpz.widget.base.SceneParams w:scene="@id/scene_bottom_toolbar" style="?ItemTextHeaderPlayButton_scene_bottom_toolbar" />
+	<com.maxmpz.widget.base.BusActionButton android:id="@id/search_button" android:contentDescription="@string/search" w:busId="@id/list" w:msgId="@id/cmd_list_target_search" style="?ItemTextHeaderSearchButton" />
+	<com.maxmpz.widget.base.SceneParams w:scene="@id/scene_header" style="?ItemTextHeaderSearchButton_scene_header" />
+	<com.maxmpz.widget.base.SceneParams w:scene="@id/scene_search_header" style="?ItemTextHeaderSearchButton_scene_search_header" />
+	<com.maxmpz.widget.base.SceneParams w:scene="@id/scene_item_menu" style="?ItemTextHeaderSearchButton_scene_menu" />
+	<com.maxmpz.widget.base.SceneParams android:visibility="invisible" w:scene="@id/scene_grid" w:scene_2="@id/scene_top_header" w:baseScene="defaultScene" />
+	<com.maxmpz.widget.base.SceneParams w:scene="@id/scene_bottom_toolbar" style="?ItemTextHeaderSearchButton_scene_bottom_toolbar" />
+	<com.maxmpz.widget.base.BusActionButton android:id="@id/select_button" android:text="@string/select" w:busId="@id/list" w:msgId="@id/cmd_list_toggle_selection_mode" style="?ItemTextHeaderSelectButton" />
+	<com.maxmpz.widget.base.SceneParams w:scene="@id/scene_header" style="?ItemTextHeaderSelectButton_scene_header" />
+	<com.maxmpz.widget.base.SceneParams w:scene="@id/scene_search_header" style="?ItemTextHeaderSelectButton_scene_search_header" />
+	<com.maxmpz.widget.base.SceneParams w:scene="@id/scene_grid" w:scene_2="@id/scene_item_menu" w:scene_3="@id/scene_top_header" style="?ItemTextHeaderSelectButton_scene_menu" />
+	<com.maxmpz.widget.base.SceneParams android:visibility="invisible" w:scene="@id/scene_grid" w:scene_2="@id/scene_top_header" w:baseScene="defaultScene" />
+	<com.maxmpz.widget.base.SceneParams w:scene="@id/scene_bottom_toolbar" style="?ItemTextHeaderSelectButton_scene_bottom_toolbar" />
+</merge>

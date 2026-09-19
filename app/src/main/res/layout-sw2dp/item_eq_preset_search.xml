@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.maxmpz.widget.base.FastLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:w="http://schemas.android.com/apk/res-auto" android:clickable="true" style="?EqPresetSearchLayout">
+	<com.maxmpz.widget.base.FastLayout style="?EqPresetSearchPanel">
+		<com.maxmpz.widget.base.BusActionButton android:contentDescription="@string/clear" w:busId="parent" w:msgId="@id/cmd_list_search_clear" style="?EqPresetSearchCloseButton" />
+		<com.maxmpz.audioplayer.widget.LocalListSearchEditText android:id="@id/eq_search_edit" android:hint="@string/search" w:busId="parent" style="?EqPresetSearchEditText" />
+	</com.maxmpz.widget.base.FastLayout>
+	<com.maxmpz.audioplayer.widget.EqPresetSearchCatsLayout android:id="@id/eq_search_type" style="?EqPresetSearchCatsLayout">
+		<com.maxmpz.widget.base.FastCheckBox android:tag="g/user" android:text="@string/user_plural_adj_short" style="?EqPresetSearchCatButton" />
+		<com.maxmpz.widget.base.FastCheckBox android:tag="g/built_in" android:text="@string/builtin_presets_short" style="?EqPresetSearchCatButton" />
+		<com.maxmpz.widget.base.FastCheckBox android:id="@id/auto_eq" android:tag="g/auto_eq" android:text="@string/auto_eq" style="?EqPresetSearchCatButton" />
+		<com.maxmpz.widget.base.NonOverlappingView w:layout_attachBottomToBottom="@id/auto_eq" w:layout_attachTopToTop="@id/auto_eq" style="?EqPresetSearchCatSeparator" />
+		<com.maxmpz.widget.base.FastCheckBox android:id="@id/graphic" android:tag="t/graphic" android:text="@string/graphic_equ_short" android:drawable="?equ_graphic_small" style="?EqPresetSearchCatButton" />
+		<com.maxmpz.widget.base.FastCheckBox android:id="@id/parametric" android:tag="t/parametric" android:text="@string/parametric_equ_short" android:drawable="?equ_parametric_small" w:layout_consumeSpace="vertical|reset_horizontal" style="?EqPresetSearchCatButton" />
+		<com.maxmpz.widget.base.FastCheckBox android:id="@id/assigned" android:tag="f/assigned" android:text="@string/assigned_short" style="?EqPresetSearchCatButton" />
+		<com.maxmpz.widget.base.NonOverlappingView w:layout_attachBottomToBottom="@id/assigned" w:layout_attachTopToTop="@id/assigned" style="?EqPresetSearchCatSeparator" />
+		<com.maxmpz.widget.player.BusStatusTextButton android:text="@string/device_short" w:updateMsgId="@id/msg_pipeline_started" w:busId="parent" w:msgId="@id/cmd_list_search_device" w:disableForStateBusId="@id/bus_player" w:disableForStateMsgId="@id/msg_pipeline_started" w:disableForStateMsgId_2="@id/msg_player_output_meta_changed" w:stateBusId="@id/bus_player" w:updateMsgId_2="@id/msg_player_output_meta_changed" w:iconStateId="@id/state_player_routed_device_icon" w:enableForStateId="@id/state_player_output_end_device" style="?EqPresetSearchCatButton" />
+		<com.maxmpz.widget.base.BusActionButton android:text="@string/reset_filters" android:drawable="@drawable/close_stroke" w:busId="parent" w:msgId="@id/cmd_list_reset_filters" style="?EqPresetSearchResetButton" />
+	</com.maxmpz.audioplayer.widget.EqPresetSearchCatsLayout>
+</com.maxmpz.widget.base.FastLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.maxmpz.widget.player.list.BackDecorItemView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:w="http://schemas.android.com/apk/res-auto" android:id="@id/item_back_decor" style="?ItemTextBackDecor">
+	<com.maxmpz.widget.base.BusActionButton android:id="@id/title" w:busId="@id/list" w:msgId="@id/cmd_list_up_nav" w:disableForStateBusId="@id/list" w:disableForStateId="@id/state_list_selection_mode" style="?ItemTextBackDecorTitle" />
+	<com.maxmpz.widget.base.SceneParams w:scene="@id/scene_header_back_decor" style="?ItemTextBackDecorTitle_scene_header_back_decor" />
+</com.maxmpz.widget.player.list.BackDecorItemView>

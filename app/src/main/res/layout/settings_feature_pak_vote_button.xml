@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.maxmpz.widget.base.BusActionButton xmlns:android="http://schemas.android.com/apk/res/android" xmlns:w="http://schemas.android.com/apk/res-auto" android:text="@string/pref_poweramp_forum" android:drawable="@drawable/forum_16dp" w:busId="@id/bus_app_cmd" w:msgId="@id/cmd_app_open" w:arg2="@integer/FLAG_ACTIVITY_NEW_TASK" w:string="@string/forum_url" w:confirmTitle="@string/external_link" w:confirmText="@string/external_link_msg" style="@style/PrefRoundedTransButton" />

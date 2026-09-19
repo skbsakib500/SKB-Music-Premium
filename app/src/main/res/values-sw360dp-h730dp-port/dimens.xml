@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<dimen name="EqParamRoundKnobPortBase_paddingBottom">42.0sp</dimen>
+<dimen name="eq_frs_height">60.0dip</dimen>
+<dimen name="TopPlay_maxSize">90.0dip</dimen>
+<dimen name="TopMediumButton_size">60.0dip</dimen>
+<dimen name="TopPlayPauseBehind_size">64.0dip</dimen>
+<dimen name="TopWaveseek_maxHeight">164.0dip</dimen>
+<dimen name="Navbar_height">52.0dip</dimen>
+<dimen name="NavBarButton_drawableSize">36.0dip</dimen>
+<dimen name="TopPauseMoreButtons_maxSize_scene_playing">84.0dip</dimen>
+<dimen name="TopHelpSmaller_textSize">11.0sp</dimen>
+<dimen name="Alt_TopPlay_maxSize">90.0dip</dimen>
+<dimen name="Alt_TopPauseMoreButtons_maxSize_scene_playing">84.0dip</dimen>
+<dimen name="Alt_TopSmallButton_size">42.0dip</dimen>
+<dimen name="Alt_TopMediumButton_size">60.0dip</dimen>
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:z="http://schemas.android.com/apk/res-auto" xmlns:w="http://schemas.android.com/apk/res-auto" android:title="@string/pref_aa_bg_options" android:summary="@string/pref_summary_aa_bg_options">
+	<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:title="@string/pref_text_aa_bg_options" android:key="aa_blur_enabled" />
+	<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:title="@string/pref_list_aa_blur_enabled" android:key="list_aa_blur_enabled" android:dependency="aa_blur_enabled" />
+	<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:title="@string/pref_lyrics_aa_blur_enabled" android:key="lyrics_aa_blur_enabled" android:dependency="aa_blur_enabled" />
+	<com.maxmpz.audioplayer.preference.RawTextPreference android:background="@drawable/settings_quote_background" z:line1="@string/pref_aa_bg_skins_hint" z:line2="@string/pref_lyrics_lust_bg_dimmed_hint" z:keepPaddings="true" />
+	<com.maxmpz.audioplayer.preference.SeekbarPreference android:title="@string/aa_bg_gradient" android:key="aa_bg_gradient" android:summary="@string/_d" z:max="10" z:min="0" z:leftLabel="@string/none" z:rightLabel="@string/maximum_short" z:tickMark="@drawable/pref_seekbar_tickmark" />
+	<com.maxmpz.audioplayer.preference.ColorPreference android:title="@string/aa_bg_gradient_color" android:key="aa_bg_gradient_color" android:summary="%s" />
+	<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:title="@string/aa_bg_gradient_for_list" android:key="aa_bg_gradient_for_list" android:summary="@string/summary_aa_bg_gradient_for_list" />
+	<com.maxmpz.audioplayer.preference.RawTextPreference z:line1="@string/skin_may_override_option" z:zeroTopPad="true" />
+	<com.maxmpz.audioplayer.preference.SeekbarPreference android:title="@string/pref_aa_blur" android:key="aa_blur" android:summary="@string/_d" android:dependency="aa_blur_enabled" android:defaultValue="5" z:max="15" z:min="0" z:leftLabel="@string/pref_aa_blur_less" z:rightLabel="@string/pref_aa_blur_more" z:tickMark="@drawable/pref_seekbar_tickmark" />
+	<com.maxmpz.audioplayer.preference.SeekbarPreference android:title="@string/pref_aa_blur_scale" android:key="aa_blur_scale" android:summary="@string/_d" android:dependency="aa_blur_enabled" android:defaultValue="5" z:max="10" z:min="0" z:leftLabel="@string/pref_aa_blur_scale_less" z:rightLabel="@string/pref_aa_blur_scale_more" z:tickMark="@drawable/pref_seekbar_tickmark" />
+	<com.maxmpz.audioplayer.preference.SeekbarPreference android:title="@string/pref_aa_blur_intensity" android:key="aa_blur_intensity" android:summary="@string/d_percent" android:dependency="aa_blur_enabled" android:defaultValue="100" z:max="250" z:min="0" />
+	<com.maxmpz.audioplayer.preference.RawTextPreference z:smallLine1="@string/pref_aa_blur_intensity_hint" />
+	<com.maxmpz.audioplayer.preference.SeekbarPreference android:title="@string/pref_aa_blur_saturation" android:key="aa_blur_saturation" android:summary="@string/d_percent" android:dependency="aa_blur_enabled" android:defaultValue="150" z:max="300" z:min="0" z:step="10" />
+	<com.maxmpz.audioplayer.preference.RawTextPreference z:smallLine1="@string/pref_aa_blur_intensity_hint" />
+	<Preference android:title="@string/pref_restore_defaults" android:key="restore_defaults" android:singleLineTitle="false" />
+</PreferenceScreen>

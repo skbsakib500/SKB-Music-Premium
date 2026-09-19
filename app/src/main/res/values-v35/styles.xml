@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<style name="SettingsSearchPanel" parent="@style/Base_SettingsSearchPanel"><item name="layout_attachTop">inset</item><item name="layout_offsets">insets</item></style>
+<style name="SettingsSearchPanel_scene_search" parent="@style/Base_SettingsSearchPanel_scene_search"><item name="layout_attachTop">inset</item><item name="layout_offsets">insets</item></style>
+<style name="SettingsSearchContent" parent="@style/Base_SettingsSearchContent"><item name="layout_offsets">insets</item></style>
+</resources>

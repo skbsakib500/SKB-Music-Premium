@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:w="http://schemas.android.com/apk/res-auto">
+	<com.maxmpz.widget.base.PrivateNonSceneFastLayout android:id="@id/meta_info_layout" style="?TopMetaInfoLayout">
+		<com.maxmpz.widget.base.BusActionPopupLayout android:id="@id/meta_info" android:importantForAccessibility="no" w:busId="@id/bus_player_cmd" w:msgId="@id/cmd_player_switch_track_meta" w:menuItemsLayout="@layout/merge_dsp_info_popup_layout" w:firstPressToast="@string/long_press_for_more_options" style="?TopMetaInfo">
+			<com.maxmpz.widget.player.BusStatusText android:id="@id/_label" w:updateMsgId="@id/msg_player_track_changed" w:stateBusId="@id/bus_player" w:updateMsgId_2="@id/msg_pipeline_started" w:updateMsgId_3="@id/msg_player_track_meta_switched" w:updateMsgId_4="@id/msg_player_repeat_mode_changed" w:updateMsgId_5="@id/msg_player_output_meta_changed" w:updateMsgId_6="@id/msg_player_np_ended" w:labelStateId="@id/state_player_track_meta" w:iconStateId="@id/state_player_track_meta_icon" w:noUpdateInScene="@id/scene_button_menu" w:updateMsgId_7="@id/msg_player_output_info_changed" w:debounceDelay="350" style="?TopMetaInfoLabel" />
+			<SceneParams android:visibility="gone" w:scene="@id/scene_button_menu" />
+			<SceneParams android:visibility="visible" w:scene="@id/scene_button_menu_closed" />
+		</com.maxmpz.widget.base.BusActionPopupLayout>
+		<SceneParams w:scene="@id/scene_button_menu" style="?TopMetaInfo_scene_item_menu" />
+	</com.maxmpz.widget.base.PrivateNonSceneFastLayout>
+	<SceneParams w:scene="defaultScene" w:baseScene="defaultScene" w:recalcChildren="dynamic" />
+	<SceneParams w:scene="@id/scene_lyrics" w:baseScene="defaultScene" w:recalcChildren="dynamic" />
+	<SceneParams w:scene="@id/scene_vis_w_ui" style="?TopMetaInfoLayout_scenes_playing" />
+	<SceneParams w:scene="@id/scene_playing" w:scene_2="@id/scene_vis" w:scene_3="@id/scene_vis_temp_ui" w:recalcChildren="dynamic" style="?TopMetaInfoLayout_scenes_playing" />
+	<SceneParams w:scene="@id/scene_eq" w:scene_2="@id/scene_search" w:scene_3="@id/scene_vis" w:scene_4="@id/scene_lib" w:recalcChildren="on_start" style="?TopMetaInfoLayout_scenes_invisible" />
+	<StateAnimParams w:stateAnim="@id/anim_seeking" style="?TopMetaInfoLayout_anim_seeking" />
+</merge>

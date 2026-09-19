@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:w="http://schemas.android.com/apk/res-auto" android:title="@string/playlists" w:searchBreadcrumb1="@string/pref_library">
+	<com.maxmpz.audioplayer.preference.RawTextPreference android:background="@drawable/settings_quote_background" w:line1="@string/pref_how_to_import_file_playlists_text" w:line2="@string/pref_how_to_import_file_playlists_text2" w:keepPaddings="true" />
+	<Preference android:persistent="false" android:title="@string/pref_playlists_import" android:key="playlists_import" />
+	<Preference android:persistent="false" android:title="@string/pref_playlists_export" android:key="playlists_export" />
+	<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:title="@string/pref_pl_import_ratings" android:key="pl_import_ratings" android:summary="@string/pref_summary_pl_import_ratings" android:defaultValue="true" />
+	<com.maxmpz.audioplayer.preference.RawTextPreference android:background="@drawable/settings_quote_background" w:line1="@string/pref_summary_pl_import_ratings2" w:keepPaddings="true" />
+	<com.maxmpz.audioplayer.preference.TagListPreference android:title="@string/pref_playlist_insert_pos" android:key="playlist_insert_pos" w:entries="@array/playlist_insert_modes" w:values="@array/playlist_insert_args1" />
+	<com.maxmpz.audioplayer.preference.RawTextPreference android:background="@drawable/settings_quote_background" w:line1="@string/pref_insert_pos_hint" w:keepPaddings="true" />
+	<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:title="@string/pref_pl_del_entry_w_track" android:key="pl_del_entry_w_track" android:summary="@string/pref_summary_pl_del_entry_w_track" android:defaultValue="true" />
+	<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:title="@string/pref_pl_auto_resolve" android:key="pl_auto_resolve" android:summary="@string/pref_summary_pl_auto_resolve" android:defaultValue="true" />
+	<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:persistent="true" android:title="@string/pref_pl_no_dups" android:key="pl_no_dups" android:summary="@string/pref_summary_pl_no_dups" android:defaultValue="false" />
+	<Preference android:title="@string/pref_restore_defaults" android:key="restore_defaults" />
+</PreferenceScreen>

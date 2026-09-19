@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<style name="ActivityTheme_Black" parent="@style/Base_ActivityTheme_Black"><item name="android:navigationBarColor">#00ffffff</item><item name="statusBarBg">#33000000</item><item name="colorPlaybackRipple">#aaeeeeee</item><item name="colorLessContrastRipple">#99cccccc</item></style>
+<style name="Base_ActivityTheme_Default" parent="@style/Base_ActivityTheme_Core"><item name="android:editTextBackground">@drawable/edit_text_material</item><item name="android:navigationBarColor">#00ffffff</item><item name="statusBarBg">#33000000</item><item name="corners_equ_frs">16.0dip</item><item name="colorPlaybackRipple">#aa999999</item><item name="colorLessContrastRipple">#aa999999</item></style>
+<style name="StartingThemeBlack" parent="@style/Base_StartingTheme"><item name="android:windowSplashScreenBackground">#ff000000</item><item name="android:windowSplashScreenAnimatedIcon">@drawable/app_icon_rounded_medium_splash</item><item name="android:windowSplashScreenAnimationDuration">0</item></style>
+<style name="StartingThemeWhite" parent="@style/Base_StartingTheme"><item name="android:windowSplashScreenBackground">#ffffffff</item><item name="android:windowSplashScreenAnimatedIcon">@drawable/app_icon_rounded_dark_splash</item><item name="android:windowSplashScreenAnimationDuration">0</item></style>
+<style name="Base_StartingTheme" parent="@android:style/Theme.DeviceDefault.DayNight"><item name="android:windowSplashScreenAnimationDuration">0</item></style>
+<style name="StartingThemeNone" parent="@style/StartupActivity" />
+</resources>

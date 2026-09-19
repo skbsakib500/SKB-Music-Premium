@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:w="http://schemas.android.com/apk/res-auto" android:title="@string/audio_outputs" w:searchIndexer="com.maxmpz.audioplayer.preference.SettingsHelperAudioOutputs2$SearchIndexer">
+	<com.maxmpz.audioplayer.preference.RawTextPreference android:background="@drawable/settings_quote_background" w:line1="@string/audio_outputs_hint1" w:line2="@string/audio_outputs_hint2" w:keepPaddings="true" />
+	<com.maxmpz.audioplayer.preference.ButtonPref android:icon="@drawable/wired_24dp" android:persistent="false" android:title="@string/device_headset" android:key="output_headset" w:iconAlignedHorCenter="true" />
+	<com.maxmpz.audioplayer.preference.ButtonPref android:icon="@drawable/speaker_24dp" android:persistent="false" android:title="@string/device_speaker" android:key="output_speaker" w:iconAlignedHorCenter="true" />
+	<com.maxmpz.audioplayer.preference.ButtonPref android:icon="@drawable/bt_24dp" android:persistent="false" android:title="@string/device_bt" android:key="output_bt" w:iconAlignedHorCenter="true" />
+	<com.maxmpz.audioplayer.preference.ButtonPref android:icon="@drawable/usb_24dp" android:persistent="false" android:title="@string/device_usb" android:key="output_usb" w:iconAlignedHorCenter="true" />
+	<com.maxmpz.audioplayer.preference.ButtonPref android:icon="@drawable/chromecast_24dp" android:persistent="false" android:title="@string/device_chromecast" android:key="output_chromecast" w:iconAlignedHorCenter="true" />
+	<com.maxmpz.audioplayer.preference.ButtonPref android:icon="@drawable/other_24dp" android:persistent="false" android:title="@string/device_other" android:key="output_other" w:iconAlignedHorCenter="true" />
+	<PreferenceCategory android:title="@string/pref_other">
+		<com.maxmpz.audioplayer.preference.RedirectPreference android:title="@string/pref_advanced_tweaks" android:key="audio_outputs_tweaks" w:target="audio_outputs_tweaks" />
+	</PreferenceCategory>
+	<Preference android:title="@string/pref_restore_defaults" android:key="restore_defaults" />
+</PreferenceScreen>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.maxmpz.widget.player.list.LyricsItemView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:w="http://schemas.android.com/apk/res-auto" style="?ItemLyrics">
+	<com.maxmpz.widget.player.list.LyricsFastTextView android:id="@id/title" style="?ItemLyricsTitle" />
+	<SceneParams w:scene="@id/scene_active" style="?ItemLyricsTitle_active" />
+	<SceneParams w:scene="@id/scene_small" style="?ItemLyricsTitle_scene_small" />
+	<SceneParams w:scene="@id/scene_small_active" style="?ItemLyricsTitle_scene_small_active" />
+	<SceneParams w:scene="@id/scene_zoomed" style="?ItemLyricsTitle_scene_zoomed" />
+	<SceneParams w:scene="@id/scene_zoomed_active" style="?ItemLyricsTitle_scene_zoomed_active" />
+	<SceneParams w:scene="@id/scene_unsync" style="?ItemLyricsTitle_scene_unsync" />
+	<SceneParams w:scene="@id/scene_unsync_small" style="?ItemLyricsTitle_scene_unsync_small" />
+	<SceneParams w:scene="@id/scene_unsync_zoomed" style="?ItemLyricsTitle_scene_unsync_zoomed" />
+</com.maxmpz.widget.player.list.LyricsItemView>

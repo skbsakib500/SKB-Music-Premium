@@ -1,39 +1,2345 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">SKB Music</string>
-    <string name="app_tagline">Premium Offline Player</string>
+<string name="APK">APK</string>
+<string name="OK">OK</string>
+<string name="ZIP">ZIP</string>
+<string name="_d">%d</string>
+<string name="_default">Default</string>
+<string name="_empty">empty</string>
+<string name="_empty_string" />
+<string name="aa_bg_gradient">Background Gradient</string>
+<string name="aa_bg_gradient_color">Background Gradient Color</string>
+<string name="aa_bg_gradient_for_list">Background Gradient For Lists</string>
+<string name="aa_corners">Album Art Corners</string>
+<string name="aa_non_title">Album art</string>
+<string name="aaudio">AAudio</string>
+<string name="abc_action_mode_done">Done</string>
+<string name="abc_capital_off">OFF</string>
+<string name="abc_capital_on">ON</string>
+<string name="abc_search_hint">Search…</string>
+<string name="abc_toolbar_collapse_description">Collapse</string>
+<string name="about_poweramp_changelog">Changelog</string>
+<string name="absvol_change_on_bt">• to detect Absolute Volume this option may temporarily change volume for a few seconds on Bluetooth connection</string>
+<string name="absvol_change_settings_page">• volume may be constantly changed and probed on this page</string>
+<string name="absvol_desc_short">Absolute Volume means Bluetooth device volume is synced to the phone</string>
+<string name="absvol_detection_15">"• it's not possible to detect Absolute Volume on your device"</string>
+<string name="absvol_disabled_bt_15">• on you device this option just disables DVC for Bluetooth by default</string>
+<string name="absvol_uncheck_manually">• uncheck if you know that Absolute Volume is disabled for your device</string>
+<string name="accept_space_in_separator">Whitespace as split symbol</string>
+<string name="accept_space_in_separator_hint">If disabled whitespace is ignored and separates multiple split symbols</string>
+<string name="access_granted">Access granted</string>
+<string name="access_to_files_will_be_lost">Access to files will be lost</string>
+<string name="adaptive_icon">Adaptive icon</string>
+<string name="add">Add</string>
+<string name="add_band">Add Band</string>
+<string name="add_folder_or_storage">Select Folder or Storage</string>
+<string name="add_new_playlist">Add New Playlist</string>
+<string name="add_new_playlist_hint">To add tracks navigate to any Library list, select tracks or other items, and use + Playlist action</string>
+<string name="add_new_short">Add New</string>
+<string name="add_storage_provider">Add Folder, Storage, or Provider Plugin</string>
+<string name="add_to_launcher">Add to Launcher</string>
+<string name="add_to_multiple_pl">Add to multiple playlists</string>
+<string name="add_to_playlist">Add to Playlist</string>
+<string name="add_to_single_pl">Add to a single playlist</string>
+<string name="add_url">Add URL</string>
+<string name="added">Added</string>
+<string name="adjust_bg_hint">You may want to additionally adjust &lt;a href=settings/aa_bg>Background&lt;/a> so buttons and labels are always visible</string>
+<string name="advanced">Advanced</string>
+<string name="album">Album</string>
+<string name="album_art">Album Art</string>
+<string name="album_art_shadow">Album Art Shadow</string>
+<string name="album_artist">Album Artist</string>
+<string name="album_artists">Album Artists</string>
+<string name="album_by_artist">Album by Artist</string>
+<string name="album_root_word">@string/album</string>
+<string name="album_short">Album</string>
+<string name="album_songs">Album Songs</string>
+<string name="albums">Albums</string>
+<string name="albums_by_artist">Albums by Artist</string>
+<string name="all_album_artist_songs">All Album Artist Songs</string>
+<string name="all_artist_songs">All Artist Songs</string>
+<string name="all_composer_songs">All Composer Songs</string>
+<string name="all_feat_avail_for_trial">experience the full version of the app for a limited time trial</string>
+<string name="all_genre_songs">All Genre Songs</string>
+<string name="all_songs">All Songs</string>
+<string name="all_year_songs">All Year Songs</string>
+<string name="allow_dsd_dop">Allow DSD DOP</string>
+<string name="allowed_srs_for_track">Allowed Sample Rates</string>
+<string name="also_do_for_unlocker">Please do the same for the Unlocker</string>
+<string name="also_export_filebased_playlists">Also export file based playlists (.m3u8, .pls, etc.)</string>
+<string name="also_import_system_library_playlists">Also import missing System Library playlists</string>
+<string name="also_use_for_s">Also use for: %s</string>
+<string name="alt_scale">Fit Album Art</string>
+<string name="always">Always</string>
+<string name="android_auto_other">Android Auto/Other</string>
+<string name="android_navbar">Android Navigation Bar</string>
+<string name="androidx_startup">androidx.startup</string>
+<string name="animations">Animations</string>
+<string name="app_may_fail_to_function">App may fail to function properly</string>
+<string name="app_name">Poweramp</string>
+<string name="app_will_stop_working_soon">app will stop working soon</string>
+<string name="applied_for_alt_full">Applied for Alternative layout/Full cover</string>
+<string name="applied_on_main_screen">Applied on the Player Screen</string>
+<string name="applied_on_new_connection">Applied on the new connection</string>
+<string name="applied_when_no_dvc">Applied only when DVC is disabled for any reason</string>
+<string name="applied_when_song_changed_automatically">Applied when the song is changed automatically</string>
+<string name="applied_when_song_changed_manually">Applied when the song is changed manually</string>
+<string name="apply">Apply</string>
+<string name="apply_preset_s_to_outputs_colon">Automatically apply this preset %s to the outputs:</string>
+<string name="apply_to_songs_colon">Apply to songs:</string>
+<string name="are_you_sure_to_cancel">Are you sure you want to cancel?</string>
+<string name="art_image">Image</string>
+<string name="artist">Artist</string>
+<string name="artist_album">Artist Album</string>
+<string name="artist_album_songs">Artist Album Songs</string>
+<string name="artist_albums">Artist Albums</string>
+<string name="artist_root_word">@string/artist</string>
+<string name="artist_short">Artist</string>
+<string name="artists">Artists</string>
+<string name="assign">Assign</string>
+<string name="assign_preset">Assign Preset</string>
+<string name="assign_preset_to_this_device">Assign preset to this device</string>
+<string name="assigned_short">Assigned</string>
+<string name="athd_variant_lenovo_hifi">Lenovo Hi-Fi</string>
+<string name="athd_variant_meizu_hifi">Meizu Hi-Fi</string>
+<string name="athd_variant_mtk_hifi">MTK Hi-Fi</string>
+<string name="athd_variant_pcm_offload">Snapdragon 24-bit PCM</string>
+<string name="athd_variant_samsung">Samsung UHQA PCM</string>
+<string name="athd_variant_samsung_plain">Samsung</string>
+<string name="athd_variant_sony">Sony High Res Audio</string>
+<string name="athd_variant_usb_bt_only">USB DAC/BT only</string>
+<string name="athd_variant_usb_only">USB DAC only</string>
+<string name="audio_engine_failed_to_load">Audio engine failed to load</string>
+<string name="audio_engine_stopped">Audio Engine Stopped</string>
+<string name="audio_info">Audio Info</string>
+<string name="audio_outputs">Audio Outputs</string>
+<string name="audio_outputs_hint1">Poweramp may use different audio output drivers depending on the connected output device</string>
+<string name="audio_outputs_hint2">For the active named Bluetooth or USB device, separate profile can be created with + button</string>
+<string name="audio_outputs_settings">Audio outputs settings</string>
+<string name="audio_processing">Audio Processing</string>
+<string name="audiotrack">AudioTrack</string>
+<string name="auto_dection_not_possible">Auto detection not possible</string>
+<string name="auto_eq">AutoEq</string>
+<string name="auto_find">Auto-Find</string>
+<string name="auto_find_msg">Try to find Music Folders on your &lt;b>SD card/primary storage&lt;/b>.&lt;br/>&lt;br/> The scan can find non-music folders as well, including ringtone/game sound folders, but you can customize Music Folders in Poweramp &lt;b>Settings&lt;/b></string>
+<string name="auto_hardware">Auto/Hardware</string>
+<string name="autosave">Auto Save</string>
+<string name="autosave_enabled_msg">Current preset now automatically saved on change</string>
+<string name="available">Available</string>
+<string name="azChars">0ABCDEFGHIJKLMNOPQRSTUVWXYZ#</string>
+<string name="back_10s">Back 10s</string>
+<string name="background">Background</string>
+<string name="balance">Balance</string>
+<string name="balance_L">L</string>
+<string name="balance_R">R</string>
+<string name="band_freq">Freq</string>
+<string name="band_gain">Gain</string>
+<string name="band_is_locked">Band is locked</string>
+<string name="band_pass">Band Pass</string>
+<string name="band_q">Q</string>
+<string name="bass">Bass</string>
+<string name="bass_extreme">Bass Extreme</string>
+<string name="bass_tone">Bass</string>
+<string name="bass_treble">Bass &amp; Treble</string>
+<string name="beep_more">Beep More</string>
+<string name="bg_opts_off_hint1">Set Poweramp (and Poweramp Unlocker, if installed) to Unrestricted</string>
+<string name="bg_opts_off_hint2">Otherwise, playback may stop or stutter when the screen turns off/other apps are used/etc.</string>
+<string name="bit">bit</string>
+<string name="bit64">64-bit</string>
+<string name="bit_perfect">Bit Perfect</string>
+<string name="bit_perfect_hint1">Each setting on this page can also be overridden individually for the specific output or profile</string>
+<string name="bit_perfect_hint2">These settings are only supported by compatible drivers. To make an option take effect, switch to a driver that supports it</string>
+<string name="bit_perfect_option">Bit Perfect Option</string>
+<string name="black_play">Black Play</string>
+<string name="bluetooth_headset">Bluetooth</string>
+<string name="bold">Bold</string>
+<string name="bold_plus">Bold+</string>
+<string name="bookmark">Bookmark</string>
+<string name="bookmarks">Bookmarks</string>
+<string name="bookmarks_hint">Playlist with the playback position for songs. Bookmark button appears in the current track menu</string>
+<string name="buffer_ms">Buffer ms</string>
+<string name="buffers">Buffers</string>
+<string name="buffers_hint">Number of DSP buffers</string>
+<string name="build_s">Build %s</string>
+<string name="built_in">Built-in</string>
+<string name="builtin_autoeq_user_preset_restore">Built-in/AutoEq preset is restored to the defaults. User preset gains are reset to zero &lt;br>&lt;br>All Built-in/AutoEq presets can be restored via &lt;a href=@uri_reset_eq_presets>Settings&lt;/a></string>
+<string name="builtin_presets_short">Built-in</string>
+<string name="button_changed">Button changed</string>
+<string name="button_theme">Button Theme</string>
+<string name="buttons">Buttons</string>
+<string name="buy">Buy</string>
+<string name="buy_feature_pak_1">Buy Feature Package #1</string>
+<string name="buy_fv_app">@string/buy_poweramp_full_version</string>
+<string name="buy_fv_app_short">@string/pref_buy</string>
+<string name="buy_poweramp_full_version">Buy Poweramp Full Version</string>
+<string name="buy_uber_badges">Buy Uberpatron Badges</string>
+<string name="by_added_to_list">By time added to list</string>
+<string name="by_album">By album</string>
+<string name="by_album_artist">By album artist</string>
+<string name="by_album_track">By album/track#</string>
+<string name="by_artist">By artist</string>
+<string name="by_artist_album">By artist/album</string>
+<string name="by_artist_album_track">By artist/album/track #</string>
+<string name="by_author">By author</string>
+<string name="by_date_added_modified">By date added/modified</string>
+<string name="by_date_added_to_lib">By date added to Library</string>
+<string name="by_disc_and_track">By disc and track #</string>
+<string name="by_duration">By duration</string>
+<string name="by_filename">By filename</string>
+<string name="by_name">By name</string>
+<string name="by_num_tracks">By number of tracks</string>
+<string name="by_path">By path</string>
+<string name="by_path_cs">By path (case sensitive)</string>
+<string name="by_play_count">By play count</string>
+<string name="by_played_at">By time last played</string>
+<string name="by_rating">By rating</string>
+<string name="by_shuffle">By shuffle order</string>
+<string name="by_source">By source</string>
+<string name="by_title">By title</string>
+<string name="by_track">By track #</string>
+<string name="by_type">By type</string>
+<string name="by_url">By URL</string>
+<string name="by_year">By year</string>
+<string name="by_year_album">By year/album</string>
+<string name="cancel">Cancel</string>
+<string name="cant_continue_due_to_scan">"Library scan is in progress, can't continue the operation"</string>
+<string name="cast_casting_to_device">Casting to %1$s</string>
+<string name="cast_disconnect">Disconnect</string>
+<string name="cast_expanded_controller_ad_in_progress">Ad in progress…</string>
+<string name="cast_forward">Forward</string>
+<string name="cast_forward_10">Forward ten seconds</string>
+<string name="cast_forward_30">Forward thirty seconds</string>
+<string name="cast_intro_overlay_button_text">@android:string/ok</string>
+<string name="l_failed">Failed to Verify License</string>
+<string name="l_lvl_response">Google Play response - %s</string>
+<string name="l_apm_response">APM response - %s</string>
+<string name="l_pending_call">License Check Pending</string>
+<string name="l_NOT_LICENSED">NOT_LICENSED</string>
+<string name="l_ERROR_NOT_MARKET_MANAGED">ERROR_NOT_MARKET_MANAGED</string>
+<string name="l_ERROR_SERVER_FAILURE">ERROR_SERVER_FAILURE</string>
+<string name="l_ERROR_OVER_QUOTA">ERROR_OVER_QUOTA</string>
+<string name="l_ERROR_CONTACTING_SERVER">ERROR_CONTACTING_SERVER</string>
+<string name="l_ERROR_INVALID_PACKAGE_NAME">ERROR_INVALID_PACKAGE_NAME</string>
+<string name="l_ERROR_NON_MATCHING_UID">ERROR_NON_MATCHING_UID</string>
+<string name="l_unknown_error_s">Unknown error code: %s</string>
+<string name="cast_notification_connecting_message">Connecting to %1$s</string>
+<string name="cast_notification_default_channel_name">Cast</string>
+<string name="cast_pause">Pause</string>
+<string name="cast_play">Play</string>
+<string name="cast_rewind">Rewind</string>
+<string name="cast_rewind_10">Rewind ten seconds</string>
+<string name="cast_rewind_30">Rewind thirty seconds</string>
+<string name="cast_skip_next">Skip to next item</string>
+<string name="cast_skip_prev">Skip to previous item</string>
+<string name="cast_stop_live_stream">Stop live stream</string>
+<string name="category_change">Category Change</string>
+<string name="cc_show_meta">Show Meta Information</string>
+<string name="centered">Centered</string>
+<string name="change_by_time">By Duration</string>
+<string name="change_by_time_sec_d">Change each: %d s</string>
+<string name="change_with_track">Change With Track</string>
+<string name="changed_signature">"Sorry, can't run the modified APK. Please reinstall the app from the Google Play or powerampapp.com website"</string>
+<string name="changelog">Changelog</string>
+<string name="changelog_1000">" &lt;b>Builds 1000-1001:&lt;/b> &lt;ul> &lt;li>🎂the milestone 1000th build of Poweramp, celebrating 15 years of continuous development and support &lt;li>default No DVC and No Headroom options for Other output (used for the wired Android Auto connection) &lt;li>improved &lt;a href=settings/headset#follow_pl_exact>Strict Resume/Pause/Stop&lt;/a> option&lt;br> &lt;small>Better handling of connections that rapidly send play/pause/stop commands&lt;/small> &lt;li>Poweramp suggests disabling Manage App If Unused option if detected&lt;br> &lt;small>As reported by out users, this setting may revoke file access not only after 60 days of inactivity but also after firmware updates, date changes, and other unexpected events&lt;/small> &lt;li>bug fixes and stability improvements &lt;li>updated translations &lt;/ul> &lt;br> "</string>
+<string name="changelog_1003">" &lt;b>Builds 1002-1025:&lt;/b> &lt;ul> &lt;li>bug fixes and stability improvements &lt;li>customizable buttons row on the player screen&lt;br> &lt;small>&lt;ul> &lt;li>included in 🎁 Feature Pack #1 &lt;li>✅ the top voted feature from the &lt;a href=https://forum.powerampapp.com/ideas/?mode=popular>New Poweramp Features&lt;/a> list &lt;li>long press between buttons to enter edit mode or start it &lt;a href=settings/ui_player#edit_player_screen_buttons>from the settings&lt;/a> &lt;li>20+ buttons, such as track menu and track actions, cast, audio info, etc. are available &lt;li>the classic centered layout - buttons will try to fit around the centered slot &lt;li>the plain layout - buttons placed in a compact row &lt;li>normal or small button sizes are available &lt;li>one row or two rows &lt;li>buttons can be scrolled &lt;li>buttons and layout settings are independent for portrait and landscape due to the varying available space in these orientations &lt;li>&lt;a href=settings/ui_player#sub_aa_buttons_no_gap>Prefer No Gap&lt;/a> option &lt;li>&lt;a href=settings/ui_player#sub_aa_buttons_no_lp_edit>Do Not Edit On Long Press&lt;/a> option &lt;/ul>&lt;/small> &lt;li>new &lt;a href=settings/ui_theme#player_buttons_bg>Player Buttons Background&lt;/a> option for the built-in skins &lt;li>the skin option &lt;a href=settings/ui_theme#labels_bg>Label Background&lt;/a> doesn't change screen background anymore &lt;li>new &lt;a href=settings/audio_focus#resume_on_focus>Resume On Focus&lt;/a> option &lt;li>new &lt;a href=settings/library_lists#stream_name_in_title>Stream Name In Title&lt;/a> option &lt;li>new &lt;a href=settings/ui_player#anim_long_labels_in_lists>Animate Long Labels Everywhere&lt;/a> option &lt;li>new Dark Skin &lt;a href=settings/ui_player#anim_long_labels_in_lists>Transparent Status Bar&lt;/a> option &lt;li>repeat mode improvements &lt;small>&lt;ul> &lt;li>✅ another voted feature from the New Poweramp Features list &lt;li>added new Play All Categories mode, which plays all categories and stops &lt;li>added hints to shuffle/repeat popups &lt;li>updated wording for repeat modes/hints &lt;/ul>&lt;/small> &lt;li>AutoEq presets/devices database update&lt;br> &lt;small>17703 presets updated&lt;/small> &lt;li>improved album art handling for streams with very long uris &lt;li>workaround for the headset/headunit/BT key presses intercepted and modified by Gemini &lt;li>updated translations &lt;/ul> &lt;br> "</string>
+<string name="changelog_102x">" &lt;b>Builds 1026-10xx:&lt;/b> &lt;ul> &lt;li>&lt;b>major Audio Engine update:&lt;/b> &lt;ul> &lt;li>✅ the top voted feature from the &lt;a href=https://forum.powerampapp.com/ideas/?mode=popular>New Poweramp Features&lt;/a> list &lt;li>&lt;b>USB Exclusive Driver&lt;/b>: direct access to the attached USB DAC bypassing Android audio, supporting PCM 44.1-768kHz, DSD64-1024 DoP/Raw, and hardware volume control &lt;li>&lt;b>&lt;a href=settings/audio_bit_perfect>Bit Perfect Modes&lt;/a>&lt;/b> - intended for DAPs/USB DACs; supported for Hi-Res, USB Exclusive, and partially AAudio &lt;ul> &lt;li>&lt;b>&lt;a href=settings/audio_bit_perfect#global_follow_track>Follow Track&lt;/a>&lt;/b>: dynamically reconfigures to match the track's sample rate &lt;li>&lt;b>&lt;a href=settings/audio_bit_perfect#global_perfect_bit_perfect>Perfect Bit Perfect&lt;/a>&lt;/b>: disables DSP, gains, and crossfade to send decoded audio (including DSD) directly to the output &lt;li>&lt;b>&lt;a href=settings/audio_bit_perfect#global_pipeline64>64-bit Pipeline&lt;/a>&lt;/b>: extends internal format to Float64 for bit-lossless processing or increased DSP accuracy &lt;li>&lt;b>&lt;a href=settings/audio_bit_perfect#global_dsd_remaster>DSD Remastering&lt;/a>&lt;/b>: converts audio to DSD64-1024, with or without PCM-domain DSP (can be combined with Perfect Bit Perfect mode) &lt;/ul> &lt;/li> &lt;li>Hi-Res Output &lt;b>native/DoP DSD64-1024&lt;/b> support&lt;/li> &lt;li>&lt;b>Dynamic Reconfiguration&lt;/b>: quickly reconfigures engine on routing/codec changes instead of full reloading&lt;/li> &lt;/ul> &lt;/li> &lt;li>&lt;a href=settings/audio_outputs2>Audio Outputs&lt;/a> settings improvements: &lt;ul> &lt;li>simplified settings hierarchy with shortened Device ➔ Options navigation&lt;/li> &lt;li>new sample rate, format, DSD, and other advanced options for &lt;b>USB Exclusive&lt;/b> and &lt;b>Hi-Res&lt;/b> outputs &lt;li>per-output &lt;b>Follow Track&lt;/b>, &lt;b>Perfect Bit Perfect&lt;/b>, &lt;b>64-bit Pipeline&lt;/b>, &lt;b>DSD Remastering&lt;/b> options - where supported &lt;li>&lt;b>Allowed Sample Rates&lt;/b> option which enables/disables specific sample rates for the given output &lt;li>&lt;b>Base-Rate Synchronous Scaling&lt;/b> option which enables sample rate change within same 44K/48K-base family &lt;li>DSD Remastering &lt;b>Target DSD Sample Rate&lt;/b> and &lt;b>Allow 48 kHz-based DSD&lt;/b> options &lt;li>USB Exclusive: &lt;b>Volume Type&lt;/b> and &lt;b>Synchronize Hardware Volume&lt;/b> options; &lt;b>Release USB DAC while paused&lt;/b>, &lt;b>Allow DSD DOP&lt;/b>, &lt;b>Prefer DSD Raw&lt;/b>, &lt;b>Warmup on Startup&lt;/b>, &lt;B>Force USB 1.1&lt;/b> options &lt;li>&lt;a href=settings/audio_outputs_tweaks#usb_activity>Show Poweramp for USB DACs&lt;/a> option, allowing future connections without a confirmation dialog &lt;li>&lt;b>custom profiles&lt;/b> for USB and Bluetooth devices &lt;li>Bluetooth codec sample rate matching &lt;li>new &lt;a href=settings/audio_output_device_opts?device=bt#set_codec_sr>Set BT Codec Parameters&lt;/a> option which dynamically changes Codec sample rate/format&lt;br> &lt;small>AAudio (recommended) and Hi-Res Outputs&lt;br> Android 9+&lt;br> Some phones (e.g., Samsungs) may not allow codec sample rate to be switched this way; others (e.g., Xiaomis), may not allow specific formats/sample rates, etc.&lt;/small> &lt;li>output related &lt;b>Advanced Tweaks&lt;/b> moved to Audio Output ➔ Advanced Tweaks &lt;li>new &lt;a href=settings/audio_outputs_tweaks#usb_activity>Show Poweramp for USB DACs&lt;/a> option &lt;/ul> &lt;li>preamp range increased to &lt;b>-24..+24dB&lt;/b>&lt;br> &lt;small>Helps with bass EQ on DAPs&lt;/small> &lt;li>&lt;b>FFmpeg&lt;/b> updated to &lt;b>8.1.1&lt;/b> &lt;li>&lt;b>Webm&lt;/b> format support &lt;li>Wired Headset/AUX is renamed to &lt;b>Wired 3.5/4.4 mm&lt;/b> for DAPs &lt;li>more accurate display of DSD rates &lt;li>updated/improved Hi-Res output support for DAPs: &lt;b>A&amp;K, Cayin, iBasso, HiBy, FiiO, Shanling, Sony, Tempotec&lt;/b> &lt;li>&lt;a href=settings/audio#audio_info>Audio Info&lt;/a> dialog is updated for the new Audio Engine features and provides &lt;b>Fidelity&lt;/b> and &lt;b>Processing&lt;/b> scores &lt;li>&lt;b>Limit button&lt;/b> is now highlighted when overload is detected &lt;li>new &lt;a href=settings/headset#pause_on_usb_connection>Pause On USB DAC connection&lt;/a> option &lt;li>rescan in folder scans just that folder (and subfolders) &lt;li>skin authors now have protection/optional verification for their skins &lt;li>all new features and options of this update are included into the base app and don't require Feature Package purchase. If you enjoy the update, you can always support us by &lt;a href=settings/feature_packages#buy_uber_badges>purchasing Uberpatron badges&lt;/a> &lt;/ul> "</string>
+<string name="changelog_971">" &lt;b>Builds 971-977:&lt;/b> &lt;ul> &lt;li>prev./next category actions for &lt;a href=settings/ui_mediaactions>Media Buttons&lt;/a> &lt;li>AutoEq presets/devices database update &lt;li>visualization latency is now also applied to lyrics for a better time synchronization &lt;li>new &lt;a href=settings/misc#op_framerate>Apply OP High Framerate&lt;/a> option&lt;br> &lt;small>For Oppo/OnePlus/Nothing phone devices&lt;/small> &lt;li>added support for Spinorama txt presets importing &lt;li>bug fixes and stability improvements &lt;li>updated translations - huge thanks to all Crowdin translators! &lt;/ul> &lt;br> "</string>
+<string name="changelog_978">" &lt;b>Also:&lt;/b> &lt;ul> &lt;li>cosmetic &lt;a href=settings/feature_packages#buy_uber_badges>Uberpatron badges&lt;/a> &lt;li>support for MOD, IT, S3M, XM, MPTM tracker formats via libopenmpt &lt;li>support for xHE-AAC format via device codecs &lt;li>support for the predictive back animation on Android 14+ &lt;li>new &lt;a href=settings/library#reset_stats>Reset Stats&lt;/a> option in Info/Tags dialog&lt;br> &lt;li>changes to &lt;a href=settings/ui_theme#alt_layout>Full Cover, Centered&lt;/a> skin options - more room for labels &lt;li>new Visualizations/&lt;a href=settings/vis#vis_ignore_touch_faded>Ignore Touch&lt;/a> option &lt;li>new &lt;a href=settings/aa_bg#aa_bg_gradient>Background Gradient&lt;/a>, &lt;a href=settings/aa_bg#aa_bg_gradient_color>Background Gradient Color&lt;/a>, &lt;a href=settings/aa_bg#aa_bg_gradient_for_list>Background Gradient For Lists&lt;/a> options &lt;li>new option in header menu/Add to Launcher for all categories &lt;li>new &lt;a href=settings/headset#ignore_bt_sec>Ignore Bluetooth Commands&lt;/a> option&lt;br> &lt;small>Helps ignoring unwanted commands from headunits/BT devices immediately after a connection&lt;/small> &lt;li>new &lt;a href=settings/headset#bt_ignore_repeat_shuffle>Ignore Repeat/Shuffle&lt;/a> option&lt;br> &lt;small>Disables processing for BT Repeat/Shuffle commands&lt;/small> &lt;li>Queue is now reloaded immediately for &lt;a href=settings/library_queue#queue_clear_on_add>Always Clear On Add&lt;/a> + &lt;a href=settings/library_queue#queue_start>Start Playing Queue&lt;/a>: Immediately options &lt;li>settings search history &lt;li>optimizations for very large libraries (e.g. 50k+ tracks) &lt;li>new option &lt;a href=settings/library_shuffle#no_reshuffle_for_large_lists>No Reshuffle For Large Lists&lt;/a> &lt;li>AutoEq presets/devices database update &lt;li>new &lt;a href=settings/ui#num_settings_tags>Settings Shortcuts in Main Menu&lt;/a> option &lt;li>new &lt;a href=settings/ui_lyrics#lyrics_keep_screen>Keep screen on&lt;/a> for the lyrics option &lt;li>hex color support in color dialogs &lt;/ul>&lt;br> "</string>
+<string name="changelog_978_fp">" &lt;b>Builds 978-988:&lt;/b> &lt;ul> &lt;li>introducing 🎁 &lt;a href=settings/feature_packages>Feature Packages&lt;/a>: &lt;small>&lt;ul> &lt;li>the number of big and small features (user requested/voted on Poweramp forum) packed together into low priced in-app purchase &lt;li>a few packages per year &lt;li>new features added to the same package with the each new build &lt;li>new Full Version purchase includes feature package discount &lt;li>this helps with Poweramp app continued development &lt;/ul>&lt;/small> &lt;/ul>&lt;small>&lt;br>&lt;/small> 🎁 &lt;a href=settings/feature_packages>Feature package #1&lt;/a>: &lt;ul> &lt;li>support for multiple items dragging in playlists and Queue&lt;br> &lt;small>Multiple checked items are dragged as a group&lt;/small> &lt;li>new &lt;a href=settings/ui_player#line2_click>Line2 Press&lt;/a> and &lt;a href=settings/ui_player#line2_click>Line2 Long Press&lt;/a> options &lt;li>new &lt;a href=settings/library_lists#hide_unknown_artist>Hide Unknown Artist&lt;/a> option&lt;br> &lt;small>Unknown Artist is hidden from track labels in Poweramp UI as possible&lt;/small> &lt;li>new &lt;a href=settings/ui#anim_speed>Animations&lt;/a> option&lt;br> &lt;small>Navigation animations now can be faster or disabled&lt;/small> &lt;li>more features for this package in the next builds &lt;/ul> &lt;br> "</string>
+<string name="changelog_989">" &lt;b>Builds 989-991:&lt;/b> &lt;ul> &lt;li>new &lt;a href=settings/vis#vis_fs_hide_bars>Hide System Bars For Full Screen&lt;/a> option&lt;br> &lt;small>🎁 Feature Pack #1&lt;/small> &lt;li>new &lt;a href=settings/ui_player#menu_button_long_press>Menu Button Long Press&lt;/a> option&lt;br> &lt;small>🎁 Feature Pack #1&lt;/small> &lt;li>new cast option: &lt;a href=settings/audio_output_device_opts?device=chromecast&amp;uniqName=com.maxmpz.audioplayer/output.cc#cc_show_meta>Show Meta Information&lt;/a> &lt;li>Info/Tags now shows total played count, including playbacks from the count-based or count-sorted categories&lt;br> &lt;small>As previously, the track sorting or standing within such categories is not changed by playback from these&lt;/small> &lt;li>added workaround to support DVC on the specific Android 15 firmwares (Pixel 9 series, Samsungs S25) via &lt;a href=settings/audio_dvc#compensate_dvc_vol>Compensate DVC Volume&lt;/a> option &lt;li>Poweramp now can indicate inability to detect Absolute Volume&lt;br>&lt;small>&lt;ul> &lt;li>on some Android 15 devices it's not possible to detect Absolute Volume. Poweramp now assumes Absolute Volume is enabled and disables DVC when &lt;a href=settings/audio_dvc#no_dvc_bt_absvol>No DVC for Bluetooth Absolute Volume&lt;/a> option is checked &lt;li>please uncheck this option if you know Absolute Volume is disabled on your device &lt;li>DVC settings page changed to describe the DVC+Absolute Volume functionality better &lt;/ul>&lt;/small> &lt;li>Android 15 restricts access to BT codec information - app won't be always able to show the codec, but still tries to show sample rate/bits &lt;li>Google Cast for Audio (GC4A) 2.0 support &lt;/ul> "</string>
+<string name="changelog_989_2">&lt;ul> &lt;b>Also:&lt;/b> &lt;li>improved reshuffle for the large (>10k) lists &lt;li>improved very large lists (>20k items) scrolling performance &lt;li>improved mod files scanning performance &lt;li>improved FLAC metadata parsing &lt;li>increased number of Sleep timer possible values &lt;li>audio routing detection code revamp&lt;br> &lt;small>Improved Poweramp detection of the complicated routing changes such as between multiple BT devices&lt;/small> &lt;li>improved tag handling of the files with the incorrect extensions (such as a mp4 file with the mp3 extension) &lt;li>.oga, flac in .ogg/.oga support &lt;li>fixed Repeat One in CUE &lt;li>other small changes for Android 15 &lt;li>Target SDK updated to 35 &lt;li>simplified Full Version unlocking via in-app purchase for Play&lt;br> &lt;small>Unlocker app continues to be available on Play for those who previously purchased it&lt;/small> &lt;/ul> &lt;br></string>
+<string name="changelog_992">" &lt;b>Builds 992-996:&lt;/b> &lt;ul> &lt;li>Add to Playlist dialog improvements via selectable modes: &lt;small>&lt;ul> &lt;li>Add to single playlist – quickly add songs with a single click to one playlist (duplicates are possible if enabled in Settings) &lt;li>Add – add songs to one or multiple playlists (duplicates are possible if enabled)&lt;/li> &lt;li>Toggle – applicable to a single song only. Quickly overview if a song is in playlists and toggle the song in and out (no duplicates)&lt;/li> &lt;li>Modes are stored per the selection type – for the single or multiple tracks&lt;/li> &lt;/ul>&lt;/small> &lt;li>if file access is removed by the user (via (i)->Storage &amp; cache->Clear access) or by Android (via Manage app if unused), Poweramp now keeps the Library entries intact &lt;small>&lt;ul> &lt;li>previously, a normal scan removed inaccessible entries from the Library &lt;li>Full Rescan still removes all inaccessible entries from the Library &lt;li>Poweramp now suggests restoring the missing permissions &lt;li>It's recommended to disable Manage app if unused option for Poweramp as it may suddenly remove the access to files, even if the app is actively used (for example, due to some firmware update) &lt;/ul>&lt;/small> &lt;li>&lt;a href=settings/ui#settings_font>Bold+ font&lt;/a> for Settings &lt;li>implemented Audio Focus &lt;a href=settings/audio_focus#af_short_duck>Duck Volume&lt;/a> for the AAudio output &lt;li>improved resuming and pausing after an audio focus change/call for some devices/firmwares &lt;li>improved audio output detection when voice assistant (Gemini) is used &lt;li>improved &lt;a href=settings/headset#resume_on_bt>Resume on Bluetooth&lt;/a> for some devices/firmwares &lt;li>new &lt;a href=settings/headset#beep_more>Beep More&lt;/a> option &lt;li>improved compatibility with the old 3rd party skins &lt;li>improved sleep timer &lt;li>improved Bluetooth double/triple button presses for some devices/firmwares &lt;li>updated translations &lt;/ul> &lt;br> "</string>
+<string name="changelog_997">" &lt;b>Builds 997-999:&lt;/b> &lt;ul> &lt;li>16kb page size support&lt;br> &lt;small>Google Play requirement&lt;/small> &lt;li>battery, CPU usage, app size optimizations &lt;li>Poweramp may now detect remote-submix (for example, Android Auto) as Other output type &lt;li>enabled &lt;a href=settings/audio_output?uniqName=com.maxmpz.audioplayer/output.athd>Hi-Res output&lt;/a> for Android 15+ devices &lt;small>&lt;ul> &lt;li>useful for the subset of Android 15+ devices which do not support Hi-Res via AAudio &lt;li>&lt;a href=settings/audio_output?uniqName=com.maxmpz.audioplayer/output.aa>AAudio output&lt;/a> is recommended for the devices where Hi-Res works with AAudio &lt;/ul>&lt;/small> &lt;li>updated WavPack decoder &lt;li>AutoEq presets/devices database update&lt;br> &lt;small>15199 presets updated&lt;/small> &lt;li>new &lt;a href=settings/headset#follow_pl_exact>Strict Resume/Pause/Stop&lt;/a> option&lt;br> &lt;small>Use for headunits/devices generating stray play/pause/stop key press commands, which are interpreted as undesired playback toggle or double press&lt;/small> &lt;li>improved playlist entries resolution&lt;br> &lt;small>Entries now matched against greater range of sub-paths, and just by filename - in playlist parent folder when appropriate&lt;/small> &lt;li>bug fixes and stability improvements &lt;li>updated translations &lt;/ul> &lt;br> "</string>
+<string name="clarity">Clarity</string>
+<string name="classic">Classic</string>
+<string name="classical">Classical</string>
+<string name="clear">Clear</string>
+<string name="clear_q">Clear Queue</string>
+<string name="clear_q_short">Clear Queue</string>
+<string name="clear_search_history">Clear search history</string>
+<string name="close_x_hint">Pause player and remove the notification</string>
+<string name="codec">Codec</string>
+<string name="codec_sr_hint">On most Android phones, choosing a Bluetooth codec sample rate can cause repeated resampling because the system enforces 48 kHz-based sample rates, even when the codec supports 44.1 kHz-based frequencies. The codec option is intended for DAPs</string>
+<string name="codec_sr_hint2">The codec parameters may arrive late, requiring reconfiguration during a playback; or in some instances, may never arrive</string>
+<string name="color">Color</string>
+<string name="colorful">Colorful</string>
+<string name="comment">Comment</string>
+<string name="common_google_play_services_enable_button">Enable</string>
+<string name="common_google_play_services_enable_text">"%1$s won't work unless you enable Google Play services."</string>
+<string name="common_google_play_services_enable_title">Enable Google Play services</string>
+<string name="common_google_play_services_install_button">Install</string>
+<string name="common_google_play_services_install_text">"%1$s won't run without Google Play services, which are missing from your device."</string>
+<string name="common_google_play_services_install_title">Get Google Play services</string>
+<string name="common_google_play_services_notification_channel_name">Google Play services availability</string>
+<string name="common_google_play_services_notification_ticker">Google Play services error</string>
+<string name="common_google_play_services_unknown_issue">%1$s is having trouble with Google Play services. Please try again.</string>
+<string name="common_google_play_services_unsupported_text">"%1$s won't run without Google Play services, which are not supported by your device."</string>
+<string name="common_google_play_services_update_button">Update</string>
+<string name="common_google_play_services_update_text">"%1$s won't run unless you update Google Play services."</string>
+<string name="common_google_play_services_update_title">Update Google Play services</string>
+<string name="common_google_play_services_updating_text">"%1$s won't run without Google Play services, which are currently updating."</string>
+<string name="common_google_play_services_wear_update_text">New version of Google Play services needed. It will update itself shortly.</string>
+<string name="common_open_on_phone">Open on phone</string>
+<string name="compact_header">Compact header</string>
+<string name="composer">Composer</string>
+<string name="composer_album">Composer Album</string>
+<string name="composer_album_songs">Composer Album Songs</string>
+<string name="composer_albums">Composer Albums</string>
+<string name="composers">Composers</string>
+<string name="compressor">Compressor</string>
+<string name="compressor_short">Compr</string>
+<string name="configure_widget">Configure Widget</string>
+<string name="contact_us">Contact Us</string>
+<string name="continue_">Continue</string>
+<string name="copied_to_clipboard">Copied to clipboard</string>
+<string name="copy_to_clipboard">Copy to Clipboard</string>
+<string name="corners">Corners</string>
+<string name="cue_meta">cue</string>
+<string name="current_status">Current status</string>
+<string name="custom_volume_short">Custom</string>
+<string name="cutoff_d">Cutoff: %d%%</string>
+<string name="d_audio_frames">%d audioframes</string>
+<string name="d_channels">%d Channels</string>
+<string name="d_db">%.1fdB</string>
+<string name="d_min">%d min</string>
+<string name="d_ms">%d ms</string>
+<string name="d_percent">%d%%</string>
+<string name="d_sec">%d sec</string>
+<string name="d_slash_d">%1$d / %2$d</string>
+<string name="dance">Dance</string>
+<string name="data_not_available">Data not available</string>
+<string name="db">dB</string>
+<string name="decoder">Decoder</string>
+<string name="default_delay">Default delay</string>
+<string name="default_preset">Default Preset</string>
+<string name="default_string">Default</string>
+<string name="delete">Delete</string>
+<string name="delete_bands_q">Delete bands?</string>
+<string name="delete_duplicates_q">Delete duplicates?</string>
+<string name="delete_dups">Delete Dups</string>
+<string name="delete_entries_q">Delete entries?</string>
+<string name="delete_entry_q">Delete entry?</string>
+<string name="delete_files">Delete Files</string>
+<string name="delete_output_profile_msg">The output profile will be removed, the generic output settings will be used instead</string>
+<string name="delete_presets_q">Delete presets?</string>
+<string name="delete_profile_q">Delete Profile?</string>
+<string name="delete_song_q">Delete song?</string>
+<string name="delete_songs_q">Delete songs?</string>
+<string name="delete_widget_style">Delete Widget Style</string>
+<string name="delete_widget_style_s_s">"Delete Widget Style: %1$s
+(%2$s)?"</string>
+<string name="deleting">Deleting...</string>
+<string name="deleting_cache">Deleting Cache...</string>
+<string name="desc_permission_access_milk_presets">Allows direct access to all visualization preset files</string>
+<string name="details">Details</string>
+<string name="details_in_paren_s_s">%1$s (%2$s)</string>
+<string name="device_apps_settings">Apps Settings</string>
+<string name="device_bt">Bluetooth</string>
+<string name="device_chromecast">Chromecast</string>
+<string name="device_dap_35_44">Wired 3.5/4.4 mm</string>
+<string name="device_headset">Wired Headset/AUX</string>
+<string name="device_other">Other Output Devices</string>
+<string name="device_short">Device</string>
+<string name="device_speaker">Speaker</string>
+<string name="device_usb">USB DAC</string>
+<string name="direct_no_effect_hint">On your device, &lt;a href=#no_dvc>DVC&lt;/a> may force standard definition audio (48 kHz/16 bit)</string>
+<string name="disable">Disable</string>
+<string name="disable_app_if_unused">Please make sure &lt;b>Manage app if unused&lt;/b> option in App Info is disabled for Poweramp as it can unexpectedly revoke the app’s access to your tracks</string>
+<string name="disable_app_if_unused2">The option may be named differently depending on the firmware, such as: Pause app activity if unused, Remove permissions if app is unused, etc.</string>
+<string name="disabled">Disabled</string>
+<string name="disc">Disc</string>
+<string name="discount_price">Discount price</string>
+<string name="display">Display</string>
+<string name="done">Done</string>
+<string name="dont_show_again">"Don't show again"</string>
+<string name="dont_suggest_autoeq_preset_for_this_device">"Don't suggest presets for this device"</string>
+<string name="download">Download</string>
+<string name="dsd_remaster">DSD Remastering</string>
+<string name="dsd_remaster_allow_48k">Allow 48 kHz-based DSD</string>
+<string name="dsd_remaster_hint1">Allows playing any format (including DSD) with DSP processing in PCM domain that is remastered to DSD for output</string>
+<string name="dsd_remaster_hint2">This option overrides <a href="#sample_rate">Sample Rate</a> and <a href="#allowed_srs">Allowed Sample Rates</a> selection</string>
+<string name="dsd_remaster_hint3">Combined with the Perfect Bit Perfect option, DSD Remaster processes PCM tracks only, DSD tracks remain unchanged</string>
+<string name="dsd_remaster_sample_rate_hint1">48 kHz-based DSD sample rate variant is used (if supported) for 48 kHz-based tracks</string>
+<string name="dsd_remaster_short">DSD Remaster</string>
+<string name="dsp">DSP</string>
+<string name="dsp_output_buf_size_in_ms">Desired buffer size in milliseconds. The actual buffer size is set by DSP/Output and may differ from the size set here</string>
+<string name="dsp_output_latency_ms_s_s">Reported latency - DSP: %1$s ms, Output: %2$s ms</string>
+<string name="dsp_score_hint">DSP score - represents the amount of audio processing used to shape, enhance, and personalize the sound</string>
+<string name="duplicate_tracks_nothing_added">Duplicates not added</string>
+<string name="duplicates_will_be_deleted_from_playlist">"Duplicates will be deleted from the playlist. Song files won't be deleted"</string>
+<string name="dvc_disabled_for_daps_wired">For DAP 3.5/4.4 mm outputs, DVC usually is not supported and is disabled by default</string>
+<string name="dvc_is_enabled_if">DVC is enabled if:</string>
+<string name="dvc_is_enabled_if2">• per output \"No DVC\" option allows it</string>
+<string name="dvc_is_enabled_if3">• \"No DVC for Bluetooth Absolute Volume\" option allows it</string>
+<string name="dvc_is_enabled_if4">• the output driver and the end device support DVC</string>
+<string name="edit">Edit</string>
+<string name="edit_player_screen_buttons">Edit Player Screen Buttons</string>
+<string name="edit_player_screen_buttons_desc">To customize, long-press the empty space between buttons or use the item below</string>
+<string name="edit_tags">Edit Tags</string>
+<string name="edit_url">Edit URL</string>
+<string name="edition_pak_name">com.maxmpz.audioplayer</string>
+<string name="embed_album_art">Embedded album art</string>
+<string name="embed_album_art_d">Embedded (%d bytes)</string>
+<string name="empoji_feature_pak_1">🎁 Feature Package #1</string>
+<string name="enable">Enable</string>
+<string name="enable_permissions_request">Please enable permissions in Android Settings ➔ Apps ➔ Poweramp ➔ Permissions</string>
+<string name="enabled">Enabled</string>
+<string name="end_reached">List finished</string>
+<string name="enqueue">Enqueue</string>
+<string name="enqueue_and_stay">Enqueue and stay in the list</string>
+<string name="equ">Equ</string>
+<string name="equ_off">Equ Off</string>
+<string name="equ_presets">Equalizer presets</string>
+<string name="equ_tab">Equalizer Tab</string>
+<string name="equalizer">Equalizer</string>
+<string name="equalizer_for_spot_ytm_etc">Equalizer for Spotify and YouTube Music</string>
+<string name="equalizer_preset">Equalizer Preset</string>
+<string name="error_excl">Error!</string>
+<string name="error_loading_s">Error loading: %s</string>
+<string name="exit_queue">Leave queue</string>
+<string name="exited_queue">Left queue</string>
+<string name="exported_presets_d">Exported presets: %d</string>
+<string name="exporting_s">Exporting: %s</string>
+<string name="external_link">External Link</string>
+<string name="external_link_msg">The link will be opened in the browser/another app</string>
+<string name="f0">%.0f</string>
+<string name="f0_hz">%.0fHz</string>
+<string name="f0_percent">%.0f%%</string>
+<string name="f1_khz">%.1fkHz</string>
+<string name="f1_mb">%1$.1f MB</string>
+<string name="f2">%.2f</string>
+<string name="f_percent">%.1f%%</string>
+<string name="fades_pbp_warning">Perfect Bit Perfect mode disables all fading effects</string>
+<string name="fades_sr_warning">Fading is not applied when switching between tracks with different sample rates</string>
+<string name="failed_bad_directory">Folder is missing or not readable</string>
+<string name="failed_s">Failed: %s</string>
+<string name="failed_to_grant_permissions">Required permissions not granted</string>
+<string name="failed_to_load">Failed to load</string>
+<string name="failed_to_load_text">"Sorry, but native library has failed to load 
 
-    <string name="nav_home">Home</string>
-    <string name="nav_library">Library</string>
-    <string name="nav_favorites">Favorites</string>
-    <string name="nav_settings">Settings</string>
+This can happen if:
+ - app installation is broken
+ - Android version is not fully compatible 
 
-    <string name="now_playing">Now Playing</string>
-    <string name="no_songs">No songs found</string>
-    <string name="scanning">Scanning library…</string>
-    <string name="play_all">Play All</string>
-    <string name="shuffle_all">Shuffle All</string>
-    <string name="search_hint">Search songs, artists…</string>
+Please try to reinstall the app"</string>
+<string name="failed_to_play">Failed to play</string>
+<string name="failed_to_play_file">Failed to play file!</string>
+<string name="failed_to_save_style">Failed to save style</string>
+<string name="faq">FAQ</string>
+<string name="fast">Fast</string>
+<string name="feature_packages">Feature Packages</string>
+<string name="feature_pak_1">Feature Package #1</string>
+<string name="fidelity">Fidelity</string>
+<string name="fidelity_scrore_hint">Fidelity score - represents the audio fidelity of the playback chain, including the source audio, processing, device, and output hardware</string>
+<string name="file_access_all_storages_hint">"This mode makes all storages directly accessible for a selection in the Music Folders dialog. 
 
-    <string name="play">Play</string>
-    <string name="pause">Pause</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
-    <string name="shuffle">Shuffle</string>
-    <string name="repeat">Repeat</string>
-    <string name="repeat_one">Repeat One</string>
+This option is not supported on Android 13+ for the Play app edition"</string>
+<string name="file_is_readonly_msg">"File can't be edited - file is read-only or no permission to write"</string>
+<string name="close">Close</string>
+<string name="file_no_write_access_can_enable">No write access to the file(s). To enable access in the Grant Access dialog, please select storage (e.g. SD card) in hamburger menu, then press Select</string>
+<string name="file_no_write_access_can_enable_short">No write access to the file(s). Please allow access in the next dialog</string>
+<string name="files">Files</string>
+<string name="fixed_size">Fixed Size</string>
+<string name="fixed_volume">Fixed Volume</string>
+<string name="flags">Flags</string>
+<string name="flat">Flat</string>
+<string name="folder">Folder</string>
+<string name="folder_short">Folder</string>
+<string name="folder_songs">Folder Songs</string>
+<string name="folders">Folders</string>
+<string name="folders_hier">Folders Hierarchy</string>
+<string name="follow_pl_exact">Strict Resume/Pause/Stop</string>
+<string name="follow_track_sr">Follow Track Sample Rate</string>
+<string name="follow_track_sr_short">Follow Track</string>
+<string name="font">Font</string>
+<string name="for_lists_supporting_dragging">For the lists supporting dragging:</string>
+<string name="force_usb_full_speed">Force USB 1.1</string>
+<string name="format_2f">%.2f</string>
+<string name="format_2f_x">%.2fx</string>
+<string name="forum_url">https://forum.powerampapp.com/</string>
+<string name="forward_10s">Forward 10s</string>
+<string name="fp1_changelog_content">" &lt;ul> &lt;li>customizable &lt;a href=settings/ui_player#edit_player_screen_buttons>Player Screen Buttons&lt;/a> &lt;li>new &lt;a href=settings/ui_player#menu_button_long_press>Menu Button Long Press&lt;/a> option &lt;li>new &lt;a href=settings/vis#vis_fs_hide_bars>Hide System Bars For Full Screen&lt;/a> option &lt;li>support for multiple items dragging in playlists and Queue&lt;br> &lt;small>Multiple checked items are dragged as a group&lt;/small> &lt;li>new &lt;a href=settings/ui_player#line2_click>Line2 Press&lt;/a> and &lt;a href=settings/ui_player#line2_click>Line2 Long Press&lt;/a> options &lt;li>new &lt;a href=settings/library_lists#hide_unknown_artist>Hide Unknown Artist&lt;/a> option&lt;br> &lt;small>Unknown Artist is hidden from track labels in Poweramp UI as possible&lt;/small> &lt;li>new &lt;a href=settings/ui#anim_speed>Animations&lt;/a> option&lt;br> &lt;small>Navigation animations now can be faster or disabled&lt;/small> &lt;li>more features for this package in the next builds &lt;/ul> &lt;br> "</string>
+<string name="fp1_line1">a number of upgrades, new cool features, and options in a single package</string>
+<string name="fp1_line2">the same package gets even more features in the subsequent updates</string>
+<string name="fp1_line3">packages allow us to continue Poweramp development</string>
+<string name="fp1_line4">one time package purchase, instead of a 🤢 subscription</string>
+<string name="fp1_line5">a discounted, minimal price, if you recently purchased Full Version</string>
+<string name="fp_emoji">🎁</string>
+<string name="fp_request_and_vote_on_forum">request and vote for the next package features on the Poweramp forum</string>
+<string name="frequency">Frequency</string>
+<string name="fs_date_time">Filesystem date/time</string>
+<string name="full_changelog">Full Changelog</string>
+<string name="full_random">Full Random</string>
+<string name="full_random_hint">Full Random does complete randomization</string>
+<string name="full_verified_required">Full Version (Verified) is required for this option</string>
+<string name="fv">@string/full_version</string>
+<string name="fv0_line1">unlocks all features, removes trial limitation</string>
+<string name="fv0_line2">includes Feature Packages released prior to purchase</string>
+<string name="fv0_line3">no subscriptions, no ads</string>
+<string name="fv0_line4">purchase continues development and updates of the app</string>
+<string name="fv_app_name">@string/paid_welcome_title</string>
+<string name="fv_emoji1">🔑</string>
+<string name="fv_emoji2">🎁</string>
+<string name="fv_emoji3">👍</string>
+<string name="fv_iap_purchase">Full Version In-App Purchase</string>
+<string name="fv_line1">@string/fv0_line1</string>
+<string name="fv_line2">@string/fv0_line2</string>
+<string name="fv_line3">@string/fv0_line3</string>
+<string name="gapless">Gapless</string>
+<string name="gapless_sr_warning">Tracks with different sample rates may not be stitched together gaplessly</string>
+<string name="gapless_xfade_sr_hint">Gapless playback and crossfade may be affected when switching between different sample rates</string>
+<string name="genre">Genre</string>
+<string name="genre_album">Genre Album</string>
+<string name="genre_album_songs">Genre Album Songs</string>
+<string name="genre_albums">Genre Albums</string>
+<string name="genre_root_word">@string/genre</string>
+<string name="genre_short">Genre</string>
+<string name="genres">Genres</string>
+<string name="get_support">Get Support</string>
+<string name="global_eq_short">Global Eq.</string>
+<string name="global_short">Glob</string>
+<string name="google_play">Google Play</string>
+<string name="grant_write_access">Grant Access</string>
+<string name="graphic_equ">Graphic</string>
+<string name="graphic_equ_short">Graphic</string>
+<string name="grid">Grid</string>
+<string name="grid_1_no_aa_extra_small">Grid - 1 line small</string>
+<string name="grid_extra_small">Grid - extra small</string>
+<string name="grid_small">Grid - small</string>
+<string name="h_equ_effects">Equ/Effects</string>
+<string name="h_frs_drag_to_scroll">❰❰ Drag to scroll knobs ❱❱</string>
+<string name="h_knobs_scroll_view">Press above or below knob for fine-tuning</string>
+<string name="h_lib_list">" Swipe &lt;img src=arrow_left_12dp> or &lt;img src=arrow_right_12dp> for parent category. Pinch-to-zoom &lt;img src=zoom_arrows_12dp> for zooming "</string>
+<string name="h_lib_list_opts">" Use &lt;img src=menu_rounded_12dp> ➔ &lt;b>List Options&lt;/b> for sorting/zooming options. List Options are different per each category "</string>
+<string name="h_longpress_value">Long press any knob value to enter a number manually</string>
+<string name="h_main_aa">" Swipe &lt;img src=arrow_left_12dp>&lt;img src=arrow_right_12dp> to change tracks. Swipe more to change category. Swipe &lt;img src=arrow_down_12dp> or press for the track source list. Swipe &lt;img src=arrow_up_12dp> for the track lyrics "</string>
+<string name="h_main_meta_info">"Press to cycle meta info.
+ Long press for Audio Info"</string>
+<string name="h_main_rating">" Rating can be switched to &lt;img src=star_rounded_12dp> / &lt;img src=like_rounded_12dp/>, or disabled in Settings "</string>
+<string name="h_navbar_list">" Press to return to Player Screen. Swipe &lt;img src=arrow_left_12dp>&lt;img src=arrow_right_12dp> to change tracks. Long press for track category "</string>
+<string name="h_next_list">Next category</string>
+<string name="h_pinch_to_zoom">Pinch-to-zoom &lt;img src=zoom_arrows_12dp> for zooming</string>
+<string name="h_prev_list">Prev. category</string>
+<string name="h_search_cats">Press category to toggle filter</string>
+<string name="h_search_cats2">Long press filters single category</string>
+<string name="h_select_range">Toggles all items in a range between already checked items</string>
+<string name="h_vis_advance_mode">Visualization preset mode (Shuffle, Locked, etc.)</string>
+<string name="h_vis_swipe">Swipe &lt;img src=arrow_left_12dp>&lt;img src=arrow_right_12dp> to change presets or press for a list</string>
+<string name="hardware_volume">Hardware Volume</string>
+<string name="hd_variant_dap_ak">DAP AK</string>
+<string name="hd_variant_dap_cayin">DAP Cayin</string>
+<string name="hd_variant_dap_fiio_10">DAP FiiO 10</string>
+<string name="hd_variant_dap_fiio_5">DAP FiiO 5</string>
+<string name="hd_variant_dap_fiio_7">DAP FiiO 7</string>
+<string name="hd_variant_dap_generic">DAP Generic</string>
+<string name="hd_variant_dap_generic_mtk">DAP Generic MTK</string>
+<string name="hd_variant_dap_hiby">DAP HiBy</string>
+<string name="hd_variant_dap_hiby_derivative">DAP HiBy-compat</string>
+<string name="hd_variant_dap_hiby_derivative_14">DAP HiBy-compat 14</string>
+<string name="hd_variant_dap_ibasso">DAP iBasso</string>
+<string name="hd_variant_dap_shanling">DAP Shanling</string>
+<string name="hd_variant_dap_sony">DAP Sony</string>
+<string name="hd_variant_direct_hd">Direct HD</string>
+<string name="hd_variant_direct_hd_11">Direct HD 11</string>
+<string name="hd_variant_direct_hd_huawei">Direct HD Huawei</string>
+<string name="hd_variant_direct_hd_lg_dsd">Direct HD LG DSD</string>
+<string name="hd_variant_direct_hd_miui">Direct HD MIUI</string>
+<string name="hd_variant_direct_hd_miui_11">Direct HD MIUI 11</string>
+<string name="hd_variant_direct_hd_miui_12">Direct HD MIUI 12</string>
+<string name="hd_variant_direct_hd_ns">Direct HD NS</string>
+<string name="hd_variant_dynamic">Dynamic HD</string>
+<string name="hd_variant_generic_hd">Generic HD</string>
+<string name="hd_variant_ibasso">iBasso</string>
+<string name="hd_variant_mixed">Mixed High Res</string>
+<string name="help">Help</string>
+<string name="hi_res">Hi-Res</string>
+<string name="hidden">Hidden</string>
+<string name="hide_fp_in_settings">Hide Feature Packages from the Settings top</string>
+<string name="hide_unknown_artist">Hide Unknown Artist</string>
+<string name="high">High</string>
+<string name="high_pass">High Pass</string>
+<string name="high_shelf">High Shelf</string>
+<string name="hms_app_gallery">Huawei AppGallery</string>
+<string name="hold_and_drag_buttons">Hold and drag to rearrange buttons</string>
+<string name="horizontal">Landscape (Horizontal)</string>
+<string name="hz">Hz</string>
+<string name="iap_on_gplay">In-App Purchases on Google Play</string>
+<string name="icons">Icons</string>
+<string name="ignore_bt_sec">Ignore Bluetooth Commands</string>
+<string name="ignore_first_touch_in_fade_controls">Ignore first touch in Fade Controls mode</string>
+<string name="ignore_repeat_shuffle">Ignore Repeat/Shuffle</string>
+<string name="ignore_touch">Ignore Touch</string>
+<string name="import_autoeq_presets">Import AutoEq Presets</string>
+<string name="import_eq_presets">Import Equalizer Presets</string>
+<string name="import_from_clipboard">Import from Clipboard</string>
+<string name="import_presets_from_zip">Import presets from a zip file</string>
+<string name="import_presets_from_zip_autoeq">Import presets from a zip file with the whole AutoEq compressed project (including AutoEq/ folder)</string>
+<string name="imported_graphic_presets_d">Imported graphic presets: %d</string>
+<string name="imported_parametric_presets_d">Imported parametric presets: %d</string>
+<string name="imported_prefix">Imported</string>
+<string name="imported_preset_short">Imported Preset</string>
+<string name="imported_presets_d">Imported presets: %d</string>
+<string name="imported_presets_will_overwrite_autoeq">The imported presets will overwrite existing AutoEq presets with the same name</string>
+<string name="in_folder_image">In-folder image</string>
+<string name="inactive">Inactive</string>
+<string name="included_with_full_version">Included with this Full Version edition</string>
+<string name="increasing_delay_introduce_pause_sr">Increasing this delay increases short pause between tracks with different sample rate</string>
+<string name="info">Info/Tags</string>
+<string name="info_short">Info/Tags</string>
+<string name="initializing">Initializing...</string>
+<string name="insert_at_bottom">Add to end</string>
+<string name="insert_at_top">Insert at start</string>
+<string name="internal_storage">Internal storage</string>
+<string name="intro_feat_paks">🎁 Feature Packages</string>
+<string name="invalid_storage">Invalid storage</string>
+<string name="invalid_url">Invalid URL</string>
+<string name="items_d">Items: %1$d</string>
+<string name="jumped_to_first_category">Jumped to the first category</string>
+<string name="jumped_to_last_category">Jumped to the last category</string>
+<string name="just_zap">Just Zap</string>
+<string name="kb">kB</string>
+<string name="kbps">kbps</string>
+<string name="keep_notification_hint1">If disabled, notification still stays when player is paused via notification</string>
+<string name="keep_notification_hint2">Notification can be removed by swiping away, X button, using Stop action in Poweramp, etc.</string>
+<string name="khz">kHz</string>
+<string name="l_app_gallery_response">AppGallery - %s</string>
+<string name="l_ensure_internet">Please ensure the internet connection is up and stable and try again</string>
+<string name="l_ensure_play">"Please ensure Google Play app works on your device, Play app is updated, and you're logged in"</string>
+<string name="l_internet_required_24h">Internet connection is only required for the first 24 hours after purchase</string>
+<string name="l_need_retry">You may retry couple of times if Play just updated or the account changed</string>
+<string name="l_pending_call_msg">"Poweramp is in license verification process. License is checked only first 24 hours after the purchase.
 
-    <string name="permission_title">Audio Access Needed</string>
-    <string name="permission_desc">Grant access to play your music from this device.</string>
-    <string name="permission_grant">Grant</string>
+If Poweramp constantly fails to verify license, it will stop working"</string>
+<string name="l_pending_iap">Checking Purchase</string>
+<string name="l_pending_iap_msg">Poweramp is checking purchase. If you previously purchased Poweramp via In-app or website, this will restore Full Version status</string>
+<string name="labels_bg">Labels Background</string>
+<string name="large_font">Large Font</string>
+<string name="last_played">Last Played</string>
+<string name="latency">Latency</string>
+<string name="latency_ms_d">Latency: %d ms</string>
+<string name="layout">Layout</string>
+<string name="leave_queue">Leave Queue</string>
+<string name="left_and_right_ch">Left and Right</string>
+<string name="left_ch">Left</string>
+<string name="legacy_access_no_perm">File Access Legacy Mode is enabled, but no permission granted - Poweramp may skip tracks from the affected folders</string>
+<string name="legacy_compatible_backup_msg">The backup file is compatible with the old builds</string>
+<string name="can_restore_purchase">If you already purchased Poweramp, you can restore your purchase</string>
+<string name="legacy_file_access_removed_hint1">Google removed File Access Legacy Mode support for Play editions of the app</string>
+<string name="legacy_file_access_removed_hint2">Website (-uni-) edition continues improved support for this feature</string>
+<string name="legacy_file_access_removed_hint3">Use Music Folders dialog to re-add folders separately if you previously used File Access Legacy Mode</string>
+<string name="legacy_incompatible_backup_msg">The backup file <u>is not</u> compatible with the old builds</string>
+<string name="less_pronounced">Less pronounced</string>
+<string name="less_random">Less Random</string>
+<string name="less_random_hint">Less Random prefers least played tracks or other shuffled items</string>
+<string name="library">Library</string>
+<string name="lifetime_license">Lifetime license</string>
+<string name="like">Like</string>
+<string name="like_unlike">Like/Unlike</string>
+<string name="limit">Limit</string>
+<string name="limiter">Limiter</string>
+<string name="line2_click">Line2 Press</string>
+<string name="line2_long_click">Line2 Long Press</string>
+<string name="list">List</string>
+<string name="trial_expired">Trial Expired</string>
+<string name="time_limited_trial">Time Limited Trial</string>
+<string name="list_1_no_aa">1 line</string>
+<string name="full_version">Full Version</string>
+<string name="list_1_no_aa_extra_small">1 line extra small</string>
+<string name="list_compact">List - compact</string>
+<string name="list_memory">List Memory</string>
+<string name="list_memory_options">List memory options</string>
+<string name="list_no_aa">List - no images</string>
+<string name="list_of_features">list of the included features</string>
+<string name="list_opts">List Options</string>
+<string name="list_opts_library_hint">Long press any category to toggle it as &lt;img src=lists_12dp> &lt;b>Home Category&lt;/b>: the default category for the navigation bar &lt;img src=lists_12dp> button</string>
+<string name="list_opts_memory_hint">List Position is restored when the list is started via header Play &lt;img src=play_12dp> button or by navigation with &lt;img src=prev_cat_12dp> &lt;img src=next_cat_12dp></string>
+<string name="list_opts_s">List Options: %s</string>
+<string name="list_played_in_shuffle">The list is played in the shuffle mode</string>
+<string name="list_pos">List Position</string>
+<string name="list_small">List - small</string>
+<string name="live">Live</string>
+<string name="loading">Loading...</string>
+<string name="local_lyrics_hint">Local lyrics: lyrics tag, LRC file, or lyrics previously downloaded by a lyrics plugin</string>
+<string name="localized_azChars">0ABCDEFGHIJKLMNOPQRSTUVWXYZ#</string>
+<string name="lock">Lock</string>
+<string name="lock_preset_short">Lock</string>
+<string name="lock_unlock">Lock/unlock</string>
+<string name="long_files">Long</string>
+<string name="long_press_between_buttons_to_edit">Long press between buttons to edit them</string>
+<string name="long_press_for_menu">Long press for menu</string>
+<string name="long_press_for_more_options">Long press for more options</string>
+<string name="long_press_item_for_selection">Long press any item for the selection menu</string>
+<string name="long_press_skin_opts">Long press for skin</string>
+<string name="long_press_value_to_enter_manually">Long press value to edit</string>
+<string name="low">Low</string>
+<string name="low_pass">Low Pass</string>
+<string name="low_rated">Low Rated</string>
+<string name="low_shelf">Low Shelf</string>
+<string name="lyrics">Lyrics</string>
+<string name="lyrics_custom_url">Browser via custom URL</string>
+<string name="lyrics_genius">Genius</string>
+<string name="lyrics_google">Google</string>
+<string name="lyrics_google_web">Google (Web)</string>
+<string name="lyrics_loading_via_plugin">Searching lyrics via plugin</string>
+<string name="lyrics_menu_item_action">Lyrics Item In The Track Menu</string>
+<string name="lyrics_musixmatch">MusiXmatch</string>
+<string name="lyrics_offset">Lyrics Time Offset</string>
+<string name="lyrics_offset_hint1">Positive value makes lyrics text appear earlier</string>
+<string name="lyrics_offset_hint2">Negative value delays lyrics text</string>
+<string name="lyrics_offset_hint3">Per-output Visualization/Lyrics latency is also applied</string>
+<string name="lyrics_provided_by_plugin">Lyrics provided by the plugin</string>
+<string name="lyrics_quicklyric">QuickLyric</string>
+<string name="lyrics_short">Lyrics</string>
+<string name="lyrics_walkmanlyrics">Walkman Lyrics Extension</string>
+<string name="matches_actual_shuffle_order">Matches actual shuffle order</string>
+<string name="max_items">Max items</string>
+<string name="maximum_short">Max</string>
+<string name="maxmp_copyright">© 2010-2026 Maksim Petrov (Max MP)</string>
+<string name="media_notification_channel_name">Cast</string>
+<string name="media_notify_actions_unified_hint">The media buttons are unified for all media controllers, such as Android 13+ media notification, Android Auto, watches, etc.</string>
+<string name="media_notify_actions_unified_hint2">"The playback control buttons (play/pause/prev./next) are fixed and can't be changed"</string>
+<string name="media_notify_actions_unified_hint3">First two buttons are available in the media notification, other actions are usually visible only in other media controllers (Android Auto)</string>
+<string name="media_notify_actions_unified_hint4">Android Auto shows 2 actions if only 2 actions are set, or 1 action and overflow menu for more than 2 actions</string>
+<string name="media_notify_inactive_hint1">Media Notification for an inactive player has only the play button</string>
+<string name="media_notify_inactive_hint2">"If enabled, this notification can't be removed by player on pause. When disabled, phone reboot may be needed to apply"</string>
+<string name="menu">Menu</string>
+<string name="purchase_failed">Purchase Failed</string>
+<string name="failed_restore_purchase">Failed to Restore Purchases</string>
+<string name="no_purchase_found">No previous purchase found</string>
+<string name="menu_button">Menu Button</string>
+<string name="menu_button_long_press">Menu Button Long Press</string>
+<string name="menu_open_long_press_cover">Menu can be opened by long pressing the cover</string>
+<string name="meta">Meta</string>
+<string name="meta_bg">Meta Background</string>
+<string name="mhz">MHz</string>
+<string name="middle">Middle</string>
+<string name="min_duration">Min. Duration</string>
+<string name="minimum_short">Min</string>
+<string name="minus_10">-10</string>
+<string name="pref_license_verified">Purchase Verified</string>
+<string name="pref_license_verified_cached">Purchase Verified and Stored</string>
+<string name="license_permanently_stored">License is stored on the device. No online checks are needed</string>
+<string name="pref_restore_purchase">Restore Purchase</string>
+<string name="missing_entry">Missing Entry</string>
+<string name="mod_channels">Channels</string>
+<string name="mod_date">Date</string>
+<string name="mod_gain_mb">Tracker Decoder Extra Gain</string>
+<string name="mod_instruments">Instruments</string>
+<string name="mod_orders">Orders</string>
+<string name="mod_patterns">Patterns</string>
+<string name="mod_samples">Samples</string>
+<string name="mod_separation">Tracker Decoder Stereo Separation</string>
+<string name="mod_subsongs">Subsongs</string>
+<string name="mod_tracker">Tracker</string>
+<string name="mono">Mono</string>
+<string name="monochromatic">Monochromatic</string>
+<string name="more_info">More Info</string>
+<string name="more_pronounced">More pronounced</string>
+<string name="most_played">Most Played</string>
+<string name="most_played_full">@string/most_played</string>
+<string name="mr_chooser_title">Cast to</string>
+<string name="mr_controller_disconnect">Disconnect</string>
+<string name="mr_controller_stop_casting">Stop casting</string>
+<string name="mr_controller_volume_slider">Volume slider</string>
+<string name="mr_dialog_default_group_name">Group</string>
+<string name="mr_route_name_bluetooth">Bluetooth</string>
+<string name="mr_route_name_speaker">Speaker</string>
+<string name="mr_route_name_tv">TV</string>
+<string name="l_ERROR_s">License error #%s</string>
+<string name="mr_route_name_unknown">Unknown</string>
+<string name="mr_user_route_category_name">Devices</string>
+<string name="msg_delete_selected_bands">Selected bands will be deleted</string>
+<string name="msg_delete_selected_presets">Selected presets will be deleted, except the Default user presets which are never deleted</string>
+<string name="mu_colors">Material You colors</string>
+<string name="multiple_checked_items_dragged_msg">multiple checked items are dragged as a group</string>
+<string name="music_folders_add_hint">Please use the Enable button and allow access to the appropriate storage. Only one root folder per storage is accepted. Use the Plus button to add more storages and 3rd party track provider plugins</string>
+<string name="music_folders_found_d">Found additional Music Folders: %d</string>
+<string name="music_folders_selection">Music folders selection</string>
+<string name="name_already_exists">Name already exists</string>
+<string name="never">Never</string>
+<string name="new_name">New Name</string>
+<string name="next_cat_s">Next %s</string>
+<string name="next_list">Next category</string>
+<string name="next_shuffle_session_hint">The option applies to the next shuffle session</string>
+<string name="next_track">Next track</string>
+<string name="next_track_list_reshuffle">List reshuffle</string>
+<string name="no_access_to_file_try_grant_perm">No access. Try &lt;a href=settings/library#music_folders_button>Restoring folder permissions&lt;/a></string>
+<string name="no_album_art">No album art</string>
+<string name="no_background">No Background</string>
+<string name="no_content">"Doesn't look like anything to me"</string>
+<string name="no_dsp">No DSP</string>
+<string name="no_embed_album_art">No Embedded Album Art</string>
+<string name="no_enough_tags">No enough tags in this song</string>
+<string name="no_files_in_the_db">No files available in selected category</string>
+<string name="no_folders_selected_message">WARNING: no folders have been selected</string>
+<string name="no_google_services_required">No Google Services required</string>
+<string name="no_items_limit">No limit</string>
+<string name="no_keep_notif_on_dscn_hint1">This option may temporarily keep Poweramp idle service if required</string>
+<string name="no_lyrics">No lyrics tag found in the song</string>
+<string name="no_lyrics_found">No lyrics found</string>
+<string name="no_lyrics_found_hint">Lyrics can be searched in 3rd party app</string>
+<string name="no_next_list">No next category</string>
+<string name="no_permission">No permission</string>
+<string name="no_previous_list">No previous category</string>
+<string name="no_rating">No rating</string>
+<string name="no_remastering">No Remastering</string>
+<string name="no_resampling">No Resampling</string>
+<string name="no_reshuffle_for_large_lists">No Reshuffle For Large Lists</string>
+<string name="no_reshuffle_for_large_lists_msg">"Don't reset shuffle order when a new track is manually selected from a very large list"</string>
+<string name="no_results_found">No results found</string>
+<string name="none">None</string>
+<string name="not_applied_in_folders_hier">Not applied in Folders Hierarchy</string>
+<string name="not_avail_for_your_font_scale">Not available for your font scale</string>
+<string name="not_available">Not available</string>
+<string name="not_available_in_trial">Not available in the trial version</string>
+<string name="not_installed">Not installed</string>
+<string name="not_now">Not Now</string>
+<string name="notification_channel_desc">Poweramp Notifications</string>
+<string name="notify_action_buttons">Media action buttons</string>
+<string name="notify_android_auto">Notification/Android Auto</string>
+<string name="num_settings_tags">Settings Shortcuts in Main Menu</string>
+<string name="on_off">On/Off</string>
+<string name="one_time_purchase">One time purchase</string>
+<string name="only_appl_for_unlocker_app_purchase">only applicable if you previously purchased Poweramp Unlocker app</string>
+<string name="only_appl_for_website_purchase">only applicable for prior purchase on website</string>
+<string name="pref_not_supported">Not supported</string>
+<string name="key_colon_value_s_s">%1$s: %2$s</string>
+<string name="open">Open</string>
+<string name="open_3rd_party_app">Open 3rd party app</string>
+<string name="open_lyrics_app">Open lyrics app</string>
+<string name="open_lyrics_ui">Open lyrics UI</string>
+<string name="open_queue">Open the Queue</string>
+<string name="opensles">OpenSL ES</string>
+<string name="opt_not_supported_by_some_firmwares">Some firmwares may not support this option</string>
+<string name="option_issues_aauto">The option may cause issues with Android Auto</string>
+<string name="optionally_apply_to_outputs_colon">Optionally apply this preset to the outputs:</string>
+<string name="other">Other</string>
+<string name="other_buttons">Other Buttons</string>
+<string name="other_dsp_settings">Other DSP settings</string>
+<string name="output_api_driver">Output Driver</string>
+<string name="output_device">Output Device</string>
+<string name="output_disable_dvc_hint">Disabling DVC may be required for Hi-Res and other advanced output options to work</string>
+<string name="output_driver_can_override_this">Output driver can override this setting</string>
+<string name="output_failed_s">Output failed: %s</string>
+<string name="output_profile">Output Profile</string>
+<string name="output_requires_bg_opts_off">This output driver requires battery/background optimizations to be disabled</string>
+<string name="output_settings_change_wasnt_accepted">The most recent output settings change was not accepted by the output</string>
+<string name="override_region">Override Region</string>
+<string name="pa_battery_optimize_msg">Please disable such optimizations for Poweramp and Poweramp Full Version Unlocker (both can be killed together) in the Apps Settings</string>
+<string name="pa_doesnt_scan_in_bg">Poweramp scans files only during active use or playback, not in the background, to save battery</string>
+<string name="pa_killed">Poweramp Was Killed</string>
+<string name="pa_killed_msg">Poweramp has detected it was killed during an active playback, probably by some battery saver, task killer, etc.</string>
+<string name="pa_output_aa">AAudio Output</string>
+<string name="pa_output_aa_desc">Hi-Res (Android 14+) native output</string>
+<string name="pa_output_aa_info">Hi-Res capable optimized audio output. Hi-Res is supported by a subset of Android devices</string>
+<string name="pa_output_at">AudioTrack Output</string>
+<string name="pa_output_at_desc">Basic Android output</string>
+<string name="pref_already_purchased_q">Already Purchased?</string>
+<string name="pa_output_at_info">Standard Android audio driver. Stable and supported by all Android devices</string>
+<string name="pa_output_athd">Hi-Res Output</string>
+<string name="pa_output_athd_desc">Direct 24+bit 96/192+kHz</string>
+<string name="pa_output_athd_info">Direct Hi-Res audio driver. Supported by a subset of Android devices</string>
+<string name="pa_output_cc">Chromecast Output</string>
+<string name="pa_output_cc_desc" />
+<string name="pa_output_cc_info" />
+<string name="pa_output_osl">OpenSL ES Output</string>
+<string name="failed">Failed</string>
+<string name="pa_output_osl_desc">Native output</string>
+<string name="pa_output_osl_info">Standard native Android audio driver</string>
+<string name="pa_output_usbx">USB Exclusive Output</string>
+<string name="pa_output_usbx_desc">Direct USB Exclusive Output</string>
+<string name="pa_output_usbx_info">Direct USB Exclusive Output. Bypasses the Android audio system completely</string>
+<string name="pa_plugin_author">Poweramp Team</string>
+<string name="pa_very_large_scans">For very large libraries, Poweramp scans in chunks during playback as resources allow</string>
+<string name="pa_will_try_to_match_track_sr_or_upsample">In Follow Track mode, Poweramp will try to match the track sample rate to a supported by the device rate from the allowed list, or it will upsample to the next higher allowed and supported rate</string>
+<string name="pa_wont_be_able_to_play">"Poweramp won't be able to play tracks until permissions are restored"</string>
+<string name="padding_hor">Hor. Padding</string>
+<string name="padding_ver">Vert. Padding</string>
+<string name="padding_ver2">Vert. Padding 2</string>
+<string name="paid_update_line1">Thank you for updating Poweramp!</string>
+<string name="paid_welcome_title">Poweramp Full Version</string>
+<string name="pak_purchased">Package Purchased</string>
+<string name="pak_s_included">Package %s Included</string>
+<string name="parametric_equ">Parametric</string>
+<string name="parametric_equ_short">Parametric</string>
+<string name="pause">Pause</string>
+<string name="pause_on_usb_connection">Pause On USB DAC connection</string>
+<string name="pause_usb_release">Release USB DAC while paused</string>
+<string name="pause_usb_release_hint">This option stresses USB DAC a bit more, and may cause glitches for some DACs</string>
+<string name="paused">Paused</string>
+<string name="pbp_allowed_srs_hint">Perfect Bit Perfect mode enables the selection of allowed DSD rates as well</string>
+<string name="pbp_volume_warn">Perfect Bit Perfect mode disables Android volume control. If hardware volume is unavailable or set too high, audio may play at MAXIMUM volume. Do NOT wear headphones when enabling this option for the first time</string>
+<string name="pcm_dsd_extra_warmup">USB DAC PCM/DSD Warmups</string>
+<string name="peaking_band">Peaking Band</string>
+<string name="peq_app_name">Poweramp Equalizer</string>
+<string name="per_named_device_preset_hint">Presets for the named devices override generic device assignments</string>
+<string name="per_output_follow_sr_hint">Enable the &lt;a href=settings/audio_bit_perfect>Bit Perfect&lt;/a> options to avoid or minimize resampling</string>
+<string name="per_song_preset_hint">Song presets always override any other preset assignments</string>
+<string name="per_track_progress">Per Track Progress</string>
+<string name="per_track_progress_hint">Per Track Progress overrides &lt;a href=settings/library#restore_pos>Store/Restore Per Track Progress&lt;/a> option</string>
+<string name="perfect_bit_perfect">Perfect Bit Perfect</string>
+<string name="perfect_bit_perfect_hint1">Intended for DAP and USB DACs with hardware volume control</string>
+<string name="perfect_bit_perfect_hint2">Poweramp may still convert/resample tracks with sample rate not supported by output or not allowed by other user settings</string>
+<string name="perfect_bit_perfect_hint3">DSD bitstream is directly sent to the output if supported/allowed</string>
+<string name="perfect_bit_perfect_short">P-Bit-P</string>
+<string name="permission_access_milk_presets">Access Visualization Presets</string>
+<string name="permission_granted">Permission granted</string>
+<string name="permissions">Permissions</string>
+<string name="permissions_are_missing_excl">Some permissions are missing!</string>
+<string name="permissions_reqiured_msg">This app uses the following permissions:</string>
+<string name="phone_speaker">Speaker (Loud)</string>
+<string name="pick_image">Pick From Gallery</string>
+<string name="pipeline64">64-bit Audio Pipeline</string>
+<string name="pipeline64_hint1">Float 64-bit is fully transparent for any sample formats, no bits lost</string>
+<string name="pipeline64_hint2">Increases power consumption. Equalizer and DSP are switched to the 64-bit mode</string>
+<string name="pipeline_loaded_in_safe_mode">Audio pipeline loaded in Safe mode</string>
+<string name="platform_fx">MusicFX</string>
+<string name="play">Play</string>
+<string name="play_all_cats">Play All Categories</string>
+<string name="play_all_cats_and_repeat">Play all categories and repeat</string>
+<string name="play_all_cats_and_stop">Play all categories and stop</string>
+<string name="play_and_go_to_main_ui">Play and go to Main UI</string>
+<string name="play_and_stay_in_list">Play and stay in the list</string>
+<string name="play_count_not_updated">Play count is not updated while playing by this sort</string>
+<string name="play_cur_cat_and_repeat">Play the current category and repeat</string>
+<string name="play_cur_cat_and_stop">Play the current category and stop</string>
+<string name="play_last_song_to_end">Play last song to end</string>
+<string name="play_one_cat">Play Category</string>
+<string name="play_silence_in_background">Play silence in background</string>
+<string name="play_silence_in_background_hint1">Prefer allowing Poweramp to work in the background in the system settings as an alternative to this option</string>
+<string name="play_single_song_and_pause">Play the current song and stop</string>
+<string name="play_time_not_updated">Play time is not updated while playing by this sort</string>
+<string name="played_times">Played Times</string>
+<string name="player_buttons_bg">Player Buttons Background</string>
+<string name="player_screen_buttons">Player Screen Buttons</string>
+<string name="player_screen_buttons_desc">Player screen buttons appear as an optionally scrollable row below the track cover</string>
+<string name="player_screen_layouts_desc">The button customizations are separate for portrait and landscape orientations</string>
+<string name="playing_q_from_search">Playing queued search results</string>
+<string name="playlist">Playlist</string>
+<string name="playlist_not_writeable">Playlist is not writeable</string>
+<string name="playlist_root_word">@string/playlist</string>
+<string name="playlist_set_aa_msg">You can also set playlist image by setting an image for the playlist track</string>
+<string name="playlist_songs">Playlist Songs</string>
+<string name="playlists">Playlists</string>
+<string name="plus_10">+10</string>
+<string name="pop">Pop</string>
+<string name="postfade_blocks">Post-fade</string>
+<string name="postfade_blocks_hint">Increases fade/seek smoothness</string>
+<string name="power_cant_verify_message">"Sorry, but Poweramp can't verify the purchase&lt;br/>&lt;br/> Cause: %s"</string>
+<string name="poweramp_cant_verify">"Can't verify Poweramp License"</string>
+<string name="poweramp_expired">Poweramp Trial Expiration</string>
+<string name="poweramp_expired_message">Sorry, but your &lt;b>Poweramp Trial&lt;/b> has expired. Thank you for the evaluation!&lt;br>&lt;br> If you already purchased Poweramp, you can restore your purchase.</string>
+<string name="poweramp_site">Poweramp website</string>
+<string name="poweramp_will_restart">App will restart now</string>
+<string name="preamp">Preamp</string>
+<string name="pref_3rdparty_skins">3rd Party Skins</string>
+<string name="pref_3rdparty_vis_presets">3rd Party Presets</string>
+<string name="pref_5_stars">5 stars</string>
+<string name="pref_5_stars_menu">5 stars (menu/lists only)</string>
+<string name="pref_aa_8888">Use 24-bit RGB</string>
+<string name="pref_aa_always">Always Send Album Art</string>
+<string name="pref_aa_aspect_ratio">Aspect Ratio</string>
+<string name="pref_aa_bg_options">Background</string>
+<string name="pref_aa_bg_skins_hint">Skins may override, change, or completely disable background</string>
+<string name="pref_aa_blur">Background Blur</string>
+<string name="pref_aa_blur_intensity">Background Intensity</string>
+<string name="pref_aa_blur_intensity_hint">Some skins may adjust this option to make text readable</string>
+<string name="pref_aa_blur_less">Less</string>
+<string name="pref_aa_blur_more">More</string>
+<string name="pref_aa_blur_saturation">Background Saturation</string>
+<string name="pref_aa_blur_scale">Background Details</string>
+<string name="pref_aa_blur_scale_less">Solid Color</string>
+<string name="pref_aa_blur_scale_more">Detailed</string>
+<string name="pref_aa_crop">Square</string>
+<string name="pref_aa_download_hd">High Resolution</string>
+<string name="pref_aa_download_hd_warning">"Please note that reduced number of album art images can be found when this option is enabled.
 
-    <string name="unknown_artist">Unknown Artist</string>
-    <string name="unknown_album">Unknown Album</string>
-    <string name="unknown_title">Unknown Title</string>
+Enabling this option may require album art re-downloads"</string>
+<string name="pref_aa_downloading">Download</string>
+<string name="pref_aa_force_default">Force Default Image</string>
+<string name="pref_aa_hi_res_for_apis">Send High Resolution Album Art</string>
+<string name="pref_aa_higher_res">Increase Resolution</string>
+<string name="pref_aa_keep_aspect">Keep Aspect Ratio</string>
+<string name="pref_aa_no_ashmem">API Compatibility</string>
+<string name="pref_aa_per_stream_track">Prefer Track Cover for Streams</string>
+<string name="pref_aa_wifi_only">Download Only On Wi-Fi</string>
+<string name="pref_about">About</string>
+<string name="pref_abs_vol">Absolute Volume</string>
+<string name="pref_absolute_volume_levels_warning">• For \"Absolute Volume\" BT devices, BT will try to override volume anyways</string>
+<string name="pref_active">Active</string>
+<string name="pref_addons">Addons</string>
+<string name="pref_advanced">Advanced</string>
+<string name="pref_advanced_tweaks">Advanced Tweaks</string>
+<string name="pref_af_notification_msg">On Android 8 and up Poweramp can be unloaded by the system while paused. Press here to avoid that via Keep Notification option</string>
+<string name="pref_after_current_list">After the current category/folder/album/...</string>
+<string name="pref_after_current_song">After the current song</string>
+<string name="pref_album_art_options">Album Art</string>
+<string name="pref_all_purchasing_methods">All Purchasing Methods</string>
+<string name="pref_already_purchased_on_play_msg">"You can reinstall Unlocker any time for free as long as you use your Google account you bought Unlocker with.
 
-    <string name="theme_amulet">Amulet</string>
-    <string name="settings_theme">Theme</string>
-    <string name="settings_about">About</string>
-    <string name="settings_version">Version</string>
-    <string name="settings_developer">Developed by SKB</string>
+If you have multiple Google accounts on the device, please ensure the correct account is selected in Play app"</string>
+<string name="pref_already_purchased_on_site_msg">"Only if purchased on Poweramp website!
+
+Your website purchase is valid for your "<b>Google</b> or <b>Email</b> account and your <b>Order ID</b> as specified in purchase confirmation email</string>
+<string name="pref_also_adjust_vol_bt_device">"Also don't forget to adjust volume on Bluetooth device"</string>
+<string name="pref_always_utf8">Always Use UTF-8</string>
+<string name="pref_android_auto">Android Auto</string>
+<string name="pref_anim_long_labels">Animate Long Labels</string>
+<string name="pref_anim_long_labels_in_lists">Animate Long Labels Everywhere</string>
+<string name="pref_animate_album_art">Album Art Animation</string>
+<string name="pref_ar_format_changes_when_playing">Sample rate/format may be detected only when playback is active</string>
+<string name="pref_artists_split_chars">Symbols to Split Multiple Artists</string>
+<string name="pref_artists_split_exceptions">Unsplit Artists</string>
+<string name="pref_audio_engine">Audio</string>
+<string name="pref_audio_focus">Audio Focus</string>
+<string name="pref_audio_output">Output</string>
+<string name="pref_auto">Auto</string>
+<string name="pref_auto_advance_fading">Auto-advance Fading</string>
+<string name="pref_auto_find">Auto-Find Music Folders</string>
+<string name="pref_auto_scan">Auto-scan</string>
+<string name="pref_az_scroll">A-Z Scroll</string>
+<string name="pref_black">Black</string>
+<string name="pref_bluetooth_disconnected">Bluetooth is disconnected</string>
+<string name="pref_buffer_size">Buffer Size</string>
+<string name="pref_buffer_small">Small</string>
+<string name="pref_builtin_skins">Built-in Skins</string>
+<string name="pref_button_options">Button Options</string>
+<string name="pref_buy">Buy Poweramp</string>
+<string name="pref_buy_msg">"You can buy the Full Version for the Play distributed Poweramp via Google Play Store only. 
+
+If you want to buy the Full Version using other payment methods, you can download and install a non-Google Play version of Poweramp via the Poweramp website."</string>
+<string name="pref_category_shuffle">Category Items Shuffle</string>
+<string name="pref_cc_af_warning">Chromecast output may ignore calls and short Audio Focus completely. Press here to configure</string>
+<string name="pref_cc_button">Chromecast Button</string>
+<string name="pref_cc_fades_warning">Play/pause/seek/manual track change fading is not applied for the Chromecast output</string>
+<string name="pref_cc_force_aa">Force Send Album Art</string>
+<string name="pref_check_beta_updates">Check For Beta Versions</string>
+<string name="pref_check_for_skin_reload">Always Reload Skin</string>
+<string name="pref_check_udpate_now">Check Now</string>
+<string name="pref_check_updates">Check For Updates</string>
+<string name="pref_clear_aa_cache">Delete Cache</string>
+<string name="pref_colorize_notification">Colorize Notification</string>
+<string name="pref_compact_bars">Scaled Bars For Faded Controls</string>
+<string name="pref_compensate_dvc_vol">Compensate DVC Volume</string>
+<string name="pref_composers_split_chars">Symbols to Split Multiple Composers</string>
+<string name="pref_configure_cc_button">Configure Chromecast button</string>
+<string name="pref_controls_double_triple">Double/triple press for next/prev. track</string>
+<string name="pref_controls_long">Long press for next track (when playing)</string>
+<string name="pref_controls_single">Single press</string>
+<string name="pref_crossfade">Crossfade</string>
+<string name="pref_crossfade_length">Crossfade Length</string>
+<string name="pref_crowdin_project">Poweramp Crowdin Project</string>
+<string name="pref_custom_bands_first_fr">First Frequency</string>
+<string name="pref_custom_bands_last_fr">Last Frequency</string>
+<string name="pref_custom_number_of_bands">Custom Number of Bands</string>
+<string name="pref_direct_unlock">Direct Unlock</string>
+<string name="pref_direct_volume_control">Direct Volume Control (DVC)</string>
+<string name="pref_disable_bt_abs_vol">Disable Bluetooth Absolute Volume</string>
+<string name="pref_disable_bt_media_sync">Disable Bluetooth Media Volume Sync</string>
+<string name="pref_dither">Dither</string>
+<string name="pref_dither_none">None (fastest)</string>
+<string name="pref_dither_ns_f_weighted">F-weighted noise shaping (slow)</string>
+<string name="pref_dither_ns_improved_e_weighted">Improved-e-weighted noise shaping (slow)</string>
+<string name="pref_dither_ns_low_shibata">Low shibata noise shaping (slow)</string>
+<string name="pref_dither_ns_modified_e_weighted">Modified-e-weighted noise shaping (slow)</string>
+<string name="pref_dither_ns_shibata">Shibata noise shaping (slow)</string>
+<string name="pref_dither_rectangular">Rectangular (fast)</string>
+<string name="pref_dither_triangular">Triangular (fast)</string>
+<string name="pref_dither_triangular_highpass">Triangular with high pass (fast)</string>
+<string name="pref_dont_ignore">"Don't ignore - include all"</string>
+<string name="pref_download_album_art">Download Album Art</string>
+<string name="pref_download_album_art_warning">Search for the missing album art using track tags. Due to the fuzzy search logic, some invalid images can be found</string>
+<string name="pref_download_artist_art">Download Artist Images</string>
+<string name="pref_download_artist_art_warning">Search for artist images using the artist tag. Invalid images can be found due to the wrong or incomplete tags</string>
+<string name="pref_download_if_no_tags">Also Search By Title/Filename</string>
+<string name="pref_dsp_border_gain">Smooth Equalizer/Tone Gains</string>
+<string name="pref_duck_on_short">Duck Volume</string>
+<string name="pref_duration_below_s">Less than (seconds): %s</string>
+<string name="pref_dvc_bt">DVC for Bluetooth</string>
+<string name="pref_dvc_bt_msg">DVC for Bluetooth works only when Absolute Volume is disabled. Otherwise, the volume may be too low</string>
+<string name="pref_dvc_confirmation">Warning! While Direct Volume Control (DVC) is supported by many devices, some devices/ROMs are not completely compatible, causing volume level issues. Please remove your headset/buds before enabling this option!</string>
+<string name="pref_dvc_not_supported">Not supported by ROM</string>
+<string name="pref_enable">@string/enable</string>
+<string name="pref_enable_custom_bands">Enable Custom Bands</string>
+<string name="pref_enable_deletion">Delete Action</string>
+<string name="pref_enable_direct_volume_control">Enable Direct Volume Control</string>
+<string name="pref_enable_headset_controls">Respond To Buttons</string>
+<string name="pref_enable_ics_ls_aa">Album Art</string>
+<string name="pref_enable_lock_screen">Show On Lock Screen</string>
+<string name="pref_ensure_bt_on_press_to_open_settings">Ensure Bluetooth is connected and press here to open settings</string>
+<string name="pref_eq_labels">Equalizer Values</string>
+<string name="pref_equ_bands">Graphic Equalizer Bands</string>
+<string name="pref_equ_mode_desc">Depending on the loaded preset, the equalizer can be in Graphic or Parametric mode</string>
+<string name="pref_equ_mode_list_filter_desc">Preset list has the Graphic and Parametric filters (both can be activated)</string>
+<string name="pref_equ_type">Equalizer Mode</string>
+<string name="pref_erase_and_rescan">Full Rescan</string>
+<string name="pref_exp_feature">This feature can fail for some devices/Android versions/ROMs</string>
+<string name="pref_experiment">Experiment</string>
+<string name="pref_export">Export</string>
+<string name="pref_exporting_playlists_progress">Exporting playlists, please wait</string>
+<string name="pref_fade_and_gapless">Crossfade, Fade, and Gapless</string>
+<string name="pref_fade_play_pause">Fade Play/Pause/Stop</string>
+<string name="pref_fade_seek">Fade on Seek</string>
+<string name="pref_fade_seek_ms">Seek Fade Length</string>
+<string name="pref_fade_short_ms">Play/Pause/Stop Fade Length</string>
+<string name="pref_fade_short_xfade_ms">Short Manual Crossfade Length</string>
+<string name="pref_file_access_legacy_mode">File Access Legacy Mode</string>
+<string name="pref_file_access_legacy_mode_msg">Legacy mode enables direct access to the files in Android 10+. The option change will require Music Folders re-selection</string>
+<string name="pref_folders_library_scanner">Scanner</string>
+<string name="pref_folders_selection">Folders Selection</string>
+<string name="pref_follow_night_mode">Follow Day/Night Mode</string>
+<string name="pref_force_audio_on_focus">Force Audio On Audio Focus Change</string>
+<string name="pref_full_rescan_required">Full Rescan is required</string>
+<string name="pref_gapless_preload">Preload Gapless Tracks</string>
+<string name="pref_general">General</string>
+<string name="pref_genres_split_chars">Symbols to Split Multiple Genres</string>
+<string name="pref_genres_split_chars_msg">One or multiple symbols like ; // $</string>
+<string name="pref_google_account_or_email">Google Account or Email</string>
+<string name="pref_graphic_equ_desc">&lt;img align=center src=equ_graphic_small> Graphic mode is easy to use 5-32 preconfigured bands</string>
+<string name="pref_headers_meta">Headers With Meta</string>
+<string name="pref_headroom_gain">No DVC - Preamp Reduction</string>
+<string name="pref_headset_beep">Beep</string>
+<string name="pref_headset_bt">Headset/Bluetooth</string>
+<string name="pref_headset_buttons">Buttons</string>
+<string name="pref_headset_connection">Connection</string>
+<string name="pref_headset_long_volume_press_hint">Press here for Volume keys long press option</string>
+<string name="pref_headset_vibrate">Vibrate</string>
+<string name="pref_hide_status_bar">Hide Status Bar</string>
+<string name="pref_hide_unknown_album">Hide Unknown Album</string>
+<string name="pref_hier_files_zoom">Hierarchy Files Zoom Level</string>
+<string name="pref_hier_flat_shf">Shuffle All Songs In Folder Hierarchy</string>
+<string name="pref_hier_no_advance">No \"Play All Categories\" For Hier Folders</string>
+<string name="pref_hires_force_no_speaker">Force Speaker Off (for Hi-Res Output)</string>
+<string name="pref_how_to_import_file_playlists_text">Poweramp automatically recognizes file based playlists (.m3u, .m3u8, .pls, .wpl) from the selected Music Folders</string>
+<string name="pref_how_to_import_file_playlists_text2">Poweramp also imports playlist if opened via file manager</string>
+<string name="pref_icon">Icon</string>
+<string name="pref_icon_set_msg">Actual icon look may vary depending on Android version, launcher, and system settings</string>
+<string name="pref_icon_set_msg2">It may take a few seconds for the launcher to update the icon</string>
+<string name="pref_ics_ls">Android Lock Screen</string>
+<string name="pref_ignore_short_tracks">Ignore Short Tracks (Notifications, etc.)</string>
+<string name="pref_ignore_tracks_with_duration">Ignore tracks with duration less than (seconds)</string>
+<string name="pref_immediately">Immediately</string>
+<string name="pref_import">Import</string>
+<string name="pref_increases_traffic">Increases traffic usage</string>
+<string name="pref_initial_scan">Initial Scan</string>
+<string name="pref_insert_pos_hint">Insert position can also be changed by long pressing the button in the selection menu</string>
+<string name="pref_join_albums">Join Albums</string>
+<string name="pref_keep_notification">Keep Notification</string>
+<string name="pref_keep_screen_on">Keep Screen On</string>
+<string name="pref_keep_service">Keep Service</string>
+<string name="pref_keep_service_msg">On Android 8+ this option works reliable only with the active notification</string>
+<string name="pref_language">Language</string>
+<string name="pref_language_eng">Language</string>
+<string name="pref_last_processed_commands">Last Processed Commands</string>
+<string name="pref_later">Later</string>
+<string name="pref_legacy">Legacy</string>
+<string name="pref_library">Library</string>
+<string name="pref_like_unlike_thumbs">Like/unlike thumbs</string>
+<string name="pref_list_aa_blur_enabled">List Background</string>
+<string name="pref_list_action_resets">Click Restarts Track</string>
+<string name="pref_list_bottom_toolbar">Bottom Buttons</string>
+<string name="pref_list_header_buttons">Header Buttons</string>
+<string name="pref_list_zoom_lyrics">Lyrics Size</string>
+<string name="pref_lists">Lists</string>
+<string name="pref_load_user_so">Load custom .so library</string>
+<string name="pref_localized_az">Localized A-Z Scroll</string>
+<string name="pref_lock_screen">Lock Screen</string>
+<string name="pref_long_press_warning">"Long press may fail to work on some devices.
+
+On first long press (while playing), Android may ask for default action - please select Poweramp"</string>
+<string name="pref_long_skip_rewind">-10/+10s Rewind Pro Buttons</string>
+<string name="pref_long_skip_rewind_redirect">Press here to set long track duration</string>
+<string name="pref_long_summary_skip_rewind">Change &lt;&lt;&lt; >>> (category change) pro buttons to -10/+10s rewinding buttons for long tracks. Also applies to Long category</string>
+<string name="pref_long_summary_skip_rewind_note">Requires &lt;a href=settings/ui_theme#more_buttons>Pro Buttons&lt;/a> skin option enabled</string>
+<string name="pref_long_volume_controls">Change Tracks By Long Volume Keys Press</string>
+<string name="pref_look_and_feel">Look and Feel</string>
+<string name="pref_lrc_scan">Scan LRC Files</string>
+<string name="pref_ls_aa_blur">Blur</string>
+<string name="pref_ls_default_aa">Show Default Image</string>
+<string name="pref_ls_enable_land">Landscape Layout</string>
+<string name="pref_ls_force_timeout">Shorter Timeout</string>
+<string name="pref_lyrics_aa_blur_enabled">Lyrics Background</string>
+<string name="pref_lyrics_custom_url">Custom URL</string>
+<string name="pref_lyrics_hint1">Poweramp loads lyrics from track tags or from the LRC file</string>
+<string name="pref_lyrics_hint2">If lyrics plugin is installed, Poweramp also queries the plugin for the lyrics</string>
+<string name="pref_lyrics_hint3">If no lyrics found, lyrics text can be searched in the preferred lyrics app or in browser</string>
+<string name="pref_lyrics_in_menu_hint">Long press on lyrics item in track menu always opens 3rd party app</string>
+<string name="pref_lyrics_long_press_hint">Long press on lyrics button always opens 3rd party app</string>
+<string name="pref_lyrics_lust_bg_dimmed_hint">Lyrics and list background is specifically dimmed to make text readable</string>
+<string name="pref_lyrics_plugin">Preferred Lyrics App</string>
+<string name="pref_m3u_utf8">Always Use UTF-8 for .m3u</string>
+<string name="pref_main_lyrics_button">Lyrics Button</string>
+<string name="pref_main_lyrics_swipe">Lyrics Swipe Up</string>
+<string name="pref_main_lyrics_swipe_hint">When lyrics swipe is enabled, swipe album art up to show lyrics.</string>
+<string name="pref_main_lyrics_swipe_hint2">Return from lyrics by swipe to side or scrolling up.</string>
+<string name="pref_main_menu">Main Menu</string>
+<string name="pref_main_screen">Player Screen</string>
+<string name="pref_main_screen_and_main_menu">Player Screen and Main Menu</string>
+<string name="pref_main_screen_button">Player Screen Button</string>
+<string name="pref_manage_space">Manage Space</string>
+<string name="pref_manual_advance_fading">Manual Track Change Fading</string>
+<string name="pref_mb_a_aa_cats">Images for Categories</string>
+<string name="pref_mb_a_aa_tracks">Album Art for Tracks</string>
+<string name="pref_mb_a_grid">Grid View for Categories</string>
+<string name="pref_media_custom">Media with the custom cover</string>
+<string name="pref_media_style">Media / Colorized</string>
+<string name="pref_media_vol_sync">Media Volume Sync</string>
+<string name="pref_menu_nav_to_folders">Navigate to the Folders</string>
+<string name="pref_migrate">Migrate</string>
+<string name="pref_migrate_data_29">Migrate Data to Android 10</string>
+<string name="pref_milk_hide_unliked">Hide Unliked Presets</string>
+<string name="pref_misc">Misc</string>
+<string name="pref_msg_reset_negative_aa_status">This will force Poweramp to search again for album/artist images that failed before</string>
+<string name="pref_navbar_seekbar">Seekbar in Navbar</string>
+<string name="pref_no_3rdparty_skins">No 3rd Party Skins Found</string>
+<string name="pref_no_3rdparty_vis_presets">No 3rd Party Presets Found</string>
+<string name="pref_no_android_long_press">Disable Default Long Press</string>
+<string name="pref_no_dvc_bt_absvol">No DVC for Bluetooth Absolute Volume</string>
+<string name="pref_no_fading">No fading</string>
+<string name="pref_no_keep_notif_on_dscn">Remove Notification on Disconnection</string>
+<string name="pref_no_reshuffle">No Reshuffle</string>
+<string name="pref_no_vis_presets">No presets</string>
+<string name="pref_notification_colors">Notification Colors</string>
+<string name="pref_notification_keeping">Notification Keeping</string>
+<string name="pref_notification_type">Notification Type</string>
+<string name="pref_notification_type_msg">Non-auto notification type make sense for custom ROMs, non-standard notifications themes, etc. Some non-auto types may fail to work for your device/ROM combination</string>
+<string name="pref_notifications">Notifications</string>
+<string name="pref_notify_action1">Button 1</string>
+<string name="pref_notify_action2">Button 2</string>
+<string name="pref_notify_action3">Button 3</string>
+<string name="pref_notify_action4">Button 4</string>
+<string name="pref_notify_action5">Button 5</string>
+<string name="pref_notify_action6">Button 6</string>
+<string name="pref_notify_prefer_nav">Show Previous Track Action (&lt;&lt;)</string>
+<string name="pref_notify_prio">Notification Priority</string>
+<string name="pref_notify_resume">Keep Inactive Media Notification</string>
+<string name="pref_number_of_bands">Number of Bands</string>
+<string name="pref_number_of_bands_msg">&lt;small>High number of bands may require manual &lt;a href=settings/peq_equ#peq_blocksize>Block Size&lt;/a> adjustment for the increased frequency resolution&lt;/small></string>
+<string name="pref_op_framerate">Apply OP High Framerate</string>
+<string name="pref_open_app_settings">Open App Settings</string>
+<string name="pref_open_source_licenses">Open Source Licenses</string>
+<string name="pref_option_for_active_pa">This option works when the Poweramp UI or notification is visible</string>
+<string name="pref_orientation">Screen Orientation</string>
+<string name="pref_other">Other</string>
+<string name="pref_output_detection_log">Audio Outputs Detection Log</string>
+<string name="pref_output_disable_dvc">No DVC</string>
+<string name="pref_output_disable_equ_tone">No Equ/Tone</string>
+<string name="pref_output_disable_headroom_gain">No Headroom Gain Reduction</string>
+<string name="pref_output_dvc_not_supported">DVC not supported</string>
+<string name="pref_output_float">Float32 Sample Format</string>
+<string name="pref_output_no_af">Ignore Audio Focus</string>
+<string name="pref_output_no_duck">No Duck</string>
+<string name="pref_pa_keeps_tracks_no_storages">Poweramp retains track info (e.g., ratings, playlists) from removed storage even after a Rescan. Use Full Rescan to clear it</string>
+<string name="pref_parametric_equ_desc">&lt;img align=center src=equ_parametric_small> Parametric mode is an advanced equalizer mode, each band is added and configured manually</string>
+<string name="pref_pause_in_call">Pause In Call</string>
+<string name="pref_pause_on_headset">Pause On Headset Disconnect</string>
+<string name="pref_pause_on_permanent">Permanent Audio Focus Change</string>
+<string name="pref_pause_on_screen_off">Pause on Screen Off</string>
+<string name="pref_pause_on_short">Short Audio Focus Change / Calls</string>
+<string name="pref_test_build" />
+<string name="pref_pause_on_volume">Pause/Resume on Volume</string>
+<string name="pref_per_cat_restore_pos_hint">Individual playlists and folders can be set to keep each track progress via their header menu ➔ List Options</string>
+<string name="pref_pl_auto_resolve">Resolve Playlist Entries</string>
+<string name="pref_pl_del_entry_w_track">Remove Playlist Entries On Track Deletion</string>
+<string name="pref_pl_import_ratings">Import Ratings</string>
+<string name="pref_pl_no_dups">"Don't Add Duplicates"</string>
+<string name="pref_plain_seekbar_with_buttons">Simple Seekbar (with Pro Buttons)</string>
+<string name="pref_platform_fx_warning">"System Effects may require DVC disabled in Poweramp. 
+
+An extensive use of System Effects combined with the Poweramp DSP can cause glitches/audio distortion/volume drop. 
+
+Poweramp DSP is much more optimized for quality and CPU/Battery comparing to the default Android System Effects. Still, on some devices, MusicFX can be useful (Sony Effects, custom ROMs)."</string>
+<string name="pref_play_next_insert_pos">Play Next Insert Position</string>
+<string name="pref_played_dur">Count As Played</string>
+<string name="pref_player_ui">Player Screen</string>
+<string name="pref_playlist_insert_pos">Playlist Insert Position</string>
+<string name="pref_playlist_item_action">List Item Action</string>
+<string name="pref_playlists_export">Export Poweramp Playlists</string>
+<string name="pref_playlists_export_msg_s">"Poweramp exports playlists in M3U8 format 
+
+Playlists are exported to the target folder: 
+%s 
+
+CUE tracks are not supported by M3U8 - they are exported as source (big) files 
+
+Exported .m3u8 playlists may appear in Playlists category if the target folder is in a Music Folders selection"</string>
+<string name="pref_playlists_exported_d">Exported playlists: %d</string>
+<string name="pref_playlists_import">Import System Library Playlists</string>
+<string name="pref_playlists_import_msg">"Import System Library playlists. Existing Poweramp playlists won't be overwritten"</string>
+<string name="pref_playlists_imported_d">Imported playlists: %1$d</string>
+<string name="pref_poweramp_forum">Forum</string>
+<string name="pref_poweramp_loads_milk_presets_from_s">Poweramp loads .milk presets and zips (up to 10k presets) from %s</string>
+<string name="pref_poweramp_ls">Poweramp Lock Screen</string>
+<string name="pref_poweramp_ls_permissions">Some devices may require additional Lock Screen permission manually set in Android settings ➔ Apps for Poweramp</string>
+<string name="pref_poweramp_ls_permissions2">For shorter lock screen timeout, \"Apps that can change system settings\" or \"Modify system settings\" permission should be set for Poweramp</string>
+<string name="pref_poweramp_ls_permissions_10">Android 10 requires \"Display over other apps permission\" to show Poweramp Lock Screen</string>
+<string name="pref_poweramp_settings">Poweramp Settings</string>
+<string name="pref_prefer_download">Prefer Downloaded Album Art</string>
+<string name="pref_preload_more">More</string>
+<string name="pref_preload_normal">Normal</string>
+<string name="pref_preset_custom">Preset: Custom</string>
+<string name="pref_preset_huge">Preset: Huge</string>
+<string name="pref_preset_large">Preset: Large</string>
+<string name="pref_preset_normal">Preset: Normal</string>
+<string name="pref_preset_small">Preset: Small</string>
+<string name="pref_press_here_for_details">Press here for details</string>
+<string name="pref_press_to_open_settings">Press here to open settings</string>
+<string name="pref_prev_previous_resets">&lt;&lt; Button Resets Current Track</string>
+<string name="pref_privacy_policy">Privacy Policy</string>
+<string name="pref_process_cues">Parse CUE Files</string>
+<string name="pref_process_cues_disable_msg">Library will be rescanned. CUE tracks will &lt;b>disappear&lt;/b> from all categories</string>
+<string name="pref_purchase_faq">Purchase FAQ</string>
+<string name="pref_purchase_order_id">Purchase Order ID</string>
+<string name="pref_q_next_forces_after_song">Play Next: Start Queue</string>
+<string name="pref_queue_clear_on_add">Always Clear On Add</string>
+<string name="pref_queue_end">On Queue End</string>
+<string name="pref_queue_end_exit">Return to previous category</string>
+<string name="pref_queue_end_stay">Stay in Queue / repeat Queue</string>
+<string name="pref_queue_hint">Poweramp Queue is a separate dynamic playlist</string>
+<string name="pref_queue_insert_pos">Queue Insert Position</string>
+<string name="pref_queue_never_clear_on_add">Never Clear On Add</string>
+<string name="pref_queue_no_shuffle">Ignore Shuffle</string>
+<string name="pref_queue_start">Start Playing Queue</string>
+<string name="pref_rating_type">Rating Type</string>
+<string name="pref_rating_type_5stars_hint">Swipe over stars to select rating. Touch an empty space where star should be placed for immediate rating. Long press to toggle between 5 or 0 stars</string>
+<string name="pref_reconfig_delay">Reconfiguration Delay</string>
+<string name="pref_replay_gain">Replay Gain (RG)</string>
+<string name="pref_replay_gain_source">Source</string>
+<string name="pref_replay_gain_type">Replay Gain</string>
+<string name="pref_requires_more_ram">Consumes more RAM. Poweramp may crash due to insufficient memory on the devices with not enough RAM</string>
+<string name="pref_resampler">Resampler</string>
+<string name="pref_resampler_cutoff">Resampler Cutoff Frequency Ratio</string>
+<string name="pref_resampler_sox">SoX - very high quality</string>
+<string name="pref_resampler_summary">Resampling/dither settings</string>
+<string name="pref_resampler_swr">SW - high quality</string>
+<string name="pref_resampler_type">Resampler Type</string>
+<string name="pref_rescan_folders">Rescan</string>
+<string name="pref_rescan_lyrics_tags">Rescan Lyrics Tags</string>
+<string name="pref_reset_disabled_autoeq_suggestions">Reset the Disabled AutoEq Suggestions</string>
+<string name="pref_reset_equ_presets">Restore Equalizer Presets</string>
+<string name="pref_reset_negative_aa_status">Reset Negative Status</string>
+<string name="pref_reset_reverb_presets">Restore Reverb Presets</string>
+<string name="pref_restore_defaults">Restore Defaults</string>
+<string name="pref_restore_defaults_msg">All options on this page will be restored to the default values</string>
+<string name="pref_restore_output_defaults">All options for this output will be restored to the default values</string>
+<string name="pref_restore_pos">Store/Restore Per Track Progress</string>
+<string name="pref_restore_pos_min_dur">Track Duration For Per Track Progress and -10/+10s Buttons</string>
+<string name="pref_resume_after_call">Resume After Call</string>
+<string name="pref_resume_on_bt">Resume On Bluetooth</string>
+<string name="pref_resume_on_headset">Resume On Wired Headset</string>
+<string name="pref_resume_on_mount">Wait For Storage</string>
+<string name="pref_resume_on_resume">Resume On Reopen</string>
+<string name="pref_resume_on_start">Resume On Start</string>
+<string name="pref_rg_default_gain">Preamp for songs without RG info</string>
+<string name="pref_rg_preamp">RG preamp</string>
+<string name="pref_rg_source_album">Album</string>
+<string name="pref_rg_source_track">Track</string>
+<string name="pref_rg_type_apply">Apply Gain</string>
+<string name="pref_rg_type_apply_peak">Apply Gain/prevent clipping according to Peak</string>
+<string name="pref_rg_type_none">"Don't apply"</string>
+<string name="pref_root_hier_immediate">Folders Hierarchy Immediate Root</string>
+<string name="pref_s_buffer_options_for_output_device_s">%1$s buffer options for output device: %2$s</string>
+<string name="pref_sample_rate">Sample Rate</string>
+<string name="pref_scan_no_wait">Rescan Immediately</string>
+<string name="pref_scan_post_system">System Media Scanner/MTP</string>
+<string name="pref_scan_post_usb_mount">USB Disconnection/SD Card Mount</string>
+<string name="pref_scan_providers">Scan Providers</string>
+<string name="pref_scrobble_hint">Most scrobbler apps should work without extra configuration</string>
+<string name="pref_scrobble_via_last_fm">Scrobble via Official Last.fm app</string>
+<string name="pref_scrobble_via_simple_last_fm">Scrobble via Simple Scrobbler</string>
+<string name="pref_scrobbling">Scrobbling</string>
+<string name="pref_search">Search</string>
+<string name="pref_search_categories">Search Categories</string>
+<string name="pref_search_play_for_skins">To get more skins, search in Google Play for \"Poweramp v3 skin\"</string>
+<string name="pref_search_play_tracks">Play Tracks Only</string>
+<string name="pref_search_playback_msg">Search results can be played immediately by using &lt;img src=play_rounded_12dp>&lt;img src=shuffle_rounded_12dp> buttons in the Search header</string>
+<string name="pref_search_track_titles_only">Search Track Titles Only</string>
+<string name="pref_see_more_ui_prefs_in_lists">Press here for the additional List UI options like Filename As Title, Show Track Number, etc.</string>
+<string name="pref_see_show_unsplit_cats">Press here to show/hide unsplit combined categories</string>
+<string name="pref_select_folders">Music Folders</string>
+<string name="pref_send_errors">Send Errors To Developer</string>
+<string name="pref_send_log">Send Log</string>
+<string name="error">Error</string>
+<string name="pref_send_log_msg">This will collect and submit a diagnostics log. Logs are automatcially processed. E-mails related to the diagnostics log will no be replied to</string>
+<string name="pref_send_mediasession_q">Now Playing List For Connected Devices/Apps</string>
+<string name="pref_send_metachanged">Metachanged Intent</string>
+<string name="pref_send_old_api_aa">Send Album Art for old API</string>
+<string name="pref_send_presets_to_peq">Export Presets to the Poweramp Equalizer app</string>
+<string name="pref_settings_export">Export Settings/Data</string>
+<string name="pref_settings_font">Settings Font</string>
+<string name="pref_settings_import">Import Settings/Data</string>
+<string name="pref_settings_import_msg_s">"Load settings/data from:
+
+%s"</string>
+<string name="pref_settings_import_warn_msg">"Settings/presets will be overwritten. Playlists/streams/bookmarks won't be overwritten, but will be added. Statistics/bookmarks are applied to already existing tracks. App may restart after the import"</string>
+<string name="pref_settings_theme">Settings Theme</string>
+<string name="pref_settings_theme_dark">Dark</string>
+<string name="pref_settings_theme_light">Light</string>
+<string name="pref_short_fading">Short crossfade</string>
+<string name="pref_show_cue_source">Show CUE Disc Image Files</string>
+<string name="pref_show_unsplit_cats">Show Unsplit Combined Categories</string>
+<string name="pref_shuffle_randomization">Shuffle Randomization</string>
+<string name="pref_shutdown_intent">Shutdown Intent</string>
+<string name="pref_skin">Skin</string>
+<string name="pref_skin_settings">Skin Settings</string>
+<string name="pref_skin_text">Press here for the additional Skin options like Static Seekbar, Pro Buttons. 3rd party skins may support even more options</string>
+<string name="pref_skip_video">Ignore Video Tracks</string>
+<string name="pref_sort_no_sort_field">"Don't Ignore Articles For Sort"</string>
+<string name="pref_sr_format_effects_override_hint">Global sound effects, like Dolby, may force standard definition audio (48 kHz/16 bit)</string>
+<string name="pref_start_at_lib">Start at Library</string>
+<string name="pref_static_navbar">Static Navbar</string>
+<string name="pref_status_lib">Navigate to the List</string>
+<string name="pref_storages_not_available">"Can't find any available storages.
+Please make sure you have your SD card mounted and Poweramp has a storage permission"</string>
+<string name="pref_stream_buffer">Network Stream Buffer</string>
+<string name="pref_stream_timeout">Network Stream Timeout</string>
+<string name="pref_suggest_autoeq_presets">Suggest AutoEq Presets</string>
+<string name="pref_summary_aa_8888">Higher color resolution for album art. Requires 2x more memory per image</string>
+<string name="pref_summary_aa_always">For smartwatches/other devices which should always receive album art, even when screen is off</string>
+<string name="pref_summary_aa_bg_options">Blur, details, intensity, saturation</string>
+<string name="pref_summary_aa_crop">Album art / images are always square</string>
+<string name="pref_summary_aa_default_crop">Keep landscape and square album art / images ratio</string>
+<string name="pref_summary_aa_download_hd">Higher downloaded album art resolution, increases storage/connection bandwidth usage</string>
+<string name="pref_summary_aa_force_default">Always show default image instead of any album art</string>
+<string name="pref_summary_aa_hi_res_for_apis">High resolution album art is sent to Android lock screen, app widgets, and other media API consumers. Lock Screen ➔ Blur has priority over this option</string>
+<string name="pref_summary_aa_higher_res">Increase image quality for high resolution embedded/in-folder images</string>
+<string name="pref_summary_aa_keep_aspect">"Keep album art / images aspect ratio as is. Tall images won't fit fully some UI elements"</string>
+<string name="pref_summary_aa_no_ashmem">Change if album art is not visible in Android Auto/3rd party apps</string>
+<string name="pref_summary_aa_per_stream_track">Show album art based on stream track title/artist instead of the stream name</string>
+<string name="pref_summary_aa_wifi_only">Album art will be downloaded only when wi-fi is connected</string>
+<string name="pref_summary_about">Version/changelog, translations info</string>
+<string name="pref_summary_advanced_tweaks">Volume levels, MusicFX, equalizer/reverb presets reset</string>
+<string name="pref_summary_album_art_options">Download, quality, cache cleanup</string>
+<string name="pref_summary_always_utf8">If disabled, Tag Encoding setting is used for non-Unicode files</string>
+<string name="pref_summary_android_ls_msg">"Android Lock Screen support is always enabled, as it's required for Bluetooth track info, smart watch support, other apps, etc."</string>
+<string name="pref_summary_anim_long_labels">Animate long track title and album/artist labels</string>
+<string name="pref_summary_anim_long_labels_in_lists">Animate long track labels also in lists and the miniplayer</string>
+<string name="pref_summary_animate_album_art">Animate on track advance. Also applies to bottom bar</string>
+<string name="pref_summary_audio_focus">Pause/Resume/Duck volume on calls/notifications/start</string>
+<string name="pref_summary_audio_focus_from_headset">Few other play/resume options are available in Audio Focus settings</string>
+<string name="pref_summary_audio_info">Detailed info about the audio processing. Also available by long press on small meta info on the Main and Equalizer screens</string>
+<string name="pref_summary_audio_output">Wired Headset, Bluetooth, USB, Chromecast, and other outputs</string>
+<string name="pref_summary_auto_find">Use this option to find music folders automatically</string>
+<string name="pref_summary_auto_scan">Enable automatic SD card/storages scan. If disabled, only manual Rescan is available</string>
+<string name="pref_summary_autosave">Auto save current preset</string>
+<string name="pref_summary_az_scroll">Use alphabetical A-Z scroll in lists</string>
+<string name="pref_summary_buffer_size">Tweak if audio skips</string>
+<string name="pref_summary_cc_force_aa">Send album art to Chromecast device even if it reports it has no display</string>
+<string name="pref_summary_check_for_skin_reload">For skin developers. Always check skin for a change when app activity goes background</string>
+<string name="pref_summary_check_updates">Check for updates once a week on startup</string>
+<string name="pref_summary_clear_aa_cache">Poweramp images cache will be deleted</string>
+<string name="pref_summary_colorize_notification">Match notification colors and background to the track album art image</string>
+<string name="pref_summary_compact_bars">Scale bars visualization to album art area in Fade Controls mode. If disabled, bar visualization is always full-screen</string>
+<string name="pref_summary_compensate_dvc_vol">Specifically compensate low volume in DVC mode on some Android 15+ firmwares. Applied only when the issue is detected</string>
+<string name="pref_summary_direct_unlock">Unlock directly to home screen (if possible) instead of Android lockscreen</string>
+<string name="pref_summary_direct_volume_control">Direct Volume Control (DVC) improves volume and equalizer/tone dynamic range, especially, in the bass</string>
+<string name="pref_summary_download_album_art">Automatically search and download missing album art</string>
+<string name="pref_summary_download_artist_art">Includes Album Artists and Composers. If disabled, track album art is used</string>
+<string name="pref_summary_download_if_no_tags">Search for album art even if no tags are found in the track</string>
+<string name="pref_summary_dsp_border_gain">Automatically reduce Equalizer/Tone band gains near maximum volume to avoid overloading</string>
+<string name="pref_summary_duck_on_short">When possible, allow lowering the volume on short audio focus. This option can be overridden by Audio output settings</string>
+<string name="pref_summary_dvc">DVC options, DVC for Bluetooth</string>
+<string name="pref_summary_enable_deletion">Enable the Delete menu action that deletes song files (after confirmation)</string>
+<string name="pref_summary_enable_headset_controls">Enable Headset/Bluetooth controls</string>
+<string name="pref_summary_enable_ics_ls_aa">Show album art on Android lock screen. This option may also affect Android Auto covers. Not supported by some devices/ROMs</string>
+<string name="pref_summary_enable_lock_screen">Poweramp shows itself on top of system lock screen if music is playing. Settings, deletion, edit tag, etc. actions trigger device lock screen</string>
+<string name="pref_summary_equ_bands">Set number of bands, configure frequencies</string>
+<string name="pref_summary_equ_tone">Set Bass/Treble frequencies and Q factors</string>
+<string name="pref_summary_equalizer">Equalizer settings, number of bands, frequencies</string>
+<string name="pref_summary_erase_and_rescan">Clear tag info database and rescan Library/Folders. Use when storage/SD card changed, on major ROM updates, or when folders are moved on storage</string>
+<string name="pref_summary_fade_and_gapless">Crossfade options, fade type and length, gapless</string>
+<string name="pref_summary_file_access_legacy_mode">Direct file access mode. Requires extra permission</string>
+<string name="pref_summary_folders_library">Rescan, music folders, list, queue options</string>
+<string name="pref_summary_folders_library_scanner">Poweramp folders and library scanner options</string>
+<string name="pref_summary_follow_night_mode">Follow system Day/Night Mode if selected skin supports light/dark themes</string>
+<string name="pref_summary_force_audio_on_focus">Enable this if audio stops after notifications</string>
+<string name="pref_summary_gapless_preload">Increase (to Normal or more) for slow storages to improve gapless</string>
+<string name="pref_summary_headers_meta">Show number of songs and some other meta information in headers</string>
+<string name="pref_summary_headroom_gain">Allows equalization/basses without distortion. Set to 0 dB to match other players’ volume, though this makes equalization less effective</string>
+<string name="pref_summary_headset_bt">Pause/resume on connection, headset buttons</string>
+<string name="pref_summary_hide_unknown_album">No Unknown Album shown in track labels</string>
+<string name="pref_summary_hier_files_zoom">Apply Folder Files zoom level for Folders Hierarchy category when a folder contains files only</string>
+<string name="pref_summary_hier_flat_shf">Shuffle Songs mode shuffles all songs from the whole folder hierarchy. If enabled, header Shuffle button uses this mode as well</string>
+<string name="pref_summary_hier_no_advance">"Don't apply Play All Categories mode when Folders Hierarchy playback started with the list header play button"</string>
+<string name="pref_summary_hires_force_no_speaker">"Enable this if speaker doesn't switch off after calls, some notifications, etc."</string>
+<string name="pref_summary_icon">Set launcher icon</string>
+<string name="pref_summary_initial_scan">Quick scan when Poweramp is started for first time</string>
+<string name="pref_summary_join_albums">If disabled, separate albums are shown for tracks without album artist tag</string>
+<string name="pref_summary_keep_notification_always">Notification stays even if Poweramp paused in its UI, when playback auto-ends, etc.</string>
+<string name="pref_summary_keep_screen_on">Always keep screen on in the app</string>
+<string name="pref_summary_keep_service">"Poweramp player service won't be unloaded when in idle"</string>
+<string name="pref_summary_list_action_resets">If disabled, continue playing the same track, but still change category and re-shuffle if needed</string>
+<string name="pref_summary_list_bottom_toolbar">Action buttons are displayed on the bottom of lists when header is scrolled away or header buttons are disabled</string>
+<string name="pref_summary_list_header_buttons">Action buttons shown in the list header</string>
+<string name="pref_summary_list_shf_cat_songs">List header Shuffle button shuffles All (category) Songs instead of sub-Albums. Applied to Artists, Album Artists, Genres, Years, Composers</string>
+<string name="pref_summary_list_shf_cats">List header Shuffle button shuffles sub-categories only, songs are in order</string>
+<string name="pref_summary_list_shf_songs_and_cats">List header Shuffle button shuffles sub-categories and songs within those categories</string>
+<string name="pref_summary_lists">List click action, lists/categories options</string>
+<string name="pref_summary_load_user_so">Try to load custom ffmpeg_neon.so from the path:</string>
+<string name="pref_summary_localized_az">A-Z scroll includes alphabet for the selected UI language</string>
+<string name="pref_summary_lock_screen">Poweramp lock screen options</string>
+<string name="pref_summary_look_and_feel">Skin, player interface, language, notifications</string>
+<string name="pref_summary_lrc_scan">If enabled, Poweramp searches for LRC files in the Music Folders, matching LRC files by their tags, file names, and folders</string>
+<string name="pref_summary_ls_aa_blur">"Lock screen album art is blurred. The album art background isn't shown by some devices. This option is not recommended for smart watches or apps that use Poweramp album art"</string>
+<string name="pref_summary_ls_default_aa">Send default placeholder image when no album art exists for the track. Also affects smart watches, other apps utilizing media APIs. Default image is defined by skin</string>
+<string name="pref_summary_ls_enable_land">Enable rotation to landscape layout</string>
+<string name="pref_summary_ls_force_timeout">Apply shorter screen timeout when Poweramp is on lock screen</string>
+<string name="pref_summary_lyrics_custom_url">For the Browser via custom URL</string>
+<string name="pref_summary_lyrics_keep_screen">Keep screen on for the lyrics</string>
+<string name="pref_summary_lyrics_plugin_s">3rd party app to search lyrics when no lyrics found (if installed): %s</string>
+<string name="pref_summary_m3u_utf8">If disabled, Tag Encoding setting is used for .m3u playlists. UTF-8 is always used for .m3u8 playlists</string>
+<string name="pref_summary_main_lyrics_button">Button on the Player Screen/cover</string>
+<string name="pref_summary_main_lyrics_swipe">Swipe action on the Player Screen/cover</string>
+<string name="pref_summary_mb_a_aa_cats">If enabled, album art and other relevant images are shown for categories</string>
+<string name="pref_summary_mb_a_aa_tracks">If enabled, album art is shown for track entries</string>
+<string name="pref_summary_mb_a_grid">If enabled, Albums, Artists, Folders, etc. categories are shown as grid. May require category re-opening for view to apply</string>
+<string name="pref_summary_menu_nav_to_folders">Track menu ➔ Folders button navigates to the Folders category instead of the Folders Hierarchy</string>
+<string name="pref_summary_migrate_data_29">Migrate downloaded/selected Album Art if access to cached Album Art is lost due to the Android 10+ file access changes</string>
+<string name="pref_summary_milk_hide_unliked">Unliked presets are completely hidden. Preset list is reloaded when closed</string>
+<string name="pref_summary_misc">Scrobbling, Android Auto, other tweaks</string>
+<string name="pref_summary_navbar_seekbar">Show track seekbar in Navbar. Increases Navbar size</string>
+<string name="pref_summary_no_android_long_press">Disable long press activated voice search while Poweramp is playing</string>
+<string name="pref_summary_no_dvc_bt_absvol">"Automatically disable DVC for Bluetooth when Absolute Volume is detected or it's not possible to detect it"</string>
+<string name="pref_summary_no_keep_notif_on_dscn">Notification is removed on Headset/BT disconnection if player is paused</string>
+<string name="pref_summary_no_reshuffle">"Don't apply a new shuffle when any track is selected from the current playing list"</string>
+<string name="pref_summary_notification_colors">Adjust if notification text/icons are not visible due to the non-standard colors</string>
+<string name="pref_summary_notify_prefer_nav">&lt;&lt; is shown instead of close action (x) in the small notification</string>
+<string name="pref_summary_notify_prio">Defines Poweramp notification position</string>
+<string name="pref_summary_notify_resume">Player can be resumed via Media Notification suggestion when inactive or unloaded (depending on firmware)</string>
+<string name="pref_summary_number_of_bands">Predefined number of bands, including ISO recommended bands distribution</string>
+<string name="pref_summary_op_framerate">Force higher display framerate via non-standard APIs. May be required for some devices/firmwares</string>
+<string name="pref_summary_output_disable_dvc">Disable Direct Volume Control (DVC) for this output/device</string>
+<string name="pref_summary_output_disable_equ_tone">Disable equalizer/tone DSP for this output/device</string>
+<string name="pref_summary_output_disable_headroom_gain">"Don't reduce output gain when DVC is disabled. May cause distortion for high equ/tone gains"</string>
+<string name="premium" />
+<string name="free_version" />
+<string name="time_limited_premium_trial" />
+<string name="pref_summary_output_float">Usually converted by Android to 16 bit except for Hi-Res DAC and BT codecs. Disables dithering</string>
+<string name="pref_summary_output_float_hd">Hi-Res sample format. Disables dithering. Usually results in 24-bit output sample format</string>
+<string name="pref_summary_output_no_af">Ignore calls/short Audio Focus requests, including notification sounds and ringtones</string>
+<string name="pref_summary_output_no_duck">Disable volume ducking for this output, e.g. when notifications cause issues with this output. Temporarily pause player instead</string>
+<string name="pref_summary_pause_in_call">Pause when phone call happens. Poweramp always pauses for call via Bluetooth</string>
+<string name="pref_summary_pause_on_headset">Pause when wired/Bluetooth headset/USB DAC disconnected</string>
+<string name="pref_summary_pause_on_permanent">Pause on permanent audio focus change (other player/game/etc.)</string>
+<string name="pref_summary_pause_on_short">Temporarily pause on short audio focus change (calls/notifications/navigation/etc.)</string>
+<string name="pref_summary_pause_on_volume">Pause when volume is set to 0, resume when volume increased from 0</string>
+<string name="pref_summary_pl_auto_resolve">"Automatically match unresolved playlist entries on Folders/Library auto scan. If disabled, non-playable items may appear in playlists after a storage change, folders renaming/moving, etc. 
+
+Playlist entries always can be corrected manually by the Rescan menu action from Playlists category"</string>
+<string name="pref_summary_pl_del_entry_w_track">Playlist entries are automatically removed for the deleted tracks. If disabled, non-playable items stay in the playlist and can be resolved to matching tracks later</string>
+<string name="pref_summary_pl_import_ratings">Update track ratings from imported playlists (when new playlist is imported) or from playlists opened in file managers</string>
+<string name="pref_summary_pl_import_ratings2">Poweramp always saves track ratings to the exported m3u8 playlists</string>
+<string name="pref_summary_pl_no_dups">"Duplicates won't be added to playlist"</string>
+<string name="pref_summary_platform_fx">Enable MusicFX Button (Android system audio effects) in Volume tab</string>
+<string name="pref_summary_played_dur">Count track as played after playing at least:  %d%%</string>
+<string name="pref_summary_playlists">User created playlists import/export and options</string>
+<string name="pref_summary_pref_audio_engine">Crossfade, replay gain, volume, output</string>
+<string name="pref_summary_prefer_download">Prefer downloaded album art over in-folder Cover.jpg/AlbumArt.jpg, etc</string>
+<string name="pref_summary_prev_previous_resets">First press rewinds track, second press changes track. Includes headset/bluetooth button presses, notification button</string>
+<string name="pref_summary_process_cues">Virtual folders are created for CUE files with multiple tracks</string>
+<string name="pref_summary_q_next_forces_after_song">Play Next forces option: After the current Song</string>
+<string name="pref_summary_queue">Queue options</string>
+<string name="pref_summary_queue_clear_on_add">If enabled, Queue is always cleared on track(s) addition. If disabled, Queue is cleared only after all songs have been played</string>
+<string name="pref_summary_queue_never_clear_on_add">If enabled, Queue is never cleared on track(s) addition. Search results playback still clears Queue</string>
+<string name="pref_summary_queue_no_shuffle">Queue is always played in-order. Also affects Search results Shuffle</string>
+<string name="pref_summary_reconfig_delay">An additional delay between output reconfigurations. This is required for devices that fail to reconfigure quickly. Increases track change delay</string>
+<string name="pref_summary_replay_gain">Enable RG, set source, preamp values</string>
+<string name="pref_summary_rescan_lyrics_tags">Force rescan tracks which may contain lyrics tags, including SYLT</string>
+<string name="pref_summary_reset_disabled_autoeq_suggestions">AutoEq preset suggestions will reappear for all devices</string>
+<string name="pref_summary_reset_equ_presets">Built-in and AutoEq equalizer presets will be restored to defaults</string>
+<string name="pref_summary_reset_negative_aa_status">Clear stored \"not-found\" status for album/artist images</string>
+<string name="pref_summary_reset_reverb_presets">Built-in reverb presets will be restored/set to defaults</string>
+<string name="pref_summary_restore_pos">Useful for podcasts, long sets</string>
+<string name="pref_summary_restore_pos_min_dur_d">At least: %d min.</string>
+<string name="pref_summary_resume_after_call">Resume playing on hang up (if paused by call)</string>
+<string name="pref_summary_resume_on_bt">Resume playing when Bluetooth device is connected</string>
+<string name="pref_summary_resume_on_headset">Resume playing when wired headset is connected</string>
+<string name="pref_summary_resume_on_mount">Wait for a storage (up to 30s.) to mount before resuming on start</string>
+<string name="pref_summary_resume_on_resume">Also resume when Poweramp is already running and reopened from the launcher</string>
+<string name="pref_summary_resume_on_start">Resume playing when Poweramp is started</string>
+<string name="pref_summary_root_hier_immediate">If only one root music folder exists, show its contents immediately in top Folders Hierarchy category. This option will go deeper until folder with tracks or multiple subfolders</string>
+<string name="pref_summary_scan_no_wait">Rescan immediately when something changed on the storage. Tracks appear faster, but this may introduce more rescans when you upload multiple files to the device</string>
+<string name="pref_summary_scan_post_usb_mount">Scan on USB disconnection and/or SD card mount</string>
+<string name="pref_summary_scan_providers">Automatically scan 3rd party track provider plugins on startup</string>
+<string name="pref_summary_scrobble_via_last_fm">Scrobble via Last.fm app</string>
+<string name="pref_summary_scrobble_via_simple_last_fm">Scrobble to Last.fm/Libre.fm via Simple Scrobbler (previously Simple Last.fm)</string>
+<string name="pref_summary_search">Search results playback options</string>
+<string name="pref_summary_search_play_tracks">If some tracks are found, play only the tracks and ignore other found categories. If there are no tracks, found categories will be played</string>
+<string name="pref_summary_search_track_titles_only">If disabled, track album and artist are also used for the search</string>
+<string name="pref_summary_select_folders">Select folders for Folders/Library</string>
+<string name="pref_summary_send_errors">Suggest sending a crash log via email</string>
+<string name="pref_summary_send_mediasession_q">Enable Now Playing List/Queue for the connected devices (e.g. Wear) and apps (Android Auto). Poweramp activates this option if some device/app requests Now Playing list</string>
+<string name="pref_summary_send_metachanged">For external apps</string>
+<string name="pref_summary_send_old_api_aa">Send Album Art for old Poweramp v2 API. Updated Poweramp API allows much higher res images, but this may be needed for old API apps</string>
+<string name="pref_summary_send_presets_to_peq">Export all equalizer presets directly to the Poweramp Equalizer app</string>
+<string name="pref_summary_show_counter">Show track number/total tracks counter (if supported by skin)</string>
+<string name="pref_summary_show_cue_source">Big undivided CUE disc image files will be visible in lists</string>
+<string name="pref_summary_show_unsplit_cats">Unsplit combined Artists, Album Artists, Composers are visible in the appropriate categories</string>
+<string name="pref_summary_shuffle">Shuffle options</string>
+<string name="pref_summary_shutdown_intent">Listen to this shutdown intent and pauses itself/stores state when the intent is received</string>
+<string name="pref_summary_skin">Change Poweramp visual theme. Set per-skin options like extra Pro Buttons, Static Seekbar</string>
+<string name="pref_summary_skip_video">Tracks with video stream will be ignored</string>
+<string name="pref_summary_sort_no_sort_field">"Don't ignore articles (\"the\", \"a\", \"an\") in the beginning of albums, artists, and composers"</string>
+<string name="pref_summary_startup_screen">Changes startup screen. Back action returns from the Player Screen to the current list</string>
+<string name="pref_summary_static_navbar">"Don't move Navbar away in lists"</string>
+<string name="pref_summary_status_lib">Notification navigates to the current list on touch</string>
+<string name="pref_summary_stream_buffer">Increasing buffer size also increases stream start time</string>
+<string name="pref_summary_suggest_autoeq_presets">Show suggestion to assign AutoEq preset for the connected Bluetooth/USB device</string>
+<string name="pref_summary_tag_endcoding">Encoding for non-Unicode tags and playlists</string>
+<string name="pref_summary_title_filename">Always use track filename instead of tag. Applies to all categories as well</string>
+<string name="pref_summary_top_library_list_opts">Select top visible Library categories. Also available from Library header menu</string>
+<string name="pref_summary_track_disc_meta">Disc tag is shown in the track meta</string>
+<string name="pref_summary_track_end_silence_ms">Applied to all tracks excluding CUE tracks. Elapsed time may go beyond track duration</string>
+<string name="pref_summary_usb_activity">Automatically activate Poweramp when USB DAC is attached. Allows the device to be remembered, so connection dialogs can be skipped in the future</string>
+<string name="pref_summary_use_albumartist">Show Album Artist tag (if exists) instead of just Artist tag for tracks</string>
+<string name="pref_summary_use_albumartist_albumartists">Show Album Artist tag (if exists) instead of just Artist tag for Album Artists tracks. Also changes sorting by Artist</string>
+<string name="pref_summary_use_albumartist_albums">Show Album Artist tag (if exists) instead of just Artist tag for Albums. Also changes sorting by Artist</string>
+<string name="pref_summary_use_stream3_player">"Enable this if volume or other media actions don't work for the lock screen or when screen is off"</string>
+<string name="pref_summary_use_wakelocks">Check this if audio stops when screen is off</string>
+<string name="pref_summary_user_agent">User Agent header value to use for the streaming</string>
+<string name="pref_summary_vis_30_fps">Reduce frame rate to 30 frames per second</string>
+<string name="pref_summary_vis_aa_visible">Keep album art visible during visualization</string>
+<string name="pref_summary_vis_crop_aspect">Crop visualization instead of scaling it, reduces performance for a better visual match</string>
+<string name="pref_summary_vis_extra_delay_per_output_msg">Extra delay for better audio/visualization/lyrics match is set per each Output/Device type</string>
+<string name="pref_summary_vis_full_rescan_presets">Clear scanned presets info and do the full presets rescan</string>
+<string name="pref_summary_vis_hd">Increased visualization resolution, reduces performance</string>
+<string name="pref_summary_vis_in_lib">Visible when visualization on Player Screen is enabled. Depending on visualization preset used, some UI elements may become poorly visible</string>
+<string name="pref_summary_vis_list_faded_alpha">Track labels, rating, menu, and album art (if visible) opacity</string>
+<string name="pref_summary_vis_lyrics_delay_d">Extra delay to apply to visualization/lyrics for a better sync: %d ms</string>
+<string name="pref_summary_vis_on_main_screen">Visualization can be switched on with Player Screen &lt;img src=vis_32dp> button</string>
+<string name="pref_summary_vis_preset_change_sec">For By Duration and Shuffle modes</string>
+<string name="pref_summary_vis_shown_when_music_playing">Visualization is shown when music is playing</string>
+<string name="pref_summary_vis_strict">Slower .milk presets rendering for a bit better visual match</string>
+<string name="pref_summary_vis_temp_ui_ms">Time to show UI during active visualization</string>
+<string name="pref_summary_visualization">Faded controls opacity, preset duration</string>
+<string name="pref_summary_volume_levels_s">Number of volume levels: %s</string>
+<string name="pref_summary_volume_popup">Custom volume panel. Shown when volume is adjusted in Poweramp UI</string>
+<string name="pref_supported">Supported</string>
+<string name="pref_tag_endcoding">Tag Encoding</string>
+<string name="pref_tag_erase_rating_msg">Rating for the removed tracks will be also deleted</string>
+<string name="pref_tag_info_will_be_erased">All tag info will be erased from Poweramp database and Library/Folders will be rescanned&lt;br/>&lt;br/> &lt;b>WARNING!&lt;/b> Track entries from ejected/unmounted storages/SD cards will be removed from Library/Folders, but will stay in Playlists</string>
+<string name="pref_text_aa_bg_options">Enable Blurred Backgrounds</string>
+<string name="pref_text_prev_previous_resets">To reset a track to 0:00 on the Player Screen use a long press on Elapsed time (left to Play button)</string>
+<string name="pref_title_filename">Filename As Title</string>
+<string name="pref_toggle_bluetooth_after_option">Please toggle Bluetooth off/on after changing the option</string>
+<string name="pref_tone_labels">Tone Values</string>
+<string name="pref_top_library_list_opts">Library List Options</string>
+<string name="pref_track_disc_meta">Show Disc</string>
+<string name="pref_track_end_silence_ms">Silence Between Tracks</string>
+<string name="pref_track_num_in_meta_relevant">In the meta - relevant categories</string>
+<string name="pref_track_num_in_title_everywhere">In the title - everywhere</string>
+<string name="pref_track_num_separate_relevant">Separate number - relevant categories</string>
+<string name="pref_track_nums">Show Track Number</string>
+<string name="pref_translations">Translations</string>
+<string name="pref_translators">Translators</string>
+<string name="pref_tweaks">Tweaks</string>
+<string name="pref_update">Update</string>
+<string name="pref_usb_activity">Show Poweramp for USB DACs</string>
+<string name="pref_use_albumartist">Album Artist Label for Tracks</string>
+<string name="pref_use_albumartist_albumartists">Album Artist Label for Album Artist Tracks</string>
+<string name="pref_use_albumartist_albums">Album Artist Label for Albums</string>
+<string name="pref_use_stream3_player">Emulate Media Stream (for Hi-Res output)</string>
+<string name="pref_use_wakelocks">Use Wakelock</string>
+<string name="pref_user_agent">User Agent</string>
+<string name="pref_version">Version/Changelog</string>
+<string name="pref_vis_30_fps">Force 30 FPS</string>
+<string name="pref_vis_aa_visible">Visible Album Art</string>
+<string name="pref_vis_bars_presets">Spectrum Bars/Built-in Presets</string>
+<string name="pref_vis_controls_faded_alpha">Faded Controls Opacity</string>
+<string name="pref_vis_crop_aspect">Crop Aspect</string>
+<string name="pref_vis_disabling_presets_removes_ratings">Presets disabling removes their ratings</string>
+<string name="pref_vis_folder_presets">Folder Presets</string>
+<string name="pref_vis_frs_equ">Equalizer Screen Spectrum</string>
+<string name="pref_vis_full_rescan_presets">Full Presets Rescan</string>
+<string name="pref_vis_full_rescan_presets_msg">"All scanned presets info will be erased from the Poweramp database and preset APKs, ZIPs, and folder will be rescanned. 
+
+WARNING! This also clears preset ratings"</string>
+<string name="pref_vis_hd">HD</string>
+<string name="pref_vis_in_lib">Visualization in Library</string>
+<string name="pref_vis_latency_ms">Visualization Delay</string>
+<string name="pref_vis_list_faded_alpha">Track Opacity</string>
+<string name="pref_vis_lyrics_delay">Visualization/Lyrics Delay</string>
+<string name="pref_vis_on_main_screen">Visualization On Player Screen</string>
+<string name="pref_vis_panel_faded_alpha">Top Visualization Panel Opacity</string>
+<string name="pref_vis_poweramp_presets">Built-in Presets</string>
+<string name="pref_vis_preset_change_sec">Preset Duration</string>
+<string name="pref_vis_presets">Presets</string>
+<string name="pref_vis_rescan_presets">Rescan Presets</string>
+<string name="pref_vis_strict">Strict</string>
+<string name="pref_vis_temp_ui_ms">UI Timeout</string>
+<string name="pref_visit_site">Visit Website</string>
+<string name="pref_vol_sync_option_in_bt_dev_opts">Volume Sync option is usually located in the Bluetooth device settings</string>
+<string name="pref_volume_controller_warning">• Volume icon may look like Remote Media</string>
+<string name="pref_volume_keys_long_press">Volume Keys Long Press</string>
+<string name="pref_volume_keys_long_press_hint">Switch tracks by responding to the Volume keys long press (but not in the Poweramp UI). This option uses a semi-official Android 8+ API, which can be activated only via ADB (or shell) command (click here to copy single-line command):</string>
+<string name="pref_volume_levels">Volume Levels</string>
+<string name="pref_volume_levels_confirmation">Enables an increased number of volume levels in Poweramp</string>
+<string name="pref_volume_levels_hint1">Starting from Android 12 this option is limited by Google and may work only inside Poweramp or may not work at all</string>
+<string name="pref_volume_levels_hint2">Samsung Sound Assistant changed volume step is supported automatically (up to 150 levels)</string>
+<string name="pref_volume_levels_warn_android_50">"• Prior to Android 5.1, volume panel won't properly show volume changes"</string>
+<string name="pref_volume_popup">Volume Panel</string>
+<string name="pref_warning_resumt_on_bt">Bluetooth device can require few seconds to connect. Poweramp resumes playing once a Bluetooth device is fully connected</string>
+<string name="pref_white">White</string>
+<string name="pref_xfade_all">All songs</string>
+<string name="pref_xfade_non_gapless">Non-gapless/cue</string>
+<string name="pref_xfade_shuffle">Shuffled songs</string>
+<string name="prefer_base_rate">Base-Rate Synchronous Scaling</string>
+<string name="prefer_dsd_raw">Prefer DSD Raw</string>
+<string name="prefer_no_gap">Prefer No Gap</string>
+<string name="preset">Preset</string>
+<string name="press_for_device_autoeq">Press here for the device AutoEQ presets</string>
+<string name="press_here_to_config">Press here to configure</string>
+<string name="press_here_to_grant_perm">Press here to grant the permission</string>
+<string name="press_to_play_last_song">Press ► to play the last song</string>
+<string name="preview_information">You can preview all the information before sending</string>
+<string name="previous_track">Previous track</string>
+<string name="punchy_bass">Punchy Bass</string>
+<string name="purchase_is_pending">Purchase is pending</string>
+<string name="q_factor">Q factor</string>
+<string name="queue">Queue</string>
+<string name="queue_as_next">Play Next</string>
+<string name="queue_as_next_short">Play Next</string>
+<string name="range">Range</string>
+<string name="rating">Rating</string>
+<string name="rating_heart_hint">Rating is switched between Like/Unlike/None</string>
+<string name="ratings_and_stats">Ratings and track statistics</string>
+<string name="raw_file">Raw File</string>
+<string name="recent_fp_purchase_detected">Recent Feature Pack purchase detected</string>
+<string name="recent_unlocker_purchase_detected">Recent Unlocker purchase detected</string>
+<string name="recently_added">Recently Added</string>
+<string name="recently_added_full">@string/recently_added</string>
+<string name="recently_played">Recently Played</string>
+<string name="recently_played_full">@string/recently_played</string>
+<string name="reconfigure_widget">Reconfigure Widget</string>
+<string name="remove">Remove</string>
+<string name="remove_preset_assignment_from_device_q">Remove the preset assignment from this device?</string>
+<string name="remove_storage_provider">Remove Folder, Storage, or Provider Plugin</string>
+<string name="remove_storage_provider_msg">Folder/Storage/Provider Plugin will be removed from Poweramp and all tracks from this folder/storage/provider will disappear from the Poweramp library</string>
+<string name="remove_unavail_folder_storage_entry">Remove the unavailable folder/storage entry from the Folders Selection?</string>
+<string name="rename">Rename</string>
+<string name="repeat">Repeat</string>
+<string name="repeat_advance">Repeat All Categories</string>
+<string name="repeat_on">Repeat Category</string>
+<string name="repeat_one_song">Play the current song and repeat</string>
+<string name="repeat_shuffle">Repeat/Shuffle</string>
+<string name="repeat_song">Repeat Song</string>
+<string name="report_pamp_error_report">Poweramp Error Report, collected on: %s</string>
+<string name="required_permission_BLUETOOTH_CONNECT_s">%s - to connect to Bluetooth audio devices, apply presets, and set up audio output. No location info is used</string>
+<string name="resampler_active_device_unsupported_sr">Resampling: current sample rate is not supported/allowed</string>
+<string name="resampling_opts_applied_hint">Resampling options are applied only when the applicable Poweramp resampling stage is used</string>
+<string name="rescan_resolve_playlists">Rescan / Resolve Playlists</string>
+<string name="rescan_this_folder">Rescan This Folder</string>
+<string name="reset">Reset</string>
+<string name="reset_all_tracks_stats_msg">Reset tracks played times, last played, and related stats</string>
+<string name="reset_all_tracks_stats_warn">"Reset all per-track statistics stored in the Poweramp database. Rating, track files or track tags won't be changed"</string>
+<string name="reset_filters">Reset filters</string>
+<string name="reset_knobs_on_screen">Reset this screen to defaults</string>
+<string name="reset_stats">Reset stats</string>
+<string name="reset_stats_based_cats">This resets categories based on the stats, such as Most Played and Recently Played</string>
+<string name="reset_stats_q">Reset stats?</string>
+<string name="reset_track_stats_msg">Reset track played times, last played stats</string>
+<string name="resort">Re-sort</string>
+<string name="resort_hint">Re-sorting changes the order of tracks in the list permanently</string>
+<string name="restore">Restore</string>
+<string name="restore_defaults_short">Restore Defaults</string>
+<string name="restore_eqbuttons">Restore Equalizer Buttons</string>
+<string name="restore_eqbuttons_q">Restore equalizer buttons to the defaults?</string>
+<string name="restore_player_buttons">Restore Player Screen Buttons</string>
+<string name="restore_player_buttons_q">Restore player screen buttons to the defaults?</string>
+<string name="restore_purchases">Restore Purchases</string>
+<string name="resume_on_focus">Resume On Focus Gain</string>
+<string name="retry">Retry</string>
+<string name="rev_auditorium">Auditorium</string>
+<string name="rev_echo">Echo</string>
+<string name="rev_great_hall">Great Hall</string>
+<string name="rev_light_reverb">Light Reverb</string>
+<string name="rev_scene">Scene</string>
+<string name="rev_small_room">Small Room</string>
+<string name="rev_stadium">Stadium</string>
+<string name="rev_studio">Studio</string>
+<string name="reverb">Reverb</string>
+<string name="reverb_damp">Damp</string>
+<string name="reverb_fade">Fade</string>
+<string name="reverb_filter">Filter</string>
+<string name="reverb_mix">Mix</string>
+<string name="reverb_predelay">Pre-Delay</string>
+<string name="reverb_predelay_mix">Pre-Delay Mix</string>
+<string name="reverb_presets">Reverb presets</string>
+<string name="reverb_size">Size</string>
+<string name="reverb_tab">Reverb Tab</string>
+<string name="reverse">Reverse</string>
+<string name="right_ch">Right</string>
+<string name="rock">Rock</string>
+<string name="round">Round</string>
+<string name="round_icon">Round icon</string>
+<string name="rounded">Rounded</string>
+<string name="rustore">RuStore</string>
+<string name="saf_failed_comp_mode_msg">The folder selection system component seems to be missing/disabled/frozen on your device. Please enable the component. Alternatively, you can enable legacy mode.</string>
+<string name="safe">Safe</string>
+<string name="sample_fmt_ignored_in_dsd">Sample format is ignored in DSD mode</string>
+<string name="sample_format">Sample Format</string>
+<string name="sample_format_s">Sample Format: %s</string>
+<string name="sample_rate_s">Sample Rate: %s</string>
+<string name="save">Save</string>
+<string name="save_and_scan">Save and Scan</string>
+<string name="save_assign">Save/Assign</string>
+<string name="save_preset">Save Preset</string>
+<string name="save_widget_style">Save Style</string>
+<string name="saved_s">Saved: %s</string>
+<string name="scan_summary_post_system">Scan once Android System/MTP Media Scanner finishes</string>
+<string name="scanning">Scanning...</string>
+<string name="scanning_folders">Scanning folders...</string>
+<string name="scanning_library">Scanning library...</string>
+<string name="search">Search</string>
+<string name="searchable_label">Search songs, artists, albums, playlists</string>
+<string name="sec">sec</string>
+<string name="select">Select</string>
+<string name="select_all">Select All</string>
+<string name="select_all_short">All</string>
+<string name="select_file">Select File</string>
+<string name="select_folders">Select Folders</string>
+<string name="select_permissions_s_allow">Please select Permissions ➔ %s ➔ Allow</string>
+<string name="selected_auto_eq">Selected AutoEq</string>
+<string name="selected_entries_will_be_deleted_no_files">"Selected entries will be deleted. Song files won't be deleted"</string>
+<string name="selected_entry_will_be_deleted_no_files">"Selected entry will be deleted. Song file won't be deleted"</string>
+<string name="selected_folder_exists_in_hier">The folder already exists in the previously added folder</string>
+<string name="selected_playlists_will_be_deleted_no_files">"Selected playlists will be deleted, including file-based playlist files. Songs won't be deleted"</string>
+<string name="selected_s">Selected: %s</string>
+<string name="selected_song_will_be_deleted">"Selected song will be &lt;b>deleted permanently&lt;/b> from the storage. CUE won't be removed"</string>
+<string name="selected_songs_from_cats_will_be_deleted">Songs in the selected categories will be &lt;b>deleted permanently&lt;/b> from the storage. CUEs will be deleted as well</string>
+<string name="selected_songs_from_folders_hier_will_be_deleted">Selected songs, songs in the selected folders, their subfolders and CUE sources will be &lt;b>deleted permanently&lt;/b> from the storage</string>
+<string name="selected_songs_from_folders_will_be_deleted">Songs in the selected folders will be &lt;b>deleted permanently&lt;/b> from the storage. CUEs will be deleted as well</string>
+<string name="selected_songs_will_be_deleted">"Selected songs will be &lt;b>deleted permanently&lt;/b> from the storage. CUEs won't be removed"</string>
+<string name="selection_menu">Selection menu</string>
+<string name="semi_transparent">Semi-transparent</string>
+<string name="send">Send</string>
+<string name="send_app_error_log_q">Send Error Log?</string>
+<string name="send_dialog_msg_d">Due to system level limitations, max. number of sent files is limited to: %d</string>
+<string name="send_email">Send Email</string>
+<string name="send_error_log_message">A log for previous crash exists. Would you like to email the error log to fix this issue for future versions?</string>
+<string name="sensor">Default</string>
+<string name="set_codec_sr">Set BT Codec Parameters</string>
+<string name="set_codec_sr_hint1">Introduces a short gap between tracks during codec parameters change</string>
+<string name="set_codec_sr_hint2">"Depending on the devices/firmware/system settings some sample rates and/or formats won't be accepted and may cause silence, error, or some default parameters"</string>
+<string name="set_codec_sr_hint3">This can be enabled only when the target Bluetooth device is connected, and the device permission is granted</string>
+<string name="settings">Settings</string>
+<string name="setup_permissions">Setup Permissions</string>
+<string name="shadow">Shadow</string>
+<string name="shadow_frame">Shadow Frame</string>
+<string name="share">Share</string>
+<string name="shortcut_opens_list">Open the list</string>
+<string name="shortcut_plays_list">Play the list</string>
+<string name="shortcut_plays_list_hint">The icon also starts target list playback</string>
+<string name="show_all">Show All</string>
+<string name="show_counter_hint">Track Counter is available via Player Screen Buttons customization</string>
+<string name="show_less">Show Less</string>
+<string name="show_more">Show More</string>
+<string name="show_titles_only">Show titles only</string>
+<string name="shuffle">Shuffle</string>
+<string name="shuffle_all">Shuffle All</string>
+<string name="shuffle_all_long">Shuffle All Available Songs</string>
+<string name="shuffle_by_time">Shuffle</string>
+<string name="shuffle_cats">Shuffle Categories</string>
+<string name="shuffle_cats_line2">Songs remain in order</string>
+<string name="shuffle_cats_long">Shuffle Just Categories</string>
+<string name="shuffle_hier_songs_long">Shuffle Songs (In Hierarchy)</string>
+<string name="shuffle_history_start_reached">Start of the shuffled category</string>
+<string name="shuffle_none">Shuffle Off</string>
+<string name="shuffle_none_long">Shuffle Off</string>
+<string name="shuffle_noun">Shuffle</string>
+<string name="shuffle_random_sort">Shuffle (random sort)</string>
+<string name="shuffle_root_word">@string/shuffle</string>
+<string name="shuffle_songs">Shuffle Songs</string>
+<string name="shuffle_songs_and_cats">Shuffle Songs/Categories</string>
+<string name="shuffle_songs_and_cats_long">Shuffle Songs And Categories</string>
+<string name="shuffle_songs_line2">Categories remain in order</string>
+<string name="shuffle_songs_long">Shuffle Just Songs</string>
+<string name="shuffled">Shuffled</string>
+<string name="single_song">Play Single Song</string>
+<string name="site">Website</string>
+<string name="size">Size</string>
+<string name="skin_alt_font">Alternative font</string>
+<string name="skin_alt_layout">Alternative layout</string>
+<string name="skin_alt_layout2">Full cover</string>
+<string name="skin_black">Dark</string>
+<string name="skin_blackpro_description">Black skin with optional static seekbar and \"Pro\" track/category change buttons</string>
+<string name="skin_failed_s">Skin failed: %s, resetting to default</string>
+<string name="skin_force_light_navbar">Force Light Nav. Bar</string>
+<string name="skin_graphic_mode_frequency_curve">Eq. Graphic Mode Curve</string>
+<string name="skin_knob_hilite">Knob Highlight</string>
+<string name="skin_less_rounded">Less rounded</string>
+<string name="skin_light">Light</string>
+<string name="skin_light_buttons">More Light</string>
+<string name="skin_lightpro_description">Light skin with optional static seekbar and \"Pro\" track/category change buttons</string>
+<string name="skin_may_override_option">Skin may override and disable this option</string>
+<string name="skin_more_buttons">Pro Buttons</string>
+<string name="skin_more_player_ui_opts_avail">Use &lt;a href=settings/ui_player>Player Screen&lt;/a> and &lt;a href=settings/ui_lyrics#main_lyrics_button>Lyrics&lt;/a> options to hide/show menu/lyrics/Chromecast buttons and rating</string>
+<string name="skin_more_rounded">More rounded</string>
+<string name="skin_navbar_firmware_warn">Some firmwares are unable to change status bar/nav bar dynamically. You may need to exit/enter the app once for these options to apply</string>
+<string name="skin_navbar_offset">Offset Navbar</string>
+<string name="skin_open_to_verify">Open skin to verify</string>
+<string name="skin_rounded_corners">Rounded Corners</string>
+<string name="skin_seekbar_style">Seekbar Style</string>
+<string name="skin_static_seekbar">Static Seekbar</string>
+<string name="skin_summary_alt_layout">Moves track labels below cover, makes on-cover buttons smaller and faded</string>
+<string name="skin_summary_alt_layout2">Moves all track labels and buttons below cover. Works best on long screen phones</string>
+<string name="skin_summary_default">Track labels and buttons on cover. Best for small or wide screens</string>
+<string name="skin_summary_force_light_navbar">For devices with default dark Android navigation bar</string>
+<string name="skin_summary_light_buttons">White background for buttons and labels</string>
+<string name="skin_summary_more_buttons">Track and category change buttons. Always enabled for Simple Seekbar</string>
+<string name="skin_summary_navbar_offset">Move Navbar slightly away from the corners (for display with large corner radius)</string>
+<string name="skin_transparent_navbar">Transparent Navbar</string>
+<string name="skin_transparent_statusbar">Transparent Status Bar</string>
+<string name="skin_unverified">Unverified skin</string>
+<string name="skin_unverified_toast">Skin unverified</string>
+<string name="skins_3rd_party_settings">3rd party skins settings</string>
+<string name="sleep_timer">Sleep Timer</string>
+<string name="small_buttons_short">Small</string>
+<string name="small_font">Small Font</string>
+<string name="soft">Soft</string>
+<string name="soft_bass">Soft Bass</string>
+<string name="soft_treble">Soft Treble</string>
+<string name="software_vol">Software</string>
+<string name="software_volume">Software Volume</string>
+<string name="some_deleted_files_may_reappear">Non-deleted items will reappear</string>
+<string name="some_devices_block_absvol_detect">Some devices/Android variants block Absolute Volume detection, in this case please toggle \"No DVC For Bluetooth Absolute Volume\" manually</string>
+<string name="some_saf_folders_unavailable">Android may not allow certain folders to be added, such as Download or a storage root. In this case please add their subfolders instead. This restriction is imposed by Google</string>
+<string name="song">Song</string>
+<string name="song_s">Song: %s</string>
+<string name="songs">Songs</string>
+<string name="sort">Sort</string>
+<string name="sort_s">Re-Sort %s</string>
+<string name="speaker">Speaker</string>
+<string name="star_some_fonts_not_avail">* some fonts may not be available</string>
+<string name="start_reached">Start of the category</string>
+<string name="started_queue">Started queue</string>
+<string name="status">Status</string>
+<string name="status_unknown">Status unknown</string>
+<string name="stereo">Stereo</string>
+<string name="stereo_x">Stereo Expand</string>
+<string name="storage_perm_denied_grant_manually">The permission was previously denied. To enable, please grant the Storage permission manually by pressing the Continue button, then Permissions ➔ Files and media ➔ Allow</string>
+<string name="storage_unmounted">No access to storage</string>
+<string name="stream">Stream</string>
+<string name="stream_name_in_title">Stream Name In Title</string>
+<string name="streams">Streams</string>
+<string name="style_copied_to_clipboard">Style copied to Clipboard</string>
+<string name="style_s_imported_from_clipboard">Style %s imported from Clipboard</string>
+<string name="style_saved">Style saved</string>
+<string name="sub_aa_buttons_no_lp_edit">Do Not Edit On Long Press</string>
+<string name="summary_aa_bg_gradient_for_list">Also apply background gradient for list background</string>
+<string name="summary_album_artists">Category based on Album Artist tag</string>
+<string name="summary_albums_by_artists">Category with separate Album per each Artist/Album combination</string>
+<string name="summary_allow_dsd_dop">Allow DSD-Over-PCM protocol for this device</string>
+<string name="summary_allowed_srs_for_track">The set of sample rates Poweramp is allowed to use when matching the track sample rate</string>
+<string name="summary_anim_speed">Disable/enable or change UI animation speed where possible</string>
+<string name="summary_auto_hardware">Hardware volume is used when supported; otherwise, software volume is used, if possible</string>
+<string name="summary_beep_more">Beep on all commands, such as from notifications or other controls</string>
+<string name="summary_bit_perfect">64-bit audio pipeline, Perfect Bit Perfect</string>
+<string name="summary_buy_uber1">Become Poweramp Uberpatron</string>
+<string name="summary_cc_show_meta">Show additional meta information (track format, category, next track) on the Chromecast devices with a screen</string>
+<string name="summary_dsd_remaster">Remasters PCM to DSD</string>
+<string name="summary_dsd_remaster_allow_48k">Use 48 kHz-based DSD sample rates for 48 kHz-based PCM tracks</string>
+<string name="summary_dsd_remaster_sample_rate">Used in the DSD Remastering mode for the output</string>
+<string name="summary_equalizer_for_spot_ytm_etc">Free Poweramp Equalizer app with the signature Poweramp sound for the streaming players such as Spotify and YouTube Music</string>
+<string name="summary_feature_packages">Explore Poweramp Feature Packages</string>
+<string name="summary_follow_pl_exact">Use for headunits/devices generating stray play/pause/stop key press commands, which are interpreted as undesired playback toggle or double press</string>
+<string name="summary_follow_track_sr">Enables track sample rate matching for the compatible outputs</string>
+<string name="summary_force_usb_full_speed">Force slow full speed usb connection for the old USB 1.1 devices</string>
+<string name="summary_hide_unknown_artist">No Unknown Artist shown in track labels when possible. This may hide the 2nd track label completely</string>
+<string name="summary_ignore_bt_sec">Ignore all Bluetooth commands for a period of time after a connection</string>
+<string name="summary_ignore_repeat_shuffle">Ignore Bluetooth Repeat and Shuffle commands completely</string>
+<string name="summary_line2_click">Handle press on the 2nd track text line</string>
+<string name="summary_line2_long_click">Handle long press on the 2nd track text line</string>
+<string name="summary_lyrics_offset">Applied to synced lyrics in addition to the offset tag</string>
+<string name="summary_menu_button_long_press">Long press action for the track menu button</string>
+<string name="summary_mod_separation">Extra gain applied to tracker formats, such as .mod, *.s3c, *.xm, *.it</string>
+<string name="summary_pause_on_usb_connection">Pause when USB DAC connected. This helps prevent loud noise during device initialization on some USB DACs</string>
+<string name="summary_pause_usb_release">Return the USB DAC to Android while Poweramp is paused or stopped so other apps can use it</string>
+<string name="summary_pcm_dsd_extra_warmup">Apply additional PCM/DSD warm-ups for USB DACs that may produce distorted audio after format or sample-rate changes</string>
+<string name="summary_perfect_bit_perfect">Direct decoder-to-output path. Enables DSD output for DSD tracks. No Equalizer, no DSP, no software volume control</string>
+<string name="summary_pipeline64">Enables Float 64-bit audio pipeline from decoder to the output</string>
+<string name="summary_play_silence_in_background">Helps keeping player uninterrupted in the background. Increases battery usage</string>
+<string name="summary_prefer_base_rate">Prioritize integer multiples of the source frequency (44.1/48 kHz) from the Allowed Sample Rates</string>
+<string name="summary_prefer_dsd_raw">Prefer raw DSD formats if available for this device</string>
+<string name="summary_prefer_no_gap">Minimize gaps between buttons for the centered layout</string>
+<string name="summary_resume_on_focus">Resume after getting back the focus. If disabled, player stays paused</string>
+<string name="summary_sample_format">The sample format Poweramp uses for the output</string>
+<string name="summary_sample_rate">The sample rate Poweramp uses for the output</string>
+<string name="summary_set_codec_sr">When enabled, Poweramp will attempt to set Bluetooth codec sample rate and other parameters</string>
+<string name="summary_skin_transparent_statusbar">Some covers may make status bar icons not readable. In this case you can adjust &lt;a href=settings/aa_bg>Background&lt;/a> options</string>
+<string name="summary_software_vol">Enable software volume, even when hardware volume is supported</string>
+<string name="summary_stream_name_in_title">Use \"Stream - Track Title\" pattern for stream titles, instead of just \"Track Title\". Applied to the next played stream</string>
+<string name="summary_sub_aa_buttons_no_lp_edit">Prevents accidental long press started button editing</string>
+<string name="summary_sync_hw_volume">Restores the previously saved volume. If disabled, the device current hardware volume is used, which is typically defaults to MAXIMUM</string>
+<string name="summary_target_alt_sr_quirk">Set the USB sample rate after activating the target alternate setting. Enable this for USB DACs that play silence or distorted audio after a connection</string>
+<string name="summary_vis_fs_hide_bars">Hide status bar and navigation completely when in Full Screen mode</string>
+<string name="summary_warmup_on_startup">Apply an additional warm-up on the first playback. Enable this if the device tends to produce distorted audio or silence immediately after connecting</string>
+<string name="support_email">poweramp.maxmpz@gmail.com</string>
+<string name="sync_hw_volume">Synchronize Hardware Volume</string>
+<string name="sync_hw_volume_hint">Enable this option for devices that lack on-device volume controls or do not retain their volume setting. Disable it for devices with the volume controls that preserve their volume level between connections</string>
+<string name="synchronous_upsampling">Synchronous Upsampling</string>
+<string name="system_default">System Default</string>
+<string name="target_alt_sr_quirk">USB DAC Sample Rate Quirk</string>
+<string name="target_dsd_remaster_sample_rate">Target DSD Sample Rate</string>
+<string name="target_folder">Target Folder</string>
+<string name="techno">Techno</string>
+<string name="tempo">Tempo</string>
+<string name="tempo_05x">0.5x</string>
+<string name="tempo_3x">3x</string>
+<string name="text">Text</string>
+<string name="thanks_for_purchase">Thank you for the purchase!</string>
+<string name="title">Title</string>
+<string name="toggle">Toggle</string>
+<string name="toggle_equ_tone">Toggle Equ/Tone</string>
+<string name="tone">Tone</string>
+<string name="tone_highs">Tone - highs</string>
+<string name="tone_lows">Tone - lows</string>
+<string name="tone_lows_and_highs">Tone - lows and highs</string>
+<string name="tone_off">Tone Off</string>
+<string name="too_many_failed">Too many failed files</string>
+<string name="top_rated">Top Rated</string>
+<string name="top_rated_full">@string/top_rated</string>
+<string name="track">Track</string>
+<string name="track_counter">Track Counter</string>
+<string name="track_labels">Track Labels</string>
+<string name="track_progress_scroller">Track progress scroller</string>
+<string name="treble">Treble</string>
+<string name="try_restore_purchase">Try restoring a purchase</string>
+<string name="two_columns">2 columns</string>
+<string name="two_lines">2 lines</string>
+<string name="uber_badges">Uberpatron Badges</string>
+<string name="uber_support1">● support Poweramp development</string>
+<string name="uber_support2">● get Uberpatron Edition Badges</string>
+<string name="uber_support3">● currently these are purely cosmetic items</string>
+<string name="uberpatron_badges_purchased_s">Uberpatron Badges Purchased: %s</string>
+<string name="unassign">Unassign</string>
+<string name="unknown">Unknown</string>
+<string name="unknown_album_name">Unknown album</string>
+<string name="unknown_artist_name">Unknown artist</string>
+<string name="unknown_composer_name">Unknown composer</string>
+<string name="unknown_genre_name">Unknown genre</string>
+<string name="unlike">Unlike</string>
+<string name="unlocker_purchase_on_gplay">Unlocker Purchase on Google Play</string>
+<string name="unusual_sr_hint">Sample rates that are not in the allowed list or are not supported by the output device will still be resampled</string>
+<string name="upsampling">Upsampling</string>
+<string name="usb_exclusive">USB Exclusive</string>
+<string name="usbx_opts_hint1">To keep the USB DAC connected while playback is paused, use &lt;a href=settings/ui_notify#keep_notification>Keep Notification&lt;/a> and &lt;a href=settings/ui_notify#keep_service>Keep Service&lt;/a> options</string>
+<string name="usbx_opts_hint2">Use &lt;a href=#play_silence_in_background>Play silence in background&lt;/a> option, if the background-unrestricted app is still throttled or frozen when screen is off</string>
+<string name="use_band_or_menu_lock_unlock">Use band Lock button or menu/Lock to toggle</string>
+<string name="use_menu_lock_unlock">Use menu/Lock to toggle</string>
+<string name="use_sidebar_in_system_dialog">Please use sidebar in the system dialog to select the target folder, storage, or provider plugin</string>
+<string name="use_sidebar_in_system_dialog_provider">Please use sidebar in the system dialog to select the target provider plugin</string>
+<string name="use_this_opt_for_dac_dap_hint">This option is intended for devices with broad sample rate support, including USB DACs and Digital Audio Players</string>
+<string name="user_plural_adj_short">User</string>
+<string name="using_default_output">Using default output/settings</string>
+<string name="using_default_safe_settings">Using default safe settings</string>
+<string name="using_s">Using: %s</string>
+<string name="value_change_volume_warning">The value change may result in a volume jump. Take off headphones before changing!</string>
+<string name="variant_s">Variant: %s</string>
+<string name="vbr">VBR</string>
+<string name="vertical">Portrait (Vertical)</string>
+<string name="view_as">View As</string>
+<string name="vis_fs_hide_bars">Hide System Bars For Full Screen</string>
+<string name="vis_full_screen">Visualization - Full Screen</string>
+<string name="vis_full_screen_long">Visualization - Full Screen</string>
+<string name="vis_none">Disable Visualization</string>
+<string name="vis_preset_builtin">Built-in</string>
+<string name="vis_preset_compiled">Spectrum Bars</string>
+<string name="vis_preset_dir">Folder</string>
+<string name="vis_preset_own_apk">Poweramp</string>
+<string name="vis_w_ui">Visualization - Fade</string>
+<string name="vis_w_ui_long">Visualization - Fade Controls</string>
+<string name="visualization">Visualization</string>
+<string name="voice">Voice</string>
+<string name="volume">Volume</string>
+<string name="volume_control">Volume Control</string>
+<string name="volume_long">Volume</string>
+<string name="volume_tab">Volume Tab</string>
+<string name="volume_type">Volume Type</string>
+<string name="volume_type_hint2">USB DACs typically have an independent on-device volume control that Hardware Volume does not affect</string>
+<string name="volume_type_hint3">Software volume is not applied in Perfect Bit Perfect mode</string>
+<string name="volume_type_volume_warn">Changing Volume Type may produce unexpectedly HIGH volume levels. Do NOT wear headphones while changing this option</string>
+<string name="volume_warning_excl">Volume Warning!</string>
+<string name="warmup_on_startup">USB DAC Warmup on Startup</string>
+<string name="welcome_line1">Thank you for installing Poweramp!</string>
+<string name="welcome_msg">"Please note, this is a trial software which will expire in two weeks. 
+
+You can buy the Full Version via Poweramp settings menu."</string>
+<string name="welcome_title">Welcome to Poweramp</string>
+<string name="when_lyrics_avail">When local lyrics available</string>
+<string name="white_play">White Play</string>
+<string name="widget_2x2">Poweramp 2x2</string>
+<string name="widget_4x1">Poweramp 4x1</string>
+<string name="widget_4x2">Poweramp 4x2</string>
+<string name="widget_4x4">Poweramp Large</string>
+<string name="widget_circle">Circle</string>
+<string name="widget_no_songs_selected">&lt;No song loaded yet></string>
+<string name="widget_no_style">No Background</string>
+<string name="widget_reconfigure_hint">Press top-right widget corner to reconfigure</string>
+<string name="widget_style_d">Style %d</string>
+<string name="wired_headset">Wired Headset</string>
+<string name="working">Working...</string>
+<string name="year">Year</string>
+<string name="year_album">Year Album</string>
+<string name="year_album_songs">Year Album Songs</string>
+<string name="year_albums">Year Albums</string>
+<string name="years">Years</string>
+<string name="your_message">Your message</string>
+<string name="zap">Zap</string>
+<item type="string" name="dummy_ae_7">false</item>
+<item type="string" name="dummy_ae_d">false</item>
+<item type="string" name="dummy_ae_f">false</item>
+<item type="string" name="dummy_ae_10">false</item>
+<item type="string" name="dummy_ae_11">false</item>
+<item type="string" name="dummy_ae_13">false</item>
+<item type="string" name="dummy_ae_14">false</item>
+<item type="string" name="dummy_ae_17">false</item>
+<item type="string" name="dummy_ae_18">false</item>
+<item type="string" name="dummy_ae_19">false</item>
+<item type="string" name="dummy_ae_1a">false</item>
+<item type="string" name="dummy_ae_1b">false</item>
+<item type="string" name="dummy_ae_1c">false</item>
+<item type="string" name="dummy_ae_1d">false</item>
+<item type="string" name="dummy_ae_1e">false</item>
+<item type="string" name="dummy_ae_1f">false</item>
+<item type="string" name="dummy_ae_20">false</item>
+<item type="string" name="dummy_ae_22">false</item>
+<item type="string" name="dummy_ae_23">false</item>
+<item type="string" name="dummy_ae_24">false</item>
+<item type="string" name="dummy_ae_25">false</item>
+<item type="string" name="dummy_ae_26">false</item>
+<item type="string" name="dummy_ae_27">false</item>
+<item type="string" name="dummy_ae_28">false</item>
+<item type="string" name="dummy_ae_3b">false</item>
+<item type="string" name="dummy_ae_49">false</item>
+<item type="string" name="dummy_ae_56">false</item>
+<item type="string" name="dummy_ae_60">false</item>
+<item type="string" name="dummy_ae_64">false</item>
+<item type="string" name="dummy_ae_81">false</item>
+<item type="string" name="dummy_ae_82">false</item>
+<item type="string" name="dummy_ae_85">false</item>
+<item type="string" name="dummy_ae_9c">false</item>
+<item type="string" name="dummy_ae_a9">false</item>
+<item type="string" name="dummy_ae_ab">false</item>
+<item type="string" name="dummy_ae_ac">false</item>
+<item type="string" name="dummy_ae_b2">false</item>
+<item type="string" name="dummy_ae_b5">false</item>
+<item type="string" name="dummy_ae_ef">false</item>
+<item type="string" name="dummy_ae_f0">false</item>
+<item type="string" name="dummy_ae_f1">false</item>
+<item type="string" name="dummy_ae_f2">false</item>
+<item type="string" name="dummy_ae_f3">false</item>
+<item type="string" name="dummy_ae_f4">false</item>
+<item type="string" name="dummy_ae_f5">false</item>
+<item type="string" name="dummy_ae_f8">false</item>
+<item type="string" name="dummy_ae_fa">false</item>
+<item type="string" name="dummy_ae_fb">false</item>
+<item type="string" name="dummy_ae_fc">false</item>
+<item type="string" name="dummy_ae_fe">false</item>
+<item type="string" name="dummy_ae_ff">false</item>
+<item type="string" name="dummy_ae_101">false</item>
+<item type="string" name="dummy_ae_102">false</item>
+<item type="string" name="dummy_ae_103">false</item>
+<item type="string" name="dummy_ae_104">false</item>
+<item type="string" name="dummy_ae_105">false</item>
+<item type="string" name="dummy_ae_106">false</item>
+<item type="string" name="dummy_ae_117">false</item>
+<item type="string" name="dummy_ae_118">false</item>
+<item type="string" name="dummy_ae_119">false</item>
+<item type="string" name="dummy_ae_11a">false</item>
+<item type="string" name="dummy_ae_11b">false</item>
+<item type="string" name="dummy_ae_11e">false</item>
+<item type="string" name="dummy_ae_124">false</item>
+<item type="string" name="dummy_ae_127">false</item>
+<item type="string" name="dummy_ae_129">false</item>
+<item type="string" name="dummy_ae_12a">false</item>
+<item type="string" name="dummy_ae_12b">false</item>
+<item type="string" name="dummy_ae_12c">false</item>
+<item type="string" name="dummy_ae_12d">false</item>
+<item type="string" name="dummy_ae_12e">false</item>
+<item type="string" name="dummy_ae_12f">false</item>
+<item type="string" name="dummy_ae_130">false</item>
+<item type="string" name="dummy_ae_134">false</item>
+<item type="string" name="dummy_ae_151">false</item>
+<item type="string" name="dummy_ae_163">false</item>
+<item type="string" name="dummy_ae_164">false</item>
+<item type="string" name="dummy_ae_165">false</item>
+<item type="string" name="dummy_ae_173">false</item>
+<item type="string" name="dummy_ae_174">false</item>
+<item type="string" name="dummy_ae_19f">false</item>
+<item type="string" name="dummy_ae_1b2">false</item>
+<item type="string" name="dummy_ae_1c0">false</item>
+<item type="string" name="dummy_ae_1c2">false</item>
+<item type="string" name="dummy_ae_1c8">false</item>
+<item type="string" name="dummy_ae_1d7">false</item>
+<item type="string" name="dummy_ae_1d8">false</item>
+<item type="string" name="dummy_ae_1de">false</item>
+<item type="string" name="dummy_ae_1ec">false</item>
+<item type="string" name="dummy_ae_1f1">false</item>
+<item type="string" name="dummy_ae_1f4">false</item>
+<item type="string" name="dummy_ae_209">false</item>
+<item type="string" name="dummy_ae_217">false</item>
+<item type="string" name="dummy_ae_227">false</item>
+<item type="string" name="dummy_ae_23a">false</item>
+<item type="string" name="dummy_ae_246">false</item>
+<item type="string" name="dummy_ae_251">false</item>
+<item type="string" name="dummy_ae_254">false</item>
+<item type="string" name="dummy_ae_25c">false</item>
+<item type="string" name="dummy_ae_261">false</item>
+<item type="string" name="dummy_ae_264">false</item>
+<item type="string" name="dummy_ae_277">false</item>
+<item type="string" name="dummy_ae_27f">false</item>
+<item type="string" name="dummy_ae_280">false</item>
+<item type="string" name="dummy_ae_291">false</item>
+<item type="string" name="dummy_ae_293">false</item>
+<item type="string" name="dummy_ae_295">false</item>
+<item type="string" name="dummy_ae_296">false</item>
+<item type="string" name="dummy_ae_297">false</item>
+<item type="string" name="dummy_ae_29e">false</item>
+<item type="string" name="dummy_ae_2ab">false</item>
+<item type="string" name="dummy_ae_2b6">false</item>
+<item type="string" name="dummy_ae_2b8">false</item>
+<item type="string" name="dummy_ae_2b9">false</item>
+<item type="string" name="dummy_ae_2c3">false</item>
+<item type="string" name="dummy_ae_2cd">false</item>
+<item type="string" name="dummy_ae_2cf">false</item>
+<item type="string" name="dummy_ae_2ef">false</item>
+<item type="string" name="dummy_ae_306">false</item>
+<item type="string" name="dummy_ae_309">false</item>
+<item type="string" name="dummy_ae_30e">false</item>
+<item type="string" name="dummy_ae_31c">false</item>
+<item type="string" name="dummy_ae_34f">false</item>
+<item type="string" name="dummy_ae_350">false</item>
+<item type="string" name="dummy_ae_351">false</item>
+<item type="string" name="dummy_ae_352">false</item>
+<item type="string" name="dummy_ae_353">false</item>
+<item type="string" name="dummy_ae_354">false</item>
+<item type="string" name="dummy_ae_355">false</item>
+<item type="string" name="dummy_ae_356">false</item>
+<item type="string" name="dummy_ae_358">false</item>
+<item type="string" name="dummy_ae_359">false</item>
+<item type="string" name="dummy_ae_35a">false</item>
+<item type="string" name="dummy_ae_35b">false</item>
+<item type="string" name="dummy_ae_35c">false</item>
+<item type="string" name="dummy_ae_35d">false</item>
+<item type="string" name="dummy_ae_35e">false</item>
+<item type="string" name="dummy_ae_35f">false</item>
+<item type="string" name="dummy_ae_360">false</item>
+<item type="string" name="dummy_ae_361">false</item>
+<item type="string" name="dummy_ae_362">false</item>
+<item type="string" name="dummy_ae_363">false</item>
+<item type="string" name="dummy_ae_365">false</item>
+<item type="string" name="dummy_ae_366">false</item>
+<item type="string" name="dummy_ae_367">false</item>
+<item type="string" name="dummy_ae_368">false</item>
+<item type="string" name="dummy_ae_369">false</item>
+<item type="string" name="dummy_ae_36a">false</item>
+<item type="string" name="dummy_ae_36e">false</item>
+<item type="string" name="dummy_ae_36f">false</item>
+<item type="string" name="dummy_ae_375">false</item>
+<item type="string" name="dummy_ae_37b">false</item>
+<item type="string" name="dummy_ae_380">false</item>
+<item type="string" name="dummy_ae_38d">false</item>
+<item type="string" name="dummy_ae_3a1">false</item>
+<item type="string" name="dummy_ae_3a3">false</item>
+<item type="string" name="dummy_ae_3a4">false</item>
+<item type="string" name="dummy_ae_3a5">false</item>
+<item type="string" name="dummy_ae_3ac">false</item>
+<item type="string" name="dummy_ae_3c3">false</item>
+<item type="string" name="dummy_ae_3c6">false</item>
+<item type="string" name="dummy_ae_3ca">false</item>
+<item type="string" name="dummy_ae_3cb">false</item>
+<item type="string" name="dummy_ae_3d0">false</item>
+<item type="string" name="dummy_ae_3eb">false</item>
+<item type="string" name="dummy_ae_3f2">false</item>
+<item type="string" name="dummy_ae_3f6">false</item>
+<item type="string" name="dummy_ae_403">false</item>
+<item type="string" name="dummy_ae_404">false</item>
+<item type="string" name="dummy_ae_40f">false</item>
+<item type="string" name="dummy_ae_412">false</item>
+<item type="string" name="dummy_ae_440">false</item>
+<item type="string" name="dummy_ae_45e">false</item>
+<item type="string" name="dummy_ae_463">false</item>
+<item type="string" name="dummy_ae_466">false</item>
+<item type="string" name="dummy_ae_468">false</item>
+<item type="string" name="dummy_ae_469">false</item>
+<item type="string" name="dummy_ae_475">false</item>
+<item type="string" name="dummy_ae_487">false</item>
+<item type="string" name="dummy_ae_489">false</item>
+<item type="string" name="dummy_ae_4a8">false</item>
+<item type="string" name="dummy_ae_4a9">false</item>
+<item type="string" name="dummy_ae_4c4">false</item>
+<item type="string" name="dummy_ae_4d6">false</item>
+<item type="string" name="dummy_ae_4ea">false</item>
+<item type="string" name="dummy_ae_4f5">false</item>
+<item type="string" name="dummy_ae_501">false</item>
+<item type="string" name="dummy_ae_51a">false</item>
+<item type="string" name="dummy_ae_553">false</item>
+<item type="string" name="dummy_ae_556">false</item>
+<item type="string" name="dummy_ae_557">false</item>
+<item type="string" name="dummy_ae_56e">false</item>
+<item type="string" name="dummy_ae_573">false</item>
+<item type="string" name="dummy_ae_578">false</item>
+<item type="string" name="dummy_ae_579">false</item>
+<item type="string" name="dummy_ae_57a">false</item>
+<item type="string" name="dummy_ae_584">false</item>
+<item type="string" name="dummy_ae_586">false</item>
+<item type="string" name="dummy_ae_596">false</item>
+<item type="string" name="dummy_ae_5cd">false</item>
+<item type="string" name="dummy_ae_5d0">false</item>
+<item type="string" name="dummy_ae_5d4">false</item>
+<item type="string" name="dummy_ae_5e9">false</item>
+<item type="string" name="dummy_ae_615">false</item>
+<item type="string" name="dummy_ae_617">false</item>
+<item type="string" name="dummy_ae_61a">false</item>
+<item type="string" name="dummy_ae_626">false</item>
+<item type="string" name="dummy_ae_627">false</item>
+<item type="string" name="dummy_ae_637">false</item>
+<item type="string" name="dummy_ae_638">false</item>
+<item type="string" name="dummy_ae_645">false</item>
+<item type="string" name="dummy_ae_648">false</item>
+<item type="string" name="dummy_ae_655">false</item>
+<item type="string" name="dummy_ae_683">false</item>
+<item type="string" name="dummy_ae_6a0">false</item>
+<item type="string" name="dummy_ae_6ad">false</item>
+<item type="string" name="dummy_ae_6f3">false</item>
+<item type="string" name="dummy_ae_6f5">false</item>
+<item type="string" name="dummy_ae_71a">false</item>
+<item type="string" name="dummy_ae_729">false</item>
+<item type="string" name="dummy_ae_73c">false</item>
+<item type="string" name="dummy_ae_74c">false</item>
+<item type="string" name="dummy_ae_74f">false</item>
+<item type="string" name="dummy_ae_754">false</item>
+<item type="string" name="dummy_ae_775">false</item>
+<item type="string" name="dummy_ae_776">false</item>
+<item type="string" name="dummy_ae_777">false</item>
+<item type="string" name="dummy_ae_780">false</item>
+<item type="string" name="dummy_ae_786">false</item>
+<item type="string" name="dummy_ae_787">false</item>
+<item type="string" name="dummy_ae_788">false</item>
+<item type="string" name="dummy_ae_789">false</item>
+<item type="string" name="dummy_ae_78a">false</item>
+<item type="string" name="dummy_ae_78b">false</item>
+<item type="string" name="dummy_ae_794">false</item>
+<item type="string" name="dummy_ae_7ba">false</item>
+<item type="string" name="dummy_ae_7c2">false</item>
+<item type="string" name="dummy_ae_7c4">false</item>
+<item type="string" name="dummy_ae_7cc">false</item>
+<item type="string" name="dummy_ae_7e9">false</item>
+<item type="string" name="dummy_ae_7ea">false</item>
+<item type="string" name="dummy_ae_822">false</item>
+<item type="string" name="dummy_ae_82a">false</item>
+<item type="string" name="dummy_ae_845">false</item>
+<item type="string" name="dummy_ae_849">false</item>
+<item type="string" name="dummy_ae_88e">false</item>
+<item type="string" name="dummy_ae_892">false</item>
+<item type="string" name="dummy_ae_893">false</item>
+<item type="string" name="dummy_ae_8ab">false</item>
+<item type="string" name="dummy_ae_8b3">false</item>
+<item type="string" name="dummy_ae_8b7">false</item>
+<item type="string" name="dummy_ae_8b8">false</item>
+<item type="string" name="dummy_ae_8ba">false</item>
+<item type="string" name="dummy_ae_8c6">false</item>
+<item type="string" name="dummy_ae_8e6">false</item>
+<item type="string" name="dummy_ae_8f1">false</item>
 </resources>

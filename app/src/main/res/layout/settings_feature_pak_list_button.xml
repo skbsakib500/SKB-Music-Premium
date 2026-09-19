@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.maxmpz.widget.base.BusActionButton xmlns:android="http://schemas.android.com/apk/res/android" xmlns:w="http://schemas.android.com/apk/res-auto" android:text="@string/changelog" android:drawable="@drawable/list_16dp" w:busId="@id/bus_app_cmd" w:msgId="@id/cmd_app_open" w:string="activity/dialogs.ChangelogActivity?content=fp_changelog_content&amp;alt_full_content=changelog_content&amp;title=feature_pak_1&amp;altButton=full_changelog" style="@style/PrefRoundedTransButton" />

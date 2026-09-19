@@ -1,0 +1,3357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<attr name="title" format="string" />
+<attr name="height" format="dimension" />
+<attr name="isLightTheme" format="boolean" />
+<attr name="windowActionBar" format="boolean" />
+<attr name="windowNoTitle" format="boolean" />
+<attr name="windowActionBarOverlay" format="boolean" />
+<attr name="windowActionModeOverlay" format="boolean" />
+<attr name="windowFixedWidthMajor" format="dimension|fraction" />
+<attr name="windowFixedHeightMinor" format="dimension|fraction" />
+<attr name="windowFixedWidthMinor" format="dimension|fraction" />
+<attr name="windowFixedHeightMajor" format="dimension|fraction" />
+<attr name="windowMinWidthMajor" format="dimension|fraction" />
+<attr name="windowMinWidthMinor" format="dimension|fraction" />
+<attr name="fontProviderAuthority" format="string" />
+<attr name="fontProviderPackage" format="string" />
+<attr name="fontProviderQuery" format="string" />
+<attr name="fontProviderCerts" format="reference" />
+<attr name="fontProviderFetchStrategy"><enum name="blocking" value="0" /><enum name="async" value="1" /></attr>
+<attr name="fontProviderFetchTimeout" format="integer"><enum name="forever" value="-1" /></attr>
+<attr name="fontStyle"><enum name="normal" value="0" /><enum name="italic" value="1" /></attr>
+<attr name="font" format="reference" />
+<attr name="fontWeight" format="integer" />
+<attr name="fontVariationSettings" format="string" />
+<attr name="ttcIndex" format="integer" />
+<attr name="contentInsetStartWithNavigation" format="dimension" />
+<attr name="contentInsetEndWithActions" format="dimension" />
+<attr name="showTitle" format="boolean" />
+<attr name="buttonIconDimen" format="dimension" />
+<attr name="srcCompat" format="reference" />
+<attr name="tint" format="color" />
+<attr name="tintMode"><enum name="src_over" value="3" /><enum name="src_in" value="5" /><enum name="src_atop" value="9" /><enum name="multiply" value="14" /><enum name="screen" value="15" /><enum name="add" value="16" /></attr>
+<attr name="tickMarkTint" format="color" />
+<attr name="tickMarkTintMode"><enum name="src_over" value="3" /><enum name="src_in" value="5" /><enum name="src_atop" value="9" /><enum name="multiply" value="14" /><enum name="screen" value="15" /><enum name="add" value="16" /></attr>
+<attr name="autoSizeTextType"><enum name="none" value="0" /><enum name="uniform" value="1" /></attr>
+<attr name="autoSizeStepGranularity" format="dimension" />
+<attr name="autoSizePresetSizes" format="reference" />
+<attr name="autoSizeMinTextSize" format="dimension" />
+<attr name="autoSizeMaxTextSize" format="dimension" />
+<attr name="fontFamily" format="string" />
+<attr name="lineHeight" format="dimension" />
+<attr name="firstBaselineToTopHeight" format="dimension" />
+<attr name="textAppearanceLargePopupMenu" format="reference" />
+<attr name="textAppearanceSmallPopupMenu" format="reference" />
+<attr name="dialogTheme" format="reference" />
+<attr name="dialogPreferredPadding" format="dimension" />
+<attr name="listDividerAlertDialog" format="reference" />
+<attr name="lastBaselineToBottomHeight" format="dimension" />
+<attr name="dropdownListPreferredItemHeight" format="dimension" />
+<attr name="spinnerDropDownItemStyle" format="reference" />
+<attr name="homeAsUpIndicator" format="reference" />
+<attr name="actionButtonStyle" format="reference" />
+<attr name="buttonBarStyle" format="reference" />
+<attr name="buttonBarButtonStyle" format="reference" />
+<attr name="selectableItemBackground" format="reference" />
+<attr name="selectableItemBackgroundBorderless" format="reference" />
+<attr name="borderlessButtonStyle" format="reference" />
+<attr name="dividerVertical" format="reference" />
+<attr name="dividerHorizontal" format="reference" />
+<attr name="imageAspectRatioAdjust"><enum name="none" value="0" /><enum name="adjust_width" value="1" /><enum name="adjust_height" value="2" /></attr>
+<attr name="toolbarStyle" format="reference" />
+<attr name="toolbarNavigationButtonStyle" format="reference" />
+<attr name="popupMenuStyle" format="reference" />
+<attr name="popupWindowStyle" format="reference" />
+<attr name="editTextColor" format="reference|color" />
+<attr name="editTextBackground" format="reference" />
+<attr name="imageButtonStyle" format="reference" />
+<attr name="textAppearanceSearchResultTitle" format="reference" />
+<attr name="textAppearanceSearchResultSubtitle" format="reference" />
+<attr name="textColorSearchUrl" format="reference|color" />
+<attr name="searchViewStyle" format="reference" />
+<attr name="listPreferredItemHeight" format="dimension" />
+<attr name="listPreferredItemHeightSmall" format="dimension" />
+<attr name="listPreferredItemHeightLarge" format="dimension" />
+<attr name="listPreferredItemPaddingLeft" format="dimension" />
+<attr name="listPreferredItemPaddingRight" format="dimension" />
+<attr name="dropDownListViewStyle" format="reference" />
+<attr name="listPopupWindowStyle" format="reference" />
+<attr name="textAppearanceListItem" format="reference" />
+<attr name="textAppearanceListItemSmall" format="reference" />
+<attr name="panelBackground" format="reference" />
+<attr name="panelMenuListWidth" format="dimension" />
+<attr name="panelMenuListTheme" format="reference" />
+<attr name="listChoiceBackgroundIndicator" format="reference" />
+<attr name="colorPrimary" format="color" />
+<attr name="colorPrimaryDark" format="color" />
+<attr name="colorAccent" format="color" />
+<attr name="colorControlNormal" format="color" />
+<attr name="colorControlActivated" format="color" />
+<attr name="colorControlHighlight" format="color" />
+<attr name="colorButtonNormal" format="color" />
+<attr name="colorSwitchThumbNormal" format="color" />
+<attr name="controlBackground" format="reference" />
+<attr name="alertDialogStyle" format="reference" />
+<attr name="alertDialogButtonGroupStyle" format="reference" />
+<attr name="alertDialogCenterButtons" format="boolean" />
+<attr name="alertDialogTheme" format="reference" />
+<attr name="textColorAlertDialogListItem" format="reference|color" />
+<attr name="buttonBarPositiveButtonStyle" format="reference" />
+<attr name="buttonBarNegativeButtonStyle" format="reference" />
+<attr name="buttonBarNeutralButtonStyle" format="reference" />
+<attr name="autoCompleteTextViewStyle" format="reference" />
+<attr name="buttonStyle" format="reference" />
+<attr name="buttonStyleSmall" format="reference" />
+<attr name="checkboxStyle" format="reference" />
+<attr name="checkedTextViewStyle" format="reference" />
+<attr name="editTextStyle" format="reference" />
+<attr name="radioButtonStyle" format="reference" />
+<attr name="ratingBarStyle" format="reference" />
+<attr name="seekBarStyle" format="reference" />
+<attr name="spinnerStyle" format="reference" />
+<attr name="switchStyle" format="reference" />
+<attr name="navigationMode"><enum name="normal" value="0" /><enum name="listMode" value="1" /><enum name="tabMode" value="2" /></attr>
+<attr name="displayOptions"><flag name="none" value="0x00000000" /><flag name="useLogo" value="0x00000001" /><flag name="showHome" value="0x00000002" /><flag name="homeAsUp" value="0x00000004" /><flag name="showTitle" value="0x00000008" /><flag name="showCustom" value="0x00000010" /><flag name="disableHome" value="0x00000020" /></attr>
+<attr name="subtitle" format="string" />
+<attr name="titleTextStyle" format="reference" />
+<attr name="subtitleTextStyle" format="reference" />
+<attr name="icon" format="reference" />
+<attr name="logo" format="reference" />
+<attr name="divider" format="reference" />
+<attr name="background" format="reference" />
+<attr name="backgroundStacked" format="reference|color" />
+<attr name="backgroundSplit" format="reference|color" />
+<attr name="NavbarSeekbar" format="reference" />
+<attr name="homeLayout" format="reference" />
+<attr name="progressBarStyle" format="reference" />
+<attr name="indeterminateProgressStyle" format="reference" />
+<attr name="progressBarPadding" format="dimension" />
+<attr name="CheckablePopupItem" format="reference" />
+<attr name="hideOnContentScroll" format="boolean" />
+<attr name="contentInsetStart" format="dimension" />
+<attr name="contentInsetEnd" format="dimension" />
+<attr name="contentInsetLeft" format="dimension" />
+<attr name="contentInsetRight" format="dimension" />
+<attr name="elevation" format="dimension" />
+<attr name="popupTheme" format="reference" />
+<attr name="closeItemLayout" format="reference" />
+<attr name="paddingStart" format="dimension" />
+<attr name="paddingEnd" format="dimension" />
+<attr name="theme" format="reference" />
+<attr name="backgroundTint" format="color" />
+<attr name="backgroundTintMode"><enum name="src_over" value="3" /><enum name="src_in" value="5" /><enum name="src_atop" value="9" /><enum name="multiply" value="14" /><enum name="screen" value="15" /><enum name="add" value="16" /></attr>
+<attr name="preserveIconSpacing" format="boolean" />
+<attr name="showAsAction"><flag name="never" value="0x00000000" /><flag name="ifRoom" value="0x00000001" /><flag name="always" value="0x00000002" /><flag name="withText" value="0x00000004" /><flag name="collapseActionView" value="0x00000008" /></attr>
+<attr name="imageAspectRatio" format="float" />
+<attr name="circleCrop" format="boolean" />
+<attr name="buttonSize" format="reference"><enum name="standard" value="0" /><enum name="wide" value="1" /><enum name="icon_only" value="2" /></attr>
+<attr name="layout" format="reference" />
+<attr name="iconifiedByDefault" format="boolean" />
+<attr name="queryHint" format="string" />
+<attr name="defaultQueryHint" format="string" />
+<attr name="closeIcon" format="reference" />
+<attr name="goIcon" format="reference" />
+<attr name="searchIcon" format="reference" />
+<attr name="searchHintIcon" format="reference" />
+<attr name="voiceIcon" format="reference" />
+<attr name="commitIcon" format="reference" />
+<attr name="suggestionRowLayout" format="reference" />
+<attr name="queryBackground" format="reference" />
+<attr name="submitBackground" format="reference" />
+<attr name="initialActivityCount" format="string" />
+<attr name="expandActivityOverflowButtonDrawable" format="reference" />
+<attr name="textAllCaps" format="reference|boolean" />
+<attr name="measureWithLargestChild" format="boolean" />
+<attr name="showDividers"><flag name="none" value="0x00000000" /><flag name="beginning" value="0x00000001" /><flag name="middle" value="0x00000002" /><flag name="end" value="0x00000004" /></attr>
+<attr name="dividerPadding" format="dimension" />
+<attr name="titleTextAppearance" format="reference" />
+<attr name="subtitleTextAppearance" format="reference" />
+<attr name="titleMargins" format="dimension" />
+<attr name="titleMarginStart" format="dimension" />
+<attr name="titleMarginEnd" format="dimension" />
+<attr name="titleMarginTop" format="dimension" />
+<attr name="titleMarginBottom" format="dimension" />
+<attr name="maxButtonHeight" format="dimension" />
+<attr name="collapseIcon" format="reference" />
+<attr name="collapseContentDescription" format="string" />
+<attr name="EqMenu" format="reference" />
+<attr name="navigationContentDescription" format="string" />
+<attr name="logoDescription" format="string" />
+<attr name="titleTextColor" format="color" />
+<attr name="subtitleTextColor" format="color" />
+<attr name="state_above_anchor" format="boolean" />
+<attr name="overlapAnchor" format="boolean" />
+<attr name="color" format="color" />
+<attr name="spinBars" format="boolean" />
+<attr name="drawableSize" format="dimension" />
+<attr name="gapBetweenBars" format="dimension" />
+<attr name="arrowHeadLength" format="dimension" />
+<attr name="arrowShaftLength" format="dimension" />
+<attr name="barLength" format="dimension" />
+<attr name="thickness" format="dimension" />
+<attr name="drawerArrowStyle" format="reference" />
+<attr name="buttonTint" format="color" />
+<attr name="buttonTintMode"><enum name="src_over" value="3" /><enum name="src_in" value="5" /><enum name="src_atop" value="9" /><enum name="multiply" value="14" /><enum name="screen" value="15" /><enum name="add" value="16" /></attr>
+<attr name="track" format="reference" />
+<attr name="thumbTextPadding" format="dimension" />
+<attr name="switchTextAppearance" format="reference" />
+<attr name="switchMinWidth" format="dimension" />
+<attr name="switchPadding" format="dimension" />
+<attr name="splitTrack" format="boolean" />
+<attr name="showText" format="boolean" />
+<attr name="buttonPanelSideLayout" format="reference" />
+<attr name="listLayout" format="reference" />
+<attr name="multiChoiceItemLayout" format="reference" />
+<attr name="singleChoiceItemLayout" format="reference" />
+<attr name="listItemLayout" format="reference" />
+<attr name="allowStacking" format="boolean" />
+<attr name="all_songs" format="reference" />
+<attr name="folders" format="reference" />
+<attr name="folders_hier" format="reference" />
+<attr name="albums" format="reference" />
+<attr name="artists" format="reference" />
+<attr name="album_artists" format="reference" />
+<attr name="albums_by_artist" format="reference" />
+<attr name="composers" format="reference" />
+<attr name="playlists" format="reference" />
+<attr name="genres" format="reference" />
+<attr name="queue" format="reference" />
+<attr name="most_played" format="reference" />
+<attr name="top_rated" format="reference" />
+<attr name="low_rated" format="reference" />
+<attr name="recently_played" format="reference" />
+<attr name="recently_added" format="reference" />
+<attr name="micro_all_songs" format="reference" />
+<attr name="micro_folders" format="reference" />
+<attr name="micro_folders_hier" format="reference" />
+<attr name="micro_albums" format="reference" />
+<attr name="micro_artists" format="reference" />
+<attr name="micro_album_artists" format="reference" />
+<attr name="micro_albums_by_artist" format="reference" />
+<attr name="micro_composers" format="reference" />
+<attr name="micro_playlists" format="reference" />
+<attr name="micro_genres" format="reference" />
+<attr name="micro_queue" format="reference" />
+<attr name="micro_most_played" format="reference" />
+<attr name="micro_top_rated" format="reference" />
+<attr name="micro_low_rated" format="reference" />
+<attr name="micro_recently_played" format="reference" />
+<attr name="micro_recently_added" format="reference" />
+<attr name="micro_raw_file" format="reference" />
+<attr name="bgColor" format="color" />
+<attr name="aaBgColor" format="color" />
+<attr name="clipRadius" format="reference|float" />
+<attr name="delayedInit" format="boolean" />
+<attr name="aaBlurScaleSize" format="integer" />
+<attr name="aaBlurLevel" format="integer" />
+<attr name="aaBlurSaturation" format="float" />
+<attr name="aaBlurIntensity" format="float" />
+<attr name="ItemHeaderButtonsBg_scene_bottom_toolbar" format="reference" />
+<attr name="ItemHeaderPlayButton_scene_bottom_toolbar" format="reference" />
+<attr name="ItemHeaderSearchButton_scene_bottom_toolbar" format="reference" />
+<attr name="centered" format="boolean" />
+<attr name="selectedColor" format="color" />
+<attr name="strokeWidth" format="dimension" />
+<attr name="fillColor" format="color" />
+<attr name="pageColor" format="color" />
+<attr name="radius" format="dimension" />
+<attr name="snap" format="boolean" />
+<attr name="strokeColor" format="color" />
+<attr name="colorAABgColor" format="color" />
+<attr name="colorFrsSelectionBg" format="color" />
+<attr name="colorFrsSelectionBgPressed" format="color" />
+<attr name="colorFrsSelectionBgRipple" format="color" />
+<attr name="colorEqKnobsLines1" format="color" />
+<attr name="colorEqKnobsLines2" format="color" />
+<attr name="colorFrs" format="color" />
+<attr name="colorFrsTone" format="color" />
+<attr name="colorFrsToneFill" format="color" />
+<attr name="colorFrsBackline" format="color" />
+<attr name="colorKnobHoleDisabled" format="color" />
+<attr name="colorKnobHolePressed" format="color" />
+<attr name="colorKnobHole" format="color" />
+<attr name="colorKnobRipple" format="color" />
+<attr name="colorKnob" format="color" />
+<attr name="colorKnobIndicator" format="color" />
+<attr name="colorKnobIndicatorPressed" format="color" />
+<attr name="colorKnobIndicatorDisabled" format="color" />
+<attr name="colorKnobPressed" format="color" />
+<attr name="colorKnobBg" format="color" />
+<attr name="colorKnobDisabled" format="color" />
+<attr name="colorPreampBg" format="color" />
+<attr name="colorTrackMeta" format="color" />
+<attr name="HeadText" format="reference" />
+<attr name="SubheadText" format="reference" />
+<attr name="Text" format="reference" />
+<attr name="AccentedText" format="reference" />
+<attr name="Hint" format="reference" />
+<attr name="nav_lists" format="reference" />
+<attr name="nav_equ" format="reference" />
+<attr name="nav_search" format="reference" />
+<attr name="nav_hamburger" format="reference" />
+<attr name="eq_equalizer" format="reference" />
+<attr name="eq_vol" format="reference" />
+<attr name="eq_reverb" format="reference" />
+<attr name="miniplayer_play_pause" format="reference" />
+<attr name="sleep_timer_32dp" format="reference" />
+<attr name="pre_speaker" format="reference" />
+<attr name="pre_wired" format="reference" />
+<attr name="pre_bt" format="reference" />
+<attr name="pre_song" format="reference" />
+<attr name="pre_usb" format="reference" />
+<attr name="pre_other" format="reference" />
+<attr name="folder_cat_icon" format="reference" />
+<attr name="vis_icons_32dp" format="reference" />
+<attr name="repeat_none_32dp" format="reference" />
+<attr name="repeat_32dp" format="reference" />
+<attr name="reverb_24dp" format="reference" />
+<attr name="vis_24dp" format="reference" />
+<attr name="waveseek_bar" format="reference" />
+<attr name="waveseek_elapsedbar" format="reference" />
+<attr name="rescan" format="reference" />
+<attr name="list_options" format="reference" />
+<attr name="add_to_pl" format="reference" />
+<attr name="info" format="reference" />
+<attr name="send" format="reference" />
+<attr name="enqueue" format="reference" />
+<attr name="lyrics" format="reference" />
+<attr name="album_art" format="reference" />
+<attr name="delete" format="reference" />
+<attr name="resort" format="reference" />
+<attr name="delete_dups" format="reference" />
+<attr name="clear_q" format="reference" />
+<attr name="clear_q_24dp" format="reference" />
+<attr name="artists_24dp" format="reference" />
+<attr name="albums_24dp" format="reference" />
+<attr name="folders_24dp" format="reference" />
+<attr name="rename_24dp" format="reference" />
+<attr name="delete_24dp" format="reference" />
+<attr name="assign_eq_24dp" format="reference" />
+<attr name="playlist_24dp" format="reference" />
+<attr name="play_24dp" format="reference" />
+<attr name="sort_type_24dp" format="reference" />
+<attr name="sort_24dp" format="reference" />
+<attr name="sort_author_24dp" format="reference" />
+<attr name="sort_source_24dp" format="reference" />
+<attr name="sort_rating_24dp" format="reference" />
+<attr name="shuffle_24dp" format="reference" />
+<attr name="repeat_advance_32dp" format="reference" />
+<attr name="repeat_song_32dp" format="reference" />
+<attr name="shuffle_none_32dp" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+<attr name="shuffle_all_32dp" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+<attr name="shuffle_songs_32dp" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+<attr name="meta_next_12dp" format="reference" />
+<attr name="meta_songs_12dp" format="reference" />
+<attr name="control_elevation" format="dimension" />
+<attr name="aa_elevation" format="dimension" />
+<attr name="list_aa_elevation" format="dimension" />
+<attr name="grid_aa_elevation" format="dimension" />
+<attr name="over_aa_elevation" format="dimension" />
+<attr name="popup_elevation" format="dimension" />
+<attr name="navbar_elevation" format="dimension" />
+<attr name="bar_elevation" format="dimension" />
+<attr name="toast_elevation" format="dimension" />
+<attr name="VisPanelFrame_elevation" format="dimension" />
+<attr name="modal_translationZ" format="dimension" />
+<attr name="corners_popup" format="dimension" />
+<attr name="corners_navbar" format="dimension" />
+<attr name="corners_searchbar" format="dimension" />
+<attr name="corners_medium" format="dimension" />
+<attr name="corners_large" format="dimension" />
+<attr name="corners_small" format="dimension" />
+<attr name="corners_medium_plus" format="dimension" />
+<attr name="corners_mini" format="dimension" />
+<attr name="corners_knob_thumb" format="dimension" />
+<attr name="corners_aa_scene_aa" format="reference|dimension"><enum name="matchHeight" value="-1" /></attr>
+<attr name="corners_aa_tracks" format="reference|dimension"><enum name="matchHeight" value="-1" /></attr>
+<attr name="corners_aa_albums" format="reference|dimension"><enum name="matchHeight" value="-1" /></attr>
+<attr name="corners_aa_other" format="reference|dimension"><enum name="matchHeight" value="-1" /></attr>
+<attr name="corners_aa_tracks_zoomed" format="reference|dimension"><enum name="matchHeight" value="-1" /></attr>
+<attr name="corners_aa_albums_zoomed" format="reference|dimension"><enum name="matchHeight" value="-1" /></attr>
+<attr name="corners_aa_other_zoomed" format="reference|dimension"><enum name="matchHeight" value="-1" /></attr>
+<attr name="corners_aa_tracks_grid" format="reference|dimension"><enum name="matchHeight" value="-1" /></attr>
+<attr name="corners_aa_albums_grid" format="reference|dimension"><enum name="matchHeight" value="-1" /></attr>
+<attr name="corners_aa_other_grid" format="reference|dimension"><enum name="matchHeight" value="-1" /></attr>
+<attr name="corners_aa_tracks_grid_zoomed" format="reference|dimension"><enum name="matchHeight" value="-1" /></attr>
+<attr name="corners_aa_albums_grid_zoomed" format="reference|dimension"><enum name="matchHeight" value="-1" /></attr>
+<attr name="corners_aa_other_grid_zoomed" format="reference|dimension"><enum name="matchHeight" value="-1" /></attr>
+<attr name="corners_aa_tracks_small" format="reference|dimension"><enum name="matchHeight" value="-1" /></attr>
+<attr name="corners_miniplayer_aa" format="reference|dimension"><enum name="matchHeight" value="-1" /></attr>
+<attr name="EqMilkFrs_presetUri" format="string" />
+<attr name="TopWaveseekLayout_extraLayout" format="reference" />
+<attr name="aaItemRatio" format="fraction" />
+<attr name="aaGravity"><flag name="center_horizontal" value="0x00000001" /><flag name="left" value="0x00000003" /><flag name="right" value="0x00000005" /></attr>
+<attr name="itemSize" format="dimension" />
+<attr name="itemSizeSmall" format="dimension" />
+<attr name="itemSizeZoomed" format="dimension" />
+<attr name="headerSize" format="dimension" />
+<attr name="humanCatHeaderSize" format="dimension" />
+<attr name="searchHeaderSize" format="dimension" />
+<attr name="separatorSize" format="dimension" />
+<attr name="textItemSize" format="dimension" />
+<attr name="textHeaderSize" format="dimension" />
+<attr name="topTextHeaderSize" format="dimension" />
+<attr name="allTracksSubheadSize" format="dimension" />
+<attr name="metaSubheadSize" format="dimension" />
+<attr name="humanGridItemExtraSpace" format="dimension" />
+<attr name="humanGridZoomedItemExtraSpace" format="dimension" />
+<attr name="headerStretchyImage" format="reference" />
+<attr name="pageAnimTime" format="integer" />
+<attr name="pageManualCommitAnimTime" format="integer" />
+<attr name="pageManualCancelAnimTime" format="integer" />
+<attr name="aaPosAnimTime" format="integer" />
+<attr name="aaPosSettleAnimTime" format="integer" />
+<attr name="libSearchAnimTime" format="integer" />
+<attr name="aaToTopLibAnimTime" format="integer" />
+<attr name="topLibToAAAnimTime" format="integer" />
+<attr name="aaToSearchAnimTime" format="integer" />
+<attr name="searchToAAAnimTime" format="integer" />
+<attr name="cornerRadius1" format="reference|dimension"><enum name="matchHeight" value="-1" /></attr>
+<attr name="cornerRadius2" format="reference|dimension"><enum name="matchHeight" value="-1" /></attr>
+<attr name="cornerRadius3" format="reference|dimension"><enum name="matchHeight" value="-1" /></attr>
+<attr name="hiRes" format="boolean" />
+<attr name="linesBackground" format="boolean" />
+<attr name="lineDrawableOffsetLeft" format="dimension" />
+<attr name="line1Offset" format="dimension" />
+<attr name="line2Offset" format="dimension" />
+<attr name="line3Offset" format="dimension" />
+<attr name="line13Color" format="reference|color" />
+<attr name="line2Color" format="reference|color" />
+<attr name="backgroundColor" format="reference|color" />
+<attr name="dashes" format="string" />
+<attr name="dashesPhase" format="dimension" />
+<attr name="thumb" format="reference" />
+<attr name="thumbWidth" format="dimension" />
+<attr name="thumbHeight" format="dimension" />
+<attr name="hole" format="reference" />
+<attr name="pos" format="integer" />
+<attr name="value" format="float" />
+<attr name="textPadding" format="dimension" />
+<attr name="param" format="reference" />
+<attr name="updateMsgId" format="reference" />
+<attr name="enablingParam" format="reference" />
+<attr name="longPressCmdId" format="reference" />
+<attr name="Alt_ListSubstyle_gridItem1LineExtraSpace" format="dimension" />
+<attr name="toastOnPress" format="reference" />
+<attr name="toastHeaderOnPress" format="reference" />
+<attr name="knob" format="reference" />
+<attr name="indicator" format="reference" />
+<attr name="indicatorScale" format="float" />
+<attr name="rotateKnob" format="boolean" />
+<attr name="snapTo" format="float" />
+<attr name="dependentLabel" format="reference" />
+<attr name="dependentLabel2" format="reference" />
+<attr name="dependentLabel3" format="reference" />
+<attr name="Alt_ListSubstyle_gridItemExtraSpace" format="dimension" />
+<attr name="valueFormat" format="string" />
+<attr name="valueFormatMin" format="float" />
+<attr name="valueFormatMax" format="float" />
+<attr name="valueFormatMid" format="float" />
+<attr name="valueFormatMidPos" format="float" />
+<attr name="roundRectClipRadius" format="dimension" />
+<attr name="presetUri" format="string" />
+<attr name="selectionDrawable" format="reference" />
+<attr name="lineColor" format="color" />
+<attr name="glowColor" format="color" />
+<attr name="lineWidth" format="dimension" />
+<attr name="toneLineWidth" format="dimension" />
+<attr name="toneFillColor" format="color" />
+<attr name="toneLineColor" format="color" />
+<attr name="toneGlowColor" format="color" />
+<attr name="glowWidth" format="dimension" />
+<attr name="blurWidth" format="float" />
+<attr name="backLineColor" format="color" />
+<attr name="miniMode" format="boolean" />
+<attr name="inset" format="dimension" />
+<attr name="scrollable" format="reference" />
+<attr name="useDSPBus" format="boolean" />
+<attr name="leftLabelStyle" format="reference" />
+<attr name="leftLabelText" format="string" />
+<attr name="rightLabelStyle" format="reference" />
+<attr name="rightLabelText" format="string" />
+<attr name="labelStyle" format="reference" />
+<attr name="labelText" format="string" />
+<attr name="valueLabelStyle" format="reference" />
+<attr name="valueLabelPressedAnimStyle" format="reference" />
+<attr name="roundKnobStyle" format="reference" />
+<attr name="animTime" format="integer" />
+<attr name="animExitTime" format="integer" />
+<attr name="dragAnimTime" format="integer" />
+<attr name="dragByNestedScroll" format="boolean" />
+<attr name="dragUseNestedScrollVelocity" format="boolean" />
+<attr name="collapseDragDirection"><enum name="none" value="0" /><enum name="down" value="1" /><enum name="up" value="2" /></attr>
+<attr name="dragThreshold" format="float" />
+<attr name="dragThresholdVelocity" format="dimension" />
+<attr name="collapsedScene" format="reference" />
+<attr name="expandedScene" format="reference" />
+<attr name="DialogForcedStyle" format="reference" />
+<attr name="dialogAltOutScene" format="boolean" />
+<attr name="dialogAdjustToSoftKeyboard" format="boolean" />
+<attr name="dialogLayout" format="reference" />
+<attr name="dialogContentLayout" format="reference" />
+<attr name="dialogButtonsLayout" format="reference" />
+<attr name="dialogPaddingTop" format="dimension" />
+<attr name="dialogContentPaddingLR" format="dimension" />
+<attr name="dialogContentPaddingTop" format="dimension" />
+<attr name="dialogContentPaddingBottom" format="dimension" />
+<attr name="dialogButtonsBarPaddingLR" format="dimension" />
+<attr name="dialogButtonsBarPaddingTB" format="dimension" />
+<attr name="dialogFrame_elevation" format="dimension" />
+<attr name="DialogBehavior" format="reference" />
+<attr name="DialogShim" format="reference" />
+<attr name="DialogFrame" format="reference" />
+<attr name="DialogFrame_scene_dialog_in" format="reference" />
+<attr name="DialogFrameContent" format="reference" />
+<attr name="DialogTitleLayout" format="reference" />
+<attr name="DialogTitleLayout_scene_progress" format="reference" />
+<attr name="DialogTitle" format="reference" />
+<attr name="DialogTitleProgress" format="reference" />
+<attr name="DialogToast" format="reference" />
+<attr name="DialogToastImg" format="reference" />
+<attr name="DialogToastLine1" format="reference" />
+<attr name="DialogToastLine2" format="reference" />
+<attr name="DialogToastLineOnly1" format="reference" />
+<attr name="DialogContent" format="reference" />
+<attr name="DialogContentNoPadding" format="reference" />
+<attr name="DialogButtonBar" format="reference" />
+<attr name="DialogPositiveButtonStyle" format="reference" />
+<attr name="DialogNegativeButtonStyle" format="reference" />
+<attr name="DialogNeutralButtonStyle" format="reference" />
+<attr name="DialogButtonSpace" format="reference" />
+<attr name="DialogSeparator" format="reference" />
+<attr name="optional" format="boolean" />
+<attr name="BasePoweruiStyles" format="reference" />
+<attr name="TopPoweruiStyles" format="reference" />
+<attr name="listScroller" format="reference" />
+<attr name="listIndexer" format="reference" />
+<attr name="moveableToolbar" format="reference" />
+<attr name="moveableToolbarExtraStates" format="boolean" />
+<attr name="moveableToolbarAnchor"><enum name="fixedTop" value="0" /><enum name="top" value="1" /><enum name="bottom" value="2" /><enum name="fixedBottom" value="3" /></attr>
+<attr name="bottomReservedSpace" format="reference|dimension" />
+<attr name="selectionBottomReservedSpace" format="dimension" />
+<attr name="popupEnterAnimTime" format="integer" />
+<attr name="popupExitAnimTime" format="integer" />
+<attr name="menuPlaceholder" format="reference" />
+<attr name="preferredAAAnimTime" format="integer" />
+<attr name="listMilkMode" format="integer"><flag name="none" value="0x00000000" /><flag name="mainAA" value="0x00000001" /><flag name="listHeader" value="0x00000002" /><flag name="list" value="0x00000002" /><flag name="lyrics" value="0x00000004" /></attr>
+<attr name="listMilkAA" format="reference" />
+<attr name="listSubstyle" format="reference" />
+<attr name="offsetWindowInsets"><flag name="none" value="0x00000000" /><flag name="statusBar" value="0x00000001" /><flag name="navigationBar" value="0x00000002" /></attr>
+<attr name="waveLayout" format="integer"><enum name="scrollable" value="0" /><enum name="fixed" value="1" /></attr>
+<attr name="barWidth" format="dimension"><enum name="auto" value="-1" /></attr>
+<attr name="barSpacing" format="dimension|fraction" />
+<attr name="numBars" format="integer" />
+<attr name="minBarHeight" format="dimension" />
+<attr name="divisor" format="fraction" />
+<attr name="divisorSize" format="dimension" />
+<attr name="stroke" format="dimension" />
+<attr name="barColor" format="reference|color" />
+<attr name="barColor2" format="reference|color" />
+<attr name="elapsedBarColor" format="reference|color" />
+<attr name="elapsedBarColor2" format="reference|color" />
+<attr name="barStrokeColor" format="reference|color" />
+<attr name="elapsedBarStrokeColor" format="reference|color" />
+<attr name="barDrawable" format="reference" />
+<attr name="elapsedBarDrawable" format="reference" />
+<attr name="barDrawable2" format="reference" />
+<attr name="elapsedBarDrawable2" format="reference" />
+<attr name="barRoundedCorners" format="dimension" />
+<attr name="barBitmap" format="reference" />
+<attr name="elapsedBarBitmap" format="reference" />
+<attr name="barBitmap2" format="reference" />
+<attr name="elapsedBarBitmap2" format="reference" />
+<attr name="cursorPosition" format="fraction" />
+<attr name="cursorOffset" format="dimension" />
+<attr name="cursorAnimator" format="reference" />
+<attr name="cursorBgFastTracking" format="boolean" />
+<attr name="forceValue" format="float" />
+<attr name="fadeSidebars" format="boolean" />
+<attr name="dataAnimTime" format="integer" />
+<attr name="noDataAnimTime" format="integer" />
+<attr name="scale" format="float" />
+<attr name="forId" format="reference|integer"><enum name="parent" value="0" /><enum name="root" value="-1" /></attr>
+<attr name="scene" format="reference|integer"><enum name="defaultScene" value="0" /></attr>
+<attr name="scene_2" format="reference" />
+<attr name="scene_3" format="reference" />
+<attr name="scene_4" format="reference" />
+<attr name="scene_5" format="reference" />
+<attr name="scene_6" format="reference" />
+<attr name="baseScene" format="reference|integer"><enum name="defaultScene" value="0" /></attr>
+<attr name="recalcChildren" format="integer|fraction"><enum name="on_end" value="0" /><enum name="on_start" value="1" /><enum name="dynamic" value="2" /><enum name="none" value="4" /></attr>
+<attr name="applyScene" format="boolean" />
+<attr name="applyViewParams" format="boolean" />
+<attr name="jumpVisibility" format="boolean" />
+<attr name="applyEvenIfGone" format="integer|boolean"><enum name="dontApplyIfGone" value="2" /></attr>
+<attr name="stateAnim" format="reference" />
+<attr name="stateAnim_2" format="reference" />
+<attr name="stateAnim_3" format="reference" />
+<attr name="stateAnim_4" format="reference" />
+<attr name="lineBackground" format="reference|color" />
+<attr name="drawableOnly" format="boolean" />
+<attr name="drawablePaddingStart" format="dimension" />
+<attr name="drawablePosition"><enum name="left" value="0" /><enum name="top" value="1" /><enum name="right" value="2" /><enum name="forceGravity" value="-1" /><enum name="gravityNoPads" value="-2" /></attr>
+<attr name="drawableTint" format="color" />
+<attr name="drawableWidth" format="dimension" />
+<attr name="drawableHeight" format="dimension" />
+<attr name="allowZeroHeight" format="boolean" />
+<attr name="textScale" format="float" />
+<attr name="animOnClick" format="boolean" />
+<attr name="disableClickHandler" format="boolean" />
+<attr name="layout_widthPercent" format="fraction" />
+<attr name="layout_heightPercent" format="fraction" />
+<attr name="layout_maxWidth" format="dimension" />
+<attr name="layout_maxHeight" format="dimension" />
+<attr name="layout_matchDimension" format="integer"><enum name="widthToHeight" value="1048576" /><enum name="heightToWidth" value="2097152" /></attr>
+<attr name="layout_flexAxis"><enum name="horizontal" value="1024" /><enum name="vertical" value="2048" /></attr>
+<attr name="layout_flexWeight" format="float" />
+<attr name="layout_attachLeft" format="reference|integer|fraction"><enum name="parent" value="0" /><enum name="none" value="-1" /><enum name="inset" value="-2" /></attr>
+<attr name="layout_attachTop" format="reference|integer|fraction"><enum name="parent" value="0" /><enum name="none" value="-1" /><enum name="inset" value="-2" /></attr>
+<attr name="layout_attachRight" format="reference|integer|fraction"><enum name="parent" value="0" /><enum name="none" value="-1" /><enum name="inset" value="-2" /><enum name="side" value="-3" /></attr>
+<attr name="layout_attachBottom" format="reference|integer|fraction"><enum name="parent" value="0" /><enum name="none" value="-1" /><enum name="inset" value="-2" /><enum name="side" value="-3" /></attr>
+<attr name="layout_attachRightToRight" format="reference" />
+<attr name="layout_attachBottomToBottom" format="reference" />
+<attr name="layout_attachLeftToLeft" format="reference" />
+<attr name="layout_attachTopToTop" format="reference" />
+<attr name="layout_gravityTarget" format="reference|integer"><enum name="parent" value="0" /></attr>
+<attr name="layout_consumeSpace"><flag name="none" value="0x00000000" /><flag name="horizontal" value="0x01000000" /><flag name="vertical" value="0x02000000" /><flag name="both" value="0x03000000" /><flag name="size" value="0x80000000" /><flag name="skip_last_margin" value="0x00080000" /><flag name="reset_horizontal" value="0x04000000" /><flag name="reset_vertical" value="0x08000000" /><flag name="reset_both" value="0x0c000000" /><flag name="reset_full_horizontal" value="0x10000000" /><flag name="reset_full_vertical" value="0x20000000" /><flag name="reset_full" value="0x30000000" /><flag name="reset_auto" value="0x40000000" /><flag name="stack_horizontal" value="0x00800000" /></attr>
+<attr name="layout_forceGravityIfGone" format="reference" />
+<attr name="layout_attachToParentIfGone" format="boolean" />
+<attr name="layout_compensateScale" format="float" />
+<attr name="layout_unlimitedMeasure" format="boolean" />
+<attr name="enableStateAnim" format="boolean" />
+<attr name="clipChildrenForSceneAnim" format="boolean" />
+<attr name="privateScene" format="boolean" />
+<attr name="transformPivotX_percent" format="fraction" />
+<attr name="transformPivotY_percent" format="fraction" />
+<attr name="azBackground" format="reference|color" />
+<attr name="azTouchedBackground" format="reference|color" />
+<attr name="azTextScale" format="float" />
+<attr name="azScrollUp" format="reference" />
+<attr name="azChars" format="string" />
+<attr name="azPaddingLeft" format="dimension" />
+<attr name="azPaddingRight" format="dimension" />
+<attr name="azPaddingTop" format="dimension" />
+<attr name="azPaddingBottom" format="dimension" />
+<attr name="azSize" format="dimension|fraction" />
+<attr name="indexerPopupMode"><enum name="fixed" value="0" /><enum name="moveWithThumb" value="1" /></attr>
+<attr name="thumbModeOffsetX" format="dimension" />
+<attr name="shim" format="reference" />
+<attr name="content" format="reference" />
+<attr name="twoLineEnterAnimTime" format="integer" />
+<attr name="twoLineExitAnimTime" format="integer" />
+<attr name="shadeColor" format="reference|color" />
+<attr name="windowIsResizable" format="boolean" />
+<attr name="loadForScene" format="reference" />
+<attr name="loadForScene_2" format="reference" />
+<attr name="loadForScene_3" format="reference" />
+<attr name="loadForScene_4" format="reference" />
+<attr name="loadForScene_5" format="reference" />
+<attr name="insertAt" format="integer"><enum name="thisPosition" value="-2" /><enum name="end" value="-1" /><enum name="start" value="0" /></attr>
+<attr name="unload"><enum name="onSceneEnd" value="0" /><enum name="never" value="1" /></attr>
+<attr name="busId" format="reference|integer"><enum name="parent" value="0" /></attr>
+<attr name="msgId" format="reference|integer" />
+<attr name="longPressMsgId" format="reference|integer" />
+<attr name="arg1" format="reference|integer|boolean|color|float|dimension|fraction"><enum name="checkedState" value="-1" /></attr>
+<attr name="arg2" format="reference|integer|boolean|color|float|dimension|fraction"><enum name="checkedState" value="-1" /></attr>
+<attr name="string" format="string" />
+<attr name="confirmTitle" format="reference|string" />
+<attr name="confirmText" format="reference|string" />
+<attr name="clickDelay" format="integer" />
+<attr name="disableForStateBusId" format="reference"><enum name="parent" value="0" /></attr>
+<attr name="disableForStateId" format="reference" />
+<attr name="disableForStateId_2" format="reference" />
+<attr name="disableForStateMsgId" format="reference" />
+<attr name="disableForStateMsgId_2" format="reference" />
+<attr name="stateId" format="reference" />
+<attr name="secondaryStateId" format="reference" />
+<attr name="format" format="reference|string" />
+<attr name="type"><enum name="integer" value="0" /><enum name="string" value="1" /></attr>
+<attr name="stateBusId" format="reference" />
+<attr name="buttonsMsgId" format="reference" />
+<attr name="buttonsBusId" format="reference" />
+<attr name="buttonsArg1" format="reference" />
+<attr name="posScrollAnimTime" format="integer" />
+<attr name="settleAnimTime" format="integer" />
+<attr name="enableByState"><enum name="matchBoolean" value="0" /><enum name="dontMatchBoolean" value="1" /><enum name="matchInteger" value="2" /><enum name="dontMatchInteger" value="3" /></attr>
+<attr name="stateMatchArg" format="reference|integer" />
+<attr name="booleanStateId" format="reference" />
+<attr name="stateMsgId" format="reference" />
+<attr name="checkedIfTrue" format="boolean" />
+<attr name="checkCmdId" format="reference" />
+<attr name="uncheckCmdId" format="reference" />
+<attr name="updateMsgId_2" format="reference" />
+<attr name="updateMsgId_3" format="reference" />
+<attr name="updateMsgId_4" format="reference" />
+<attr name="updateMsgId_5" format="reference" />
+<attr name="updateMsgId_6" format="reference" />
+<attr name="labelStateId" format="reference" />
+<attr name="labelFormat" format="reference|string" />
+<attr name="iconStateId" format="reference" />
+<attr name="noUpdateInScene" format="reference" />
+<attr name="defaultTextOnNoState" format="boolean" />
+<attr name="paddingTopWhenFirst" format="dimension" />
+<attr name="heightTargetId" format="reference" />
+<attr name="heightWhenMissing" format="dimension" />
+<attr name="widthTargetId" format="reference" />
+<attr name="widthWhenMissing" format="dimension" />
+<attr name="animMainEnterTime" format="integer" />
+<attr name="animMainExitTime" format="integer" />
+<attr name="playStateAnimTime" format="integer" />
+<attr name="stateAnimTime" format="integer" />
+<attr name="visAnimTime" format="integer" />
+<attr name="tempUITime" format="integer" />
+<attr name="aaBlurExitAnimTime" format="integer" />
+<attr name="visEnterAnimTime" format="integer" />
+<attr name="visExitAnimTime" format="integer" />
+<attr name="aaEnterAnimTime" format="integer" />
+<attr name="aaBlurUpdateAnimTime" format="integer" />
+<attr name="aaBlurLongerUpdateAnimTime" format="integer" />
+<attr name="openOnClick" format="boolean" />
+<attr name="modal" format="boolean" />
+<attr name="innerScrolling" format="boolean" />
+<attr name="menuItemsLayout" format="reference" />
+<attr name="closeOnClickInside" format="boolean" />
+<attr name="disableParentLayoutForPopup" format="boolean" />
+<attr name="buttonAnimTime" format="integer" />
+<attr name="buttonsLabels" format="reference" />
+<attr name="buttonsDrawables" format="reference" />
+<attr name="menuButtonStyle" format="reference" />
+<attr name="toastDuration" format="integer" />
+<attr name="maxOvershoot" format="dimension" />
+<attr name="disallowParentScroll" format="boolean" />
+<attr name="noScrollbars" format="boolean" />
+<attr name="popupListStyle" format="reference" />
+<attr name="selectedItemStateId" format="reference" />
+<attr name="lineAnimTime" format="integer" />
+<attr name="alpha" format="float" />
+<attr name="listItemSize" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+<attr name="skipOnSinglePane" format="boolean" />
+<attr name="settings_v" format="reference" />
+<attr name="settings_look_feel" format="reference" />
+<attr name="settings_audio" format="reference" />
+<attr name="settings_vis" format="reference" />
+<attr name="settings_aa_bg" format="reference" />
+<attr name="settings_aa" format="reference" />
+<attr name="settings_folders_library" format="reference" />
+<attr name="settings_headset" format="reference" />
+<attr name="settings_lockscreen" format="reference" />
+<attr name="settings_misc" format="reference" />
+<attr name="settings_general" format="reference" />
+<attr name="settings_pa_logo" format="reference" />
+<attr name="settings_milk_preset_uri" format="string" />
+<attr name="TreeViewList" format="reference" />
+<attr name="collapsible" format="boolean" />
+<attr name="src_expanded" format="reference|color" />
+<attr name="src_collapsed" format="reference|color" />
+<attr name="indent_width" format="dimension" />
+<attr name="handle_trackball_press" format="boolean" />
+<attr name="indicator_gravity"><flag name="top" value="0x00000030" /><flag name="bottom" value="0x00000050" /><flag name="left" value="0x00000003" /><flag name="right" value="0x00000005" /><flag name="center_vertical" value="0x00000010" /><flag name="fill_vertical" value="0x00000070" /><flag name="center_horizontal" value="0x00000001" /><flag name="fill_horizontal" value="0x00000007" /><flag name="center" value="0x00000011" /><flag name="fill" value="0x00000077" /><flag name="clip_vertical" value="0x00000080" /><flag name="clip_horizontal" value="0x00000008" /></attr>
+<attr name="indicator_background" format="reference|color" />
+<attr name="row_background" format="reference|color" />
+<attr name="entries" format="reference" />
+<attr name="values" format="reference" />
+<attr name="summary" format="string" />
+<attr name="summaries" format="reference" />
+<attr name="disableDependenciesValue" format="integer" />
+<attr name="max" format="integer" />
+<attr name="min" format="integer" />
+<attr name="step" format="integer" />
+<attr name="label" format="string" />
+<attr name="leftLabel" format="string" />
+<attr name="rightLabel" format="string" />
+<attr name="target" format="string" />
+<attr name="ItemTrack" format="reference" />
+<attr name="ItemTrackSelectBox" format="reference" />
+<attr name="ItemTrackSelectBox_scene_grid" format="reference" />
+<attr name="ItemTrackAAImage" format="reference" />
+<attr name="ItemTrackAAImage_scene_zoomed" format="reference" />
+<attr name="ItemTrackAAImage_scene_small" format="reference" />
+<attr name="ItemTrackAAImage_scene_aa" format="reference" />
+<attr name="ItemTrackAAImage_scene_aa_vis" format="reference" />
+<attr name="ItemTrackAAImage_scene_aa_playing" format="reference" />
+<attr name="ItemTrackAAImage_scene_grid" format="reference" />
+<attr name="ItemTrackAAImage_scene_grid_zoomed" format="reference" />
+<attr name="ItemTrackAAImage_scene_header" format="reference" />
+<attr name="ItemTrackAAImage_scene_item_menu" format="reference" />
+<attr name="ItemTrackCatImage" format="reference" />
+<attr name="ItemTrackCatImage_scene_zoomed" format="reference" />
+<attr name="ItemTrackCatImage_scene_aa" format="reference" />
+<attr name="ItemTrackCatImage_scene_aa_vis" format="reference" />
+<attr name="ItemTrackCatImage_scene_aa_playing" format="reference" />
+<attr name="ItemTrackCatImage_scene_grid" format="reference" />
+<attr name="ItemTrackCatImage_scene_grid_zoomed" format="reference" />
+<attr name="ItemTrackCatImage_scene_header" format="reference" />
+<attr name="ItemTrackCatImage_scene_item_menu" format="reference" />
+<attr name="ItemTrackTitle" format="reference" />
+<attr name="ItemTrackTitle_scene_small" format="reference" />
+<attr name="ItemTrackTitle_scene_1" format="reference" />
+<attr name="ItemTrackTitle_scene_1_zoomed" format="reference" />
+<attr name="ItemTrackTitle_scene_zoomed" format="reference" />
+<attr name="ItemTrackTitle_scene_zoomed_1" format="reference" />
+<attr name="ItemTrackTitle_scene_grid" format="reference" />
+<attr name="ItemTrackTitle_scene_grid_1" format="reference" />
+<attr name="ItemTrackTitle_scene_grid_zoomed" format="reference" />
+<attr name="ItemTrackTitle_scene_grid_1_zoomed" format="reference" />
+<attr name="ItemTrackTitle_scene_aa" format="reference" />
+<attr name="ItemTrackTitle_scene_aa_vis" format="reference" />
+<attr name="ItemTrackTitle_scene_aa_playing" format="reference" />
+<attr name="ItemTrackTitle_scene_item_menu" format="reference" />
+<attr name="ItemTrackTitle_scene_item_menu_lu" format="reference" />
+<attr name="ItemTrackTitle_scene_header" format="reference" />
+<attr name="ItemTrackTitle_scene_header_1" format="reference" />
+<attr name="ItemTrackLine2" format="reference" />
+<attr name="ItemTrackLine2_scene_small" format="reference" />
+<attr name="ItemTrackLine2_scene_1" format="reference" />
+<attr name="ItemTrackLine2_scene_zoomed" format="reference" />
+<attr name="ItemTrackLine2_scene_1_zoomed" format="reference" />
+<attr name="ItemTrackLine2_scene_grid" format="reference" />
+<attr name="ItemTrackLine2_scene_grid_1" format="reference" />
+<attr name="ItemTrackLine2_scene_grid_zoomed" format="reference" />
+<attr name="ItemTrackLine2_scene_grid_1_zoomed" format="reference" />
+<attr name="ItemTrackLine2_scene_aa" format="reference" />
+<attr name="ItemTrackLine2_scene_aa_vis" format="reference" />
+<attr name="ItemTrackLine2_scene_aa_playing" format="reference" />
+<attr name="ItemTrackLine2_scene_item_menu" format="reference" />
+<attr name="ItemTrackLine2_scene_item_menu_lu" format="reference" />
+<attr name="ItemTrackLine2_scene_header" format="reference" />
+<attr name="ItemTrackMeta" format="reference" />
+<attr name="ItemTrackMeta_scene_small" format="reference" />
+<attr name="ItemTrackMeta_scene_1" format="reference" />
+<attr name="ItemTrackMeta_scene_zoomed" format="reference" />
+<attr name="ItemTrackMeta_scene_1_zoomed" format="reference" />
+<attr name="ItemTrackMeta_scene_grid" format="reference" />
+<attr name="ItemTrackMeta_scene_grid_1" format="reference" />
+<attr name="ItemTrackMeta_scene_grid_zoomed" format="reference" />
+<attr name="ItemTrackMeta_scene_grid_1_zoomed" format="reference" />
+<attr name="ItemTrackMeta_scene_aa" format="reference" />
+<attr name="ItemTrackMeta_scene_aa_vis" format="reference" />
+<attr name="ItemTrackMeta_scene_aa_playing" format="reference" />
+<attr name="ItemTrackMeta_scene_item_menu" format="reference" />
+<attr name="ItemTrackMeta_scene_item_menu_lu" format="reference" />
+<attr name="ItemTrackMeta_scene_header" format="reference" />
+<attr name="ItemTrackDragHandler" format="reference" />
+<attr name="ItemTrackDragHandler_scene_grid" format="reference" />
+<attr name="ItemTrackMenu" format="reference" />
+<attr name="ItemTrackMenu_scene_menu" format="reference" />
+<attr name="ItemTrackMenu_scene_header" format="reference" />
+<attr name="ItemTrackMenu_scene_aa" format="reference" />
+<attr name="ItemTrackMenu_scene_aa_vis" format="reference" />
+<attr name="ItemTrackMenu_scene_aa_playing" format="reference" />
+<attr name="ItemTrackBackDecor" format="reference" />
+<attr name="ItemTrackBackDecorTitle" format="reference" />
+<attr name="ItemTrackBackDecorTitle_scene_header_1" format="reference" />
+<attr name="ItemTrackBackDecorTitle_scene_header_back_decor" format="reference" />
+<attr name="ItemAALEDecorLayout" format="reference" />
+<attr name="ItemAALEDecorText" format="reference" />
+<attr name="ItemMiniplayerPrevNextDecorLayout" format="reference" />
+<attr name="ItemMiniplayerPrevNextDecorText" format="reference" />
+<attr name="SeparatorWithButton" format="reference" />
+<attr name="SeparatorWithButtonTitle" format="reference" />
+<attr name="SeparatorWithButtonButton" format="reference" />
+<attr name="ItemSubheadWithButton" format="reference" />
+<attr name="ItemSubheadWithButtonTitle" format="reference" />
+<attr name="ItemSubheadWithButtonButton" format="reference" />
+<attr name="ItemText" format="reference" />
+<attr name="ItemTextAAImage" format="reference" />
+<attr name="ItemTextAAImage_scene_grid" format="reference" />
+<attr name="ItemTextAAImage_scene_header" format="reference" />
+<attr name="ItemTextAAImage_scene_item_menu" format="reference" />
+<attr name="ItemTextTitle" format="reference" />
+<attr name="ItemTextTitle_scene_grid" format="reference" />
+<attr name="ItemTextTitle_scene_header" format="reference" />
+<attr name="ItemTextTitle_scene_top_header" format="reference" />
+<attr name="ItemTextTitle_scene_item_menu" format="reference" />
+<attr name="ItemTextLine2" format="reference" />
+<attr name="ItemTextLine2_scene_grid" format="reference" />
+<attr name="ItemTextLine2_scene_header" format="reference" />
+<attr name="ItemTextLine2_scene_item_menu" format="reference" />
+<attr name="ItemTextMenu" format="reference" />
+<attr name="ItemTextMenu_scene_menu" format="reference" />
+<attr name="ItemTextMenu_scene_header" format="reference" />
+<attr name="TopContainer_extraLayout" format="reference" />
+<attr name="ItemTextMenu_scene_search_header" format="reference" />
+<attr name="ItemTextMenu_scene_top_header" format="reference" />
+<attr name="ItemTextHeaderShuffleButton" format="reference" />
+<attr name="ItemTextHeaderShuffleButton_scene_header" format="reference" />
+<attr name="ItemTextHeaderShuffleButton_scene_menu" format="reference" />
+<attr name="ItemTextHeaderPlayButton" format="reference" />
+<attr name="ItemTextHeaderPlayButton_scene_header" format="reference" />
+<attr name="ItemTextHeaderPlayButton_scene_menu" format="reference" />
+<attr name="ItemTextHeaderSelectButton" format="reference" />
+<attr name="ItemTextHeaderSelectButton_scene_header" format="reference" />
+<attr name="ItemTextHeaderSelectButton_scene_menu" format="reference" />
+<attr name="ItemTextBackDecor" format="reference" />
+<attr name="ItemTextBackDecorTitle" format="reference" />
+<attr name="ItemTextBackDecorTitle_scene_header_back_decor" format="reference" />
+<attr name="ItemTopTextBackDecor" format="reference" />
+<attr name="ItemTopTextBackDecorTitle" format="reference" />
+<attr name="ItemTopTextBackDecorTitle_scene_header_back_decor" format="reference" />
+<attr name="ItemTextHeaderScanProgress" format="reference" />
+<attr name="ItemTextHeaderScanProgress_scene_item_menu" format="reference" />
+<attr name="ItemTextHeaderScanProgress_scene_header" format="reference" />
+<attr name="ItemEmptyList" format="reference" />
+<attr name="ItemEmptyListText" format="reference" />
+<attr name="ItemEmptyListSettingsButton" format="reference" />
+<attr name="ItemEmptyListScanProgress" format="reference" />
+<attr name="ItemEmptyListScanProgressCenter" format="reference" />
+<attr name="ItemMiniplayer" format="reference" />
+<attr name="ItemMiniplayerAAImage" format="reference" />
+<attr name="ItemMiniplayerTitle" format="reference" />
+<attr name="ItemMiniplayerLine2" format="reference" />
+<attr name="ItemMiniplayerPlayButton" format="reference" />
+<attr name="ItemVis" format="reference" />
+<attr name="ItemVisImage" format="reference" />
+<attr name="ItemVisLikeButton" format="reference" />
+<attr name="ItemVisTitle" format="reference" />
+<attr name="ItemVisLine2" format="reference" />
+<attr name="ItemVisActivatedCheck" format="reference" />
+<attr name="ItemPopupList" format="reference" />
+<attr name="ItemPopupListImage" format="reference" />
+<attr name="ItemPopupListSelectBox" format="reference" />
+<attr name="ItemPopupListTitle" format="reference" />
+<attr name="ItemPopupListTitleLarger" format="reference" />
+<attr name="ItemPopupListMicroIcon" format="reference" />
+<attr name="ItemPopupListFrs" format="reference" />
+<attr name="ItemEqPreset" format="reference" />
+<attr name="ItemEqPresetSelectBox" format="reference" />
+<attr name="VisLockButtonLayout" format="reference" />
+<attr name="SmallerPopupButton" format="reference" />
+<attr name="SmallerPopupButton_scene_button_menu" format="reference" />
+<attr name="PopupMenuItem" format="reference" />
+<attr name="PopupMenuItem50" format="reference" />
+<attr name="PopupInfoTextTitle" format="reference" />
+<attr name="PopupInfoText" format="reference" />
+<attr name="PopupContent_scene_button_menu" format="reference" />
+<attr name="ItemHeaderShuffleButton" format="reference" />
+<attr name="ItemHeaderShuffleButton_scene_header" format="reference" />
+<attr name="ItemHeaderShuffleButton_scene_menu" format="reference" />
+<attr name="ItemHeaderPlayButton" format="reference" />
+<attr name="ItemHeaderPlayButton_scene_header" format="reference" />
+<attr name="ItemHeaderPlayButton_scene_menu" format="reference" />
+<attr name="ItemHeaderSelectButton" format="reference" />
+<attr name="ItemHeaderSelectButton_scene_header" format="reference" />
+<attr name="ItemHeaderSelectButton_scene_menu" format="reference" />
+<attr name="ItemLikeUnlikeLayout" format="reference" />
+<attr name="ItemLikeUnlikeLayout_scene_item_menu" format="reference" />
+<attr name="ItemLikeUnlikeLayout_scene_item_menu_lu" format="reference" />
+<attr name="ItemLikeUnlikeLayout_scene_aa" format="reference" />
+<attr name="ItemLike" format="reference" />
+<attr name="ItemLike_scene_aa" format="reference" />
+<attr name="ItemLike_scene_item_menu" format="reference" />
+<attr name="ItemUnlike_scene_aa" format="reference" />
+<attr name="ItemUnlike" format="reference" />
+<attr name="ItemUnlike_scene_item_menu" format="reference" />
+<attr name="ItemPopupMenu_scene_item_menu" format="reference" />
+<attr name="ItemPopupMenuSeparator" format="reference" />
+<attr name="ItemPopupMenuItemsLayout" format="reference" />
+<attr name="ItemPopupMenuTopSpacer" format="reference" />
+<attr name="PopupButton" format="reference" />
+<attr name="PopupButton_scene_button_menu" format="reference" />
+<attr name="PopupButtonLayoutDialogButton3" format="reference" />
+<attr name="PopupButtonLayoutDialogButton2" format="reference" />
+<attr name="PopupButtonLayoutDialogButton1" format="reference" />
+<attr name="NavbarShim" format="reference" />
+<attr name="Navbar" format="reference" />
+<attr name="NavbarExtension" format="reference" />
+<attr name="NavbarExtensionLogo" format="reference" />
+<attr name="NavbarExtensionLogoLabel" format="reference" />
+<attr name="settings_24dp" format="reference" />
+<attr name="changelog_24dp" format="reference" />
+<attr name="support_24dp" format="reference" />
+<attr name="NavbarList" format="reference" />
+<attr name="NavbarNavButtonsLayout" format="reference" />
+<attr name="NavBarButton" format="reference" />
+<attr name="Navbar_scene_navbar_1line_sheet" format="reference" />
+<attr name="Navbar_scene_navbar_2lines" format="reference" />
+<attr name="SelectionMenuTopLineLayout" format="reference" />
+<attr name="SelectionMenuSelectBox" format="reference" />
+<attr name="SelectionMenuCountText" format="reference" />
+<attr name="SelectionMenuCloseButton" format="reference" />
+<attr name="SelectionMenuSeparator" format="reference" />
+<attr name="SelectionMenuBottomLineLayout" format="reference" />
+<attr name="SelectionListContextButton" format="reference" />
+<attr name="SelectionMenuSubcontainer_scene_selection_menu" format="reference" />
+<attr name="TopContainer" format="reference" />
+<attr name="TopMilk" format="reference" />
+<attr name="TopListWidget" format="reference" />
+<attr name="TopAABounds" format="reference" />
+<attr name="TopListScrollerView" format="reference" />
+<attr name="TopListScrollerView_state_scrollbar_pressed" format="reference" />
+<attr name="TopEqLayout" format="reference" />
+<attr name="TopActionModeBar" format="reference" />
+<attr name="TopActionModeBarButton" format="reference" />
+<attr name="TopSearchLayout" format="reference" />
+<attr name="TopSearchPanel" format="reference" />
+<attr name="TopSearchCloseButton" format="reference" />
+<attr name="TopListSearchEditText" format="reference" />
+<attr name="bottom_navbar_bounds_size" format="dimension" />
+<attr name="TopNavbarBounds" format="reference" />
+<attr name="TopNavbarContainer" format="reference" />
+<attr name="TopSelectionMenuContainer" format="reference" />
+<attr name="SelectionMenuSubcontainer" format="reference" />
+<attr name="TopListIndexerPopupView" format="reference" />
+<attr name="TopListIndexerPopupView_state_scrollbar_pressed" format="reference" />
+<attr name="TopMenuPlaceholderLayout" format="reference" />
+<attr name="TopFitsStatusBarView" format="reference" />
+<attr name="TopFitsNavigationBarView" format="reference" />
+<attr name="TopWaveseekLayout" format="reference" />
+<attr name="TopWaveseek" format="reference" />
+<attr name="TopWaveseekLayout_scene_lib" format="reference" />
+<attr name="TopWaveseekLayout_scenes_playing" format="reference" />
+<attr name="TopWaveseekLayout_scenes_invisible" format="reference" />
+<attr name="TopWaveseekCursor" format="reference" />
+<attr name="TopWaveseekCursor_state_waveseek_pressed" format="reference" />
+<attr name="TopTrackElapsed" format="reference" />
+<attr name="TopTrackElapsed_scene_playing" format="reference" />
+<attr name="TopTrackElapsed_state_seeking" format="reference" />
+<attr name="TopTrackDuration" format="reference" />
+<attr name="TopTrackDuration_scene_playing" format="reference" />
+<attr name="TopTrackDuration_state_seeking" format="reference" />
+<attr name="TopPlayPauseBehind" format="reference" />
+<attr name="TopPause" format="reference" />
+<attr name="TopPause_scene_playing" format="reference" />
+<attr name="TopPause_state_seeking" format="reference" />
+<attr name="TopPlay" format="reference" />
+<attr name="TopPlay_scene_playing" format="reference" />
+<attr name="TopPlay_state_seeking" format="reference" />
+<attr name="TopPrevCat" format="reference" />
+<attr name="TopNextCat" format="reference" />
+<attr name="TopRw" format="reference" />
+<attr name="TopRw_scene_playing" format="reference" />
+<attr name="TopFf" format="reference" />
+<attr name="TopFf_scene_playing" format="reference" />
+<attr name="TopSubAAButtons" format="reference" />
+<attr name="TopSubAAButtons_scenes_playing" format="reference" />
+<attr name="TopSubAAButtons_scene_lib" format="reference" />
+<attr name="TopSubAAButtons_scenes_hidden" format="reference" />
+<attr name="TopVisButtonLayout" format="reference" />
+<attr name="TopShuffleButtonLayout" format="reference" />
+<attr name="TopRepeatButtonLayout" format="reference" />
+<attr name="TopSleepTimerButtonLayout" format="reference" />
+<attr name="TopSleepTimerButtonLayout_scene_item_menu" format="reference" />
+<attr name="SleepTimerButton_scene_button_menu" format="reference" />
+<attr name="TopSleepTimerButton" format="reference" />
+<attr name="TopBaseButtonLayout" format="reference" />
+<attr name="TopToastContainer" format="reference" />
+<attr name="TopToastFrame" format="reference" />
+<attr name="TopToastIcon" format="reference" />
+<attr name="TopToastTextContainer" format="reference" />
+<attr name="TopToastSpacer" format="reference" />
+<attr name="TopToastTitle" format="reference" />
+<attr name="TopToastLine2" format="reference" />
+<attr name="TopToastFrame_scene_expanded" format="reference" />
+<attr name="TopMetaInfoLayout" format="reference" />
+<attr name="TopMetaInfoLayout_scenes_playing" format="reference" />
+<attr name="TopMetaInfoLayout_scenes_invisible" format="reference" />
+<attr name="TopMetaInfoLayout_anim_seeking" format="reference" />
+<attr name="TopMetaInfo" format="reference" />
+<attr name="TopMetaInfo_scene_item_menu" format="reference" />
+<attr name="TopMetaInfoLabel" format="reference" />
+<attr name="VisPanelContainer" format="reference" />
+<attr name="VisPanelShim" format="reference" />
+<attr name="VisPanelFrame" format="reference" />
+<attr name="VisCloseButton" format="reference" />
+<attr name="VisSettingsButton" format="reference" />
+<attr name="VisSortButtonLayout" format="reference" />
+<attr name="VisFilterEditText" format="reference" />
+<attr name="VisPanelList" format="reference" />
+<attr name="VisPanelFrame_scene_vispanel_expanded" format="reference" />
+<attr name="EqPagesLayout" format="reference" />
+<attr name="EqPagesScrollingBehavior" format="reference" />
+<attr name="EqTabLayout" format="reference" />
+<attr name="EqKnobsLayout" format="reference" />
+<attr name="EqPreampKnobLayout" format="reference" />
+<attr name="EqLinearKnob" format="reference" />
+<attr name="EqPreampLinearKnob" format="reference" />
+<attr name="EqFrequencyResponseScroller" format="reference" />
+<attr name="EqMilkFrs" format="reference" />
+<attr name="EqInfo" format="reference" />
+<attr name="EqInfo_scene_item_menu" format="reference" />
+<attr name="EqInfoLabel" format="reference" />
+<attr name="EqEquButton" format="reference" />
+<attr name="EqToneButton" format="reference" />
+<attr name="EqLimiterButton" format="reference" />
+<attr name="EqEquPresetButtonLayout" format="reference" />
+<attr name="EqEquPresetButtonLayout_scene_button_menu" format="reference" />
+<attr name="EqEquPresetLabel" format="reference" />
+<attr name="EqEquSaveButton" format="reference" />
+<attr name="EqEquResetButton" format="reference" />
+<attr name="EqBassToneKnobLayout" format="reference" />
+<attr name="EqTrebleToneKnobLayout" format="reference" />
+<attr name="EqVolPanel1" format="reference" />
+<attr name="EqVolPanel2" format="reference" />
+<attr name="EqVolPanel3" format="reference" />
+<attr name="EqBalanceKnobLayout" format="reference" />
+<attr name="EqSFXKnobLayout" format="reference" />
+<attr name="EqTempoCheckButton" format="reference" />
+<attr name="EqTempoKnobLayout" format="reference" />
+<attr name="EqMonoCheckButton" format="reference" />
+<attr name="EqPlatformFXCheckButton" format="reference" />
+<attr name="EqOtherResetButton" format="reference" />
+<attr name="EqVolumeKnobLayout" format="reference" />
+<attr name="EqReverbPanel1" format="reference" />
+<attr name="EqReverbPanel2" format="reference" />
+<attr name="EqReverbPanel3" format="reference" />
+<attr name="EqReverbParam7KnobLayout" format="reference" />
+<attr name="EqReverbParam2KnobLayout" format="reference" />
+<attr name="EqReverbParam3KnobLayout" format="reference" />
+<attr name="EqReverbParam4KnobLayout" format="reference" />
+<attr name="EqReverbParam6KnobLayout" format="reference" />
+<attr name="EqReverbParam1KnobLayout" format="reference" />
+<attr name="EqReverbParam5KnobLayout" format="reference" />
+<attr name="EqReverbCheckButton" format="reference" />
+<attr name="EqReverbPresetButtonLayout" format="reference" />
+<attr name="EqReverbPresetButtonLayout_scene_button_menu" format="reference" />
+<attr name="EqReverbPresetLabel" format="reference" />
+<attr name="EqReverbSaveButton" format="reference" />
+<attr name="EqReverbResetButton" format="reference" />
+<attr name="SleepTimerTitle" format="reference" />
+<attr name="SleepTimerSeekbar" format="reference" />
+<attr name="SleepTimerPTESelectBox" format="reference" />
+<attr name="colorBgPrimary" format="color" />
+<attr name="colorBgPrimaryAlpha" format="color" />
+<attr name="colorBgLessAlpha" format="color" />
+<attr name="colorInverse" format="color" />
+<attr name="colorBgInverse" format="color" />
+<attr name="colorBgInverseChecked" format="color" />
+<attr name="colorStroke" format="color" />
+<attr name="colorLessContrast" format="color" />
+<attr name="colorShade" format="color" />
+<attr name="colorSeparator" format="color" />
+<attr name="colorBgLight" format="color" />
+<attr name="colorIconPrimary" format="color" />
+<attr name="colorIconPrimaryForced" format="color" />
+<attr name="colorIconInverse" format="color" />
+<attr name="colorIconInverseForced" format="color" />
+<attr name="colorIconDisabled" format="color" />
+<attr name="colorFastScroller" format="color" />
+<attr name="colorFastScrollerPressed" format="color" />
+<attr name="colorFastScrollerTrack" format="color" />
+<attr name="colorScrollPopupBg" format="color" />
+<attr name="colorNavbarIcons" format="color" />
+<attr name="colorNavbarIconsLessContrast" format="color" />
+<attr name="colorBgNavbar" format="color" />
+<attr name="colorItemActive" format="color" />
+<attr name="statusBarBg" format="reference|color" />
+<attr name="navigationBarBg" format="reference|color" />
+<attr name="defaultLowResAA" format="reference" />
+<attr name="defaultHiResAA" format="reference" />
+<attr name="state_toolbar_in_header" format="boolean" />
+<attr name="state_playing" format="boolean" />
+<attr name="windowLightNavigationBar" format="boolean" />
+<attr name="addStatusBarHeightToHeaders" format="boolean" />
+<attr name="toast_excl" format="reference" />
+<attr name="toast_queue" format="reference" />
+<attr name="button_selector" format="reference" />
+<attr name="ar_down_selector" format="reference" />
+<attr name="VolumePanelPopup" format="reference" />
+<attr name="VolumePanelFrame" format="reference" />
+<attr name="VolumePanelKnobLayout" format="reference" />
+<attr name="StartupActivity" format="reference" />
+<attr name="TopFitsStatusBarView_scenes_non_main" format="reference" />
+<attr name="TopFitsNavigationBarView_scenes_non_main" format="reference" />
+<attr name="ItemHeaderButtonsBg" format="reference" />
+<attr name="ItemHeaderButtonsBg_scene_header" format="reference" />
+<attr name="ItemTextHeaderButtonsBg" format="reference" />
+<attr name="ItemTextHeaderButtonsBg_scene_header" format="reference" />
+<attr name="SelectionMenuSubcontainer_scenes_hidden" format="reference" />
+<attr name="aaPaddingLeft" format="dimension" />
+<attr name="aaPaddingTop" format="dimension" />
+<attr name="aaPaddingRight" format="dimension" />
+<attr name="aaPaddingBottom" format="dimension" />
+<attr name="TopCounterLayout" format="reference" />
+<attr name="TopCounterLayout_scenes_playing" format="reference" />
+<attr name="TopCounterLayout_anim_seeking" format="reference" />
+<attr name="TopCounterLayout_scenes_invisible" format="reference" />
+<attr name="TopCounter" format="reference" />
+<attr name="bottom_navbar_bounds_2lines_size" format="dimension" />
+<attr name="shuffle_cats_32dp" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+<attr name="shuffle_songs_and_cats_32dp" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+<attr name="vis_none_32dp" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+<attr name="aaMaxSize" format="dimension" />
+<attr name="aaSideItemNum" format="integer" />
+<attr name="types" format="string" />
+<attr name="tickMark" format="reference" />
+<attr name="skin_ref1" format="reference" />
+<attr name="skin_ref2" format="reference" />
+<attr name="skin_ref3" format="reference" />
+<attr name="skin_ref4" format="reference" />
+<attr name="skin_ref5" format="reference" />
+<attr name="skin_ref6" format="reference" />
+<attr name="skin_ref7" format="reference" />
+<attr name="skin_ref8" format="reference" />
+<attr name="skin_ref9" format="reference" />
+<attr name="skin_ref10" format="reference" />
+<attr name="skin_bg1" format="reference|color" />
+<attr name="skin_bg2" format="reference|color" />
+<attr name="skin_bg3" format="reference|color" />
+<attr name="skin_bg4" format="reference|color" />
+<attr name="skin_bg5" format="reference|color" />
+<attr name="skin_bg6" format="reference|color" />
+<attr name="skin_bg7" format="reference|color" />
+<attr name="skin_bg8" format="reference|color" />
+<attr name="skin_bg9" format="reference|color" />
+<attr name="skin_bg10" format="reference|color" />
+<attr name="skin_color1" format="reference|color" />
+<attr name="skin_color2" format="reference|color" />
+<attr name="skin_color3" format="reference|color" />
+<attr name="skin_color4" format="reference|color" />
+<attr name="skin_color5" format="reference|color" />
+<attr name="skin_color6" format="reference|color" />
+<attr name="skin_color7" format="reference|color" />
+<attr name="skin_color8" format="reference|color" />
+<attr name="skin_color9" format="reference|color" />
+<attr name="skin_color10" format="reference|color" />
+<attr name="skin_dimen1" format="reference|dimension" />
+<attr name="skin_dimen2" format="reference|dimension" />
+<attr name="skin_dimen3" format="reference|dimension" />
+<attr name="skin_dimen4" format="reference|dimension" />
+<attr name="skin_dimen5" format="reference|dimension" />
+<attr name="skin_dimen6" format="reference|dimension" />
+<attr name="skin_dimen7" format="reference|dimension" />
+<attr name="skin_dimen8" format="reference|dimension" />
+<attr name="skin_dimen9" format="reference|dimension" />
+<attr name="skin_dimen10" format="reference|dimension" />
+<attr name="aaItemBoundsMatchList"><flag name="none" value="0x00000000" /><flag name="width" value="0x00000001" /><flag name="height" value="0x00000002" /></attr>
+<attr name="ItemTrackAAPanel" format="reference" />
+<attr name="ItemTrackAAPanel_scene_aa" format="reference" />
+<attr name="ItemTrackAAPanel_scene_aa_playing" format="reference" />
+<attr name="ItemTrackAAPanel_scene_aa_vis" format="reference" />
+<attr name="ItemTrackAAPanel_scenes_hidden" format="reference" />
+<attr name="aaMarginLeft" format="reference|dimension" />
+<attr name="aaMarginTop" format="reference|dimension" />
+<attr name="aaMarginRight" format="reference|dimension" />
+<attr name="aaMarginBottom" format="reference|dimension" />
+<attr name="gridItem1LineExtraSpace" format="dimension" />
+<attr name="gridZoomedItem1LineExtraSpace" format="dimension" />
+<attr name="gridItemExtraSpace" format="dimension" />
+<attr name="gridZoomedItemExtraSpace" format="dimension" />
+<attr name="ItemTrackTitle_scene_grid_1_alt" format="reference" />
+<attr name="ItemTrackTitle_scene_grid_1_alt_zoomed" format="reference" />
+<attr name="ItemTrackLine2_scene_grid_1_alt" format="reference" />
+<attr name="ItemTrackLine2_scene_grid_1_alt_zoomed" format="reference" />
+<attr name="ItemTrackMeta_scene_grid_1_alt" format="reference" />
+<attr name="ItemTrackMeta_scene_grid_1_alt_zoomed" format="reference" />
+<attr name="star_8dp" format="reference" />
+<attr name="star_2_8dp" format="reference" />
+<attr name="star_3_8dp" format="reference" />
+<attr name="star_4_8dp" format="reference" />
+<attr name="star_5_8dp" format="reference" />
+<attr name="ItemLikeUnlikeLayout_layout" format="reference" />
+<attr name="OptionRatingStars" format="reference" />
+<attr name="OptionRatingLikeUnlike" format="reference" />
+<attr name="drawableOff" format="reference" />
+<attr name="ItemTrackAAImage_scene_grid_1_alt_zoomed" format="reference" />
+<attr name="ItemTrackAAImage_scene_grid_1_alt" format="reference" />
+<attr name="ItemTrackCatImage_scene_small" format="reference" />
+<attr name="ItemRatingBar" format="reference" />
+<attr name="ItemRatingBar_scene_aa" format="reference" />
+<attr name="ItemRatingBar_scene_item_menu_lu" format="reference" />
+<attr name="ItemRatingBar_anim_ratingbar_pressed" format="reference" />
+<attr name="OptionCounter" format="reference" />
+<attr name="vis_w_ui_32dp" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+<attr name="vis_32dp" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+<attr name="vis_lock_24dp" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+<attr name="vis_advance_24dp" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+<attr name="vis_advance_by_time_24dp" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+<attr name="vis_shuffle_24dp" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+<attr name="aaMaxYRotation" format="reference|float" />
+<attr name="aaMaxZRotation" format="reference|float" />
+<attr name="aaDenseFactor" format="reference|float" />
+<attr name="aaMaxScale" format="reference|float" />
+<attr name="long_files" format="reference" />
+<attr name="micro_long_files" format="reference" />
+<attr name="alphaRatio" format="float" />
+<attr name="loadForScene_6" format="reference" />
+<attr name="loadForScene_7" format="reference" />
+<attr name="repeatLongPressPeriod" format="integer" />
+<attr name="ItemTrackPlayingMark" format="reference" />
+<attr name="ItemTrackPlayingMark_scene_small" format="reference" />
+<attr name="ItemTrackPlayingMark_scene_1" format="reference" />
+<attr name="ItemTrackPlayingMark_scene_zoomed" format="reference" />
+<attr name="ItemTrackPlayingMark_scene_1_zoomed" format="reference" />
+<attr name="ItemTrackPlayingMark_scene_grid" format="reference" />
+<attr name="ItemTrackPlayingMark_scene_grid_1" format="reference" />
+<attr name="ItemTrackPlayingMark_scene_grid_1_alt" format="reference" />
+<attr name="ItemTrackPlayingMark_scene_grid_zoomed" format="reference" />
+<attr name="ItemTrackPlayingMark_scene_grid_1_zoomed" format="reference" />
+<attr name="ItemTrackPlayingMark_scene_grid_1_alt_zoomed" format="reference" />
+<attr name="ItemTrackPlayingMark_scenes_hidden" format="reference" />
+<attr name="item_ontop_elevation" format="dimension" />
+<attr name="clear" format="reference" />
+<attr name="layout_flexReverse" format="boolean" />
+<attr name="ItemTrackPlayingMark_scene_item_menu" format="reference" />
+<attr name="colorItemPlayingMark" format="color" />
+<attr name="help_anchor" format="reference" />
+<attr name="help_position"><enum name="top" value="0" /><enum name="right" value="1" /><enum name="bottom" value="2" /><enum name="left" value="3" /><enum name="center" value="4" /></attr>
+<attr name="help_inside" format="boolean" />
+<attr name="help_oneAxis" format="boolean" />
+<attr name="arrowWidth" format="dimension" />
+<attr name="arrowHeight" format="dimension" />
+<attr name="arrowOffset" format="dimension" />
+<attr name="arrowStrokeWidth" format="dimension" />
+<attr name="arrowLineWeight" format="dimension" />
+<attr name="showArrow" format="boolean"><enum name="show" value="1" /><enum name="preferLeft" value="2" /><enum name="preferRight" value="3" /></attr>
+<attr name="arrowFillColor" format="color" />
+<attr name="arrowStrokeColor" format="color" />
+<attr name="html" format="string" />
+<attr name="dialogCheckBig" format="reference" />
+<attr name="DialogMenuPlaceholderLayout" format="reference" />
+<attr name="ItemLikeUnlikeLayout_scenes_invisible" format="reference" />
+<attr name="ItemRatingBar_scenes_invisible" format="reference" />
+<attr name="NavbarExtensionMenuLine" format="reference" />
+<attr name="NavbarExtensionMenuLine50" format="reference" />
+<attr name="colorStrokeHelp" format="color" />
+<attr name="animOnAttach" format="boolean" />
+<attr name="floatScale" format="float" />
+<attr name="summary2" format="string" />
+<attr name="line1" format="string" />
+<attr name="line2" format="string" />
+<attr name="line3" format="string" />
+<attr name="line4" format="string" />
+<attr name="TopToastContainer_scenes_non_main" format="reference" />
+<attr name="TopToastTitle_no_icon" format="reference" />
+<attr name="TopToastLine2_no_icon" format="reference" />
+<attr name="colorBgHelp" format="color" />
+<attr name="colorSeekbarBg" format="color" />
+<attr name="colorSeekbarProgress" format="color" />
+<attr name="colorSeekbarThumb" format="color" />
+<attr name="PlainSeekbar_buttons_offset" format="dimension" />
+<attr name="PlainSeekbar_common_marginBottom" format="dimension" />
+<attr name="PlainSeekbar_marginBottom" format="dimension" />
+<attr name="noUpdateInTransition" format="boolean" />
+<attr name="centerLabel" format="string" />
+<attr name="colorScheme" format="reference"><enum name="dark" value="0" /><enum name="light" value="1" /><enum name="auto" value="2" /></attr>
+<attr name="scopeUris" format="reference|string" />
+<attr name="Alt_ListSubstyle_gridZoomedItem1LineExtraSpace" format="dimension" />
+<attr name="Alt_ListSubstyle_gridZoomedItemExtraSpace" format="dimension" />
+<attr name="CcButton_MainUI_scene_vis" format="reference" />
+<attr name="DialogProgressButton" format="reference" />
+<attr name="ItemTrackMeta_drawableAdj" format="dimension" />
+<attr name="ItemTrackMeta_scene_item_menu_marginBottom" format="dimension" />
+<attr name="ItemTrack_labels_scene_grid_lineBackground" format="reference|color" />
+<attr name="ItemTrack_labels_scene_grid_textColor" format="color" />
+<attr name="ItemMiniplayer_paddingLeft" format="dimension" />
+<attr name="ItemHeaderSelectButton_scene_bottom_toolbar" format="reference" />
+<attr name="TrackItem_alignToContent"><enum name="none" value="0" /><enum name="all" value="196608" /></attr>
+<attr name="TrackItem_alignToContent_horizontal"><enum name="none" value="0" /><enum name="horizontal" value="65536" /></attr>
+<attr name="TrackItem_eatFontPads" format="boolean" />
+<attr name="overlap_more_buttons" format="reference" />
+<attr name="ItemHeaderShuffleButton_scene_bottom_toolbar" format="reference" />
+<attr name="ItemPopupListMorePaddingNoCheck" format="reference" />
+<attr name="ItemTextHeaderButtonsBg_scene_bottom_toolbar" format="reference" />
+<attr name="ItemTextHeaderPlayButton_scene_bottom_toolbar" format="reference" />
+<attr name="ItemTextHeaderSearchButton_scene_bottom_toolbar" format="reference" />
+<attr name="ItemTextHeaderSelectButton_scene_bottom_toolbar" format="reference" />
+<attr name="ItemTextHeaderShuffleButton_scene_bottom_toolbar" format="reference" />
+<attr name="ItemTextMenu_scene_bottom_toolbar" format="reference" />
+<attr name="overlap_plain_seekbar" format="reference" />
+<attr name="ItemTrackMenu_scene_bottom_toolbar" format="reference" />
+<attr name="textAppearancePopupMenuHeader" format="reference" />
+<attr name="dialogCornerRadius" format="dimension" />
+<attr name="OptionNoHeaderButtons" format="reference" />
+<attr name="SelectionListContextPopupButtonLayout" format="reference" />
+<attr name="textAppearanceListItemSecondary" format="reference" />
+<attr name="colorBackgroundFloating" format="color" />
+<attr name="ratingBarStyleIndicator" format="reference" />
+<attr name="ratingBarStyleSmall" format="reference" />
+<attr name="listMenuViewStyle" format="reference" />
+<attr name="tooltipFrameBackground" format="reference" />
+<attr name="tooltipForegroundColor" format="reference|color" />
+<attr name="colorError" format="reference|color" />
+<attr name="viewInflaterClass" format="string" />
+<attr name="alphabeticModifiers"><flag name="META" value="0x00010000" /><flag name="CTRL" value="0x00001000" /><flag name="ALT" value="0x00000002" /><flag name="SHIFT" value="0x00000001" /><flag name="SYM" value="0x00000004" /><flag name="FUNCTION" value="0x00000008" /></attr>
+<attr name="numericModifiers"><flag name="META" value="0x00010000" /><flag name="CTRL" value="0x00001000" /><flag name="ALT" value="0x00000002" /><flag name="SHIFT" value="0x00000001" /><flag name="SYM" value="0x00000004" /><flag name="FUNCTION" value="0x00000008" /></attr>
+<attr name="SelectionListContextPopupButtonLayout_scene_item_menu" format="reference" />
+<attr name="SelectionMenuRangeButton" format="reference" />
+<attr name="Alt2_ItemRatingBar_scene_aa_marginLeft" format="dimension" />
+<attr name="contentDescription" format="string" />
+<attr name="tooltipText" format="string" />
+<attr name="iconTint" format="color" />
+<attr name="iconTintMode"><enum name="src_over" value="3" /><enum name="src_in" value="5" /><enum name="src_atop" value="9" /><enum name="multiply" value="14" /><enum name="screen" value="15" /><enum name="add" value="16" /></attr>
+<attr name="subMenuArrow" format="reference" />
+<attr name="paddingBottomNoButtons" format="dimension" />
+<attr name="paddingTopNoTitle" format="dimension" />
+<attr name="thumbTint" format="color" />
+<attr name="thumbTintMode"><enum name="src_over" value="3" /><enum name="src_in" value="5" /><enum name="src_atop" value="9" /><enum name="multiply" value="14" /><enum name="screen" value="15" /><enum name="add" value="16" /></attr>
+<attr name="trackTint" format="color" />
+<attr name="trackTintMode"><enum name="src_over" value="3" /><enum name="src_in" value="5" /><enum name="src_atop" value="9" /><enum name="multiply" value="14" /><enum name="screen" value="15" /><enum name="add" value="16" /></attr>
+<attr name="titleMargin" format="dimension" />
+<attr name="buttonGravity"><flag name="center_vertical" value="0x00000010" /><flag name="top" value="0x00000030" /><flag name="bottom" value="0x00000050" /></attr>
+<attr name="check_48dp" format="reference" />
+<attr name="fail_48dp" format="reference" />
+<attr name="ItemTrackTitle_scene_1_small" format="reference" />
+<attr name="ItemTrackLine2_scene_1_small" format="reference" />
+<attr name="ItemTrackMeta_scene_1_small" format="reference" />
+<attr name="ItemBackDecorTitle_scene_header_back_decor_marginLeft" format="dimension" />
+<attr name="TopSearchCatButton" format="reference" />
+<attr name="TopSearchCatsLayout" format="reference" />
+<attr name="ItemGenericLine2_Text" format="reference" />
+<attr name="ItemGenericTitle_Text" format="reference" />
+<attr name="ItemHeaderScanProgress_scene_bottom_toolbar" format="reference" />
+<attr name="ItemLikeUnlikeLayout_scene_lyrics" format="reference" />
+<attr name="ItemLyricsTitle_Text" format="reference" />
+<attr name="ItemRatingBar_scene_lyrics" format="reference" />
+<attr name="ItemTextBackDecorTitle_scene_header_back_decor_background" format="reference|color" />
+<attr name="ItemTrackAAImage_scene_header_drawableTintColor" format="color" />
+<attr name="ItemTrackAAImage_scene_lyrics" format="reference" />
+<attr name="ItemTrackAAPanel_scene_lyrics" format="reference" />
+<attr name="ItemTrackBackDecorTitle_scene_header_back_decor_background" format="reference|color" />
+<attr name="ItemTrackCatImage_scene_lyrics" format="reference" />
+<attr name="ItemTrackLine2_scene_header_lineBackground" format="reference|color" />
+<attr name="EqParamColorSet" format="reference" />
+<attr name="years" format="reference" />
+<attr name="streams" format="reference" />
+<attr name="micro_years" format="reference" />
+<attr name="micro_streams" format="reference" />
+<attr name="bookmarks" format="reference" />
+<attr name="micro_bookmarks" format="reference" />
+<attr name="ItemTrackLine2_scene_lyrics" format="reference" />
+<attr name="ItemTrackLyrics" format="reference" />
+<attr name="ItemTrackLyrics_scene_aa" format="reference" />
+<attr name="ItemTrackLyrics_scene_aa_playing" format="reference" />
+<attr name="ItemTrackLyrics_scene_aa_vis" format="reference" />
+<attr name="alignEllipsis" format="boolean" />
+<attr name="back_10s_core" format="reference" />
+<attr name="barTint" format="color" />
+<attr name="barTintMode"><enum name="src_over" value="3" /><enum name="src_in" value="5" /><enum name="src_atop" value="9" /><enum name="multiply" value="14" /><enum name="screen" value="15" /><enum name="add" value="16" /></attr>
+<attr name="buttonCompat" format="reference" />
+<attr name="ItemTrackLyrics_scene_aa_visibility"><enum name="visible" value="0" /><enum name="invisible" value="1" /><enum name="gone" value="2" /></attr>
+<attr name="allowLinks" format="boolean" />
+<attr name="ItemTrackLyrics_scene_lyrics" format="reference" />
+<attr name="ItemTrackLyrics_scene_menu" format="reference" />
+<attr name="ItemTrackMenu_scene_header_background" format="reference|color" />
+<attr name="ItemTrackMenu_scene_lyrics" format="reference" />
+<attr name="ItemTrackMeta_scene_header_w_meta_background" format="reference|color" />
+<attr name="ItemTrackMeta_scene_lyrics" format="reference" />
+<attr name="ItemTrackNum_scene_lyrics" format="reference" />
+<attr name="ItemTrackTitle_scene_header_lineBackground" format="reference|color" />
+<attr name="ItemTrackTitle_scene_lyrics" format="reference" />
+<attr name="ListHeaderButton_scene_header_background" format="reference|color" />
+<attr name="ListHeaderButton_scene_header_marginLeft" format="dimension" />
+<attr name="mediaRouteBodyTextAppearance" format="reference" />
+<attr name="mediaRouteDividerColor" format="color" />
+<attr name="mediaRouteHeaderTextAppearance" format="reference" />
+<attr name="externalRouteEnabledDrawableStatic" format="reference" />
+<attr name="DialogForceDarkSystemUIStyle" format="reference" />
+<attr name="export" format="reference" />
+<attr name="ListHeaderButton_scene_header_marginRight" format="dimension" />
+<attr name="NavbarList_marginBottom" format="dimension" />
+<attr name="NavbarSeekbar_height" format="dimension" />
+<attr name="mediaRouteAudioTrackDrawable" format="reference" />
+<attr name="mediaRouteButtonStyle" format="reference" />
+<attr name="mediaRouteCloseDrawable" format="reference" />
+<attr name="mediaRouteControlPanelThemeOverlay" format="reference" />
+<attr name="mediaRouteDefaultIconDrawable" format="reference" />
+<attr name="mediaRoutePauseDrawable" format="reference" />
+<attr name="mediaRoutePlayDrawable" format="reference" />
+<attr name="mediaRouteSpeakerGroupIconDrawable" format="reference" />
+<attr name="mediaRouteSpeakerIconDrawable" format="reference" />
+<attr name="mediaRouteStopDrawable" format="reference" />
+<attr name="mediaRouteTheme" format="reference" />
+<attr name="mediaRouteTvIconDrawable" format="reference" />
+<attr name="externalRouteEnabledDrawable" format="reference" />
+<attr name="mediaRouteButtonTint" format="color" />
+<attr name="pre_chromecast" format="reference" />
+<attr name="folder_24dp" format="reference" />
+<attr name="settings_alt_24dp" format="reference" />
+<attr name="keep_list_pos_12dp" format="reference" />
+<attr name="keep_track_pos_12dp" format="reference" />
+<attr name="keep_list_track_pos_12dp" format="reference" />
+<attr name="media_route" format="reference" />
+<attr name="CcButton_NavbarExtensionMenuLine" format="reference" />
+<attr name="CcButton_MainUI" format="reference" />
+<attr name="CcButton_MainUI_scenes_playing" format="reference" />
+<attr name="CcButton_MainUI_scenes_vis_w_ui" format="reference" />
+<attr name="CcButton_MainUI_scenes_invisible" format="reference" />
+<attr name="html_2" format="string" />
+<attr name="OptionCCDisabled" format="reference" />
+<attr name="OptionCCInMenu" format="reference" />
+<attr name="OptionCCMainUIAndInMenu" format="reference" />
+<attr name="OptionHeaderMeta" format="reference" />
+<attr name="tristate" format="boolean" />
+<attr name="longPressEndMsgId" format="reference|integer" />
+<attr name="ItemHeaderScanProgress" format="reference" />
+<attr name="ItemHeaderScanProgress_scene_item_menu" format="reference" />
+<attr name="ItemHeaderScanProgress_scene_header" format="reference" />
+<attr name="ItemPopupListMorePadding" format="reference" />
+<attr name="DialogForceLightSystemUIStyle" format="reference" />
+<attr name="prev_cat_round" format="reference" />
+<attr name="rw_round" format="reference" />
+<attr name="ff_round" format="reference" />
+<attr name="next_cat_round" format="reference" />
+<attr name="pause_round" format="reference" />
+<attr name="play_round" format="reference" />
+<attr name="pause_small_narrow" format="reference" />
+<attr name="redo" format="reference" />
+<attr name="firstPressToast" format="reference|string" />
+<attr name="colorBgTransparentNavbar" format="color" />
+<attr name="colorIconCC" format="color" />
+<attr name="NavbarSeekbar_marginBottom" format="dimension" />
+<attr name="search_24dp" format="reference" />
+<attr name="targetSearchHeaderSize" format="dimension" />
+<attr name="valuePadding" format="dimension" />
+<attr name="valueTextAppearance" format="reference" />
+<attr name="valueAnimZoom" format="float" />
+<attr name="valueAnimTime" format="integer" />
+<attr name="valueLabel" format="reference" />
+<attr name="layout_offsets"><flag name="insetLeft" value="0x10000000" /><flag name="insetTop" value="0x20000000" /><flag name="insetRight" value="0x40000000" /><flag name="insetBottom" value="0x80000000" /><flag name="insets" value="0xf0000000" /><flag name="ignorePaddingLeft" value="0x01000000" /><flag name="ignorePaddingTop" value="0x02000000" /><flag name="ignorePaddingRight" value="0x04000000" /><flag name="ignorePaddingBottom" value="0x08000000" /><flag name="ignorePaddings" value="0x0f000000" /></attr>
+<attr name="enableForStateId" format="reference" />
+<attr name="forcedAnimTime" format="integer" />
+<attr name="ItemTextHeaderSearchButton" format="reference" />
+<attr name="ItemTextHeaderSearchButton_scene_header" format="reference" />
+<attr name="ItemTextHeaderSearchButton_scene_menu" format="reference" />
+<attr name="ItemHeaderSearchButton" format="reference" />
+<attr name="ItemHeaderSearchButton_scene_header" format="reference" />
+<attr name="ItemHeaderSearchButton_scene_menu" format="reference" />
+<attr name="ItemTextHeaderScanProgress_scene_top_header" format="reference" />
+<attr name="dspInfoImage" format="reference" />
+<attr name="unknownIcon" format="reference" />
+<attr name="Dialog_textAppearance" format="reference" />
+<attr name="Dialog_textAppearanceSmall" format="reference" />
+<attr name="DialogTitle_Text" format="reference" />
+<attr name="DialogToastLine1_Text" format="reference" />
+<attr name="DialogToastLine2_Text" format="reference" />
+<attr name="DialogToastLineOnly1_Text" format="reference" />
+<attr name="DialogNeutralSeparator" format="reference" />
+<attr name="DialogPositiveSeparator" format="reference" />
+<attr name="overlap_transparent_navbar" format="reference" />
+<attr name="DialogSettingsGearIcon" format="reference" />
+<attr name="OptionRatingStarsMenu" format="reference" />
+<attr name="selectionBottomReservedExtraSpace" format="reference|dimension" />
+<attr name="aaBlurNoAAToAAAnimTime" format="integer" />
+<attr name="searchSummary" format="string" />
+<attr name="skipSearch" format="string|boolean" />
+<attr name="searchIndexer" format="string" />
+<attr name="searchBreadcrumb1" format="string" />
+<attr name="BlackButton_Text" format="reference" />
+<attr name="WhiteButton_Text" format="reference" />
+<attr name="WhiteStrokedListHeaderButton_Text" format="reference" />
+<attr name="ItemTrackCatImage_Text" format="reference" />
+<attr name="ItemTrackTitle_Text" format="reference" />
+<attr name="ItemTrackLine2_Text" format="reference" />
+<attr name="ItemTrackMeta_Text" format="reference" />
+<attr name="ItemAALEDecorText_Text" format="reference" />
+<attr name="ItemMiniplayerPrevNextDecorText_Text" format="reference" />
+<attr name="overlap_navbar_offset" format="reference" />
+<attr name="navbar_marginLR" format="dimension" />
+<attr name="navbar_marginB" format="dimension" />
+<attr name="SeparatorWithButton_Text" format="reference" />
+<attr name="ItemTextTitle_Text" format="reference" />
+<attr name="ItemTextLine2_Text" format="reference" />
+<attr name="ItemEmptyListText_Text" format="reference" />
+<attr name="ItemMiniplayerTitle_Text" format="reference" />
+<attr name="ItemMiniplayerLine2_Text" format="reference" />
+<attr name="ItemVisTitle_Text" format="reference" />
+<attr name="ItemVisLine2_Text" format="reference" />
+<attr name="ItemPopupListTitle_Text" format="reference" />
+<attr name="ItemPopupListTitleLarger_Text" format="reference" />
+<attr name="ItemPopupSimpleTitle" format="reference" />
+<attr name="ItemPopupSimpleTitle_Text" format="reference" />
+<attr name="ItemPopupSimpleLine2" format="reference" />
+<attr name="ItemPopupSimpleLine2_Text" format="reference" />
+<attr name="PopupMenuItem_Text" format="reference" />
+<attr name="PopupInfoTextTitle_Text" format="reference" />
+<attr name="PopupDSPInfoText" format="reference" />
+<attr name="PopupDSPInfoImage" format="reference" />
+<attr name="PopupButton_Text" format="reference" />
+<attr name="NavbarExtensionLogoLabel_Text" format="reference" />
+<attr name="NavbarExtensionMenuLine_Text" format="reference" />
+<attr name="SelectionMenu_Text" format="reference" />
+<attr name="SelectionListContextButton_Text" format="reference" />
+<attr name="TopListScrollerView_Text" format="reference" />
+<attr name="TopSearchTarget" format="reference" />
+<attr name="TopSearchTarget_Text" format="reference" />
+<attr name="TopListIndexerPopupView_Text" format="reference" />
+<attr name="TopTrackElapsedDuration_Text" format="reference" />
+<attr name="TopToastTitle_Text" format="reference" />
+<attr name="TopToastLine2_Text" format="reference" />
+<attr name="TopCounterLayout_Text" format="reference" />
+<attr name="TopMetaInfoLabel_Text" format="reference" />
+<attr name="TopHelp_Text" format="reference" />
+<attr name="TopHelpSmaller_Text" format="reference" />
+<attr name="TopHelpButton_Text" format="reference" />
+<attr name="EqButton_Text" format="reference" />
+<attr name="EqLinearKnob_Text" format="reference" />
+<attr name="EqKnobValue_Text" format="reference" />
+<attr name="EqKnobLabel_Text" format="reference" />
+<attr name="EqEquPresetLabel_Text" format="reference" />
+<attr name="SleepTimerTitle_Text" format="reference" />
+<attr name="SleepTimerContent" format="reference" />
+<attr name="LargerText" format="reference" />
+<attr name="aaMinSize" format="dimension" />
+<attr name="drawablePaddingEndNoText" format="dimension" />
+<attr name="layout_wrapIgnoresMargins" format="boolean" />
+<attr name="preferenceIndentPadding" format="dimension" />
+<attr name="sup" format="string" />
+<attr name="supLink" format="string" />
+<attr name="ignoreTitle" format="boolean" />
+<attr name="PlainSeekbar" format="reference" />
+<attr name="PlainSeekbar_anim_seeking" format="reference" />
+<attr name="matchAASubstyle" format="boolean" />
+<attr name="ItemTrackAAImage_scene_item_menu_lu" format="reference" />
+<attr name="sort_added_24dp" format="reference" />
+<attr name="sort_modified_24dp" format="reference" />
+<attr name="sort_num_tracks_24dp" format="reference" />
+<attr name="dialog_AlertDialogActivity" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+<attr name="dialog_AlertDialogActivity_list" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+<attr name="dialog_AlertDialogActivity_vertical_buttons" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+<attr name="dialog_AlertDialogActivity_no_title" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+<attr name="dialog_WelcomeActivity" format="reference" />
+<attr name="dialog_AutoFindDialogActivity" format="reference" />
+<attr name="dialog_InfoActivity" format="reference" />
+<attr name="dialog_EditTagActivity" format="reference" />
+<attr name="dialog_SettingsLicenseActivity" format="reference" />
+<attr name="dialog_ExpiredActivity" format="reference" />
+<attr name="dialog_ChangelogActivity" format="reference" />
+<attr name="dialog_AudioInfoActivity" format="reference" />
+<attr name="dialog_EditNameActivity" format="reference" />
+<attr name="dialog_EqPresetAssignActivity" format="reference" />
+<attr name="dialog_AddEqPresetActivity" format="reference" />
+<attr name="overlap_alt_layout" format="reference" />
+<attr name="AltFont_font" format="string" />
+<attr name="AltFont_medium_font" format="string" />
+<attr name="dialog_AddReverbPresetActivity" format="reference" />
+<attr name="dialog_MusicFoldersActivity" format="reference" />
+<attr name="NavbarSeekbar_marginLR" format="dimension" />
+<attr name="dialog_APMUnlockDialogActivity" format="reference" />
+<attr name="dialog_AudioBufferActivity" format="reference" />
+<attr name="dialog_SelectAlbumArtActivity" format="reference" />
+<attr name="dialog_PlaylistSortActivity" format="reference" />
+<attr name="dialog_ListOptsActivity" format="reference" />
+<attr name="dialog_PlaylistSelectActivity" format="reference" />
+<attr name="dialog_PlaylistShortcutActivity" format="reference" />
+<attr name="dialog_MediaRouteChooserActivity" format="reference" />
+<attr name="dialog_MediaRouteControllerActivity" format="reference" />
+<attr name="dialog_LyricsActivity" format="reference" />
+<attr name="dialog_PlaylistsExportActivity" format="reference" />
+<attr name="add_next_shuffled" format="reference" />
+<attr name="stream_24dp" format="reference" />
+<attr name="noBreak" format="boolean" />
+<attr name="add_to_pl_at_start" format="reference" />
+<attr name="add_to_pl_shuffled" format="reference" />
+<attr name="allowWhitespace" format="boolean" />
+<attr name="logo_navbar" format="reference" />
+<attr name="back_10s_round" format="reference" />
+<attr name="forward_10s_round" format="reference" />
+<attr name="single_song_32dp" format="reference" />
+<attr name="DialogOuterLayout" format="reference" />
+<attr name="OptionHideMenu" format="reference" />
+<attr name="OptionAAKeepAspect" format="reference" />
+<attr name="morphWhenState" format="reference" />
+<attr name="morphDrawable" format="reference" />
+<attr name="morphMsgId" format="reference" />
+<attr name="morphArg1" format="integer" />
+<attr name="morphArg2" format="integer" />
+<attr name="morphString" format="string" />
+<attr name="morphLongPressMsgId" format="reference" />
+<attr name="morphLongPressEndMsgId" format="reference" />
+<attr name="morphContentDescription" format="string" />
+<attr name="reduceBottomInset" format="dimension" />
+<attr name="infoTextHelper" format="string" />
+<attr name="ItemPopupListAAImage" format="reference" />
+<attr name="ItemPopupListAASelectBox" format="reference" />
+<attr name="ItemPopupListTitleLarger_2line" format="reference" />
+<attr name="ItemPopupListMicroIconSpace" format="reference" />
+<attr name="dialog_AlertDialogActivity_no_title_vertical_buttons" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+<attr name="toast_info" format="reference" />
+<attr name="ItemTrackMenu_scene_aa_visibility"><enum name="visible" value="0" /><enum name="invisible" value="1" /><enum name="gone" value="2" /></attr>
+<attr name="AAImage_scaleType"><enum name="fitCenter" value="3" /><enum name="centerCrop" value="6" /><enum name="centerInside" value="7" /><enum name="centerCropXY" value="8" /></attr>
+<attr name="colorTrackNum" format="color" />
+<attr name="layout_goneWhenEmpty" format="boolean" />
+<attr name="ItemTrackNum" format="reference" />
+<attr name="ItemTrackNum_Text" format="reference" />
+<attr name="ItemTrackNum_scene_small" format="reference" />
+<attr name="ItemTrackNum_scene_1" format="reference" />
+<attr name="ItemTrackNum_scene_1_small" format="reference" />
+<attr name="ItemTrackNum_scene_zoomed" format="reference" />
+<attr name="ItemTrackNum_scene_1_zoomed" format="reference" />
+<attr name="ItemTrackNum_scene_grid" format="reference" />
+<attr name="ItemTrackNum_scene_grid_1" format="reference" />
+<attr name="ItemTrackNum_scene_grid_1_alt" format="reference" />
+<attr name="ItemTrackNum_scene_grid_zoomed" format="reference" />
+<attr name="ItemTrackNum_scene_grid_1_zoomed" format="reference" />
+<attr name="ItemTrackNum_scene_grid_1_alt_zoomed" format="reference" />
+<attr name="ItemTrackNum_scene_aa" format="reference" />
+<attr name="ItemTrackNum_scene_aa_vis" format="reference" />
+<attr name="ItemTrackNum_scene_aa_playing" format="reference" />
+<attr name="ItemTrackNum_scene_item_menu" format="reference" />
+<attr name="ItemTrackNum_scene_item_menu_lu" format="reference" />
+<attr name="ItemTrackNum_scene_header" format="reference" />
+<attr name="onPosChangedMsgId" format="reference" />
+<attr name="PlainSeekbar_metaInfo_marginBottom" format="dimension" />
+<attr name="DialogToastButton" format="reference" />
+<attr name="textSizeMultiplierPref" format="reference" />
+<attr name="OptionCCMainUIButton" format="reference" />
+<attr name="dialog_EqPresetsActivity" format="reference" />
+<attr name="genres_24dp" format="reference" />
+<attr name="ItemPopupMenuSeparator2" format="reference" />
+<attr name="colorSeparatorLight" format="color" />
+<attr name="OptionAACrop" format="reference" />
+<attr name="EqTempoPlusButton" format="reference" />
+<attr name="EqTempoMinusButton" format="reference" />
+<attr name="SleepTimerValue" format="reference" />
+<attr name="SleepTimerValue_Text" format="reference" />
+<attr name="corners_medium_minus" format="dimension" />
+<attr name="add_next" format="reference" />
+<attr name="bookmark" format="reference" />
+<attr name="itemSizeSmallNoAA" format="dimension" />
+<attr name="itemSize1SmallNoAA" format="dimension" />
+<attr name="itemSize1SmallNoAAExtraSmall" format="dimension" />
+<attr name="compactHeaderSize" format="dimension" />
+<attr name="maxFontScaleForCompact" format="float" />
+<attr name="compactHumanCatHeaderSize" format="dimension" />
+<attr name="compactTextItemSize" format="dimension" />
+<attr name="compactTextHeaderSize" format="dimension" />
+<attr name="rounding" format="float" />
+<attr name="ItemTrackSelectBox_scene_small_no_aa" format="reference" />
+<attr name="ItemTrackAAImage_scene_small_no_aa" format="reference" />
+<attr name="ItemTrackCatImage_scene_1_small" format="reference" />
+<attr name="ItemTrackDragHandler_scene_small_no_aa" format="reference" />
+<attr name="milk_advance_modes" format="reference" />
+<attr name="milk_advance_icons" format="reference" />
+<attr name="milk_advance_enum" format="reference" />
+<attr name="settings_target_audio" format="string" />
+<attr name="holeStartColor" format="reference|color" />
+<attr name="holeMidColor" format="reference|color" />
+<attr name="holeEndColor" format="reference|color" />
+<attr name="holeGlowStartColor" format="reference|color" />
+<attr name="holeGlowMidColor" format="reference|color" />
+<attr name="holeGlowEndColor" format="reference|color" />
+<attr name="holeColorWidth" format="dimension" />
+<attr name="holeColorRadius" format="dimension" />
+<attr name="holeGlowWidth" format="dimension" />
+<attr name="holeColorStartPoint" format="float" />
+<attr name="labelBackground" format="reference|color" />
+<attr name="labelBackgroundPaddingLeft" format="dimension" />
+<attr name="labelBackgroundPaddingRight" format="dimension" />
+<attr name="labelBackgroundPaddingTop" format="dimension" />
+<attr name="labelBackgroundPaddingBottom" format="dimension" />
+<attr name="labelBackgroundAnimZoom" format="float" />
+<attr name="arcStartColor" format="reference|color" />
+<attr name="arcMidColor" format="reference|color" />
+<attr name="arcEndColor" format="reference|color" />
+<attr name="arcWidth" format="dimension" />
+<attr name="arcOffset" format="dimension" />
+<attr name="arcGlowStartColor" format="reference|color" />
+<attr name="arcGlowMidColor" format="reference|color" />
+<attr name="arcGlowEndColor" format="reference|color" />
+<attr name="arcGlowWidth" format="dimension" />
+<attr name="arcStartPoint" format="float" />
+<attr name="pressCmdId" format="reference" />
+<attr name="pressBusId" format="reference" />
+<attr name="toastIconOnPress" format="reference" />
+<attr name="dspParamDef" format="reference" />
+<attr name="DialogNegativeSeparator" format="reference" />
+<attr name="TopUpperToastContainer" format="reference" />
+<attr name="TopUpperToastFrame" format="reference" />
+<attr name="TopUpperToastCloseButton" format="reference" />
+<attr name="TopUpperToastIcon" format="reference" />
+<attr name="TopUpperToastTextContainer" format="reference" />
+<attr name="TopUpperToastSpacer" format="reference" />
+<attr name="TopUpperToastTitle" format="reference" />
+<attr name="TopUpperToastTitle_Text" format="reference" />
+<attr name="TopUpperToastLine2" format="reference" />
+<attr name="TopUpperToastLine2_Text" format="reference" />
+<attr name="TopUpperToastTitle_no_icon" format="reference" />
+<attr name="TopUpperToastLine2_no_icon" format="reference" />
+<attr name="TopUpperToastFrame_scene_expanded" format="reference" />
+<attr name="layout_gravityTargetAxis"><enum name="horizontal" value="256" /><enum name="vertical" value="512" /><enum name="both" value="768" /></attr>
+<attr name="layout_gravityIgnoresMargins" format="boolean" />
+<attr name="longPressConfirmTitle" format="reference|string" />
+<attr name="longPressConfirmText" format="reference|string" />
+<attr name="getStateOnMsg" format="boolean" />
+<attr name="alwaysCheckState" format="boolean" />
+<attr name="updateMsgId_7" format="reference" />
+<attr name="updateMsgId_8" format="reference" />
+<attr name="labelStateId_2" format="reference" />
+<attr name="stateType"><enum name="string" value="0" /><enum name="integer" value="1" /></attr>
+<attr name="cmdId" format="reference" />
+<attr name="queueMinMs" format="integer" />
+<attr name="settings_equ" format="reference" />
+<attr name="settings_utils" format="reference" />
+<attr name="settings_support" format="reference" />
+<attr name="settings_export" format="reference" />
+<attr name="settings_import" format="reference" />
+<attr name="settings_send_errors" format="reference" />
+<attr name="settings_peq_logo" format="reference" />
+<attr name="mid" format="integer" />
+<attr name="midPos" format="float" />
+<attr name="smallIcon" format="reference" />
+<attr name="smallLine1" format="string" />
+<attr name="smallLine2" format="string" />
+<attr name="smallLine3" format="string" />
+<attr name="smallLine4" format="string" />
+<attr name="NavbarPeqExtensionLogo" format="reference" />
+<attr name="SelectionListContextButton33" format="reference" />
+<attr name="TopPeqEqLayout" format="reference" />
+<attr name="TopPeqEqLayout_scenes_vis" format="reference" />
+<attr name="PeqVisPanelContainer" format="reference" />
+<attr name="EqKnobValueLarger_Text" format="reference" />
+<attr name="PeqVisButtonLayout" format="reference" />
+<attr name="PeqEqEnableVisFrs" format="reference" />
+<attr name="PeqEqVolPanel1" format="reference" />
+<attr name="PeqEqVolPanel2" format="reference" />
+<attr name="PeqEqVolPanel3" format="reference" />
+<attr name="PeqEqBalanceKnobLayout" format="reference" />
+<attr name="PeqEqCompressorCheckButton" format="reference" />
+<attr name="settings_target_equ" format="string" />
+<attr name="PeqEqCompressKnobLayout1" format="reference" />
+<attr name="PeqEqCompressKnobLayout2" format="reference" />
+<attr name="PeqEqCompressKnobLayout3" format="reference" />
+<attr name="PeqEqCompressKnobLayout4" format="reference" />
+<attr name="PeqEqCompressKnobLayout5" format="reference" />
+<attr name="PeqEqCompressKnobLayout6" format="reference" />
+<attr name="PeqEqReverbParamKnobLayout" format="reference" />
+<attr name="PeqStyles" format="reference" />
+<attr name="longPressBusId" format="reference" />
+<attr name="ItemTrackTitle_scale" format="float" />
+<attr name="PeqOtherResetButton" format="reference" />
+<attr name="PeqVolumeKnobLayout" format="reference" />
+<attr name="colorTextDisabled" format="color" />
+<attr name="ItemTrackTitle_scene_small_scale" format="float" />
+<attr name="ItemTrackTitle_scene_zoomed_scale" format="float" />
+<attr name="ItemTrackTitle_scene_grid_scale" format="float" />
+<attr name="ItemTrackTitle_scene_grid_zoomed_scale" format="float" />
+<attr name="ItemTrackTitle_scene_grid_1_alt_zoomed_scale" format="float" />
+<attr name="ItemTrackTitle_scene_header_scale" format="float" />
+<attr name="ItemTrackTitle_scene_aa_scale" format="float" />
+<attr name="ItemTrackTitle_scene_item_menu_scale" format="float" />
+<attr name="Alt_ItemTrackTitle_scene_aa_scale" format="float" />
+<attr name="ItemTrackTitle_marginBottom" format="dimension" />
+<attr name="ItemTrackTitle_paddingLR" format="dimension" />
+<attr name="ItemTrackTitle_paddingTB" format="dimension" />
+<attr name="ItemTrackLine2_scale" format="float" />
+<attr name="ItemTrackLine2_scene_small_scale" format="float" />
+<attr name="ItemTrackLine2_scene_zoomed_scale" format="float" />
+<attr name="ItemTrackLine2_scene_grid_scale" format="float" />
+<attr name="ItemTrackLine2_scene_grid_zoomed_scale" format="float" />
+<attr name="ItemTrackLine2_scene_header_scale" format="float" />
+<attr name="ItemTrackLine2_scene_aa_scale" format="float" />
+<attr name="ItemTrackLine2_scene_item_menu_scale" format="float" />
+<attr name="Alt_ItemTrackLine2_scene_aa_scale" format="float" />
+<attr name="ItemTrackLine2_paddingLR" format="dimension" />
+<attr name="ItemTrackLine2_paddingTB" format="dimension" />
+<attr name="ItemTrackMeta_scale" format="float" />
+<attr name="ItemTrackMeta_scene_small_scale" format="float" />
+<attr name="ItemTrackMeta_scene_zoomed_scale" format="float" />
+<attr name="ItemTrackMeta_scene_grid_scale" format="float" />
+<attr name="ItemTrackMeta_scene_grid_zoomed_scale" format="float" />
+<attr name="ItemTrackMeta_scene_header_w_meta_base_scale" format="float" />
+<attr name="ItemTrackMeta_scene_header_scale" format="float" />
+<attr name="ItemTrackMeta_scene_item_menu_scale" format="float" />
+<attr name="ItemTrackMeta_marginTop" format="dimension" />
+<attr name="ItemTrackMeta_paddingLR" format="dimension" />
+<attr name="ItemTrackTitle_scene_item_menu_marginBottom" format="dimension" />
+<attr name="TopHelpNormal_Text" format="reference" />
+<attr name="PeqEqEnableVisFrs_Text" format="reference" />
+<attr name="BoldFont_font" format="string" />
+<attr name="BoldFont_medium_font" format="string" />
+<attr name="BoldFont_regular_font" format="string" />
+<attr name="ItemTrackMeta_scene_item_menu_marginLeft" format="dimension" />
+<attr name="layout_minWidth" format="dimension" />
+<attr name="layout_minHeight" format="dimension" />
+<attr name="ItemTrackMeta_drawablePadding" format="dimension" />
+<attr name="ItemPopupMenuTopSpacer_scene_item_menu_lu" format="reference" />
+<attr name="ItemTrackMeta_drawablePaddingStart" format="dimension" />
+<attr name="EqLockLabelStyle" format="reference" />
+<attr name="ItemTextPopupMenuItemsLayout" format="reference" />
+<attr name="ItemTextPopupMenuTopSpacer" format="reference" />
+<attr name="lockLabelStyle" format="reference" />
+<attr name="settings_restore_purchase" format="reference" />
+<attr name="corners_equ_frs" format="dimension" />
+<attr name="singleNewline" format="boolean" />
+<attr name="OptionEquFRSRounded" format="reference" />
+<attr name="bottomToolbarSize" format="dimension" />
+<attr name="removeFromSummary" format="string" />
+<attr name="useHtml" format="boolean" />
+<attr name="iconAlignedTop" format="boolean" />
+<attr name="summaryWhenEmpty" format="string" />
+<attr name="separatorChars" format="string" />
+<attr name="addButtonText" format="string" />
+<attr name="tagsLimit" format="integer" />
+<attr name="listTagsLimit" format="integer" />
+<attr name="EqTonePanel" format="reference" />
+<attr name="dialog_AlertDialogActivity_centered" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+<attr name="dialog_AlertDialogActivity_list_centered" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+<attr name="import_24dp" format="reference" />
+<attr name="share_24dp" format="reference" />
+<attr name="l_plus_r_ch_24dp" format="reference" />
+<attr name="l_ch_24dp" format="reference" />
+<attr name="r_ch_24dp" format="reference" />
+<attr name="low_pass_24dp" format="reference" />
+<attr name="high_pass_24dp" format="reference" />
+<attr name="band_pass_24dp" format="reference" />
+<attr name="peaking_band_24dp" format="reference" />
+<attr name="lsf_24dp" format="reference" />
+<attr name="hsf_24dp" format="reference" />
+<attr name="list_drag_24dp" format="reference" />
+<attr name="list_drag_hor_24dp" format="reference" />
+<attr name="searchHistoryItemSize" format="dimension" />
+<attr name="labelBackgroundAnimZoomY" format="float" />
+<attr name="hideLabel" format="boolean" />
+<attr name="dialogTitle" format="string" />
+<attr name="dialogMsg" format="string" />
+<attr name="offsetWhenNoArc" format="dimension" />
+<attr name="dialogPrecision" format="integer" />
+<attr name="parametricLineWidth" format="dimension" />
+<attr name="bgPaddingLeft" format="dimension" />
+<attr name="bgPaddingRight" format="dimension" />
+<attr name="bgPaddingTop" format="dimension" />
+<attr name="bgPaddingBottom" format="dimension" />
+<attr name="bgCorners" format="dimension" />
+<attr name="separatorColor" format="color" />
+<attr name="separatorWidth" format="dimension" />
+<attr name="separatorPaddingRight" format="dimension" />
+<attr name="separatorPaddingTop" format="dimension" />
+<attr name="separatorPaddingBottom" format="dimension" />
+<attr name="colorSet" format="reference" />
+<attr name="colorSize" format="dimension" />
+<attr name="borderWidth" format="dimension" />
+<attr name="borderColor" format="color" />
+<attr name="selectedBorderWidth" format="dimension" />
+<attr name="selectedBorderColor" format="color" />
+<attr name="colorPadding" format="dimension" />
+<attr name="layout_percentIgnoresMargins"><flag name="width" value="0x00200000" /><flag name="height" value="0x00400000" /><flag name="both" value="0x00600000" /></attr>
+<attr name="settings_doubleq" format="reference" />
+<attr name="bottomToolbarZ" format="dimension" />
+<attr name="ItemEmptyListSettingsButtonBase" format="reference" />
+<attr name="EqListControlsLayout" format="reference" />
+<attr name="EqListControlsAdd" format="reference" />
+<attr name="EqListEmptyControlsAdd" format="reference" />
+<attr name="EqListControlsSelect" format="reference" />
+<attr name="EqParamLayout" format="reference" />
+<attr name="EqParamColorCircleSelector" format="reference" />
+<attr name="EqParamGainLinearKnob" format="reference" />
+<attr name="EqParamPlaceholder1" format="reference" />
+<attr name="EqParamPlaceholder2" format="reference" />
+<attr name="EqParamColorPopupLayout" format="reference" />
+<attr name="EqParamColorPopupLayout_scene_item_menu" format="reference" />
+<attr name="EqParamColorPopupIcon" format="reference" />
+<attr name="EqParamEditButton" format="reference" />
+<attr name="EqParamLRPopupButtonLayout" format="reference" />
+<attr name="EqParamTypePopupButtonLayout" format="reference" />
+<attr name="EqParamQRoundKnob" format="reference" />
+<attr name="EqParamQLabelAndValue" format="reference" />
+<attr name="EqParamFreqRoundKnob" format="reference" />
+<attr name="EqParamFreqLabelAndValue" format="reference" />
+<attr name="EqParamSelectBox" format="reference" />
+<attr name="EqParamDragHandler" format="reference" />
+<attr name="EqListControlsHint" format="reference" />
+<attr name="EqPresetDeviceAssignIcon" format="reference" />
+<attr name="EqPresetDeviceAssignCheckbox" format="reference" />
+<attr name="bottom_toolbar_buttons_elevation" format="dimension" />
+<attr name="bottom_toolbar_elevation" format="dimension" />
+<attr name="Navbar_height" format="dimension" />
+<attr name="OptionCCMainUI" format="reference" />
+<attr name="OptionHideLyricsButton" format="reference" />
+<attr name="OptionLocalizedAZScroll" format="reference" />
+<attr name="OptionRatingDisabled" format="reference" />
+<attr name="ItemEmptyLyricsHint" format="reference" />
+<attr name="ItemEmptyLyricsLoadingViaPlugin" format="reference" />
+<attr name="TopListScrollerView_azTextScale" format="float" />
+<attr name="TopListScrollerView_marginBottom" format="dimension" />
+<attr name="TopListScrollerView_marginTop" format="dimension" />
+<attr name="aaBlurDarken" format="float" />
+<attr name="aaBlurIntensityMult" format="float" />
+<attr name="aaBlurLighten" format="float" />
+<attr name="aaBlurPinLight" format="float" />
+<attr name="aaBlurSaturationMult" format="float" />
+<attr name="aaEffectList" format="reference" />
+<attr name="aaEffectReadable" format="reference" />
+<attr name="aaMaxXRotation" format="reference|float" />
+<attr name="aaSolidColorTarget"><enum name="none" value="-1" /><enum name="lightVibrant" value="0" /><enum name="vibrant" value="1" /><enum name="darkVibrant" value="2" /><enum name="lightMuted" value="3" /><enum name="muted" value="4" /><enum name="darkMuted" value="5" /></attr>
+<attr name="colorFrsSelectionTint" format="color" />
+<attr name="colorFrsToneAlpha" format="color" />
+<attr name="colorFrsToneFillAlpha" format="color" />
+<attr name="colorKnobShadow" format="color" />
+<attr name="colorPlayButtonsBg" format="color" />
+<attr name="colorPlayButtonsTint" format="color" />
+<attr name="colorTextBgAlpha" format="color" />
+<attr name="colorWaveseekTint" format="color" />
+<attr name="corners_aa_albums_menu" format="reference|dimension"><enum name="matchHeight" value="-1" /></attr>
+<attr name="corners_aa_other_menu" format="reference|dimension"><enum name="matchHeight" value="-1" /></attr>
+<attr name="corners_aa_tracks_menu" format="reference|dimension"><enum name="matchHeight" value="-1" /></attr>
+<attr name="corners_generic" format="dimension" />
+<attr name="corners_small_labels" format="dimension" />
+<attr name="corners_text_bg" format="dimension" />
+<attr name="corners_toast" format="dimension" />
+<attr name="debugRectColor" format="color" />
+<attr name="drawableAdj" format="dimension" />
+<attr name="drawableBottomCompat" format="reference" />
+<attr name="drawableEndCompat" format="reference" />
+<attr name="drawableLeftCompat" format="reference" />
+<attr name="drawableRightCompat" format="reference" />
+<attr name="drawableStartCompat" format="reference" />
+<attr name="drawableTintMode2"><enum name="src_over" value="3" /><enum name="src_in" value="5" /><enum name="src_atop" value="9" /><enum name="multiply" value="14" /><enum name="screen" value="15" /><enum name="add" value="16" /></attr>
+<attr name="drawableTopCompat" format="reference" />
+<attr name="eatFontPads" format="boolean" />
+<attr name="fastScrollEnabled" format="boolean" />
+<attr name="fastScrollHorizontalThumbDrawable" format="reference" />
+<attr name="fastScrollHorizontalTrackDrawable" format="reference" />
+<attr name="fastScrollVerticalThumbDrawable" format="reference" />
+<attr name="fastScrollVerticalTrackDrawable" format="reference" />
+<attr name="ff_core" format="reference" />
+<attr name="fontPadBottom" format="float" />
+<attr name="fontPadH" format="float" />
+<attr name="fontPadTop" format="float" />
+<attr name="fontPads" format="reference" />
+<attr name="fontProviderSystemFontFamily" format="string" />
+<attr name="forward_10s_core" format="reference" />
+<attr name="layoutManager" format="string" />
+<attr name="layout_alignToContent"><enum name="none" value="0" /><enum name="horizontal" value="65536" /><enum name="vertical" value="131072" /><enum name="all" value="196608" /></attr>
+<attr name="layout_heightRef" format="reference" />
+<attr name="layout_marginBottomRef" format="reference" />
+<attr name="layout_marginLeftRef" format="reference" />
+<attr name="layout_marginRightRef" format="reference" />
+<attr name="layout_marginTopRef" format="reference" />
+<attr name="layout_widthRef" format="reference" />
+<attr name="listChoiceIndicatorMultipleAnimated" format="reference" />
+<attr name="listChoiceIndicatorSingleAnimated" format="reference" />
+<attr name="listPreferredItemPaddingEnd" format="dimension" />
+<attr name="listPreferredItemPaddingStart" format="dimension" />
+<attr name="maxStretchOvershoot" format="dimension" />
+<attr name="menu" format="reference" />
+<attr name="nestedScrollViewStyle" format="reference" />
+<attr name="next_cat_core" format="reference" />
+<attr name="overlap_less_rounding" format="reference" />
+<attr name="pause_core" format="reference" />
+<attr name="play_core" format="reference" />
+<attr name="aaToLyricsAnimTime" format="integer" />
+<attr name="queryPatterns" format="reference" />
+<attr name="recyclerViewStyle" format="reference" />
+<attr name="reverseLayout" format="boolean" />
+<attr name="shortcutMatchRequired" format="boolean" />
+<attr name="spanCount" format="integer" />
+<attr name="stackFromEnd" format="boolean" />
+<attr name="textLocale" format="string" />
+<attr name="toneFillColorAlpha" format="color" />
+<attr name="toneLineColorAlpha" format="color" />
+<attr name="useDrawableHeight" format="boolean" />
+<attr name="checkMarkCompat" format="reference" />
+<attr name="checkMarkTint" format="color" />
+<attr name="checkMarkTintMode"><enum name="src_over" value="3" /><enum name="src_in" value="5" /><enum name="src_atop" value="9" /><enum name="multiply" value="14" /><enum name="screen" value="15" /><enum name="add" value="16" /></attr>
+<attr name="colorPlayButtonsStroke" format="color" />
+<attr name="corners_eq_label_bg" format="dimension" />
+<attr name="emojiCompatEnabled" format="boolean" />
+<attr name="lStar" format="float" />
+<attr name="overlap_light_buttons" format="reference" />
+<attr name="absForXRotation" format="boolean" />
+<attr name="colorKnobHiliteEnd" format="color" />
+<attr name="colorKnobHiliteEndDisabled" format="color" />
+<attr name="colorKnobHiliteEndPressed" format="color" />
+<attr name="colorKnobHiliteStart" format="color" />
+<attr name="colorKnobHiliteStartDisabled" format="color" />
+<attr name="colorKnobHiliteStartPressed" format="color" />
+<attr name="ignoreDrawableForEmpty" format="boolean" />
+<attr name="overlap_knobs_hilite_color" format="reference" />
+<attr name="overlap_knobs_hilite_mono" format="reference" />
+<attr name="absForYRotation" format="boolean" />
+<attr name="absForZRotation" format="boolean" />
+<attr name="ItemEmptyLyricsSearchButton" format="reference" />
+<attr name="ItemEmptyLyricsText" format="reference" />
+<attr name="ItemLastLyricsItemText" format="reference" />
+<attr name="ItemLastLyricsItemText_scene_unsync" format="reference" />
+<attr name="ItemLyrics" format="reference" />
+<attr name="ItemLyricsTitle" format="reference" />
+<attr name="ItemLyricsTitle_active" format="reference" />
+<attr name="ItemLyricsTitle_scene_small" format="reference" />
+<attr name="ItemLyricsTitle_scene_small_active" format="reference" />
+<attr name="ItemLyricsTitle_scene_unsync" format="reference" />
+<attr name="ItemLyricsTitle_scene_unsync_small" format="reference" />
+<attr name="ItemLyricsTitle_scene_unsync_zoomed" format="reference" />
+<attr name="ItemLyricsTitle_scene_zoomed" format="reference" />
+<attr name="ItemLyricsTitle_scene_zoomed_active" format="reference" />
+<attr name="ItemTextAAImage_scene_subheader" format="reference" />
+<attr name="ItemTextHeaderPlayButton_scene_search_header" format="reference" />
+<attr name="ItemTextHeaderSearchButton_scene_search_header" format="reference" />
+<attr name="ItemTextHeaderSelectButton_scene_search_header" format="reference" />
+<attr name="ItemTextHeaderShuffleButton_scene_search_header" format="reference" />
+<attr name="ItemTextLine2_scene_subheader" format="reference" />
+<attr name="ItemTextSubheadButton" format="reference" />
+<attr name="clickBusId" format="reference" />
+<attr name="clickMsgId" format="reference" />
+<attr name="clickOnClick" format="boolean" />
+<attr name="colorIconLessContrast" format="color" />
+<attr name="deripple" format="boolean" />
+<attr name="dialog_AlertDialogActivity_vertical_buttons_centered" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+<attr name="enqueue_shuffled" format="reference" />
+<attr name="insert_bottom_24dp" format="reference" />
+<attr name="insert_shuffle_24dp" format="reference" />
+<attr name="insert_top_24dp" format="reference" />
+<attr name="layout_ignoreMinMaxForAttach" format="boolean" />
+<attr name="loadForScene_8" format="reference" />
+<attr name="over_aa_elevation_plus" format="dimension" />
+<attr name="ItemTextSubheadButton_scene_subheader" format="reference" />
+<attr name="relayoutInTransition" format="boolean" />
+<attr name="settings_navbar" format="reference" />
+<attr name="smallerListItemSize" format="dimension" />
+<attr name="toast_unhappy" format="reference" />
+<attr name="ItemTextTitle_scene_subheader" format="reference" />
+<attr name="raw_file" format="reference" />
+<attr name="ItemTrackLine2_scene_bottom_toolbar" format="reference" />
+<attr name="ListHeaderButton_scene_header_marginBottom" format="dimension" />
+<attr name="ListMenu_scene_header_marginBottom" format="dimension" />
+<attr name="NavbarSeekbar_marginTop" format="dimension" />
+<attr name="OptionRoundedScreenCorners" format="reference" />
+<attr name="Alt_track_labels_scene_aa_margin" format="dimension" />
+<attr name="OptionRoundedScreenCorners_buttons_scene_header_marginBottom" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+<attr name="OptionRoundedScreenCorners_corners_header" format="dimension" />
+<attr name="OptionRoundedScreenCorners_header_aa_elevation" format="dimension" />
+<attr name="EqMenuIcon" format="reference" />
+<attr name="EqMenuLayoutItems" format="reference" />
+<attr name="EqMenu_scene_item_menu" format="reference" />
+<attr name="EqParamLockButton" format="reference" />
+<attr name="EqTonePanel_paddingBottom" format="dimension" />
+<attr name="alt_menu_bg" format="reference|color" />
+<attr name="alt_ratingbar_bg" format="reference|color" />
+<attr name="alt_sub_aa_button_bg" format="reference|color" />
+<attr name="alt_title_bg" format="reference|color" />
+<attr name="alwaysFade" format="boolean" />
+<attr name="EqTonePanel_paddingTop" format="dimension" />
+<attr name="ItemEqPresetLine2_2line" format="reference" />
+<attr name="ItemEqPresetLine2_3line" format="reference" />
+<attr name="ItemEqPresetLock" format="reference" />
+<attr name="ItemEqPresetTitle" format="reference" />
+<attr name="ItemEqPresetTitle_2line" format="reference" />
+<attr name="EqPresetListLayout" format="reference" />
+<attr name="azSeparatorLineColor" format="color" />
+<attr name="EqPresetSearchAssignCb" format="reference" />
+<attr name="SmallerSearchEditText_Text" format="reference" />
+<attr name="TopUpperToastSeparator" format="reference" />
+<attr name="EqPresetSearchAssignLayout" format="reference" />
+<attr name="EqPresetSearchCatButton" format="reference" />
+<attr name="EqPresetSearchCatSeparator" format="reference" />
+<attr name="EqPresetSearchCatsLayout" format="reference" />
+<attr name="EqPresetSearchCloseButton" format="reference" />
+<attr name="EqPresetSearchDontSuggestCb" format="reference" />
+<attr name="EqPresetSearchEditText" format="reference" />
+<attr name="EqPresetSearchLayout" format="reference" />
+<attr name="EqPresetSearchPanel" format="reference" />
+<attr name="EqPresetSearchResetButton" format="reference" />
+<attr name="ItemEmptyListText2" format="reference" />
+<attr name="ItemTrackDragHandler_scene_grid_zoomed" format="reference" />
+<attr name="ItemTrackDragHandler_scene_small" format="reference" />
+<attr name="ItemTrackDragView" format="reference" />
+<attr name="ItemTrack_scene_item_menu" format="reference" />
+<attr name="SeparatorLine" format="reference" />
+<attr name="NavbarExtensionNavExtSettingsTags" format="reference" />
+<attr name="PopupButtonTinted" format="reference" />
+<attr name="TopContainer_metaLayout" format="reference" />
+<attr name="TopSearchLayout_scene_search" format="reference" />
+<attr name="TopSearchLayout_scenes_gone" format="reference" />
+<attr name="aaLockDurationMs" format="integer" />
+<attr name="PopupButtonTinted_scene_button_menu" format="reference" />
+<attr name="aaAllowBgGradientForList" format="boolean" />
+<attr name="SelectionMenuHelpButton" format="reference" />
+<attr name="bottomReservedSpace2" format="reference|dimension" />
+<attr name="ItemPopupListPlusBox" format="reference" />
+<attr name="TopHelpSmaller_line_Text" format="reference" />
+<attr name="DynamicPopupButtonLabel2_Text2" format="reference" />
+<attr name="EditableInfoButtonTinted" format="reference" />
+<attr name="TopEditableButtonLayout" format="reference" />
+<attr name="SleepTimerRoundKnob" format="reference" />
+<attr name="TopEditableCounterSubAaButton" format="reference" />
+<attr name="TopEditableSleepTimerButtonLayout" format="reference" />
+<attr name="TopEditableSubAaButton" format="reference" />
+<attr name="EditablePopupButton" format="reference" />
+<attr name="_debug_ref" format="reference" />
+<attr name="TopEditableButton24dpLayout" format="reference" />
+<attr name="TopEditableDynamicButtonLayout" format="reference" />
+<attr name="EditablePopupButton24dp" format="reference" />
+<attr name="EditablePopupButton_scene_button_menu" format="reference" />
+<attr name="EditableDSPCheckboxNoIcon" format="reference" />
+<attr name="EditableDSPCheckboxTinted_scene_small" format="reference" />
+<attr name="TopEditableSubAaButtonCast" format="reference" />
+<attr name="autosave_24dp" format="reference" />
+<attr name="TopEditableSubAaButtonTinted" format="reference" />
+<attr name="SubAAButtonsLayout_legacyMode" format="boolean" />
+<attr name="EditableDSPCheckboxWithIcon" format="reference" />
+<attr name="EditableDSPCheckbox_scene_small" format="reference" />
+<attr name="EditableEqVisButton" format="reference" />
+<attr name="EqTonePanelSpacer" format="reference" />
+<attr name="PopupDSPInfoScoreLabel1" format="reference" />
+<attr name="PopupDSPInfoScoreLabel2" format="reference" />
+<attr name="PopupDSPInfoScoreLayout" format="reference" />
+<attr name="PopupDSPInfoScoreStamp" format="reference" />
+<attr name="PopupDSPInfoScoreText1" format="reference" />
+<attr name="PopupDSPInfoScoreText2" format="reference" />
+<attr name="DialogTitle_scene_dialog_in_progress" format="reference" />
+<attr name="Settings_font" format="string" />
+<attr name="Settings_medium_font" format="string" />
+<attr name="add_to_launcher_24dp" format="reference" />
+<attr name="actionBarDivider" format="reference" />
+<attr name="actionBarItemBackground" format="reference" />
+<attr name="actionBarPopupTheme" format="reference" />
+<attr name="actionBarSize" format="dimension"><enum name="wrap_content" value="0" /></attr>
+<attr name="actionBarSplitStyle" format="reference" />
+<attr name="actionBarStyle" format="reference" />
+<attr name="actionBarTabBarStyle" format="reference" />
+<attr name="actionBarTabStyle" format="reference" />
+<attr name="actionBarTabTextStyle" format="reference" />
+<attr name="actionBarTheme" format="reference" />
+<attr name="applyIconTint" format="boolean" />
+<attr name="add_to_pl_in_pl" format="reference" />
+<attr name="actionBarWidgetTheme" format="reference" />
+<attr name="actionDropDownStyle" format="reference" />
+<attr name="actionLayout" format="reference" />
+<attr name="actionMenuTextAppearance" format="reference" />
+<attr name="actionMenuTextColor" format="reference|color" />
+<attr name="addDots" format="boolean" />
+<attr name="actionModeBackground" format="reference" />
+<attr name="actionModeCloseButtonStyle" format="reference" />
+<attr name="actionModeCloseContentDescription" format="string" />
+<attr name="actionModeCloseDrawable" format="reference" />
+<attr name="altAaLayoutRatio" format="float" />
+<attr name="actionModeCopyDrawable" format="reference" />
+<attr name="actionModeCutDrawable" format="reference" />
+<attr name="actionModeFindDrawable" format="reference" />
+<attr name="actionModePasteDrawable" format="reference" />
+<attr name="add_to_pl_in_pl_subaa" format="reference" />
+<attr name="add_to_pl_subaa" format="reference" />
+<attr name="buttonsLabels2" format="reference" />
+<attr name="album_art_subaa" format="reference" />
+<attr name="album_subaa" format="reference" />
+<attr name="actionModePopupWindowStyle" format="reference" />
+<attr name="actionModeSelectAllDrawable" format="reference" />
+<attr name="audio_info_24dp" format="reference" />
+<attr name="actionModeShareDrawable" format="reference" />
+<attr name="actionModeSplitBackground" format="reference" />
+<attr name="actionModeStyle" format="reference" />
+<attr name="actionModeTheme" format="reference" />
+<attr name="actionModeWebSearchDrawable" format="reference" />
+<attr name="artist_subaa" format="reference" />
+<attr name="actionOverflowButtonStyle" format="reference" />
+<attr name="actionOverflowMenuStyle" format="reference" />
+<attr name="back_10s_subaa" format="reference" />
+<attr name="actionProviderClass" format="string" />
+<attr name="actionViewClass" format="string" />
+<attr name="activityChooserViewStyle" format="reference" />
+<attr name="bgAlpha" format="float" />
+<attr name="castAdBreakMarkerColor" format="color" />
+<attr name="castAdInProgressLabelTextAppearance" format="reference" />
+<attr name="castAdInProgressText" format="reference|string" />
+<attr name="castAdInProgressTextColor" format="color" />
+<attr name="castAdLabelColor" format="color" />
+<attr name="castAdLabelTextAppearance" format="reference" />
+<attr name="castAdLabelTextColor" format="color" />
+<attr name="castBackground" format="reference|color" />
+<attr name="castBackgroundColor" format="reference|color" />
+<attr name="castButtonBackgroundColor" format="reference|color" />
+<attr name="castButtonColor" format="reference|color" />
+<attr name="castButtonText" format="reference|string" />
+<attr name="castButtonTextAppearance" format="reference" />
+<attr name="castClosedCaptionsButtonDrawable" format="reference" />
+<attr name="castControlButtons" format="reference" />
+<attr name="buttonOnly" format="boolean" />
+<attr name="castDefaultAdPosterUrl" format="reference|string" />
+<attr name="castExpandedControllerLoadingIndicatorColor" format="color" />
+<attr name="castExpandedControllerStyle" format="reference" />
+<attr name="castExpandedControllerToolbarStyle" format="reference" />
+<attr name="castFocusRadius" format="reference|dimension" />
+<attr name="castForward30ButtonDrawable" format="reference" />
+<attr name="castIntroOverlayStyle" format="reference" />
+<attr name="bzzMarginDegrees" format="float" />
+<attr name="bzzsPerRotation" format="integer" />
+<attr name="castLargePauseButtonDrawable" format="reference" />
+<attr name="buttons" format="reference" />
+<attr name="castLargePlayButtonDrawable" format="reference" />
+<attr name="castLargeStopButtonDrawable" format="reference" />
+<attr name="buttonMsgIdInButtonMode" format="reference" />
+<attr name="castLiveIndicatorColor" format="color" />
+<attr name="castMiniControllerLoadingIndicatorColor" format="color" />
+<attr name="castMiniControllerStyle" format="reference" />
+<attr name="catButtonStyle" format="reference" />
+<attr name="castMuteToggleButtonDrawable" format="reference" />
+<attr name="castPauseButtonDrawable" format="reference" />
+<attr name="castPlayButtonDrawable" format="reference" />
+<attr name="colorAZBg" format="color" />
+<attr name="colorAZSeparator" format="color" />
+<attr name="colorAltMenu" format="color" />
+<attr name="colorAltTitle" format="color" />
+<attr name="castProgressBarColor" format="color" />
+<attr name="castRewind30ButtonDrawable" format="reference" />
+<attr name="colorMetaInfo" format="color" />
+<attr name="borderlessButton" format="boolean" />
+<attr name="castSeekBarProgressAndThumbColor" format="color" />
+<attr name="castSeekBarProgressDrawable" format="reference" />
+<attr name="castSeekBarSecondaryProgressColor" format="color" />
+<attr name="castSeekBarThumbDrawable" format="reference" />
+<attr name="castSeekBarTooltipBackgroundColor" format="color" />
+<attr name="castSeekBarUnseekableProgressColor" format="color" />
+<attr name="castShowImageThumbnail" format="boolean" />
+<attr name="castSkipNextButtonDrawable" format="reference" />
+<attr name="castSkipPreviousButtonDrawable" format="reference" />
+<attr name="castStopButtonDrawable" format="reference" />
+<attr name="castSubtitleTextAppearance" format="reference" />
+<attr name="buttonIcon" format="reference" />
+<attr name="castTitleTextAppearance" format="reference" />
+<attr name="customNavigationLayout" format="reference" />
+<attr name="itemPadding" format="dimension" />
+<attr name="list_buttons_outline_provider"><enum name="background" value="0" /><enum name="none" value="1" /><enum name="bounds" value="2" /><enum name="paddedBounds" value="3" /></attr>
+<attr name="navigationIcon" format="reference" />
+<attr name="pref_privacy_policy" format="reference|string" />
+<attr name="colorRating" format="color" />
+<attr name="buttonIsVisible" format="boolean" />
+<attr name="pref_privacy_policy_non_play" format="reference|string" />
+<attr name="toastStateIdOnPress" format="reference" />
+<attr name="vpiCirclePageIndicatorStyle" format="reference" />
+<attr name="vpiTabPageIndicatorLayoutStyle" format="reference" />
+<attr name="vpiTabPageIndicatorStyle" format="reference" />
+<attr name="widget_play_maxSize" format="dimension" />
+<attr name="colorBgCheckedLight" format="color" />
+<attr name="colorBgPrimaryStrictAlpha" format="color" />
+<attr name="colorPlaybackRipple" format="color" />
+<attr name="close_24dp" format="reference" />
+<attr name="colorBgPositive" format="color" />
+<attr name="colorTextDisabledSecondary" format="color" />
+<attr name="confirmButton" format="string" />
+<attr name="colorBgSeekbarLine" format="color" />
+<attr name="colorDraggedBg" format="color" />
+<attr name="colorLessContrastRipple" format="color" />
+<attr name="drawableTintColor" format="color" />
+<attr name="cmdBusId" format="reference" />
+<attr name="colorBgPlayerButton" format="color" />
+<attr name="colorBgHelpEnd" format="color" />
+<attr name="colorPlaceholder" format="color" />
+<attr name="colorLimiterActive" format="color" />
+<attr name="colorLimiterActiveBg" format="color" />
+<attr name="corners_nav_button" format="dimension" />
+<attr name="dynamicButtons" format="boolean" />
+<attr name="dynamicIconStyle" format="reference" />
+<attr name="dynamicIconStyle_scene_menu" format="reference" />
+<attr name="dynamicLabelStyle" format="reference" />
+<attr name="dynamicLabelStyle_scene_menu" format="reference" />
+<attr name="emptyForDisable" format="boolean" />
+<attr name="dynamicLabel2Style" format="reference" />
+<attr name="dynamicLabel2Style_scene_menu" format="reference" />
+<attr name="colorSettingsWarn" format="color" />
+<attr name="equ_graphic_small" format="reference" />
+<attr name="equ_parametric_small" format="reference" />
+<attr name="debounceDelay" format="integer" />
+<attr name="dialogNegativeButtonBg" format="reference" />
+<attr name="dialogNegativeButtonColor" format="reference" />
+<attr name="dialogNeutralButtonBg" format="reference" />
+<attr name="dialogNeutralButtonColor" format="reference" />
+<attr name="dialogPositiveButtonBg" format="reference" />
+<attr name="dialogPositiveButtonColor" format="reference" />
+<attr name="doClip" format="boolean" />
+<attr name="dialog_AlertDialogActivity_list_no_title" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+<attr name="dialog_AlertDialogActivity_list_no_title_centered" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+<attr name="dialog_AlertDialogActivity_no_title_centered" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+<attr name="drawableTintMode"><enum name="src_over" value="3" /><enum name="src_in" value="5" /><enum name="src_atop" value="9" /><enum name="multiply" value="14" /><enum name="screen" value="15" /><enum name="add" value="16" /></attr>
+<attr name="corners_circle" format="dimension" />
+<attr name="edit_stroke_24dp" format="reference" />
+<attr name="delayedButtonMsgId" format="reference" />
+<attr name="delayedButtonMsgIdInButtonMode" format="reference" />
+<attr name="draggableButtonContainerStyle" format="reference" />
+<attr name="draggableButtonLabelStyle" format="reference" />
+<attr name="draggableButtons" format="reference" />
+<attr name="draggingContainer" format="reference" />
+<attr name="disableOnClick" format="boolean" />
+<attr name="disableOnLongClick" format="boolean" />
+<attr name="draggingTarget" format="reference" />
+<attr name="graphicColor25" format="color" />
+<attr name="graphicColor75" format="color" />
+<attr name="graphicColorMax" format="color" />
+<attr name="graphicColorMin" format="color" />
+<attr name="layout_after" format="reference" />
+<attr name="layout_applyMarginsForGone" format="boolean" />
+<attr name="dialogTitleExtraLayout" format="reference" />
+<attr name="delete_subaa" format="reference" />
+<attr name="edit_tags_24dp" format="reference" />
+<attr name="edit_tags_subaa" format="reference" />
+<attr name="excludeFontPaddings"><flag name="title" value="0x00000001" /><flag name="summary" value="0x00000002" /></attr>
+<attr name="icons" format="reference" />
+<attr name="isDialog" format="boolean" />
+<attr name="dialog_check_48dp" format="reference" />
+<attr name="eqbutton_compressor" format="reference" />
+<attr name="eqbutton_dvc" format="reference" />
+<attr name="extraLineBetweenGroups" format="boolean" />
+<attr name="eqbutton_eq" format="reference" />
+<attr name="eqbutton_eq_and_tone" format="reference" />
+<attr name="eqbutton_global" format="reference" />
+<attr name="grid_drag_24dp" format="reference" />
+<attr name="featurePack" format="integer" />
+<attr name="eqbutton_limit" format="reference" />
+<attr name="eqbutton_on_off" format="reference" />
+<attr name="eqbutton_tone" format="reference" />
+<attr name="extraItem" format="string" />
+<attr name="extraItemArg1" format="integer" />
+<attr name="extraItemArg2" format="integer" />
+<attr name="extraItemBusId" format="reference" />
+<attr name="extraItemIcon" format="reference" />
+<attr name="extraItemMenuStyle" format="reference" />
+<attr name="extraItemMsgId" format="reference" />
+<attr name="extraItemSeparatorStyle" format="reference" />
+<attr name="extraItemString" format="string" />
+<attr name="extraItemStyle" format="reference" />
+<attr name="keepLayoutForPopup" format="boolean" />
+<attr name="loadForScene_9" format="reference" />
+<attr name="lyricsHeaderSize" format="dimension" />
+<attr name="lyricsNextAlpha" format="float" />
+<attr name="lyricsPrevAlpha" format="float" />
+<attr name="lyricsToAAAnimTime" format="integer" />
+<attr name="fontProviderFallbackQuery" format="string" />
+<attr name="fitCentered" format="integer" />
+<attr name="main_back_10s" format="reference" />
+<attr name="main_ff" format="reference" />
+<attr name="main_forward_10s" format="reference" />
+<attr name="main_next_cat" format="reference" />
+<attr name="main_play" format="reference" />
+<attr name="main_prev_cat" format="reference" />
+<attr name="main_pro_pause" format="reference" />
+<attr name="main_rw" format="reference" />
+<attr name="iconAlignedHorCenter" format="boolean" />
+<attr name="highlightedSlotDrawable" format="dimension" />
+<attr name="iconSpaceReserved" format="boolean" />
+<attr name="meta_info_bg" format="reference|color" />
+<attr name="folder_subaa" format="reference" />
+<attr name="morphCrossfade" format="boolean" />
+<attr name="forward_10s_subaa" format="reference" />
+<attr name="genre_subaa" format="reference" />
+<attr name="lock_24dp" format="reference" />
+<attr name="lock_24dp_tinted" format="reference" />
+<attr name="lock_solid_24dp" format="reference" />
+<attr name="lock_unlock_24dp" format="reference" />
+<attr name="lock_unlock_24dp_selector" format="reference" />
+<attr name="longConfirmButton" format="string" />
+<attr name="keepPaddings" format="boolean" />
+<attr name="overlap_OptionRatingDisabled" format="reference" />
+<attr name="overlap_OptionRatingStarsMenu" format="reference" />
+<attr name="overlap_alt_layout2" format="reference" />
+<attr name="overlap_track_labels_centered" format="reference" />
+<attr name="overlap_track_labels_no_bg" format="reference" />
+<attr name="info_subaa" format="reference" />
+<attr name="layout_gravityGroup" format="integer"><enum name="none" value="-1" /></attr>
+<attr name="layout_gravityGroupAxis"><enum name="horizontal" value="0" /><enum name="vertical" value="1" /></attr>
+<attr name="maxAvailSizeForAltAaLayout" format="dimension" />
+<attr name="like_selector_subaa" format="reference" />
+<attr name="lineStyle" format="reference" />
+<attr name="mediaRouteWifiIconDrawable" format="reference" />
+<attr name="navbar_marginT" format="dimension" />
+<attr name="line1Prefix" format="string" />
+<attr name="line2Prefix" format="string" />
+<attr name="line3Prefix" format="string" />
+<attr name="line4Prefix" format="string" />
+<attr name="lineCase"><enum name="none" value="0" /><enum name="capitalize" value="1" /><enum name="decapitalize" value="2" /></attr>
+<attr name="loadableDraggable" format="reference" />
+<attr name="love_selector_subaa" format="reference" />
+<attr name="overlap_graphic_frs_color" format="reference" />
+<attr name="love_32dp" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+<attr name="love_no_rating_32dp" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+<attr name="lyrics_none_24dp" format="reference" />
+<attr name="like_32dp" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+<attr name="like_no_rating_32dp" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+<attr name="lyrics_none_subaa" format="reference" />
+<attr name="lyrics_subaa" format="reference" />
+<attr name="menu_subaa" format="reference" />
+<attr name="minus1Plus1Range" format="boolean" />
+<attr name="maxDegree" format="float" />
+<attr name="minDegree" format="float" />
+<attr name="msgDelay" format="integer" />
+<attr name="minSlotWidthForFitCentered" format="dimension" />
+<attr name="pl_add_24dp" format="reference" />
+<attr name="pl_one_24dp" format="reference" />
+<attr name="pl_toggle_24dp" format="reference" />
+<attr name="next_cat_subaa" format="reference" />
+<attr name="overlap_player_buttons_no_bg" format="reference" />
+<attr name="recheckOnMsg" format="boolean" />
+<attr name="sendBooleanArg"><enum name="no" value="0" /><enum name="checkedArg1" value="1" /><enum name="invertedArg1" value="2" /><enum name="checkedArg2" value="3" /><enum name="invertedArg2" value="4" /></attr>
+<attr name="repeat_advance_stop_32dp" format="reference" />
+<attr name="slotDrawable" format="dimension" />
+<attr name="slotLineHeight" format="dimension" />
+<attr name="slotLinePadding" format="dimension" />
+<attr name="slotPadding" format="dimension" />
+<attr name="slotWidth" format="dimension" />
+<attr name="prev_cat_subaa" format="reference" />
+<attr name="scrollerView" format="reference" />
+<attr name="smallSlotWidth" format="dimension" />
+<attr name="pre_wired_35" format="reference" />
+<attr name="sendBooleanArgOn"><flag name="arg1OnCheck" value="0x00001000" /><flag name="arg1OnUncheck" value="0x00002000" /><flag name="arg2OnCheck" value="0x00004000" /><flag name="arg2OnUncheck" value="0x00008000" /></attr>
+<attr name="prefType"><enum name="intType" value="0" /><enum name="booleanType" value="1" /><enum name="multiSelectString" value="2" /><enum name="multiSelectBitset" value="3" /><enum name="stringType" value="4" /></attr>
+<attr name="smallFitCentered" format="integer" />
+<attr name="popupExpandDirection"><flag name="none" value="0x00000000" /><flag name="top" value="0x00000030" /><flag name="bottom" value="0x00000050" /><flag name="left" value="0x00000003" /><flag name="right" value="0x00000005" /></attr>
+<attr name="preferNotToClosePopup" format="boolean" />
+<attr name="reset_24dp" format="reference" />
+<attr name="save_24dp" format="reference" />
+<attr name="save_assign_24dp" format="reference" />
+<attr name="redrawWhenRequestBlocked" format="boolean" />
+<attr name="state_limiting" format="boolean" />
+<attr name="summaryLineSpacing" format="dimension" />
+<attr name="summaryLineSpacingMultiplier" format="float" />
+<attr name="state_locked" format="boolean" />
+<attr name="subheadPadding" format="dimension" />
+<attr name="uncheckOnClick" format="boolean" />
+<attr name="unlike_selector_subaa" format="reference" />
+<attr name="unlove_selector_subaa" format="reference" />
+<attr name="showEmpty" format="boolean" />
+<attr name="skinPreferenceIndentPadding" format="dimension" />
+<attr name="unlike_32dp" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+<attr name="unlove_32dp" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+<attr name="thumbMinTouchableSize" format="dimension" />
+<attr name="topSceneContainer" format="reference" />
+<attr name="reducedPad" format="boolean" />
+<attr name="zeroBottomPad" format="boolean" />
+<attr name="zeroTopPad" format="boolean" />
+<attr name="longArg1" format="reference|integer|boolean|color|float|dimension|fraction"><enum name="checkedState" value="-1" /></attr>
+<attr name="longArg2" format="reference|integer|boolean|color|float|dimension|fraction"><enum name="checkedState" value="-1" /></attr>
+<attr name="longString" format="string" />
+<attr name="settings_pak" format="reference" />
+<attr name="bookmark_subaa" format="reference" />
+<attr name="removeAsNeeded" format="boolean" />
+<attr name="tag" format="string" />
+<attr name="tagLink" format="string" />
+<attr name="plus_check" format="reference" />
+<attr name="colorAZPressed" format="color" />
+<attr name="colorOnAABg" format="color" />
+<attr name="colorOnAABgLessContrast" format="color" />
+<attr name="corners_aa_albums_header" format="dimension" />
+<attr name="corners_aa_other_header" format="dimension" />
+<attr name="corners_aa_tracks_header" format="dimension" />
+<attr name="header_aa_elevation" format="dimension" />
+<attr name="lyricsSubheadSize" format="dimension" />
+<attr name="meta_songs_w_lyrics_12dp" format="reference" />
+<attr name="settings_thumb_up" format="reference" />
+<attr name="tagStyle" format="reference" />
+<attr name="tagStyleReadOnly" format="reference" />
+<attr name="OptionAnimLongLabelsInLists" format="reference" />
+<attr name="item_label_in_list_ellipsize" format="integer"><enum name="none" value="0" /><enum name="end" value="3" /><enum name="marquee" value="4" /></attr>
+<attr name="settings_32dp" format="reference" />
+<attr name="item_label_in_miniplayer_ellipsize" format="integer"><enum name="none" value="0" /><enum name="end" value="3" /><enum name="marquee" value="4" /></attr>
+<attr name="round_check" format="reference" />
+<attr name="smallLine1Prefix" format="string" />
+<attr name="smallLine2Prefix" format="string" />
+<attr name="smallLine3Prefix" format="string" />
+<attr name="smallLine4Prefix" format="string" />
+<attr name="showArrowTo" format="reference" />
+<attr name="showArrowTo2" format="reference" />
+<attr name="tag4" format="string" />
+<attr name="toast_fp" format="reference" />
+<item type="attr" name="dummy_ae_8fc">false</item>
+<item type="attr" name="dummy_ae_8fd">false</item>
+<item type="attr" name="dummy_ae_8fe">false</item>
+<item type="attr" name="dummy_ae_8ff">false</item>
+<item type="attr" name="dummy_ae_900">false</item>
+<item type="attr" name="dummy_ae_901">false</item>
+<item type="attr" name="dummy_ae_902">false</item>
+<item type="attr" name="dummy_ae_903">false</item>
+<item type="attr" name="dummy_ae_904">false</item>
+<item type="attr" name="dummy_ae_905">false</item>
+<item type="attr" name="dummy_ae_906">false</item>
+<item type="attr" name="dummy_ae_907">false</item>
+<item type="attr" name="dummy_ae_908">false</item>
+<item type="attr" name="dummy_ae_909">false</item>
+<item type="attr" name="dummy_ae_90a">false</item>
+<item type="attr" name="dummy_ae_90b">false</item>
+<item type="attr" name="dummy_ae_90c">false</item>
+<item type="attr" name="dummy_ae_90d">false</item>
+<item type="attr" name="dummy_ae_90e">false</item>
+<item type="attr" name="dummy_ae_90f">false</item>
+<item type="attr" name="dummy_ae_910">false</item>
+<item type="attr" name="dummy_ae_911">false</item>
+<item type="attr" name="dummy_ae_914">false</item>
+<item type="attr" name="dummy_ae_915">false</item>
+<item type="attr" name="dummy_ae_916">false</item>
+<item type="attr" name="dummy_ae_917">false</item>
+<item type="attr" name="dummy_ae_918">false</item>
+<item type="attr" name="dummy_ae_919">false</item>
+<item type="attr" name="dummy_ae_91a">false</item>
+<item type="attr" name="dummy_ae_91b">false</item>
+<item type="attr" name="dummy_ae_91c">false</item>
+<item type="attr" name="dummy_ae_91d">false</item>
+<item type="attr" name="dummy_ae_91e">false</item>
+<item type="attr" name="dummy_ae_91f">false</item>
+<item type="attr" name="dummy_ae_920">false</item>
+<item type="attr" name="dummy_ae_921">false</item>
+<item type="attr" name="dummy_ae_922">false</item>
+<item type="attr" name="dummy_ae_923">false</item>
+<item type="attr" name="dummy_ae_924">false</item>
+<item type="attr" name="dummy_ae_927">false</item>
+<item type="attr" name="dummy_ae_928">false</item>
+<item type="attr" name="dummy_ae_929">false</item>
+<item type="attr" name="dummy_ae_92a">false</item>
+<item type="attr" name="dummy_ae_92b">false</item>
+<item type="attr" name="dummy_ae_92c">false</item>
+<item type="attr" name="dummy_ae_92d">false</item>
+<item type="attr" name="dummy_ae_92e">false</item>
+<item type="attr" name="dummy_ae_92f">false</item>
+<item type="attr" name="dummy_ae_934">false</item>
+<item type="attr" name="dummy_ae_936">false</item>
+<item type="attr" name="dummy_ae_938">false</item>
+<item type="attr" name="dummy_ae_93a">false</item>
+<item type="attr" name="dummy_ae_93b">false</item>
+<item type="attr" name="dummy_ae_93c">false</item>
+<item type="attr" name="dummy_ae_93d">false</item>
+<item type="attr" name="dummy_ae_93e">false</item>
+<item type="attr" name="dummy_ae_93f">false</item>
+<item type="attr" name="dummy_ae_940">false</item>
+<item type="attr" name="dummy_ae_942">false</item>
+<item type="attr" name="dummy_ae_943">false</item>
+<item type="attr" name="dummy_ae_944">false</item>
+<item type="attr" name="dummy_ae_945">false</item>
+<item type="attr" name="dummy_ae_946">false</item>
+<item type="attr" name="dummy_ae_947">false</item>
+<item type="attr" name="dummy_ae_948">false</item>
+<item type="attr" name="dummy_ae_949">false</item>
+<item type="attr" name="dummy_ae_94a">false</item>
+<item type="attr" name="dummy_ae_94b">false</item>
+<item type="attr" name="dummy_ae_94c">false</item>
+<item type="attr" name="dummy_ae_94d">false</item>
+<item type="attr" name="dummy_ae_94e">false</item>
+<item type="attr" name="dummy_ae_94f">false</item>
+<item type="attr" name="dummy_ae_950">false</item>
+<item type="attr" name="dummy_ae_951">false</item>
+<item type="attr" name="dummy_ae_952">false</item>
+<item type="attr" name="dummy_ae_953">false</item>
+<item type="attr" name="dummy_ae_954">false</item>
+<item type="attr" name="dummy_ae_956">false</item>
+<item type="attr" name="dummy_ae_958">false</item>
+<item type="attr" name="dummy_ae_959">false</item>
+<item type="attr" name="dummy_ae_95a">false</item>
+<item type="attr" name="dummy_ae_95b">false</item>
+<item type="attr" name="dummy_ae_95c">false</item>
+<item type="attr" name="dummy_ae_95d">false</item>
+<item type="attr" name="dummy_ae_95e">false</item>
+<item type="attr" name="dummy_ae_95f">false</item>
+<item type="attr" name="dummy_ae_960">false</item>
+<item type="attr" name="dummy_ae_961">false</item>
+<item type="attr" name="dummy_ae_962">false</item>
+<item type="attr" name="dummy_ae_963">false</item>
+<item type="attr" name="dummy_ae_964">false</item>
+<item type="attr" name="dummy_ae_965">false</item>
+<item type="attr" name="dummy_ae_966">false</item>
+<item type="attr" name="dummy_ae_967">false</item>
+<item type="attr" name="dummy_ae_969">false</item>
+<item type="attr" name="dummy_ae_96a">false</item>
+<item type="attr" name="dummy_ae_96b">false</item>
+<item type="attr" name="dummy_ae_96c">false</item>
+<item type="attr" name="dummy_ae_96d">false</item>
+<item type="attr" name="dummy_ae_96e">false</item>
+<item type="attr" name="dummy_ae_972">false</item>
+<item type="attr" name="dummy_ae_973">false</item>
+<item type="attr" name="dummy_ae_975">false</item>
+<item type="attr" name="dummy_ae_97a">false</item>
+<item type="attr" name="dummy_ae_97b">false</item>
+<item type="attr" name="dummy_ae_97c">false</item>
+<item type="attr" name="dummy_ae_980">false</item>
+<item type="attr" name="dummy_ae_981">false</item>
+<item type="attr" name="dummy_ae_982">false</item>
+<item type="attr" name="dummy_ae_983">false</item>
+<item type="attr" name="dummy_ae_984">false</item>
+<item type="attr" name="dummy_ae_985">false</item>
+<item type="attr" name="dummy_ae_986">false</item>
+<item type="attr" name="dummy_ae_98a">false</item>
+<item type="attr" name="dummy_ae_98b">false</item>
+<item type="attr" name="dummy_ae_98c">false</item>
+<item type="attr" name="dummy_ae_98d">false</item>
+<item type="attr" name="dummy_ae_98e">false</item>
+<item type="attr" name="dummy_ae_98f">false</item>
+<item type="attr" name="dummy_ae_990">false</item>
+<item type="attr" name="dummy_ae_991">false</item>
+<item type="attr" name="dummy_ae_993">false</item>
+<item type="attr" name="dummy_ae_99a">false</item>
+<item type="attr" name="dummy_ae_99b">false</item>
+<item type="attr" name="dummy_ae_99c">false</item>
+<item type="attr" name="dummy_ae_99d">false</item>
+<item type="attr" name="dummy_ae_9a3">false</item>
+<item type="attr" name="dummy_ae_9a5">false</item>
+<item type="attr" name="dummy_ae_9a6">false</item>
+<item type="attr" name="dummy_ae_9a8">false</item>
+<item type="attr" name="dummy_ae_9a9">false</item>
+<item type="attr" name="dummy_ae_9aa">false</item>
+<item type="attr" name="dummy_ae_9ab">false</item>
+<item type="attr" name="dummy_ae_9ac">false</item>
+<item type="attr" name="dummy_ae_9ad">false</item>
+<item type="attr" name="dummy_ae_9ae">false</item>
+<item type="attr" name="dummy_ae_9af">false</item>
+<item type="attr" name="dummy_ae_9b0">false</item>
+<item type="attr" name="dummy_ae_9b1">false</item>
+<item type="attr" name="dummy_ae_9b2">false</item>
+<item type="attr" name="dummy_ae_9b3">false</item>
+<item type="attr" name="dummy_ae_9b4">false</item>
+<item type="attr" name="dummy_ae_9b5">false</item>
+<item type="attr" name="dummy_ae_9b6">false</item>
+<item type="attr" name="dummy_ae_9b9">false</item>
+<item type="attr" name="dummy_ae_9ba">false</item>
+<item type="attr" name="dummy_ae_9bb">false</item>
+<item type="attr" name="dummy_ae_9bc">false</item>
+<item type="attr" name="dummy_ae_9bd">false</item>
+<item type="attr" name="dummy_ae_9c5">false</item>
+<item type="attr" name="dummy_ae_9c6">false</item>
+<item type="attr" name="dummy_ae_9c7">false</item>
+<item type="attr" name="dummy_ae_9c8">false</item>
+<item type="attr" name="dummy_ae_9c9">false</item>
+<item type="attr" name="dummy_ae_9cf">false</item>
+<item type="attr" name="dummy_ae_9d0">false</item>
+<item type="attr" name="dummy_ae_9d2">false</item>
+<item type="attr" name="dummy_ae_9d4">false</item>
+<item type="attr" name="dummy_ae_9d5">false</item>
+<item type="attr" name="dummy_ae_9d6">false</item>
+<item type="attr" name="dummy_ae_9d7">false</item>
+<item type="attr" name="dummy_ae_9d9">false</item>
+<item type="attr" name="dummy_ae_9da">false</item>
+<item type="attr" name="dummy_ae_9db">false</item>
+<item type="attr" name="dummy_ae_9dc">false</item>
+<item type="attr" name="dummy_ae_9dd">false</item>
+<item type="attr" name="dummy_ae_9de">false</item>
+<item type="attr" name="dummy_ae_9e0">false</item>
+<item type="attr" name="dummy_ae_9e1">false</item>
+<item type="attr" name="dummy_ae_9e2">false</item>
+<item type="attr" name="dummy_ae_9e3">false</item>
+<item type="attr" name="dummy_ae_9e4">false</item>
+<item type="attr" name="dummy_ae_9e5">false</item>
+<item type="attr" name="dummy_ae_9e6">false</item>
+<item type="attr" name="dummy_ae_9e7">false</item>
+<item type="attr" name="dummy_ae_9ea">false</item>
+<item type="attr" name="dummy_ae_9ec">false</item>
+<item type="attr" name="dummy_ae_9ee">false</item>
+<item type="attr" name="dummy_ae_9ef">false</item>
+<item type="attr" name="dummy_ae_9f0">false</item>
+<item type="attr" name="dummy_ae_9f1">false</item>
+<item type="attr" name="dummy_ae_9f3">false</item>
+<item type="attr" name="dummy_ae_9f4">false</item>
+<item type="attr" name="dummy_ae_9f5">false</item>
+<item type="attr" name="dummy_ae_9f6">false</item>
+<item type="attr" name="dummy_ae_a02">false</item>
+<item type="attr" name="dummy_ae_a0e">false</item>
+<item type="attr" name="dummy_ae_a0f">false</item>
+<item type="attr" name="dummy_ae_a10">false</item>
+<item type="attr" name="dummy_ae_a11">false</item>
+<item type="attr" name="dummy_ae_a12">false</item>
+<item type="attr" name="dummy_ae_a13">false</item>
+<item type="attr" name="dummy_ae_a15">false</item>
+<item type="attr" name="dummy_ae_a16">false</item>
+<item type="attr" name="dummy_ae_a1b">false</item>
+<item type="attr" name="dummy_ae_a1c">false</item>
+<item type="attr" name="dummy_ae_a1d">false</item>
+<item type="attr" name="dummy_ae_a1e">false</item>
+<item type="attr" name="dummy_ae_a1f">false</item>
+<item type="attr" name="dummy_ae_a20">false</item>
+<item type="attr" name="dummy_ae_a21">false</item>
+<item type="attr" name="dummy_ae_a22">false</item>
+<item type="attr" name="dummy_ae_a23">false</item>
+<item type="attr" name="dummy_ae_a24">false</item>
+<item type="attr" name="dummy_ae_a25">false</item>
+<item type="attr" name="dummy_ae_a26">false</item>
+<item type="attr" name="dummy_ae_a28">false</item>
+<item type="attr" name="dummy_ae_a29">false</item>
+<item type="attr" name="dummy_ae_a2a">false</item>
+<item type="attr" name="dummy_ae_a2b">false</item>
+<item type="attr" name="dummy_ae_a2d">false</item>
+<item type="attr" name="dummy_ae_a2e">false</item>
+<item type="attr" name="dummy_ae_a2f">false</item>
+<item type="attr" name="dummy_ae_a30">false</item>
+<item type="attr" name="dummy_ae_a31">false</item>
+<item type="attr" name="dummy_ae_a32">false</item>
+<item type="attr" name="dummy_ae_a33">false</item>
+<item type="attr" name="dummy_ae_a34">false</item>
+<item type="attr" name="dummy_ae_a35">false</item>
+<item type="attr" name="dummy_ae_a36">false</item>
+<item type="attr" name="dummy_ae_a37">false</item>
+<item type="attr" name="dummy_ae_a38">false</item>
+<item type="attr" name="dummy_ae_a39">false</item>
+<item type="attr" name="dummy_ae_a3a">false</item>
+<item type="attr" name="dummy_ae_a3b">false</item>
+<item type="attr" name="dummy_ae_a3c">false</item>
+<item type="attr" name="dummy_ae_a3d">false</item>
+<item type="attr" name="dummy_ae_a47">false</item>
+<item type="attr" name="dummy_ae_a49">false</item>
+<item type="attr" name="dummy_ae_a4a">false</item>
+<item type="attr" name="dummy_ae_a4c">false</item>
+<item type="attr" name="dummy_ae_a4e">false</item>
+<item type="attr" name="dummy_ae_a4f">false</item>
+<item type="attr" name="dummy_ae_a50">false</item>
+<item type="attr" name="dummy_ae_a51">false</item>
+<item type="attr" name="dummy_ae_a52">false</item>
+<item type="attr" name="dummy_ae_a53">false</item>
+<item type="attr" name="dummy_ae_a54">false</item>
+<item type="attr" name="dummy_ae_a55">false</item>
+<item type="attr" name="dummy_ae_a57">false</item>
+<item type="attr" name="dummy_ae_a58">false</item>
+<item type="attr" name="dummy_ae_a5b">false</item>
+<item type="attr" name="dummy_ae_a5d">false</item>
+<item type="attr" name="dummy_ae_a5e">false</item>
+<item type="attr" name="dummy_ae_a5f">false</item>
+<item type="attr" name="dummy_ae_a60">false</item>
+<item type="attr" name="dummy_ae_a61">false</item>
+<item type="attr" name="dummy_ae_a62">false</item>
+<item type="attr" name="dummy_ae_a63">false</item>
+<item type="attr" name="dummy_ae_a64">false</item>
+<item type="attr" name="dummy_ae_a65">false</item>
+<item type="attr" name="dummy_ae_a66">false</item>
+<item type="attr" name="dummy_ae_a67">false</item>
+<item type="attr" name="dummy_ae_a68">false</item>
+<item type="attr" name="dummy_ae_a6e">false</item>
+<item type="attr" name="dummy_ae_a6f">false</item>
+<item type="attr" name="dummy_ae_a71">false</item>
+<item type="attr" name="dummy_ae_a72">false</item>
+<item type="attr" name="dummy_ae_a73">false</item>
+<item type="attr" name="dummy_ae_a74">false</item>
+<item type="attr" name="dummy_ae_a75">false</item>
+<item type="attr" name="dummy_ae_a76">false</item>
+<item type="attr" name="dummy_ae_a77">false</item>
+<item type="attr" name="dummy_ae_a78">false</item>
+<item type="attr" name="dummy_ae_a7a">false</item>
+<item type="attr" name="dummy_ae_a80">false</item>
+<item type="attr" name="dummy_ae_a81">false</item>
+<item type="attr" name="dummy_ae_a82">false</item>
+<item type="attr" name="dummy_ae_a83">false</item>
+<item type="attr" name="dummy_ae_a84">false</item>
+<item type="attr" name="dummy_ae_a85">false</item>
+<item type="attr" name="dummy_ae_a87">false</item>
+<item type="attr" name="dummy_ae_a88">false</item>
+<item type="attr" name="dummy_ae_a89">false</item>
+<item type="attr" name="dummy_ae_a8a">false</item>
+<item type="attr" name="dummy_ae_a8b">false</item>
+<item type="attr" name="dummy_ae_a8c">false</item>
+<item type="attr" name="dummy_ae_a8d">false</item>
+<item type="attr" name="dummy_ae_a8e">false</item>
+<item type="attr" name="dummy_ae_a8f">false</item>
+<item type="attr" name="dummy_ae_a90">false</item>
+<item type="attr" name="dummy_ae_a91">false</item>
+<item type="attr" name="dummy_ae_a92">false</item>
+<item type="attr" name="dummy_ae_a93">false</item>
+<item type="attr" name="dummy_ae_a94">false</item>
+<item type="attr" name="dummy_ae_a97">false</item>
+<item type="attr" name="dummy_ae_a98">false</item>
+<item type="attr" name="dummy_ae_a99">false</item>
+<item type="attr" name="dummy_ae_a9a">false</item>
+<item type="attr" name="dummy_ae_a9b">false</item>
+<item type="attr" name="dummy_ae_a9c">false</item>
+<item type="attr" name="dummy_ae_a9d">false</item>
+<item type="attr" name="dummy_ae_a9e">false</item>
+<item type="attr" name="dummy_ae_a9f">false</item>
+<item type="attr" name="dummy_ae_aa0">false</item>
+<item type="attr" name="dummy_ae_aa1">false</item>
+<item type="attr" name="dummy_ae_aa2">false</item>
+<item type="attr" name="dummy_ae_aa3">false</item>
+<item type="attr" name="dummy_ae_aa4">false</item>
+<item type="attr" name="dummy_ae_aa5">false</item>
+<item type="attr" name="dummy_ae_aa6">false</item>
+<item type="attr" name="dummy_ae_aa7">false</item>
+<item type="attr" name="dummy_ae_aa8">false</item>
+<item type="attr" name="dummy_ae_aa9">false</item>
+<item type="attr" name="dummy_ae_aaa">false</item>
+<item type="attr" name="dummy_ae_aab">false</item>
+<item type="attr" name="dummy_ae_aac">false</item>
+<item type="attr" name="dummy_ae_aad">false</item>
+<item type="attr" name="dummy_ae_aae">false</item>
+<item type="attr" name="dummy_ae_aaf">false</item>
+<item type="attr" name="dummy_ae_ab0">false</item>
+<item type="attr" name="dummy_ae_ab1">false</item>
+<item type="attr" name="dummy_ae_ab2">false</item>
+<item type="attr" name="dummy_ae_ab3">false</item>
+<item type="attr" name="dummy_ae_ab4">false</item>
+<item type="attr" name="dummy_ae_ab5">false</item>
+<item type="attr" name="dummy_ae_ab6">false</item>
+<item type="attr" name="dummy_ae_ab7">false</item>
+<item type="attr" name="dummy_ae_ab8">false</item>
+<item type="attr" name="dummy_ae_ab9">false</item>
+<item type="attr" name="dummy_ae_aba">false</item>
+<item type="attr" name="dummy_ae_abb">false</item>
+<item type="attr" name="dummy_ae_abc">false</item>
+<item type="attr" name="dummy_ae_abd">false</item>
+<item type="attr" name="dummy_ae_abe">false</item>
+<item type="attr" name="dummy_ae_abf">false</item>
+<item type="attr" name="dummy_ae_ac0">false</item>
+<item type="attr" name="dummy_ae_ac1">false</item>
+<item type="attr" name="dummy_ae_ac2">false</item>
+<item type="attr" name="dummy_ae_ac3">false</item>
+<item type="attr" name="dummy_ae_ac4">false</item>
+<item type="attr" name="dummy_ae_ac5">false</item>
+<item type="attr" name="dummy_ae_ac6">false</item>
+<item type="attr" name="dummy_ae_ac7">false</item>
+<item type="attr" name="dummy_ae_ac8">false</item>
+<item type="attr" name="dummy_ae_ac9">false</item>
+<item type="attr" name="dummy_ae_aca">false</item>
+<item type="attr" name="dummy_ae_acb">false</item>
+<item type="attr" name="dummy_ae_acc">false</item>
+<item type="attr" name="dummy_ae_acd">false</item>
+<item type="attr" name="dummy_ae_ace">false</item>
+<item type="attr" name="dummy_ae_acf">false</item>
+<item type="attr" name="dummy_ae_ad1">false</item>
+<item type="attr" name="dummy_ae_ad2">false</item>
+<item type="attr" name="dummy_ae_ad3">false</item>
+<item type="attr" name="dummy_ae_ad6">false</item>
+<item type="attr" name="dummy_ae_ad8">false</item>
+<item type="attr" name="dummy_ae_ad9">false</item>
+<item type="attr" name="dummy_ae_adb">false</item>
+<item type="attr" name="dummy_ae_ae3">false</item>
+<item type="attr" name="dummy_ae_ae4">false</item>
+<item type="attr" name="dummy_ae_ae5">false</item>
+<item type="attr" name="dummy_ae_ae6">false</item>
+<item type="attr" name="dummy_ae_ae7">false</item>
+<item type="attr" name="dummy_ae_ae9">false</item>
+<item type="attr" name="dummy_ae_aea">false</item>
+<item type="attr" name="dummy_ae_aed">false</item>
+<item type="attr" name="dummy_ae_aee">false</item>
+<item type="attr" name="dummy_ae_aef">false</item>
+<item type="attr" name="dummy_ae_af0">false</item>
+<item type="attr" name="dummy_ae_af1">false</item>
+<item type="attr" name="dummy_ae_af2">false</item>
+<item type="attr" name="dummy_ae_af3">false</item>
+<item type="attr" name="dummy_ae_af4">false</item>
+<item type="attr" name="dummy_ae_af5">false</item>
+<item type="attr" name="dummy_ae_af6">false</item>
+<item type="attr" name="dummy_ae_af8">false</item>
+<item type="attr" name="dummy_ae_af9">false</item>
+<item type="attr" name="dummy_ae_afa">false</item>
+<item type="attr" name="dummy_ae_afb">false</item>
+<item type="attr" name="dummy_ae_afc">false</item>
+<item type="attr" name="dummy_ae_afd">false</item>
+<item type="attr" name="dummy_ae_afe">false</item>
+<item type="attr" name="dummy_ae_aff">false</item>
+<item type="attr" name="dummy_ae_b00">false</item>
+<item type="attr" name="dummy_ae_b01">false</item>
+<item type="attr" name="dummy_ae_b04">false</item>
+<item type="attr" name="dummy_ae_b05">false</item>
+<item type="attr" name="dummy_ae_b06">false</item>
+<item type="attr" name="dummy_ae_b07">false</item>
+<item type="attr" name="dummy_ae_b0a">false</item>
+<item type="attr" name="dummy_ae_b0b">false</item>
+<item type="attr" name="dummy_ae_b0c">false</item>
+<item type="attr" name="dummy_ae_b0d">false</item>
+<item type="attr" name="dummy_ae_b0e">false</item>
+<item type="attr" name="dummy_ae_b0f">false</item>
+<item type="attr" name="dummy_ae_b10">false</item>
+<item type="attr" name="dummy_ae_b11">false</item>
+<item type="attr" name="dummy_ae_b12">false</item>
+<item type="attr" name="dummy_ae_b14">false</item>
+<item type="attr" name="dummy_ae_b15">false</item>
+<item type="attr" name="dummy_ae_b16">false</item>
+<item type="attr" name="dummy_ae_b17">false</item>
+<item type="attr" name="dummy_ae_b18">false</item>
+<item type="attr" name="dummy_ae_b1a">false</item>
+<item type="attr" name="dummy_ae_b1b">false</item>
+<item type="attr" name="dummy_ae_b1c">false</item>
+<item type="attr" name="dummy_ae_b1d">false</item>
+<item type="attr" name="dummy_ae_b1e">false</item>
+<item type="attr" name="dummy_ae_b1f">false</item>
+<item type="attr" name="dummy_ae_b20">false</item>
+<item type="attr" name="dummy_ae_b21">false</item>
+<item type="attr" name="dummy_ae_b22">false</item>
+<item type="attr" name="dummy_ae_b23">false</item>
+<item type="attr" name="dummy_ae_b24">false</item>
+<item type="attr" name="dummy_ae_b25">false</item>
+<item type="attr" name="dummy_ae_b26">false</item>
+<item type="attr" name="dummy_ae_b27">false</item>
+<item type="attr" name="dummy_ae_b29">false</item>
+<item type="attr" name="dummy_ae_b2a">false</item>
+<item type="attr" name="dummy_ae_b2b">false</item>
+<item type="attr" name="dummy_ae_b2c">false</item>
+<item type="attr" name="dummy_ae_b2d">false</item>
+<item type="attr" name="dummy_ae_b2e">false</item>
+<item type="attr" name="dummy_ae_b2f">false</item>
+<item type="attr" name="dummy_ae_b31">false</item>
+<item type="attr" name="dummy_ae_b32">false</item>
+<item type="attr" name="dummy_ae_b33">false</item>
+<item type="attr" name="dummy_ae_b34">false</item>
+<item type="attr" name="dummy_ae_b35">false</item>
+<item type="attr" name="dummy_ae_b36">false</item>
+<item type="attr" name="dummy_ae_b37">false</item>
+<item type="attr" name="dummy_ae_b38">false</item>
+<item type="attr" name="dummy_ae_b39">false</item>
+<item type="attr" name="dummy_ae_b3a">false</item>
+<item type="attr" name="dummy_ae_b3b">false</item>
+<item type="attr" name="dummy_ae_b3c">false</item>
+<item type="attr" name="dummy_ae_b3d">false</item>
+<item type="attr" name="dummy_ae_b3e">false</item>
+<item type="attr" name="dummy_ae_b3f">false</item>
+<item type="attr" name="dummy_ae_b42">false</item>
+<item type="attr" name="dummy_ae_b43">false</item>
+<item type="attr" name="dummy_ae_b44">false</item>
+<item type="attr" name="dummy_ae_b45">false</item>
+<item type="attr" name="dummy_ae_b46">false</item>
+<item type="attr" name="dummy_ae_b47">false</item>
+<item type="attr" name="dummy_ae_b48">false</item>
+<item type="attr" name="dummy_ae_b49">false</item>
+<item type="attr" name="dummy_ae_b4a">false</item>
+<item type="attr" name="dummy_ae_b4b">false</item>
+<item type="attr" name="dummy_ae_b4c">false</item>
+<item type="attr" name="dummy_ae_b4d">false</item>
+<item type="attr" name="dummy_ae_b4e">false</item>
+<item type="attr" name="dummy_ae_b4f">false</item>
+<item type="attr" name="dummy_ae_b50">false</item>
+<item type="attr" name="dummy_ae_b51">false</item>
+<item type="attr" name="dummy_ae_b52">false</item>
+<item type="attr" name="dummy_ae_b53">false</item>
+<item type="attr" name="dummy_ae_b54">false</item>
+<item type="attr" name="dummy_ae_b55">false</item>
+<item type="attr" name="dummy_ae_b59">false</item>
+<item type="attr" name="dummy_ae_b5a">false</item>
+<item type="attr" name="dummy_ae_b5d">false</item>
+<item type="attr" name="dummy_ae_b5e">false</item>
+<item type="attr" name="dummy_ae_b5f">false</item>
+<item type="attr" name="dummy_ae_b60">false</item>
+<item type="attr" name="dummy_ae_b61">false</item>
+<item type="attr" name="dummy_ae_b62">false</item>
+<item type="attr" name="dummy_ae_b63">false</item>
+<item type="attr" name="dummy_ae_b64">false</item>
+<item type="attr" name="dummy_ae_b66">false</item>
+<item type="attr" name="dummy_ae_b67">false</item>
+<item type="attr" name="dummy_ae_b68">false</item>
+<item type="attr" name="dummy_ae_b69">false</item>
+<item type="attr" name="dummy_ae_b6a">false</item>
+<item type="attr" name="dummy_ae_b6b">false</item>
+<item type="attr" name="dummy_ae_b6c">false</item>
+<item type="attr" name="dummy_ae_b6d">false</item>
+<item type="attr" name="dummy_ae_b6e">false</item>
+<item type="attr" name="dummy_ae_b6f">false</item>
+<item type="attr" name="dummy_ae_b70">false</item>
+<item type="attr" name="dummy_ae_b71">false</item>
+<item type="attr" name="dummy_ae_b72">false</item>
+<item type="attr" name="dummy_ae_b73">false</item>
+<item type="attr" name="dummy_ae_b75">false</item>
+<item type="attr" name="dummy_ae_b76">false</item>
+<item type="attr" name="dummy_ae_b77">false</item>
+<item type="attr" name="dummy_ae_b78">false</item>
+<item type="attr" name="dummy_ae_b79">false</item>
+<item type="attr" name="dummy_ae_b7a">false</item>
+<item type="attr" name="dummy_ae_b7b">false</item>
+<item type="attr" name="dummy_ae_b7c">false</item>
+<item type="attr" name="dummy_ae_b7d">false</item>
+<item type="attr" name="dummy_ae_b7e">false</item>
+<item type="attr" name="dummy_ae_b7f">false</item>
+<item type="attr" name="dummy_ae_b80">false</item>
+<item type="attr" name="dummy_ae_b81">false</item>
+<item type="attr" name="dummy_ae_b88">false</item>
+<item type="attr" name="dummy_ae_b8a">false</item>
+<item type="attr" name="dummy_ae_b8b">false</item>
+<item type="attr" name="dummy_ae_b8c">false</item>
+<item type="attr" name="dummy_ae_b8e">false</item>
+<item type="attr" name="dummy_ae_b8f">false</item>
+<item type="attr" name="dummy_ae_b90">false</item>
+<item type="attr" name="dummy_ae_b91">false</item>
+<item type="attr" name="dummy_ae_b93">false</item>
+<item type="attr" name="dummy_ae_b94">false</item>
+<item type="attr" name="dummy_ae_b95">false</item>
+<item type="attr" name="dummy_ae_b96">false</item>
+<item type="attr" name="dummy_ae_b97">false</item>
+<item type="attr" name="dummy_ae_b98">false</item>
+<item type="attr" name="dummy_ae_b99">false</item>
+<item type="attr" name="dummy_ae_b9a">false</item>
+<item type="attr" name="dummy_ae_b9b">false</item>
+<item type="attr" name="dummy_ae_b9c">false</item>
+<item type="attr" name="dummy_ae_b9d">false</item>
+<item type="attr" name="dummy_ae_b9e">false</item>
+<item type="attr" name="dummy_ae_b9f">false</item>
+<item type="attr" name="dummy_ae_ba3">false</item>
+<item type="attr" name="dummy_ae_ba4">false</item>
+<item type="attr" name="dummy_ae_ba5">false</item>
+<item type="attr" name="dummy_ae_ba6">false</item>
+<item type="attr" name="dummy_ae_ba7">false</item>
+<item type="attr" name="dummy_ae_ba8">false</item>
+<item type="attr" name="dummy_ae_ba9">false</item>
+<item type="attr" name="dummy_ae_baa">false</item>
+<item type="attr" name="dummy_ae_bab">false</item>
+<item type="attr" name="dummy_ae_bac">false</item>
+<item type="attr" name="dummy_ae_bad">false</item>
+<item type="attr" name="dummy_ae_bae">false</item>
+<item type="attr" name="dummy_ae_baf">false</item>
+<item type="attr" name="dummy_ae_bb0">false</item>
+<item type="attr" name="dummy_ae_bb1">false</item>
+<item type="attr" name="dummy_ae_bb2">false</item>
+<item type="attr" name="dummy_ae_bb3">false</item>
+<item type="attr" name="dummy_ae_bb4">false</item>
+<item type="attr" name="dummy_ae_bb6">false</item>
+<item type="attr" name="dummy_ae_bb7">false</item>
+<item type="attr" name="dummy_ae_bb8">false</item>
+<item type="attr" name="dummy_ae_bb9">false</item>
+<item type="attr" name="dummy_ae_bba">false</item>
+<item type="attr" name="dummy_ae_bbb">false</item>
+<item type="attr" name="dummy_ae_bbc">false</item>
+<item type="attr" name="dummy_ae_bbd">false</item>
+<item type="attr" name="dummy_ae_bbf">false</item>
+<item type="attr" name="dummy_ae_bc0">false</item>
+<item type="attr" name="dummy_ae_bc1">false</item>
+<item type="attr" name="dummy_ae_bc3">false</item>
+<item type="attr" name="dummy_ae_bc4">false</item>
+<item type="attr" name="dummy_ae_bc5">false</item>
+<item type="attr" name="dummy_ae_bc6">false</item>
+<item type="attr" name="dummy_ae_bc7">false</item>
+<item type="attr" name="dummy_ae_bc8">false</item>
+<item type="attr" name="dummy_ae_bc9">false</item>
+<item type="attr" name="dummy_ae_bca">false</item>
+<item type="attr" name="dummy_ae_bcb">false</item>
+<item type="attr" name="dummy_ae_bcd">false</item>
+<item type="attr" name="dummy_ae_bce">false</item>
+<item type="attr" name="dummy_ae_bcf">false</item>
+<item type="attr" name="dummy_ae_bd0">false</item>
+<item type="attr" name="dummy_ae_bd3">false</item>
+<item type="attr" name="dummy_ae_bd4">false</item>
+<item type="attr" name="dummy_ae_bd5">false</item>
+<item type="attr" name="dummy_ae_bd6">false</item>
+<item type="attr" name="dummy_ae_bd7">false</item>
+<item type="attr" name="dummy_ae_bd8">false</item>
+<item type="attr" name="dummy_ae_bd9">false</item>
+<item type="attr" name="dummy_ae_bda">false</item>
+<item type="attr" name="dummy_ae_bdb">false</item>
+<item type="attr" name="dummy_ae_bdc">false</item>
+<item type="attr" name="dummy_ae_bdd">false</item>
+<item type="attr" name="dummy_ae_bde">false</item>
+<item type="attr" name="dummy_ae_bdf">false</item>
+<item type="attr" name="dummy_ae_be0">false</item>
+<item type="attr" name="dummy_ae_be1">false</item>
+<item type="attr" name="dummy_ae_be2">false</item>
+<item type="attr" name="dummy_ae_be3">false</item>
+<item type="attr" name="dummy_ae_be4">false</item>
+<item type="attr" name="dummy_ae_be5">false</item>
+<item type="attr" name="dummy_ae_be6">false</item>
+<item type="attr" name="dummy_ae_be7">false</item>
+<item type="attr" name="dummy_ae_be8">false</item>
+<item type="attr" name="dummy_ae_be9">false</item>
+<item type="attr" name="dummy_ae_bea">false</item>
+<item type="attr" name="dummy_ae_beb">false</item>
+<item type="attr" name="dummy_ae_bec">false</item>
+<item type="attr" name="dummy_ae_bed">false</item>
+<item type="attr" name="dummy_ae_bee">false</item>
+<item type="attr" name="dummy_ae_bef">false</item>
+<item type="attr" name="dummy_ae_bf1">false</item>
+<item type="attr" name="dummy_ae_bf2">false</item>
+<item type="attr" name="dummy_ae_bf3">false</item>
+<item type="attr" name="dummy_ae_bf4">false</item>
+<item type="attr" name="dummy_ae_bf5">false</item>
+<item type="attr" name="dummy_ae_bf6">false</item>
+<item type="attr" name="dummy_ae_bf7">false</item>
+<item type="attr" name="dummy_ae_bf8">false</item>
+<item type="attr" name="dummy_ae_bf9">false</item>
+<item type="attr" name="dummy_ae_bfa">false</item>
+<item type="attr" name="dummy_ae_bfb">false</item>
+<item type="attr" name="dummy_ae_bfc">false</item>
+<item type="attr" name="dummy_ae_bfd">false</item>
+<item type="attr" name="dummy_ae_bfe">false</item>
+<item type="attr" name="dummy_ae_bff">false</item>
+<item type="attr" name="dummy_ae_c00">false</item>
+<item type="attr" name="dummy_ae_c01">false</item>
+<item type="attr" name="dummy_ae_c02">false</item>
+<item type="attr" name="dummy_ae_c03">false</item>
+<item type="attr" name="dummy_ae_c05">false</item>
+<item type="attr" name="dummy_ae_c08">false</item>
+<item type="attr" name="dummy_ae_c09">false</item>
+<item type="attr" name="dummy_ae_c0b">false</item>
+<item type="attr" name="dummy_ae_c0c">false</item>
+<item type="attr" name="dummy_ae_c0d">false</item>
+<item type="attr" name="dummy_ae_c0f">false</item>
+<item type="attr" name="dummy_ae_c10">false</item>
+<item type="attr" name="dummy_ae_c11">false</item>
+<item type="attr" name="dummy_ae_c12">false</item>
+<item type="attr" name="dummy_ae_c13">false</item>
+<item type="attr" name="dummy_ae_c17">false</item>
+<item type="attr" name="dummy_ae_c18">false</item>
+<item type="attr" name="dummy_ae_c19">false</item>
+<item type="attr" name="dummy_ae_c1a">false</item>
+<item type="attr" name="dummy_ae_c1b">false</item>
+<item type="attr" name="dummy_ae_c1c">false</item>
+<item type="attr" name="dummy_ae_c1d">false</item>
+<item type="attr" name="dummy_ae_c1e">false</item>
+<item type="attr" name="dummy_ae_c1f">false</item>
+<item type="attr" name="dummy_ae_c20">false</item>
+<item type="attr" name="dummy_ae_c21">false</item>
+<item type="attr" name="dummy_ae_c26">false</item>
+<item type="attr" name="dummy_ae_c27">false</item>
+<item type="attr" name="dummy_ae_c28">false</item>
+<item type="attr" name="dummy_ae_c29">false</item>
+<item type="attr" name="dummy_ae_c2a">false</item>
+<item type="attr" name="dummy_ae_c2b">false</item>
+<item type="attr" name="dummy_ae_c2c">false</item>
+<item type="attr" name="dummy_ae_c2d">false</item>
+<item type="attr" name="dummy_ae_c2e">false</item>
+<item type="attr" name="dummy_ae_c2f">false</item>
+<item type="attr" name="dummy_ae_c30">false</item>
+<item type="attr" name="dummy_ae_c31">false</item>
+<item type="attr" name="dummy_ae_c32">false</item>
+<item type="attr" name="dummy_ae_c33">false</item>
+<item type="attr" name="dummy_ae_c35">false</item>
+<item type="attr" name="dummy_ae_c36">false</item>
+<item type="attr" name="dummy_ae_c37">false</item>
+<item type="attr" name="dummy_ae_c39">false</item>
+<item type="attr" name="dummy_ae_c3a">false</item>
+<item type="attr" name="dummy_ae_c3b">false</item>
+<item type="attr" name="dummy_ae_c3c">false</item>
+<item type="attr" name="dummy_ae_c3d">false</item>
+<item type="attr" name="dummy_ae_c3e">false</item>
+<item type="attr" name="dummy_ae_c3f">false</item>
+<item type="attr" name="dummy_ae_c41">false</item>
+<item type="attr" name="dummy_ae_c42">false</item>
+<item type="attr" name="dummy_ae_c43">false</item>
+<item type="attr" name="dummy_ae_c44">false</item>
+<item type="attr" name="dummy_ae_c4a">false</item>
+<item type="attr" name="dummy_ae_c4b">false</item>
+<item type="attr" name="dummy_ae_c4c">false</item>
+<item type="attr" name="dummy_ae_c4d">false</item>
+<item type="attr" name="dummy_ae_c4e">false</item>
+<item type="attr" name="dummy_ae_c4f">false</item>
+<item type="attr" name="dummy_ae_c50">false</item>
+<item type="attr" name="dummy_ae_c51">false</item>
+<item type="attr" name="dummy_ae_c52">false</item>
+<item type="attr" name="dummy_ae_c56">false</item>
+<item type="attr" name="dummy_ae_c57">false</item>
+<item type="attr" name="dummy_ae_c58">false</item>
+<item type="attr" name="dummy_ae_c59">false</item>
+<item type="attr" name="dummy_ae_c5a">false</item>
+<item type="attr" name="dummy_ae_c5b">false</item>
+<item type="attr" name="dummy_ae_c5f">false</item>
+<item type="attr" name="dummy_ae_c60">false</item>
+<item type="attr" name="dummy_ae_c6a">false</item>
+<item type="attr" name="dummy_ae_c6b">false</item>
+<item type="attr" name="dummy_ae_c6c">false</item>
+<item type="attr" name="dummy_ae_c6d">false</item>
+<item type="attr" name="dummy_ae_c71">false</item>
+<item type="attr" name="dummy_ae_c72">false</item>
+<item type="attr" name="dummy_ae_c73">false</item>
+<item type="attr" name="dummy_ae_c74">false</item>
+<item type="attr" name="dummy_ae_c75">false</item>
+<item type="attr" name="dummy_ae_c76">false</item>
+<item type="attr" name="dummy_ae_c77">false</item>
+<item type="attr" name="dummy_ae_c78">false</item>
+<item type="attr" name="dummy_ae_c79">false</item>
+<item type="attr" name="dummy_ae_c7a">false</item>
+<item type="attr" name="dummy_ae_c7b">false</item>
+<item type="attr" name="dummy_ae_c7c">false</item>
+<item type="attr" name="dummy_ae_c7d">false</item>
+<item type="attr" name="dummy_ae_c7e">false</item>
+<item type="attr" name="dummy_ae_c7f">false</item>
+<item type="attr" name="dummy_ae_c85">false</item>
+<item type="attr" name="dummy_ae_c86">false</item>
+<item type="attr" name="dummy_ae_c87">false</item>
+<item type="attr" name="dummy_ae_c88">false</item>
+<item type="attr" name="dummy_ae_c89">false</item>
+<item type="attr" name="dummy_ae_c8a">false</item>
+<item type="attr" name="dummy_ae_c8b">false</item>
+<item type="attr" name="dummy_ae_c8c">false</item>
+<item type="attr" name="dummy_ae_c8d">false</item>
+<item type="attr" name="dummy_ae_c8e">false</item>
+<item type="attr" name="dummy_ae_c8f">false</item>
+<item type="attr" name="dummy_ae_c90">false</item>
+<item type="attr" name="dummy_ae_c91">false</item>
+<item type="attr" name="dummy_ae_c92">false</item>
+<item type="attr" name="dummy_ae_c97">false</item>
+<item type="attr" name="dummy_ae_c98">false</item>
+<item type="attr" name="dummy_ae_c99">false</item>
+<item type="attr" name="dummy_ae_c9a">false</item>
+<item type="attr" name="dummy_ae_c9b">false</item>
+<item type="attr" name="dummy_ae_c9c">false</item>
+<item type="attr" name="dummy_ae_c9d">false</item>
+<item type="attr" name="dummy_ae_c9e">false</item>
+<item type="attr" name="dummy_ae_c9f">false</item>
+<item type="attr" name="dummy_ae_ca0">false</item>
+<item type="attr" name="dummy_ae_ca3">false</item>
+<item type="attr" name="dummy_ae_ca4">false</item>
+<item type="attr" name="dummy_ae_ca5">false</item>
+<item type="attr" name="dummy_ae_ca6">false</item>
+<item type="attr" name="dummy_ae_ca7">false</item>
+<item type="attr" name="dummy_ae_ca8">false</item>
+<item type="attr" name="dummy_ae_ca9">false</item>
+<item type="attr" name="dummy_ae_caa">false</item>
+<item type="attr" name="dummy_ae_cab">false</item>
+<item type="attr" name="dummy_ae_cac">false</item>
+<item type="attr" name="dummy_ae_cad">false</item>
+<item type="attr" name="dummy_ae_cae">false</item>
+<item type="attr" name="dummy_ae_caf">false</item>
+<item type="attr" name="dummy_ae_cb0">false</item>
+<item type="attr" name="dummy_ae_cb1">false</item>
+<item type="attr" name="dummy_ae_cb2">false</item>
+<item type="attr" name="dummy_ae_cb3">false</item>
+<item type="attr" name="dummy_ae_cb4">false</item>
+<item type="attr" name="dummy_ae_cb5">false</item>
+<item type="attr" name="dummy_ae_cb6">false</item>
+<item type="attr" name="dummy_ae_cb7">false</item>
+<item type="attr" name="dummy_ae_cb8">false</item>
+<item type="attr" name="dummy_ae_cb9">false</item>
+<item type="attr" name="dummy_ae_cba">false</item>
+<item type="attr" name="dummy_ae_cbb">false</item>
+<item type="attr" name="dummy_ae_cbc">false</item>
+<item type="attr" name="dummy_ae_cbd">false</item>
+<item type="attr" name="dummy_ae_cbe">false</item>
+<item type="attr" name="dummy_ae_cbf">false</item>
+<item type="attr" name="dummy_ae_cc0">false</item>
+<item type="attr" name="dummy_ae_cc1">false</item>
+<item type="attr" name="dummy_ae_cc2">false</item>
+<item type="attr" name="dummy_ae_cc3">false</item>
+<item type="attr" name="dummy_ae_cc4">false</item>
+<item type="attr" name="dummy_ae_cc5">false</item>
+<item type="attr" name="dummy_ae_cc6">false</item>
+<item type="attr" name="dummy_ae_cc7">false</item>
+<item type="attr" name="dummy_ae_cc8">false</item>
+<item type="attr" name="dummy_ae_cc9">false</item>
+<item type="attr" name="dummy_ae_cca">false</item>
+<item type="attr" name="dummy_ae_ccb">false</item>
+<item type="attr" name="dummy_ae_ccc">false</item>
+<item type="attr" name="dummy_ae_ccd">false</item>
+<item type="attr" name="dummy_ae_cce">false</item>
+<item type="attr" name="dummy_ae_ccf">false</item>
+<item type="attr" name="dummy_ae_cd0">false</item>
+<item type="attr" name="dummy_ae_cd1">false</item>
+<item type="attr" name="dummy_ae_cd2">false</item>
+<item type="attr" name="dummy_ae_cd3">false</item>
+<item type="attr" name="dummy_ae_cd4">false</item>
+<item type="attr" name="dummy_ae_cd5">false</item>
+<item type="attr" name="dummy_ae_cd7">false</item>
+<item type="attr" name="dummy_ae_cd8">false</item>
+<item type="attr" name="dummy_ae_cd9">false</item>
+<item type="attr" name="dummy_ae_cda">false</item>
+<item type="attr" name="dummy_ae_cdb">false</item>
+<item type="attr" name="dummy_ae_cdc">false</item>
+<item type="attr" name="dummy_ae_cdd">false</item>
+<item type="attr" name="dummy_ae_cde">false</item>
+<item type="attr" name="dummy_ae_cdf">false</item>
+<item type="attr" name="dummy_ae_ce0">false</item>
+<item type="attr" name="dummy_ae_ce1">false</item>
+<item type="attr" name="dummy_ae_ce2">false</item>
+<item type="attr" name="dummy_ae_ce3">false</item>
+<item type="attr" name="dummy_ae_ce4">false</item>
+<item type="attr" name="dummy_ae_ce5">false</item>
+<item type="attr" name="dummy_ae_ce6">false</item>
+<item type="attr" name="dummy_ae_ce7">false</item>
+<item type="attr" name="dummy_ae_ce8">false</item>
+<item type="attr" name="dummy_ae_ce9">false</item>
+<item type="attr" name="dummy_ae_cea">false</item>
+<item type="attr" name="dummy_ae_ceb">false</item>
+<item type="attr" name="dummy_ae_cec">false</item>
+<item type="attr" name="dummy_ae_ced">false</item>
+<item type="attr" name="dummy_ae_cee">false</item>
+<item type="attr" name="dummy_ae_cef">false</item>
+<item type="attr" name="dummy_ae_cf0">false</item>
+<item type="attr" name="dummy_ae_cf1">false</item>
+<item type="attr" name="dummy_ae_cf2">false</item>
+<item type="attr" name="dummy_ae_cf3">false</item>
+<item type="attr" name="dummy_ae_cf4">false</item>
+<item type="attr" name="dummy_ae_cf5">false</item>
+<item type="attr" name="dummy_ae_cf6">false</item>
+<item type="attr" name="dummy_ae_cf7">false</item>
+<item type="attr" name="dummy_ae_cf8">false</item>
+<item type="attr" name="dummy_ae_cf9">false</item>
+<item type="attr" name="dummy_ae_cfa">false</item>
+<item type="attr" name="dummy_ae_cfb">false</item>
+<item type="attr" name="dummy_ae_cfc">false</item>
+<item type="attr" name="dummy_ae_cfd">false</item>
+<item type="attr" name="dummy_ae_cfe">false</item>
+<item type="attr" name="dummy_ae_cff">false</item>
+<item type="attr" name="dummy_ae_d00">false</item>
+<item type="attr" name="dummy_ae_d01">false</item>
+<item type="attr" name="dummy_ae_d02">false</item>
+<item type="attr" name="dummy_ae_d03">false</item>
+<item type="attr" name="dummy_ae_d04">false</item>
+<item type="attr" name="dummy_ae_d05">false</item>
+<item type="attr" name="dummy_ae_d06">false</item>
+<item type="attr" name="dummy_ae_d07">false</item>
+<item type="attr" name="dummy_ae_d08">false</item>
+<item type="attr" name="dummy_ae_d09">false</item>
+<item type="attr" name="dummy_ae_d0a">false</item>
+<item type="attr" name="dummy_ae_d0b">false</item>
+<item type="attr" name="dummy_ae_d0c">false</item>
+<item type="attr" name="dummy_ae_d0d">false</item>
+<item type="attr" name="dummy_ae_d0e">false</item>
+<item type="attr" name="dummy_ae_d0f">false</item>
+<item type="attr" name="dummy_ae_d10">false</item>
+<item type="attr" name="dummy_ae_d11">false</item>
+<item type="attr" name="dummy_ae_d12">false</item>
+<item type="attr" name="dummy_ae_d13">false</item>
+<item type="attr" name="dummy_ae_d14">false</item>
+<item type="attr" name="dummy_ae_d15">false</item>
+<item type="attr" name="dummy_ae_d16">false</item>
+<item type="attr" name="dummy_ae_d17">false</item>
+<item type="attr" name="dummy_ae_d18">false</item>
+</resources>

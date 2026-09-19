@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<dimen name="EqMenu_size">36.0dip</dimen>
+<dimen name="EqParamPopupButtonLayout_height_port">32.0dip</dimen>
+<dimen name="EqButtonsBase_smallSlotWidth">46.0dip</dimen>
+<dimen name="eq_frs_height">48.0dip</dimen>
+<dimen name="EqKnobValueText_size">10.5sp</dimen>
+<dimen name="EqKnobLabelText_size">13.0dip</dimen>
+<dimen name="EqLinearKnob_thumbWidth">32.0dip</dimen>
+<dimen name="EqLinearKnob_thumbHeight">64.0dip</dimen>
+<dimen name="knob_thumb_indicator_top_bottom">30.0dip</dimen>
+<dimen name="knob_thumb_indicator_left_right">8.5dip</dimen>
+<dimen name="knob_thumb_radius">16.0dip</dimen>
+<dimen name="EqButton_width">64.0dip</dimen>
+<dimen name="EqButton_height">36.0dip</dimen>
+<dimen name="EqButton_textSize">13.0dip</dimen>
+<dimen name="knob_thumb_radius_less_rounded">12.0dip</dimen>
+<dimen name="EqParamPlaceholder2_height_port">76.0dip</dimen>
+<dimen name="EqParamTypePopupButtonLayout_marginBottom_port">4.0dip</dimen>
+</resources>

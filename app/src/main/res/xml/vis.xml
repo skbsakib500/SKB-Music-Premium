@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:z="http://schemas.android.com/apk/res-auto" xmlns:w="http://schemas.android.com/apk/res-auto" android:title="@string/visualization">
+	<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:persistent="false" android:title="@string/pref_vis_on_main_screen" android:key="enable_vis" android:summary="@string/pref_summary_vis_on_main_screen" z:summary2="@string/pref_summary_vis_shown_when_music_playing" />
+	<com.maxmpz.audioplayer.preference.TagListPreference android:title="@string/pref_vis_frs_equ" android:key="vis_frs_type" android:defaultValue="2" z:entries="@array/pref_vis_frs_type_labels" />
+	<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:persistent="true" android:title="@string/pref_vis_in_lib" android:key="vis_in_lib" android:summary="@string/pref_summary_vis_in_lib" android:defaultValue="false" />
+	<com.maxmpz.audioplayer.preference.SeekbarPreference android:title="@string/pref_vis_preset_change_sec" android:key="vis_preset_change_sec" android:summary="@string/pref_summary_vis_preset_change_sec" android:defaultValue="15" z:max="120" z:min="3" z:summary2="@string/change_by_time_sec_d" />
+	<com.maxmpz.audioplayer.preference.SeekbarPreference android:title="@string/pref_vis_panel_faded_alpha" android:key="vis_panel_faded_alpha" android:summary="@string/d_percent" android:defaultValue="60" z:max="100" z:min="0" />
+	<com.maxmpz.audioplayer.preference.SeekbarPreference android:title="@string/pref_vis_controls_faded_alpha" android:key="vis_controls_faded_alpha" android:summary="@string/d_percent" android:defaultValue="50" z:max="100" z:min="0" />
+	<com.maxmpz.audioplayer.preference.SeekbarPreference android:title="@string/pref_vis_temp_ui_ms" android:key="vis_temp_ui_ms" android:summary="@string/pref_summary_vis_temp_ui_ms" android:defaultValue="1500" z:max="15000" z:min="500" z:step="100" z:summary2="@string/d_ms" />
+	<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:persistent="true" android:title="@string/pref_vis_aa_visible" android:key="vis_aa_visible" android:summary="@string/pref_summary_vis_aa_visible" android:defaultValue="true" />
+	<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:title="@string/ignore_touch" android:key="vis_ignore_touch_faded" android:summary="@string/ignore_first_touch_in_fade_controls" />
+	<com.maxmpz.audioplayer.preference.SeekbarPreference android:title="@string/pref_vis_list_faded_alpha" android:key="vis_list_faded_alpha" android:summary="@string/pref_summary_vis_list_faded_alpha" android:defaultValue="25" z:max="100" z:min="0" z:floatScale="100.0" z:summary2="@string/d_percent" />
+	<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:title="@string/vis_fs_hide_bars" android:key="vis_fs_hide_bars" android:summary="@string/summary_vis_fs_hide_bars" android:defaultValue="false" z:featurePack="1" />
+	<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:persistent="true" android:title="@string/pref_compact_bars" android:key="vis_use_compact_bars" android:summary="@string/pref_summary_compact_bars" android:defaultValue="true" />
+	<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:persistent="true" android:title="@string/pref_vis_hd" android:key="milk_hd" android:summary="@string/pref_summary_vis_hd" android:defaultValue="false" />
+	<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:persistent="true" android:title="@string/pref_vis_crop_aspect" android:key="milk_crop_aspect" android:summary="@string/pref_summary_vis_crop_aspect" android:defaultValue="false" />
+	<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:persistent="true" android:title="@string/pref_vis_30_fps" android:key="milk_30_fps" android:summary="@string/pref_summary_vis_30_fps" android:defaultValue="false" />
+	<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:persistent="true" android:title="@string/pref_vis_strict" android:key="milk_strict" android:summary="@string/pref_summary_vis_strict" android:defaultValue="false" />
+	<com.maxmpz.audioplayer.preference.RedirectPreference android:persistent="false" android:title="@string/pref_vis_latency_ms" android:key="vis_extra_delay_info" android:summary="@string/pref_summary_vis_extra_delay_per_output_msg" z:skipSearch="true" />
+	<PreferenceCategory android:title="@string/pref_vis_presets" android:key="list">
+		<com.maxmpz.audioplayer.preference.ProgressPreference android:persistent="false" android:title="@string/pref_vis_rescan_presets" android:key="vis_rescan" />
+		<com.maxmpz.audioplayer.preference.RawTextPreference android:background="@drawable/settings_quote_background" android:key="vis_rescan_hint" z:keepPaddings="true" />
+		<com.maxmpz.audioplayer.preference.ProgressPreference android:persistent="false" android:title="@string/pref_vis_full_rescan_presets" android:key="vis_full_rescan" android:summary="@string/pref_summary_vis_full_rescan_presets" />
+		<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:persistent="true" android:title="@string/pref_milk_hide_unliked" android:key="milk_hide_unliked" android:summary="@string/pref_summary_milk_hide_unliked" android:defaultValue="false" />
+		<com.maxmpz.audioplayer.preference.RawTextPreference android:summary="@string/pref_vis_disabling_presets_removes_ratings" z:smallIcon="@drawable/settings_excl_20dp_tinted" />
+	</PreferenceCategory>
+	<PreferenceCategory android:title="@string/pref_3rdparty_vis_presets" android:key="list_3rdparty" />
+	<Preference android:title="@string/pref_restore_defaults" android:key="restore_defaults" />
+</PreferenceScreen>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<dimen name="EqButton_maxWidth">94.0dip</dimen>
+<dimen name="Alt_TopPlay_maxSize">68.0dip</dimen>
+<dimen name="Alt_TopPauseMoreButtons_maxSize_scene_playing">60.0dip</dimen>
+<dimen name="Alt_TopSmallButton_size">44.0dip</dimen>
+<dimen name="Alt_TopMediumButton_size">52.0dip</dimen>
+<dimen name="ItemPopupMenu_larger_scene_item_menu_width">360.0dip</dimen>
+<dimen name="TopToastFrame_maxWidth">360.0dip</dimen>
+<dimen name="EqInfoLabel_maxWidth">390.0dip</dimen>
+</resources>

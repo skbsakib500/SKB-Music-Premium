@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<plurals name="songs_d"><item quantity="other">آهنگ ها %d</item><item quantity="one">آهنگ %d</item></plurals>
+</resources>

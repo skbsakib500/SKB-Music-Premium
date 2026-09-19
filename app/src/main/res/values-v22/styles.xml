@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<style name="Base.Theme.AppCompat" parent="@style/Base.V22.Theme.AppCompat" />
+<style name="Base.Theme.AppCompat.Light" parent="@style/Base.V22.Theme.AppCompat.Light" />
+<style name="TopListSearchEditText" parent="@style/Widget.AppCompat.EditText"><item name="android:textColor">?android:textColorPrimary</item><item name="android:textColorHint">?android:textColorTertiary</item><item name="android:gravity">center_vertical</item><item name="android:background">@null</item><item name="android:padding">12.0dip</item><item name="android:layout_width">fill_parent</item><item name="android:layout_height">wrap_content</item><item name="android:singleLine">true</item><item name="android:includeFontPadding">false</item><item name="android:drawableLeft">?search_24dp</item><item name="android:drawablePadding">8.0dip</item><item name="android:imeOptions">flagNoExtractUi</item><item name="android:drawableTint">?colorIconPrimary</item><item name="drawableTint">?colorIconPrimary</item><item name="drawableWidth">24.0dip</item><item name="drawableHeight">24.0dip</item></style>
+<style name="Base.V22.Theme.AppCompat" parent="@style/Base.V21.Theme.AppCompat"><item name="editTextBackground">?android:editTextBackground</item><item name="actionModeShareDrawable">?android:actionModeShareDrawable</item></style>
+<style name="Base.V22.Theme.AppCompat.Light" parent="@style/Base.V21.Theme.AppCompat.Light"><item name="editTextBackground">?android:editTextBackground</item><item name="actionModeShareDrawable">?android:actionModeShareDrawable</item></style>
+</resources>

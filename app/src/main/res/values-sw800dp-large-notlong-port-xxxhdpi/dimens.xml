@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<dimen name="EqKnobsLayout_paddingBottom">8.0dip</dimen>
+<dimen name="eq_frs_height">64.0dip</dimen>
+<dimen name="EqLinearKnob_thumbWidth">40.0dip</dimen>
+<dimen name="EqLinearKnob_thumbHeight">80.0dip</dimen>
+<dimen name="knob_thumb_indicator_top_bottom">39.0dip</dimen>
+<dimen name="knob_thumb_indicator_left_right">10.0dip</dimen>
+<dimen name="knob_thumb_radius">24.0dip</dimen>
+<dimen name="EqButton_height">42.0dip</dimen>
+<dimen name="TopSubAAButtons_marginTop">16.0dip</dimen>
+<dimen name="TopPlay_maxSize">100.0dip</dimen>
+<dimen name="TopSmallButton_size">48.0dip</dimen>
+<dimen name="TopMediumButton_size">72.0dip</dimen>
+<dimen name="TopPlayPauseBehind_size">64.0dip</dimen>
+<dimen name="TopPauseMoreButtons_maxSize_scene_playing">72.0dip</dimen>
+<dimen name="EqLinearKnob_paddingLR">8.0dip</dimen>
+<dimen name="Alt_TopAABounds_marginBottom">74.0dip</dimen>
+<dimen name="Alt_TopSubAAButtons_marginTop">24.0dip</dimen>
+<dimen name="TopActionModeBar_marginTop">4.0dip</dimen>
+<dimen name="Alt_TopPlay_maxSize">90.0dip</dimen>
+<dimen name="Alt_TopPauseMoreButtons_maxSize_scene_playing">72.0dip</dimen>
+<dimen name="Alt_TopSmallButton_size">40.0dip</dimen>
+<dimen name="Alt_TopMediumButton_size">60.0dip</dimen>
+<dimen name="knob_thumb_radius_less_rounded">18.0dip</dimen>
+<dimen name="EqToneRoundKnobLayout_maxSize">100.0dip</dimen>
+<dimen name="Alt_TopListSubstyle_aaMarginBottom">300.0dip</dimen>
+<dimen name="ListSubstyleBase2_aaMarginBottom">300.0dip</dimen>
+<dimen name="ItemTrackNum_width">40.0sp</dimen>
+</resources>

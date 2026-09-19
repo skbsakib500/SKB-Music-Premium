@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:w="http://schemas.android.com/apk/res-auto">
+	<com.maxmpz.widget.base.BusStateEnabledActionButton android:text="@string/delete" android:drawable="?delete_24dp" w:msgId="@id/cmd_list_delete" w:confirmTitle="@string/delete_bands_q" w:confirmText="@string/msg_delete_selected_bands" w:stateId="@id/state_list_something_selected" w:stateMsgId="@id/state_list_selection_count" style="?SelectionListContextButton33" />
+	<com.maxmpz.widget.base.BusStateEnabledActionButton android:text="@string/lock_unlock" android:drawable="?lock_unlock_24dp" w:msgId="@id/cmd_list_lock_unlock" w:stateId="@id/state_list_something_selected" w:stateMsgId="@id/state_list_selection_count" style="?SelectionListContextButton33" />
+</merge>

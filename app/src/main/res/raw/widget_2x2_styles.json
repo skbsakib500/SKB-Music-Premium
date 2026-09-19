@@ -1,0 +1,151 @@
+[
+{
+	"label": "@string/default_string",
+	"flags": "0x129c",
+	"style": 1,
+	"bg_color": "#44000000",
+	"text_color": "#ffffffff",
+	"icons_color": "#ffffffff",
+	"shadow_alpha": "0x0",
+	"aa_alpha": "0xff",
+	"font_family": 0,
+	"font_size": 3,
+	"title_font_size": 4,
+	"corner_radius": 2
+},
+{
+	"label": "Thin",
+	"flags": "0x120c",
+	"style": 2,
+	"bg_color": "#a2000000",
+	"text_color": "#ffffffff",
+	"icons_color": "#a2030101",
+	"shadow_alpha": "0x0",
+	"aa_alpha": "0xff",
+	"font_family": 4,
+	"font_size": 4,
+	"title_font_size": 5
+},
+
+{
+	"label": "Text Only",
+	"flags": "0x18",
+	"style": 1,
+	"bg_color": "#0",
+	"text_color": "#ff000000",
+	"icons_color": "#ffffff",
+	"shadow_alpha": "0x0",
+	"aa_alpha": "0xff",
+	"font_family": 1,
+	"font_size": 3,
+	"title_font_size": 7
+},
+{
+	"label": "Minimalistic 1",
+	"flags": "0x1018",
+	"style": 2,
+	"bg_color": "#00000000",
+	"text_color": "#ffffffff",
+	"icons_color": "#46ffffff",
+	"shadow_alpha": "0x0",
+	"aa_alpha": "0xff",
+	"font_family": 3,
+	"font_size": 3,
+	"title_font_size": 6
+},
+{
+	"label": "Minimalistic 2",
+	"flags": "0x208",
+	"style": 1,
+	"bg_color": "#0",
+	"text_color": "#ff000000",
+	"icons_color": "#3e000000",
+	"shadow_alpha": "0x0",
+	"aa_alpha": "0xff",
+	"font_family": 0,
+	"font_size": 1,
+	"title_font_size": 6
+},
+{
+	"label": "Big Text 1",
+	"flags": "0x101c",
+	"style": 1,
+	"bg_color": "#0",
+	"text_color": "#ffffffff",
+	"icons_color": "#bfffffff",
+	"shadow_alpha": "0x0",
+	"aa_alpha": "0x1e",
+	"font_family": 1,
+	"font_size": 3,
+	"title_font_size": 6
+},
+{
+	"label": "Big Text 2",
+	"flags": "0x100c",
+	"style": 1,
+	"bg_color": "#d1000000",
+	"text_color": "#ffffffff",
+	"icons_color": "#b0ffffff",
+	"shadow_alpha": "0x0",
+	"aa_alpha": "0xff",
+	"font_family": 5,
+	"font_size": 3,
+	"title_font_size": 6
+},
+
+	{
+		"label":"Grey",
+		"flags":"0x101c",
+		"style":2,
+		"bg_color":"#ed262626",
+		"text_color":"#ffffffff",
+		"icons_color":"#ffedf8ff",
+		"shadow_alpha":"0x99",
+		"aa_alpha": "0xFF",
+		"font_family":0,
+		"font_size":2,
+		"title_font_size":5
+	},	
+{
+	"label": "White",
+	"flags": "0x109c",
+	"style": 2,
+	"bg_color": "#e1ffffff",
+	"text_color": "#ff000000",
+	"icons_color": "#ffffffff",
+	"shadow_alpha": "0x0",
+	"aa_alpha": "0xff",
+	"font_family": 0,
+	"font_size": 2,
+	"title_font_size": 5
+},
+
+{
+	"label": "Blue",
+	"flags": "0x101c",
+	"style": 2,
+	"bg_color": "#e76599e4",
+	"text_color": "#ffffffff",
+	"icons_color": "#ffedf8ff",
+	"shadow_alpha": "0x0",
+	"aa_alpha": "0xff",
+	"font_family": 0,
+	"font_size": 2,
+	"title_font_size": 5
+},
+	
+{
+	"label": "Green",
+	"flags": "0x129c",
+	"style": 2,
+	"bg_color": "#55173b06",
+	"text_color": "#ffffffff",
+	"icons_color": "#ffffffff",
+	"shadow_alpha": "0x00",
+	"aa_alpha": "0xff",
+	"font_family": 0,
+	"font_size": 3,
+	"title_font_size": 4
+}
+]
+

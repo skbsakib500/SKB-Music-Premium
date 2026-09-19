@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<dimen name="EditableButtonContainer_marginBottom">12.0dip</dimen>
+<dimen name="EditableButtonContainer_marginTop">4.0dip</dimen>
+<dimen name="WiderCenterDialogFrame_maxWidth">500.0dip</dimen>
+<dimen name="TopWaveseek_maxHeight">112.0dip</dimen>
+<dimen name="CenterDialogFrame_maxHeight">590.0dip</dimen>
+<dimen name="EqInfoBase_marginTB">4.0dip</dimen>
+</resources>

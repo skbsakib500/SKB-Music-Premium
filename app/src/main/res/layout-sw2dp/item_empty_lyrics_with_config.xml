@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.maxmpz.widget.list.ItemSceneFastLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:w="http://schemas.android.com/apk/res-auto" style="?ItemEmptyList">
+	<com.maxmpz.widget.base.FastTextView android:visibility="gone" android:text="@string/lyrics_loading_via_plugin" style="?ItemEmptyLyricsLoadingViaPlugin" />
+	<SceneParams android:visibility="gone" w:scene="@id/scene_empty" w:scene_2="@id/scene_empty_no_button" />
+	<SceneParams android:visibility="visible" w:scene="@id/scene_loading_via_plugin" />
+	<ProgressBar android:id="@id/progress" android:visibility="visible" style="?ItemEmptyListScanProgressCenter" />
+	<SceneParams android:visibility="gone" w:scene="@id/scene_empty" w:scene_2="@id/scene_empty_no_button" />
+	<SceneParams android:visibility="visible" w:scene="@id/scene_loading_via_plugin" />
+	<com.maxmpz.widget.base.FastTextView android:id="@id/item_empty_list_text" android:visibility="gone" android:text="@string/no_lyrics_found" style="?ItemEmptyLyricsText" />
+	<SceneParams android:visibility="visible" w:scene="@id/scene_empty" w:scene_2="@id/scene_empty_no_button" />
+	<SceneParams android:visibility="gone" w:scene="@id/scene_loading_via_plugin" />
+	<com.maxmpz.widget.base.FastTextView android:id="@id/item_empty_lyrics_hint" android:visibility="gone" android:text="@string/no_lyrics_found_hint" style="?ItemEmptyLyricsHint" />
+	<SceneParams android:visibility="visible" w:scene="@id/scene_empty" />
+	<SceneParams android:visibility="gone" w:scene="@id/scene_loading_via_plugin" w:scene_2="@id/scene_empty_no_button" />
+	<com.maxmpz.widget.base.FastButton android:id="@id/search_button" android:visibility="gone" android:text="@string/open_lyrics_app" android:contentDescription="@string/search" style="?ItemEmptyLyricsSearchButton" />
+	<SceneParams android:visibility="visible" w:scene="@id/scene_empty" />
+	<SceneParams android:visibility="gone" w:scene="@id/scene_loading_via_plugin" w:scene_2="@id/scene_empty_no_button" />
+	<com.maxmpz.widget.base.BusActionButton android:id="@id/button" android:visibility="gone" android:contentDescription="@string/settings" w:busId="@id/list" w:msgId="@id/cmd_list_empty_dialog" style="?ItemEmptyListSettingsButton" />
+	<SceneParams android:visibility="visible" w:scene="@id/scene_empty" w:scene_2="@id/scene_empty_no_button" />
+	<SceneParams android:layout_gravity="center_horizontal" android:visibility="visible" w:scene="@id/scene_empty_no_button" w:layout_attachTop="50.0%" style="?ItemEmptyListSettingsButton" />
+	<SceneParams android:visibility="gone" w:scene="@id/scene_loading_via_plugin" />
+</com.maxmpz.widget.list.ItemSceneFastLayout>

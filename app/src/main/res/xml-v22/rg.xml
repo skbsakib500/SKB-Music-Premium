@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:z="http://schemas.android.com/apk/res-auto" xmlns:w="http://schemas.android.com/apk/res-auto" android:title="@string/pref_replay_gain" z:searchBreadcrumb1="@string/pref_audio_engine">
+	<com.maxmpz.audioplayer.preference.TagListPreference android:title="@string/pref_replay_gain_type" android:key="rg_type" android:defaultValue="0" z:entries="@array/pref_rg_type_entries" />
+	<com.maxmpz.audioplayer.preference.TagListPreference android:title="@string/pref_replay_gain_source" android:key="rg_source" android:defaultValue="0" z:entries="@array/pref_rg_source_entries" />
+	<com.maxmpz.audioplayer.preference.RoundKnobPreference android:title="@string/pref_rg_preamp" android:key="rg_preamp_mb" android:defaultValue="0" android:dialogTitle="@string/pref_rg_preamp" z:snapTo="0.0" z:valueFormat="@string/d_db" z:scale="100.0" z:max="1600" z:min="-1600" z:step="10" z:label="@string/d_db" />
+	<com.maxmpz.audioplayer.preference.RoundKnobPreference android:title="@string/pref_rg_default_gain" android:key="rg_default_mb" android:defaultValue="0" android:dialogTitle="@string/pref_rg_default_gain" z:snapTo="0.0" z:valueFormat="@string/d_db" z:scale="100.0" z:max="1600" z:min="-1600" z:step="10" z:label="@string/d_db" />
+	<Preference android:title="@string/pref_restore_defaults" android:key="restore_defaults" android:singleLineTitle="false" />
+</PreferenceScreen>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:w="http://schemas.android.com/apk/res-auto" android:title="@string/pref_equ_bands" w:ignoreTitle="true">
+	<com.maxmpz.audioplayer.preference.TagListPreference android:title="@string/pref_number_of_bands" android:key="equ_bands_num" android:summary="@string/pref_summary_number_of_bands" android:defaultValue="10" android:dialogTitle="@string/pref_number_of_bands" w:entries="@array/pref_peq_equ_bands_entries" w:values="@array/pref_peq_equ_bands" />
+	<com.maxmpz.audioplayer.preference.RawTextPreference android:key="_number_of_bands_msg" w:smallLine1="@string/pref_number_of_bands_msg" />
+	<PreferenceCategory android:title="@string/pref_advanced">
+		<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:title="@string/pref_enable_custom_bands" android:key="equ_custom_bands" />
+		<com.maxmpz.audioplayer.preference.SeekbarPreference android:title="@string/pref_custom_number_of_bands" android:key="equ_custom_bands_num" android:summary="%d" android:dependency="equ_custom_bands" android:defaultValue="10" w:max="32" w:min="5" w:leftLabel="5" w:rightLabel="32" />
+		<com.maxmpz.audioplayer.preference.SeekbarPreference android:title="@string/pref_custom_bands_first_fr" android:key="equ_custom_bands_first_fr" android:summary="@string/f0_hz" android:dependency="equ_custom_bands" android:defaultValue="20" w:scale="1.0" w:max="200" w:min="5" w:leftLabel="5" w:rightLabel="200" />
+		<com.maxmpz.audioplayer.preference.SeekbarPreference android:title="@string/pref_custom_bands_last_fr" android:key="equ_custom_bands_last_fr" android:summary="@string/f1_khz" android:dependency="equ_custom_bands" android:defaultValue="16000" w:scale="1000.0" w:max="20000" w:min="14000" w:step="500" w:leftLabel="14K" w:rightLabel="20K" />
+	</PreferenceCategory>
+	<Preference android:title="@string/pref_restore_defaults" android:key="restore_defaults" />
+</PreferenceScreen>

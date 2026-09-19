@@ -13,9 +13,7 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Home
-import androidx.compose.material.icons.filled.LibraryMusic
-import androidx.compose.material.icons.filled.Settings
+import androidx.compose.material.icons.filled.*
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
@@ -27,46 +25,34 @@ import com.skb.music.data.Song
 import com.skb.music.player.MusicService
 import com.skb.music.player.PlayerHolder
 import com.skb.music.ui.components.GradientBackground
-import com.skb.music.ui.screens.HomeScreen
-import com.skb.music.ui.screens.PlayerScreen
-import com.skb.music.ui.screens.SettingsScreen
+import com.skb.music.ui.screens.*
 import com.skb.music.ui.theme.*
 import kotlinx.coroutines.delay
 
 class MainActivity : ComponentActivity() {
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val repo = MusicRepository(this)
-
-        // Start foreground service so ExoPlayer lives
         startService(Intent(this, MusicService::class.java))
 
         setContent {
             SKBMusicTheme {
                 var hasPerm by remember { mutableStateOf(checkAudioPermission()) }
-                val permLauncher = rememberLauncherForActivityResult(
+                val launcher = rememberLauncherForActivityResult(
                     ActivityResultContracts.RequestPermission()
                 ) { hasPerm = it }
-
                 LaunchedEffect(Unit) {
-                    if (!hasPerm) permLauncher.launch(audioPermission())
+                    if (!hasPerm) launcher.launch(audioPermission())
                 }
-
-                if (!hasPerm) {
-                    PermissionScreen { permLauncher.launch(audioPermission()) }
-                } else {
-                    AppRoot(repo)
-                }
+                if (!hasPerm) PermissionScreen { launcher.launch(audioPermission()) }
+                else AppRoot(repo)
             }
         }
     }
-
-    private fun audioPermission(): String =
+    private fun audioPermission() =
         if (Build.VERSION.SDK_INT >= 33) Manifest.permission.READ_MEDIA_AUDIO
         else Manifest.permission.READ_EXTERNAL_STORAGE
-
-    private fun checkAudioPermission(): Boolean =
+    private fun checkAudioPermission() =
         ContextCompat.checkSelfPermission(this, audioPermission()) == PackageManager.PERMISSION_GRANTED
 }
 
@@ -74,28 +60,14 @@ class MainActivity : ComponentActivity() {
 private fun PermissionScreen(onGrant: () -> Unit) {
     GradientBackground {
         Box(Modifier.fillMaxSize(), contentAlignment = androidx.compose.ui.Alignment.Center) {
-            Column(
-                horizontalAlignment = androidx.compose.ui.Alignment.CenterHorizontally,
-                modifier = Modifier.padding(32.dp)
-            ) {
-                Text(
-                    "Audio Access Needed",
-                    style = MaterialTheme.typography.headlineMedium,
-                    color = AmuletText
-                )
+            Column(horizontalAlignment = androidx.compose.ui.Alignment.CenterHorizontally,
+                modifier = Modifier.padding(32.dp)) {
+                Text("Audio Access Needed", style = MaterialTheme.typography.headlineMedium, color = AmuletText)
                 Spacer(Modifier.height(12.dp))
-                Text(
-                    "Grant access to play music from your device.",
-                    color = AmuletTextMuted,
-                    textAlign = androidx.compose.ui.text.style.TextAlign.Center
-                )
+                Text("Grant access to play music.", color = AmuletTextMuted)
                 Spacer(Modifier.height(24.dp))
-                Button(
-                    onClick = onGrant,
-                    colors = ButtonDefaults.buttonColors(
-                        containerColor = AmuletEmerald,
-                        contentColor = Color.Black
-                    )
+                Button(onClick = onGrant,
+                    colors = ButtonDefaults.buttonColors(containerColor = AmuletEmerald, contentColor = Color.Black)
                 ) { Text("Grant Permission") }
             }
         }
@@ -110,7 +82,6 @@ private fun AppRoot(repo: MusicRepository) {
     var position by remember { mutableLongStateOf(0L) }
     var duration by remember { mutableLongStateOf(0L) }
 
-    // Poll player state
     LaunchedEffect(Unit) {
         while (true) {
             PlayerHolder.player?.let { p ->
@@ -126,49 +97,29 @@ private fun AppRoot(repo: MusicRepository) {
         Scaffold(
             containerColor = Color.Transparent,
             bottomBar = {
-                NavigationBar(
-                    containerColor = AmuletSurface,
-                    tonalElevation = 0.dp
-                ) {
-                    NavigationBarItem(
-                        selected = tab == 0,
-                        onClick = { tab = 0 },
-                        icon = { Icon(Icons.Default.Home, null) },
-                        label = { Text("Home") },
-                        colors = NavigationBarItemDefaults.colors(
-                            selectedIconColor = AmuletEmerald,
-                            selectedTextColor = AmuletEmerald,
-                            indicatorColor = AmuletEmerald.copy(alpha = 0.15f),
-                            unselectedIconColor = AmuletTextMuted,
-                            unselectedTextColor = AmuletTextMuted
-                        )
+                NavigationBar(containerColor = AmuletSurface, tonalElevation = 0.dp) {
+                    val items = listOf(
+                        Triple("Home", Icons.Default.Home, 0),
+                        Triple("Player", Icons.Default.PlayArrow, 1),
+                        Triple("EQ", Icons.Default.Tune, 2),
+                        Triple("Vis", Icons.Default.GraphicEq, 3),
+                        Triple("More", Icons.Default.Settings, 4)
                     )
-                    NavigationBarItem(
-                        selected = tab == 1,
-                        onClick = { tab = 1 },
-                        icon = { Icon(Icons.Default.LibraryMusic, null) },
-                        label = { Text("Player") },
-                        colors = NavigationBarItemDefaults.colors(
-                            selectedIconColor = AmuletEmerald,
-                            selectedTextColor = AmuletEmerald,
-                            indicatorColor = AmuletEmerald.copy(alpha = 0.15f),
-                            unselectedIconColor = AmuletTextMuted,
-                            unselectedTextColor = AmuletTextMuted
+                    items.forEach { (label, icon, idx) ->
+                        NavigationBarItem(
+                            selected = tab == idx,
+                            onClick = { tab = idx },
+                            icon = { Icon(icon, null) },
+                            label = { Text(label) },
+                            colors = NavigationBarItemDefaults.colors(
+                                selectedIconColor = AmuletEmerald,
+                                selectedTextColor = AmuletEmerald,
+                                indicatorColor = AmuletEmerald.copy(alpha = 0.15f),
+                                unselectedIconColor = AmuletTextMuted,
+                                unselectedTextColor = AmuletTextMuted
+                            )
                         )
-                    )
-                    NavigationBarItem(
-                        selected = tab == 2,
-                        onClick = { tab = 2 },
-                        icon = { Icon(Icons.Default.Settings, null) },
-                        label = { Text("Settings") },
-                        colors = NavigationBarItemDefaults.colors(
-                            selectedIconColor = AmuletEmerald,
-                            selectedTextColor = AmuletEmerald,
-                            indicatorColor = AmuletEmerald.copy(alpha = 0.15f),
-                            unselectedIconColor = AmuletTextMuted,
-                            unselectedTextColor = AmuletTextMuted
-                        )
-                    )
+                    }
                 }
             }
         ) { padding ->
@@ -181,10 +132,8 @@ private fun AppRoot(repo: MusicRepository) {
                         tab = 1
                     }
                     1 -> PlayerScreen(
-                        song = currentSong,
-                        isPlaying = isPlaying,
-                        positionMs = position,
-                        durationMs = duration,
+                        song = currentSong, isPlaying = isPlaying,
+                        positionMs = position, durationMs = duration,
                         onPlayPause = {
                             PlayerHolder.player?.let { p ->
                                 if (p.isPlaying) p.pause() else p.play()
@@ -194,7 +143,9 @@ private fun AppRoot(repo: MusicRepository) {
                         onPrevious = { PlayerHolder.player?.seekToPreviousMediaItem() },
                         onSeek = { PlayerHolder.player?.seekTo(it) }
                     )
-                    2 -> SettingsScreen()
+                    2 -> EqualizerScreen()
+                    3 -> VisualizerScreen()
+                    4 -> SettingsScreen()
                 }
             }
         }

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.maxmpz.widget.base.FastLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:w="http://schemas.android.com/apk/res-auto" android:paddingLeft="8.0dip" android:paddingTop="0.0dip" android:paddingRight="8.0dip" android:clipToPadding="false" style="@style/TagPreferenceContainer">
+	<com.maxmpz.audioplayer.widget.AmbilwarnaLayout android:id="@id/ambilwarna_layout" android:paddingLeft="8.0dip" android:paddingTop="8.0dip" android:paddingRight="8.0dip" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" w:layout_unlimitedMeasure="true">
+		<yuku.ambilwarna.AmbilWarnaKotak android:id="@id/ambilwarna_viewSatBri" android:layout_width="0.0px" android:layout_height="280.0dip" android:layout_marginRight="@dimen/ambilwarna_spacer" w:layout_attachLeft="parent" w:layout_attachRight="@id/ambilwarna_viewHue" />
+		<ImageView android:id="@id/ambilwarna_viewHue" android:layout_width="@dimen/ambilwarna_hueWidth" android:layout_height="280.0dip" android:src="@drawable/ambilwarna_hue" android:scaleType="fitXY" w:layout_attachRight="parent" />
+		<ImageView android:id="@id/ambilwarna_cursor" android:layout_width="14.0dip" android:layout_height="14.0dip" android:src="@drawable/v_ambilwarna_cursor" android:scaleType="fitXY" w:layout_attachTop="parent" w:layout_attachRight="@id/ambilwarna_viewHue" />
+		<ImageView android:id="@id/ambilwarna_target" android:layout_width="15.0dip" android:layout_height="15.0dip" android:src="@drawable/v_ambilwarna_target" w:layout_attachLeftToLeft="@id/ambilwarna_viewSatBri" w:layout_attachTopToTop="@id/ambilwarna_viewSatBri" />
+		<View android:layout_gravity="center_horizontal" android:id="@id/ambilwarna_warnaBaru" android:background="#ffaaaaff" android:layout_width="60.0dip" android:layout_height="30.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="4.0dip" w:layout_attachTop="@id/ambilwarna_viewSatBri" w:layout_consumeSpace="vertical" w:layout_gravityGroup="0" />
+		<EditText android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/edit_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:maxEms="4" android:minEms="4" android:singleLine="true" android:selectAllOnFocus="true" android:maxLength="6" android:inputType="textCapCharacters|textNoSuggestions" w:layout_attachTop="@id/ambilwarna_viewSatBri" w:layout_gravityGroup="0" />
+		<com.maxmpz.widget.base.FastLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+			<include android:layout="@layout/merge_widget_mu_colors" w:optional="true" />
+		</com.maxmpz.widget.base.FastLayout>
+	</com.maxmpz.audioplayer.widget.AmbilwarnaLayout>
+</com.maxmpz.widget.base.FastLayout>

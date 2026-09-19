@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<plurals name="album"><item quantity="other">@string/albums</item><item quantity="one">@string/album</item></plurals>
+<plurals name="album_artist"><item quantity="other">@string/album_artists</item><item quantity="one">@string/album_artist</item></plurals>
+<plurals name="album_by_artist"><item quantity="other">@string/albums_by_artist</item><item quantity="one">@string/album_by_artist</item></plurals>
+<plurals name="artist"><item quantity="other">@string/artists</item><item quantity="one">@string/artist</item></plurals>
+<plurals name="artist_album"><item quantity="other">@string/artist_albums</item><item quantity="one">@string/artist_album</item></plurals>
+<plurals name="composer"><item quantity="other">@string/composers</item><item quantity="one">@string/composer</item></plurals>
+<plurals name="composer_album"><item quantity="other">@string/composer_albums</item><item quantity="one">@string/composer_album</item></plurals>
+<plurals name="delete_entries_q"><item quantity="other">@string/delete_entries_q</item><item quantity="one">@string/delete_entry_q</item></plurals>
+<plurals name="delete_songs_always_plural_q"><item quantity="other">@string/delete_songs_q</item><item quantity="one">@string/delete_songs_q</item></plurals>
+<plurals name="delete_songs_q"><item quantity="other">@string/delete_songs_q</item><item quantity="one">@string/delete_song_q</item></plurals>
+<plurals name="file"><item quantity="other">@string/songs</item><item quantity="one">@string/song</item></plurals>
+<plurals name="folder"><item quantity="other">@string/folders</item><item quantity="one">@string/folder</item></plurals>
+<plurals name="genre"><item quantity="other">@string/genres</item><item quantity="one">@string/genre</item></plurals>
+<plurals name="genre_album"><item quantity="other">@string/genre_albums</item><item quantity="one">@string/genre_album</item></plurals>
+<plurals name="library"><item quantity="other">@string/library</item><item quantity="one">@string/library</item></plurals>
+<plurals name="playlist"><item quantity="other">@string/playlists</item><item quantity="one">@string/playlist</item></plurals>
+<plurals name="raw_file"><item quantity="other">@string/raw_file</item><item quantity="one">@string/raw_file</item></plurals>
+<plurals name="selected_entries_will_be_deleted_no_files"><item quantity="other">@string/selected_entries_will_be_deleted_no_files</item><item quantity="one">@string/selected_entry_will_be_deleted_no_files</item></plurals>
+<plurals name="selected_playlists_will_be_deleted_no_files"><item quantity="other">@string/selected_playlists_will_be_deleted_no_files</item><item quantity="one">@string/selected_playlists_will_be_deleted_no_files</item></plurals>
+<plurals name="selected_songs_from_cats_will_be_deleted"><item quantity="other">@string/selected_songs_from_cats_will_be_deleted</item><item quantity="one">@string/selected_songs_from_cats_will_be_deleted</item></plurals>
+<plurals name="selected_songs_from_folders_hier_will_be_deleted"><item quantity="other">@string/selected_songs_from_folders_hier_will_be_deleted</item><item quantity="one">@string/selected_songs_from_folders_hier_will_be_deleted</item></plurals>
+<plurals name="selected_songs_from_folders_will_be_deleted"><item quantity="other">@string/selected_songs_from_folders_will_be_deleted</item><item quantity="one">@string/selected_songs_from_folders_will_be_deleted</item></plurals>
+<plurals name="selected_songs_will_be_deleted"><item quantity="other">@string/selected_songs_will_be_deleted</item><item quantity="one">@string/selected_song_will_be_deleted</item></plurals>
+<plurals name="songs_d"><item quantity="other">%d songs</item><item quantity="one">%d song</item></plurals>
+<plurals name="stream"><item quantity="other">@string/streams</item><item quantity="one">@string/stream</item></plurals>
+<plurals name="year"><item quantity="other">@string/years</item><item quantity="one">@string/year</item></plurals>
+<plurals name="year_album"><item quantity="other">@string/year_albums</item><item quantity="one">@string/year_album</item></plurals>
+<item type="plurals" name="dummy_ae_c">false</item>
+<item type="plurals" name="dummy_ae_10">false</item>
+<item type="plurals" name="dummy_ae_11">false</item>
+<item type="plurals" name="dummy_ae_13">false</item>
+<item type="plurals" name="dummy_ae_15">false</item>
+<item type="plurals" name="dummy_ae_16">false</item>
+<item type="plurals" name="dummy_ae_1f">false</item>
+</resources>

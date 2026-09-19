@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:w="http://schemas.android.com/apk/res-auto">
+	<com.maxmpz.widget.base.SceneFastLayout android:id="@id/navbar_container" w:privateScene="true" style="?TopNavbarContainer">
+		<com.maxmpz.widget.base.Shim android:id="@id/navbar_shim" style="?NavbarShim" />
+		<com.maxmpz.widget.base.SceneParams android:visibility="visible" w:scene="@id/scene_navbar_1line_sheet" w:scene_2="@id/scene_navbar_2lines_sheet" w:scene_3="@id/scene_navbar_3lines_sheet" />
+		<com.maxmpz.widget.base.SceneParams android:visibility="gone" w:scene="@id/scene_navbar_2lines" w:scene_2="@id/scene_navbar_3lines" />
+		<com.maxmpz.audioplayer.widget.Navbar android:id="@id/navbar" style="?Navbar">
+			<com.maxmpz.widget.player.NavbarExtension android:id="@id/navbar_extension" style="?NavbarExtension">
+				<com.maxmpz.widget.base.BusActionButton android:contentDescription="@string/app_name" w:busId="@id/bus_app_cmd" w:msgId="@id/cmd_app_open_settings" w:string="general" style="?NavbarExtensionLogo" />
+				<com.maxmpz.widget.player.BusStatusTextButton w:updateMsgId="@id/msg_version_info_changed" w:stateBusId="@id/bus_app" w:labelStateId="@id/state_app_edition_name" w:iconStateId="@id/state_app_edition_icon" style="?NavbarExtensionLogoLabel" />
+				<com.maxmpz.audioplayer.widget.MediaRouteButton style="?CcButton_NavbarExtensionMenuLine" />
+				<com.maxmpz.widget.base.BusActionButton android:id="@id/navbar_ext_settings" android:longClickable="true" android:text="@string/settings" android:drawable="?settings_navbar" android:contentDescription="@string/pref_poweramp_settings" w:busId="@id/bus_app_cmd" w:msgId="@id/cmd_app_open_settings" w:longPressMsgId="@id/cmd_app_open_settings_search" style="?NavbarExtensionMenuLine" />
+				<com.maxmpz.audioplayer.widget.NavExtSettingsTags style="?NavbarExtensionNavExtSettingsTags" />
+				<com.maxmpz.widget.base.BusActionButton android:text="@string/about_poweramp_changelog" android:drawable="?changelog_24dp" w:busId="@id/bus_app_cmd" w:msgId="@id/cmd_app_open" w:string="activity/dialogs.ChangelogActivity" style="?NavbarExtensionMenuLine" />
+				<com.maxmpz.widget.base.BusActionButton android:text="@string/help" android:drawable="?support_24dp" w:busId="@id/bus_gui" w:msgId="@id/cmd_gui_open_help" style="?NavbarExtensionMenuLine" />
+			</com.maxmpz.widget.player.NavbarExtension>
+			<com.maxmpz.widget.base.SceneParams android:visibility="visible" w:scene="@id/scene_navbar_1line_sheet" w:scene_2="@id/scene_navbar_2lines_sheet" w:scene_3="@id/scene_navbar_3lines_sheet" />
+			<com.maxmpz.widget.base.SceneParams android:visibility="gone" w:scene="@id/scene_navbar_2lines" w:scene_2="@id/scene_navbar_3lines" />
+			<com.maxmpz.widget.list.PowerList android:id="@id/navbar_list" style="?NavbarList" />
+			<com.maxmpz.widget.base.SceneParams android:visibility="visible" w:scene="@id/scene_navbar_2lines" w:scene_2="@id/scene_navbar_2lines_sheet" w:scene_3="@id/scene_navbar_3lines" w:scene_4="@id/scene_navbar_3lines_sheet" />
+			<com.maxmpz.widget.base.SceneParams android:visibility="gone" w:scene="@id/scene_navbar_1line_sheet" />
+			<com.maxmpz.widget.player.Seek android:id="@id/navbar_seekbar" style="?NavbarSeekbar" />
+			<StateAnimParams w:stateAnim="@id/anim_seeking" style="?PlainSeekbar_anim_seeking" />
+			<com.maxmpz.widget.base.SceneParams android:visibility="visible" w:scene="@id/scene_navbar_3lines" w:scene_2="@id/scene_navbar_3lines_sheet" />
+			<com.maxmpz.widget.base.SceneParams android:visibility="gone" w:scene="@id/scene_navbar_1line_sheet" w:scene_2="@id/scene_navbar_2lines" w:scene_3="@id/scene_navbar_2lines_sheet" />
+			<com.maxmpz.widget.base.FastLayout android:id="@id/navbar_nav_buttons" style="?NavbarNavButtonsLayout">
+				<com.maxmpz.widget.base.FastButton android:id="@id/cmd_nav_to_lib" android:longClickable="true" android:drawable="?nav_lists" android:contentDescription="@string/library" style="?NavBarButton" />
+				<com.maxmpz.widget.base.FastButton android:id="@id/cmd_nav_to_eq" android:longClickable="true" android:drawable="?nav_equ" android:contentDescription="@string/h_equ_effects" style="?NavBarButton" />
+				<com.maxmpz.widget.base.FastButton android:id="@id/cmd_nav_to_search" android:drawable="?nav_search" android:contentDescription="@string/search" style="?NavBarButton" />
+				<com.maxmpz.widget.base.FastButton android:id="@id/cmd_nav_more" android:longClickable="true" android:drawable="?nav_hamburger" android:contentDescription="@string/pref_main_menu" style="?NavBarButton" />
+			</com.maxmpz.widget.base.FastLayout>
+			<com.maxmpz.widget.base.SceneParams android:visibility="visible" w:scene="@id/scene_navbar_2lines" w:scene_2="@id/scene_navbar_2lines_sheet" w:scene_3="@id/scene_navbar_3lines" w:scene_4="@id/scene_navbar_3lines_sheet" />
+			<com.maxmpz.widget.base.SceneParams android:visibility="visible" w:scene="@id/scene_navbar_1line_sheet" />
+		</com.maxmpz.audioplayer.widget.Navbar>
+		<com.maxmpz.widget.base.SceneParams w:scene="@id/scene_navbar_1line_sheet" style="?Navbar_scene_navbar_1line_sheet" />
+		<com.maxmpz.widget.base.SceneParams w:scene="@id/scene_navbar_2lines" w:scene_2="@id/scene_navbar_2lines_sheet" w:scene_3="@id/scene_navbar_3lines" w:scene_4="@id/scene_navbar_3lines_sheet" style="?Navbar_scene_navbar_2lines" />
+	</com.maxmpz.widget.base.SceneFastLayout>
+	<SceneParams android:visibility="gone" w:scene="@id/scene_vis" />
+	<SceneParams android:visibility="visible" android:alpha="0.55" w:scene="@id/scene_vis_w_ui" />
+	<SceneParams android:visibility="visible" android:alpha="1.0" w:scene="@id/scene_vis_temp_ui" w:scene_2="@id/scene_playing" w:scene_3="@id/scene_eq" w:scene_4="@id/scene_lib" w:scene_5="@id/scene_search" />
+	<SceneParams android:visibility="visible" android:alpha="1.0" w:scene="@id/scene_lyrics" />
+</merge>

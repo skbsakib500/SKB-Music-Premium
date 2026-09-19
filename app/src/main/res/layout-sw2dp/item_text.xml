@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.maxmpz.widget.player.list.TextItemView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:w="http://schemas.android.com/apk/res-auto" style="?ItemText">
+	<com.maxmpz.widget.player.list.IconView android:id="@id/aa_image" style="?ItemTextAAImage" />
+	<SceneParams w:scene="@id/scene_grid" style="?ItemTextAAImage_scene_grid" />
+	<SceneParams w:scene="@id/scene_header" style="?ItemTextAAImage_scene_header" />
+	<SceneParams android:visibility="gone" w:scene="@id/scene_search_header" w:scene_2="@id/scene_top_header" />
+	<SceneParams w:scene="@id/scene_item_menu" style="?ItemTextAAImage_scene_item_menu" />
+	<SceneParams android:visibility="gone" w:scene="@id/scene_bottom_toolbar" />
+	<SceneParams w:scene="@id/scene_subheader" style="?ItemTextAAImage_scene_subheader" />
+	<com.maxmpz.audioplayer.widget.MarqueeFastTextView android:id="@id/title" android:importantForAccessibility="yes" style="?ItemTextTitle" />
+	<SceneParams w:scene="@id/scene_grid" style="?ItemTextTitle_scene_grid" />
+	<SceneParams w:scene="@id/scene_header" style="?ItemTextTitle_scene_header" />
+	<SceneParams w:scene="@id/scene_top_header" style="?ItemTextTitle_scene_top_header" />
+	<SceneParams android:visibility="gone" w:scene="@id/scene_search_header" w:scene_2="@id/scene_bottom_toolbar" />
+	<SceneParams w:scene="@id/scene_item_menu" style="?ItemTextTitle_scene_item_menu" />
+	<SceneParams w:scene="@id/scene_subheader" style="?ItemTextTitle_scene_subheader" />
+	<com.maxmpz.audioplayer.widget.MarqueeFastTextView android:id="@id/line2" style="?ItemTextLine2" />
+	<SceneParams w:scene="@id/scene_grid" style="?ItemTextLine2_scene_grid" />
+	<SceneParams w:scene="@id/scene_header" style="?ItemTextLine2_scene_header" />
+	<SceneParams w:scene="@id/scene_item_menu" style="?ItemTextLine2_scene_item_menu" />
+	<SceneParams android:visibility="gone" w:scene="@id/scene_search_header" w:scene_2="@id/scene_top_header" w:scene_3="@id/scene_bottom_toolbar" />
+	<SceneParams w:scene="@id/scene_subheader" style="?ItemTextLine2_scene_subheader" />
+	<com.maxmpz.widget.base.FastButton android:id="@id/menu" android:contentDescription="@string/menu" style="?ItemTextMenu" />
+	<SceneParams w:scene="@id/scene_item_menu" style="?ItemTextMenu_scene_menu" />
+	<SceneParams w:scene="@id/scene_grid" w:scene_2="@id/scene_subheader" w:baseScene="defaultScene" />
+	<SceneParams w:scene="@id/scene_search_header" style="?ItemTextMenu_scene_search_header" />
+	<SceneParams w:scene="@id/scene_header" style="?ItemTextMenu_scene_header" />
+	<SceneParams w:scene="@id/scene_top_header" style="?ItemTextMenu_scene_top_header" />
+	<SceneParams w:scene="@id/scene_bottom_toolbar" style="?ItemTextMenu_scene_bottom_toolbar" />
+	<com.maxmpz.widget.base.LoadableBehavior android:id="@id/behavior_queue_counter" android:layout="@layout/merge_item_queue_counter" />
+	<com.maxmpz.widget.base.LoadableBehavior android:id="@id/behavior_subheader" android:layout="@layout/merge_item_text_subheader" w:loadForScene="@id/scene_subheader" />
+	<com.maxmpz.widget.base.LoadableBehavior android:id="@id/behavior_header" android:layout="@layout/merge_item_text_header" w:loadForScene="@id/scene_header" w:loadForScene_2="@id/scene_search_header" w:loadForScene_3="@id/scene_top_header" w:loadForScene_4="@id/scene_bottom_toolbar" />
+	<com.maxmpz.widget.base.LoadableBehavior android:id="@id/behavior_menu" android:layout="@layout/merge_item_text_popup_menu" />
+</com.maxmpz.widget.player.list.TextItemView>

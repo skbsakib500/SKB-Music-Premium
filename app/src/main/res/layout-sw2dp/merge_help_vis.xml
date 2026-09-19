@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.maxmpz.widget.player.HelpLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:w="http://schemas.android.com/apk/res-auto" android:id="@id/help_vis" w:enableStateAnim="true" style="@style/TopHelpLayout">
+	<com.maxmpz.widget.player.Help android:id="@id/help_main_bubble" w:help_anchor="@id/aa_bounds" w:help_position="bottom" w:help_inside="true" w:showArrow="false" w:html="@string/pref_summary_vis_shown_when_music_playing" style="@style/TopHelpMain" />
+	<StateAnimParams w:stateAnim="@id/anim_help_visible" style="@style/TopHelp_anim_help_visible" />
+	<TextView android:text="@string/visualization" style="@style/TopHelpTitle" />
+	<StateAnimParams w:stateAnim="@id/anim_help_visible" style="@style/TopHelp_anim_help_visible" />
+	<include android:layout="@layout/merge_help_buttons" />
+	<com.maxmpz.widget.player.Help w:layout_maxWidth="150.0dip" w:help_anchor="@id/vis_panel_frame" w:help_position="bottom" w:help_oneAxis="true" w:showArrow="preferLeft" w:html="@string/h_vis_swipe" style="@style/TopHelpSmaller" />
+	<StateAnimParams w:stateAnim="@id/anim_help_visible" style="@style/TopHelp_anim_help_visible" />
+	<com.maxmpz.widget.player.Help android:id="@id/h_vis_advance_mode" android:text="@string/h_vis_advance_mode" w:layout_maxWidth="150.0dip" w:help_anchor="@id/state_player_milk_advance" w:help_position="bottom" w:showArrow="true" style="@style/TopHelpSmaller" />
+	<StateAnimParams w:stateAnim="@id/anim_help_visible" style="@style/TopHelp_anim_help_visible" />
+	<com.maxmpz.widget.player.Help android:text="@string/visualization" w:help_anchor="@id/vis_button_layout" w:help_position="top" w:line2="@string/long_press_for_menu" style="@style/TopHelpSmaller" />
+	<StateAnimParams w:stateAnim="@id/anim_help_visible" style="@style/TopHelp_anim_help_visible" />
+</com.maxmpz.widget.player.HelpLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:w="http://schemas.android.com/apk/res-auto">
+	<com.maxmpz.widget.base.BusActionButton android:id="@id/settings_button" w:busId="@id/bus_app_cmd" w:msgId="@id/cmd_app_open_settings" w:string="aa" style="?DialogSettingsGearIcon" />
+	<ProgressBar android:id="@id/progress" android:visibility="invisible" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginTop="23.0dip" android:layout_marginRight="4.0dip" android:indeterminate="true" w:layout_attachRight="@id/settings_button" />
+	<com.maxmpz.widget.base.FastLayout style="?DialogContentNoPadding">
+		<CheckBox android:textSize="12.0sp" android:id="@id/checkbox" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="68.0dip" android:text="@string/pref_aa_download_hd" w:layout_widthPercent="100.0%" w:layout_attachLeft="parent" w:layout_consumeSpace="vertical" />
+		<CheckBox android:textSize="12.0sp" android:id="@id/use_for" android:visibility="gone" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="68.0dip" w:layout_widthPercent="100.0%" w:layout_attachLeft="parent" w:layout_consumeSpace="vertical" />
+		<TextView android:id="@id/message" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="8.0dip" w:layout_consumeSpace="vertical" style="?Hint" />
+		<com.maxmpz.widget.list.PowerList android:id="@id/list" android:scrollbars="vertical" android:clipChildren="false" android:layout_width="fill_parent" android:nestedScrollingEnabled="true" w:layout_attachTop="parent" w:layout_attachBottom="parent" w:layout_consumeSpace="vertical" />
+	</com.maxmpz.widget.base.FastLayout>
+</merge>

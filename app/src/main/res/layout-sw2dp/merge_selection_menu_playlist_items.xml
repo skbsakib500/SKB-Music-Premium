@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:w="http://schemas.android.com/apk/res-auto">
+	<include android:layout="@layout/merge_selection_menu_list_items_w_aa" />
+	<com.maxmpz.widget.base.BusStateEnabledActionButton android:text="@string/rename" android:drawable="?rename_24dp" w:msgId="@id/cmd_list_rename_dialog" w:stateId="@id/state_list_selection_count" w:enableByState="matchInteger" w:stateMatchArg="1" style="?SelectionListContextButton" />
+</merge>

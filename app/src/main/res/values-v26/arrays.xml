@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string-array name="pref_widget_font_families_extra"><item>@string/skin_alt_font</item><item>@string/bold</item></string-array>
+</resources>

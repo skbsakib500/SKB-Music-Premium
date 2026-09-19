@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+	<item>
+		<shape android:shape="oval">
+			<solid android:color="#ff000000" />
+		</shape>
+	</item>
+	<item android:left="9.0dip" android:top="9.0dip" android:right="9.0dip" android:bottom="9.0dip">
+		<bitmap android:src="@drawable/all_songs" android:tint="#ffffffff" />
+	</item>
+</layer-list>

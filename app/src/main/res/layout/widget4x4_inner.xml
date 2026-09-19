@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+	<ImageView android:id="@id/shadow" style="@style/Widget4x4Shadow" />
+	<FrameLayout android:id="@id/flipper_frame_full" style="@style/Widget4x4FilpperFrameFull" />
+	<FrameLayout android:id="@id/aa_cont_layout" style="@style/Widget4x4AaContLayout">
+		<ImageView android:id="@id/logo" style="@style/Widget4x4Logo" />
+		<FrameLayout android:id="@id/flipper_frame" style="@style/Widget4x4FilpperFrame" />
+	</FrameLayout>
+	<ImageView android:id="@id/shadow_up" style="@style/Widget4x4ShadowUp" />
+	<ImageButton android:id="@id/repeat_icon" style="@style/Widget4x4RepeatIcon" />
+	<ImageButton android:id="@id/shuffle_icon" style="@style/Widget4x4ShuffleIcon" />
+	<FrameLayout android:id="@id/deck_bg_cont" style="@style/Widget4x4DeckBgCont">
+		<ImageView android:id="@id/deck_bg" style="@style/Widget4x4DeckBg" />
+	</FrameLayout>
+	<ImageView android:id="@id/shadow_down" style="@style/Widget4x4ShadowDown" />
+	<ImageView android:id="@id/controls_shadow" style="@style/Widget4x4ControlsShadow" />
+	<RelativeLayout android:id="@id/playing_now" style="@style/Widget4x4PlayingNow">
+		<LinearLayout android:id="@id/title_cont" style="@style/Widget4x4TitleCont" />
+		<LinearLayout android:id="@id/meta_aaa_cont" style="@style/Widget4x4MetaAaaCont">
+			<FrameLayout android:id="@id/counter_cont" style="@style/Widget4x4CounterCont" />
+			<FrameLayout android:id="@id/artist_and_album_cont" style="@style/Widget4x4ArtistAndAlbumCont" />
+		</LinearLayout>
+	</RelativeLayout>
+	<LinearLayout android:id="@id/controls" style="@style/Widget4x4Controls">
+		<ImageButton android:id="@id/folder_prev_button" style="@style/Widget4x4FolderPrevButton" />
+		<ImageButton android:id="@id/rw_button" style="@style/Widget4x4RwButton" />
+		<ImageButton android:id="@id/play_button" style="@style/Widget4x4PlayButton" />
+		<ImageButton android:id="@id/ff_button" style="@style/Widget4x4FfButton" />
+		<ImageButton android:id="@id/folder_next_button" style="@style/Widget4x4FolderNextButton" />
+	</LinearLayout>
+	<ImageButton android:id="@id/configure_button" android:translationZ="20.0dip" style="@style/WidgetConfigureButton" />
+</merge>

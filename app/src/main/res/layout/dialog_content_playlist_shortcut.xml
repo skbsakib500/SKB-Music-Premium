@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:w="http://schemas.android.com/apk/res-auto">
+	<com.maxmpz.widget.base.FastCheckBox android:gravity="center_vertical" android:layout_gravity="center|right|top" android:id="@id/shuffle_button" android:paddingLeft="4.0dip" android:paddingTop="4.0dip" android:paddingRight="16.0dip" android:paddingBottom="4.0dip" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="12.0dip" android:text="@string/shuffle" android:drawable="?android:listChoiceIndicatorMultiple" />
+	<SceneParams android:visibility="visible" w:scene="@id/scene_dialog_in" />
+	<SceneParams android:visibility="gone" w:scene="@id/scene_dialog_in_loading" w:scene_2="@id/scene_dialog_in_progress" w:scene_3="@id/scene_dialog_out_progress" w:scene_4="@id/scene_dialog_in_toast" w:scene_5="@id/scene_dialog_out_toast" />
+	<com.maxmpz.audioplayer.widget.PlaylistSelectShortcutListLayout android:id="@id/playlist_list_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" w:popupListStyle="@style/PopupDialogListLayoutList" w:listItemSize="50.0dip" style="?DialogContent" />
+</merge>

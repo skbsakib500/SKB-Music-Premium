@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<dimen name="widget2x2_font_size1">10.5dip</dimen>
+<dimen name="widget2x2_font_size10">24.0dip</dimen>
+<dimen name="widget2x2_font_size11">28.0dip</dimen>
+<dimen name="widget2x2_font_size2">10.0dip</dimen>
+<dimen name="widget2x2_font_size3">11.0dip</dimen>
+<dimen name="widget2x2_font_size4">12.0dip</dimen>
+<dimen name="widget2x2_font_size5">13.0dip</dimen>
+<dimen name="widget2x2_font_size6">16.0dip</dimen>
+<dimen name="widget2x2_font_size7">18.0dip</dimen>
+<dimen name="widget2x2_font_size8">20.0dip</dimen>
+<dimen name="widget2x2_font_size9">22.0dip</dimen>
+<dimen name="widget4x1_font_size1">10.5dip</dimen>
+<dimen name="widget4x1_font_size10">24.0dip</dimen>
+<dimen name="widget4x1_font_size11">28.0dip</dimen>
+<dimen name="widget4x1_font_size2">10.0dip</dimen>
+<dimen name="widget4x1_font_size3">11.0dip</dimen>
+<dimen name="widget4x1_font_size4">12.0dip</dimen>
+<dimen name="widget4x1_font_size5">13.0dip</dimen>
+<dimen name="widget4x1_font_size6">16.0dip</dimen>
+<dimen name="widget4x1_font_size7">18.0dip</dimen>
+<dimen name="widget4x1_font_size8">20.0dip</dimen>
+<dimen name="widget4x1_font_size9">22.0dip</dimen>
+<dimen name="widget4x2_font_size1">12.0dip</dimen>
+<dimen name="widget4x2_font_size10">34.0dip</dimen>
+<dimen name="widget4x2_font_size11">37.0dip</dimen>
+<dimen name="widget4x2_font_size2">13.0dip</dimen>
+<dimen name="widget4x2_font_size3">14.0dip</dimen>
+<dimen name="widget4x2_font_size4">15.0dip</dimen>
+<dimen name="widget4x2_font_size5">18.0dip</dimen>
+<dimen name="widget4x2_font_size6">21.0dip</dimen>
+<dimen name="widget4x2_font_size7">25.0dip</dimen>
+<dimen name="widget4x2_font_size8">28.0dip</dimen>
+<dimen name="widget4x2_font_size9">31.0dip</dimen>
+</resources>

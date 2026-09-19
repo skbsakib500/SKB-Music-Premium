@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.maxmpz.widget.player.HelpLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:w="http://schemas.android.com/apk/res-auto" android:id="@id/help_equ_eq" w:enableStateAnim="true" style="@style/TopHelpLayout">
+	<com.maxmpz.widget.player.Help android:id="@id/help_main_bubble" w:help_anchor="@id/eq_knobs_layout" w:help_position="top" w:help_inside="true" w:showArrow="false" w:html="@string/pref_equ_mode_desc" style="@style/TopHelpMain" />
+	<StateAnimParams w:stateAnim="@id/anim_help_visible" style="@style/TopHelp_anim_help_visible" />
+	<TextView android:text="@string/equalizer" style="@style/TopHelpTitle" />
+	<StateAnimParams w:stateAnim="@id/anim_help_visible" style="@style/TopHelp_anim_help_visible" />
+	<include android:layout="@layout/merge_help_buttons" />
+	<com.maxmpz.widget.player.Help w:help_anchor="@id/eq_knobs_layout" w:help_position="center" w:help_inside="true" w:showArrow="false" w:line1="@string/h_knobs_scroll_view" w:line2="@string/h_longpress_value" style="@style/TopHelp" />
+	<StateAnimParams w:stateAnim="@id/anim_help_visible" style="@style/TopHelp_anim_help_visible" />
+	<com.maxmpz.widget.player.Help w:help_anchor="@id/navbar" w:help_position="top" w:help_inside="true" w:html="@string/h_navbar_list" style="@style/TopHelp" />
+	<StateAnimParams w:stateAnim="@id/anim_help_visible" style="@style/TopHelp_anim_help_visible" />
+	<com.maxmpz.widget.player.Help android:text="@string/h_frs_drag_to_scroll" w:help_anchor="@id/frequency_response_scroller" w:help_position="right" style="@style/TopHelpSmaller" />
+	<StateAnimParams w:stateAnim="@id/anim_help_visible" style="@style/TopHelp_anim_help_visible" />
+</com.maxmpz.widget.player.HelpLayout>

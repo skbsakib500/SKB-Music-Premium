@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:w="http://schemas.android.com/apk/res-auto">
+	<com.maxmpz.widget.app.IntentActionButton android:targetClass=".dialogs.MusicFoldersActivity" android:id="@id/folders" android:text="@string/select_folders" android:drawable="?folders_24dp" style="?PopupMenuItem" />
+	<com.maxmpz.widget.base.BusActionButton android:id="@id/rescan" android:text="@string/pref_rescan_folders" android:drawable="?rescan" w:busId="@id/list" w:msgId="@id/cmd_list_rescan" w:arg1="0" w:string="menu click" style="?PopupMenuItem" />
+	<com.maxmpz.widget.base.BusActionButton android:id="@id/add_to_home" android:visibility="gone" android:text="@string/add_to_launcher" android:drawable="?add_to_launcher_24dp" w:busId="@id/list" w:msgId="@id/cmd_list_add_to_launcher" style="?PopupMenuItem" />
+	<com.maxmpz.widget.base.BusActionButton android:id="@id/list_options" android:text="@string/list_opts" android:drawable="?list_options" w:busId="@id/list" w:msgId="@id/cmd_list_options_dialog" style="?PopupMenuItem" />
+</merge>

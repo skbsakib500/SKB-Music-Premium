@@ -1,0 +1,1028 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<item type="dimen" name="highlight_alpha_material_colored">0.26</item>
+<dimen name="NavbarBounds_height_more_rounded">40.0dip</dimen>
+<dimen name="NavbarBounds_height_scene_navbar_2lines_more_rounded">90.0dip</dimen>
+<dimen name="NavbarExtensionMenuLine_drawableSize">24.0dip</dimen>
+<dimen name="NavbarList_marginBottom">-4.0dip</dimen>
+<dimen name="compat_button_inset_horizontal_material">4.0dip</dimen>
+<dimen name="compat_button_inset_vertical_material">6.0dip</dimen>
+<dimen name="compat_button_padding_horizontal_material">8.0dip</dimen>
+<dimen name="compat_button_padding_vertical_material">4.0dip</dimen>
+<dimen name="compat_control_corner_material">2.0dip</dimen>
+<dimen name="compat_notification_large_icon_max_height">320.0dip</dimen>
+<dimen name="compat_notification_large_icon_max_width">320.0dip</dimen>
+<dimen name="Navbar_marginB_more_rounded">4.0dip</dimen>
+<dimen name="PopupButton_scene_button_menu">64.0dip</dimen>
+<dimen name="PopupMenuItem_drawableWidth">24.0dip</dimen>
+<dimen name="TopPause_scene_playing_width">80.0dip</dimen>
+<dimen name="TopTrackElapsedDuration_marginSide">-10.0dip</dimen>
+<dimen name="TopTrackElapsed_paddingLR">8.0dip</dimen>
+<dimen name="ListSubstyleBase2_searchHeaderSize">144.0dip</dimen>
+<dimen name="EqButton_paddingLR">12.0dip</dimen>
+<dimen name="EqLinearKnob_paddingTB">2.0dip</dimen>
+<dimen name="EqParamRoundKnobPortBase_paddingBottom">38.0sp</dimen>
+<dimen name="ItemMiniplayerAAImage_size">28.0dip</dimen>
+<dimen name="ListSubstyleBase2_targetSearchHeaderSize">144.0dip</dimen>
+<dimen name="PlainSeekbar_TopWaveseekLayout_land_height">108.0dip</dimen>
+<dimen name="PlainSeekbar_marginTop">-16.0dip</dimen>
+<dimen name="Alt2_TopAABounds_marginBottom">92.0sp</dimen>
+<dimen name="NavbarSeekbar_height">32.0dip</dimen>
+<dimen name="NavbarSeekbar_marginBottom">-6.0dip</dimen>
+<dimen name="OptionLocalizedAZScroll_TopListScrollerView_marginTop">64.0dip</dimen>
+<dimen name="TopListScrollerView_marginBottom">110.0dip</dimen>
+<dimen name="TopListScrollerView_marginTop">110.0dip</dimen>
+<dimen name="ActivityTheme_AltLayout2_Alt2_ItemRatingBar_scene_aa_marginLeft">14.0dip</dimen>
+<dimen name="Alt2_TracksLabelsNoBg_Alt2_ItemRatingBar_scene_aa_marginLeft">16.0dip</dimen>
+<dimen name="NavbarSeekbar_marginTop">0.0dip</dimen>
+<dimen name="SearchItemEmptyListText_marginTop">80.0dip</dimen>
+<dimen name="EqMenuIcon_size">20.0dip</dimen>
+<dimen name="EqMenu_marginBottom">0.0dip</dimen>
+<dimen name="EqMenu_size">28.0dip</dimen>
+<dimen name="EqParamFreqLabelAndValue_marginBottom">4.0dip</dimen>
+<dimen name="EqParamLRPopupButtonLayout_marginBottom_land">8.0dip</dimen>
+<dimen name="EqParamPopupButtonLayout_height_port">28.0dip</dimen>
+<dimen name="EqParamRoundKnobBase_maxSize_port">140.0dip</dimen>
+<dimen name="EqParamTypePopupButtonLayout_marginBottom_land">16.0dip</dimen>
+<dimen name="EqRoundKnobLabel_marginTop">1.0dip</dimen>
+<dimen name="EqRoundKnobValueLabel_marginBottom">0.0dip</dimen>
+<dimen name="EqToneKnobLayout_marginOffset">0.0dip</dimen>
+<dimen name="EqTonePanel_paddingBottom">8.0dip</dimen>
+<dimen name="EqTonePanel_paddingTop">6.0dip</dimen>
+<dimen name="ItemEqPresetTitle_drawablePadding">4.0dip</dimen>
+<dimen name="ItemPopupListFrs_marginRight">8.0dip</dimen>
+<dimen name="SmallerSearchEditText_Text_size">17.0dip</dimen>
+<dimen name="TopPeqEqLayoutBase_paddingBottom">8.0dip</dimen>
+<dimen name="TopSelectionMenuContainer_height">300.0dip</dimen>
+<dimen name="AlertDialog_smallList_height">180.0dip</dimen>
+<dimen name="EqKnobsLayout_paddingBottom">0.0dip</dimen>
+<dimen name="EqTonePanel_paddingBottom_none">0.0dip</dimen>
+<dimen name="ItemTrackAAImage_scene_item_menu_marginR">2.0dip</dimen>
+<dimen name="ItemTrackAAImage_scene_item_menu_marginTBL">8.0dip</dimen>
+<dimen name="List_separatorSize">32.0dip</dimen>
+<dimen name="TopCounterLayout_marginBottom">0.0dip</dimen>
+<dimen name="EqParamRoundKnobPortBase_marginTop">6.0dip</dimen>
+<dimen name="TopHelpSmaller_AltFont_line_textSize">9.5sp</dimen>
+<dimen name="TopHelpSmaller_line_textSize">8.5sp</dimen>
+<dimen name="EqReverbPanel12_paddingLR">0.0dip</dimen>
+<dimen name="BigTopBottomSheetDialogFrame_maxHeight">500.0dip</dimen>
+<dimen name="BuyPrefBuyButton_textSize">18.0sp</dimen>
+<dimen name="PopupButtons_drawableSize24dp">21.0dip</dimen>
+<dimen name="EditableButtonContainer_marginBottom">10.0dip</dimen>
+<dimen name="EditableButtonContainer_marginTop">0.0dip</dimen>
+<dimen name="PopupButtons_drawableSize19dp">16.625dip</dimen>
+<dimen name="EqButtonsBase_smallSlotWidth">35.0dip</dimen>
+<dimen name="TopSubAAButtonsBase_smallSlotWidth">46.0dip</dimen>
+<dimen name="EqTonePanelSpacer_marginTop">0.0dip</dimen>
+<dimen name="WiderCenterDialogFrame_maxWidth">380.0dip</dimen>
+<dimen name="PlainSeekbar_TopTrackElapsedMoreButtons_marginTop">-4.0dip</dimen>
+<dimen name="WidgetOptionsFrame_marginBottom">0.0dip</dimen>
+<dimen name="WidgetOptionsFrame_marginRight">8.0dip</dimen>
+<dimen name="abc_action_bar_content_inset_material">16.0dip</dimen>
+<dimen name="abc_action_bar_content_inset_with_nav">72.0dip</dimen>
+<dimen name="abc_action_bar_default_height_material">56.0dip</dimen>
+<dimen name="abc_action_bar_default_padding_end_material">0.0dip</dimen>
+<dimen name="abc_action_bar_default_padding_start_material">0.0dip</dimen>
+<dimen name="abc_action_bar_elevation_material">4.0dip</dimen>
+<dimen name="abc_action_bar_overflow_padding_end_material">10.0dip</dimen>
+<dimen name="abc_action_bar_overflow_padding_start_material">6.0dip</dimen>
+<dimen name="tooltip_corner_radius">2.0dip</dimen>
+<dimen name="abc_alert_dialog_button_bar_height">48.0dip</dimen>
+<dimen name="abc_alert_dialog_button_dimen">48.0dip</dimen>
+<item type="dimen" name="abc_button_inset_horizontal_material">@dimen/abc_control_inset_material</item>
+<dimen name="abc_button_inset_vertical_material">6.0dip</dimen>
+<dimen name="abc_button_padding_horizontal_material">8.0dip</dimen>
+<item type="dimen" name="abc_button_padding_vertical_material">@dimen/abc_control_padding_material</item>
+<dimen name="abc_control_corner_material">2.0dip</dimen>
+<dimen name="abc_control_inset_material">4.0dip</dimen>
+<dimen name="abc_control_padding_material">4.0dip</dimen>
+<dimen name="EqButton_maxWidth">70.0dip</dimen>
+<dimen name="EqButton_marginSide">4.0dip</dimen>
+<dimen name="abc_dialog_corner_radius_material">2.0dip</dimen>
+<item type="dimen" name="abc_dialog_fixed_height_major">79.99999%</item>
+<dimen name="preamp_knob_width">60.0dip</dimen>
+<dimen name="eq_frs_height">30.0dip</dimen>
+<dimen name="linear_knob_text_size">12.0sp</dimen>
+<item type="dimen" name="abc_dialog_fixed_height_minor">100.0%</item>
+<dimen name="abc_dialog_fixed_width_major">320.0dip</dimen>
+<dimen name="EqKnobValueText_size">9.5sp</dimen>
+<dimen name="EqKnobLabelText_size">11.0dip</dimen>
+<dimen name="abc_dialog_fixed_width_minor">320.0dip</dimen>
+<item type="dimen" name="abc_dialog_min_width_major">65.0%</item>
+<dimen name="EqLinearKnob_thumbWidth">24.0dip</dimen>
+<dimen name="EqLinearKnob_thumbHeight">48.0dip</dimen>
+<dimen name="knob_thumb_indicator_top_bottom">23.0dip</dimen>
+<dimen name="knob_thumb_indicator_left_right">7.5dip</dimen>
+<dimen name="knob_thumb_radius">16.0dip</dimen>
+<dimen name="EqButton_width">48.0dip</dimen>
+<dimen name="EqButton_height">28.0dip</dimen>
+<dimen name="EqButton_textSize">11.0dip</dimen>
+<dimen name="RoundKnobLabelLeftTop_marginRight">4.0dip</dimen>
+<dimen name="RoundKnobLabelLeftTop_marginTop">8.0dip</dimen>
+<dimen name="RoundKnobLabelLeftTop_minWidth">72.0dip</dimen>
+<item type="dimen" name="abc_dialog_min_width_minor">95.00001%</item>
+<dimen name="EqEquPresetButtonLayout_width">120.0dip</dimen>
+<dimen name="abc_dialog_padding_material">24.0dip</dimen>
+<dimen name="abc_dialog_padding_top_material">18.0dip</dimen>
+<dimen name="PopupLayoutList_height">340.0dip</dimen>
+<dimen name="ItemPopupMenu_scene_item_menu_maxHeight">410.0dip</dimen>
+<dimen name="TopSubAAButtons_marginTop">0.0dip</dimen>
+<dimen name="EqRoundKnobLabel_maxWidth">120.0dip</dimen>
+<dimen name="TopWaveseekLayout_paddingTop">16.0dip</dimen>
+<dimen name="TopPlay_maxSize">64.0dip</dimen>
+<dimen name="TopSmallButton_size">36.0dip</dimen>
+<dimen name="TopMediumButton_size">46.0dip</dimen>
+<dimen name="TopPlayPauseBehind_size">40.0dip</dimen>
+<dimen name="HeadText_size">17.0sp</dimen>
+<dimen name="SubheadText_size">12.0sp</dimen>
+<dimen name="Text_size">14.0sp</dimen>
+<dimen name="Hint_size">11.0sp</dimen>
+<item type="dimen" name="scale_title_scene_grid">0.675</item>
+<item type="dimen" name="scale_line2_scene_grid">0.625</item>
+<dimen name="TopBaseButtonLayout_width">58.0dip</dimen>
+<dimen name="TopBaseButtonLayout_height">30.0dip</dimen>
+<dimen name="PopupButtons_paddingLeft">15.0dip</dimen>
+<dimen name="VisPanelFrame_scene_vispanel_expanded_height">352.0dip</dimen>
+<dimen name="TopWaveseek_maxHeight">128.0dip</dimen>
+<dimen name="TopTrackElapsedMoreButtons_marginBottom">-8.0dip</dimen>
+<dimen name="TopMetaInfoLabel_textSize">8.0dip</dimen>
+<dimen name="TopMetaInfoLabel_drawableSize">10.0dip</dimen>
+<dimen name="TopMetaInfoLabel_paddingTopBottom">2.0dip</dimen>
+<dimen name="PopupButtons_drawableSize">28.0dip</dimen>
+<dimen name="init_panel_width">280.0dip</dimen>
+<dimen name="Navbar_height">40.0dip</dimen>
+<dimen name="NavBarButton_drawableSize">28.0dip</dimen>
+<dimen name="TopPauseMoreButtons_maxSize_scene_playing">56.0dip</dimen>
+<dimen name="TopMetaInfoLayout_marginBottom">4.0dip</dimen>
+<dimen name="ItemLike_drawableSize">20.0dip</dimen>
+<dimen name="ListMenu_drawableSize">20.0dip</dimen>
+<item type="dimen" name="WRAP_CONTENT">-2</item>
+<dimen name="TopBottomSheetDialogFrame_maxHeight">440.0dip</dimen>
+<dimen name="CenterDialogFrame_maxHeight">540.0dip</dimen>
+<dimen name="status_button_margin">-4.0dip</dimen>
+<dimen name="status_content_marginTop">8.0dip</dimen>
+<dimen name="status_icon_margin">0.0dip</dimen>
+<dimen name="status_big_line1_marginBottom">2.0dip</dimen>
+<dimen name="LargerTopBottomSheetDialogFrame_maxHeight">600.0dip</dimen>
+<dimen name="DialogFrame_maxWidth">680.0dip</dimen>
+<dimen name="abc_dropdownitem_icon_width">32.0dip</dimen>
+<dimen name="abc_dropdownitem_text_padding_left">8.0dip</dimen>
+<dimen name="abc_edit_text_inset_bottom_material">7.0dip</dimen>
+<dimen name="abc_edit_text_inset_horizontal_material">4.0dip</dimen>
+<dimen name="abc_edit_text_inset_top_material">10.0dip</dimen>
+<dimen name="abc_floating_window_z">16.0dip</dimen>
+<dimen name="abc_list_item_height_large_material">80.0dip</dimen>
+<dimen name="abc_list_item_height_material">64.0dip</dimen>
+<dimen name="abc_list_item_height_small_material">48.0dip</dimen>
+<item type="dimen" name="abc_list_item_padding_horizontal_material">@dimen/abc_action_bar_content_inset_material</item>
+<dimen name="TopHelpSmaller_textSize">9.0sp</dimen>
+<dimen name="TopHelpSmaller_paddingLR">10.0dip</dimen>
+<dimen name="TopHelpSmaller_paddingTB">4.0dip</dimen>
+<dimen name="TopHelpSmaller_marginTB">8.0dip</dimen>
+<dimen name="SmallerPopupButton_marginLeft">-8.0dip</dimen>
+<dimen name="EqLinearKnob_paddingLR">4.0dip</dimen>
+<dimen name="abc_panel_menu_list_width">296.0dip</dimen>
+<dimen name="abc_progress_bar_height_material">4.0dip</dimen>
+<dimen name="EqPresetButtonLayout_width">120.0dip</dimen>
+<dimen name="Alt_TopAABounds_marginBottom">50.0dip</dimen>
+<dimen name="Alt_TopSubAAButtons_marginTop">4.0dip</dimen>
+<dimen name="Alt_TopWaveseek_paddingTB">4.0dip</dimen>
+<dimen name="SmallerPopupButtons_paddingLeft">16.5dip</dimen>
+<dimen name="SmallerPopupButtons_drawableSize">24.0dip</dimen>
+<dimen name="TopActionModeBar_marginTop">0.0dip</dimen>
+<item type="dimen" name="Alt_ItemTrackTitle_scene_aa_scale">0.85</item>
+<dimen name="Alt_TopPlay_maxSize">64.0dip</dimen>
+<dimen name="Alt_TopPauseMoreButtons_maxSize_scene_playing">56.0dip</dimen>
+<dimen name="Alt_TopSmallButton_size">36.0dip</dimen>
+<dimen name="Alt_TopMediumButton_size">46.0dip</dimen>
+<dimen name="PlainSeekbar_buttons_offset">30.0dip</dimen>
+<dimen name="Alt_PlainSeekbar_buttons_offset">30.0dip</dimen>
+<dimen name="PlainSeekbar_marginBottom">0.0dip</dimen>
+<dimen name="Alt_PlainSeekbar_marginBottom">0.0dip</dimen>
+<dimen name="abc_select_dialog_padding_start_material">20.0dip</dimen>
+<dimen name="abc_star_big">48.0dip</dimen>
+<dimen name="abc_star_medium">36.0dip</dimen>
+<dimen name="knob_thumb_radius_less_rounded">9.0dip</dimen>
+<dimen name="abc_star_small">16.0dip</dimen>
+<dimen name="abc_switch_padding">0.0px</dimen>
+<dimen name="corners_miniplayer_aa">8.0dip</dimen>
+<dimen name="abc_text_size_menu_header_material">14.0sp</dimen>
+<dimen name="ambilwarna_hueWidth">36.0dip</dimen>
+<dimen name="ambilwarna_spacer">16.0dip</dimen>
+<dimen name="track_children_scene_aa_margin">18.0dip</dimen>
+<dimen name="cast_intro_overlay_focus_radius">35.0dip</dimen>
+<dimen name="peq_export_import_dialog_height">220.0dip</dimen>
+<dimen name="corners_navbar">22.0dip</dimen>
+<dimen name="cast_notification_image_size">64.0dip</dimen>
+<dimen name="EqRoundKnobValueLabel_marginTop">1.0dip</dimen>
+<dimen name="RoundKnob_arcWidth">3.0dip</dimen>
+<dimen name="RoundKnob_arcOffset">3.0dip</dimen>
+<dimen name="EqEquButton_maxWidth">75.0dip</dimen>
+<dimen name="SmallerCenterDialogFrame_maxHeight">320.0dip</dimen>
+<dimen name="EqToneRoundKnobLabel_maxWidth">50.0dip</dimen>
+<dimen name="EqKnob_spacing">2.0dip</dimen>
+<dimen name="EqReverbPanel3_paddingTop">8.0dip</dimen>
+<dimen name="EqToneRoundKnobLayout_maxSize">200.0dip</dimen>
+<dimen name="EqRoundKnobLayout_maxSize">120.0dip</dimen>
+<dimen name="EqLargerRoundKnobLayout_maxSize">130.0dip</dimen>
+<dimen name="EqSmallRoundKnob_maxSize">80.0dip</dimen>
+<dimen name="EqToneRoundKnob_maxSize">140.0dip</dimen>
+<dimen name="medium3_AltFont_textSize">14.0sp</dimen>
+<dimen name="TopToastContainer_height">200.0dip</dimen>
+<dimen name="ItemPopupMenu_larger_scene_item_menu_width">320.0dip</dimen>
+<dimen name="TopHelpMarginTB">16.0dip</dimen>
+<dimen name="Alt_TopListSubstyle_aaMarginBottom">222.0dip</dimen>
+<dimen name="TopBottomSheetDialogFrame_vertical_buttons_maxHeight">500.0dip</dimen>
+<dimen name="CenterDialogFrame_maxWidth">380.0dip</dimen>
+<dimen name="textAppearanceButton_AltFont_size">15.25sp</dimen>
+<dimen name="HeadText_AltFont_size">16.199982sp</dimen>
+<dimen name="TopTrackElapsedDuration_Text_AltFont_size">12.599976sp</dimen>
+<dimen name="ItemTrackCatImage_Text_AltFont_size">8.099976sp</dimen>
+<dimen name="small1_AltFont_textSize">9.0sp</dimen>
+<dimen name="small2_AltFont_textSize">10.0sp</dimen>
+<dimen name="small3_AltFont_textSize">10.5sp</dimen>
+<dimen name="small4_AltFont_textSize">10.799988sp</dimen>
+<dimen name="moderate0_AltFont_textSize">11.5sp</dimen>
+<dimen name="moderate1_AltFont_textSize">11.699982sp</dimen>
+<dimen name="moderate2_AltFont_textSize">12.0sp</dimen>
+<dimen name="moderate3_AltFont_textSize">12.599976sp</dimen>
+<dimen name="medium1_AltFont_textSize">13.0sp</dimen>
+<dimen name="medium2_AltFont_textSize">13.5sp</dimen>
+<dimen name="medium4_AltFont_textSize">14.399994sp</dimen>
+<dimen name="large0_AltFont_textSize">15.0sp</dimen>
+<dimen name="large1_AltFont_textSize">15.299988sp</dimen>
+<dimen name="large2_AltFont_textSize">16.199982sp</dimen>
+<dimen name="large3_AltFont_textSize">17.0sp</dimen>
+<dimen name="large4_AltFont_textSize">18.0sp</dimen>
+<dimen name="TopMetaInfoLabel_AltFont_textSize">9.0dip</dimen>
+<dimen name="TopHelpSmaller_AltFont_textSize">10.799988sp</dimen>
+<dimen name="ItemPopupMenu_scene_item_menu_width">300.0dip</dimen>
+<dimen name="ItemTrackAAImage_scene_item_menu_size">88.0dip</dimen>
+<dimen name="ListSubstyleBase2_aaMarginBottom">200.0dip</dimen>
+<dimen name="TopPause_scene_playing_height">25.0dip</dimen>
+<dimen name="TopTrackElapsedDuration_height">25.0dip</dimen>
+<item type="dimen" name="TopTrackElapsedDurationMoreButtons_scale">0.8</item>
+<dimen name="TopMetaInfo_scene_item_menu_maxWidth">380.0dip</dimen>
+<dimen name="Alt_ListSubstyle_Base_gridItem1LineExtraSpace">26.0dip</dimen>
+<dimen name="Alt_ListSubstyle_Base_gridZoomedItem1LineExtraSpace">36.0dip</dimen>
+<dimen name="Alt_ListSubstyle_Base_gridItemExtraSpace">46.0dip</dimen>
+<dimen name="Alt_ListSubstyle_Base_gridZoomedItemExtraSpace">54.0dip</dimen>
+<dimen name="TopToastFrame_maxWidth">300.0dip</dimen>
+<dimen name="TopToastFrame_paddingLR">16.0dip</dimen>
+<dimen name="TopToastFrame_paddingTB">10.0dip</dimen>
+<dimen name="TopToastTile_marginLeft">44.0dip</dimen>
+<dimen name="LargerText_size">16.0sp</dimen>
+<dimen name="TopSleepTimerButtonLayout_scene_item_menu_width">340.0dip</dimen>
+<dimen name="PopupButtonLayoutDialogButton_marginTop">0.0dip</dimen>
+<dimen name="dialog_info_separator_margin">5.0dip</dimen>
+<dimen name="Navbar_normal_marginB">4.0dip</dimen>
+<dimen name="dialog_info_separator_padding">10.0dip</dimen>
+<dimen name="ItemTrackNum_width">28.0sp</dimen>
+<dimen name="EqPresetButtonLayoutBase_listItemSize">64.0dip</dimen>
+<dimen name="EqInfoLabel_maxWidth">300.0dip</dimen>
+<dimen name="EqInfoBase_marginTB">1.0dip</dimen>
+<dimen name="EqRoundKnob_maxSize">140.0dip</dimen>
+<dimen name="EqLargerRoundKnob_maxSize">150.0dip</dimen>
+<dimen name="DialogButtonStyle_maxWidth">148.0dip</dimen>
+<dimen name="TopUpperToastFrame_maxWidth">9999.0dip</dimen>
+<dimen name="VisPanelFrame_height">48.0dip</dimen>
+<dimen name="ItemHeaderSelectButton_maxWidth">64.0dip</dimen>
+<dimen name="TopPeqEqLayoutBase_scenes_vis_marginTop">56.0dip</dimen>
+<dimen name="EqParamPlaceholder2_height_port">68.0dip</dimen>
+<dimen name="EqParamGainLinearKnob_layout_marginLeft">14.0dip</dimen>
+<dimen name="EqParamTypePopupButtonLayout_marginBottom_port">4.0dip</dimen>
+<dimen name="searchHistoryItemSize">40.0sp</dimen>
+<dimen name="default_circle_indicator_radius">3.0dip</dimen>
+<dimen name="default_circle_indicator_stroke_width">0.0dip</dimen>
+<item type="dimen" name="dir_tree_item_checkbox_width">@dimen/WRAP_CONTENT</item>
+<dimen name="dir_tree_item_paddingLeft">24.0dip</dimen>
+<item type="dimen" name="hint_alpha_material_dark">0.5</item>
+<item type="dimen" name="hint_alpha_material_light">0.38</item>
+<item type="dimen" name="hint_pressed_alpha_material_dark">0.7</item>
+<item type="dimen" name="hint_pressed_alpha_material_light">0.54</item>
+<dimen name="mr_cast_meta_subtitle_text_size">13.0sp</dimen>
+<dimen name="mr_controller_volume_group_list_item_icon_size">24.0dip</dimen>
+<dimen name="mr_dynamic_dialog_header_text_size">11.0sp</dimen>
+<dimen name="mr_dynamic_dialog_route_text_size">12.0sp</dimen>
+<dimen name="notification_action_text_size">13.0sp</dimen>
+<dimen name="tree_item_2_line_height">56.0sp</dimen>
+<dimen name="tree_item_height">40.0sp</dimen>
+<dimen name="tree_item_indent_per_level">20.0dip</dimen>
+<dimen name="widget2x2_conf_height">264.0dip</dimen>
+<dimen name="widget2x2_conf_width">216.0dip</dimen>
+<dimen name="eq_top_margin">1.0dip</dimen>
+<dimen name="widget2x2_font_size1">6.5dip</dimen>
+<dimen name="widget2x2_font_size10">19.0dip</dimen>
+<dimen name="widget2x2_font_size11">22.0dip</dimen>
+<dimen name="widget2x2_font_size2">7.0dip</dimen>
+<dimen name="widget2x2_font_size3">8.0dip</dimen>
+<dimen name="large5_AltFont_textSize">19.0sp</dimen>
+<dimen name="widget2x2_font_size4">9.0dip</dimen>
+<dimen name="widget2x2_font_size5">10.0dip</dimen>
+<dimen name="widget2x2_font_size6">11.0dip</dimen>
+<dimen name="widget2x2_font_size7">12.0dip</dimen>
+<dimen name="widget2x2_font_size8">14.0dip</dimen>
+<dimen name="widget2x2_font_size9">16.0dip</dimen>
+<dimen name="widget4x12_aa_padding">6.0dip</dimen>
+<dimen name="widget4x1_aa_maxWidth">150.0dip</dimen>
+<dimen name="widget4x1_aa_maxWidthPlusPadding">158.0dip</dimen>
+<dimen name="widget4x1_cat_maxSize">32.0dip</dimen>
+<dimen name="widget4x1_cat_padding">0.0dip</dimen>
+<dimen name="widget4x1_conf_height">120.0dip</dimen>
+<dimen name="widget4x1_controls_margin">2.0dip</dimen>
+<dimen name="widget4x1_contros_marginTop">0.0dip</dimen>
+<dimen name="widget4x1_ff_rw_controls_maxSize">32.0dip</dimen>
+<dimen name="widget4x1_ff_rw_padding">0.0dip</dimen>
+<dimen name="widget4x1_font_size1">6.5dip</dimen>
+<dimen name="widget4x1_font_size10">19.0dip</dimen>
+<dimen name="widget4x1_font_size11">22.0dip</dimen>
+<dimen name="widget4x1_font_size2">7.0dip</dimen>
+<dimen name="widget4x1_font_size3">8.0dip</dimen>
+<dimen name="widget4x1_font_size4">9.0dip</dimen>
+<dimen name="widget4x1_font_size5">10.0dip</dimen>
+<dimen name="widget4x1_font_size6">11.0dip</dimen>
+<dimen name="widget4x1_font_size7">12.0dip</dimen>
+<dimen name="widget4x1_font_size8">14.0dip</dimen>
+<dimen name="widget4x1_font_size9">16.0dip</dimen>
+<dimen name="widget4x1_icons_padding">2.0dip</dimen>
+<dimen name="widget4x1_icons_size">24.0dip</dimen>
+<dimen name="widget4x1_logo_marginRight">0.0dip</dimen>
+<dimen name="widget4x1_minWidth">294.0dip</dimen>
+<dimen name="widget4x1_play_maxSize">36.0dip</dimen>
+<dimen name="widget4x1_play_padding">4.0dip</dimen>
+<dimen name="widget4x1_text_labels_margin">2.0dip</dimen>
+<dimen name="widget4x2_aa_size">120.0dip</dimen>
+<dimen name="widget4x2_big_button_padding">8.0dip</dimen>
+<dimen name="widget4x2_big_button_size">58.0dip</dimen>
+<dimen name="widget4x2_cat_button_size">44.0dip</dimen>
+<dimen name="widget4x2_controls_margin1">-8.0dip</dimen>
+<dimen name="widget4x2_controls_margin2">-4.0dip</dimen>
+<dimen name="widget4x2_controls_marginBottom">4.0dip</dimen>
+<dimen name="widget4x2_controls_marginTop">4.0dip</dimen>
+<dimen name="widget4x2_ff_button_size">50.0dip</dimen>
+<dimen name="widget4x2_font_size1">9.0dip</dimen>
+<dimen name="widget4x2_font_size10">31.0dip</dimen>
+<dimen name="widget4x2_font_size11">34.0dip</dimen>
+<dimen name="widget4x2_font_size2">10.0dip</dimen>
+<dimen name="widget4x2_font_size3">11.0dip</dimen>
+<dimen name="widget4x2_font_size4">12.0dip</dimen>
+<dimen name="widget4x2_font_size5">15.0dip</dimen>
+<dimen name="widget4x2_font_size6">17.0dip</dimen>
+<dimen name="widget4x2_font_size7">22.0dip</dimen>
+<dimen name="widget4x2_font_size8">25.0dip</dimen>
+<dimen name="widget4x2_font_size9">28.0dip</dimen>
+<dimen name="widget4x2_height">190.0dip</dimen>
+<dimen name="widget4x2_meta_w_bg_paddingLR">8.0dip</dimen>
+<dimen name="widget4x2_meta_w_bg_paddingTB">2.0dip</dimen>
+<dimen name="widget4x2_play_maxSize">44.0dip</dimen>
+<dimen name="widget4x4_cat_padding">0.0dip</dimen>
+<dimen name="widget4x4_conf_height">440.0dip</dimen>
+<dimen name="widget4x4_conf_width">310.0dip</dimen>
+<dimen name="widget4x4_filpper_frame_padding">8.0dip</dimen>
+<dimen name="widget4x4_minHeight">294.0dip</dimen>
+<dimen name="widget4x4_minWidth">294.0dip</dimen>
+<dimen name="widget4x4_play_padding">12.0dip</dimen>
+<dimen name="widget4x4_rw_ff_padding">0.0dip</dimen>
+<dimen name="widget_aa_shadow_elevation">5.0dip</dimen>
+<dimen name="widget_bg_shadow_elevation">5.0dip</dimen>
+<dimen name="widget_bg_shadow_elevation_plus">6.0dip</dimen>
+<dimen name="widget_cond_seekbar_height">32.0dip</dimen>
+<dimen name="widget_conf_content_marginBottom">0.0dip</dimen>
+<dimen name="widget_conf_content_marginTop">8.0dip</dimen>
+<dimen name="widget_conf_options_height">200.0dip</dimen>
+<dimen name="widget_conf_options_padding">16.0dip</dimen>
+<dimen name="widget_conf_options_spacing">4.0dip</dimen>
+<dimen name="widget_conf_options_spacingSmall">2.0dip</dimen>
+<dimen name="widget_conf_options_width">-1.0px</dimen>
+<dimen name="widget_conf_seekbar_pad">16.0dip</dimen>
+<dimen name="widget_conf_seekbar_padTB">0.0dip</dimen>
+<dimen name="widget_conf_spinner_marginTop">4.0dip</dimen>
+<dimen name="widget_play_button_shadow_elevation">2.0dip</dimen>
+<dimen name="widget_shadow_offset">4.0dip</dimen>
+<dimen name="widget_small_conf_height">200.0dip</dimen>
+<dimen name="widget_small_conf_width">-2.0px</dimen>
+<dimen name="preamp_bg_insetRight">4.0dip</dimen>
+<item type="dimen" name="dummy_ae_0">false</item>
+<item type="dimen" name="dummy_ae_1">false</item>
+<item type="dimen" name="dummy_ae_2">false</item>
+<item type="dimen" name="dummy_ae_3">false</item>
+<item type="dimen" name="dummy_ae_16">false</item>
+<item type="dimen" name="dummy_ae_1a">false</item>
+<item type="dimen" name="dummy_ae_1c">false</item>
+<item type="dimen" name="dummy_ae_1d">false</item>
+<item type="dimen" name="dummy_ae_1e">false</item>
+<item type="dimen" name="dummy_ae_21">false</item>
+<item type="dimen" name="dummy_ae_32">false</item>
+<item type="dimen" name="dummy_ae_3e">false</item>
+<item type="dimen" name="dummy_ae_3f">false</item>
+<item type="dimen" name="dummy_ae_45">false</item>
+<item type="dimen" name="dummy_ae_62">false</item>
+<item type="dimen" name="dummy_ae_65">false</item>
+<item type="dimen" name="dummy_ae_66">false</item>
+<item type="dimen" name="dummy_ae_67">false</item>
+<item type="dimen" name="dummy_ae_68">false</item>
+<item type="dimen" name="dummy_ae_69">false</item>
+<item type="dimen" name="dummy_ae_6b">false</item>
+<item type="dimen" name="dummy_ae_6c">false</item>
+<item type="dimen" name="dummy_ae_6d">false</item>
+<item type="dimen" name="dummy_ae_6e">false</item>
+<item type="dimen" name="dummy_ae_6f">false</item>
+<item type="dimen" name="dummy_ae_70">false</item>
+<item type="dimen" name="dummy_ae_71">false</item>
+<item type="dimen" name="dummy_ae_72">false</item>
+<item type="dimen" name="dummy_ae_73">false</item>
+<item type="dimen" name="dummy_ae_7a">false</item>
+<item type="dimen" name="dummy_ae_7b">false</item>
+<item type="dimen" name="dummy_ae_8b">false</item>
+<item type="dimen" name="dummy_ae_8c">false</item>
+<item type="dimen" name="dummy_ae_9d">false</item>
+<item type="dimen" name="dummy_ae_9e">false</item>
+<item type="dimen" name="dummy_ae_9f">false</item>
+<item type="dimen" name="dummy_ae_bb">false</item>
+<item type="dimen" name="dummy_ae_c2">false</item>
+<item type="dimen" name="dummy_ae_c3">false</item>
+<item type="dimen" name="dummy_ae_c4">false</item>
+<item type="dimen" name="dummy_ae_cf">false</item>
+<item type="dimen" name="dummy_ae_de">false</item>
+<item type="dimen" name="dummy_ae_e4">false</item>
+<item type="dimen" name="dummy_ae_e5">false</item>
+<item type="dimen" name="dummy_ae_e7">false</item>
+<item type="dimen" name="dummy_ae_ea">false</item>
+<item type="dimen" name="dummy_ae_ec">false</item>
+<item type="dimen" name="dummy_ae_ed">false</item>
+<item type="dimen" name="dummy_ae_ee">false</item>
+<item type="dimen" name="dummy_ae_ef">false</item>
+<item type="dimen" name="dummy_ae_f1">false</item>
+<item type="dimen" name="dummy_ae_f2">false</item>
+<item type="dimen" name="dummy_ae_f7">false</item>
+<item type="dimen" name="dummy_ae_fb">false</item>
+<item type="dimen" name="dummy_ae_fc">false</item>
+<item type="dimen" name="dummy_ae_fe">false</item>
+<item type="dimen" name="dummy_ae_ff">false</item>
+<item type="dimen" name="dummy_ae_100">false</item>
+<item type="dimen" name="dummy_ae_101">false</item>
+<item type="dimen" name="dummy_ae_103">false</item>
+<item type="dimen" name="dummy_ae_104">false</item>
+<item type="dimen" name="dummy_ae_105">false</item>
+<item type="dimen" name="dummy_ae_108">false</item>
+<item type="dimen" name="dummy_ae_109">false</item>
+<item type="dimen" name="dummy_ae_10a">false</item>
+<item type="dimen" name="dummy_ae_10b">false</item>
+<item type="dimen" name="dummy_ae_10c">false</item>
+<item type="dimen" name="dummy_ae_10e">false</item>
+<item type="dimen" name="dummy_ae_10f">false</item>
+<item type="dimen" name="dummy_ae_112">false</item>
+<item type="dimen" name="dummy_ae_113">false</item>
+<item type="dimen" name="dummy_ae_114">false</item>
+<item type="dimen" name="dummy_ae_115">false</item>
+<item type="dimen" name="dummy_ae_116">false</item>
+<item type="dimen" name="dummy_ae_117">false</item>
+<item type="dimen" name="dummy_ae_119">false</item>
+<item type="dimen" name="dummy_ae_11a">false</item>
+<item type="dimen" name="dummy_ae_11b">false</item>
+<item type="dimen" name="dummy_ae_11c">false</item>
+<item type="dimen" name="dummy_ae_11d">false</item>
+<item type="dimen" name="dummy_ae_11f">false</item>
+<item type="dimen" name="dummy_ae_120">false</item>
+<item type="dimen" name="dummy_ae_121">false</item>
+<item type="dimen" name="dummy_ae_122">false</item>
+<item type="dimen" name="dummy_ae_123">false</item>
+<item type="dimen" name="dummy_ae_124">false</item>
+<item type="dimen" name="dummy_ae_125">false</item>
+<item type="dimen" name="dummy_ae_126">false</item>
+<item type="dimen" name="dummy_ae_129">false</item>
+<item type="dimen" name="dummy_ae_12a">false</item>
+<item type="dimen" name="dummy_ae_12b">false</item>
+<item type="dimen" name="dummy_ae_12d">false</item>
+<item type="dimen" name="dummy_ae_12e">false</item>
+<item type="dimen" name="dummy_ae_12f">false</item>
+<item type="dimen" name="dummy_ae_130">false</item>
+<item type="dimen" name="dummy_ae_131">false</item>
+<item type="dimen" name="dummy_ae_132">false</item>
+<item type="dimen" name="dummy_ae_133">false</item>
+<item type="dimen" name="dummy_ae_134">false</item>
+<item type="dimen" name="dummy_ae_135">false</item>
+<item type="dimen" name="dummy_ae_137">false</item>
+<item type="dimen" name="dummy_ae_138">false</item>
+<item type="dimen" name="dummy_ae_139">false</item>
+<item type="dimen" name="dummy_ae_13a">false</item>
+<item type="dimen" name="dummy_ae_13b">false</item>
+<item type="dimen" name="dummy_ae_13d">false</item>
+<item type="dimen" name="dummy_ae_13e">false</item>
+<item type="dimen" name="dummy_ae_13f">false</item>
+<item type="dimen" name="dummy_ae_140">false</item>
+<item type="dimen" name="dummy_ae_141">false</item>
+<item type="dimen" name="dummy_ae_142">false</item>
+<item type="dimen" name="dummy_ae_143">false</item>
+<item type="dimen" name="dummy_ae_144">false</item>
+<item type="dimen" name="dummy_ae_145">false</item>
+<item type="dimen" name="dummy_ae_146">false</item>
+<item type="dimen" name="dummy_ae_149">false</item>
+<item type="dimen" name="dummy_ae_14a">false</item>
+<item type="dimen" name="dummy_ae_14b">false</item>
+<item type="dimen" name="dummy_ae_14c">false</item>
+<item type="dimen" name="dummy_ae_14d">false</item>
+<item type="dimen" name="dummy_ae_153">false</item>
+<item type="dimen" name="dummy_ae_154">false</item>
+<item type="dimen" name="dummy_ae_158">false</item>
+<item type="dimen" name="dummy_ae_15f">false</item>
+<item type="dimen" name="dummy_ae_160">false</item>
+<item type="dimen" name="dummy_ae_162">false</item>
+<item type="dimen" name="dummy_ae_1af">false</item>
+<item type="dimen" name="dummy_ae_1b1">false</item>
+<item type="dimen" name="dummy_ae_1b2">false</item>
+<item type="dimen" name="dummy_ae_1b4">false</item>
+<item type="dimen" name="dummy_ae_1b5">false</item>
+<item type="dimen" name="dummy_ae_1b6">false</item>
+<item type="dimen" name="dummy_ae_1b7">false</item>
+<item type="dimen" name="dummy_ae_1bb">false</item>
+<item type="dimen" name="dummy_ae_1bc">false</item>
+<item type="dimen" name="dummy_ae_1bd">false</item>
+<item type="dimen" name="dummy_ae_1c3">false</item>
+<item type="dimen" name="dummy_ae_1c4">false</item>
+<item type="dimen" name="dummy_ae_1c6">false</item>
+<item type="dimen" name="dummy_ae_1cf">false</item>
+<item type="dimen" name="dummy_ae_1d0">false</item>
+<item type="dimen" name="dummy_ae_1d2">false</item>
+<item type="dimen" name="dummy_ae_1d3">false</item>
+<item type="dimen" name="dummy_ae_1d4">false</item>
+<item type="dimen" name="dummy_ae_1d6">false</item>
+<item type="dimen" name="dummy_ae_1d7">false</item>
+<item type="dimen" name="dummy_ae_1d8">false</item>
+<item type="dimen" name="dummy_ae_1d9">false</item>
+<item type="dimen" name="dummy_ae_1da">false</item>
+<item type="dimen" name="dummy_ae_1dd">false</item>
+<item type="dimen" name="dummy_ae_1de">false</item>
+<item type="dimen" name="dummy_ae_1df">false</item>
+<item type="dimen" name="dummy_ae_1e1">false</item>
+<item type="dimen" name="dummy_ae_1e2">false</item>
+<item type="dimen" name="dummy_ae_1e3">false</item>
+<item type="dimen" name="dummy_ae_1e4">false</item>
+<item type="dimen" name="dummy_ae_1e5">false</item>
+<item type="dimen" name="dummy_ae_1e6">false</item>
+<item type="dimen" name="dummy_ae_1e7">false</item>
+<item type="dimen" name="dummy_ae_1e8">false</item>
+<item type="dimen" name="dummy_ae_1e9">false</item>
+<item type="dimen" name="dummy_ae_1ea">false</item>
+<item type="dimen" name="dummy_ae_1eb">false</item>
+<item type="dimen" name="dummy_ae_1ec">false</item>
+<item type="dimen" name="dummy_ae_1ed">false</item>
+<item type="dimen" name="dummy_ae_1ef">false</item>
+<item type="dimen" name="dummy_ae_1f0">false</item>
+<item type="dimen" name="dummy_ae_1f1">false</item>
+<item type="dimen" name="dummy_ae_1ff">false</item>
+<item type="dimen" name="dummy_ae_204">false</item>
+<item type="dimen" name="dummy_ae_210">false</item>
+<item type="dimen" name="dummy_ae_23a">false</item>
+<item type="dimen" name="dummy_ae_23f">false</item>
+<item type="dimen" name="dummy_ae_240">false</item>
+<item type="dimen" name="dummy_ae_241">false</item>
+<item type="dimen" name="dummy_ae_242">false</item>
+<item type="dimen" name="dummy_ae_243">false</item>
+<item type="dimen" name="dummy_ae_244">false</item>
+<item type="dimen" name="dummy_ae_245">false</item>
+<item type="dimen" name="dummy_ae_246">false</item>
+<item type="dimen" name="dummy_ae_247">false</item>
+<item type="dimen" name="dummy_ae_248">false</item>
+<item type="dimen" name="dummy_ae_249">false</item>
+<item type="dimen" name="dummy_ae_24e">false</item>
+<item type="dimen" name="dummy_ae_255">false</item>
+<item type="dimen" name="dummy_ae_262">false</item>
+<item type="dimen" name="dummy_ae_263">false</item>
+<item type="dimen" name="dummy_ae_264">false</item>
+<item type="dimen" name="dummy_ae_265">false</item>
+<item type="dimen" name="dummy_ae_266">false</item>
+<item type="dimen" name="dummy_ae_267">false</item>
+<item type="dimen" name="dummy_ae_268">false</item>
+<item type="dimen" name="dummy_ae_269">false</item>
+<item type="dimen" name="dummy_ae_26a">false</item>
+<item type="dimen" name="dummy_ae_26b">false</item>
+<item type="dimen" name="dummy_ae_26c">false</item>
+<item type="dimen" name="dummy_ae_26d">false</item>
+<item type="dimen" name="dummy_ae_26e">false</item>
+<item type="dimen" name="dummy_ae_26f">false</item>
+<item type="dimen" name="dummy_ae_270">false</item>
+<item type="dimen" name="dummy_ae_271">false</item>
+<item type="dimen" name="dummy_ae_272">false</item>
+<item type="dimen" name="dummy_ae_273">false</item>
+<item type="dimen" name="dummy_ae_274">false</item>
+<item type="dimen" name="dummy_ae_275">false</item>
+<item type="dimen" name="dummy_ae_276">false</item>
+<item type="dimen" name="dummy_ae_277">false</item>
+<item type="dimen" name="dummy_ae_278">false</item>
+<item type="dimen" name="dummy_ae_279">false</item>
+<item type="dimen" name="dummy_ae_27a">false</item>
+<item type="dimen" name="dummy_ae_27b">false</item>
+<item type="dimen" name="dummy_ae_27c">false</item>
+<item type="dimen" name="dummy_ae_27d">false</item>
+<item type="dimen" name="dummy_ae_27e">false</item>
+<item type="dimen" name="dummy_ae_27f">false</item>
+<item type="dimen" name="dummy_ae_280">false</item>
+<item type="dimen" name="dummy_ae_281">false</item>
+<item type="dimen" name="dummy_ae_282">false</item>
+<item type="dimen" name="dummy_ae_283">false</item>
+<item type="dimen" name="dummy_ae_284">false</item>
+<item type="dimen" name="dummy_ae_285">false</item>
+<item type="dimen" name="dummy_ae_286">false</item>
+<item type="dimen" name="dummy_ae_287">false</item>
+<item type="dimen" name="dummy_ae_288">false</item>
+<item type="dimen" name="dummy_ae_289">false</item>
+<item type="dimen" name="dummy_ae_28a">false</item>
+<item type="dimen" name="dummy_ae_28b">false</item>
+<item type="dimen" name="dummy_ae_28c">false</item>
+<item type="dimen" name="dummy_ae_28d">false</item>
+<item type="dimen" name="dummy_ae_28e">false</item>
+<item type="dimen" name="dummy_ae_28f">false</item>
+<item type="dimen" name="dummy_ae_290">false</item>
+<item type="dimen" name="dummy_ae_291">false</item>
+<item type="dimen" name="dummy_ae_292">false</item>
+<item type="dimen" name="dummy_ae_293">false</item>
+<item type="dimen" name="dummy_ae_294">false</item>
+<item type="dimen" name="dummy_ae_295">false</item>
+<item type="dimen" name="dummy_ae_296">false</item>
+<item type="dimen" name="dummy_ae_297">false</item>
+<item type="dimen" name="dummy_ae_298">false</item>
+<item type="dimen" name="dummy_ae_299">false</item>
+<item type="dimen" name="dummy_ae_29a">false</item>
+<item type="dimen" name="dummy_ae_29b">false</item>
+<item type="dimen" name="dummy_ae_29c">false</item>
+<item type="dimen" name="dummy_ae_29d">false</item>
+<item type="dimen" name="dummy_ae_29e">false</item>
+<item type="dimen" name="dummy_ae_29f">false</item>
+<item type="dimen" name="dummy_ae_2a0">false</item>
+<item type="dimen" name="dummy_ae_2a1">false</item>
+<item type="dimen" name="dummy_ae_2a2">false</item>
+<item type="dimen" name="dummy_ae_2a3">false</item>
+<item type="dimen" name="dummy_ae_2a4">false</item>
+<item type="dimen" name="dummy_ae_2a5">false</item>
+<item type="dimen" name="dummy_ae_2a6">false</item>
+<item type="dimen" name="dummy_ae_2a7">false</item>
+<item type="dimen" name="dummy_ae_2a8">false</item>
+<item type="dimen" name="dummy_ae_2a9">false</item>
+<item type="dimen" name="dummy_ae_2aa">false</item>
+<item type="dimen" name="dummy_ae_2ab">false</item>
+<item type="dimen" name="dummy_ae_2ac">false</item>
+<item type="dimen" name="dummy_ae_2ad">false</item>
+<item type="dimen" name="dummy_ae_2ae">false</item>
+<item type="dimen" name="dummy_ae_2af">false</item>
+<item type="dimen" name="dummy_ae_2b0">false</item>
+<item type="dimen" name="dummy_ae_2b1">false</item>
+<item type="dimen" name="dummy_ae_2b2">false</item>
+<item type="dimen" name="dummy_ae_2b3">false</item>
+<item type="dimen" name="dummy_ae_2b4">false</item>
+<item type="dimen" name="dummy_ae_2b5">false</item>
+<item type="dimen" name="dummy_ae_2b6">false</item>
+<item type="dimen" name="dummy_ae_2b7">false</item>
+<item type="dimen" name="dummy_ae_2b8">false</item>
+<item type="dimen" name="dummy_ae_2b9">false</item>
+<item type="dimen" name="dummy_ae_2ba">false</item>
+<item type="dimen" name="dummy_ae_2bb">false</item>
+<item type="dimen" name="dummy_ae_2bc">false</item>
+<item type="dimen" name="dummy_ae_2bd">false</item>
+<item type="dimen" name="dummy_ae_2be">false</item>
+<item type="dimen" name="dummy_ae_2bf">false</item>
+<item type="dimen" name="dummy_ae_2c0">false</item>
+<item type="dimen" name="dummy_ae_2c1">false</item>
+<item type="dimen" name="dummy_ae_2c2">false</item>
+<item type="dimen" name="dummy_ae_2c3">false</item>
+<item type="dimen" name="dummy_ae_2c4">false</item>
+<item type="dimen" name="dummy_ae_2c5">false</item>
+<item type="dimen" name="dummy_ae_2c6">false</item>
+<item type="dimen" name="dummy_ae_2c7">false</item>
+<item type="dimen" name="dummy_ae_2c8">false</item>
+<item type="dimen" name="dummy_ae_2c9">false</item>
+<item type="dimen" name="dummy_ae_2ca">false</item>
+<item type="dimen" name="dummy_ae_2cb">false</item>
+<item type="dimen" name="dummy_ae_2cc">false</item>
+<item type="dimen" name="dummy_ae_2cd">false</item>
+<item type="dimen" name="dummy_ae_2ce">false</item>
+<item type="dimen" name="dummy_ae_2cf">false</item>
+<item type="dimen" name="dummy_ae_2d0">false</item>
+<item type="dimen" name="dummy_ae_2d1">false</item>
+<item type="dimen" name="dummy_ae_2d2">false</item>
+<item type="dimen" name="dummy_ae_2d3">false</item>
+<item type="dimen" name="dummy_ae_2d4">false</item>
+<item type="dimen" name="dummy_ae_2d5">false</item>
+<item type="dimen" name="dummy_ae_2d6">false</item>
+<item type="dimen" name="dummy_ae_2d7">false</item>
+<item type="dimen" name="dummy_ae_2d8">false</item>
+<item type="dimen" name="dummy_ae_2d9">false</item>
+<item type="dimen" name="dummy_ae_2da">false</item>
+<item type="dimen" name="dummy_ae_2db">false</item>
+<item type="dimen" name="dummy_ae_2dc">false</item>
+<item type="dimen" name="dummy_ae_2dd">false</item>
+<item type="dimen" name="dummy_ae_2de">false</item>
+<item type="dimen" name="dummy_ae_2df">false</item>
+<item type="dimen" name="dummy_ae_2e0">false</item>
+<item type="dimen" name="dummy_ae_2e1">false</item>
+<item type="dimen" name="dummy_ae_2e2">false</item>
+<item type="dimen" name="dummy_ae_2e3">false</item>
+<item type="dimen" name="dummy_ae_2e4">false</item>
+<item type="dimen" name="dummy_ae_2e5">false</item>
+<item type="dimen" name="dummy_ae_2e6">false</item>
+<item type="dimen" name="dummy_ae_2e7">false</item>
+<item type="dimen" name="dummy_ae_2e8">false</item>
+<item type="dimen" name="dummy_ae_2e9">false</item>
+<item type="dimen" name="dummy_ae_2ea">false</item>
+<item type="dimen" name="dummy_ae_2eb">false</item>
+<item type="dimen" name="dummy_ae_2ec">false</item>
+<item type="dimen" name="dummy_ae_2ed">false</item>
+<item type="dimen" name="dummy_ae_2ee">false</item>
+<item type="dimen" name="dummy_ae_2ef">false</item>
+<item type="dimen" name="dummy_ae_2f0">false</item>
+<item type="dimen" name="dummy_ae_2f1">false</item>
+<item type="dimen" name="dummy_ae_2f2">false</item>
+<item type="dimen" name="dummy_ae_2f3">false</item>
+<item type="dimen" name="dummy_ae_2f4">false</item>
+<item type="dimen" name="dummy_ae_2f5">false</item>
+<item type="dimen" name="dummy_ae_2f6">false</item>
+<item type="dimen" name="dummy_ae_2f7">false</item>
+<item type="dimen" name="dummy_ae_2f8">false</item>
+<item type="dimen" name="dummy_ae_2f9">false</item>
+<item type="dimen" name="dummy_ae_2fa">false</item>
+<item type="dimen" name="dummy_ae_2fb">false</item>
+<item type="dimen" name="dummy_ae_2fc">false</item>
+<item type="dimen" name="dummy_ae_2fd">false</item>
+<item type="dimen" name="dummy_ae_2fe">false</item>
+<item type="dimen" name="dummy_ae_2ff">false</item>
+<item type="dimen" name="dummy_ae_300">false</item>
+<item type="dimen" name="dummy_ae_301">false</item>
+<item type="dimen" name="dummy_ae_302">false</item>
+<item type="dimen" name="dummy_ae_303">false</item>
+<item type="dimen" name="dummy_ae_304">false</item>
+<item type="dimen" name="dummy_ae_305">false</item>
+<item type="dimen" name="dummy_ae_306">false</item>
+<item type="dimen" name="dummy_ae_307">false</item>
+<item type="dimen" name="dummy_ae_308">false</item>
+<item type="dimen" name="dummy_ae_309">false</item>
+<item type="dimen" name="dummy_ae_30a">false</item>
+<item type="dimen" name="dummy_ae_30b">false</item>
+<item type="dimen" name="dummy_ae_30c">false</item>
+<item type="dimen" name="dummy_ae_30d">false</item>
+<item type="dimen" name="dummy_ae_30e">false</item>
+<item type="dimen" name="dummy_ae_30f">false</item>
+<item type="dimen" name="dummy_ae_310">false</item>
+<item type="dimen" name="dummy_ae_311">false</item>
+<item type="dimen" name="dummy_ae_312">false</item>
+<item type="dimen" name="dummy_ae_313">false</item>
+<item type="dimen" name="dummy_ae_314">false</item>
+<item type="dimen" name="dummy_ae_315">false</item>
+<item type="dimen" name="dummy_ae_316">false</item>
+<item type="dimen" name="dummy_ae_317">false</item>
+<item type="dimen" name="dummy_ae_318">false</item>
+<item type="dimen" name="dummy_ae_319">false</item>
+<item type="dimen" name="dummy_ae_31a">false</item>
+<item type="dimen" name="dummy_ae_31b">false</item>
+<item type="dimen" name="dummy_ae_31c">false</item>
+<item type="dimen" name="dummy_ae_31d">false</item>
+<item type="dimen" name="dummy_ae_31e">false</item>
+<item type="dimen" name="dummy_ae_31f">false</item>
+<item type="dimen" name="dummy_ae_320">false</item>
+<item type="dimen" name="dummy_ae_321">false</item>
+<item type="dimen" name="dummy_ae_322">false</item>
+<item type="dimen" name="dummy_ae_323">false</item>
+<item type="dimen" name="dummy_ae_324">false</item>
+<item type="dimen" name="dummy_ae_325">false</item>
+<item type="dimen" name="dummy_ae_326">false</item>
+<item type="dimen" name="dummy_ae_327">false</item>
+<item type="dimen" name="dummy_ae_328">false</item>
+<item type="dimen" name="dummy_ae_329">false</item>
+<item type="dimen" name="dummy_ae_32a">false</item>
+<item type="dimen" name="dummy_ae_32b">false</item>
+<item type="dimen" name="dummy_ae_32c">false</item>
+<item type="dimen" name="dummy_ae_32d">false</item>
+<item type="dimen" name="dummy_ae_32e">false</item>
+<item type="dimen" name="dummy_ae_32f">false</item>
+<item type="dimen" name="dummy_ae_330">false</item>
+<item type="dimen" name="dummy_ae_331">false</item>
+<item type="dimen" name="dummy_ae_332">false</item>
+<item type="dimen" name="dummy_ae_333">false</item>
+<item type="dimen" name="dummy_ae_334">false</item>
+<item type="dimen" name="dummy_ae_335">false</item>
+<item type="dimen" name="dummy_ae_336">false</item>
+<item type="dimen" name="dummy_ae_337">false</item>
+<item type="dimen" name="dummy_ae_338">false</item>
+<item type="dimen" name="dummy_ae_339">false</item>
+<item type="dimen" name="dummy_ae_33a">false</item>
+<item type="dimen" name="dummy_ae_33b">false</item>
+<item type="dimen" name="dummy_ae_33c">false</item>
+<item type="dimen" name="dummy_ae_33d">false</item>
+<item type="dimen" name="dummy_ae_33e">false</item>
+<item type="dimen" name="dummy_ae_33f">false</item>
+<item type="dimen" name="dummy_ae_340">false</item>
+<item type="dimen" name="dummy_ae_341">false</item>
+<item type="dimen" name="dummy_ae_342">false</item>
+<item type="dimen" name="dummy_ae_343">false</item>
+<item type="dimen" name="dummy_ae_344">false</item>
+<item type="dimen" name="dummy_ae_345">false</item>
+<item type="dimen" name="dummy_ae_346">false</item>
+<item type="dimen" name="dummy_ae_347">false</item>
+<item type="dimen" name="dummy_ae_348">false</item>
+<item type="dimen" name="dummy_ae_349">false</item>
+<item type="dimen" name="dummy_ae_34a">false</item>
+<item type="dimen" name="dummy_ae_34b">false</item>
+<item type="dimen" name="dummy_ae_34c">false</item>
+<item type="dimen" name="dummy_ae_34d">false</item>
+<item type="dimen" name="dummy_ae_34e">false</item>
+<item type="dimen" name="dummy_ae_34f">false</item>
+<item type="dimen" name="dummy_ae_350">false</item>
+<item type="dimen" name="dummy_ae_351">false</item>
+<item type="dimen" name="dummy_ae_352">false</item>
+<item type="dimen" name="dummy_ae_353">false</item>
+<item type="dimen" name="dummy_ae_354">false</item>
+<item type="dimen" name="dummy_ae_355">false</item>
+<item type="dimen" name="dummy_ae_356">false</item>
+<item type="dimen" name="dummy_ae_357">false</item>
+<item type="dimen" name="dummy_ae_358">false</item>
+<item type="dimen" name="dummy_ae_359">false</item>
+<item type="dimen" name="dummy_ae_35a">false</item>
+<item type="dimen" name="dummy_ae_35b">false</item>
+<item type="dimen" name="dummy_ae_35c">false</item>
+<item type="dimen" name="dummy_ae_35d">false</item>
+<item type="dimen" name="dummy_ae_35e">false</item>
+<item type="dimen" name="dummy_ae_35f">false</item>
+<item type="dimen" name="dummy_ae_360">false</item>
+<item type="dimen" name="dummy_ae_361">false</item>
+<item type="dimen" name="dummy_ae_362">false</item>
+<item type="dimen" name="dummy_ae_363">false</item>
+<item type="dimen" name="dummy_ae_364">false</item>
+<item type="dimen" name="dummy_ae_365">false</item>
+<item type="dimen" name="dummy_ae_366">false</item>
+<item type="dimen" name="dummy_ae_367">false</item>
+<item type="dimen" name="dummy_ae_368">false</item>
+<item type="dimen" name="dummy_ae_369">false</item>
+<item type="dimen" name="dummy_ae_36a">false</item>
+<item type="dimen" name="dummy_ae_36b">false</item>
+<item type="dimen" name="dummy_ae_36c">false</item>
+<item type="dimen" name="dummy_ae_36d">false</item>
+<item type="dimen" name="dummy_ae_36e">false</item>
+<item type="dimen" name="dummy_ae_36f">false</item>
+<item type="dimen" name="dummy_ae_370">false</item>
+<item type="dimen" name="dummy_ae_371">false</item>
+<item type="dimen" name="dummy_ae_372">false</item>
+<item type="dimen" name="dummy_ae_373">false</item>
+<item type="dimen" name="dummy_ae_374">false</item>
+<item type="dimen" name="dummy_ae_375">false</item>
+<item type="dimen" name="dummy_ae_376">false</item>
+<item type="dimen" name="dummy_ae_377">false</item>
+<item type="dimen" name="dummy_ae_378">false</item>
+<item type="dimen" name="dummy_ae_379">false</item>
+<item type="dimen" name="dummy_ae_37a">false</item>
+<item type="dimen" name="dummy_ae_37b">false</item>
+<item type="dimen" name="dummy_ae_37c">false</item>
+<item type="dimen" name="dummy_ae_37d">false</item>
+<item type="dimen" name="dummy_ae_37e">false</item>
+<item type="dimen" name="dummy_ae_37f">false</item>
+<item type="dimen" name="dummy_ae_380">false</item>
+<item type="dimen" name="dummy_ae_381">false</item>
+<item type="dimen" name="dummy_ae_382">false</item>
+<item type="dimen" name="dummy_ae_383">false</item>
+<item type="dimen" name="dummy_ae_384">false</item>
+<item type="dimen" name="dummy_ae_385">false</item>
+<item type="dimen" name="dummy_ae_386">false</item>
+<item type="dimen" name="dummy_ae_387">false</item>
+<item type="dimen" name="dummy_ae_388">false</item>
+<item type="dimen" name="dummy_ae_389">false</item>
+<item type="dimen" name="dummy_ae_38a">false</item>
+<item type="dimen" name="dummy_ae_38b">false</item>
+<item type="dimen" name="dummy_ae_38c">false</item>
+<item type="dimen" name="dummy_ae_38d">false</item>
+<item type="dimen" name="dummy_ae_38e">false</item>
+<item type="dimen" name="dummy_ae_38f">false</item>
+<item type="dimen" name="dummy_ae_390">false</item>
+<item type="dimen" name="dummy_ae_391">false</item>
+<item type="dimen" name="dummy_ae_392">false</item>
+<item type="dimen" name="dummy_ae_393">false</item>
+<item type="dimen" name="dummy_ae_394">false</item>
+<item type="dimen" name="dummy_ae_395">false</item>
+<item type="dimen" name="dummy_ae_396">false</item>
+<item type="dimen" name="dummy_ae_397">false</item>
+<item type="dimen" name="dummy_ae_398">false</item>
+<item type="dimen" name="dummy_ae_399">false</item>
+<item type="dimen" name="dummy_ae_39a">false</item>
+<item type="dimen" name="dummy_ae_39b">false</item>
+<item type="dimen" name="dummy_ae_39c">false</item>
+<item type="dimen" name="dummy_ae_39d">false</item>
+<item type="dimen" name="dummy_ae_39e">false</item>
+<item type="dimen" name="dummy_ae_39f">false</item>
+<item type="dimen" name="dummy_ae_3a0">false</item>
+<item type="dimen" name="dummy_ae_3a1">false</item>
+<item type="dimen" name="dummy_ae_3a2">false</item>
+<item type="dimen" name="dummy_ae_3a3">false</item>
+<item type="dimen" name="dummy_ae_3a4">false</item>
+<item type="dimen" name="dummy_ae_3a5">false</item>
+<item type="dimen" name="dummy_ae_3a6">false</item>
+<item type="dimen" name="dummy_ae_3a7">false</item>
+<item type="dimen" name="dummy_ae_3a8">false</item>
+<item type="dimen" name="dummy_ae_3a9">false</item>
+<item type="dimen" name="dummy_ae_3aa">false</item>
+<item type="dimen" name="dummy_ae_3ab">false</item>
+<item type="dimen" name="dummy_ae_3ac">false</item>
+<item type="dimen" name="dummy_ae_3ad">false</item>
+<item type="dimen" name="dummy_ae_3ae">false</item>
+<item type="dimen" name="dummy_ae_3af">false</item>
+<item type="dimen" name="dummy_ae_3b0">false</item>
+<item type="dimen" name="dummy_ae_3b1">false</item>
+<item type="dimen" name="dummy_ae_3b2">false</item>
+<item type="dimen" name="dummy_ae_3b3">false</item>
+<item type="dimen" name="dummy_ae_3b4">false</item>
+<item type="dimen" name="dummy_ae_3b5">false</item>
+<item type="dimen" name="dummy_ae_3b6">false</item>
+<item type="dimen" name="dummy_ae_3b7">false</item>
+<item type="dimen" name="dummy_ae_3b8">false</item>
+<item type="dimen" name="dummy_ae_3b9">false</item>
+<item type="dimen" name="dummy_ae_3ba">false</item>
+<item type="dimen" name="dummy_ae_3bb">false</item>
+<item type="dimen" name="dummy_ae_3bc">false</item>
+<item type="dimen" name="dummy_ae_3bd">false</item>
+<item type="dimen" name="dummy_ae_3be">false</item>
+<item type="dimen" name="dummy_ae_3bf">false</item>
+<item type="dimen" name="dummy_ae_3c0">false</item>
+<item type="dimen" name="dummy_ae_3c1">false</item>
+<item type="dimen" name="dummy_ae_3c2">false</item>
+<item type="dimen" name="dummy_ae_3c3">false</item>
+<item type="dimen" name="dummy_ae_3c4">false</item>
+<item type="dimen" name="dummy_ae_3c5">false</item>
+<item type="dimen" name="dummy_ae_3c6">false</item>
+<item type="dimen" name="dummy_ae_3c7">false</item>
+<item type="dimen" name="dummy_ae_3c8">false</item>
+<item type="dimen" name="dummy_ae_3c9">false</item>
+<item type="dimen" name="dummy_ae_3ca">false</item>
+<item type="dimen" name="dummy_ae_3cb">false</item>
+<item type="dimen" name="dummy_ae_3cc">false</item>
+<item type="dimen" name="dummy_ae_3cd">false</item>
+<item type="dimen" name="dummy_ae_3ce">false</item>
+<item type="dimen" name="dummy_ae_3cf">false</item>
+<item type="dimen" name="dummy_ae_3d0">false</item>
+<item type="dimen" name="dummy_ae_3d1">false</item>
+<item type="dimen" name="dummy_ae_3d2">false</item>
+<item type="dimen" name="dummy_ae_3d3">false</item>
+<item type="dimen" name="dummy_ae_3d4">false</item>
+<item type="dimen" name="dummy_ae_3d5">false</item>
+<item type="dimen" name="dummy_ae_3d6">false</item>
+<item type="dimen" name="dummy_ae_3d7">false</item>
+<item type="dimen" name="dummy_ae_3d8">false</item>
+<item type="dimen" name="dummy_ae_3d9">false</item>
+<item type="dimen" name="dummy_ae_3da">false</item>
+<item type="dimen" name="dummy_ae_3db">false</item>
+<item type="dimen" name="dummy_ae_3dc">false</item>
+<item type="dimen" name="dummy_ae_3dd">false</item>
+<item type="dimen" name="dummy_ae_3de">false</item>
+<item type="dimen" name="dummy_ae_3df">false</item>
+<item type="dimen" name="dummy_ae_3e0">false</item>
+<item type="dimen" name="dummy_ae_3e1">false</item>
+<item type="dimen" name="dummy_ae_3e2">false</item>
+<item type="dimen" name="dummy_ae_3e3">false</item>
+<item type="dimen" name="dummy_ae_3e4">false</item>
+<item type="dimen" name="dummy_ae_3e5">false</item>
+<item type="dimen" name="dummy_ae_3e6">false</item>
+<item type="dimen" name="dummy_ae_3e7">false</item>
+<item type="dimen" name="dummy_ae_3e8">false</item>
+<item type="dimen" name="dummy_ae_3e9">false</item>
+<item type="dimen" name="dummy_ae_3ea">false</item>
+<item type="dimen" name="dummy_ae_3eb">false</item>
+<item type="dimen" name="dummy_ae_3ec">false</item>
+<item type="dimen" name="dummy_ae_3ed">false</item>
+<item type="dimen" name="dummy_ae_3ee">false</item>
+<item type="dimen" name="dummy_ae_3ef">false</item>
+<item type="dimen" name="dummy_ae_3f0">false</item>
+<item type="dimen" name="dummy_ae_3f1">false</item>
+<item type="dimen" name="dummy_ae_3f2">false</item>
+<item type="dimen" name="dummy_ae_3f3">false</item>
+<item type="dimen" name="dummy_ae_3f4">false</item>
+<item type="dimen" name="dummy_ae_3f5">false</item>
+<item type="dimen" name="dummy_ae_3f6">false</item>
+<item type="dimen" name="dummy_ae_3f7">false</item>
+<item type="dimen" name="dummy_ae_3f8">false</item>
+<item type="dimen" name="dummy_ae_3f9">false</item>
+<item type="dimen" name="dummy_ae_3fa">false</item>
+<item type="dimen" name="dummy_ae_3fb">false</item>
+<item type="dimen" name="dummy_ae_3fc">false</item>
+<item type="dimen" name="dummy_ae_3fd">false</item>
+<item type="dimen" name="dummy_ae_3fe">false</item>
+<item type="dimen" name="dummy_ae_3ff">false</item>
+<item type="dimen" name="dummy_ae_400">false</item>
+<item type="dimen" name="dummy_ae_401">false</item>
+<item type="dimen" name="dummy_ae_402">false</item>
+<item type="dimen" name="dummy_ae_403">false</item>
+<item type="dimen" name="dummy_ae_404">false</item>
+<item type="dimen" name="dummy_ae_405">false</item>
+<item type="dimen" name="dummy_ae_406">false</item>
+<item type="dimen" name="dummy_ae_407">false</item>
+<item type="dimen" name="dummy_ae_408">false</item>
+<item type="dimen" name="dummy_ae_409">false</item>
+<item type="dimen" name="dummy_ae_40a">false</item>
+<item type="dimen" name="dummy_ae_40b">false</item>
+<item type="dimen" name="dummy_ae_40c">false</item>
+<item type="dimen" name="dummy_ae_40d">false</item>
+<item type="dimen" name="dummy_ae_40e">false</item>
+<item type="dimen" name="dummy_ae_40f">false</item>
+<item type="dimen" name="dummy_ae_410">false</item>
+<item type="dimen" name="dummy_ae_411">false</item>
+<item type="dimen" name="dummy_ae_412">false</item>
+<item type="dimen" name="dummy_ae_413">false</item>
+<item type="dimen" name="dummy_ae_414">false</item>
+<item type="dimen" name="dummy_ae_415">false</item>
+<item type="dimen" name="dummy_ae_416">false</item>
+<item type="dimen" name="dummy_ae_417">false</item>
+</resources>

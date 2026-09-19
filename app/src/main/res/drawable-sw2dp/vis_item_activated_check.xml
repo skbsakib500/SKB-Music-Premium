@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" android:constantSize="true" android:exitFadeDuration="@integer/selector_fade_ms">
+	<item android:state_activated="true">
+		<bitmap android:src="@drawable/check_16dp" />
+	</item>
+</selector>

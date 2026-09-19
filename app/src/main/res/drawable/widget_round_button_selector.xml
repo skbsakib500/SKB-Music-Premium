@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android" android:color="@color/color_widget_ripple">
+	<item>
+		<selector>
+			<item android:state_enabled="false">
+				<shape android:shape="oval">
+					<solid android:color="#33000000" />
+				</shape>
+			</item>
+			<item>
+				<shape android:shape="oval">
+					<solid android:color="#ff000000" />
+				</shape>
+			</item>
+		</selector>
+	</item>
+</ripple>

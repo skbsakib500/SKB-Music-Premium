@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<dimen name="PlainSeekbar_TopWaveseekLayout_land_height">132.0dip</dimen>
+<dimen name="EqMenu_size">36.0dip</dimen>
+<dimen name="EqButtonsBase_smallSlotWidth">49.0dip</dimen>
+<dimen name="WiderCenterDialogFrame_maxWidth">550.0dip</dimen>
+<dimen name="EqButton_maxWidth">96.0dip</dimen>
+<dimen name="eq_frs_height">36.0dip</dimen>
+<dimen name="EqButton_width">68.0dip</dimen>
+<dimen name="EqEquPresetButtonLayout_width">100.0dip</dimen>
+<dimen name="TopPlay_maxSize">80.0dip</dimen>
+<dimen name="TopSmallButton_size">52.0dip</dimen>
+<dimen name="TopMediumButton_size">64.0dip</dimen>
+<item type="dimen" name="scale_title_scene_grid">0.75</item>
+<item type="dimen" name="scale_line2_scene_grid">0.7</item>
+<dimen name="TopTrackElapsedMoreButtons_marginBottom">0.0dip</dimen>
+<dimen name="TopMetaInfoLabel_textSize">10.0dip</dimen>
+<dimen name="TopMetaInfoLabel_drawableSize">12.0dip</dimen>
+<dimen name="TopMetaInfoLabel_paddingTopBottom">3.0dip</dimen>
+<dimen name="TopPauseMoreButtons_maxSize_scene_playing">74.0dip</dimen>
+<dimen name="ItemLike_drawableSize">24.0dip</dimen>
+<dimen name="ListMenu_drawableSize">24.0dip</dimen>
+<dimen name="TopHelpSmaller_textSize">11.0dip</dimen>
+<dimen name="TopHelpSmaller_paddingLR">12.0dip</dimen>
+<dimen name="TopHelpSmaller_paddingTB">6.0dip</dimen>
+<dimen name="TopHelpSmaller_marginTB">12.0dip</dimen>
+<dimen name="EqPresetButtonLayout_width">102.0dip</dimen>
+<dimen name="Alt_TopPlay_maxSize">80.0dip</dimen>
+<dimen name="Alt_TopPauseMoreButtons_maxSize_scene_playing">74.0dip</dimen>
+<dimen name="Alt_TopSmallButton_size">52.0dip</dimen>
+<dimen name="Alt_TopMediumButton_size">64.0dip</dimen>
+</resources>
