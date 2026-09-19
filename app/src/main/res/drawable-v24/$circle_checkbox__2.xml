@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/circle_checked_0_unchecked_1">
-	<target android:name="check" android:animation="@drawable/$circle_checkbox__3" />
-</animated-vector>
