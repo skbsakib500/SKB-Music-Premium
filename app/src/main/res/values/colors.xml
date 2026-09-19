@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Amulet Premium Palette -->
+    <color name="amulet_bg">#FF0A0E1A</color>
+    <color name="amulet_surface">#FF121827</color>
+    <color name="amulet_surface_high">#FF1A2236</color>
+    <color name="amulet_primary">#FF10D9A0</color>
+    <color name="amulet_primary_dark">#FF0A9A72</color>
+    <color name="amulet_secondary">#FFF4C430</color>
+    <color name="amulet_tertiary">#FF9D4EDD</color>
+    <color name="amulet_text">#FFF0F4F8</color>
+    <color name="amulet_text_muted">#FF8892A6</color>
+    <color name="amulet_divider">#FF1F2A44</color>
+    <color name="amulet_error">#FFFF6B6B</color>
+
+    <color name="ic_launcher_background">#FF0A0E1A</color>
+</resources>
