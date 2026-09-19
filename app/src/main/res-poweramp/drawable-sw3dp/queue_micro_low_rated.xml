@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
-	<item android:right="12.0dip">
-		<bitmap android:gravity="center|left|top" android:src="?micro_low_rated" />
-	</item>
-	<item>
-		<bitmap android:gravity="center|right|top" android:src="?micro_queue" />
-	</item>
-</layer-list>

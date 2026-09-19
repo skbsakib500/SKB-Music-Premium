@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-<plurals name="songs_d"><item quantity="other">%d곡</item><item quantity="one">%d곡</item></plurals>
-</resources>

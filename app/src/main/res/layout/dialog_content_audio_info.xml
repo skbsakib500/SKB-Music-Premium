@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<com.maxmpz.widget.base.FastLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:w="http://schemas.android.com/apk/res-auto" android:scrollbars="none" style="?DialogContent">
-	<com.maxmpz.widget.base.NonOverlappingView android:id="@id/dsp_info_image" style="?PopupDSPInfoImage" />
-	<com.maxmpz.widget.player.InfoTextView android:id="@id/dsp_info_text" android:layout_width="fill_parent" android:layout_height="wrap_content" w:dspInfoImage="@id/dsp_info_image" w:infoTextHelper=".widget.DSPInfoHelper" style="?PopupDSPInfoText" />
-	<com.maxmpz.widget.player.DSPScoreLayout android:id="@id/dsp_info_score_layout" style="?PopupDSPInfoScoreLayout" />
-	<com.maxmpz.widget.base.ScrollingBehavior android:id="@id/behavior_scrolling" w:disallowParentScroll="true" />
-</com.maxmpz.widget.base.FastLayout>

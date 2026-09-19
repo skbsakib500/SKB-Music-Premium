@@ -23,18 +23,18 @@ object PaResources {
     /** PA settings-style আইকন */
     @Composable
     fun settingIcon(name: String, tint: Color = Color.Unspecified): Painter = when (name) {
-        "audio"     -> painterResource(R.drawable.settings_audio_colored)
-        "equalizer" -> painterResource(R.drawable.settings_equ_colored)
-        "library"   -> painterResource(R.drawable.settings_folders_library_colored)
-        "look_feel" -> painterResource(R.drawable.settings_look_feel_colored)
-        "headset"   -> painterResource(R.drawable.settings_headset_colored)
-        "lockscreen"-> painterResource(R.drawable.settings_lockscreen_colored)
-        "misc"      -> painterResource(R.drawable.settings_misc_colored)
-        "support"   -> painterResource(R.drawable.settings_support_colored)
-        "export"    -> painterResource(R.drawable.settings_export_colored)
-        "import"    -> painterResource(R.drawable.settings_import_colored)
-        "vis"       -> painterResource(R.drawable.settings_vis_colored)
-        "warn"      -> painterResource(R.drawable.settings_warn_background)
+        "audio"     -> painterResource(R.drawable.skb_ic_settings_audio_colored)
+        "equalizer" -> painterResource(R.drawable.skb_ic_settings_equ_colored)
+        "library"   -> painterResource(R.drawable.skb_ic_settings_folders_library_colored)
+        "look_feel" -> painterResource(R.drawable.skb_ic_settings_look_feel_colored)
+        "headset"   -> painterResource(R.drawable.skb_ic_settings_headset_colored)
+        "lockscreen"-> painterResource(R.drawable.skb_ic_settings_lockscreen_colored)
+        "misc"      -> painterResource(R.drawable.skb_ic_settings_misc_colored)
+        "support"   -> painterResource(R.drawable.skb_ic_settings_support_colored)
+        "export"    -> painterResource(R.drawable.skb_ic_settings_export_colored)
+        "import"    -> painterResource(R.drawable.skb_ic_settings_import_colored)
+        "vis"       -> painterResource(R.drawable.skb_ic_settings_vis_colored)
+        "warn"      -> painterResource(R.drawable.skb_ic_settings_warn_background)
         else        -> painterResource(R.drawable.v_like)
     }
 

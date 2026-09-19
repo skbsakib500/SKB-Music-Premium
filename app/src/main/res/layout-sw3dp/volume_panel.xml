@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<com.maxmpz.widget.base.SceneFastLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:w="http://schemas.android.com/apk/res-auto" android:id="@id/content" w:enableStateAnim="true" style="?VolumePanelFrame">
-	<com.maxmpz.widget.player.DSPRoundKnobLayout android:id="@id/volume_knob_layout" w:param="@id/dsp_master_volume" w:updateMsgId="@id/msg_dsp_other_changed" w:enablingParam="@id/dsp_master_volume_enabled" w:animOnAttach="true" w:rounding="100.5" w:dspParamDef="@id/dsp_master_volume" style="?VolumePanelKnobLayout" />
-</com.maxmpz.widget.base.SceneFastLayout>

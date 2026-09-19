@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:w="http://schemas.android.com/apk/res-auto" android:exitFadeDuration="@integer/selector_fade_ms">
-	<item android:drawable="@drawable/lists" w:state_toolbar_in_header="true" />
-	<item android:drawable="@drawable/lists" android:state_activated="true" />
-	<item android:state_pressed="true" android:drawable="@drawable/lists" />
-	<item android:drawable="@drawable/lists_stroke" />
-</selector>

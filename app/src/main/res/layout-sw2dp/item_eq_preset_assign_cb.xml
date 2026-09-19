@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<com.maxmpz.widget.base.FastLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:w="http://schemas.android.com/apk/res-auto" android:clickable="true" style="?EqPresetSearchAssignLayout">
-	<com.maxmpz.widget.base.FastCheckBox android:id="@id/eq_presets_assign" android:text="@string/assign_preset_to_this_device" style="?EqPresetSearchAssignCb" />
-	<com.maxmpz.widget.base.FastCheckBox android:id="@id/eq_preset_dont_suggest" android:text="@string/dont_suggest_autoeq_preset_for_this_device" style="?EqPresetSearchDontSuggestCb" />
-</com.maxmpz.widget.base.FastLayout>

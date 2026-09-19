@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:w="http://schemas.android.com/apk/res-auto">
-	<com.maxmpz.widget.base.BusActionButton android:id="@id/close_button" android:drawable="@drawable/settings_close_24dp" android:contentDescription="@string/close" w:layout_attachRightToRight="@id/help_main_bubble" w:layout_attachTopToTop="@id/help_main_bubble" w:busId="@id/bus_gui" w:msgId="@id/cmd_gui_close_help" style="@style/TopHelpButtonSmall" />
-	<StateAnimParams w:stateAnim="@id/anim_help_visible" style="@style/TopHelp_anim_help_visible" />
-</merge>

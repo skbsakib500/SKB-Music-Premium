@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:enterFadeDuration="200" android:exitFadeDuration="200">
-	<item android:state_checked="true" android:id="@id/checked" android:drawable="@drawable/circle_checked_1" />
-	<item android:id="@id/unchecked" android:drawable="@drawable/circle_unchecked_1" />
-</selector>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:z="http://schemas.android.com/apk/res-auto" xmlns:w="http://schemas.android.com/apk/res-auto" android:title="@string/pref_resampler" z:searchBreadcrumb1="@string/pref_audio_engine">
-	<com.maxmpz.audioplayer.preference.RawTextPreference android:background="@drawable/settings_quote_background" z:line1="@string/per_output_follow_sr_hint" z:line2="@string/resampling_opts_applied_hint" z:skipSearch="true" z:keepPaddings="true" />
-	<com.maxmpz.audioplayer.preference.TagListPreference android:title="@string/pref_resampler_type" android:key="resampler_type" android:defaultValue="0" z:entries="@array/pref_resampler_type_entries" />
-	<com.maxmpz.audioplayer.preference.RoundKnobPreference android:title="@string/pref_resampler_cutoff" android:key="resampler_cutoff" android:defaultValue="970" android:dialogTitle="@string/pref_resampler_cutoff" z:valueFormat="@string/f_percent" z:scale="10.0" z:max="990" z:min="800" z:label="@string/f_percent" />
-	<com.maxmpz.audioplayer.preference.NumberListPreference android:persistent="true" android:title="@string/pref_dither" android:key="dither" android:summary="%s" android:defaultValue="0" android:dialogTitle="@string/pref_dither" z:entries="@array/pref_dither_entries" z:summary2="@string/output_driver_can_override_this" />
-	<Preference android:title="@string/pref_restore_defaults" android:key="restore_defaults" />
-</PreferenceScreen>

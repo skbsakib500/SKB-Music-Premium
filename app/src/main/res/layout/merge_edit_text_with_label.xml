@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:w="http://schemas.android.com/apk/res-auto">
-	<TextView android:id="@id/label" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" w:layout_consumeSpace="vertical" />
-	<TextView android:textAppearance="?Hint" android:id="@id/hint" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:labelFor="@id/edit_text" w:layout_consumeSpace="vertical" />
-	<EditText android:textColorHint="?android:textColorTertiary" android:id="@id/edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:selectAllOnFocus="true" android:inputType="textCapSentences" w:layout_consumeSpace="vertical">
-		<requestFocus />
-	</EditText>
-	<TextView android:textAppearance="?Hint" android:id="@id/hint_below" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="4.0dip" w:layout_consumeSpace="vertical" />
-</merge>

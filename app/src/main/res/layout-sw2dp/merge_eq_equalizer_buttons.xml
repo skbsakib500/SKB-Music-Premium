@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:w="http://schemas.android.com/apk/res-auto">
-	<com.maxmpz.widget.player.DSPCheckBox android:id="@id/equ_button" android:text="@string/equ" w:param="@id/dsp_eq_enabled" w:updateMsgId="@id/msg_dsp_eq_changed" w:enablingParam="@id/dsp_enabled" w:longPressCmdId="@id/cmd_app_open_settings" w:string="?settings_target_equ" w:longPressBusId="@id/bus_app_cmd" style="?EqEquButton" />
-	<com.maxmpz.widget.player.DSPCheckBox android:id="@id/tone_button" android:text="@string/tone" w:param="@id/dsp_tone_enabled" w:updateMsgId="@id/msg_dsp_eq_changed" w:enablingParam="@id/dsp_enabled" w:longPressCmdId="@id/cmd_app_open_settings" w:string="peq_equ_tone" w:longPressBusId="@id/bus_app_cmd" style="?EqToneButton" />
-	<com.maxmpz.widget.player.LimiterDSPCheckBox android:id="@id/limiter_button" android:text="@string/limit" w:param="@id/dsp_limiter_enabled" w:updateMsgId="@id/msg_dsp_eq_changed" w:enablingParam="@id/dsp_enabled" style="?EqLimiterButton" />
-</merge>

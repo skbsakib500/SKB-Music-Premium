@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<com.maxmpz.widget.base.FastLayoutWithViewCacheOpt xmlns:android="http://schemas.android.com/apk/res/android" xmlns:w="http://schemas.android.com/apk/res-auto" style="?ItemAALEDecorLayout">
-	<com.maxmpz.widget.base.FastTextView style="?ItemAALEDecorText" />
-</com.maxmpz.widget.base.FastLayoutWithViewCacheOpt>

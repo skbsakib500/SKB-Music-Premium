@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-<style name="ActivityTheme_Black" parent="@style/Base_ActivityTheme_Black"><item name="android:navigationBarColor">#00ffffff</item><item name="statusBarBg">#33000000</item></style>
-<style name="Default_BaseDialogForcedStyle" parent="@style/BaseDialogForcedStyle"><item name="android:windowDrawsSystemBarBackgrounds">true</item><item name="android:navigationBarColor">#00ffffff</item><item name="android:enforceNavigationBarContrast">false</item></style>
-<style name="Navbar" parent="@style/Base_Navbar"><item name="layout_attachLeft">inset</item><item name="layout_attachRight">inset</item><item name="layout_attachBottom">inset</item></style>
-<style name="Navbar_scene_navbar_1line_sheet" parent="@style/Base_Navbar_scene_navbar_1line_sheet"><item name="layout_attachLeft">inset</item><item name="layout_attachRight">inset</item><item name="layout_attachBottom">inset</item></style>
-<style name="Navbar_scene_navbar_2lines" parent="@style/Base_Navbar_scene_navbar_2lines"><item name="layout_attachLeft">inset</item><item name="layout_attachRight">inset</item><item name="layout_attachBottom">inset</item></style>
-</resources>

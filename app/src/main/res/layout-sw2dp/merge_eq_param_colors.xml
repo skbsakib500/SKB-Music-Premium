@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:w="http://schemas.android.com/apk/res-auto">
-	<com.maxmpz.widget.player.ColorCircleSelector style="?EqParamColorCircleSelector" />
-	<SceneParams w:scene="@id/scene_button_menu" style="?PopupContent_scene_button_menu" />
-	<SceneParams android:visibility="gone" w:scene="@id/scene_button_menu_closed" />
-</merge>

@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<com.maxmpz.widget.base.FastLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:w="http://schemas.android.com/apk/res-auto" android:paddingBottom="8.0dip" style="@style/TagPreferenceContainer">
-	<com.maxmpz.audioplayer.preference.TagsEdit android:id="@id/tags_edit" style="@style/TagPreferenceTagEdit" />
-</com.maxmpz.widget.base.FastLayout>

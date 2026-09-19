@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<com.maxmpz.widget.player.list.AAItemView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:w="http://schemas.android.com/apk/res-auto" style="?ItemMiniplayer">
-	<com.maxmpz.widget.player.list.AAImageView android:id="@id/aa_image" style="?ItemMiniplayerAAImage" />
-	<com.maxmpz.widget.base.MarqueeFastTextView android:id="@id/title" android:importantForAccessibility="yes" style="?ItemMiniplayerTitle" />
-	<com.maxmpz.widget.base.MarqueeFastTextView android:id="@id/line2" android:importantForAccessibility="yes" style="?ItemMiniplayerLine2" />
-	<com.maxmpz.widget.player.PlayPauseButton android:id="@id/button" android:importantForAccessibility="yes" style="?ItemMiniplayerPlayButton" />
-</com.maxmpz.widget.player.list.AAItemView>

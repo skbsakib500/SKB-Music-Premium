@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:w="http://schemas.android.com/apk/res-auto" android:title="@string/pref_skin" w:searchIndexer="com.maxmpz.audioplayer.preference.SettingsHelperUiTheme$SearchIndexer" w:searchBreadcrumb1="@string/pref_look_and_feel">
-	<com.maxmpz.audioplayer.preference.BuiltinSkinsPreferenceCategory android:title="@string/pref_builtin_skins" android:key="theme_list" />
-	<com.maxmpz.audioplayer.preference.ThirdPartySkinsPreferenceCategory android:title="@string/pref_3rdparty_skins" android:key="theme_list_3rdparty" />
-	<com.maxmpz.audioplayer.preference.RawTextPreference android:gravity="center" android:summary="@string/pref_search_play_for_skins" w:skipSearch="true" />
-</PreferenceScreen>

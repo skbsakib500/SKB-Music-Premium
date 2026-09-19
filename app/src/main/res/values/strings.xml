@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- আমাদের Compose-app-only strings (skb_ prefix) -->
     <string name="skb_app_name">SKB Music</string>
     <string name="skb_tagline">Premium Offline Player</string>
-
     <string name="skb_nav_home">Home</string>
     <string name="skb_nav_library">Library</string>
     <string name="skb_nav_search">Search</string>
@@ -11,18 +9,15 @@
     <string name="skb_nav_autoeq">AutoEq</string>
     <string name="skb_nav_vis">Visualizer</string>
     <string name="skb_nav_more">More</string>
-
     <string name="skb_now_playing">Now Playing</string>
     <string name="skb_no_songs">No songs found</string>
     <string name="skb_scanning">Scanning library…</string>
     <string name="skb_play_all">Play All</string>
     <string name="skb_shuffle_all">Shuffle All</string>
     <string name="skb_search_hint">Search songs, artists, albums…</string>
-
     <string name="skb_permission_title">Audio Access Needed</string>
     <string name="skb_permission_desc">Grant access to play music.</string>
     <string name="skb_permission_grant">Grant</string>
-
     <string name="skb_theme_amulet">Amulet</string>
     <string name="skb_settings_theme">Theme</string>
     <string name="skb_settings_about">About</string>

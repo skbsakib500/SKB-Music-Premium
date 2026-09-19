@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<vector xmlns:android="http://schemas.android.com/apk/res/android" android:height="24.0dip" android:width="24.0dip" android:viewportWidth="85.0" android:viewportHeight="85.0">
-	<group android:translateX="2.0" android:translateY="2.0">
-		<path android:name="check" android:fillColor="#ff000000" android:pathData="M40.668,80.486 C54.959,80.486 68.164,72.862 75.309,60.486 C82.454,48.110 82.454,32.862 75.309,20.486 C68.164,8.110 54.959,0.486 40.668,0.486 C26.377,0.486 13.172,8.110 6.027,20.486 C-1.118,32.862 -1.118,48.110 6.027,60.486 C13.172,72.862 26.377,80.486 40.668,80.486 ZM60.972,32.036 L37.972,55.036 C36.283,56.725 33.552,56.725 31.881,55.036 L20.381,43.536 C18.692,41.847 18.692,39.116 20.381,37.445 C22.070,35.774 24.801,35.756 26.472,37.445 L34.917,45.890 L54.863,25.927 C56.552,24.238 59.283,24.238 60.954,25.927 C62.625,27.616 62.643,30.347 60.954,32.018 L60.972,32.036 Z" android:fillAlpha="0.0" />
-	</group>
-	<group android:scaleX="0.931" android:scaleY="0.931" android:translateX="4.8" android:translateY="4.8">
-		<path android:name="circle" android:fillColor="#00000000" android:pathData="M40.668,80.486 C54.959,80.486 68.164,72.862 75.309,60.486 C82.454,48.110 82.454,32.862 75.309,20.486 C68.164,8.110 54.959,0.486 40.668,0.486 C26.377,0.486 13.172,8.110 6.027,20.486 C-1.118,32.862 -1.118,48.110 6.027,60.486 C13.172,72.862 26.377,80.486 40.668,80.486 Z" android:strokeColor="#ff000000" android:strokeWidth="6.0" android:strokeAlpha="1.0" />
-	</group>
-</vector>

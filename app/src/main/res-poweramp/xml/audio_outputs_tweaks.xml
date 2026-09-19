@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:w="http://schemas.android.com/apk/res-auto" android:title="@string/pref_advanced_tweaks">
-	<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:persistent="false" android:title="@string/pref_usb_activity" android:key="usb_activity" android:summary="@string/pref_summary_usb_activity" />
-	<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:persistent="true" android:title="@string/pref_hires_force_no_speaker" android:key="force_no_speaker" android:summary="@string/pref_summary_hires_force_no_speaker" />
-	<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:persistent="true" android:title="@string/pref_use_stream3_player" android:key="use_stream3_player" android:summary="@string/pref_summary_use_stream3_player" android:defaultValue="false" />
-	<com.maxmpz.audioplayer.preference.RedirectPreference android:title="@string/pref_output_detection_log" android:key="audio_platform_log" w:target="audio_platform_log" />
-	<Preference android:title="@string/pref_restore_defaults" android:key="restore_defaults" />
-</PreferenceScreen>

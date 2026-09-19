@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:w="http://schemas.android.com/apk/res-auto">
-	<include android:layout="@layout/merge_selection_menu_list_base_items" />
-	<com.maxmpz.widget.base.BusStateEnabledActionButton android:text="@string/info" android:drawable="?info" w:msgId="@id/cmd_list_info_dialog" w:stateId="@id/state_list_one_track_selected" w:stateMsgId="@id/state_list_selection_count" style="?SelectionListContextButton" />
-	<com.maxmpz.widget.base.BusStateEnabledActionButton android:text="@string/clear_q_short" android:drawable="?clear_q_24dp" w:msgId="@id/cmd_list_clear_q" w:stateId="@id/state_list_selectable_item_count" w:enableByState="dontMatchInteger" w:stateMatchArg="0" style="?SelectionListContextButton" />
-</merge>

@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:w="http://schemas.android.com/apk/res-auto">
-	<com.maxmpz.widget.base.BusActionButton android:id="@id/button" android:contentDescription="@string/settings" w:busId="@id/bus_app_cmd" w:msgId="@id/cmd_app_open" w:string="settings/audio_output_device_opts?uniqName=com.maxmpz.audioplayer/output.cc&amp;device=chromecast" style="?DialogSettingsGearIcon" />
-	<com.maxmpz.audioplayer.widget.MediaRouteChooserListLayout android:id="@id/mediaroute_chooser_list_layout" w:popupListStyle="@style/MediaRouterPopupDialogListLayoutList" w:listItemSize="52.0sp" w:smallerListItemSize="38.0sp" style="?DialogContent" />
-</merge>

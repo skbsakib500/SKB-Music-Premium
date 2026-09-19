@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<level-list xmlns:android="http://schemas.android.com/apk/res/android">
-	<item android:drawable="@drawable/v_widget_shuffle_none" android:maxLevel="0" />
-	<item android:drawable="@drawable/v_widget_shuffle" android:maxLevel="1" />
-	<item android:drawable="@drawable/v_widget_shuffle_songs" android:maxLevel="2" />
-	<item android:drawable="@drawable/v_widget_shuffle_cats" android:maxLevel="3" />
-	<item android:drawable="@drawable/v_widget_shuffle_songs_and_cats" android:maxLevel="4" />
-</level-list>

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:w="http://schemas.android.com/apk/res-auto" android:title="@string/tone" w:ignoreTitle="true">
-	<com.maxmpz.audioplayer.preference.RawTextPreference w:smallLine1="@string/long_press_value_to_enter_manually" />
-	<com.maxmpz.audioplayer.preference.RoundKnobPreference android:persistent="false" android:key="_bassFreq" />
-	<com.maxmpz.audioplayer.preference.RoundKnobPreference android:persistent="false" android:key="_bassQ" />
-	<com.maxmpz.audioplayer.preference.RoundKnobPreference android:persistent="false" android:key="_trebleFreq" />
-	<com.maxmpz.audioplayer.preference.RoundKnobPreference android:persistent="false" android:key="_trebleQ" />
-	<Preference android:title="@string/pref_restore_defaults" android:key="restore_defaults" />
-</PreferenceScreen>

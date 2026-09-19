@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:w="http://schemas.android.com/apk/res-auto">
-	<com.maxmpz.widget.player.BusStatusText w:updateMsgId="@id/msg_player_track_changed" w:stateBusId="@id/bus_player" w:updateMsgId_2="@id/msg_pipeline_started" w:labelStateId="@id/state_player_track_short_meta" w:noUpdateInTransition="true" style="?TopCounterLayout" />
-	<SceneParams w:scene="@id/scene_vis_w_ui" style="?TopCounterLayout_scenes_playing" />
-	<SceneParams w:scene="@id/scene_lyrics" w:baseScene="defaultScene" />
-	<SceneParams w:scene="@id/scene_playing" w:scene_2="@id/scene_vis" w:scene_3="@id/scene_vis_temp_ui" style="?TopCounterLayout_scenes_playing" />
-	<StateAnimParams w:stateAnim="@id/anim_seeking" style="?TopCounterLayout_anim_seeking" />
-	<SceneParams w:scene="@id/scene_eq" w:scene_2="@id/scene_search" w:scene_3="@id/scene_vis" w:scene_4="@id/scene_lib" style="?TopCounterLayout_scenes_invisible" />
-</merge>

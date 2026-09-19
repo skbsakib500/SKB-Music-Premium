@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<com.maxmpz.widget.base.FastLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:w="http://schemas.android.com/apk/res-auto" android:scrollbarStyle="insideOverlay" android:scrollbars="vertical" style="?DialogContentNoPadding">
-	<com.maxmpz.widget.base.FastLayout android:id="@id/container" android:paddingLeft="?dialogContentPaddingLR" android:paddingRight="?dialogContentPaddingLR" android:paddingBottom="?dialogContentPaddingTop" android:layout_width="fill_parent" android:layout_height="wrap_content" w:layout_unlimitedMeasure="true">
-		<com.maxmpz.widget.base.AutoCompleteTextView android:textColorHint="?android:textColorTertiary" android:id="@id/edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:singleLine="true" android:selectAllOnFocus="true" android:popupBackground="@drawable/rounded_small" android:inputType="textCapSentences" w:layout_consumeSpace="vertical" />
-		<include android:layout="@layout/merge_eq_preset_assign" />
-	</com.maxmpz.widget.base.FastLayout>
-	<com.maxmpz.widget.base.ScrollingBehavior w:disallowParentScroll="true" />
-</com.maxmpz.widget.base.FastLayout>

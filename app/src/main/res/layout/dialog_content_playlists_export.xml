@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<com.maxmpz.widget.base.FastLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:w="http://schemas.android.com/apk/res-auto" android:scrollbars="vertical" style="?DialogContent">
-	<com.maxmpz.widget.base.FastLayout android:id="@id/group_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" w:layout_unlimitedMeasure="true">
-		<TextView android:id="@id/text" android:layout_width="fill_parent" android:layout_height="wrap_content" w:layout_consumeSpace="vertical" style="?Text" />
-		<CheckBox android:id="@id/checkbox" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/also_export_filebased_playlists" w:layout_consumeSpace="vertical" />
-	</com.maxmpz.widget.base.FastLayout>
-	<com.maxmpz.widget.base.ScrollingBehavior w:disallowParentScroll="true" />
-</com.maxmpz.widget.base.FastLayout>

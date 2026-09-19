@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<com.maxmpz.widget.base.FastLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:w="http://schemas.android.com/apk/res-auto" android:id="@id/main_layout" style="?DialogContent">
-	<ImageView android:id="@id/icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:src="?settings_thumb_up" android:scaleType="center" w:layout_consumeSpace="horizontal" />
-	<TextView android:layout_gravity="center_vertical" android:id="@id/icon_line" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginBottom="6.0dip" w:layout_attachLeft="@id/icon" w:layout_gravityTarget="@id/icon" w:layout_consumeSpace="vertical" style="?Text" />
-	<TextView android:id="@id/line1" android:layout_width="wrap_content" android:layout_height="wrap_content" w:layout_attachLeft="@id/icon" w:layout_consumeSpace="vertical" style="?Text" />
-	<TextView android:id="@id/message" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?Hint" />
-</com.maxmpz.widget.base.FastLayout>

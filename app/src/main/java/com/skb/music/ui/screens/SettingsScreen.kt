@@ -42,7 +42,7 @@ fun SettingsScreen() {
             GlowCard(Modifier.fillMaxWidth()) {
                 Row(verticalAlignment = Alignment.CenterVertically) {
                     Icon(
-                        painter = painterResource(R.drawable.settings_look_feel_colored),
+                        painter = painterResource(R.drawable.skb_ic_settings_look_feel_colored),
                         contentDescription = null,
                         tint = Color.Unspecified,
                         modifier = Modifier.size(28.dp)
@@ -59,19 +59,19 @@ fun SettingsScreen() {
             }
 
             GlowCard(Modifier.fillMaxWidth()) {
-                SettingRow(R.drawable.settings_audio_colored, "Audio", "Output, DVC")
+                SettingRow(R.drawable.skb_ic_settings_audio_colored, "Audio", "Output, DVC")
                 HorizontalDivider(Modifier.padding(vertical = 12.dp),
                     color = AmuletEmerald.copy(alpha = 0.15f))
-                SettingRow(R.drawable.settings_equ_colored, "Equalizer", "Bands, presets")
+                SettingRow(R.drawable.skb_ic_settings_equ_colored, "Equalizer", "Bands, presets")
                 HorizontalDivider(Modifier.padding(vertical = 12.dp),
                     color = AmuletEmerald.copy(alpha = 0.15f))
-                SettingRow(R.drawable.settings_headset_colored, "Headset", "Buttons, resume")
+                SettingRow(R.drawable.skb_ic_settings_headset_colored, "Headset", "Buttons, resume")
                 HorizontalDivider(Modifier.padding(vertical = 12.dp),
                     color = AmuletEmerald.copy(alpha = 0.15f))
-                SettingRow(R.drawable.settings_vis_colored, "Visualization", "Milkdrop, bars")
+                SettingRow(R.drawable.skb_ic_settings_vis_colored, "Visualization", "Milkdrop, bars")
                 HorizontalDivider(Modifier.padding(vertical = 12.dp),
                     color = AmuletEmerald.copy(alpha = 0.15f))
-                SettingRow(R.drawable.settings_folders_library_colored, "Library", "Scan, folders")
+                SettingRow(R.drawable.skb_ic_settings_folders_library_colored, "Library", "Scan, folders")
             }
 
             // Poweramp-এর আসল menu XML ব্যবহার করছি!

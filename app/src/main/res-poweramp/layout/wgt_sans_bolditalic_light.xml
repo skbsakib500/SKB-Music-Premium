@@ -1,2 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<TextView xmlns:android="http://schemas.android.com/apk/res/android" android:typeface="sans" android:textStyle="bold|italic" android:shadowColor="#60ffffff" android:shadowRadius="1.5" style="@style/WidgetTextLine" />

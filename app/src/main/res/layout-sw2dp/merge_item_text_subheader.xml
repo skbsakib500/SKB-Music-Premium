@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:w="http://schemas.android.com/apk/res-auto">
-	<com.maxmpz.widget.base.FastButton android:id="@id/subhead_button" style="?ItemTextSubheadButton" />
-	<SceneParams w:scene="@id/scene_subheader" style="?ItemTextSubheadButton_scene_subheader" />
-</merge>

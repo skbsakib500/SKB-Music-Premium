@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<com.maxmpz.widget.base.FastLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:w="http://schemas.android.com/apk/res-auto" style="?ItemEmptyList">
-	<com.maxmpz.widget.base.FastTextView android:id="@id/item_empty_list_text" android:text="@string/no_content" style="?ItemEmptyListText" />
-	<com.maxmpz.widget.base.BusActionButton android:id="@id/button" android:contentDescription="@string/settings" w:busId="@id/bus_app_cmd" w:msgId="@id/cmd_app_open_settings" w:string="folders_library/music_folders_button" style="?ItemEmptyListSettingsButton" />
-</com.maxmpz.widget.base.FastLayout>

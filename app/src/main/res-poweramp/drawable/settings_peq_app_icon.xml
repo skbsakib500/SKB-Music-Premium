@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<vector xmlns:android="http://schemas.android.com/apk/res/android" android:height="32.0dip" android:width="32.0dip" android:viewportWidth="192.0" android:viewportHeight="192.0">
-	<group>
-		<path android:name="circle" android:fillColor="#ff111213" android:pathData="m95.76 6.91c49.07 0 88.86 39.78 88.86 88.86c0 49.07 -39.78 88.86 -88.86 88.86c-49.07 0 -88.86 -39.78 -88.86 -88.86c0 -49.07 39.78 -88.86 88.86 -88.86z" android:strokeColor="#ff9db9ff" android:strokeWidth="5.0" android:strokeAlpha="0.65" />
-		<path android:name="Equ" android:fillColor="#ffffffff" android:pathData="m64.01 102.99c-6.63 0 -12 5.37 -12 12v2c0 6.63 5.37 12 12 12h1c6.63 0 12 -5.37 12 -12v-2c0 -6.63 -5.37 -12 -12 -12zm31 -44c-6.63 0 -12 5.37 -12 12v46c0 6.63 5.37 12 12 12h1c6.63 0 12 -5.37 12 -12v-46c0 -6.63 -5.37 -12 -12 -12zm30.99 12.01c-6.63 0 -12 5.37 -12 12v34c0 6.63 5.37 12 12 12h1c6.63 0 12 -5.37 12 -12v-34c0 -6.63 -5.37 -12 -12 -12z" />
-	</group>
-</vector>

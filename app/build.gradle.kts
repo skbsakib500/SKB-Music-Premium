@@ -16,16 +16,6 @@ android {
         vectorDrawables { useSupportLibrary = true }
     }
 
-    // ═══════ দুটো res ফোল্ডার ═══════
-    sourceSets {
-        getByName("main") {
-            res.srcDirs(
-                "src/main/res",           // আমাদের Compose res (skb_ prefix)
-                "src/main/res-poweramp"   // Poweramp-এর drawable, font, anim, menu
-            )
-        }
-    }
-
     buildTypes {
         release {
             isMinifyEnabled = true
@@ -47,9 +37,6 @@ android {
     composeOptions { kotlinCompilerExtensionVersion = "1.5.14" }
     packaging {
         resources.excludes += setOf("/META-INF/{AL2.0,LGPL2.1}")
-    }
-    androidResources {
-        noCompress += listOf("otf", "ttf")
     }
 }
 

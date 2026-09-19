@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-<style name="ActivityTheme_Whitepro_ForceLightNavbar"><item name="android:navigationBarColor">@android:color/white</item><item name="android:windowLightNavigationBar">true</item><item name="android:navigationBarDividerColor">#08000000</item><item name="windowLightNavigationBar">true</item><item name="overlap_transparent_navbar">@style/ActivityTheme_Whitepro_TransparentLightNavbar</item></style>
-</resources>
