@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android" android:color="?colorFrsSelectionBgRipple">
+	<item>
+		<selector android:enterFadeDuration="300" android:exitFadeDuration="300">
+			<item android:state_pressed="true">
+				<shape android:tint="?colorFrsSelectionTint" android:tintMode="multiply">
+					<corners android:radius="?corners_equ_frs" />
+					<solid android:color="?colorFrsSelectionBgPressed" />
+				</shape>
+			</item>
+			<item>
+				<shape android:tint="?colorFrsSelectionTint" android:tintMode="multiply">
+					<corners android:radius="?corners_equ_frs" />
+					<solid android:color="?colorFrsSelectionBg" />
+				</shape>
+			</item>
+		</selector>
+	</item>
+</ripple>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:w="http://schemas.android.com/apk/res-auto" android:title="@string/get_support" w:ignoreTitle="true">
+	<Preference android:persistent="false" android:title="@string/faq" android:key="faq" />
+	<Preference android:persistent="false" android:title="@string/pref_purchase_faq" android:key="purchase_faq" />
+	<Preference android:persistent="false" android:title="@string/pref_poweramp_forum" android:key="poweramp_forum" w:skipSearch="play" />
+	<Preference android:persistent="false" android:title="@string/pref_send_log" android:key="send_log" />
+</PreferenceScreen>

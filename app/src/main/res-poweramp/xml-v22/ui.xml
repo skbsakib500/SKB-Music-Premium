@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:z="http://schemas.android.com/apk/res-auto" xmlns:w="http://schemas.android.com/apk/res-auto" android:title="@string/pref_look_and_feel">
+	<com.maxmpz.audioplayer.preference.RedirectPreference android:title="@string/pref_skin" android:key="ui_theme" android:summary="@string/pref_summary_skin" z:target="ui_theme" />
+	<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:persistent="true" android:title="@string/pref_follow_night_mode" android:key="follow_night_mode" android:summary="@string/pref_summary_follow_night_mode" android:defaultValue="false" />
+	<com.maxmpz.audioplayer.preference.TagListPreference android:title="@string/pref_settings_theme" android:key="settings_theme" android:defaultValue="0" z:entries="@array/pref_settings_theme_labels" />
+	<com.maxmpz.audioplayer.preference.TagListPreference android:title="@string/pref_settings_font" android:key="settings_font" android:defaultValue="2" z:entries="@array/pref_settings_font_labels" />
+	<PreferenceCategory android:title="@string/pref_general">
+		<com.maxmpz.audioplayer.preference.RedirectPreference android:title="@string/pref_player_ui" android:key="ui_player" z:target="ui_player" />
+		<com.maxmpz.audioplayer.preference.RedirectPreference android:title="@string/lyrics" android:key="ui_lyrics" z:target="ui_lyrics" />
+		<com.maxmpz.audioplayer.preference.RedirectPreference android:title="@string/pref_notifications" android:key="ui_notify" z:target="ui_notify" />
+		<com.maxmpz.audioplayer.preference.RedirectPreference android:summary="@string/pref_see_more_ui_prefs_in_lists" z:target="library_lists" z:skipSearch="true" />
+	</PreferenceCategory>
+	<PreferenceCategory android:title="@string/pref_misc">
+		<com.maxmpz.audioplayer.preference.ListPreference android:persistent="true" android:entries="@array/pref_language_entries" android:title="@string/pref_language" android:key="lang" android:summary="%s" android:defaultValue="" android:dialogTitle="@string/pref_language" android:entryValues="@array/pref_language_values" />
+		<com.maxmpz.audioplayer.preference.RedirectPreference android:title="@string/pref_icon" android:key="ui_icon" android:summary="@string/pref_summary_icon" z:target="ui_icon" />
+		<com.maxmpz.audioplayer.preference.TagListPreference android:title="@string/pref_orientation" android:key="orientation" android:defaultValue="0" z:entries="@array/pref_orientation_entries" />
+		<com.maxmpz.audioplayer.preference.TagListPreference android:title="@string/animations" android:key="anim_speed" android:summary="@string/summary_anim_speed" android:defaultValue="false" z:entries="@array/anim_speed_entries" z:values="@array/anim_speed_values" z:featurePack="1" />
+		<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:title="@string/pref_start_at_lib" android:key="start_at_lib" android:summary="@string/pref_summary_startup_screen" android:defaultValue="false" />
+		<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:persistent="true" android:title="@string/pref_hide_status_bar" android:key="hide_status_bar" android:defaultValue="false" />
+		<com.maxmpz.audioplayer.preference.RawTextPreference android:background="@drawable/settings_quote_background" z:line1="@string/skin_navbar_firmware_warn" z:skipSearch="true" z:keepPaddings="true" />
+		<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:title="@string/pref_keep_screen_on" android:key="keep_screen_on" android:summary="@string/pref_summary_keep_screen_on" />
+		<com.maxmpz.audioplayer.preference.SeekbarPreference android:title="@string/num_settings_tags" android:key="num_settings_tags" android:summary="%s" z:entries="@array/zero_index_disabled_entries" z:max="10" z:min="0" z:leftLabel="@string/disabled" z:rightLabel="@string/maximum_short" z:tickMark="@drawable/pref_seekbar_tickmark" />
+		<Preference android:title="@string/pref_restore_defaults" android:key="restore_defaults" android:singleLineTitle="false" />
+	</PreferenceCategory>
+</PreferenceScreen>

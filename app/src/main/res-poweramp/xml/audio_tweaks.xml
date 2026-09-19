@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:z="http://schemas.android.com/apk/res-auto" xmlns:w="http://schemas.android.com/apk/res-auto" android:title="@string/pref_advanced_tweaks" z:searchBreadcrumb1="@string/pref_audio_engine">
+	<PreferenceCategory android:title="@string/volume_long">
+		<com.maxmpz.audioplayer.preference.NumberListPreference android:persistent="true" android:title="@string/pref_volume_levels" android:key="volume_levels" android:summary="@string/pref_summary_volume_levels_s" android:defaultValue="0" android:dialogTitle="@string/pref_volume_levels" z:entries="@array/pref_volume_levels_entries" z:values="@array/pref_volume_levels_values" />
+		<com.maxmpz.audioplayer.preference.RawTextPreference z:smallLine1="@string/pref_volume_levels_hint1" z:smallLine2="@string/pref_volume_levels_hint2" z:smallLine3="@string/option_issues_aauto" z:zeroTopPad="true" />
+		<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:title="@string/pref_volume_popup" android:key="volume_popup" android:summary="@string/pref_summary_volume_popup" />
+		<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:title="@string/pref_pause_on_volume" android:key="pause_on_volume" android:summary="@string/pref_summary_pause_on_volume" z:summary2="@string/pref_option_for_active_pa" z:sup="@string/pref_experiment" z:supLink="alert?text=@string/pref_experimental_msg" />
+		<com.maxmpz.audioplayer.preference.RedirectPreference android:title="@string/pref_long_volume_controls" android:summary="@string/pref_headset_long_volume_press_hint" z:target="misc#volume_keys_long_press_hint" z:skipSearch="true" />
+	</PreferenceCategory>
+	<PreferenceCategory android:title="@string/other">
+		<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:title="@string/platform_fx" android:key="allow_platform_fx" android:summary="@string/pref_summary_platform_fx" android:defaultValue="false" />
+		<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:persistent="true" android:title="@string/pref_force_audio_on_focus" android:key="force_audio_on_focus" android:summary="@string/pref_summary_force_audio_on_focus" />
+		<com.maxmpz.audioplayer.preference.RoundKnobPreference android:title="@string/mod_gain_mb" android:key="mod_gain_mb" android:summary="@string/summary_mod_separation" z:valueFormat="@string/d_db" z:scale="100.0" z:max="1000" z:min="-1000" z:step="100" z:label="@string/d_db" />
+		<com.maxmpz.audioplayer.preference.RoundKnobPreference android:title="@string/mod_separation" android:key="mod_separation" z:valueFormat="@string/f0_percent" z:scale="1.0" z:max="200" z:min="0" z:step="10" z:label="@string/d_db" />
+		<Preference android:title="@string/pref_reset_equ_presets" android:key="reset_eq_presets" android:summary="@string/pref_summary_reset_equ_presets" />
+		<Preference android:title="@string/pref_reset_reverb_presets" android:key="reset_reverb_presets" android:summary="@string/pref_summary_reset_reverb_presets" />
+		<Preference android:title="@string/pref_restore_defaults" android:key="restore_defaults" />
+	</PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:w="http://schemas.android.com/apk/res-auto" android:title="@string/pref_player_ui" w:searchBreadcrumb1="@string/pref_look_and_feel">
+	<com.maxmpz.audioplayer.preference.RedirectPreference android:summary="@string/pref_skin_text" w:target="ui_theme" w:skipSearch="true" />
+	<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:title="@string/pref_animate_album_art" android:key="aa_anim" android:summary="@string/pref_summary_animate_album_art" android:defaultValue="true" />
+	<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:title="@string/pref_anim_long_labels" android:key="anim_long_labels" android:summary="@string/pref_summary_anim_long_labels" android:defaultValue="true" />
+	<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:title="@string/pref_anim_long_labels_in_lists" android:key="anim_long_labels_in_lists" android:summary="@string/pref_summary_anim_long_labels_in_lists" android:dependency="anim_long_labels" android:defaultValue="true" />
+	<PreferenceCategory android:title="@string/player_screen_buttons">
+		<com.maxmpz.audioplayer.preference.RawTextPreference android:background="@drawable/settings_quote_background" w:line1="@string/player_screen_buttons_desc" w:line2="@string/player_screen_layouts_desc" w:line3="@string/edit_player_screen_buttons_desc" w:skipSearch="true" w:keepPaddings="true" />
+		<com.maxmpz.audioplayer.preference.EditButtonsRedirPref android:title="@string/edit_player_screen_buttons" android:key="edit_player_screen_buttons" w:featurePack="1">
+			<intent android:action="com.maxmpz.audioplayer.ACTION_OPEN_MAIN" />
+		</com.maxmpz.audioplayer.preference.EditButtonsRedirPref>
+		<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:title="@string/prefer_no_gap" android:key="sub_aa_buttons_no_gap" android:summary="@string/summary_prefer_no_gap" w:featurePack="1" />
+		<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:title="@string/sub_aa_buttons_no_lp_edit" android:key="sub_aa_buttons_no_lp_edit" android:summary="@string/summary_sub_aa_buttons_no_lp_edit" w:featurePack="1" />
+		<com.maxmpz.audioplayer.preference.PaEditableButtonsRestorePref android:title="@string/restore_player_buttons" w:featurePack="1" />
+	</PreferenceCategory>
+	<PreferenceCategory android:title="@string/other_buttons">
+		<com.maxmpz.audioplayer.preference.TagListPreference android:title="@string/pref_cc_button" android:key="cc_button" android:defaultValue="1" w:entries="@array/pref_cc_button_entries" w:values="@array/pref_cc_button_values" />
+		<com.maxmpz.audioplayer.preference.TagListPreference android:title="@string/pref_rating_type" android:key="rating_type" android:defaultValue="1" w:entries="@array/pref_rating_type_entries" />
+		<com.maxmpz.audioplayer.preference.RawTextPreference android:key="hint_5stars" android:summary="@string/pref_rating_type_5stars_hint" />
+		<com.maxmpz.audioplayer.preference.TagListPreference android:title="@string/menu_button" android:key="hide_menu" android:summary="@string/menu_open_long_press_cover" w:entries="@array/pref_hide_menu_entries" w:values="@array/pref_hide_menu_values" w:disableDependenciesValue="1" w:prefType="booleanType" />
+		<com.maxmpz.audioplayer.preference.TagListPreference android:title="@string/menu_button_long_press" android:key="menu_button_long_press" android:summary="@string/summary_menu_button_long_press" android:dependency="hide_menu" w:entries="@array/menu_button_long_press_entries" w:featurePack="1" />
+		<com.maxmpz.audioplayer.preference.TagListPreference android:title="@string/pref_main_lyrics_button" android:key="main_lyrics_button" android:summary="@string/pref_summary_main_lyrics_button" w:entries="@array/pref_main_lyrics_button_entries" w:values="@array/pref_main_lyrics_button_values" />
+	</PreferenceCategory>
+	<com.maxmpz.audioplayer.preference.TagListPreference android:title="@string/line2_click" android:key="line2_click" android:summary="@string/summary_line2_click" w:entries="@array/pref_line2_click_entries" w:values="@array/pref_line2_click_values" w:icons="@array/pref_line2_click_icons" w:featurePack="1" />
+	<com.maxmpz.audioplayer.preference.TagListPreference android:title="@string/line2_long_click" android:key="line2_long_click" android:summary="@string/summary_line2_long_click" w:entries="@array/pref_line2_click_entries" w:values="@array/pref_line2_click_values" w:icons="@array/pref_line2_click_icons" w:featurePack="1" />
+	<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:persistent="true" android:title="@string/track_counter" android:key="show_counter" android:summary="@string/pref_summary_show_counter" android:defaultValue="false" />
+	<com.maxmpz.audioplayer.preference.RawTextPreference android:background="@drawable/settings_quote_background" android:key="_counter_hint" w:line1="@string/show_counter_hint" w:keepPaddings="true" />
+	<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:persistent="true" android:title="@string/pref_prev_previous_resets" android:key="previous_resets" android:summary="@string/pref_summary_prev_previous_resets" android:defaultValue="false" />
+	<com.maxmpz.audioplayer.preference.RawTextPreference android:summary="@string/pref_text_prev_previous_resets" />
+	<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:title="@string/pref_long_skip_rewind" android:key="long_skip_rewind" android:summary="@string/pref_long_summary_skip_rewind" android:defaultValue="true" w:summary2="@string/pref_long_summary_skip_rewind_note" w:allowLinks="true" />
+	<com.maxmpz.audioplayer.preference.RedirectPreference android:summary="@string/pref_long_skip_rewind_redirect" w:target="library#restore_pos_min_dur" />
+	<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:persistent="true" android:title="@string/pref_menu_nav_to_folders" android:key="menu_nav_to_folders" android:summary="@string/pref_summary_menu_nav_to_folders" android:defaultValue="false" />
+	<Preference android:title="@string/pref_restore_defaults" android:key="restore_defaults" />
+</PreferenceScreen>

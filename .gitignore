@@ -6,3 +6,6 @@
 /build
 /app/build
 local.properties
+skb-source/
+res_backup/
+res-poweramp/raw/

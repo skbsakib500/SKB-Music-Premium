@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:w="http://schemas.android.com/apk/res-auto" android:title="@string/pref_lists" w:searchBreadcrumb1="@string/pref_library">
+	<PreferenceCategory android:title="@string/pref_look_and_feel" android:key="pref_look_and_feel">
+		<Preference android:title="@string/pref_top_library_list_opts" android:key="library_list_opts" android:summary="@string/pref_summary_top_library_list_opts" />
+		<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:title="@string/pref_static_navbar" android:key="static_navbar" android:summary="@string/pref_summary_static_navbar" android:defaultValue="false" />
+		<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:title="@string/pref_navbar_seekbar" android:key="navbar_seekbar" android:summary="@string/pref_summary_navbar_seekbar" android:defaultValue="false" />
+		<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:title="@string/pref_headers_meta" android:key="headers_meta" android:summary="@string/pref_summary_headers_meta" android:defaultValue="true" />
+		<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:title="@string/pref_az_scroll" android:key="az_scroll" android:summary="@string/pref_summary_az_scroll" android:defaultValue="true" />
+		<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:title="@string/pref_localized_az" android:key="localized_az" android:summary="@string/pref_summary_localized_az" android:dependency="az_scroll" android:defaultValue="false" />
+		<com.maxmpz.audioplayer.preference.TagListPreference android:title="@string/pref_list_header_buttons" android:key="list_header_buttons" android:summary="@string/pref_summary_list_header_buttons" w:entries="@array/pref_list_header_buttons" />
+		<com.maxmpz.audioplayer.preference.TagListPreference android:title="@string/pref_list_bottom_toolbar" android:key="list_bottom_toolbar" android:summary="@string/pref_summary_list_bottom_toolbar" w:entries="@array/pref_list_bottom_toolbar" />
+		<com.maxmpz.audioplayer.preference.TagListPreference android:title="@string/pref_track_nums" android:key="track_num_type" android:defaultValue="0" w:entries="@array/pref_track_num_type_entries" />
+		<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:title="@string/pref_track_disc_meta" android:key="track_disc_meta" android:summary="@string/pref_summary_track_disc_meta" android:dependency="track_num_type" android:defaultValue="false" />
+		<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:title="@string/pref_title_filename" android:key="title_filename" android:summary="@string/pref_summary_title_filename" android:defaultValue="false" />
+		<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:title="@string/pref_list_action_resets" android:key="list_action_resets" android:summary="@string/pref_summary_list_action_resets" android:defaultValue="false" />
+		<com.maxmpz.audioplayer.preference.TagListPreference android:title="@string/pref_playlist_item_action" android:key="list_item_action" android:defaultValue="1" w:entries="@array/pref_playlist_item_action_entries" w:values="@array/pref_playlist_item_action_values" />
+		<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:title="@string/pref_enable_deletion" android:key="enable_deletion" android:summary="@string/pref_summary_enable_deletion" android:defaultValue="true" />
+	</PreferenceCategory>
+	<PreferenceCategory android:title="@string/albums">
+		<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:title="@string/pref_join_albums" android:key="join_albums" android:summary="@string/pref_summary_join_albums" android:defaultValue="true" />
+		<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:title="@string/pref_use_albumartist" android:key="use_albumartist" android:summary="@string/pref_summary_use_albumartist" android:defaultValue="false" />
+		<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:title="@string/pref_use_albumartist_albums" android:key="use_albumartist_albums" android:summary="@string/pref_summary_use_albumartist_albums" android:defaultValue="false" />
+		<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:title="@string/pref_use_albumartist_albumartists" android:key="use_albumartist_albumartists" android:summary="@string/pref_summary_use_albumartist_albumartists" android:defaultValue="true" />
+		<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:title="@string/pref_hide_unknown_album" android:key="hide_unknown_album" android:summary="@string/pref_summary_hide_unknown_album" android:defaultValue="true" />
+		<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:title="@string/hide_unknown_artist" android:key="hide_unknown_artist" android:summary="@string/summary_hide_unknown_artist" android:dependency="hide_unknown_album" android:defaultValue="false" w:featurePack="1" />
+	</PreferenceCategory>
+	<PreferenceCategory android:title="@string/pref_advanced">
+		<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:title="@string/pref_show_unsplit_cats" android:key="show_unsplit_cats" android:summary="@string/pref_summary_show_unsplit_cats" android:defaultValue="false" />
+		<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:title="@string/pref_hier_no_advance" android:key="hier_no_advance" android:summary="@string/pref_summary_hier_no_advance" android:defaultValue="false" />
+		<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:title="@string/pref_root_hier_immediate" android:key="root_hier_immediate" android:summary="@string/pref_summary_root_hier_immediate" android:defaultValue="false" />
+		<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:title="@string/pref_hier_files_zoom" android:key="hier_files_zoom" android:summary="@string/pref_summary_hier_files_zoom" android:defaultValue="false" />
+		<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:title="@string/pref_sort_no_sort_field" android:key="no_sort_field" android:summary="@string/pref_summary_sort_no_sort_field" android:defaultValue="false" />
+		<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:title="@string/pref_show_cue_source" android:key="show_cue_source" android:summary="@string/pref_summary_show_cue_source" android:defaultValue="false" />
+		<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:title="@string/stream_name_in_title" android:key="stream_name_in_title" android:summary="@string/summary_stream_name_in_title" />
+	</PreferenceCategory>
+	<Preference android:title="@string/pref_restore_defaults" android:key="restore_defaults" android:singleLineTitle="false" />
+</PreferenceScreen>

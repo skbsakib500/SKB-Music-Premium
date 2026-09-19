@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:w="http://schemas.android.com/apk/res-auto" android:title="@string/pref_icon" w:searchBreadcrumb1="@string/pref_look_and_feel">
+	<com.maxmpz.audioplayer.preference.RawTextPreference w:line1="@string/pref_icon_set_msg" w:line2="@string/pref_icon_set_msg2" />
+	<PreferenceCategory android:title="@string/icons" android:key="icon_list" />
+</PreferenceScreen>

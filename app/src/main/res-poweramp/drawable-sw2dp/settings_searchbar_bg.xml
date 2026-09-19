@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:w="http://schemas.android.com/apk/res-auto" android:enterFadeDuration="250" android:exitFadeDuration="500">
+	<item>
+		<shape>
+			<corners android:radius="?corners_searchbar" />
+			<solid android:color="?android:textColorHintInverse" />
+		</shape>
+	</item>
+</selector>

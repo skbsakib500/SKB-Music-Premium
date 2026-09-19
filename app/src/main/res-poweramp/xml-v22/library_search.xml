@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:w="http://schemas.android.com/apk/res-auto" android:title="@string/pref_search" w:searchBreadcrumb1="@string/pref_library">
+	<com.maxmpz.audioplayer.preference.RawTextPreference android:background="@drawable/settings_quote_background" android:key="msg" w:keepPaddings="true" />
+	<Preference android:title="@string/pref_search_categories" android:key="list_opts" />
+	<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:title="@string/pref_search_play_tracks" android:key="search_play_tracks" android:summary="@string/pref_summary_search_play_tracks" />
+	<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:title="@string/pref_search_track_titles_only" android:key="search_track_titles_only" android:summary="@string/pref_summary_search_track_titles_only" />
+	<Preference android:title="@string/pref_restore_defaults" android:key="restore_defaults" android:singleLineTitle="false" />
+</PreferenceScreen>

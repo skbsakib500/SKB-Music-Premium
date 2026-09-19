@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+	<ImageView android:id="@id/deck_bg_full" style="@style/Widget2x2DeckBgFull" />
+	<ImageView android:id="@id/shadow_full" style="@style/Widget2x2ShadowFull" />
+	<ImageView android:id="@id/logo" style="@style/Widget2x2Logo" />
+	<FrameLayout android:id="@id/aa_cont_layout" style="@style/Widget2x2AaContLayout">
+		<FrameLayout android:id="@id/flipper_frame" style="@style/Widget2x2FlipperFrame" />
+	</FrameLayout>
+	<ImageView android:id="@id/deck_bg" style="@style/Widget2x2DeckBg" />
+	<ImageView android:id="@id/shadow" style="@style/Widget2x2Shadow" />
+	<LinearLayout android:id="@id/playing_now" style="@style/Widget2x2PlayingNow">
+		<FrameLayout android:id="@id/title_cont" style="@style/Widget2x2TitleCont" />
+		<FrameLayout android:id="@id/artist_and_album_cont" style="@style/Widget2x2ArtistAndAlbumCont" />
+		<LinearLayout android:id="@id/meta_cont" style="@style/Widget2x2MetaCont">
+			<ImageButton android:id="@id/repeat_icon" style="@style/Widget2x2RepeatIcon" />
+			<FrameLayout android:id="@id/counter_cont" style="@style/Widget2x2CounterCont" />
+			<ImageButton android:id="@id/shuffle_icon" style="@style/Widget2x2ShuffleIcon" />
+		</LinearLayout>
+	</LinearLayout>
+	<LinearLayout android:id="@id/controls" style="@style/Widget2x2Controls">
+		<ImageButton android:id="@id/folder_prev_button" style="@style/Widget2x2FolderPrevButton" />
+		<ImageButton android:id="@id/rw_button" style="@style/Widget2x2RwButton" />
+		<ImageButton android:id="@id/play_button" style="@style/Widget2x2PlayButton" />
+		<ImageButton android:id="@id/ff_button" style="@style/Widget2x2FfButton" />
+		<ImageButton android:id="@id/folder_next_button" style="@style/Widget2x2FolderNextButton" />
+	</LinearLayout>
+	<ImageButton android:id="@id/configure_button" style="@style/WidgetConfigureButton" />
+</merge>

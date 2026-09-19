@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:w="http://schemas.android.com/apk/res-auto" android:title="@string/pref_album_art_options" android:summary="@string/pref_summary_album_art_options">
+	<PreferenceCategory android:title="@string/pref_aa_downloading" android:key="pref_aa_downloading">
+		<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:persistent="true" android:title="@string/pref_download_album_art" android:key="download_album_art" android:summary="@string/pref_summary_download_album_art" android:defaultValue="false" />
+		<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:persistent="true" android:title="@string/pref_download_artist_art" android:key="download_artist_art" android:summary="@string/pref_summary_download_artist_art" android:defaultValue="false" />
+		<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:persistent="true" android:title="@string/pref_aa_download_hd" android:key="aa_download_hd" android:summary="@string/pref_summary_aa_download_hd" android:defaultValue="false" />
+		<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:persistent="true" android:title="@string/pref_aa_wifi_only" android:key="download_aa_wifi_only" android:summary="@string/pref_summary_aa_wifi_only" android:defaultValue="true" />
+		<Preference android:persistent="false" android:title="@string/pref_reset_negative_aa_status" android:key="reset_negative_aa_status" android:summary="@string/pref_summary_reset_negative_aa_status" />
+		<Preference android:persistent="false" android:title="@string/pref_clear_aa_cache" android:key="clear_aa_cache" android:summary="@string/pref_summary_clear_aa_cache" />
+	</PreferenceCategory>
+	<PreferenceCategory android:title="@string/pref_advanced_tweaks">
+		<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:persistent="true" android:title="@string/pref_aa_force_default" android:key="aa_force_default" android:summary="@string/pref_summary_aa_force_default" android:defaultValue="false" />
+		<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:persistent="true" android:title="@string/pref_aa_8888" android:key="aa_8888" android:summary="@string/pref_summary_aa_8888" android:defaultValue="false" />
+		<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:persistent="true" android:title="@string/pref_aa_hi_res_for_apis" android:key="aa_hi_res_for_apis" android:summary="@string/pref_summary_aa_hi_res_for_apis" android:defaultValue="false" />
+		<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:persistent="true" android:title="@string/pref_aa_always" android:key="aa_always" android:summary="@string/pref_summary_aa_always" android:defaultValue="false" />
+		<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:title="@string/pref_aa_no_ashmem" android:key="aa_no_ashmem" android:summary="@string/pref_summary_aa_no_ashmem" android:defaultValue="false" w:sup="@string/pref_experiment" w:supLink="alert?text=@string/pref_experimental_msg" />
+		<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:persistent="true" android:title="@string/pref_download_if_no_tags" android:key="download_if_no_tags" android:summary="@string/pref_summary_download_if_no_tags" android:defaultValue="true" />
+		<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:persistent="true" android:title="@string/pref_prefer_download" android:key="prefer_downloaded_aa" android:summary="@string/pref_summary_prefer_download" android:defaultValue="false" />
+		<com.maxmpz.audioplayer.preference.TagListPreference android:title="@string/pref_aa_aspect_ratio" android:key="aa_aspect" android:defaultValue="0" w:entries="@array/pref_aa_aspect_entries" w:summaries="@array/pref_aa_aspect_summaries" />
+		<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:persistent="true" android:title="@string/pref_aa_higher_res" android:key="aa_higher_res" android:summary="@string/pref_summary_aa_higher_res" android:defaultValue="false" w:summary2="@string/pref_requires_more_ram" w:sup="@string/pref_experiment" w:supLink="alert?text=@string/pref_experimental_msg" />
+		<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:persistent="true" android:title="@string/pref_aa_per_stream_track" android:key="aa_per_stream_track" android:summary="@string/pref_summary_aa_per_stream_track" android:defaultValue="false" w:summary2="@string/pref_increases_traffic" />
+	</PreferenceCategory>
+	<Preference android:title="@string/pref_restore_defaults" android:key="restore_defaults" android:singleLineTitle="false" />
+</PreferenceScreen>

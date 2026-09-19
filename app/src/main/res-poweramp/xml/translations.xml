@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:w="http://schemas.android.com/apk/res-auto" android:title="@string/pref_translations" w:skipSearch="true">
+	<Preference android:title="@string/pref_crowdin_project" android:key="visit_crowdin" android:summary="Visit/join Poweramp translation project at Crowdin.net" />
+	<PreferenceCategory android:title="@string/pref_translators">
+		<Preference android:title="Arabic" android:summary="BLueBLaze, mohjif, Abdullah S Almalki, tictac, Sajed ALAJATI, khansaab, zaid.m.alani, and others" />
+		<Preference android:title="Bengali" android:summary="abualam002, MD: Ashikur Rahman, Emilia Mihai, Dok Dok, fuadhasanmaruf, Mahdi Jaman, MD: Ashikrrahman, and others" />
+		<Preference android:title="Chinese Simplified" android:summary="Cye3s, sincostandx, Ihon Liu, 天外来客bin, 琳 曹, Miao Zhang, Jane Zhang, Budi Pang, 吴天豪, and others" />
+		<Preference android:title="Chinese Traditional" android:summary="Francis Yeh, 人工知能, Jane Zhang, KaiChing Chang, Fu Chun Hsu, 明城, and others" />
+		<Preference android:title="Czech" android:summary="MySQL, andrewz, Ondřej Zástěra, Ghull, karanco, Jan Havlík, Michal, Dominik Matus, and others" />
+		<Preference android:title="Danish" android:summary="NCAA, chreddy, John Hansen" />
+		<Preference android:title="Dutch" android:summary="Erik Paelman, wsnel57, Naxiz, KevinHofstede, charliehpoels, JayJay1989, YolandaCarati" />
+		<Preference android:title="French" android:summary="AlbatorV, クリスDownix, AsTro, Fauque Benoit, Sceap, tictac, Rose, Francesco Masini, and others" />
+		<Preference android:title="German" android:summary="Andreas Laufer, Fusionplayz, Vincent T., Saintscar, Stefan Druwe, 明城liebst20" />
+		<Preference android:title="Greek" android:summary="koliglia, tkredmond, Nikos, BillKan, DainBramaged, DimitrisSalonika, horion70, and others" />
+		<Preference android:title="Hebrew" android:summary="Rami Heled, Lidor Elmaliach, benjo24, elyashiv_sabach, עמרי עטייה, Yoel IL, and others" />
+		<Preference android:title="Hindi" android:summary="Ankush Jain, jznsamuel, santosh_sahu, Shivaji Kute, Vatsal_Vala, Vogendra Sahu (Raj. C.G), and others" />
+		<Preference android:title="Hungarian" android:summary="Z737, Tomi_Ohl, nvi9, Gyula Király, Szilard Kovacs, Gyula Juhász, Bence Ujj, and others" />
+		<Preference android:title="Indonesian" android:summary="M Akmal, Muhammad Bintang, Ali Muhammad Reyhan, Amirul Huda, M Arif Majidi, and others" />
+		<Preference android:title="Italian" android:summary="Federico Di Lorenzo, Tiwi90, Carlo369, DarkRevenger, Fabrizio Cacicia, Francesco Masini, and others" />
+		<Preference android:title="Japanese" android:summary="Kanako Inazu, &quot;sunatomo&quot;, kik0220" />
+		<Preference android:title="Korean" android:summary="신윤호, David Cho, WhiteClover, ENVY, PBJUN" />
+		<Preference android:title="Persian" android:summary="Ismail Barinkar, AhmadH, alpha1657, Barinkar, esshx8, mahmoodbaghelani, and others" />
+		<Preference android:title="Polish" android:summary="0kti, Maciej Minklejn, TiGerPL v19, Kszemek, Piotr Patalong, oskar, Błażej Jeżewski, Povilas Grebliunas" />
+		<Preference android:title="Portuguese, Brazilian" android:summary="Skellingtor, Lucas Vinícius, Loui's, André Gama, Henry F., Vinicius Camargo, Leandro Sales, and others" />
+		<Preference android:title="Romanian" android:summary="adi petcu, Andrei Sângeorzan, Cornel_Pavel, flor90, Dee Norbert" />
+		<Preference android:title="Russian" android:summary="Ka3u6y6a, and others" />
+		<Preference android:title="Serbian" android:summary="Ivan Pesic, emv441, Nebojsa Nikolic, Nikola Vukovic, Nikola Đurić, Stefan Marinkovic, and others" />
+		<Preference android:title="Spanish" android:summary="Mihai Pantazi, Lesther Tabares, Bruno Herrera, Brandon Zuriel Alonso Alvarado, and others" />
+		<Preference android:title="Slovak" android:summary="Maťo, RandomTypek, marttin, wupuchim, profile.trololol" />
+		<Preference android:title="Thai" android:summary="BugviewTH, Nana Jipataa, อรรถพล เติมสายทอง" />
+		<Preference android:title="Turkish" android:summary="Fatih Fırıncı, Semih Yeşilyurt, sonysinger, elmasevmem, rserdar, Oğuzcan, KBD, and others" />
+		<Preference android:title="Ukrainian" android:summary="taras-ko, Bohdan Antokhov, rapkonig, Ka3u6y6a, Oleksandr, taras0012, rapkonig, and others" />
+		<Preference android:title="Vietnamese" android:summary="alienyd, Nguyễn Trung Hậu, robot_boy_tn, Thế, thanhtai2009, Quoc Thanh, tandat nguyen, Hoàng Hải Long" />
+	</PreferenceCategory>
+</PreferenceScreen>

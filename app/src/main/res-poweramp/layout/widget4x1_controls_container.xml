@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="horizontal" android:clickable="true" style="@style/Widget4x1Controls">
+	<ImageButton android:id="@id/repeat_icon" android:background="@drawable/widget_invisible_round_button_selector" android:padding="@dimen/widget4x1_icons_padding" android:layout_width="@dimen/widget4x1_icons_size" android:layout_height="@dimen/widget4x1_icons_size" android:scaleType="centerInside" android:adjustViewBounds="true" style="@style/WidgetControlsRepeat" />
+	<include layout="@layout/widget4x1_controls" />
+	<ImageButton android:id="@id/shuffle_icon" android:background="@drawable/widget_invisible_round_button_selector" android:padding="@dimen/widget4x1_icons_padding" android:layout_width="@dimen/widget4x1_icons_size" android:layout_height="@dimen/widget4x1_icons_size" android:scaleType="centerInside" android:adjustViewBounds="true" style="@style/WidgetControlsShuffle" />
+</LinearLayout>

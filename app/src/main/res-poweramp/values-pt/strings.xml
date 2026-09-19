@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="abc_action_mode_done">Concluído</string>
+<string name="abc_capital_off">DESATIVADO</string>
+<string name="abc_capital_on">ATIVADO</string>
+<string name="abc_search_hint">Pesquisar…</string>
+<string name="abc_toolbar_collapse_description">Recolher</string>
+<string name="mr_chooser_title">Transmitir para</string>
+<string name="mr_controller_disconnect">Desconectar</string>
+<string name="mr_controller_stop_casting">Parar transmissão</string>
+<string name="mr_controller_volume_slider">Controle deslizante de volume</string>
+<string name="mr_dialog_default_group_name">Grupo</string>
+<string name="mr_route_name_bluetooth">Bluetooth</string>
+<string name="mr_route_name_speaker">Alto-falante</string>
+<string name="mr_route_name_tv">TV</string>
+<string name="mr_route_name_unknown">Desconhecido</string>
+<string name="mr_user_route_category_name">Dispositivos</string>
+</resources>

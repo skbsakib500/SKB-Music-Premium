@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:z="http://schemas.android.com/apk/res-auto" xmlns:w="http://schemas.android.com/apk/res-auto" android:title="@string/pref_audio_focus" z:searchBreadcrumb1="@string/pref_audio_engine">
+	<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:persistent="true" android:title="@string/pref_resume_after_call" android:key="resume_after_call" android:summary="@string/pref_summary_resume_after_call" android:defaultValue="true" />
+	<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:persistent="true" android:title="@string/pref_resume_on_start" android:key="resume_on_start" android:summary="@string/pref_summary_resume_on_start" android:defaultValue="false" />
+	<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:title="@string/pref_resume_on_resume" android:key="resume_on_resume" android:summary="@string/pref_summary_resume_on_resume" android:dependency="resume_on_start" android:defaultValue="true" />
+	<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:persistent="true" android:title="@string/pref_resume_on_mount" android:key="resume_on_mount" android:summary="@string/pref_summary_resume_on_mount" android:dependency="resume_on_start" android:defaultValue="false" />
+	<com.maxmpz.audioplayer.preference.RedirectPreference android:background="@drawable/settings_quote_background" android:key="cc_af_warning" android:summary="@string/pref_cc_af_warning" z:target="audio_output_device_opts?uniqName=com.maxmpz.audioplayer/output.cc&amp;device=chromecast#no_af" z:skipSearch="true" z:keepPaddings="true" />
+	<PreferenceCategory android:title="@string/pref_audio_focus" android:key="audio_focus_cat">
+		<com.maxmpz.audioplayer.preference.RedirectPreference android:background="@drawable/settings_quote_background" android:summary="@string/pref_af_notification_msg" z:target="ui_notify#keep_notification_always" z:skipSearch="true" z:keepPaddings="true" />
+		<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:persistent="true" android:title="@string/pref_pause_on_short" android:key="af_short" android:summary="@string/pref_summary_pause_on_short" android:defaultValue="true" />
+		<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:persistent="true" android:title="@string/pref_pause_in_call" android:key="pause_in_call" android:summary="@string/pref_summary_pause_in_call" android:defaultValue="true" z:summary2="@string/opt_not_supported_by_some_firmwares" />
+		<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:title="@string/resume_on_focus" android:key="resume_on_focus" android:summary="@string/summary_resume_on_focus" android:dependency="af_short" android:defaultValue="true" />
+		<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:persistent="true" android:title="@string/pref_duck_on_short" android:key="af_short_duck" android:summary="@string/pref_summary_duck_on_short" android:dependency="af_short" android:defaultValue="true" />
+		<com.maxmpz.audioplayer.preference.MultilineSwitchPreference android:persistent="true" android:title="@string/pref_pause_on_permanent" android:key="af_permanent" android:summary="@string/pref_summary_pause_on_permanent" android:defaultValue="true" />
+	</PreferenceCategory>
+	<Preference android:title="@string/pref_restore_defaults" android:key="restore_defaults" />
+</PreferenceScreen>

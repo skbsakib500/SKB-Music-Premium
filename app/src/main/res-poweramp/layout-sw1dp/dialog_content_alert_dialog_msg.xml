@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:w="http://schemas.android.com/apk/res-auto">
+	<ImageView android:id="@id/icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" w:layout_consumeSpace="horizontal" />
+	<TextView android:id="@id/message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" w:layout_consumeSpace="vertical|reset_horizontal" w:layout_goneWhenEmpty="true" />
+	<TextView android:textAppearance="?Hint" android:id="@id/message_hint" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" w:layout_consumeSpace="vertical|reset_horizontal" w:layout_goneWhenEmpty="true" />
+</merge>

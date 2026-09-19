@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:height="108.0dip" android:width="108.0dip" android:viewportWidth="192.0" android:viewportHeight="192.0">
+	<group android:pivotX="96.5" android:pivotY="96.5" android:scaleX="0.6645" android:scaleY="0.6645">
+		<path android:name="circle" android:pathData="m95.76 6.91c49.07 0 88.86 39.78 88.86 88.86c0 49.07 -39.78 88.86 -88.86 88.86c-49.07 0 -88.86 -39.78 -88.86 -88.86c0 -49.07 39.78 -88.86 88.86 -88.86z" android:strokeColor="@android:color/system_accent1_100" android:strokeWidth="8.0" />
+		<path android:name="play" android:fillColor="@android:color/system_accent1_100" android:pathData="m140.93 95.18 -70.86 40.91v-81.82l70.86 40.91z" />
+	</group>
+</vector>

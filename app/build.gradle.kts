@@ -16,6 +16,16 @@ android {
         vectorDrawables { useSupportLibrary = true }
     }
 
+    // ═══════ দুটো res ফোল্ডার ═══════
+    sourceSets {
+        getByName("main") {
+            res.srcDirs(
+                "src/main/res",           // আমাদের Compose res (skb_ prefix)
+                "src/main/res-poweramp"   // Poweramp-এর drawable, font, anim, menu
+            )
+        }
+    }
+
     buildTypes {
         release {
             isMinifyEnabled = true
@@ -35,7 +45,12 @@ android {
     kotlinOptions { jvmTarget = "17" }
     buildFeatures { compose = true }
     composeOptions { kotlinCompilerExtensionVersion = "1.5.14" }
-    packaging { resources.excludes += setOf("/META-INF/{AL2.0,LGPL2.1}") }
+    packaging {
+        resources.excludes += setOf("/META-INF/{AL2.0,LGPL2.1}")
+    }
+    androidResources {
+        noCompress += listOf("otf", "ttf")
+    }
 }
 
 dependencies {
@@ -55,5 +70,4 @@ dependencies {
     implementation("androidx.media3:media3-ui:1.4.1")
     implementation("io.coil-kt:coil-compose:2.7.0")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.8.1")
-    implementation("androidx.palette:palette-ktx:1.0.0")
 }
