@@ -46,6 +46,7 @@ fun SettingsScreen() {
         "autoeq" -> AutoEqScreen()
         "audio_profile" -> AudioProfileScreen()
         "hires" -> HiResScreen()
+        "advanced_audio" -> AdvancedAudioScreen()
         "visualizer" -> VisualizerScreen()
         "equalizer" -> EqualizerScreen()
         else -> Scaffold(
@@ -89,6 +90,8 @@ fun SettingsScreen() {
                 }
 
                 GlowCard(Modifier.fillMaxWidth()) {
+                    RowItem(PaResources.eq(), "Advanced Audio", "6-stage DSP pipeline") { sub = "advanced_audio" }
+                    HorizontalDivider(Modifier.padding(vertical = 12.dp), color = AmuletEmerald.copy(alpha = 0.15f))
                     RowItem(PaResources.eq(), "Hi-Res Audio", "32-bit / 768 kHz") { sub = "hires" }
                     HorizontalDivider(Modifier.padding(vertical = 12.dp), color = AmuletEmerald.copy(alpha = 0.15f))
                     RowItem(PaResources.eq(), "Audio Profile", "DSP chain") { sub = "audio_profile" }
