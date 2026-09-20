@@ -2,29 +2,56 @@ package com.skb.music.ui.screens
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
-import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.PaddingValues
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material3.*
-import androidx.compose.runtime.*
+import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
+import androidx.compose.material3.CircularProgressIndicator
+import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.Icon
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.OutlinedButton
+import androidx.compose.material3.Scaffold
+import androidx.compose.material3.Surface
+import androidx.compose.material3.Text
+import androidx.compose.material3.TopAppBar
+import androidx.compose.material3.TopAppBarDefaults
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.ColorFilter
-import androidx.compose.ui.res.painterResource
-import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import coil.compose.AsyncImage
-import com.skb.music.R
 import com.skb.music.data.MusicRepository
 import com.skb.music.data.Song
 import com.skb.music.ui.components.GlowCard
-import com.skb.music.ui.theme.*
+import com.skb.music.ui.components.PaResources
+import com.skb.music.ui.theme.AmuletEmerald
+import com.skb.music.ui.theme.AmuletGold
+import com.skb.music.ui.theme.AmuletSurfaceHigh
+import com.skb.music.ui.theme.AmuletTextMuted
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -47,12 +74,12 @@ fun HomeScreen(
                 title = {
                     Column {
                         Text(
-                            stringResource(R.string.skb_app_name),
+                            "SKB Music",
                             style = MaterialTheme.typography.titleLarge,
                             fontWeight = FontWeight.Bold
                         )
                         Text(
-                            stringResource(R.string.skb_tagline),
+                            "Premium Player",
                             style = MaterialTheme.typography.labelSmall,
                             color = AmuletEmerald
                         )
@@ -66,8 +93,27 @@ fun HomeScreen(
     ) { padding ->
         Box(Modifier.padding(padding).fillMaxSize()) {
             when {
-                loading -> LoadingState(Modifier.align(Alignment.Center))
-                songs.isEmpty() -> EmptyState(Modifier.align(Alignment.Center))
+                loading -> Column(
+                    Modifier.align(Alignment.Center),
+                    horizontalAlignment = Alignment.CenterHorizontally
+                ) {
+                    CircularProgressIndicator(color = AmuletEmerald)
+                    Spacer(Modifier.height(16.dp))
+                    Text("Scanning library…", color = AmuletTextMuted)
+                }
+                songs.isEmpty() -> Column(
+                    Modifier.align(Alignment.Center),
+                    horizontalAlignment = Alignment.CenterHorizontally
+                ) {
+                    Icon(
+                        painter = PaResources.musicNote(),
+                        contentDescription = null,
+                        tint = AmuletTextMuted,
+                        modifier = Modifier.size(72.dp)
+                    )
+                    Spacer(Modifier.height(16.dp))
+                    Text("No songs found", color = AmuletTextMuted)
+                }
                 else -> LazyColumn(
                     Modifier.fillMaxSize(),
                     contentPadding = PaddingValues(bottom = 140.dp)
@@ -75,7 +121,8 @@ fun HomeScreen(
                     item { HeroCard(songs.size) }
                     item {
                         Row(
-                            Modifier.fillMaxWidth()
+                            Modifier
+                                .fillMaxWidth()
                                 .padding(horizontal = 16.dp, vertical = 8.dp),
                             horizontalArrangement = Arrangement.SpaceBetween,
                             verticalAlignment = Alignment.CenterVertically
@@ -112,9 +159,8 @@ private fun HeroCard(count: Int) {
                     .background(Brush.linearGradient(listOf(AmuletEmerald, AmuletGold))),
                 contentAlignment = Alignment.Center
             ) {
-                // Poweramp-এর আইকন ব্যবহার করছি!
                 Icon(
-                    painter = painterResource(R.drawable.skb_ic_play),
+                    painter = PaResources.play(),
                     contentDescription = null,
                     tint = Color.Black,
                     modifier = Modifier.size(32.dp)
@@ -146,7 +192,7 @@ private fun HeroCard(count: Int) {
                 modifier = Modifier.weight(1f)
             ) {
                 Icon(
-                    painter = painterResource(R.drawable.skb_ic_play),
+                    painter = PaResources.play(),
                     contentDescription = null,
                     modifier = Modifier.size(18.dp)
                 )
@@ -159,7 +205,7 @@ private fun HeroCard(count: Int) {
                 modifier = Modifier.weight(1f)
             ) {
                 Icon(
-                    painter = painterResource(R.drawable.skb_ic_shuffle),
+                    painter = PaResources.shuffle(),
                     contentDescription = null,
                     modifier = Modifier.size(18.dp)
                 )
@@ -167,29 +213,6 @@ private fun HeroCard(count: Int) {
                 Text("Shuffle")
             }
         }
-    }
-}
-
-@Composable
-private fun LoadingState(modifier: Modifier = Modifier) {
-    Column(modifier, horizontalAlignment = Alignment.CenterHorizontally) {
-        CircularProgressIndicator(color = AmuletEmerald)
-        Spacer(Modifier.height(16.dp))
-        Text("Scanning library…", color = AmuletTextMuted)
-    }
-}
-
-@Composable
-private fun EmptyState(modifier: Modifier = Modifier) {
-    Column(modifier, horizontalAlignment = Alignment.CenterHorizontally) {
-        Icon(
-            painter = painterResource(R.drawable.skb_ic_play),
-            contentDescription = null,
-            tint = AmuletTextMuted,
-            modifier = Modifier.size(72.dp)
-        )
-        Spacer(Modifier.height(16.dp))
-        Text("No songs found", color = AmuletTextMuted)
     }
 }
 
@@ -211,7 +234,7 @@ private fun SongRow(song: Song, onClick: () -> Unit) {
                 AsyncImage(model = song.albumArtUri, contentDescription = null)
             } else {
                 Icon(
-                    painter = painterResource(R.drawable.skb_ic_play),
+                    painter = PaResources.musicNote(),
                     contentDescription = null,
                     tint = AmuletEmerald,
                     modifier = Modifier.padding(12.dp)
@@ -223,18 +246,19 @@ private fun SongRow(song: Song, onClick: () -> Unit) {
             Text(
                 song.title,
                 style = MaterialTheme.typography.bodyLarge,
-                maxLines = 1, overflow = TextOverflow.Ellipsis
+                maxLines = 1,
+                overflow = TextOverflow.Ellipsis
             )
             Text(
                 song.artist,
                 style = MaterialTheme.typography.bodySmall,
                 color = AmuletTextMuted,
-                maxLines = 1, overflow = TextOverflow.Ellipsis
+                maxLines = 1,
+                overflow = TextOverflow.Ellipsis
             )
         }
-        // Poweramp-এর heart icon!
         Icon(
-            painter = painterResource(R.drawable.skb_ic_favorite_outline),
+            painter = PaResources.heartOutline(),
             contentDescription = null,
             tint = AmuletEmerald,
             modifier = Modifier.size(20.dp)

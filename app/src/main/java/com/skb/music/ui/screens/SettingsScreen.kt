@@ -1,18 +1,34 @@
 package com.skb.music.ui.screens
 
-import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
-import androidx.compose.material3.*
+import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.HorizontalDivider
+import androidx.compose.material3.Icon
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Scaffold
+import androidx.compose.material3.Text
+import androidx.compose.material3.TopAppBar
+import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
-import com.skb.music.R
 import com.skb.music.ui.components.GlowCard
+import com.skb.music.ui.components.PaResources
 import com.skb.music.ui.theme.AmuletEmerald
 import com.skb.music.ui.theme.AmuletTextMuted
 
@@ -41,62 +57,66 @@ fun SettingsScreen() {
             GlowCard(Modifier.fillMaxWidth()) {
                 Row(verticalAlignment = Alignment.CenterVertically) {
                     Icon(
-                        painter = painterResource(R.drawable.skb_ic_settings_look_feel_colored),
+                        painter = PaResources.settings(),
                         contentDescription = null,
-                        tint = Color.Unspecified,
+                        tint = AmuletEmerald,
                         modifier = Modifier.size(28.dp)
                     )
                     Spacer(Modifier.width(12.dp))
                     Column(Modifier.weight(1f)) {
                         Text("Theme", fontWeight = FontWeight.SemiBold)
-                        Text("Amulet (Premium Dark)",
+                        Text(
+                            "Amulet (Premium Dark)",
                             style = MaterialTheme.typography.bodySmall,
-                            color = AmuletTextMuted)
+                            color = AmuletTextMuted
+                        )
                     }
                     Text("✓", color = AmuletEmerald)
                 }
             }
 
             GlowCard(Modifier.fillMaxWidth()) {
-                SettingRow(R.drawable.skb_ic_settings_audio_colored, "Audio", "Output, DVC")
-                HorizontalDivider(Modifier.padding(vertical = 12.dp),
-                    color = AmuletEmerald.copy(alpha = 0.15f))
-                SettingRow(R.drawable.skb_ic_settings_equ_colored, "Equalizer", "Bands, presets")
-                HorizontalDivider(Modifier.padding(vertical = 12.dp),
-                    color = AmuletEmerald.copy(alpha = 0.15f))
-                SettingRow(R.drawable.skb_ic_settings_headset_colored, "Headset", "Buttons, resume")
-                HorizontalDivider(Modifier.padding(vertical = 12.dp),
-                    color = AmuletEmerald.copy(alpha = 0.15f))
-                SettingRow(R.drawable.skb_ic_settings_vis_colored, "Visualization", "Milkdrop, bars")
-                HorizontalDivider(Modifier.padding(vertical = 12.dp),
-                    color = AmuletEmerald.copy(alpha = 0.15f))
-                SettingRow(R.drawable.skb_ic_settings_folders_library_colored, "Library", "Scan, folders")
-            }
-
-            // Poweramp-এর আসল menu XML ব্যবহার করছি!
-            GlowCard(Modifier.fillMaxWidth()) {
-                Text("Poweramp widget menu preview",
-                    fontWeight = FontWeight.SemiBold,
-                    color = AmuletTextMuted)
-                Spacer(Modifier.height(8.dp))
+                SettingRow(PaResources.musicNote(), "Audio", "Output")
+                HorizontalDivider(
+                    Modifier.padding(vertical = 12.dp),
+                    color = AmuletEmerald.copy(alpha = 0.15f)
+                )
+                SettingRow(PaResources.eq(), "Equalizer", "Bands, presets")
+                HorizontalDivider(
+                    Modifier.padding(vertical = 12.dp),
+                    color = AmuletEmerald.copy(alpha = 0.15f)
+                )
+                SettingRow(PaResources.headphones(), "Headset", "Buttons")
+                HorizontalDivider(
+                    Modifier.padding(vertical = 12.dp),
+                    color = AmuletEmerald.copy(alpha = 0.15f)
+                )
+                SettingRow(PaResources.tune(), "Visualization", "Bars")
+                HorizontalDivider(
+                    Modifier.padding(vertical = 12.dp),
+                    color = AmuletEmerald.copy(alpha = 0.15f)
+                )
+                SettingRow(PaResources.library(), "Library", "Scan")
             }
 
             Spacer(Modifier.height(20.dp))
-            Text("© 2025 SKB Music",
+            Text(
+                "© 2025 SKB Music",
                 style = MaterialTheme.typography.labelSmall,
                 color = AmuletTextMuted,
-                modifier = Modifier.align(Alignment.CenterHorizontally))
+                modifier = Modifier.align(Alignment.CenterHorizontally)
+            )
         }
     }
 }
 
 @Composable
-private fun SettingRow(iconRes: Int, title: String, value: String) {
+private fun SettingRow(icon: Painter, title: String, value: String) {
     Row(verticalAlignment = Alignment.CenterVertically) {
         Icon(
-            painter = painterResource(iconRes),
+            painter = icon,
             contentDescription = null,
-            tint = Color.Unspecified,
+            tint = AmuletEmerald,
             modifier = Modifier.size(24.dp)
         )
         Spacer(Modifier.width(12.dp))

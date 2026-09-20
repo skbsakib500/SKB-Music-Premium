@@ -1,61 +1,51 @@
 package com.skb.music.ui.components
 
-import androidx.compose.foundation.Image
-import androidx.compose.foundation.layout.size
-import androidx.compose.material3.Icon
+import androidx.annotation.DrawableRes
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.ColorFilter
 import androidx.compose.ui.graphics.painter.Painter
-import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.painterResource
-import androidx.compose.ui.unit.Dp
-import androidx.compose.ui.unit.dp
 import com.skb.music.R
 
 /**
- * Poweramp-এর আঁকা drawables আমরা Compose-এ ব্যবহার করছি।
- * এই helper সব জায়গায় একসাথে ব্যবহার করা যায়।
+ * SKB Music-এর নিজস্ব drawable — ১৮টি Amulet-themed ভেক্টর আইকন।
  */
 object PaResources {
 
-    /** PA settings-style আইকন */
-    @Composable
-    fun settingIcon(name: String, tint: Color = Color.Unspecified): Painter = when (name) {
-        "audio"     -> painterResource(R.drawable.skb_ic_settings_audio_colored)
-        "equalizer" -> painterResource(R.drawable.skb_ic_settings_equ_colored)
-        "library"   -> painterResource(R.drawable.skb_ic_settings_folders_library_colored)
-        "look_feel" -> painterResource(R.drawable.skb_ic_settings_look_feel_colored)
-        "headset"   -> painterResource(R.drawable.skb_ic_settings_headset_colored)
-        "lockscreen"-> painterResource(R.drawable.skb_ic_settings_lockscreen_colored)
-        "misc"      -> painterResource(R.drawable.skb_ic_settings_misc_colored)
-        "support"   -> painterResource(R.drawable.skb_ic_settings_support_colored)
-        "export"    -> painterResource(R.drawable.skb_ic_settings_export_colored)
-        "import"    -> painterResource(R.drawable.skb_ic_settings_import_colored)
-        "vis"       -> painterResource(R.drawable.skb_ic_settings_vis_colored)
-        "warn"      -> painterResource(R.drawable.skb_ic_settings_warn_background)
-        else        -> painterResource(R.drawable.v_like)
-    }
+    @DrawableRes fun playRes()         = R.drawable.skb_ic_play
+    @DrawableRes fun pauseRes()        = R.drawable.skb_ic_pause
+    @DrawableRes fun nextRes()         = R.drawable.skb_ic_next
+    @DrawableRes fun prevRes()         = R.drawable.skb_ic_prev
+    @DrawableRes fun shuffleRes()      = R.drawable.skb_ic_shuffle
+    @DrawableRes fun repeatRes()       = R.drawable.skb_ic_repeat
+    @DrawableRes fun repeatOneRes()    = R.drawable.skb_ic_repeat_one
+    @DrawableRes fun heartFillRes()    = R.drawable.skb_ic_favorite_fill
+    @DrawableRes fun heartOutlineRes() = R.drawable.skb_ic_favorite_outline
+    @DrawableRes fun musicNoteRes()    = R.drawable.skb_ic_music_note
+    @DrawableRes fun searchRes()       = R.drawable.skb_ic_search
+    @DrawableRes fun homeRes()         = R.drawable.skb_ic_home
+    @DrawableRes fun libraryRes()      = R.drawable.skb_ic_library
+    @DrawableRes fun settingsRes()     = R.drawable.skb_ic_settings
+    @DrawableRes fun headphonesRes()   = R.drawable.skb_ic_headphones
+    @DrawableRes fun eqRes()           = R.drawable.skb_ic_graphic_eq
+    @DrawableRes fun tuneRes()         = R.drawable.skb_ic_tune
+    @DrawableRes fun queueRes()        = R.drawable.skb_ic_queue
 
-    /** Media control আইকন */
-    @Composable
-    fun mediaIcon(name: String): Painter = when (name) {
-        "play"  -> painterResource(R.drawable.skb_ic_play)
-        "pause" -> painterResource(R.drawable.skb_ic_pause)
-        "ff"    -> painterResource(R.drawable.skb_ic_next)
-        "rw"    -> painterResource(R.drawable.skb_ic_prev)
-        "close" -> painterResource(R.drawable.v_status_close)
-        else    -> painterResource(R.drawable.skb_ic_play)
-    }
-
-    /** Heart icon */
-    @Composable
-    fun heartIcon(liked: Boolean): Painter =
-        if (liked) painterResource(R.drawable.skb_ic_favorite_fill)
-        else painterResource(R.drawable.v_heart_unlike)
-
-    /** Dimension helper */
-    @Composable
-    fun dim(@androidx.annotation.DimenRes id: Int): Dp = dimensionResource(id)
+    @Composable fun play()         : Painter = painterResource(playRes())
+    @Composable fun pause()        : Painter = painterResource(pauseRes())
+    @Composable fun next()         : Painter = painterResource(nextRes())
+    @Composable fun prev()         : Painter = painterResource(prevRes())
+    @Composable fun shuffle()      : Painter = painterResource(shuffleRes())
+    @Composable fun repeat()       : Painter = painterResource(repeatRes())
+    @Composable fun repeatOne()    : Painter = painterResource(repeatOneRes())
+    @Composable fun heartFill()    : Painter = painterResource(heartFillRes())
+    @Composable fun heartOutline() : Painter = painterResource(heartOutlineRes())
+    @Composable fun musicNote()    : Painter = painterResource(musicNoteRes())
+    @Composable fun search()       : Painter = painterResource(searchRes())
+    @Composable fun home()         : Painter = painterResource(homeRes())
+    @Composable fun library()      : Painter = painterResource(libraryRes())
+    @Composable fun settings()     : Painter = painterResource(settingsRes())
+    @Composable fun headphones()   : Painter = painterResource(headphonesRes())
+    @Composable fun eq()           : Painter = painterResource(eqRes())
+    @Composable fun tune()         : Painter = painterResource(tuneRes())
+    @Composable fun queue()        : Painter = painterResource(queueRes())
 }
