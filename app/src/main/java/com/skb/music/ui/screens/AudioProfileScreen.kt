@@ -49,7 +49,7 @@ fun AudioProfileScreen() {
     var genre by remember { mutableStateOf(AudioProfileManager.activeGenre) }
     var bass by remember { mutableFloatStateOf(AudioProfileManager.bassLevel) }
     var virt by remember { mutableFloatStateOf(AudioProfileManager.virtualLevel) }
-    var loud by remember { mutableIntStateOf(AudioProfileManager.loudnessGain) }
+    var loud by remember { mutableIntStateOf(AudioProfileManager.loudnessMb) }
     var eqOn by remember { mutableStateOf(AudioProfileManager.eqEnabled) }
 
     Scaffold(

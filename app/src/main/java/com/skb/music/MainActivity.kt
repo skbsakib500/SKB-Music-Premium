@@ -8,7 +8,6 @@ import android.content.pm.PackageManager
 import android.os.Build
 import android.os.Bundle
 import androidx.activity.ComponentActivity
-import androidx.activity.compose.BackHandler
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.compose.setContent
 import androidx.activity.result.IntentSenderRequest
@@ -110,12 +109,6 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 private fun PermissionScreen(onGrant: () -> Unit) {
-    // Back button navigation
-    BackHandler(enabled = screen != AppScreen.TABS) {
-        screen = when (screen) {
-            AppScreen.QUEUE -> AppScreen.PLAYER
-            else -> AppScreen.TABS
-        }
     }
 
     GradientBackground {
@@ -153,6 +146,15 @@ private fun AppRoot(repo: MusicRepository) {
 
     var tab by remember { mutableIntStateOf(0) }
     var screen by remember { mutableStateOf(AppScreen.TABS) }
+
+    // Back button: Player→Tabs, Queue→Player
+    androidx.activity.compose.BackHandler(enabled = true) {
+        when (screen) {
+            AppScreen.PLAYER -> screen = AppScreen.TABS
+            AppScreen.QUEUE -> screen = AppScreen.PLAYER
+            AppScreen.TABS -> { /* let system handle */ }
+        }
+    }
     var libraryScrollIndex by remember { mutableIntStateOf(0) }
     var libraryScrollOffset by remember { mutableIntStateOf(0) }
 
