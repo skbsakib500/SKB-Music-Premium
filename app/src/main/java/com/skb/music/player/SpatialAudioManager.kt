@@ -103,7 +103,7 @@ object SpatialAudioManager {
         }
     }
 
-    fun setIntensity(v: Float) {
+    fun applyIntensity(v: Float) {
         intensity = v.coerceIn(0f, 1f)
         apply(currentMode)
     }

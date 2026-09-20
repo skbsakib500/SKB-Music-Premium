@@ -166,7 +166,7 @@ fun SpatialScreen() {
                         value = intensity,
                         onValueChange = {
                             intensity = it
-                            SpatialAudioManager.setIntensity(it)
+                            SpatialAudioManager.applyIntensity(it)
                         },
                         valueRange = 0f..1f,
                         colors = SliderDefaults.colors(

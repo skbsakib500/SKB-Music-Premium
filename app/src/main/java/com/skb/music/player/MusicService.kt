@@ -25,7 +25,7 @@ class MusicService : MediaSessionService() {
             AudioProfileManager.applyGenre("Flat")
             AudioProfileManager.setBassStrength(0.5f)
             AudioProfileManager.setVirtualStrength(0.3f)
-            AudioProfileManager.setLoudnessGain(0)
+            AudioProfileManager.applyLoudnessGain(0)
         }
 
         // Spatial — 8D / 10D / 3D

@@ -119,7 +119,7 @@ object AudioProfileManager {
         runCatching { virtualizer?.setStrength(s) }
     }
 
-    fun setLoudnessGain(mb: Int) {
+    fun applyLoudnessGain(mb: Int) {
         loudnessGain = mb.coerceIn(0, 2000)
         runCatching {
             loudness?.enabled = loudnessGain > 0

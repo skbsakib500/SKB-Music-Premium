@@ -216,7 +216,7 @@ fun AudioProfileScreen() {
                     onChange = {
                         val v = (it * 2000).toInt()
                         loudness = v
-                        AudioProfileManager.setLoudnessGain(v)
+                        AudioProfileManager.applyLoudnessGain(v)
                     })
             }
 
