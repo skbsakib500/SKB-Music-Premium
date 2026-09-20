@@ -9,5 +9,9 @@ data class Song(
     val album: String,
     val duration: Long,
     val uri: Uri,
-    val albumArtUri: Uri?
-)
+    val albumArtUri: Uri?,
+    val path: String = ""
+) {
+    val folder: String
+        get() = path.substringBeforeLast("/").substringAfterLast("/")
+}

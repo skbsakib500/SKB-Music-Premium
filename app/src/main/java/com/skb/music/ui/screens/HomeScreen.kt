@@ -17,20 +17,23 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
-import androidx.compose.material3.CircularProgressIndicator
+import androidx.compose.material3.DropdownMenu
+import androidx.compose.material3.DropdownMenuItem
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
+import androidx.compose.material3.TextButton
 import androidx.compose.material3.TopAppBar
 import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -44,7 +47,6 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import coil.compose.AsyncImage
-import com.skb.music.data.MusicRepository
 import com.skb.music.data.Song
 import com.skb.music.ui.components.GlowCard
 import com.skb.music.ui.components.PaResources
@@ -56,16 +58,11 @@ import com.skb.music.ui.theme.AmuletTextMuted
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun HomeScreen(
-    repo: MusicRepository,
-    onSongClick: (Song, List<Song>) -> Unit
+    songs: List<Song>,
+    onSongClick: (Song, List<Song>) -> Unit,
+    onDelete: (Song) -> Unit
 ) {
-    var songs by remember { mutableStateOf<List<Song>>(emptyList()) }
-    var loading by remember { mutableStateOf(true) }
-
-    LaunchedEffect(Unit) {
-        songs = repo.loadSongs()
-        loading = false
-    }
+    var pendingDelete by remember { mutableStateOf<Song?>(null) }
 
     Scaffold(
         containerColor = Color.Transparent,
@@ -92,16 +89,8 @@ fun HomeScreen(
         }
     ) { padding ->
         Box(Modifier.padding(padding).fillMaxSize()) {
-            when {
-                loading -> Column(
-                    Modifier.align(Alignment.Center),
-                    horizontalAlignment = Alignment.CenterHorizontally
-                ) {
-                    CircularProgressIndicator(color = AmuletEmerald)
-                    Spacer(Modifier.height(16.dp))
-                    Text("Scanning library…", color = AmuletTextMuted)
-                }
-                songs.isEmpty() -> Column(
+            if (songs.isEmpty()) {
+                Column(
                     Modifier.align(Alignment.Center),
                     horizontalAlignment = Alignment.CenterHorizontally
                 ) {
@@ -114,15 +103,15 @@ fun HomeScreen(
                     Spacer(Modifier.height(16.dp))
                     Text("No songs found", color = AmuletTextMuted)
                 }
-                else -> LazyColumn(
+            } else {
+                LazyColumn(
                     Modifier.fillMaxSize(),
                     contentPadding = PaddingValues(bottom = 140.dp)
                 ) {
                     item { HeroCard(songs.size) }
                     item {
                         Row(
-                            Modifier
-                                .fillMaxWidth()
+                            Modifier.fillMaxWidth()
                                 .padding(horizontal = 16.dp, vertical = 8.dp),
                             horizontalArrangement = Arrangement.SpaceBetween,
                             verticalAlignment = Alignment.CenterVertically
@@ -140,11 +129,35 @@ fun HomeScreen(
                         }
                     }
                     items(songs, key = { it.id }) { s ->
-                        SongRow(s) { onSongClick(s, songs) }
+                        SongRow(
+                            song = s,
+                            onClick = { onSongClick(s, songs) },
+                            onDeleteClick = { pendingDelete = s }
+                        )
                     }
                 }
             }
         }
+    }
+
+    // Delete confirm dialog
+    pendingDelete?.let { song ->
+        AlertDialog(
+            onDismissRequest = { pendingDelete = null },
+            title = { Text("Delete permanently?") },
+            text = {
+                Text("'${song.title}' ফাইল থেকে মুছে যাবে। এটা ফিরিয়ে আনা যাবে না।")
+            },
+            confirmButton = {
+                TextButton(onClick = {
+                    onDelete(song)
+                    pendingDelete = null
+                }) { Text("Delete", color = Color(0xFFFF6B6B)) }
+            },
+            dismissButton = {
+                TextButton(onClick = { pendingDelete = null }) { Text("Cancel") }
+            }
+        )
     }
 }
 
@@ -180,44 +193,17 @@ private fun HeroCard(count: Int) {
                 )
             }
         }
-        Spacer(Modifier.height(12.dp))
-        Row(horizontalArrangement = Arrangement.spacedBy(10.dp)) {
-            Button(
-                onClick = {},
-                colors = ButtonDefaults.buttonColors(
-                    containerColor = AmuletEmerald,
-                    contentColor = Color.Black
-                ),
-                shape = RoundedCornerShape(12.dp),
-                modifier = Modifier.weight(1f)
-            ) {
-                Icon(
-                    painter = PaResources.play(),
-                    contentDescription = null,
-                    modifier = Modifier.size(18.dp)
-                )
-                Spacer(Modifier.width(6.dp))
-                Text("Play All")
-            }
-            OutlinedButton(
-                onClick = {},
-                shape = RoundedCornerShape(12.dp),
-                modifier = Modifier.weight(1f)
-            ) {
-                Icon(
-                    painter = PaResources.shuffle(),
-                    contentDescription = null,
-                    modifier = Modifier.size(18.dp)
-                )
-                Spacer(Modifier.width(6.dp))
-                Text("Shuffle")
-            }
-        }
     }
 }
 
 @Composable
-private fun SongRow(song: Song, onClick: () -> Unit) {
+private fun SongRow(
+    song: Song,
+    onClick: () -> Unit,
+    onDeleteClick: () -> Unit
+) {
+    var menuOpen by remember { mutableStateOf(false) }
+
     Row(
         Modifier
             .fillMaxWidth()
@@ -257,11 +243,25 @@ private fun SongRow(song: Song, onClick: () -> Unit) {
                 overflow = TextOverflow.Ellipsis
             )
         }
-        Icon(
-            painter = PaResources.heartOutline(),
-            contentDescription = null,
-            tint = AmuletEmerald,
-            modifier = Modifier.size(20.dp)
-        )
+
+        Box {
+            IconButton(onClick = { menuOpen = true }) {
+                Text("⋮", color = AmuletTextMuted,
+                    style = MaterialTheme.typography.titleLarge)
+            }
+            DropdownMenu(
+                expanded = menuOpen,
+                onDismissRequest = { menuOpen = false }
+            ) {
+                DropdownMenuItem(
+                    text = { Text("Delete permanently",
+                        color = Color(0xFFFF6B6B)) },
+                    onClick = {
+                        menuOpen = false
+                        onDeleteClick()
+                    }
+                )
+            }
+        }
     }
 }

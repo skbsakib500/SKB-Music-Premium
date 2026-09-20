@@ -1,11 +1,49 @@
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
-    android:width="108dp" android:height="108dp"
-    android:viewportWidth="108" android:viewportHeight="108">
-    <path android:strokeColor="#10D9A0" android:strokeWidth="2"
-        android:fillColor="#00000000"
-        android:pathData="M54,26 A28,28 0 1,1 53.99,26 Z"/>
-    <path android:fillColor="#F4C430" android:pathData="M54,34 L70,54 L54,74 L38,54 Z"/>
-    <path android:fillColor="#10D9A0" android:pathData="M54,42 L63,54 L54,66 L45,54 Z"/>
-    <path android:fillColor="#FFFFFF" android:fillAlpha="0.9"
-        android:pathData="M54,50 L56,54 L54,58 L52,54 Z"/>
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Outer glow ring -->
+    <path
+        android:pathData="M54,26 A28,28 0 1,1 53.99,26 Z"
+        android:strokeWidth="2.5"
+        android:strokeColor="#10D9A0"
+        android:fillColor="#00000000" />
+
+    <!-- Diamond body -->
+    <path
+        android:pathData="M54,30 L72,54 L54,78 L36,54 Z"
+        android:fillColor="#F4C430" />
+
+    <!-- Top facet highlight -->
+    <path
+        android:pathData="M54,30 L72,54 L54,50 L36,54 Z"
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.35" />
+
+    <!-- Inner emerald core -->
+    <path
+        android:pathData="M54,42 L64,54 L54,66 L44,54 Z"
+        android:fillColor="#10D9A0" />
+
+    <!-- Center sparkle -->
+    <path
+        android:pathData="M54,49 L56,54 L54,59 L52,54 Z"
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.95" />
+
+    <!-- Sparkle corners -->
+    <path
+        android:fillColor="#F4C430"
+        android:pathData="M54,20 L55,23 L58,24 L55,25 L54,28 L53,25 L50,24 L53,23 Z" />
+    <path
+        android:fillColor="#10D9A0"
+        android:pathData="M88,54 L89,57 L92,58 L89,59 L88,62 L87,59 L84,58 L87,57 Z" />
+    <path
+        android:fillColor="#F4C430"
+        android:pathData="M54,84 L55,87 L58,88 L55,89 L54,92 L53,89 L50,88 L53,87 Z" />
+    <path
+        android:fillColor="#10D9A0"
+        android:pathData="M20,54 L21,57 L24,58 L21,59 L20,62 L19,59 L16,58 L19,57 Z" />
 </vector>

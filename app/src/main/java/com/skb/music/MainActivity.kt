@@ -19,7 +19,6 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Headphones
 import androidx.compose.material.icons.filled.Home
 import androidx.compose.material.icons.filled.KeyboardArrowDown
 import androidx.compose.material.icons.filled.LibraryMusic
@@ -55,7 +54,6 @@ import com.skb.music.player.MusicService
 import com.skb.music.player.PlaybackMode
 import com.skb.music.player.PlayerHolder
 import com.skb.music.ui.components.GradientBackground
-import com.skb.music.ui.screens.AutoEqScreen
 import com.skb.music.ui.screens.EqualizerScreen
 import com.skb.music.ui.screens.HomeScreen
 import com.skb.music.ui.screens.LibraryScreen
@@ -63,13 +61,14 @@ import com.skb.music.ui.screens.PlayerScreen
 import com.skb.music.ui.screens.QueueScreen
 import com.skb.music.ui.screens.SearchScreen
 import com.skb.music.ui.screens.SettingsScreen
-import com.skb.music.ui.screens.VisualizerScreen
+import com.skb.music.ui.screens.SplashScreen
 import com.skb.music.ui.theme.AmuletEmerald
 import com.skb.music.ui.theme.AmuletSurface
 import com.skb.music.ui.theme.AmuletText
 import com.skb.music.ui.theme.AmuletTextMuted
 import com.skb.music.ui.theme.SKBMusicTheme
 import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -78,13 +77,21 @@ class MainActivity : ComponentActivity() {
         startService(Intent(this, MusicService::class.java))
         setContent {
             SKBMusicTheme {
+                var splashDone by remember { mutableStateOf(false) }
                 var hasPerm by remember { mutableStateOf(checkPerm()) }
                 val launcher = rememberLauncherForActivityResult(
                     ActivityResultContracts.RequestPermission()
                 ) { hasPerm = it }
-                LaunchedEffect(Unit) { if (!hasPerm) launcher.launch(audioPerm()) }
-                if (!hasPerm) PermissionScreen { launcher.launch(audioPerm()) }
-                else AppRoot(repo)
+
+                LaunchedEffect(splashDone) {
+                    if (splashDone && !hasPerm) launcher.launch(audioPerm())
+                }
+
+                when {
+                    !splashDone -> SplashScreen { splashDone = true }
+                    !hasPerm -> PermissionScreen { launcher.launch(audioPerm()) }
+                    else -> AppRoot(repo)
+                }
             }
         }
     }
@@ -123,16 +130,19 @@ private fun PermissionScreen(onGrant: () -> Unit) {
     }
 }
 
-// ═══════════════════════════════════════════════════════════
-// চলমান স্ক্রিন: TABS (BottomNav) বা PLAYER (full) বা QUEUE (full)
-// ═══════════════════════════════════════════════════════════
-
 enum class AppScreen { TABS, PLAYER, QUEUE }
 
 @Composable
 private fun AppRoot(repo: MusicRepository) {
+    val scope = rememberCoroutineScope()
+
+    // State গুলো rememberSaveable-এর মতো রাখি (কমপোজিশন ধরে রাখে)
     var tab by remember { mutableIntStateOf(0) }
     var screen by remember { mutableStateOf(AppScreen.TABS) }
+
+    // 🔑 scroll state — tab পরিবর্তন বা delete হলেও ধরে রাখবে
+    var libraryScrollIndex by remember { mutableIntStateOf(0) }
+    var libraryScrollOffset by remember { mutableIntStateOf(0) }
 
     var allSongs by remember { mutableStateOf<List<Song>>(emptyList()) }
     var currentSong by remember { mutableStateOf<Song?>(null) }
@@ -142,7 +152,14 @@ private fun AppRoot(repo: MusicRepository) {
     var duration by remember { mutableLongStateOf(0L) }
     var favorites by remember { mutableStateOf<Set<Long>>(emptySet()) }
 
-    LaunchedEffect(Unit) { allSongs = repo.loadSongs() }
+    val context = androidx.compose.ui.platform.LocalContext.current
+
+    // Reload songs
+    suspend fun reload() {
+        allSongs = repo.loadSongs()
+    }
+
+    LaunchedEffect(Unit) { reload() }
 
     LaunchedEffect(Unit) {
         while (true) {
@@ -166,15 +183,43 @@ private fun AppRoot(repo: MusicRepository) {
         screen = AppScreen.PLAYER
     }
 
+    // ═══ DELETE Flow ═══
+    // Activity Result Launcher for delete request (Android 11+)
+    var pendingDelete by remember { mutableStateOf<Song?>(null) }
+    val deleteLauncher = rememberLauncherForActivityResult(
+        ActivityResultContracts.StartIntentSenderForResult()
+    ) { result ->
+        // সফল হলে reload, নাহলে কিছু করি না
+        if (result.resultCode == android.app.Activity.RESULT_OK) {
+            scope.launch { reload() }
+        }
+        pendingDelete = null
+    }
+
+    fun requestDelete(song: Song) {
+        val intentSender = repo.buildDeleteRequest(song)
+        if (intentSender != null) {
+            // Android 11+ user confirmation dialog
+            val intent = android.content.IntentSender.SendIntentException::class
+            try {
+                val sender = android.content.IntentSender(intentSender)
+                deleteLauncher.launch(
+                    androidx.activity.result.IntentSenderRequest.Builder(sender).build()
+                )
+            } catch (t: Throwable) { /* ignore */ }
+        } else {
+            // Android 10 বা নিচে সরাসরি delete
+            repo.deleteDirect(song)
+            scope.launch { reload() }
+        }
+    }
+
     GradientBackground {
         when (screen) {
 
-            // ─────────── Full Player ───────────
             AppScreen.PLAYER -> Column(Modifier.fillMaxSize()) {
                 Row(
-                    Modifier
-                        .fillMaxWidth()
-                        .padding(8.dp),
+                    Modifier.fillMaxWidth().padding(8.dp),
                     horizontalArrangement = Arrangement.SpaceBetween,
                     verticalAlignment = Alignment.CenterVertically
                 ) {
@@ -191,7 +236,8 @@ private fun AppRoot(repo: MusicRepository) {
                         color = AmuletTextMuted
                     )
                     IconButton(onClick = { screen = AppScreen.QUEUE }) {
-                        Text("≡", color = AmuletText, style = MaterialTheme.typography.titleLarge)
+                        Text("≡", color = AmuletText,
+                            style = MaterialTheme.typography.titleLarge)
                     }
                 }
                 PlayerScreen(
@@ -220,12 +266,9 @@ private fun AppRoot(repo: MusicRepository) {
                 )
             }
 
-            // ─────────── Queue ───────────
             AppScreen.QUEUE -> Column(Modifier.fillMaxSize()) {
                 Row(
-                    Modifier
-                        .fillMaxWidth()
-                        .padding(8.dp),
+                    Modifier.fillMaxWidth().padding(8.dp),
                     verticalAlignment = Alignment.CenterVertically
                 ) {
                     IconButton(onClick = { screen = AppScreen.PLAYER }) {
@@ -247,7 +290,6 @@ private fun AppRoot(repo: MusicRepository) {
                 )
             }
 
-            // ─────────── Tabs ───────────
             AppScreen.TABS -> Scaffold(
                 containerColor = Color.Transparent,
                 bottomBar = {
@@ -282,8 +324,22 @@ private fun AppRoot(repo: MusicRepository) {
             ) { padding ->
                 Box(Modifier.padding(padding).fillMaxSize()) {
                     when (tab) {
-                        0 -> HomeScreen(repo, onSongClick = ::playSong)
-                        1 -> LibraryScreen(allSongs, ::playSong)
+                        0 -> HomeScreen(
+                            songs = allSongs,
+                            onSongClick = ::playSong,
+                            onDelete = ::requestDelete
+                        )
+                        1 -> LibraryScreen(
+                            songs = allSongs,
+                            onSongClick = ::playSong,
+                            onDelete = ::requestDelete,
+                            savedIndex = libraryScrollIndex,
+                            savedOffset = libraryScrollOffset,
+                            onScrollChanged = { idx, off ->
+                                libraryScrollIndex = idx
+                                libraryScrollOffset = off
+                            }
+                        )
                         2 -> SearchScreen(allSongs, ::playSong)
                         3 -> EqualizerScreen()
                         4 -> SettingsScreen()
@@ -293,3 +349,9 @@ private fun AppRoot(repo: MusicRepository) {
         }
     }
 }
+
+// Small helper — suspend loader for top-level use
+private fun kotlinx.coroutines.CoroutineScope.launch(
+    block: suspend () -> Unit
+): kotlinx.coroutines.Job =
+    kotlinx.coroutines.launch(kotlinx.coroutines.Dispatchers.Main) { block() }
