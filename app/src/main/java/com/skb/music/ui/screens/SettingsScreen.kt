@@ -35,6 +35,7 @@ import androidx.compose.ui.unit.dp
 import com.skb.music.ui.components.GlowCard
 import com.skb.music.ui.components.PaResources
 import com.skb.music.ui.theme.AmuletEmerald
+import com.skb.music.ui.theme.AmuletText
 import com.skb.music.ui.theme.AmuletTextMuted
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -44,16 +45,13 @@ fun SettingsScreen() {
 
     when (sub) {
         "audio_profile" -> AudioProfileScreen()
-        "hires" -> HiResScreen()
-        "advanced_audio" -> AdvancedAudioScreen()
-        "spatial" -> SpatialScreen()
-        "visualizer" -> VisualizerScreen()
-        "equalizer" -> EqualizerScreen()
+        "spatial"       -> SpatialScreen()
         else -> Scaffold(
             containerColor = Color.Transparent,
             topBar = {
                 TopAppBar(
-                    title = { Text("More", fontWeight = FontWeight.Bold) },
+                    title = { Text("More", fontWeight = FontWeight.Bold,
+                        color = AmuletText) },
                     colors = TopAppBarDefaults.topAppBarColors(
                         containerColor = Color.Transparent
                     )
@@ -61,9 +59,7 @@ fun SettingsScreen() {
             }
         ) { padding ->
             Column(
-                Modifier
-                    .padding(padding)
-                    .fillMaxSize()
+                Modifier.padding(padding).fillMaxSize()
                     .verticalScroll(rememberScrollState())
                     .padding(16.dp),
                 verticalArrangement = Arrangement.spacedBy(12.dp)
@@ -78,33 +74,39 @@ fun SettingsScreen() {
                         )
                         Spacer(Modifier.width(12.dp))
                         Column(Modifier.weight(1f)) {
-                            Text("Theme", fontWeight = FontWeight.SemiBold)
-                            Text(
-                                "Amulet (Premium Dark)",
+                            Text("Theme", fontWeight = FontWeight.SemiBold,
+                                color = AmuletText)
+                            Text("Amulet (Premium Dark)",
                                 style = MaterialTheme.typography.bodySmall,
-                                color = AmuletTextMuted
-                            )
+                                color = AmuletTextMuted)
                         }
                         Text("✓", color = AmuletEmerald)
                     }
                 }
 
                 GlowCard(Modifier.fillMaxWidth()) {
-                    RowItem(PaResources.eq(), "Spatial Audio", "8D · 10D · 3D Binaural") { sub = "spatial" }
-RowItem(PaResources.eq(), "Advanced Audio", "6-stage DSP") { sub = "advanced_audio" }
-RowItem(PaResources.eq(), "Hi-Res Audio", "32-bit / 768 kHz") { sub = "hires" }
-RowItem(PaResources.eq(), "Audio Profile", "DSP chain") { sub = "audio_profile" }
-RowItem(PaResources.eq(), "Equalizer",
-                        "Bands, presets") { sub = "equalizer" }
-
-RowItem(PaResources.tune(), "Visualizer",
-                        "Bars, milk presets") { sub = "visualizer" }
+                    RowItem(PaResources.eq(), "Audio Profile",
+                        "Bass · Virtual · Loudness") { sub = "audio_profile" }
+                    HorizontalDivider(
+                        Modifier.padding(vertical = 12.dp),
+                        color = AmuletEmerald.copy(alpha = 0.15f)
+                    )
+                    RowItem(PaResources.headphones(), "Spatial Audio",
+                        "8D · 10D · 3D modes") { sub = "spatial" }
                 }
 
                 GlowCard(Modifier.fillMaxWidth()) {
                     InfoRow("About", "SKB Music")
-InfoRow("Version", "1.0.0")
-InfoRow("Developer", "SKB")
+                    HorizontalDivider(
+                        Modifier.padding(vertical = 12.dp),
+                        color = AmuletEmerald.copy(alpha = 0.15f)
+                    )
+                    InfoRow("Version", "1.0.0")
+                    HorizontalDivider(
+                        Modifier.padding(vertical = 12.dp),
+                        color = AmuletEmerald.copy(alpha = 0.15f)
+                    )
+                    InfoRow("Developer", "SKB")
                 }
 
                 Spacer(Modifier.height(20.dp))
@@ -122,9 +124,7 @@ InfoRow("Developer", "SKB")
 @Composable
 private fun RowItem(icon: Painter, title: String, value: String, onClick: () -> Unit) {
     Row(
-        Modifier
-            .fillMaxWidth()
-            .clickable(onClick = onClick),
+        Modifier.fillMaxWidth().clickable(onClick = onClick),
         verticalAlignment = Alignment.CenterVertically
     ) {
         Icon(
@@ -134,7 +134,9 @@ private fun RowItem(icon: Painter, title: String, value: String, onClick: () -> 
             modifier = Modifier.size(24.dp)
         )
         Spacer(Modifier.width(12.dp))
-        Text(title, Modifier.weight(1f), style = MaterialTheme.typography.bodyLarge)
+        Text(title, Modifier.weight(1f),
+            style = MaterialTheme.typography.bodyLarge,
+            color = AmuletText)
         Text(">", color = AmuletTextMuted)
     }
 }
@@ -142,7 +144,10 @@ private fun RowItem(icon: Painter, title: String, value: String, onClick: () -> 
 @Composable
 private fun InfoRow(title: String, value: String) {
     Row(verticalAlignment = Alignment.CenterVertically) {
-        Text(title, Modifier.weight(1f), style = MaterialTheme.typography.bodyLarge)
-        Text(value, style = MaterialTheme.typography.bodyMedium, color = AmuletTextMuted)
+        Text(title, Modifier.weight(1f),
+            style = MaterialTheme.typography.bodyLarge,
+            color = AmuletText)
+        Text(value, style = MaterialTheme.typography.bodyMedium,
+            color = AmuletTextMuted)
     }
 }

@@ -31,16 +31,14 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
-import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
+import com.skb.music.player.AudioProfileManager
 import com.skb.music.player.SpatialAudioManager
 import com.skb.music.ui.components.GlowCard
-import com.skb.music.ui.theme.AmuletBg
 import com.skb.music.ui.theme.AmuletDivider
 import com.skb.music.ui.theme.AmuletEmerald
-import com.skb.music.ui.theme.AmuletGold
 import com.skb.music.ui.theme.AmuletSurfaceHigh
 import com.skb.music.ui.theme.AmuletText
 import com.skb.music.ui.theme.AmuletTextMuted
@@ -48,15 +46,15 @@ import com.skb.music.ui.theme.AmuletTextMuted
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun SpatialScreen() {
-
     var mode by remember { mutableStateOf(SpatialAudioManager.currentMode) }
-    var intensity by remember { mutableFloatStateOf(SpatialAudioManager.intensity) }
+    var level by remember { mutableFloatStateOf(SpatialAudioManager.level) }
 
     Scaffold(
         containerColor = Color.Transparent,
         topBar = {
             TopAppBar(
-                title = { Text("Spatial Audio", fontWeight = FontWeight.Bold) },
+                title = { Text("Spatial Audio", fontWeight = FontWeight.Bold,
+                    color = AmuletText) },
                 colors = TopAppBarDefaults.topAppBarColors(
                     containerColor = Color.Transparent
                 )
@@ -69,48 +67,21 @@ fun SpatialScreen() {
                 .padding(16.dp),
             verticalArrangement = Arrangement.spacedBy(12.dp)
         ) {
-
-            // ── Hero ──
-            Box(
-                Modifier.fillMaxWidth()
-                    .clip(RoundedCornerShape(20.dp))
-                    .background(
-                        Brush.linearGradient(
-                            listOf(
-                                AmuletEmerald.copy(alpha = 0.25f),
-                                AmuletGold.copy(alpha = 0.15f),
-                                AmuletBg
-                            )
-                        )
-                    )
-                    .padding(20.dp)
-            ) {
-                Column {
+            // Attach status
+            GlowCard(Modifier.fillMaxWidth()) {
+                Row(verticalAlignment = Alignment.CenterVertically) {
                     Text(
-                        "8 D   ·   1 0 D   ·   3 D",
-                        style = MaterialTheme.typography.labelSmall,
-                        color = AmuletEmerald,
-                        fontWeight = FontWeight.Bold
-                    )
-                    Spacer(Modifier.height(6.dp))
-                    Text(
-                        modeLabel(mode),
-                        style = MaterialTheme.typography.headlineMedium,
-                        fontWeight = FontWeight.Black,
-                        color = AmuletText
-                    )
-                    Spacer(Modifier.height(4.dp))
-                    Text(
-                        "Headphone recommended",
-                        style = MaterialTheme.typography.labelSmall,
-                        color = AmuletTextMuted
+                        if (AudioProfileManager.isAttached)
+                            "● Effects active" else "○ Start a song first",
+                        color = if (AudioProfileManager.isAttached)
+                            AmuletEmerald else AmuletTextMuted,
+                        style = MaterialTheme.typography.bodySmall
                     )
                 }
             }
 
-            // ── Mode selector ──
             GlowCard(Modifier.fillMaxWidth()) {
-                Text("Mode", fontWeight = FontWeight.SemiBold)
+                Text("Mode", fontWeight = FontWeight.SemiBold, color = AmuletText)
                 Spacer(Modifier.height(8.dp))
 
                 val modes = listOf(
@@ -119,7 +90,6 @@ fun SpatialScreen() {
                     "10D" to SpatialAudioManager.Mode.HYPER_10D,
                     "3D"  to SpatialAudioManager.Mode.BINAURAL_3D
                 )
-
                 Row(
                     Modifier.fillMaxWidth(),
                     horizontalArrangement = Arrangement.spacedBy(8.dp)
@@ -153,55 +123,45 @@ fun SpatialScreen() {
 
                 Spacer(Modifier.height(12.dp))
 
-                // Intensity slider
-                Column {
-                    Row(Modifier.fillMaxWidth()) {
-                        Text("Intensity", Modifier.weight(1f),
-                            style = MaterialTheme.typography.bodyMedium)
-                        Text("${(intensity * 100).toInt()}%",
-                            style = MaterialTheme.typography.labelSmall,
-                            color = AmuletEmerald)
-                    }
-                    Slider(
-                        value = intensity,
-                        onValueChange = {
-                            intensity = it
-                            SpatialAudioManager.applyIntensity(it)
-                        },
-                        valueRange = 0f..1f,
-                        colors = SliderDefaults.colors(
-                            thumbColor = AmuletEmerald,
-                            activeTrackColor = AmuletEmerald,
-                            inactiveTrackColor = AmuletDivider
-                        )
-                    )
+                Row(Modifier.fillMaxWidth()) {
+                    Text("Intensity", Modifier.weight(1f),
+                        color = AmuletText,
+                        style = MaterialTheme.typography.bodyMedium)
+                    Text("${(level * 100).toInt()}%",
+                        color = AmuletEmerald,
+                        style = MaterialTheme.typography.labelSmall)
                 }
+                Slider(
+                    value = level,
+                    onValueChange = {
+                        level = it
+                        SpatialAudioManager.applyLevel(it)
+                    },
+                    valueRange = 0f..1f,
+                    colors = SliderDefaults.colors(
+                        thumbColor = AmuletEmerald,
+                        activeTrackColor = AmuletEmerald,
+                        inactiveTrackColor = AmuletDivider
+                    )
+                )
             }
 
-            // ── Info ──
             GlowCard(Modifier.fillMaxWidth()) {
-                Text("কীভাবে কাজ করে", fontWeight = FontWeight.SemiBold)
+                Text("কীভাবে কাজ করে", fontWeight = FontWeight.SemiBold,
+                    color = AmuletText)
                 Spacer(Modifier.height(8.dp))
                 Text(
-                    "• 8D — Virtualizer + Medium Room reverb\n" +
-                    "• 10D — Deep Virtualizer + Large Hall + Bass\n" +
-                    "• 3D — Subtle Virtualizer + Small Room\n\n" +
-                    "সবগুলো Android-এর নিজস্ব AudioEffect API ব্যবহার করে — " +
-                    "তাই সব ফোনে কাজ করবে।\n\n" +
-                    "🎧 হেডফোন লাগালে সবচেয়ে ভালো শোনাবে।",
+                    "• 8D → Virtualizer + Medium Room reverb\n" +
+                    "• 10D → Virtualizer + Large Room + Bass\n" +
+                    "• 3D → Subtle Virtualizer + Small Room\n\n" +
+                    "🔊 একটা গান চালু করে তারপর মোড বদলান।\n" +
+                    "🎧 হেডফোনে ভালো শোনাবে।\n\n" +
+                    "কিছু ফোনে vendor Android এই effects বন্ধ রেখেছে — " +
+                    "সেক্ষেত্রে কোনো পরিবর্তন শুনবেন না।",
                     style = MaterialTheme.typography.bodySmall,
                     color = AmuletTextMuted
                 )
             }
-
-            Spacer(Modifier.height(24.dp))
         }
     }
-}
-
-private fun modeLabel(m: SpatialAudioManager.Mode): String = when (m) {
-    SpatialAudioManager.Mode.OFF -> "Off"
-    SpatialAudioManager.Mode.ROTATE_8D -> "8D Rotating"
-    SpatialAudioManager.Mode.HYPER_10D -> "10D Hyper"
-    SpatialAudioManager.Mode.BINAURAL_3D -> "3D Binaural"
 }

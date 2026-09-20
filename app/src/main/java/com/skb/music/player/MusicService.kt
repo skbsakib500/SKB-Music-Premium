@@ -1,6 +1,8 @@
 package com.skb.music.player
 
 import android.content.Intent
+import androidx.media3.common.C
+import androidx.media3.common.Player
 import androidx.media3.common.util.UnstableApi
 import androidx.media3.exoplayer.ExoPlayer
 import androidx.media3.session.MediaSession
@@ -17,22 +19,23 @@ class MusicService : MediaSessionService() {
 
         val p = ExoPlayer.Builder(this).build()
         player = p
+
+        // ✅ Fix "music stops after a while"
+        p.setWakeMode(C.WAKE_MODE_NETWORK)
+        p.setHandleAudioBecomingNoisy(true)
+        p.setHandleAudioFocus(true)
+
+        // ✅ Attach AudioEffects the moment session ID is ready
+        p.addListener(object : Player.Listener {
+            override fun onAudioSessionIdChanged(audioSessionId: Int) {
+                if (audioSessionId != C.AUDIO_SESSION_ID_UNSET) {
+                    AudioProfileManager.attach(audioSessionId)
+                    SpatialAudioManager.apply(SpatialAudioManager.currentMode)
+                }
+            }
+        })
+
         PlayerHolder.player = p
-
-        // AudioEffect chain — All Android-native
-        runCatching {
-            AudioProfileManager.attach(p)
-            AudioProfileManager.applyGenre("Flat")
-            AudioProfileManager.setBassStrength(0.5f)
-            AudioProfileManager.setVirtualStrength(0.3f)
-            AudioProfileManager.applyLoudnessGain(0)
-        }
-
-        // Spatial — 8D / 10D / 3D
-        runCatching {
-            SpatialAudioManager.attach(p)
-        }
-
         mediaSession = MediaSession.Builder(this, p).build()
     }
 
