@@ -3,9 +3,6 @@ package com.skb.music.player
 import android.media.audiofx.Equalizer
 import androidx.media3.exoplayer.ExoPlayer
 
-/**
- * Wraps Android's built-in Equalizer effect for our ExoPlayer audio session.
- */
 object EqualizerManager {
     private var equalizer: Equalizer? = null
     private var currentPreset: String = "Flat"
@@ -30,8 +27,8 @@ object EqualizerManager {
         val range = eq.bandLevelRange
         val min = range[0]
         val max = range[1]
-
         val bands = eq.numberOfBands.toInt()
+
         val gains = when (name) {
             "Rock"          -> listOf(4f, 3f, -1f, 2f, 4f)
             "Pop"           -> listOf(-1f, 1f, 3f, 2f, -1f)

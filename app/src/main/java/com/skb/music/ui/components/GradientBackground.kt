@@ -11,9 +11,6 @@ import com.skb.music.ui.theme.AmuletBg
 import com.skb.music.ui.theme.AmuletEmerald
 import com.skb.music.ui.theme.AmuletViolet
 
-/**
- * Deep obsidian background with subtle emerald/violet radial glow.
- */
 @Composable
 fun GradientBackground(
     modifier: Modifier = Modifier,
