@@ -3,8 +3,9 @@ package com.skb.music.player
 import android.content.Intent
 import androidx.media3.common.audio.AudioProcessor
 import androidx.media3.common.util.UnstableApi
-import androidx.media3.exoplayer.DefaultRenderersFactory
 import androidx.media3.exoplayer.ExoPlayer
+import androidx.media3.exoplayer.audio.AudioCapabilities
+import androidx.media3.exoplayer.audio.DefaultAudioSink
 import androidx.media3.session.MediaSession
 import androidx.media3.session.MediaSessionService
 import com.skb.music.player.dsp.CrossfeedProcessor
@@ -21,33 +22,37 @@ import com.skb.music.player.spatial.SpatialType
 
 @UnstableApi
 class MusicService : MediaSessionService() {
+
     private var mediaSession: MediaSession? = null
     private var player: ExoPlayer? = null
 
     override fun onCreate() {
         super.onCreate()
 
+        // Build audio processors
         val processors = mutableListOf<AudioProcessor>()
 
-        // 1) Hi-Res upsample
+        // Hi-Res upsampler
         if (HiResSettings.enabled.value && HiResSettings.effectiveFactor() > 1) {
             processors += HiResUpsampler(HiResSettings.effectiveFactor())
         }
 
-        // 2) DSP chain
+        // DSP chain
         if (AudioPipeline.dspEnabled.value) {
             processors += PreampProcessor(
-                AudioPipeline.preampDb.value, AudioPipeline.headroomDb.value
+                AudioPipeline.preampDb.value,
+                AudioPipeline.headroomDb.value
             )
             processors += StereoWidthProcessor(AudioPipeline.stereoWidth.value)
             processors += CrossfeedProcessor(AudioPipeline.crossfeed.value)
             processors += DynamicBassProcessor(
-                AudioPipeline.dynBass.value, AudioPipeline.dynBassGain.value
+                AudioPipeline.dynBass.value,
+                AudioPipeline.dynBassGain.value
             )
             processors += ExciterProcessor(AudioPipeline.exciter.value)
         }
 
-        // 3) Spatial
+        // Spatial
         if (SpatialMode.enabled.value) {
             when (SpatialMode.type.value) {
                 SpatialType.SPATIAL_8D -> processors += Rotate8DProcessor(
@@ -66,11 +71,11 @@ class MusicService : MediaSessionService() {
                     SpatialMode.binauralDepth.value,
                     SpatialMode.binauralElev.value
                 )
-                else -> {}
+                SpatialType.OFF -> {}
             }
         }
 
-        // 4) Limiter
+        // Limiter
         if (AudioPipeline.dspEnabled.value && AudioPipeline.limiterOn.value) {
             processors += SoftLimiterProcessor(
                 ceiling = AudioPipeline.limiterCeil.value,
@@ -78,17 +83,26 @@ class MusicService : MediaSessionService() {
             )
         }
 
-        // ═══ Build with custom processors via RenderersFactory ═══
-        val renderersFactory = DefaultRenderersFactory(this)
-            .setAudioProcessors(processors.toTypedArray())
+        // ═══ Build DefaultAudioSink with processors ═══
+        val sinkBuilder = DefaultAudioSink.Builder(this)
+            .setAudioCapabilities(AudioCapabilities.getCapabilities(this))
+            .setEnableFloatOutput(true)
 
+        if (processors.isNotEmpty()) {
+            sinkBuilder.setAudioProcessors(processors.toTypedArray())
+        }
+
+        val sink = sinkBuilder.build()
+
+        // ═══ Create ExoPlayer with custom sink ═══
         val p = ExoPlayer.Builder(this)
-            .setRenderersFactory(renderersFactory)
+            .setAudioSink(sink)
             .build()
 
         player = p
         PlayerHolder.player = p
 
+        // Session-based AudioEffect chain
         runCatching {
             AudioProfileManager.attach(p)
             AudioProfileManager.applyGenre("Flat")
@@ -99,7 +113,7 @@ class MusicService : MediaSessionService() {
         mediaSession = MediaSession.Builder(this, p).build()
     }
 
-    override fun onGetSession(c: MediaSession.ControllerInfo) = mediaSession
+    override fun onGetSession(controllerInfo: MediaSession.ControllerInfo) = mediaSession
 
     override fun onTaskRemoved(rootIntent: Intent?) {
         val p = mediaSession?.player
