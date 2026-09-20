@@ -9,9 +9,6 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.compose.setContent
 import androidx.activity.result.contract.ActivityResultContracts
-import androidx.compose.animation.AnimatedVisibility
-import androidx.compose.animation.slideInVertically
-import androidx.compose.animation.slideOutVertically
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -21,13 +18,11 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.width
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Headphones
 import androidx.compose.material.icons.filled.Home
 import androidx.compose.material.icons.filled.KeyboardArrowDown
 import androidx.compose.material.icons.filled.LibraryMusic
-import androidx.compose.material.icons.filled.QueueMusic
 import androidx.compose.material.icons.filled.Search
 import androidx.compose.material.icons.filled.Settings
 import androidx.compose.material.icons.filled.Tune
@@ -60,7 +55,6 @@ import com.skb.music.player.MusicService
 import com.skb.music.player.PlaybackMode
 import com.skb.music.player.PlayerHolder
 import com.skb.music.ui.components.GradientBackground
-import com.skb.music.ui.components.MiniPlayer
 import com.skb.music.ui.screens.AutoEqScreen
 import com.skb.music.ui.screens.EqualizerScreen
 import com.skb.music.ui.screens.HomeScreen
@@ -129,11 +123,16 @@ private fun PermissionScreen(onGrant: () -> Unit) {
     }
 }
 
+// ═══════════════════════════════════════════════════════════
+// চলমান স্ক্রিন: TABS (BottomNav) বা PLAYER (full) বা QUEUE (full)
+// ═══════════════════════════════════════════════════════════
+
+enum class AppScreen { TABS, PLAYER, QUEUE }
+
 @Composable
 private fun AppRoot(repo: MusicRepository) {
     var tab by remember { mutableIntStateOf(0) }
-    var showPlayer by remember { mutableStateOf(false) }
-    var showQueue by remember { mutableStateOf(false) }
+    var screen by remember { mutableStateOf(AppScreen.TABS) }
 
     var allSongs by remember { mutableStateOf<List<Song>>(emptyList()) }
     var currentSong by remember { mutableStateOf<Song?>(null) }
@@ -164,62 +163,119 @@ private fun AppRoot(repo: MusicRepository) {
         currentSong = song
         val idx = list.indexOfFirst { it.id == song.id }.coerceAtLeast(0)
         PlayerHolder.setQueue(list, idx)
-        showPlayer = true
+        screen = AppScreen.PLAYER
     }
 
     GradientBackground {
-        Box(Modifier.fillMaxSize()) {
-            Scaffold(
+        when (screen) {
+
+            // ─────────── Full Player ───────────
+            AppScreen.PLAYER -> Column(Modifier.fillMaxSize()) {
+                Row(
+                    Modifier
+                        .fillMaxWidth()
+                        .padding(8.dp),
+                    horizontalArrangement = Arrangement.SpaceBetween,
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    IconButton(onClick = { screen = AppScreen.TABS }) {
+                        Icon(
+                            Icons.Default.KeyboardArrowDown,
+                            "Back",
+                            tint = AmuletText
+                        )
+                    }
+                    Text(
+                        "Now Playing",
+                        style = MaterialTheme.typography.titleMedium,
+                        color = AmuletTextMuted
+                    )
+                    IconButton(onClick = { screen = AppScreen.QUEUE }) {
+                        Text("≡", color = AmuletText, style = MaterialTheme.typography.titleLarge)
+                    }
+                }
+                PlayerScreen(
+                    song = currentSong,
+                    isPlaying = isPlaying,
+                    positionMs = position,
+                    durationMs = duration,
+                    onPlayPause = {
+                        PlayerHolder.player?.let {
+                            if (it.isPlaying) it.pause() else it.play()
+                        }
+                    },
+                    onNext = { PlayerHolder.player?.seekToNextMediaItem() },
+                    onPrevious = { PlayerHolder.player?.seekToPreviousMediaItem() },
+                    onSeek = { PlayerHolder.player?.seekTo(it) },
+                    onShuffleToggle = { PlaybackMode.toggleShuffle(PlayerHolder.player) },
+                    onRepeatCycle = { PlaybackMode.cycleRepeat(PlayerHolder.player) },
+                    onQueueClick = { screen = AppScreen.QUEUE },
+                    onFavoriteClick = {
+                        currentSong?.let { s ->
+                            favorites = if (s.id in favorites)
+                                favorites - s.id else favorites + s.id
+                        }
+                    },
+                    isFavorite = currentSong?.id in favorites
+                )
+            }
+
+            // ─────────── Queue ───────────
+            AppScreen.QUEUE -> Column(Modifier.fillMaxSize()) {
+                Row(
+                    Modifier
+                        .fillMaxWidth()
+                        .padding(8.dp),
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    IconButton(onClick = { screen = AppScreen.PLAYER }) {
+                        Icon(
+                            Icons.Default.KeyboardArrowDown,
+                            "Back",
+                            tint = AmuletText
+                        )
+                    }
+                }
+                QueueScreen(
+                    queue = allSongs,
+                    currentIndex = currentIndex,
+                    onSongClick = { idx ->
+                        PlayerHolder.player?.seekTo(idx, 0L)
+                        PlayerHolder.player?.play()
+                        screen = AppScreen.PLAYER
+                    }
+                )
+            }
+
+            // ─────────── Tabs ───────────
+            AppScreen.TABS -> Scaffold(
                 containerColor = Color.Transparent,
                 bottomBar = {
-                    Column {
-                        if (!showPlayer) {
-                            MiniPlayer(
-                                song = currentSong,
-                                isPlaying = isPlaying,
-                                progress = if (duration > 0) position.toFloat() / duration else 0f,
-                                onClick = { showPlayer = true },
-                                onPlayPause = {
-                                    PlayerHolder.player?.let {
-                                        if (it.isPlaying) it.pause() else it.play()
-                                    }
-                                },
-                                onNext = { PlayerHolder.player?.seekToNextMediaItem() }
-                            )
-                        }
-                        NavigationBar(
-                            containerColor = AmuletSurface,
-                            tonalElevation = 0.dp
-                        ) {
-                            val navItems = listOf(
-                                Triple("Home", Icons.Default.Home, 0),
-                                Triple("Library", Icons.Default.LibraryMusic, 1),
-                                Triple("Search", Icons.Default.Search, 2),
-                                Triple("EQ", Icons.Default.Tune, 3),
-                                Triple("AutoEq", Icons.Default.Headphones, 4),
-                                Triple("Vis", Icons.Default.Tune, 5),
-                                Triple("More", Icons.Default.Settings, 6)
-                            )
-                            navItems.forEach { (label, icon, idx) ->
-                                NavigationBarItem(
-                                    selected = tab == idx,
-                                    onClick = { tab = idx; showPlayer = false },
-                                    icon = { Icon(icon, null) },
-                                    label = {
-                                        Text(
-                                            label,
-                                            style = MaterialTheme.typography.labelSmall
-                                        )
-                                    },
-                                    colors = NavigationBarItemDefaults.colors(
-                                        selectedIconColor = AmuletEmerald,
-                                        selectedTextColor = AmuletEmerald,
-                                        indicatorColor = AmuletEmerald.copy(alpha = 0.15f),
-                                        unselectedIconColor = AmuletTextMuted,
-                                        unselectedTextColor = AmuletTextMuted
-                                    )
+                    NavigationBar(
+                        containerColor = AmuletSurface,
+                        tonalElevation = 0.dp
+                    ) {
+                        val navItems = listOf(
+                            Triple("Home", Icons.Default.Home, 0),
+                            Triple("Library", Icons.Default.LibraryMusic, 1),
+                            Triple("Search", Icons.Default.Search, 2),
+                            Triple("EQ", Icons.Default.Tune, 3),
+                            Triple("More", Icons.Default.Settings, 4)
+                        )
+                        navItems.forEach { (label, icon, idx) ->
+                            NavigationBarItem(
+                                selected = tab == idx,
+                                onClick = { tab = idx },
+                                icon = { Icon(icon, null) },
+                                label = { Text(label) },
+                                colors = NavigationBarItemDefaults.colors(
+                                    selectedIconColor = AmuletEmerald,
+                                    selectedTextColor = AmuletEmerald,
+                                    indicatorColor = AmuletEmerald.copy(alpha = 0.15f),
+                                    unselectedIconColor = AmuletTextMuted,
+                                    unselectedTextColor = AmuletTextMuted
                                 )
-                            }
+                            )
                         }
                     }
                 }
@@ -230,88 +286,8 @@ private fun AppRoot(repo: MusicRepository) {
                         1 -> LibraryScreen(allSongs, ::playSong)
                         2 -> SearchScreen(allSongs, ::playSong)
                         3 -> EqualizerScreen()
-                        4 -> AutoEqScreen()
-                        5 -> VisualizerScreen()
-                        6 -> SettingsScreen()
+                        4 -> SettingsScreen()
                     }
-                }
-            }
-
-            AnimatedVisibility(
-                visible = showPlayer,
-                enter = slideInVertically(initialOffsetY = { it }),
-                exit = slideOutVertically(targetOffsetY = { it })
-            ) {
-                GradientBackground {
-                    Column(Modifier.fillMaxSize()) {
-                        Row(
-                            Modifier.fillMaxWidth().padding(8.dp),
-                            horizontalArrangement = Arrangement.SpaceBetween,
-                            verticalAlignment = Alignment.CenterVertically
-                        ) {
-                            IconButton(onClick = { showPlayer = false }) {
-                                Icon(
-                                    Icons.Default.KeyboardArrowDown,
-                                    "Collapse",
-                                    tint = AmuletText
-                                )
-                            }
-                            IconButton(onClick = { showQueue = true }) {
-                                Icon(
-                                    Icons.Default.QueueMusic,
-                                    "Queue",
-                                    tint = AmuletText
-                                )
-                            }
-                        }
-                        PlayerScreen(
-                            song = currentSong,
-                            isPlaying = isPlaying,
-                            positionMs = position,
-                            durationMs = duration,
-                            onPlayPause = {
-                                PlayerHolder.player?.let {
-                                    if (it.isPlaying) it.pause() else it.play()
-                                }
-                            },
-                            onNext = { PlayerHolder.player?.seekToNextMediaItem() },
-                            onPrevious = { PlayerHolder.player?.seekToPreviousMediaItem() },
-                            onSeek = { PlayerHolder.player?.seekTo(it) },
-                            onShuffleToggle = {
-                                PlaybackMode.toggleShuffle(PlayerHolder.player)
-                            },
-                            onRepeatCycle = {
-                                PlaybackMode.cycleRepeat(PlayerHolder.player)
-                            },
-                            onQueueClick = { showQueue = true },
-                            onFavoriteClick = {
-                                currentSong?.let { s ->
-                                    favorites =
-                                        if (s.id in favorites) favorites - s.id
-                                        else favorites + s.id
-                                }
-                            },
-                            isFavorite = currentSong?.id in favorites
-                        )
-                    }
-                }
-            }
-
-            AnimatedVisibility(
-                visible = showQueue,
-                enter = slideInVertically(initialOffsetY = { it }),
-                exit = slideOutVertically(targetOffsetY = { it })
-            ) {
-                GradientBackground {
-                    QueueScreen(
-                        queue = allSongs,
-                        currentIndex = currentIndex,
-                        onSongClick = { idx ->
-                            PlayerHolder.player?.seekTo(idx, 0L)
-                            PlayerHolder.player?.play()
-                            showQueue = false
-                        }
-                    )
                 }
             }
         }
