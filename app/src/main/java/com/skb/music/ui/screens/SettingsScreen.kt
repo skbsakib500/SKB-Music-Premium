@@ -44,6 +44,7 @@ fun SettingsScreen() {
 
     when (sub) {
         "autoeq" -> AutoEqScreen()
+        "audio_profile" -> AudioProfileScreen()
         "visualizer" -> VisualizerScreen()
         "equalizer" -> EqualizerScreen()
         else -> Scaffold(
@@ -87,6 +88,8 @@ fun SettingsScreen() {
                 }
 
                 GlowCard(Modifier.fillMaxWidth()) {
+                    RowItem(PaResources.eq(), "Audio Profile", "Output, DSP chain") { sub = "audio_profile" }
+                    HorizontalDivider(Modifier.padding(vertical = 12.dp), color = AmuletEmerald.copy(alpha = 0.15f))
                     RowItem(PaResources.eq(), "Equalizer",
                         "Bands, presets") { sub = "equalizer" }
                     HorizontalDivider(

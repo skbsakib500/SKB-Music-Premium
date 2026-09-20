@@ -13,9 +13,13 @@ class MusicService : MediaSessionService() {
         val player = ExoPlayer.Builder(this).build()
         PlayerHolder.player = player
 
+        // ═══ Full DSP chain ═══
         runCatching {
-            EqualizerManager.attach(player)
-            EqualizerManager.applyPreset("Flat")
+            AudioProfileManager.attach(player)
+            AudioProfileManager.applyGenre("Flat")
+            AudioProfileManager.setBassStrength(0.5f)
+            AudioProfileManager.setVirtualStrength(0.3f)
+            AudioProfileManager.setLoudnessGain(0)
         }
 
         mediaSession = MediaSession.Builder(this, player).build()
@@ -29,7 +33,7 @@ class MusicService : MediaSessionService() {
     }
 
     override fun onDestroy() {
-        runCatching { EqualizerManager.release() }
+        runCatching { AudioProfileManager.release() }
         mediaSession?.player?.release()
         mediaSession?.release()
         mediaSession = null
