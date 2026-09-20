@@ -28,12 +28,10 @@ class AutoEqRepository(private val context: Context) {
             SQLiteDatabase.OPEN_READONLY
         )
         val result = mutableListOf<Headphone>()
-
         val tables = mutableListOf<String>()
         db.rawQuery("SELECT name FROM sqlite_master WHERE type='table'", null).use { c ->
             while (c.moveToNext()) tables.add(c.getString(0))
         }
-
         for (t in tables) {
             runCatching {
                 db.rawQuery("SELECT * FROM $t LIMIT 1", null).use { c ->

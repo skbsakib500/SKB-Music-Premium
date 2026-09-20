@@ -13,7 +13,6 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
-import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
@@ -48,22 +47,26 @@ import com.skb.music.ui.theme.AmuletTextMuted
 @Composable
 fun AutoEqScreen() {
     val context = LocalContext.current
-    var all by remember { mutableStateOf<List<String>>(emptyList()) }
+    var names by remember { mutableStateOf<List<String>>(emptyList()) }
     var query by remember { mutableStateOf("") }
     var loading by remember { mutableStateOf(true) }
 
     LaunchedEffect(Unit) {
-        all = try {
-            AutoEqRepository(context).loadHeadphones().map { it.name }
-        } catch (e: Exception) {
-            emptyList()
+        val loaded = try {
+            val headphones = AutoEqRepository(context).loadHeadphones()
+            var list = mutableListOf<String>()
+            for (h in headphones) list.add(h.name)
+            list
+        } catch (t: Throwable) {
+            emptyList<String>()
         }
+        names = loaded
         loading = false
     }
 
-    val filtered = remember(query, all) {
-        if (query.isBlank()) all
-        else all.filter { it.contains(query, ignoreCase = true) }
+    val filtered = remember(query, names) {
+        if (query.isBlank()) names
+        else names.filter { it.contains(query, ignoreCase = true) }
     }
 
     Scaffold(
@@ -113,7 +116,7 @@ fun AutoEqScreen() {
                     contentAlignment = Alignment.Center
                 ) {
                     Text(
-                        if (all.isEmpty()) "No AutoEq database found"
+                        if (names.isEmpty()) "No AutoEq database found"
                         else "No match",
                         color = AmuletTextMuted
                     )
@@ -124,7 +127,7 @@ fun AutoEqScreen() {
                 ) {
                     item {
                         Text(
-                            "${filtered.size} of ${all.size} headphones",
+                            "${filtered.size} of ${names.size} headphones",
                             style = MaterialTheme.typography.labelSmall,
                             color = AmuletTextMuted,
                             modifier = Modifier.padding(
