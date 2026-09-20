@@ -15,13 +15,10 @@ import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.ExperimentalMaterial3Api
-import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Slider
 import androidx.compose.material3.SliderDefaults
-import androidx.compose.material3.Switch
-import androidx.compose.material3.SwitchDefaults
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
 import androidx.compose.material3.TopAppBarDefaults
@@ -38,8 +35,7 @@ import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
-import com.skb.music.player.spatial.SpatialMode
-import com.skb.music.player.spatial.SpatialType
+import com.skb.music.player.SpatialAudioManager
 import com.skb.music.ui.components.GlowCard
 import com.skb.music.ui.theme.AmuletBg
 import com.skb.music.ui.theme.AmuletDivider
@@ -53,23 +49,8 @@ import com.skb.music.ui.theme.AmuletTextMuted
 @Composable
 fun SpatialScreen() {
 
-    var type by remember { mutableStateOf(SpatialMode.type.value) }
-
-    // 8D
-    var r8speed by remember { mutableFloatStateOf(SpatialMode.rotateSpeed.value) }
-    var r8wet   by remember { mutableFloatStateOf(SpatialMode.rotateWet.value) }
-    var r8rad   by remember { mutableFloatStateOf(SpatialMode.rotateRadius.value) }
-
-    // 10D
-    var hSpeed by remember { mutableFloatStateOf(SpatialMode.hyperSpeed.value) }
-    var hWet   by remember { mutableFloatStateOf(SpatialMode.hyperWet.value) }
-    var hDepth by remember { mutableFloatStateOf(SpatialMode.hyperDepth.value) }
-    var hHaas  by remember { mutableFloatStateOf(SpatialMode.hyperHaas.value) }
-
-    // 3D
-    var bWidth by remember { mutableFloatStateOf(SpatialMode.binauralWidth.value) }
-    var bDepth by remember { mutableFloatStateOf(SpatialMode.binauralDepth.value) }
-    var bElev  by remember { mutableFloatStateOf(SpatialMode.binauralElev.value) }
+    var mode by remember { mutableStateOf(SpatialAudioManager.currentMode) }
+    var intensity by remember { mutableFloatStateOf(SpatialAudioManager.intensity) }
 
     Scaffold(
         containerColor = Color.Transparent,
@@ -113,7 +94,7 @@ fun SpatialScreen() {
                     )
                     Spacer(Modifier.height(6.dp))
                     Text(
-                        SpatialMode.label(),
+                        modeLabel(mode),
                         style = MaterialTheme.typography.headlineMedium,
                         fontWeight = FontWeight.Black,
                         color = AmuletText
@@ -131,18 +112,20 @@ fun SpatialScreen() {
             GlowCard(Modifier.fillMaxWidth()) {
                 Text("Mode", fontWeight = FontWeight.SemiBold)
                 Spacer(Modifier.height(8.dp))
+
                 val modes = listOf(
-                    "Off"        to SpatialType.OFF,
-                    "8D"         to SpatialType.SPATIAL_8D,
-                    "10D"        to SpatialType.SPATIAL_10D,
-                    "3D Binaural" to SpatialType.BINAURAL_3D
+                    "Off" to SpatialAudioManager.Mode.OFF,
+                    "8D"  to SpatialAudioManager.Mode.ROTATE_8D,
+                    "10D" to SpatialAudioManager.Mode.HYPER_10D,
+                    "3D"  to SpatialAudioManager.Mode.BINAURAL_3D
                 )
+
                 Row(
                     Modifier.fillMaxWidth(),
                     horizontalArrangement = Arrangement.spacedBy(8.dp)
                 ) {
                     modes.forEach { (label, t) ->
-                        val active = t == type
+                        val active = t == mode
                         Box(
                             Modifier
                                 .weight(1f)
@@ -152,8 +135,8 @@ fun SpatialScreen() {
                                     else AmuletSurfaceHigh
                                 )
                                 .clickable {
-                                    type = t
-                                    SpatialMode.setType(t)
+                                    mode = t
+                                    SpatialAudioManager.apply(t)
                                 }
                                 .padding(vertical = 12.dp),
                             contentAlignment = Alignment.Center
@@ -162,90 +145,50 @@ fun SpatialScreen() {
                                 label,
                                 color = if (active) AmuletEmerald else AmuletText,
                                 fontWeight = if (active) FontWeight.Bold
-                                else FontWeight.Normal,
-                                style = MaterialTheme.typography.bodySmall
+                                else FontWeight.Normal
                             )
                         }
                     }
                 }
-                Spacer(Modifier.height(8.dp))
-                Text(
-                    "Mode change → অ্যাপ রিস্টার্ট করুন",
-                    style = MaterialTheme.typography.labelSmall,
-                    color = AmuletTextMuted
-                )
-            }
 
-            // ── 8D controls ──
-            if (type == SpatialType.SPATIAL_8D) {
-                GlowCard(Modifier.fillMaxWidth()) {
-                    Text("8D Controls", fontWeight = FontWeight.SemiBold)
-                    Sld("Rotation Speed", r8speed, 0.01f, 0.5f,
-                        "${(r8speed * 100).toInt() / 100f} Hz") {
-                        r8speed = it; SpatialMode.rotateSpeed.value = it
+                Spacer(Modifier.height(12.dp))
+
+                // Intensity slider
+                Column {
+                    Row(Modifier.fillMaxWidth()) {
+                        Text("Intensity", Modifier.weight(1f),
+                            style = MaterialTheme.typography.bodyMedium)
+                        Text("${(intensity * 100).toInt()}%",
+                            style = MaterialTheme.typography.labelSmall,
+                            color = AmuletEmerald)
                     }
-                    Sld("Wet Mix", r8wet, 0f, 0.6f,
-                        "${(r8wet * 100).toInt()}%") {
-                        r8wet = it; SpatialMode.rotateWet.value = it
-                    }
-                    Sld("Radius", r8rad, 0f, 1f,
-                        "${(r8rad * 100).toInt()}%") {
-                        r8rad = it; SpatialMode.rotateRadius.value = it
-                    }
+                    Slider(
+                        value = intensity,
+                        onValueChange = {
+                            intensity = it
+                            SpatialAudioManager.setIntensity(it)
+                        },
+                        valueRange = 0f..1f,
+                        colors = SliderDefaults.colors(
+                            thumbColor = AmuletEmerald,
+                            activeTrackColor = AmuletEmerald,
+                            inactiveTrackColor = AmuletDivider
+                        )
+                    )
                 }
             }
 
-            // ── 10D controls ──
-            if (type == SpatialType.SPATIAL_10D) {
-                GlowCard(Modifier.fillMaxWidth()) {
-                    Text("10D Hyper Controls", fontWeight = FontWeight.SemiBold)
-                    Sld("Rotation Speed", hSpeed, 0.01f, 0.3f,
-                        "${(hSpeed * 100).toInt() / 100f} Hz") {
-                        hSpeed = it; SpatialMode.hyperSpeed.value = it
-                    }
-                    Sld("Wet Mix", hWet, 0f, 0.6f,
-                        "${(hWet * 100).toInt()}%") {
-                        hWet = it; SpatialMode.hyperWet.value = it
-                    }
-                    Sld("Binaural Depth", hDepth, 0f, 1f,
-                        "${(hDepth * 100).toInt()}%") {
-                        hDepth = it; SpatialMode.hyperDepth.value = it
-                    }
-                    Sld("Haas Delay", hHaas, 0f, 30f,
-                        "${hHaas.toInt()} ms") {
-                        hHaas = it; SpatialMode.hyperHaas.value = it
-                    }
-                }
-            }
-
-            // ── 3D controls ──
-            if (type == SpatialType.BINAURAL_3D) {
-                GlowCard(Modifier.fillMaxWidth()) {
-                    Text("3D Binaural Controls", fontWeight = FontWeight.SemiBold)
-                    Sld("Stereo Width", bWidth, 0f, 1f,
-                        "${(bWidth * 100).toInt()}%") {
-                        bWidth = it; SpatialMode.binauralWidth.value = it
-                    }
-                    Sld("Room Depth", bDepth, 0f, 1f,
-                        "${(bDepth * 100).toInt()}%") {
-                        bDepth = it; SpatialMode.binauralDepth.value = it
-                    }
-                    Sld("Elevation", bElev, -1f, 1f,
-                        "${(bElev * 100).toInt()}%") {
-                        bElev = it; SpatialMode.binauralElev.value = it
-                    }
-                }
-            }
-
-            // ── Explanation ──
+            // ── Info ──
             GlowCard(Modifier.fillMaxWidth()) {
                 Text("কীভাবে কাজ করে", fontWeight = FontWeight.SemiBold)
-                Spacer(Modifier.height(6.dp))
+                Spacer(Modifier.height(8.dp))
                 Text(
-                    "• 8D — একটি mono source বৃত্তে ঘোরে + reverb tail\n" +
-                    "• 10D — 8D + HRTF + Haas delay + room simulation\n" +
-                    "• 3D — বাইনারাল ITD/ILD, হেডফোনে আসল depth\n\n" +
-                    "হেডফোন ছাড়া ভালো শোনাবে না।",
+                    "• 8D — Virtualizer + Medium Room reverb\n" +
+                    "• 10D — Deep Virtualizer + Large Hall + Bass\n" +
+                    "• 3D — Subtle Virtualizer + Small Room\n\n" +
+                    "সবগুলো Android-এর নিজস্ব AudioEffect API ব্যবহার করে — " +
+                    "তাই সব ফোনে কাজ করবে।\n\n" +
+                    "🎧 হেডফোন লাগালে সবচেয়ে ভালো শোনাবে।",
                     style = MaterialTheme.typography.bodySmall,
                     color = AmuletTextMuted
                 )
@@ -256,27 +199,9 @@ fun SpatialScreen() {
     }
 }
 
-@Composable
-private fun Sld(
-    label: String, value: Float, min: Float, max: Float, display: String,
-    onChange: (Float) -> Unit
-) {
-    Column(Modifier.padding(vertical = 4.dp)) {
-        Row(Modifier.fillMaxWidth()) {
-            Text(label, Modifier.weight(1f),
-                style = MaterialTheme.typography.bodyMedium)
-            Text(display, style = MaterialTheme.typography.labelSmall,
-                color = AmuletEmerald)
-        }
-        Slider(
-            value = value.coerceIn(min, max),
-            onValueChange = onChange,
-            valueRange = min..max,
-            colors = SliderDefaults.colors(
-                thumbColor = AmuletEmerald,
-                activeTrackColor = AmuletEmerald,
-                inactiveTrackColor = AmuletDivider
-            )
-        )
-    }
+private fun modeLabel(m: SpatialAudioManager.Mode): String = when (m) {
+    SpatialAudioManager.Mode.OFF -> "Off"
+    SpatialAudioManager.Mode.ROTATE_8D -> "8D Rotating"
+    SpatialAudioManager.Mode.HYPER_10D -> "10D Hyper"
+    SpatialAudioManager.Mode.BINAURAL_3D -> "3D Binaural"
 }

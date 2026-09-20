@@ -15,18 +15,22 @@ class MusicService : MediaSessionService() {
     override fun onCreate() {
         super.onCreate()
 
-        // Standard ExoPlayer — DSP via AudioEffect (session-based)
         val p = ExoPlayer.Builder(this).build()
         player = p
         PlayerHolder.player = p
 
-        // AudioEffect chain — works on any Android device
+        // AudioEffect chain — All Android-native
         runCatching {
             AudioProfileManager.attach(p)
             AudioProfileManager.applyGenre("Flat")
             AudioProfileManager.setBassStrength(0.5f)
             AudioProfileManager.setVirtualStrength(0.3f)
             AudioProfileManager.setLoudnessGain(0)
+        }
+
+        // Spatial — 8D / 10D / 3D
+        runCatching {
+            SpatialAudioManager.attach(p)
         }
 
         mediaSession = MediaSession.Builder(this, p).build()
@@ -41,6 +45,7 @@ class MusicService : MediaSessionService() {
 
     override fun onDestroy() {
         runCatching { AudioProfileManager.release() }
+        runCatching { SpatialAudioManager.release() }
         player?.release()
         mediaSession?.release()
         mediaSession = null
