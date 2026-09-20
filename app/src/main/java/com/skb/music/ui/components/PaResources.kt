@@ -41,18 +41,18 @@ object PaResources {
     /** Media control আইকন */
     @Composable
     fun mediaIcon(name: String): Painter = when (name) {
-        "play"  -> painterResource(R.drawable.v_status_play)
-        "pause" -> painterResource(R.drawable.v_status_pause)
-        "ff"    -> painterResource(R.drawable.v_status_ff)
-        "rw"    -> painterResource(R.drawable.v_status_rw)
+        "play"  -> painterResource(R.drawable.skb_ic_play)
+        "pause" -> painterResource(R.drawable.skb_ic_pause)
+        "ff"    -> painterResource(R.drawable.skb_ic_next)
+        "rw"    -> painterResource(R.drawable.skb_ic_prev)
         "close" -> painterResource(R.drawable.v_status_close)
-        else    -> painterResource(R.drawable.v_status_play)
+        else    -> painterResource(R.drawable.skb_ic_play)
     }
 
     /** Heart icon */
     @Composable
     fun heartIcon(liked: Boolean): Painter =
-        if (liked) painterResource(R.drawable.v_heart_like)
+        if (liked) painterResource(R.drawable.skb_ic_favorite_fill)
         else painterResource(R.drawable.v_heart_unlike)
 
     /** Dimension helper */

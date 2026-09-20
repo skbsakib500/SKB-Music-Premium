@@ -114,7 +114,7 @@ private fun HeroCard(count: Int) {
             ) {
                 // Poweramp-এর আইকন ব্যবহার করছি!
                 Icon(
-                    painter = painterResource(R.drawable.v_status_play),
+                    painter = painterResource(R.drawable.skb_ic_play),
                     contentDescription = null,
                     tint = Color.Black,
                     modifier = Modifier.size(32.dp)
@@ -146,7 +146,7 @@ private fun HeroCard(count: Int) {
                 modifier = Modifier.weight(1f)
             ) {
                 Icon(
-                    painter = painterResource(R.drawable.v_status_play),
+                    painter = painterResource(R.drawable.skb_ic_play),
                     contentDescription = null,
                     modifier = Modifier.size(18.dp)
                 )
@@ -159,7 +159,7 @@ private fun HeroCard(count: Int) {
                 modifier = Modifier.weight(1f)
             ) {
                 Icon(
-                    painter = painterResource(R.drawable.v_next_cat_android),
+                    painter = painterResource(R.drawable.skb_ic_shuffle),
                     contentDescription = null,
                     modifier = Modifier.size(18.dp)
                 )
@@ -183,7 +183,7 @@ private fun LoadingState(modifier: Modifier = Modifier) {
 private fun EmptyState(modifier: Modifier = Modifier) {
     Column(modifier, horizontalAlignment = Alignment.CenterHorizontally) {
         Icon(
-            painter = painterResource(R.drawable.v_status_play),
+            painter = painterResource(R.drawable.skb_ic_play),
             contentDescription = null,
             tint = AmuletTextMuted,
             modifier = Modifier.size(72.dp)
@@ -211,7 +211,7 @@ private fun SongRow(song: Song, onClick: () -> Unit) {
                 AsyncImage(model = song.albumArtUri, contentDescription = null)
             } else {
                 Icon(
-                    painter = painterResource(R.drawable.v_status_play),
+                    painter = painterResource(R.drawable.skb_ic_play),
                     contentDescription = null,
                     tint = AmuletEmerald,
                     modifier = Modifier.padding(12.dp)
@@ -234,7 +234,7 @@ private fun SongRow(song: Song, onClick: () -> Unit) {
         }
         // Poweramp-এর heart icon!
         Icon(
-            painter = painterResource(R.drawable.v_heart_stroke),
+            painter = painterResource(R.drawable.skb_ic_favorite_outline),
             contentDescription = null,
             tint = AmuletEmerald,
             modifier = Modifier.size(20.dp)

@@ -13,7 +13,6 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import com.skb.music.R
 import com.skb.music.ui.components.GlowCard
-import com.skb.music.ui.components.PaMenuPreview
 import com.skb.music.ui.theme.AmuletEmerald
 import com.skb.music.ui.theme.AmuletTextMuted
 
@@ -80,7 +79,6 @@ fun SettingsScreen() {
                     fontWeight = FontWeight.SemiBold,
                     color = AmuletTextMuted)
                 Spacer(Modifier.height(8.dp))
-                PaMenuPreview(menuRes = R.menu.menu_conf_widget)
             }
 
             Spacer(Modifier.height(20.dp))
