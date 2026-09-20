@@ -3,11 +3,11 @@ package com.skb.music
 import android.Manifest
 import android.app.Activity
 import android.content.Intent
-import android.content.IntentSender
 import android.content.pm.PackageManager
 import android.os.Build
 import android.os.Bundle
 import androidx.activity.ComponentActivity
+import androidx.activity.compose.BackHandler
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.compose.setContent
 import androidx.activity.result.IntentSenderRequest
@@ -109,8 +109,6 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 private fun PermissionScreen(onGrant: () -> Unit) {
-    }
-
     GradientBackground {
         Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
             Column(
@@ -142,19 +140,9 @@ enum class AppScreen { TABS, PLAYER, QUEUE }
 @Composable
 private fun AppRoot(repo: MusicRepository) {
     val scope = rememberCoroutineScope()
-    val context = LocalContext.current
 
     var tab by remember { mutableIntStateOf(0) }
     var screen by remember { mutableStateOf(AppScreen.TABS) }
-
-    // Back button: Player→Tabs, Queue→Player
-    androidx.activity.compose.BackHandler(enabled = true) {
-        when (screen) {
-            AppScreen.PLAYER -> screen = AppScreen.TABS
-            AppScreen.QUEUE -> screen = AppScreen.PLAYER
-            AppScreen.TABS -> { /* let system handle */ }
-        }
-    }
     var libraryScrollIndex by remember { mutableIntStateOf(0) }
     var libraryScrollOffset by remember { mutableIntStateOf(0) }
 
@@ -196,7 +184,6 @@ private fun AppRoot(repo: MusicRepository) {
 
     // ═══ DELETE Flow ═══
     var pendingDelete by remember { mutableStateOf<Song?>(null) }
-
     val deleteLauncher = rememberLauncherForActivityResult(
         ActivityResultContracts.StartIntentSenderForResult()
     ) { result ->
@@ -213,13 +200,21 @@ private fun AppRoot(repo: MusicRepository) {
                 val sender = pending.intentSender
                 deleteLauncher.launch(IntentSenderRequest.Builder(sender).build())
             }.onFailure {
-                // Fallback direct delete
                 repo.deleteDirect(song)
                 scope.launch { reload() }
             }
         } else {
             repo.deleteDirect(song)
             scope.launch { reload() }
+        }
+    }
+
+    // ═══ Back button handling ═══
+    BackHandler(enabled = screen != AppScreen.TABS) {
+        screen = when (screen) {
+            AppScreen.QUEUE -> AppScreen.PLAYER
+            AppScreen.PLAYER -> AppScreen.TABS
+            else -> AppScreen.TABS
         }
     }
 
