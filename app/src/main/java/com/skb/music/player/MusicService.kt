@@ -14,6 +14,11 @@ import com.skb.music.player.dsp.ExciterProcessor
 import com.skb.music.player.dsp.PreampProcessor
 import com.skb.music.player.dsp.SoftLimiterProcessor
 import com.skb.music.player.dsp.StereoWidthProcessor
+import com.skb.music.player.spatial.Binaural3DProcessor
+import com.skb.music.player.spatial.Hyper10DProcessor
+import com.skb.music.player.spatial.Rotate8DProcessor
+import com.skb.music.player.spatial.SpatialMode
+import com.skb.music.player.spatial.SpatialType
 
 @UnstableApi
 class MusicService : MediaSessionService() {
@@ -33,19 +38,44 @@ class MusicService : MediaSessionService() {
         // 2) Advanced DSP
         if (AudioPipeline.dspEnabled.value) {
             processors += PreampProcessor(
-                gainDb = AudioPipeline.preampDb.value,
-                headroomDb = AudioPipeline.headroomDb.value
+                AudioPipeline.preampDb.value, AudioPipeline.headroomDb.value
             )
             processors += StereoWidthProcessor(AudioPipeline.stereoWidth.value)
             processors += CrossfeedProcessor(AudioPipeline.crossfeed.value)
             processors += DynamicBassProcessor(
-                amount = AudioPipeline.dynBass.value,
-                bassGainDb = AudioPipeline.dynBassGain.value
+                AudioPipeline.dynBass.value, AudioPipeline.dynBassGain.value
             )
             processors += ExciterProcessor(AudioPipeline.exciter.value)
+        }
+
+        // 3) Spatial (8D / 10D / 3D)
+        if (SpatialMode.enabled.value) {
+            when (SpatialMode.type.value) {
+                SpatialType.SPATIAL_8D -> processors += Rotate8DProcessor(
+                    speedHz = SpatialMode.rotateSpeed.value,
+                    wetMix  = SpatialMode.rotateWet.value,
+                    radius  = SpatialMode.rotateRadius.value
+                )
+                SpatialType.SPATIAL_10D -> processors += Hyper10DProcessor(
+                    speedHz = SpatialMode.hyperSpeed.value,
+                    wetMix  = SpatialMode.hyperWet.value,
+                    depth   = SpatialMode.hyperDepth.value,
+                    haasMs  = SpatialMode.hyperHaas.value
+                )
+                SpatialType.BINAURAL_3D -> processors += Binaural3DProcessor(
+                    width     = SpatialMode.binauralWidth.value,
+                    depth     = SpatialMode.binauralDepth.value,
+                    elevation = SpatialMode.binauralElev.value
+                )
+                else -> {}
+            }
+        }
+
+        // 4) Limiter (all-ways last)
+        if (AudioPipeline.dspEnabled.value && AudioPipeline.limiterOn.value) {
             processors += SoftLimiterProcessor(
                 ceiling = AudioPipeline.limiterCeil.value,
-                enabled = AudioPipeline.limiterOn.value
+                enabled = true
             )
         }
 
@@ -59,7 +89,6 @@ class MusicService : MediaSessionService() {
         player = p
         PlayerHolder.player = p
 
-        // AudioEffect DSP (session-based)
         runCatching {
             AudioProfileManager.attach(p)
             AudioProfileManager.applyGenre("Flat")

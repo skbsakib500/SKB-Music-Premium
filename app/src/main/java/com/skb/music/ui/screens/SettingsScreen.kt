@@ -47,6 +47,7 @@ fun SettingsScreen() {
         "audio_profile" -> AudioProfileScreen()
         "hires" -> HiResScreen()
         "advanced_audio" -> AdvancedAudioScreen()
+        "spatial" -> SpatialScreen()
         "visualizer" -> VisualizerScreen()
         "equalizer" -> EqualizerScreen()
         else -> Scaffold(
@@ -90,7 +91,9 @@ fun SettingsScreen() {
                 }
 
                 GlowCard(Modifier.fillMaxWidth()) {
-                    RowItem(PaResources.eq(), "Advanced Audio", "6-stage DSP pipeline") { sub = "advanced_audio" }
+                    RowItem(PaResources.eq(), "Spatial Audio", "8D · 10D · 3D Binaural") { sub = "spatial" }
+                    HorizontalDivider(Modifier.padding(vertical = 12.dp), color = AmuletEmerald.copy(alpha = 0.15f))
+                    RowItem(PaResources.eq(), "Advanced Audio", "6-stage DSP") { sub = "advanced_audio" }
                     HorizontalDivider(Modifier.padding(vertical = 12.dp), color = AmuletEmerald.copy(alpha = 0.15f))
                     RowItem(PaResources.eq(), "Hi-Res Audio", "32-bit / 768 kHz") { sub = "hires" }
                     HorizontalDivider(Modifier.padding(vertical = 12.dp), color = AmuletEmerald.copy(alpha = 0.15f))
