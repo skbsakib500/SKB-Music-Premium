@@ -1,13 +1,16 @@
 package com.skb.music
 
 import android.Manifest
+import android.app.Activity
 import android.content.Intent
+import android.content.IntentSender
 import android.content.pm.PackageManager
 import android.os.Build
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.compose.setContent
+import androidx.activity.result.IntentSenderRequest
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -42,10 +45,12 @@ import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableLongStateOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import androidx.core.content.ContextCompat
 import com.skb.music.data.MusicRepository
@@ -135,12 +140,10 @@ enum class AppScreen { TABS, PLAYER, QUEUE }
 @Composable
 private fun AppRoot(repo: MusicRepository) {
     val scope = rememberCoroutineScope()
+    val context = LocalContext.current
 
-    // State গুলো rememberSaveable-এর মতো রাখি (কমপোজিশন ধরে রাখে)
     var tab by remember { mutableIntStateOf(0) }
     var screen by remember { mutableStateOf(AppScreen.TABS) }
-
-    // 🔑 scroll state — tab পরিবর্তন বা delete হলেও ধরে রাখবে
     var libraryScrollIndex by remember { mutableIntStateOf(0) }
     var libraryScrollOffset by remember { mutableIntStateOf(0) }
 
@@ -152,9 +155,6 @@ private fun AppRoot(repo: MusicRepository) {
     var duration by remember { mutableLongStateOf(0L) }
     var favorites by remember { mutableStateOf<Set<Long>>(emptySet()) }
 
-    val context = androidx.compose.ui.platform.LocalContext.current
-
-    // Reload songs
     suspend fun reload() {
         allSongs = repo.loadSongs()
     }
@@ -184,31 +184,29 @@ private fun AppRoot(repo: MusicRepository) {
     }
 
     // ═══ DELETE Flow ═══
-    // Activity Result Launcher for delete request (Android 11+)
     var pendingDelete by remember { mutableStateOf<Song?>(null) }
+
     val deleteLauncher = rememberLauncherForActivityResult(
         ActivityResultContracts.StartIntentSenderForResult()
     ) { result ->
-        // সফল হলে reload, নাহলে কিছু করি না
-        if (result.resultCode == android.app.Activity.RESULT_OK) {
+        if (result.resultCode == Activity.RESULT_OK) {
             scope.launch { reload() }
         }
         pendingDelete = null
     }
 
     fun requestDelete(song: Song) {
-        val intentSender = repo.buildDeleteRequest(song)
-        if (intentSender != null) {
-            // Android 11+ user confirmation dialog
-            val intent = android.content.IntentSender.SendIntentException::class
-            try {
-                val sender = android.content.IntentSender(intentSender)
-                deleteLauncher.launch(
-                    androidx.activity.result.IntentSenderRequest.Builder(sender).build()
-                )
-            } catch (t: Throwable) { /* ignore */ }
+        val pending = repo.buildDeleteRequest(song)
+        if (pending != null) {
+            runCatching {
+                val sender = pending.intentSender
+                deleteLauncher.launch(IntentSenderRequest.Builder(sender).build())
+            }.onFailure {
+                // Fallback direct delete
+                repo.deleteDirect(song)
+                scope.launch { reload() }
+            }
         } else {
-            // Android 10 বা নিচে সরাসরি delete
             repo.deleteDirect(song)
             scope.launch { reload() }
         }
@@ -349,9 +347,3 @@ private fun AppRoot(repo: MusicRepository) {
         }
     }
 }
-
-// Small helper — suspend loader for top-level use
-private fun kotlinx.coroutines.CoroutineScope.launch(
-    block: suspend () -> Unit
-): kotlinx.coroutines.Job =
-    kotlinx.coroutines.launch(kotlinx.coroutines.Dispatchers.Main) { block() }

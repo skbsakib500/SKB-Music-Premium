@@ -32,6 +32,7 @@ abstract class FloatProcessor : AudioProcessor {
     }
 
     override fun isActive(): Boolean = active
+    override fun isEnded(): Boolean = false
 
     override fun queueInput(inputBuffer: ByteBuffer) {
         inputBuffer.order(ByteOrder.nativeOrder())

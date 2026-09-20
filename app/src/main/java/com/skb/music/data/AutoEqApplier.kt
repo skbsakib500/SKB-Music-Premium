@@ -5,10 +5,6 @@ import android.database.sqlite.SQLiteDatabase
 import java.io.File
 import java.io.FileOutputStream
 
-/**
- * Reads AutoEq DB and extracts the actual filter bands for a headphone.
- * Applies pre-computed 5-band approximation.
- */
 object AutoEqApplier {
 
     private var cachedDb: SQLiteDatabase? = null
@@ -32,14 +28,9 @@ object AutoEqApplier {
         return cachedDb
     }
 
-    /**
-     * Fetches 5-band approximation for a headphone name.
-     * Returns list of 5 gain values in dB.
-     */
     fun bandsFor(context: Context, headphone: String): List<Float> {
         val db = open(context) ?: return zeros()
         return runCatching {
-            // Try common table names
             val candidates = listOf("headphones", "autoeq", "presets", "data")
             for (tbl in candidates) {
                 val cursor = db.rawQuery(
@@ -58,17 +49,15 @@ object AutoEqApplier {
                             gains.add(v)
                         }
                         if (gains.isNotEmpty()) {
-                            return@use downsample(gains, 5)
+                            return downsample(gains, 5)
                         }
                     }
                 }
             }
-            // If nothing found, give a genre-neutral curve
-            return zeros()
+            zeros()
         }.getOrDefault(zeros())
     }
 
-    /** Reduce arbitrary N-band curve into 5 bands by averaging. */
     private fun downsample(src: List<Float>, target: Int): List<Float> {
         if (src.size <= target) {
             val out = MutableList(target) { 0f }

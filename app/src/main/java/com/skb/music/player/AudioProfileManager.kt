@@ -81,7 +81,7 @@ object AudioProfileManager {
         val bands = eq.numberOfBands.toInt()
         for (b in 0 until bands) {
             val g = gains.getOrElse(b) { 0f }
-            val level = (g / 12f * (max - min) / 2f + (max + min) / 2f).toInt().toShort()
+            val level = ((g / 12f * (max - min) / 2f + (max + min) / 2f).toInt()).toShort()
             runCatching { eq.setBandLevel(b.toShort(), level) }
         }
     }
@@ -97,7 +97,7 @@ object AudioProfileManager {
         val bands = eq.numberOfBands.toInt()
         for (b in 0 until bands) {
             val g = gainsDb.getOrElse(b) { 0f }
-            val level = (g / 12f * (max - min) / 2f + (max + min) / 2f).toInt().toShort()
+            val level = ((g / 12f * (max - min) / 2f + (max + min) / 2f).toInt()).toShort()
             runCatching { eq.setBandLevel(b.toShort(), level) }
         }
     }

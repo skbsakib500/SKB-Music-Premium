@@ -30,12 +30,10 @@ class MusicService : MediaSessionService() {
 
         val processors = mutableListOf<AudioProcessor>()
 
-        // 1) Hi-Res upsample
         if (HiResSettings.enabled.value && HiResSettings.effectiveFactor() > 1) {
             processors += HiResUpsampler(HiResSettings.effectiveFactor())
         }
 
-        // 2) Advanced DSP
         if (AudioPipeline.dspEnabled.value) {
             processors += PreampProcessor(
                 AudioPipeline.preampDb.value, AudioPipeline.headroomDb.value
@@ -48,30 +46,28 @@ class MusicService : MediaSessionService() {
             processors += ExciterProcessor(AudioPipeline.exciter.value)
         }
 
-        // 3) Spatial (8D / 10D / 3D)
         if (SpatialMode.enabled.value) {
             when (SpatialMode.type.value) {
                 SpatialType.SPATIAL_8D -> processors += Rotate8DProcessor(
-                    speedHz = SpatialMode.rotateSpeed.value,
-                    wetMix  = SpatialMode.rotateWet.value,
-                    radius  = SpatialMode.rotateRadius.value
+                    SpatialMode.rotateSpeed.value,
+                    SpatialMode.rotateWet.value,
+                    SpatialMode.rotateRadius.value
                 )
                 SpatialType.SPATIAL_10D -> processors += Hyper10DProcessor(
-                    speedHz = SpatialMode.hyperSpeed.value,
-                    wetMix  = SpatialMode.hyperWet.value,
-                    depth   = SpatialMode.hyperDepth.value,
-                    haasMs  = SpatialMode.hyperHaas.value
+                    SpatialMode.hyperSpeed.value,
+                    SpatialMode.hyperWet.value,
+                    SpatialMode.hyperDepth.value,
+                    SpatialMode.hyperHaas.value
                 )
                 SpatialType.BINAURAL_3D -> processors += Binaural3DProcessor(
-                    width     = SpatialMode.binauralWidth.value,
-                    depth     = SpatialMode.binauralDepth.value,
-                    elevation = SpatialMode.binauralElev.value
+                    SpatialMode.binauralWidth.value,
+                    SpatialMode.binauralDepth.value,
+                    SpatialMode.binauralElev.value
                 )
                 else -> {}
             }
         }
 
-        // 4) Limiter (all-ways last)
         if (AudioPipeline.dspEnabled.value && AudioPipeline.limiterOn.value) {
             processors += SoftLimiterProcessor(
                 ceiling = AudioPipeline.limiterCeil.value,
@@ -85,7 +81,10 @@ class MusicService : MediaSessionService() {
             .setAudioCapabilities(AudioCapabilities.getCapabilities(this))
             .build()
 
-        val p = ExoPlayer.Builder(this).setAudioSink(sink).build()
+        val p = ExoPlayer.Builder(this)
+            .setAudioSink(sink)
+            .build()
+
         player = p
         PlayerHolder.player = p
 

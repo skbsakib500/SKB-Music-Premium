@@ -1,6 +1,6 @@
 package com.skb.music.data
 
-import android.app.RecoverableSecurityException
+import android.app.PendingIntent
 import android.content.ContentUris
 import android.content.Context
 import android.net.Uri
@@ -64,38 +64,23 @@ class MusicRepository(private val context: Context) {
     }
 
     /**
-     * Android 11+ এ delete request URI রিটার্ন করে (user confirmation)
-     * Android 10 বা তার নিচে সরাসরি delete হয়, null রিটার্ন করে
+     * Android 11+: user confirmation intent (PendingIntent) নিয়ে আসে।
+     * Android 10 বা নিচে: null
      */
-    fun buildDeleteRequest(song: Song): Uri? {
+    fun buildDeleteRequest(song: Song): PendingIntent? {
         return if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
             runCatching {
-                MediaStore.createDeleteRequest(context.contentResolver, listOf(song.uri))
+                MediaStore.createDeleteRequest(
+                    context.contentResolver,
+                    listOf(song.uri)
+                )
             }.getOrNull()
         } else null
     }
 
-    /**
-     * সরাসরি delete (Android 10 বা তার নিচে)
-     */
     fun deleteDirect(song: Song): Boolean {
         return runCatching {
             context.contentResolver.delete(song.uri, null, null) > 0
         }.getOrDefault(false)
-    }
-
-    /**
-     * Android 10 এ RecoverableSecurityException হলে এটা throw করে
-     */
-    fun tryDelete(song: Song) {
-        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.R) {
-            runCatching {
-                context.contentResolver.delete(song.uri, null, null)
-            }.onFailure { t ->
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q &&
-                    t is RecoverableSecurityException
-                ) throw t
-            }
-        }
     }
 }
