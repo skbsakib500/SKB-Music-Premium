@@ -149,9 +149,10 @@ private fun SongRow(song: Song, onClick: () -> Unit, onDeleteClick: () -> Unit) 
         Spacer(Modifier.width(12.dp))
         Column(Modifier.weight(1f)) {
             Text(song.title, style = MaterialTheme.typography.bodyLarge,
+                color = Color(0xFFF0F4F8), fontWeight = FontWeight.SemiBold,
                 maxLines = 1, overflow = TextOverflow.Ellipsis)
             Text(song.artist, style = MaterialTheme.typography.bodySmall,
-                color = AmuletTextMuted, maxLines = 1,
+                color = Color(0xFF10D9A0), maxLines = 1,
                 overflow = TextOverflow.Ellipsis)
         }
         Box {

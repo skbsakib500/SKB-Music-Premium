@@ -8,6 +8,7 @@ import android.content.pm.PackageManager
 import android.os.Build
 import android.os.Bundle
 import androidx.activity.ComponentActivity
+import androidx.activity.compose.BackHandler
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.compose.setContent
 import androidx.activity.result.IntentSenderRequest
@@ -109,6 +110,14 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 private fun PermissionScreen(onGrant: () -> Unit) {
+    // Back button navigation
+    BackHandler(enabled = screen != AppScreen.TABS) {
+        screen = when (screen) {
+            AppScreen.QUEUE -> AppScreen.PLAYER
+            else -> AppScreen.TABS
+        }
+    }
+
     GradientBackground {
         Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
             Column(

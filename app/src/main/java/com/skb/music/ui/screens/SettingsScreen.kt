@@ -43,7 +43,6 @@ fun SettingsScreen() {
     var sub by remember { mutableStateOf<String?>(null) }
 
     when (sub) {
-        "autoeq" -> AutoEqScreen()
         "audio_profile" -> AudioProfileScreen()
         "hires" -> HiResScreen()
         "advanced_audio" -> AdvancedAudioScreen()
@@ -92,41 +91,20 @@ fun SettingsScreen() {
 
                 GlowCard(Modifier.fillMaxWidth()) {
                     RowItem(PaResources.eq(), "Spatial Audio", "8D · 10D · 3D Binaural") { sub = "spatial" }
-                    HorizontalDivider(Modifier.padding(vertical = 12.dp), color = AmuletEmerald.copy(alpha = 0.15f))
-                    RowItem(PaResources.eq(), "Advanced Audio", "6-stage DSP") { sub = "advanced_audio" }
-                    HorizontalDivider(Modifier.padding(vertical = 12.dp), color = AmuletEmerald.copy(alpha = 0.15f))
-                    RowItem(PaResources.eq(), "Hi-Res Audio", "32-bit / 768 kHz") { sub = "hires" }
-                    HorizontalDivider(Modifier.padding(vertical = 12.dp), color = AmuletEmerald.copy(alpha = 0.15f))
-                    RowItem(PaResources.eq(), "Audio Profile", "DSP chain") { sub = "audio_profile" }
-                    HorizontalDivider(Modifier.padding(vertical = 12.dp), color = AmuletEmerald.copy(alpha = 0.15f))
-                    RowItem(PaResources.eq(), "Equalizer",
+RowItem(PaResources.eq(), "Advanced Audio", "6-stage DSP") { sub = "advanced_audio" }
+RowItem(PaResources.eq(), "Hi-Res Audio", "32-bit / 768 kHz") { sub = "hires" }
+RowItem(PaResources.eq(), "Audio Profile", "DSP chain") { sub = "audio_profile" }
+RowItem(PaResources.eq(), "Equalizer",
                         "Bands, presets") { sub = "equalizer" }
-                    HorizontalDivider(
-                        Modifier.padding(vertical = 12.dp),
-                        color = AmuletEmerald.copy(alpha = 0.15f)
-                    )
-                    RowItem(PaResources.headphones(), "AutoEq",
-                        "Headphone presets") { sub = "autoeq" }
-                    HorizontalDivider(
-                        Modifier.padding(vertical = 12.dp),
-                        color = AmuletEmerald.copy(alpha = 0.15f)
-                    )
-                    RowItem(PaResources.tune(), "Visualizer",
+
+RowItem(PaResources.tune(), "Visualizer",
                         "Bars, milk presets") { sub = "visualizer" }
                 }
 
                 GlowCard(Modifier.fillMaxWidth()) {
                     InfoRow("About", "SKB Music")
-                    HorizontalDivider(
-                        Modifier.padding(vertical = 12.dp),
-                        color = AmuletEmerald.copy(alpha = 0.15f)
-                    )
-                    InfoRow("Version", "1.0.0")
-                    HorizontalDivider(
-                        Modifier.padding(vertical = 12.dp),
-                        color = AmuletEmerald.copy(alpha = 0.15f)
-                    )
-                    InfoRow("Developer", "SKB")
+InfoRow("Version", "1.0.0")
+InfoRow("Developer", "SKB")
                 }
 
                 Spacer(Modifier.height(20.dp))
