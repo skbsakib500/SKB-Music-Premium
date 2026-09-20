@@ -6,10 +6,6 @@ import android.media.audiofx.LoudnessEnhancer
 import android.media.audiofx.Virtualizer
 import androidx.media3.exoplayer.ExoPlayer
 
-/**
- * Master DSP pipeline for SKB Music.
- * Chaines: BassBoost → Virtualizer → Equalizer → LoudnessEnhancer
- */
 object AudioProfileManager {
 
     private var equalizer: Equalizer? = null
@@ -18,15 +14,13 @@ object AudioProfileManager {
     private var loudness: LoudnessEnhancer? = null
     private var sessionId: Int = 0
 
-    // Current profile
     var activeHeadphone: String = "None"
     var activeGenre: String = "Flat"
     var bassLevel: Float = 0.5f
     var virtualLevel: Float = 0.3f
-    var loudnessGain: Int = 0      // in millibels (0..2000)
+    var loudnessGain: Int = 0
     var eqEnabled: Boolean = true
 
-    // Genre → per-band gains (dB, 5 bands)
     private val genreGains = mapOf(
         "Flat"      to listOf(0f, 0f, 0f, 0f, 0f),
         "Rock"      to listOf(4f, 3f, -1f, 2f, 4f),
@@ -42,7 +36,6 @@ object AudioProfileManager {
 
     val genres: List<String> = genreGains.keys.toList()
 
-    // ═══════════════════════════════════════════════════
     fun attach(player: ExoPlayer) {
         sessionId = player.audioSessionId
         runCatching { equalizer?.release() }
@@ -69,48 +62,61 @@ object AudioProfileManager {
         }
     }
 
-    // ═══════════════════════════════════════════════════
-    // Genre EQ
-    // ═══════════════════════════════════════════════════
+    /**
+     * Maps a dB gain into the equalizer's native level range.
+     * Uses explicit Int → Short conversion to avoid Kotlin ambiguity.
+     */
+    private fun mapLevel(
+        gainDb: Float,
+        rangeMin: Int,
+        rangeMax: Int,
+        scaleDb: Float = 12f
+    ): Short {
+        val mid = (rangeMin + rangeMax) / 2
+        val halfSpan = (rangeMax - rangeMin) / 2
+        val scaled: Int = (gainDb / scaleDb * halfSpan.toFloat() + mid.toFloat()).toInt()
+        return scaled.toShort()
+    }
+
     fun applyGenre(genre: String) {
         activeGenre = genre
         val eq = equalizer ?: return
-        val gains = genreGains[genre] ?: genreGains["Flat"]!!
         val range = eq.bandLevelRange
-        val min = range[0]; val max = range[1]
+        val minL = range[0].toInt()
+        val maxL = range[1].toInt()
+        val gains = genreGains[genre] ?: genreGains["Flat"]!!
         val bands = eq.numberOfBands.toInt()
         for (b in 0 until bands) {
             val g = gains.getOrElse(b) { 0f }
-            val level = ((g / 12f * (max - min) / 2f + (max + min) / 2f).toInt()).toShort()
+            val level = mapLevel(g, minL, maxL, 12f)
             runCatching { eq.setBandLevel(b.toShort(), level) }
         }
     }
 
-    // ═══════════════════════════════════════════════════
-    // AutoEq (custom bands, from DB)
-    // ═══════════════════════════════════════════════════
     fun applyAutoEqBands(headphoneName: String, gainsDb: List<Float>) {
         activeHeadphone = headphoneName
         val eq = equalizer ?: return
         val range = eq.bandLevelRange
-        val min = range[0]; val max = range[1]
+        val minL = range[0].toInt()
+        val maxL = range[1].toInt()
         val bands = eq.numberOfBands.toInt()
         for (b in 0 until bands) {
             val g = gainsDb.getOrElse(b) { 0f }
-            val level = ((g / 12f * (max - min) / 2f + (max + min) / 2f).toInt()).toShort()
+            val level = mapLevel(g, minL, maxL, 12f)
             runCatching { eq.setBandLevel(b.toShort(), level) }
         }
     }
 
-    // ═══════════════════════════════════════════════════
     fun setBassStrength(v: Float) {
         bassLevel = v.coerceIn(0f, 1f)
-        runCatching { bassBoost?.setStrength(bassLevel.toShort()) }
+        val s: Short = (bassLevel * 1000f).toInt().toShort()
+        runCatching { bassBoost?.setStrength(s) }
     }
 
     fun setVirtualStrength(v: Float) {
         virtualLevel = v.coerceIn(0f, 1f)
-        runCatching { virtualizer?.setStrength(virtualLevel.toShort()) }
+        val s: Short = (virtualLevel * 1000f).toInt().toShort()
+        runCatching { virtualizer?.setStrength(s) }
     }
 
     fun setLoudnessGain(mb: Int) {
@@ -134,7 +140,6 @@ object AudioProfileManager {
         equalizer = null; bassBoost = null; virtualizer = null; loudness = null
     }
 
-    /** Returns current audio output info */
     fun currentInfo(): AudioInfo {
         val eq = equalizer
         val numBands = eq?.numberOfBands?.toInt() ?: 0
@@ -144,15 +149,11 @@ object AudioProfileManager {
             }
         } ?: emptyList()
         return AudioInfo(
-            sessionId = sessionId,
-            bands = numBands,
-            centerFreqs = centerFreqs,
-            headphone = activeHeadphone,
-            genre = activeGenre,
-            bassBoost = (bassLevel * 100).toInt(),
-            virtualizer = (virtualLevel * 100).toInt(),
-            loudnessGain = loudnessGain,
-            eqOn = eqEnabled
+            sessionId, numBands, centerFreqs,
+            activeHeadphone, activeGenre,
+            (bassLevel * 100).toInt(),
+            (virtualLevel * 100).toInt(),
+            loudnessGain, eqEnabled
         )
     }
 

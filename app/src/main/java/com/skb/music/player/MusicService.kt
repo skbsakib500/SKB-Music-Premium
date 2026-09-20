@@ -3,9 +3,8 @@ package com.skb.music.player
 import android.content.Intent
 import androidx.media3.common.audio.AudioProcessor
 import androidx.media3.common.util.UnstableApi
+import androidx.media3.exoplayer.DefaultRenderersFactory
 import androidx.media3.exoplayer.ExoPlayer
-import androidx.media3.exoplayer.audio.AudioCapabilities
-import androidx.media3.exoplayer.audio.DefaultAudioSink
 import androidx.media3.session.MediaSession
 import androidx.media3.session.MediaSessionService
 import com.skb.music.player.dsp.CrossfeedProcessor
@@ -30,10 +29,12 @@ class MusicService : MediaSessionService() {
 
         val processors = mutableListOf<AudioProcessor>()
 
+        // 1) Hi-Res upsample
         if (HiResSettings.enabled.value && HiResSettings.effectiveFactor() > 1) {
             processors += HiResUpsampler(HiResSettings.effectiveFactor())
         }
 
+        // 2) DSP chain
         if (AudioPipeline.dspEnabled.value) {
             processors += PreampProcessor(
                 AudioPipeline.preampDb.value, AudioPipeline.headroomDb.value
@@ -46,6 +47,7 @@ class MusicService : MediaSessionService() {
             processors += ExciterProcessor(AudioPipeline.exciter.value)
         }
 
+        // 3) Spatial
         if (SpatialMode.enabled.value) {
             when (SpatialMode.type.value) {
                 SpatialType.SPATIAL_8D -> processors += Rotate8DProcessor(
@@ -68,6 +70,7 @@ class MusicService : MediaSessionService() {
             }
         }
 
+        // 4) Limiter
         if (AudioPipeline.dspEnabled.value && AudioPipeline.limiterOn.value) {
             processors += SoftLimiterProcessor(
                 ceiling = AudioPipeline.limiterCeil.value,
@@ -75,14 +78,12 @@ class MusicService : MediaSessionService() {
             )
         }
 
-        val sink = DefaultAudioSink.Builder(this)
+        // ═══ Build with custom processors via RenderersFactory ═══
+        val renderersFactory = DefaultRenderersFactory(this)
             .setAudioProcessors(processors.toTypedArray())
-            .setEnableFloatOutput(true)
-            .setAudioCapabilities(AudioCapabilities.getCapabilities(this))
-            .build()
 
         val p = ExoPlayer.Builder(this)
-            .setAudioSink(sink)
+            .setRenderersFactory(renderersFactory)
             .build()
 
         player = p
